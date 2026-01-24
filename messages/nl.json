@@ -58,7 +58,9 @@
     "cta": {
       "title": "Klaar om je productiviteit te verhogen?",
       "text": "Begin gratis met het gebruik van onze ontwikkelaarstools. Geen registratie vereist, geen gegevensverzameling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "Heb je een idee of een bug gevonden? Je feedback bepaalt wat we hierna bouwen.",
+      "feedbackButton": "Feedback delen"
     },
     "openTool": "Gereedschap openen",
     "noResults": "Geen tools gevonden die overeenkomen met",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Terug",
       "input": "Invoer",
       "output": "Uitvoer",
       "format": "Formaat",

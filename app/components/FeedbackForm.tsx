@@ -116,11 +116,11 @@ export default function FeedbackForm() {
                             <label className="block mb-1.5 text-[13px] text-[var(--muted-text)]">
                                 {t('feedbackType')}
                             </label>
-                            <select name="type" className="w-full px-3.5 py-3 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)]" required>
-                                <option value="suggestion">{t('typeSuggestion')}</option>
-                                <option value="bug">{t('typeBug')}</option>
-                                <option value="feature">{t('typeFeature')}</option>
-                                <option value="other">{t('typeOther')}</option>
+                            <select name="type" className="w-full px-3.5 py-3 border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)]" required>
+                                <option className="bg-[var(--background)]" value="suggestion">{t('typeSuggestion')}</option>
+                                <option className="bg-[var(--background)]" value="bug">{t('typeBug')}</option>
+                                <option className="bg-[var(--background)]" value="feature">{t('typeFeature')}</option>
+                                <option className="bg-[var(--background)]" value="other">{t('typeOther')}</option>
                             </select>
                         </div>
 

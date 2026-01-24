@@ -58,7 +58,9 @@
     "cta": {
       "title": "准备好提高效率了吗？",
       "text": "免费开始使用我们的开发者工具。无需注册，不收集数据，纯粹的高效。",
-      "button": "免费开始"
+      "button": "免费开始",
+      "feedbackText": "有想法或发现了错误？您的反馈决定了我们接下来要构建的内容。",
+      "feedbackButton": "分享反馈"
     },
     "openTool": "打开工具",
     "noResults": "未找到匹配的工具",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "返回",
       "input": "输入",
       "output": "输出",
       "format": "格式",

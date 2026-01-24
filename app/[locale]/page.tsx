@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef, startTransition } from "react";
 import { Link } from "../../i18n/routing";
 import { ArrowRight, Zap, Shield, Code, Sparkles, Search, X, Star } from "lucide-react";
 import { tools, ToolCategory } from "../data/tools";
@@ -22,19 +22,32 @@ export default function Home() {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [recents, setRecents] = useState<any[]>([]); // Using any[] to safely map from ID
   const [mounted, setMounted] = useState(false);
+  const scrollPositionRef = useRef<number>(0);
+  const shouldRestoreScrollRef = useRef<boolean>(false);
 
+  // Set mounted state to prevent hydration mismatches
   useEffect(() => {
-    setMounted(true);
-    const savedFavs = localStorage.getItem("favorites");
-    if (savedFavs) setFavorites(JSON.parse(savedFavs));
-
-    const savedRecents = localStorage.getItem("recent_tools");
-    if (savedRecents) {
-      const ids = JSON.parse(savedRecents);
-      const recentTools = ids.map((id: string) => tools.find(t => t.id === id)).filter(Boolean);
-      setRecents(recentTools);
-    }
+    startTransition(() => {
+      setMounted(true);
+    });
   }, []);
+
+  // Load data from localStorage after mount
+  useEffect(() => {
+    if (!mounted) return;
+    
+    startTransition(() => {
+      const savedFavs = localStorage.getItem("favorites");
+      if (savedFavs) setFavorites(JSON.parse(savedFavs));
+
+      const savedRecents = localStorage.getItem("recent_tools");
+      if (savedRecents) {
+        const ids = JSON.parse(savedRecents);
+        const recentTools = ids.map((id: string) => tools.find(t => t.id === id)).filter(Boolean);
+        setRecents(recentTools);
+      }
+    });
+  }, [mounted]);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
     e.preventDefault();
@@ -64,6 +77,20 @@ export default function Home() {
       return matchesSearch && matchesCategory;
     });
   }, [query, activeCategory, favorites]);
+
+  // Restore scroll position after category change
+  useEffect(() => {
+    if (shouldRestoreScrollRef.current) {
+      // Use requestAnimationFrame to ensure DOM has updated
+      requestAnimationFrame(() => {
+        window.scrollTo({
+          top: scrollPositionRef.current,
+          behavior: 'instant'
+        });
+        shouldRestoreScrollRef.current = false;
+      });
+    }
+  }, [activeCategory, filteredTools.length]);
 
   const features = [
     { icon: <Zap size={20} />, title: t('features.fast.title'), description: t('features.fast.desc') },
@@ -162,6 +189,9 @@ export default function Home() {
                 onClick={(e) => {
                   e.preventDefault();
                   e.currentTarget.blur();
+                  // Save current scroll position before changing category
+                  scrollPositionRef.current = window.scrollY;
+                  shouldRestoreScrollRef.current = true;
                   setActiveCategory(cat);
                 }}
                 className={`${activeCategory === cat ? 'inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-2 rounded-full border border-transparent cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]' : 'inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-2 rounded-full border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'} text-[13px] px-4 py-2 h-auto whitespace-nowrap flex-shrink-0`}
@@ -175,6 +205,9 @@ export default function Home() {
                 onClick={(e) => {
                   e.preventDefault();
                   e.currentTarget.blur();
+                  // Save current scroll position before changing category
+                  scrollPositionRef.current = window.scrollY;
+                  shouldRestoreScrollRef.current = true;
                   setActiveCategory("Favorites");
                 }}
                 className={`${activeCategory === "Favorites" ? 'inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-2 rounded-full border border-transparent cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]' : 'inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-2 rounded-full border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'} text-[13px] px-4 py-2 h-auto flex items-center gap-1.5 whitespace-nowrap flex-shrink-0`}
@@ -231,7 +264,7 @@ export default function Home() {
           <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] w-full p-[clamp(24px,5vw,40px)] text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[rgba(249,115,22,0.05)] to-[rgba(250,204,21,0.05)]" />
             <div className="relative z-10 flex flex-col items-center">
-              <p className="text-[var(--muted-text)] text-sm mb-4 italic text-center">"{t('cta.feedbackText')}"</p>
+              <p className="text-[var(--muted-text)] text-sm mb-4 italic text-center">{t('cta.feedbackText')}</p>
               <button
                 onClick={() => window.dispatchEvent(new Event('open-feedback-modal'))}
                 className="bg-transparent border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--title-color)] hover:border-[#fb923c] text-xs px-5 py-2.5 rounded-full transition-all duration-300 cursor-pointer"

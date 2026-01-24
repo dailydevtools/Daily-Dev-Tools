@@ -58,7 +58,9 @@
     "cta": {
       "title": "Prêt à booster votre productivité ?",
       "text": "Commencez à utiliser nos outils de développement gratuitement. Pas d'inscription requise, pas de collecte de données, juste de la productivité pure.",
-      "button": "Commencer gratuitement"
+      "button": "Commencer gratuitement",
+      "feedbackText": "Vous avez une idée ou trouvé un bug ? Vos commentaires déterminent ce que nous construisons ensuite.",
+      "feedbackButton": "Partager des commentaires"
     },
     "openTool": "Ouvrir l'outil",
     "noResults": "Aucun outil trouvé correspondant à",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Retour",
       "input": "Entrée",
       "output": "Sortie",
       "format": "Format",

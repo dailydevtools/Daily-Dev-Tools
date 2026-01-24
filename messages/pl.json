@@ -58,7 +58,9 @@
     "cta": {
       "title": "Gotowy na zwiększenie produktywności?",
       "text": "Zacznij używać naszych narzędzi deweloperskich za darmo. Bez rejestracji, bez zbierania danych.",
-      "button": "Zacznij za darmo"
+      "button": "Zacznij za darmo",
+      "feedbackText": "Masz pomysł lub znalazłeś błąd? Twoja opinia decyduje o tym, co zbudujemy dalej.",
+      "feedbackButton": "Udostępnij opinię"
     },
     "openTool": "Otwórz narzędzie",
     "noResults": "Nie znaleziono narzędzi pasujących do",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Wstecz",
       "input": "Wejście",
       "output": "Wyjście",
       "format": "Format",

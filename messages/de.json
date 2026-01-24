@@ -58,7 +58,9 @@
     "cta": {
       "title": "Bereit, Ihre Produktivität zu steigern?",
       "text": "Beginnen Sie kostenlos mit der Nutzung unserer Entwicklertools. Keine Anmeldung erforderlich, keine Datenerfassung.",
-      "button": "Kostenlos starten"
+      "button": "Kostenlos starten",
+      "feedbackText": "Haben Sie eine Idee oder einen Fehler gefunden? Ihr Feedback bestimmt, was wir als Nächstes bauen.",
+      "feedbackButton": "Feedback teilen"
     },
     "openTool": "Tool öffnen",
     "noResults": "Keine Tools gefunden für",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Zurück",
       "input": "Eingabe",
       "output": "Ausgabe",
       "format": "Format",

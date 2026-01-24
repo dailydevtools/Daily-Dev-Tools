@@ -58,7 +58,9 @@
     "cta": {
       "title": "Redo att öka din produktivitet?",
       "text": "Börja använda våra utvecklarverktyg gratis. Ingen registrering krävs, ingen datainsamling.",
-      "button": "Börja Gratis"
+      "button": "Börja Gratis",
+      "feedbackText": "Har du en idé eller hittat en bugg? Din feedback avgör vad vi bygger härnäst.",
+      "feedbackButton": "Dela feedback"
     },
     "openTool": "Öppna verktyg",
     "noResults": "Inga verktyg hittades som matchar",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Tillbaka",
       "input": "Inmatning",
       "output": "Utmatning",
       "format": "Formatera",

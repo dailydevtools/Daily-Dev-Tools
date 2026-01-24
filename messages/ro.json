@@ -58,7 +58,9 @@
     "cta": {
       "title": "Ești gata să îți crești productivitatea?",
       "text": "Începe să folosești instrumentele noastre pentru dezvoltatori gratuit. Fără înregistrare, fără colectare de date.",
-      "button": "Începe Gratuit"
+      "button": "Începe Gratuit",
+      "feedbackText": "Ai o idee sau ai găsit un bug? Feedback-ul tău determină ce vom construi în continuare.",
+      "feedbackButton": "Distribuie Feedback"
     },
     "openTool": "Deschide instrument",
     "noResults": "Nu s-au găsit instrumente care să se potrivească cu",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Înapoi",
       "input": "Intrare",
       "output": "Ieșire",
       "format": "Format",

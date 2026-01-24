@@ -58,7 +58,9 @@
     "cta": {
       "title": "Pronto para aumentar sua produtividade?",
       "text": "Comece a usar nossas ferramentas de desenvolvedor gratuitamente. Sem cadastro, sem coleta de dados, pura produtividade.",
-      "button": "Começar Grátis"
+      "button": "Começar Grátis",
+      "feedbackText": "Tem uma ideia ou encontrou um bug? Seu feedback determina o que construiremos a seguir.",
+      "feedbackButton": "Compartilhar Feedback"
     },
     "openTool": "Abrir ferramenta",
     "noResults": "Nenhuma ferramenta encontrada para",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Voltar",
       "input": "Entrada",
       "output": "Saída",
       "format": "Formatar",

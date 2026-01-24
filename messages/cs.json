@@ -58,7 +58,9 @@
     "cta": {
       "title": "Jste připraveni zvýšit svou produktivitu?",
       "text": "Začněte používat naše vývojářské nástroje zdarma. Žádná registrace, žádný sběr dat.",
-      "button": "Začít Zdarma"
+      "button": "Začít Zdarma",
+      "feedbackText": "Máte nápad nebo jste našli chybu? Vaše zpětná vazba určuje, co vytvoříme dále.",
+      "feedbackButton": "Sdílet zpětnou vazbu"
     },
     "openTool": "Otevřít nástroj",
     "noResults": "Nebyly nalezeny žádné nástroje odpovídající",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Zpět",
       "input": "Vstup",
       "output": "Výstup",
       "format": "Formátovat",

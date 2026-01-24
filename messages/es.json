@@ -58,7 +58,9 @@
     "cta": {
       "title": "¿Listo para aumentar tu productividad?",
       "text": "Empieza a usar nuestras herramientas gratis. Sin registro, sin recolección de datos.",
-      "button": "Empezar Gratis"
+      "button": "Empezar Gratis",
+      "feedbackText": "¿Tienes una idea o encontraste un error? Tus comentarios determinan lo que construimos a continuación.",
+      "feedbackButton": "Compartir comentarios"
     },
     "openTool": "Abrir herramienta",
     "noResults": "No se encontraron herramientas que coincidan con",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Atrás",
       "input": "Entrada",
       "output": "Salida",
       "format": "Formatear",

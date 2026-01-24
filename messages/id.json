@@ -58,7 +58,9 @@
     "cta": {
       "title": "Siap meningkatkan produktivitas Anda?",
       "text": "Mulai gunakan alat pengembang kami secara gratis. Tidak perlu mendaftar, tidak ada pengumpulan data.",
-      "button": "Mulai Gratis"
+      "button": "Mulai Gratis",
+      "feedbackText": "Punya ide atau menemukan bug? Masukan Anda menentukan apa yang akan kami bangun selanjutnya.",
+      "feedbackButton": "Bagikan Masukan"
     },
     "openTool": "Buka alat",
     "noResults": "Tidak ditemukan alat yang cocok dengan",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Kembali",
       "input": "Masukan",
       "output": "Keluaran",
       "format": "Format",

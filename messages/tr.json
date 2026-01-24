@@ -58,7 +58,9 @@
     "cta": {
       "title": "Üretkenliğinizi artırmaya hazır mısınız?",
       "text": "Geliştirici araçlarımızı ücretsiz kullanmaya başlayın. Kayıt gerekmez, veri toplanmaz.",
-      "button": "Ücretsiz Başlayın"
+      "button": "Ücretsiz Başlayın",
+      "feedbackText": "Bir fikriniz mi var yoksa bir hata mı buldunuz? Geri bildiriminiz, bundan sonra ne inşa edeceğimizi belirler.",
+      "feedbackButton": "Geri Bildirim Paylaş"
     },
     "openTool": "Aracı aç",
     "noResults": "Eşleşen araç bulunamadı",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Geri",
       "input": "Giriş",
       "output": "Çıkış",
       "format": "Biçimlendir",

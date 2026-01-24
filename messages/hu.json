@@ -58,7 +58,9 @@
     "cta": {
       "title": "Készen áll a termelékenység növelésére?",
       "text": "Kezdje el ingyenesen használni fejlesztői eszközeinket. Nincs regisztráció, nincs adatgyűjtés.",
-      "button": "Kezdés Ingyenesen"
+      "button": "Kezdés Ingyenesen",
+      "feedbackText": "Van ötlete vagy hibát talált? Visszajelzése határozza meg, mit építünk ezután.",
+      "feedbackButton": "Visszajelzés megosztása"
     },
     "openTool": "Eszköz megnyitása",
     "noResults": "Nem található eszköz, amely megfelel",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Vissza",
       "input": "Bemenet",
       "output": "Kimenet",
       "format": "Formátum",

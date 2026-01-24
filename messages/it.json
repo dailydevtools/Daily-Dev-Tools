@@ -58,7 +58,9 @@
     "cta": {
       "title": "Pronto a migliorare la tua produttività?",
       "text": "Inizia a usare gratuitamente i nostri strumenti per sviluppatori. Nessuna registrazione richiesta, nessuna raccolta dati.",
-      "button": "Inizia gratis"
+      "button": "Inizia gratis",
+      "feedbackText": "Hai un'idea o hai trovato un bug? Il tuo feedback determina cosa costruiremo dopo.",
+      "feedbackButton": "Condividi Feedback"
     },
     "openTool": "Apri strumento",
     "noResults": "Nessuno strumento trovato per",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Indietro",
       "input": "Ingresso",
       "output": "Produzione",
       "format": "Formato",

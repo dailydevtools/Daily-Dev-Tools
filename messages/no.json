@@ -58,7 +58,9 @@
     "cta": {
       "title": "Klar til å øke produktiviteten din?",
       "text": "Begynn å bruke våre utviklerverktøy gratis. Ingen registrering kreves, ingen datainnsamling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "Har du en idé eller funnet en feil? Din tilbakemelding bestemmer hva vi bygger neste.",
+      "feedbackButton": "Del tilbakemelding"
     },
     "openTool": "Åpne verktøy",
     "noResults": "Ingen verktøy funnet som matcher",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Tilbake",
       "input": "Inndata",
       "output": "Utdata",
       "format": "Format",

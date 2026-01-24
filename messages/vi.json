@@ -58,7 +58,9 @@
     "cta": {
       "title": "Sẵn sàng tăng năng suất của bạn?",
       "text": "Bắt đầu sử dụng các công cụ phát triển của chúng tôi miễn phí. Không cần đăng ký, không thu thập dữ liệu.",
-      "button": "Bắt đầu miễn phí"
+      "button": "Bắt đầu miễn phí",
+      "feedbackText": "Có ý tưởng hoặc tìm thấy lỗi? Phản hồi của bạn quyết định những gì chúng tôi sẽ xây dựng tiếp theo.",
+      "feedbackButton": "Chia sẻ phản hồi"
     },
     "openTool": "Mở công cụ",
     "noResults": "Không tìm thấy công cụ phù hợp với",
@@ -513,6 +515,7 @@
   },
   "ToolPage": {
     "common": {
+      "back": "Quay lại",
       "input": "Đầu vào",
       "output": "Đầu ra",
       "format": "Định dạng",
