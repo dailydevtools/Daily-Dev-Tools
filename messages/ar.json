@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "أدوات",
+    "blog": "مدونة",
+    "github": "GitHub",
+    "searchPlaceholder": "بحث..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - أدوات المطورين المجانية عبر الإنترنت",
+    "description": "90+ أداة مجانية عبر الإنترنت للجميع. منسقات ومحولات ومولدات وأدوات مساعدة. سريع وخاص ولا يتطلب التسجيل."
+  },
+  "NotFound": {
+    "title": "الصفحة غير موجودة",
+    "description": "عذراً، لم نتمكن من العثور على الصفحة التي تبحث عنها.",
+    "backHome": "العودة للرئيسية",
+    "suggestions": "حاول البحث عن أداة أو تصفح أدواتنا الشائعة أدناه."
+  },
+  "Homepage": {
+    "heroTag": "100+ أداة مجانية • خاص • بدون تسجيل",
+    "titleLine1": "أدوات المطور اليومية",
+    "titleLine2": "التي تعمل ببساطة",
+    "subtitle": "أدوات سريعة وجميلة وتركز على الخصوصية للمطورين والمصممين والجميع. كل شيء يعمل في متصفحك.",
+    "recentTools": "استخدمت مؤخرا",
+    "noRecentText": "ابدأ باستخدام الأدوات لرؤيتها هنا",
+    "searchResults": "نتائج البحث",
+    "popularTools": "شائع",
+    "toolsCount": "{count} أداة متاحة",
+    "features": {
+      "fast": {
+        "title": "سريع كالبرق",
+        "desc": "تعمل جميع الأدوات محليًا في متصفحك"
+      },
+      "private": {
+        "title": "100% خاص",
+        "desc": "بياناتك لا تغادر جهازك أبدًا"
+      },
+      "simple": {
+        "title": "صمم للجميع",
+        "desc": "بسيط بما فيه الكفاية لأي شخص، وقوي للمحترفين"
+      },
+      "free": {
+        "title": "مجاني دائما",
+        "desc": "لا حسابات، لا حدود"
+      }
+    },
+    "categories": {
+      "All": "الكل",
+      "Favorites": "المفضلة",
+      "Developer": "مطور",
+      "Design": "تصميم",
+      "Content": "محتوى",
+      "Security": "أمان",
+      "Productivity": "إنتاجية",
+      "Math": "رياضيات",
+      "Utility": "أداة مساعدة"
+    },
+    "cta": {
+      "title": "هل أنت مستعد لتعزيز إنتاجيتك؟",
+      "text": "ابدأ باستخدام أدوات المطورين لدينا مجانًا. لا يتطلب التسجيل، ولا يتم جمع البيانات.",
+      "button": "ابدأ مجانا"
+    },
+    "openTool": "فتح الأداة",
+    "noResults": "لم يتم العثور على أدوات مطابقة لـ",
+    "clearFilters": "مسح المرشحات"
+  },
+  "Footer": {
+    "builtWith": "صنع بـ ❤️ بواسطة",
+    "allTools": "جميع الأدوات",
+    "blog": "مدونة",
+    "about": "حول",
+    "privacy": "خصوصية",
+    "terms": "شروط"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "منسق JSON",
+      "description": "تنسيق والتحقق وتجميل JSON فوراً"
+    },
+    "base64-encoder": {
+      "name": "مشفر Base64",
+      "description": "تشفير وفك تشفير سلاسل Base64"
+    },
+    "url-encoder": {
+      "name": "مشفر URL",
+      "description": "تشفير وفك تشفير الروابط بأمان"
+    },
+    "jwt-decoder": {
+      "name": "فك تشفير JWT",
+      "description": "فك تشفير وفحص رموز JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "مختبر التعابير النمطية",
+      "description": "اختبار التعابير النمطية في الوقت الفعلي"
+    },
+    "hash-generator": {
+      "name": "مولد الهاش",
+      "description": "توليد هاش MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "مولد UUID",
+      "description": "توليد معرفات فريدة عالمياً عشوائية فوراً"
+    },
+    "css-minifier": {
+      "name": "ضواغط CSS",
+      "description": "تصغير وتحسين كود CSS الخاص بك"
+    },
+    "markdown-editor": {
+      "name": "معاينة Markdown",
+      "description": "محرر ومعاين Markdown في الوقت الفعلي"
+    },
+    "color-converter": {
+      "name": "محول الألوان",
+      "description": "التحويل بين Hex و RGB و HSL و CMYK"
+    },
+    "timestamp-converter": {
+      "name": "أداة الطابع الزمني",
+      "description": "تحويل طوابع Unix الزمنية إلى تواريخ بشرية"
+    },
+    "sql-formatter": {
+      "name": "منسق SQL",
+      "description": "تنسيق وتجميل استعلامات SQL"
+    },
+    "password-generator": {
+      "name": "مولد كلمات المرور",
+      "description": "إنشاء كلمات مرور آمنة وعشوائية"
+    },
+    "lorem-ipsum": {
+      "name": "نص لوريم إيبسوم",
+      "description": "توليد نص نائب للتصاميم"
+    },
+    "image-base64": {
+      "name": "صورة إلى Base64",
+      "description": "تحويل الصور إلى سلاسل Base64"
+    },
+    "qr-generator": {
+      "name": "مولد رمز الاستجابة السريعة",
+      "description": "توليد رموز QR للروابط والنصوص"
+    },
+    "word-counter": {
+      "name": "عداد الكلمات",
+      "description": "حساب الكلمات والأحرف ووقت القراءة"
+    },
+    "case-converter": {
+      "name": "محول حالة الأحرف",
+      "description": "التحويل بين Camel و Snake و Kebab و Pascal"
+    },
+    "text-diff": {
+      "name": "فاحص فرق النصوص",
+      "description": "مقارنة نصين وإيجاد الاختلافات"
+    },
+    "slug-generator": {
+      "name": "مولد الرابط المختصر",
+      "description": "توليد روابط URL صديقة لمحركات البحث"
+    },
+    "gradient-generator": {
+      "name": "مولد التدرج اللوني",
+      "description": "إنشاء تدرجات CSS جميلة"
+    },
+    "image-compressor": {
+      "name": "ضاغط الصور",
+      "description": "ضغط الصور محلياً وبخصوصية"
+    },
+    "device-info": {
+      "name": "معلومات الجهاز",
+      "description": "عرض معلومات الشاشة والمتصفح والنظام"
+    },
+    "random-generator": {
+      "name": "مولد عشوائي",
+      "description": "اختيار أرقام وعملات وعناصر قائمة"
+    },
+    "unit-converter": {
+      "name": "محول الوحدات",
+      "description": "تحويل الطول والوزن ودرجة الحرارة"
+    },
+    "pomodoro-timer": {
+      "name": "مؤقت بومودورو",
+      "description": "مؤقت تركيز للإنتاجية"
+    },
+    "yt-thumbnail": {
+      "name": "محمل الصور المصغرة",
+      "description": "الحصول على صور مصغرة لمقاطع فيديو يوتيوب"
+    },
+    "my-ip": {
+      "name": "ما هو عنوان IP الخاص بي",
+      "description": "عرض IP العام ومعلومات الشبكة"
+    },
+    "keycode-info": {
+      "name": "معلومات كود المفتاح",
+      "description": "مصحح أحداث لوحة المفاتيح JavaScript"
+    },
+    "signature-generator": {
+      "name": "مولد التوقيع",
+      "description": "رسم وتحميل التواقيع الرقمية"
+    },
+    "screen-recorder": {
+      "name": "مسجل الشاشة",
+      "description": "تسجيل الشاشة وتحميل الفيديو"
+    },
+    "credit-card-validator": {
+      "name": "مدقق البطاقات",
+      "description": "التحقق من أرقام بطاقات الائتمان"
+    },
+    "password-manager": {
+      "name": "مدير كلمات المرور المحلي",
+      "description": "تخزين كلمات المرور محلياً بأمان مع التشفير"
+    },
+    "deep-link-tester": {
+      "name": "مختبر الروابط العميقة",
+      "description": "اختبار وإطلاق وإدارة الروابط العميقة للجوال"
+    },
+    "image-converter": {
+      "name": "محول الصور",
+      "description": "تحويل PNG/JPG إلى WebP محلياً لتحسين الصور"
+    },
+    "json-converter": {
+      "name": "جيسون <> CSV",
+      "description": "تحويل JSON إلى CSV والعكس"
+    },
+    "bmi-calculator": {
+      "name": "حاسبة مؤشر كتلة الجسم",
+      "description": "حساب مؤشر كتلة الجسم (BMI)"
+    },
+    "dns-lookup": {
+      "name": "بحث DNS",
+      "description": "استعلام سجلات DNS (A, MX, NS) فوراً"
+    },
+    "age-calculator": {
+      "name": "حاسبة العمر",
+      "description": "حساب العمر الدقيق ومجموع الأيام"
+    },
+    "loan-calculator": {
+      "name": "حاسبة القروض",
+      "description": "حساب القسط الشهري ومجموع الفائدة"
+    },
+    "discount-calculator": {
+      "name": "حاسبة الخصم",
+      "description": "حساب سعر البيع والتوفير"
+    },
+    "interest-calculator": {
+      "name": "حاسبة الفائدة",
+      "description": "حاسبة الفائدة البسيطة والمركبة"
+    },
+    "html-encoder": {
+      "name": "مشفر/فك مشفر HTML",
+      "description": "تشفير الرموز الخاصة أو فك تشفير HTML"
+    },
+    "list-sorter": {
+      "name": "فرز القوائم",
+      "description": "فرز وعكس وخلط وإزالة التكرار من القوائم"
+    },
+    "box-shadow": {
+      "name": "مولد ظل الصندوق",
+      "description": "إنشاء ظلال CSS بصرياً"
+    },
+    "date-diff": {
+      "name": "فرق التاريخ",
+      "description": "حساب المدة بين تاريخين"
+    },
+    "sql-to-json": {
+      "name": "SQL إلى JSON",
+      "description": "تحويل جمل INSERT SQL إلى كائنات JSON"
+    },
+    "keyword-density": {
+      "name": "كثافة الكلمات المفتاحية",
+      "description": "تحليل تكرار الكلمات المفتاحية لتحسين محركات البحث"
+    },
+    "json-diff": {
+      "name": "مقارنة JSON",
+      "description": "مقارنة كائني JSON جنباً إلى جنب"
+    },
+    "cipher-tools": {
+      "name": "أدوات التشفير",
+      "description": "تشفير وفك تشفير ROT13 و Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "مولد الرموز العشوائية",
+      "description": "توليد رموز عشوائية آمنة"
+    },
+    "favicon-generator": {
+      "name": "مولد أيقونة المفضلة",
+      "description": "إنشاء أيقونات .ico و PNG"
+    },
+    "robots-generator": {
+      "name": "مولد Robots.txt",
+      "description": "إنشاء robots.txt لمحركات البحث"
+    },
+    "grid-generator": {
+      "name": "مولد شبكة CSS",
+      "description": "بناء تخطيط شبكة CSS بصرياً"
+    },
+    "hmac-generator": {
+      "name": "مولد HMAC",
+      "description": "توليد رموز مصادقة الرسائل المستندة إلى الهاش"
+    },
+    "http-status": {
+      "name": "رموز حالة HTTP",
+      "description": "قائمة مرجعية لرموز حالة HTTP"
+    },
+    "week-number": {
+      "name": "رقم الأسبوع",
+      "description": "رقم الأسبوع الحالي وتقدم السنة"
+    },
+    "text-tools": {
+      "name": "محول النصوص",
+      "description": "عكس وقلب وتشفير النصوص"
+    },
+    "url-parser": {
+      "name": "محلل الروابط",
+      "description": "تقسيم الروابط إلى بروتوكول ومضيف ومسار ومعلمات"
+    },
+    "markdown-table": {
+      "name": "مولد جداول Markdown",
+      "description": "إنشاء جداول Markdown بصرياً"
+    },
+    "whatsapp-link": {
+      "name": "مولد رابط واتساب",
+      "description": "إنشاء روابط محادثة واتساب مباشرة"
+    },
+    "paypal-link": {
+      "name": "مولد رابط PayPal",
+      "description": "إنشاء روابط دفع PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG إلى PNG",
+      "description": "تحويل كود/ملف SVG إلى صورة PNG"
+    },
+    "prime-factors": {
+      "name": "العوامل الأولية",
+      "description": "إيجاد العوامل الأولية لرقم"
+    },
+    "iban-validator": {
+      "name": "مدقق IBAN",
+      "description": "التحقق من أرقام الحسابات البنكية الدولية"
+    },
+    "ascii-converter": {
+      "name": "محول ASCII",
+      "description": "تحويل النص إلى رموز ASCII العشرية"
+    },
+    "utm-builder": {
+      "name": "باني UTM",
+      "description": "بناء روابط حملات Google Analytics"
+    },
+    "meta-tags": {
+      "name": "مولد وسوم Meta",
+      "description": "توليد وسوم Meta SEO للمواقع"
+    },
+    "og-generator": {
+      "name": "مولد Open Graph",
+      "description": "إنشاء وسوم Open Graph للمشاركة الاجتماعية"
+    },
+    "twitter-card": {
+      "name": "مولد بطاقة تويتر",
+      "description": "إنشاء وسوم بطاقة تويتر"
+    },
+    "aspect-ratio": {
+      "name": "حاسبة نسبة العرض إلى الارتفاع",
+      "description": "حساب نسب العرض إلى الارتفاع والأبعاد"
+    },
+    "css-cursor": {
+      "name": "مؤشر CSS",
+      "description": "مرجع مرئي لخصائص مؤشر CSS"
+    },
+    "css-triangle": {
+      "name": "مولد مثلث CSS",
+      "description": "توليد مثلثات CSS نقية"
+    },
+    "percentage-calculator": {
+      "name": "حاسبة النسبة المئوية",
+      "description": "حساب النسب المئوية والتغييرات"
+    },
+    "vat-calculator": {
+      "name": "حاسبة ضريبة القيمة المضافة",
+      "description": "حساب مبالغ إضافة/إزالة الضريبة"
+    },
+    "stopwatch": {
+      "name": "ساعة إيقاف",
+      "description": "ساعة إيقاف بسيطة في المتصفح"
+    },
+    "text-to-speech": {
+      "name": "تحويل النص إلى كلام",
+      "description": "تحويل النص إلى صوت منطوق"
+    },
+    "speech-to-text": {
+      "name": "تحويل الكلام إلى نص",
+      "description": "تحويل الصوت المنطوق إلى نص"
+    },
+    "vibration-tester": {
+      "name": "مختبر الاهتزاز",
+      "description": "اختبار محرك اهتزاز الجهاز"
+    },
+    "chmod-calculator": {
+      "name": "حاسبة Chmod",
+      "description": "حساب أذونات ملفات Linux"
+    },
+    "crontab-generator": {
+      "name": "مولد Crontab",
+      "description": "توليد تعبيرات جدول cron"
+    },
+    "htpasswd-generator": {
+      "name": "مولد Htpasswd",
+      "description": "توليد مدخلات المصادقة الأساسية"
+    },
+    "subnet-calculator": {
+      "name": "حاسبة الشبكات الفرعية",
+      "description": "حساب الشبكات الفرعية ونطاقات IP"
+    },
+    "mac-generator": {
+      "name": "مولد عناوين MAC",
+      "description": "توليد عناوين MAC عشوائية"
+    },
+    "timezone-converter": {
+      "name": "محول المناطق الزمنية",
+      "description": "تحويل الوقت بين مناطق متعددة"
+    },
+    "email-validator": {
+      "name": "مدقق البريد الإلكتروني",
+      "description": "التحقق من تنسيق البريد الإلكتروني واكتشاف الأخطاء المطبعية"
+    },
+    "password-strength": {
+      "name": "قوة كلمة المرور",
+      "description": "فحص درجة قوة كلمة المرور"
+    },
+    "roman-numerals": {
+      "name": "محول الأرقام الرومانية",
+      "description": "التحويل بين الأرقام الرومانية والعشرية"
+    },
+    "margin-calculator": {
+      "name": "حاسبة الهامش",
+      "description": "حساب هامش الربح والزيادة"
+    },
+    "roi-calculator": {
+      "name": "حاسبة العائد على الاستثمار",
+      "description": "حساب العائد على الاستثمار"
+    },
+    "fuel-calculator": {
+      "name": "حاسبة تكلفة الوقود",
+      "description": "حساب تكلفة وقود الرحلة"
+    },
+    "pretty-print-url": {
+      "name": "تجميل رابط URL",
+      "description": "تنسيق وتجميل الروابط لسهولة القراءة"
+    }
+  },
+  "Terms": {
+    "title": "شروط الخدمة",
+    "lastUpdated": "آخر تحديث",
+    "sections": {
+      "acceptance": {
+        "title": "1. قبول الشروط",
+        "content": "من خلال الوصول إلى واستخدام DailyDevTools، فإنك تقبل وتوافق على الالتزام بشروط وأحكام هذه الاتفاقية."
+      },
+      "useLicense": {
+        "title": "2. ترخيص الاستخدام",
+        "content": "DailyDevTools مجاني للاستخدام للأغراض الشخصية والتجارية. لا يجوز لك:",
+        "list": {
+          "0": "محاولة الهندسة العكسية أو استخراج أجزاء كبيرة من الموقع.",
+          "1": "استخدام الموقع بأي طريقة تسبب، أو قد تسبب، ضرراً للموقع أو إضعافاً لتوفر أو إمكانية الوصول إلى الموقع."
+        }
+      },
+      "disclaimer": {
+        "title": "3. إخلاء المسؤولية",
+        "content": "يتم توفير الأدوات على DailyDevTools \"كما هي\". لا نقدم أي ضمانات، صريحة أو ضمنية..."
+      },
+      "limitations": {
+        "title": "4. القيود",
+        "content": "لا تتحمل DailyDevTools أو موردوها بأي حال من الأحوال المسؤولية عن أي أضرار..."
+      },
+      "revisions": {
+        "title": "5. المراجعات",
+        "content": "قد تتضمن المواد التي تظهر على DailyDevTools أخطاء فنية أو مطبعية أو فوتوغرافية..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "سياسة الخصوصية",
+    "lastUpdated": "آخر تحديث",
+    "intro": "مرحباً بك في DailyDevTools. نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. كيف تعمل أدواتنا (المعالجة المحلية)",
+        "content": "الأهم من ذلك: الأدوات تعمل بالكامل في متصفحك. البيانات لا تغادر جهازك أبداً."
+      },
+      "dataCollection": {
+        "title": "3. البيانات التي نجمعها",
+        "content": "نحن لا نجمع المحتوى. نستخدم Google Analytics لإحصائيات الاستخدام."
+      },
+      "cookies": {
+        "title": "4. ملفات تعريف الارتباط (Cookies)",
+        "content": "نحن نستخدم ملفات تعريف الارتباط للتحليلات والتفضيلات المحلية."
+      },
+      "thirdParty": {
+        "title": "5. روابط الطرف الثالث",
+        "content": "قد يحتوي موقعنا على روابط لأطراف ثالثة."
+      },
+      "changes": {
+        "title": "6. تغييرات هذه السياسة",
+        "content": "قد نقوم بتحديث هذه السياسة من وقت لآخر."
+      },
+      "contact": {
+        "title": "7. اتصل بنا",
+        "content": "اتصل بنا عبر GitHub أو وسائل التواصل الاجتماعي."
+      }
+    }
+  },
+  "Blog": {
+    "title": "موارد المطورين",
+    "subtitle": "غوص عميق في الأدوات التي نبنيها والمفاهيم الكامنة وراءها.",
+    "readMore": "اقرأ المزيد",
+    "backToBlog": "العودة للمدونة",
+    "enjoyedArticle": "استمتعت بهذا المقال؟",
+    "checkTools": "تحقق من أدواتنا"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "إدخال",
+      "output": "إخراج",
+      "format": "تنسيق",
+      "minify": "تصغير",
+      "download": "تحميل",
+      "copy": "نسخ",
+      "paste": "لصق",
+      "copied": "تم النسخ!",
+      "upload": "رفع",
+      "sample": "نموذج",
+      "clear": "مسح",
+      "indent": "إزاحة:",
+      "chars": "أحرف",
+      "error": "خطأ",
+      "invalid": "إدخال غير صالح",
+      "result": "النتيجة",
+      "generate": "توليد",
+      "calculate": "حساب",
+      "convert": "تحويل",
+      "validate": "تحقق",
+      "resultPlaceholder": "ستظهر النتيجة هنا..."
+    },
+    "Base64Encoder": {
+      "encode": "تشفير",
+      "decode": "فك تشفير",
+      "textToEncode": "نص للتشفير",
+      "base64ToDecode": "Base64 لفك التشفير",
+      "enterText": "أدخل النص للتشفير...",
+      "enterBase64": "أدخل Base64 لفك التشفير...",
+      "encodeAction": "تشفير إلى Base64",
+      "decodeAction": "فك تشفير من Base64",
+      "base64Output": "مخرج Base64",
+      "decodedText": "النص المفكوك",
+      "resultPlaceholder": "ستظهر النتيجة هنا...",
+      "invalidInput": "إدخال غير صالح لـ {mode}"
+    },
+    "QrGenerator": {
+      "content": "المحتوى",
+      "placeholder": "https://example.com",
+      "customization": "تخصيص",
+      "foreground": "المقدمة",
+      "background": "الخلفية",
+      "download": "تحميل"
+    },
+    "HashGenerator": {
+      "inputText": "نص الإدخال",
+      "placeholder": "أدخل النص للهاش...",
+      "waiting": "في انتظار الإدخال..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "توليد جديد",
+      "configuration": "الإعدادات",
+      "length": "طول كلمة المرور",
+      "uppercase": "أحرف كبيرة (A-Z)",
+      "numbers": "أرقام (0-9)",
+      "symbols": "رموز (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "الصق JSON هنا...",
+      "outputPlaceholder": "سيظهر JSON المنسق هنا...",
+      "spaces": "مسافات"
+    },
+    "UrlEncoder": {
+      "encode": "تشفير",
+      "decode": "فك تشفير",
+      "urlToEncode": "رابط للتشفير",
+      "encodedUrlToDecode": "رابط مشفر لفك التشفير",
+      "enterUrlToEncode": "أدخل الرابط أو النص للتشفير...",
+      "enterUrlToDecode": "أدخل الرابط المشفر لفك التشفير...",
+      "encodeAction": "تشفير الرابط",
+      "decodeAction": "فك تشفير الرابط",
+      "encodedUrl": "الرابط المشفر",
+      "decodedUrl": "الرابط المفكوك",
+      "resultPlaceholder": "ستظهر النتيجة هنا...",
+      "chars": "أحرف",
+      "invalidInput": "إدخال غير صالح لـ {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "الصق رمز JWT الخاص بك",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "فك تشفير JWT",
+      "header": "الرأس (HEADER)",
+      "payload": "الحمولة (PAYLOAD)",
+      "issued": "صدر في",
+      "expires": "ينتهي في"
+    },
+    "RegexTester": {
+      "expression": "تعبير",
+      "expressionPlaceholder": "مجموعة التقاط (abc)...",
+      "testString": "نص الاختبار",
+      "testStringPlaceholder": "الصق نص الاختبار هنا...",
+      "matchHighlights": "تمييز التطابقات",
+      "matches": "تطابقات",
+      "matchInfo": "معلومات التطابق",
+      "match": "تطابق",
+      "index": "فهرس",
+      "group": "مجموعة",
+      "noMatches": "لم يتم العثور على تطابقات",
+      "highlightPlaceholder": "ستظهر التطابقات المميزة هنا...",
+      "flagsHelp": "g: عالمي، i: تجاهل الحالة، m: متعدد الأسطر"
+    },
+    "UuidGenerator": {
+      "generate": "توليد",
+      "generateCount": "توليد:",
+      "copyAll": "نسخ الكل",
+      "copyUuid": "نسخ UUID",
+      "generatedAt": "تم التوليد محلياً في {time} • إصدار 4 UUIDs"
+    },
+    "WordCounter": {
+      "words": "كلمات",
+      "characters": "أحرف",
+      "sentences": "جمل",
+      "paragraphs": "فقرات",
+      "readingTime": "وقت القراءة",
+      "min": "دقيقة",
+      "textInput": "إدخال النص",
+      "inputPlaceholder": "ابدأ بالكتابة أو الصق نصك هنا للتحليل...",
+      "clear": "مسح"
+    },
+    "TimestampConverter": {
+      "timestamp": "الطابع الزمني",
+      "humanDate": "تاريخ بشري",
+      "convert": "تحويل",
+      "currentTimestamp": "الطابع الزمني الحالي",
+      "inputPlaceholder": "أدخل طابع Unix الزمني..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "الصق استعلام SQL هنا...",
+      "outputPlaceholder": "سيظهر SQL المنسق هنا..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "الصق كود CSS هنا...",
+      "outputPlaceholder": "سيظهر CSS المصغر هنا..."
+    },
+    "MarkdownEditor": {
+      "editor": "المحرر",
+      "preview": "المعاينة",
+      "inputPlaceholder": "أدخل Markdown هنا..."
+    },
+    "TextDiff": {
+      "original": "النص الأصلي",
+      "changed": "النص المتغير",
+      "compare": "مقارنة",
+      "differences": "الاختلافات"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "أدخل النص للتحويل...",
+      "generatedSlug": "الرابط المختصر المولد"
+    },
+    "ImageCompressor": {
+      "selectImage": "اختر صورة",
+      "quality": "الجودة",
+      "compress": "ضغط",
+      "download": "تحميل",
+      "originalSize": "الحجم الأصلي",
+      "compressedSize": "الحجم المضغوط"
+    },
+    "LoremIpsum": {
+      "paragraphs": "فقرات",
+      "generate": "توليد",
+      "copy": "نسخ"
+    },
+    "GradientGenerator": {
+      "angle": "الزاوية",
+      "colors": "الألوان",
+      "addColor": "إضافة لون",
+      "copyCss": "نسخ CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "تاريخ الميلاد",
+      "calculate": "حساب",
+      "years": "سنوات",
+      "months": "أشهر",
+      "days": "أيام",
+      "totalDays": "مجموع الأيام",
+      "nextBirthday": "عيد الميلاد القادم في"
+    },
+    "AsciiConverter": {
+      "text": "نص",
+      "ascii": "ASCII",
+      "convert": "تحويل",
+      "inputPlaceholder": "أدخل النص..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "أفقي (X)",
+      "vertical": "رأسي (Y)",
+      "blur": "تمويه",
+      "spread": "انتشار",
+      "colorOpacity": "اللون والشفافية",
+      "inset": "داخلي"
+    },
+    "BmiCalculator": {
+      "metric": "متري (كغ/سم)",
+      "imperial": "إمبراطوري (باوند/بوصة)",
+      "weight": "الوزن",
+      "height": "الطول",
+      "calculate": "حساب BMI",
+      "bmiScore": "نتيجتك في مؤشر كتلة الجسم",
+      "underweight": "نقص الوزن",
+      "normal": "وزن طبيعي",
+      "overweight": "زيادة الوزن",
+      "obese": "سمنة"
+    },
+    "CaseConverter": {
+      "inputText": "نص الإدخال",
+      "inputPlaceholder": "اكتب نصك هنا...",
+      "upper": "أحرف كبيرة",
+      "lower": "أحرف صغيرة",
+      "title": "حالة العنوان",
+      "sentence": "حالة الجملة",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "نسخ",
+      "conversions": "التحويلات",
+      "clear": "مسح"
+    },
+    "ColorConverter": {
+      "hexLabels": "لون HEX",
+      "rgbLabels": "لون RGB",
+      "hslLabels": "لون HSL",
+      "cmykLabels": "لون CMYK",
+      "copy": "نسخ",
+      "hexToRgbNote": "* يدعم حالياً تحويل HEX إلى RGB/HSL فقط."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "رقم البطاقة",
+      "validate": "تحقق",
+      "valid": "رقم بطاقة ائتمان صالح",
+      "invalid": "رقم بطاقة ائتمان غير صالح",
+      "placeholder": "أدخل رقم البطاقة...",
+      "type": "نوع البطاقة",
+      "checkDigit": "الرقم المدقق",
+      "luhnValid": "صالح بخوارزمية Luhn"
+    },
+    "CipherTools": {
+      "encode": "تشفير",
+      "decode": "فك تشفير",
+      "rot13": "ROT13",
+      "caesar": "شيفرة قيصر",
+      "shift": "إزاحة",
+      "inputPlaceholder": "مرحبا بالعالم",
+      "outputPlaceholder": "ستظهر النتيجة هنا..."
+    },
+    "CronGenerator": {
+      "minute": "دقيقة",
+      "hour": "ساعة",
+      "dayMonth": "يوم (شهر)",
+      "month": "شهر",
+      "dayWeek": "يوم (أسبوع)",
+      "presets": "إعدادات شائعة",
+      "everyMinute": "كل دقيقة",
+      "everyHour": "كل ساعة",
+      "everyDayMidnight": "كل يوم عند منتصف الليل",
+      "everySunday": "كل أحد",
+      "everyMonth": "كل شهر",
+      "everyYear": "كل سنة",
+      "formatInfo": "التنسيق: * * * * * (دقيقة ساعة يوم_من_الشهر شهر يوم_من_الأسبوع)",
+      "usageInfo": "استخدم * لـ 'كل'، */n لـ 'كل n'، 1,2,3 لقائمة محددة."
+    },
+    "DateDiff": {
+      "startDate": "تاريخ البدء",
+      "endDate": "تاريخ الانتهاء",
+      "calculate": "حساب",
+      "difference": "الفرق",
+      "years": "سنوات",
+      "months": "أشهر",
+      "days": "أيام",
+      "totalDays": "مجموع الأيام",
+      "totalWeeks": "مجموع الأسابيع",
+      "totalHours": "مجموع الساعات"
+    },
+    "DeepLinkTester": {
+      "testLink": "اختبار الرابط",
+      "savedLinks": "الروابط المحفوظة",
+      "searchPlaceholder": "بحث في الروابط المحفوظة...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "إطلاق",
+      "save": "حفظ",
+      "delete": "حذف",
+      "opens": "يفتح",
+      "scanQr": "امسح باستخدام جهازك المحمول للاختبار",
+      "noSavedLinks": "لا توجد روابط محفوظة.",
+      "enterLabel": "أدخل تسمية لهذا الرابط:",
+      "saved": "تم الحفظ!",
+      "confirmDelete": "حذف هذا الرابط؟"
+    },
+    "DeviceInfo": {
+      "screen": "الشاشة",
+      "browser": "المتصفح",
+      "system": "النظام",
+      "resolution": "الدقة",
+      "colorDepth": "عمق اللون",
+      "userAgent": "وكيل المستخدم",
+      "platform": "المنصة",
+      "language": "اللغة"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "السعر الأصلي",
+      "discountPercent": "الخصم",
+      "additionalDiscount": "خصم إضافي",
+      "calculate": "حساب",
+      "youSave": "أنت توفر",
+      "finalPrice": "السعر النهائي",
+      "salesTax": "ضريبة المبيعات"
+    },
+    "DnsLookup": {
+      "domain": "النطاق",
+      "lookup": "بحث",
+      "recordType": "نوع السجل",
+      "results": "النتائج",
+      "placeholder": "example.com",
+      "status": "الحالة",
+      "time": "الوقت",
+      "server": "الخادم",
+      "answerSection": "قسم الإجابة",
+      "name": "الاسم",
+      "type": "النوع",
+      "ttl": "TTL",
+      "data": "البيانات",
+      "noRecords": "لم يتم العثور على سجلات"
+    },
+    "EmailValidator": {
+      "email": "عنوان البريد الإلكتروني",
+      "validate": "تحقق",
+      "valid": "صالح",
+      "invalid": "غير صالح",
+      "suggestion": "اقتراح",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "رفع صورة",
+      "generate": "توليد",
+      "download": "تحميل",
+      "sizes": "الأحجام"
+    },
+    "FuelCalculator": {
+      "distance": "المسافة",
+      "fuelEfficiency": "كفاءة الوقود",
+      "fuelPrice": "سعر الوقود",
+      "calculate": "حساب",
+      "result": "النتيجة",
+      "totalCost": "التكلفة الإجمالية",
+      "fuelNeeded": "الوقود المطلوب"
+    },
+    "GridGenerator": {
+      "columns": "الأعمدة",
+      "rows": "الصفوف",
+      "gap": "الفجوة",
+      "preview": "المعاينة",
+      "copyCss": "نسخ CSS",
+      "rowGap": "فجوة الصف",
+      "colGap": "فجوة العمود",
+      "options": "خيارات"
+    },
+    "HmacGenerator": {
+      "message": "الرسالة",
+      "secret": "السر",
+      "algorithm": "الخوارزمية",
+      "generate": "توليد",
+      "inputPlaceholder": "نص الإدخال...",
+      "secretPlaceholder": "السر..."
+    },
+    "HtmlEncoder": {
+      "encode": "تشفير",
+      "decode": "فك تشفير",
+      "resultPlaceholder": "ستظهر النتيجة هنا...",
+      "inputPlaceholder": "الصق HTML هنا..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "بحث عن كود (مثال 404) أو اسم...",
+      "code": "الكود",
+      "name": "الاسم",
+      "description": "الوصف"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "تحقق",
+      "valid": "صالح",
+      "invalid": "غير صالح",
+      "placeholder": "أدخل IBAN...",
+      "inputLabel": "أدخل رقم IBAN",
+      "validTitle": "معيار صالح",
+      "invalidTitle": "مجموع تدقيق غير صالح",
+      "validDesc": "تنسيق IBAN ومجموع التدقيق صحيحان.",
+      "invalidDesc": "IBAN لا يتطابق مع خوارزمية مجموع التدقيق."
+    },
+    "ImageBase64": {
+      "upload": "رفع",
+      "convert": "تحويل",
+      "copy": "نسخ",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "رفع صورة",
+      "convertToBase64": "تحويل لـ Base64",
+      "convertToImage": "تحويل لصورة",
+      "base64String": "سلسلة Base64",
+      "download": "تحميل"
+    },
+    "ImageConverter": {
+      "selectImage": "اختر صورة",
+      "format": "التنسيق",
+      "convert": "تحويل",
+      "download": "تحميل",
+      "quality": "الجودة"
+    },
+    "InterestCalculator": {
+      "principal": "أصل المبلغ",
+      "rate": "نسبة الفائدة",
+      "time": "المدة الزمنية (سنوات)",
+      "calculate": "حساب",
+      "simpleInterest": "بسيطة",
+      "compoundInterest": "مركبة",
+      "totalAmount": "القيمة الإجمالية",
+      "type": "النوع",
+      "frequency": "تكرار التركيب",
+      "annually": "سنوياً",
+      "monthly": "شهرياً",
+      "daily": "يومياً",
+      "year": "سنة"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "أدخل JSON...",
+      "convert": "تحويل",
+      "format": "تنسيق",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON إلى CSV",
+      "csvToJson": "CSV إلى JSON",
+      "jsonInput": "إدخال JSON",
+      "csvInput": "إدخال CSV",
+      "jsonOutput": "مخرج JSON",
+      "csvOutput": "مخرج CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON الأصلي",
+      "modified": "JSON المعدل",
+      "compare": "مقارنة",
+      "differences": "الاختلافات"
+    },
+    "KeycodeInfo": {
+      "pressKey": "اضغط أي مفتاح",
+      "key": "المفتاح",
+      "code": "الكود",
+      "keyCode": "رمز المفتاح",
+      "which": "أيّ",
+      "location": "الموقع",
+      "modifiers": "المعدلات",
+      "standard": "قياسي",
+      "left": "يسار",
+      "right": "يمين",
+      "numpad": "لوحة الأرقام",
+      "space": "(مسافة)",
+      "info": "عرض JavaScript event KeyCode و Code والمزيد."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "الصق النص هنا لتحليل تكرار الكلمات...",
+      "analyze": "تحليل",
+      "keyword": "الكلمة المفتاحية",
+      "count": "العدد",
+      "density": "الكثافة"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "أدخل قائمتك هنا...",
+      "sort": "فرز",
+      "reverse": "عكس",
+      "shuffle": "خلط",
+      "deduplicate": "إزالة التكرار",
+      "ascending": "تصاعدي",
+      "descending": "تنازلي",
+      "length": "الطول",
+      "trim": "قص الفراغات",
+      "lines": "الأسطر:",
+      "chars": "الأحرف:"
+    },
+    "LoanCalculator": {
+      "principal": "أصل المبلغ",
+      "interestRate": "نسبة الفائدة",
+      "term": "المدة",
+      "calculate": "حساب",
+      "monthlyPayment": "القسط الشهري",
+      "totalInterest": "مجموع الفائدة",
+      "totalPayment": "إجمالي المدفوعات",
+      "loanDetails": "تفاصيل القرض",
+      "loanAmount": "مبلغ القرض",
+      "loanTerm": "مدة القرض",
+      "years": "سنوات",
+      "months": "أشهر",
+      "interest": "الفائدة"
+    },
+    "MacGenerator": {
+      "generate": "توليد",
+      "copy": "نسخ",
+      "separator": "الفواصل",
+      "format": "التنسيق",
+      "quantity": "الكمية",
+      "uppercase": "أحرف كبيرة"
+    },
+    "MarginCalculator": {
+      "cost": "التكلفة",
+      "price": "سعر البيع",
+      "calculate": "حساب",
+      "margin": "الهامش",
+      "markup": "الزيادة (Markup)",
+      "profit": "الربح",
+      "revenue": "الإيرادات",
+      "netProfit": "صافي الربح",
+      "grossMargin": "إجمالي الهامش"
+    },
+    "PasswordManager": {
+      "masterPassword": "كلمة المرور الرئيسية",
+      "unlock": "فتح",
+      "searchPlaceholder": "بحث في الحسابات...",
+      "addNew": "إضافة جديد",
+      "siteName": "اسم الموقع",
+      "username": "اسم المستخدم",
+      "password": "كلمة المرور",
+      "save": "حفظ",
+      "delete": "حذف"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "اكتب هنا...",
+      "strength": "القوة",
+      "weak": "ضعيف",
+      "fair": "مقبول",
+      "good": "جيد",
+      "strong": "قوي",
+      "requirements": "المتطلبات",
+      "length": "8+ أحرف",
+      "number": "يتضمن رقماً",
+      "uppercase": "يتضمن حرفاً كبيراً",
+      "symbol": "يتضمن رمزاً"
+    },
+    "PayPalLink": {
+      "username": "اسم المستخدم PayPal.me",
+      "amount": "المبلغ",
+      "currency": "العملة",
+      "generate": "توليد",
+      "itemName": "اسم العنصر",
+      "link": "الرابط",
+      "yourLink": "رابط PayPal الخاص بك",
+      "openPaypal": "فتح PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "القواعد",
+      "addRule": "إضافة قاعدة",
+      "allow": "سماح",
+      "disallow": "منع",
+      "sitemap": "رابط خريطة الموقع (اختياري)",
+      "output": "ملف robots.txt المولد"
+    },
+    "PercentageCalculator": {
+      "value": "القيمة",
+      "percentage": "النسبة المئوية",
+      "calculate": "حساب",
+      "result": "النتيجة",
+      "whatIs": "ما هو",
+      "of": "% من",
+      "isWhatPercentOf": "يشكل أي نسبة % من",
+      "percentChangeFrom": "نسبة التغير من",
+      "to": "إلى"
+    },
+    "PomodoroTimer": {
+      "work": "وقت التركيز",
+      "shortBreak": "استراحة قصيرة",
+      "longBreak": "استراحة طويلة",
+      "start": "بدء",
+      "pause": "إيقاف مؤقت",
+      "reset": "إعادة تعيين",
+      "minutes": "دقيقة"
+    },
+    "PrimeFactors": {
+      "number": "الرقم",
+      "calculate": "حساب",
+      "factors": "العوامل الأولية",
+      "inputLabel": "أدخل رقماً",
+      "placeholder": "مثال 120",
+      "isPrime": "هذا الرقم أولي!",
+      "isComposite": "هذا الرقم مركب"
+    },
+    "RoiCalculator": {
+      "investment": "الاستثمار",
+      "returns": "العوائد",
+      "calculate": "حساب",
+      "roi": "ROI",
+      "profit": "الربح",
+      "finalValue": "القيمة النهائية",
+      "time": "الوقت (سنوات)",
+      "totalGain": "إجمالي الربح",
+      "annualizedRoi": "عائد الاستثمار السنوي"
+    },
+    "RomanNumerals": {
+      "decimal": "عشري",
+      "decimalPlaceholder": "2024",
+      "roman": "روماني",
+      "convert": "تحويل",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "بدء التسجيل",
+      "stopRecording": "إيقاف التسجيل",
+      "download": "تحميل",
+      "recording": "جار التسجيل..."
+    },
+    "SignatureGenerator": {
+      "draw": "ارسم",
+      "clear": "مسح",
+      "download": "تحميل",
+      "penColor": "لون القلم",
+      "penSize": "حجم القلم"
+    },
+    "SpeechToText": {
+      "startListening": "بدء الاستماع",
+      "stopListening": "إيقاف الاستماع",
+      "transcript": "النص المفرغ",
+      "placeholder": "سيظهر النص المفرغ هنا..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "أدخل في المستخدمين (المعرف، الاسم، العمر) القيم (1، \"جون\"، 30)؛",
+      "convert": "تحويل",
+      "result": "النتيجة"
+    },
+    "Stopwatch": {
+      "start": "بدء",
+      "stop": "إيقاف",
+      "reset": "إعادة تعيين",
+      "lap": "دورة"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "عنوان IP",
+      "subnetMask": "قناع الشبكة الفرعية",
+      "calculate": "حساب",
+      "networkAddress": "عنوان الشبكة",
+      "broadcastAddress": "عنوان البث",
+      "usableHosts": "المضيفين القابلين للاستخدام"
+    },
+    "SvgToPng": {
+      "pasteSvg": "الصق SVG",
+      "uploadSvg": "رفع SVG",
+      "convert": "تحويل",
+      "download": "تحميل"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "أدخل النص للتحدث...",
+      "speak": "تحدث",
+      "stop": "إيقاف",
+      "voice": "الصوت",
+      "rate": "السرعة",
+      "pitch": "النبرة"
+    },
+    "TextTools": {
+      "inputPlaceholder": "اكتب شيئاً...",
+      "reverse": "عكس",
+      "uppercase": "أحرف كبيرة",
+      "lowercase": "أحرف صغيرة",
+      "encode": "تشفير"
+    },
+    "TimezoneConverter": {
+      "from": "من",
+      "to": "إلى",
+      "convert": "تحويل",
+      "currentTime": "الوقت الحالي"
+    },
+    "TokenGenerator": {
+      "length": "الطول",
+      "generate": "توليد",
+      "copy": "نسخ",
+      "includeNumbers": "تضمين أرقام",
+      "includeSymbols": "تضمين رموز"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "أدخل الرابط...",
+      "parse": "تحليل",
+      "protocol": "البروتوكول",
+      "host": "المضيف",
+      "path": "المسار",
+      "query": "الاستعلام"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "رابط الموقع",
+      "source": "المصدر",
+      "medium": "الوسط",
+      "campaign": "الحملة",
+      "generate": "توليد",
+      "copy": "نسخ"
+    },
+    "VatCalculator": {
+      "amount": "المبلغ",
+      "vatRate": "نسبة الضريبة",
+      "addVat": "إضافة الضريبة",
+      "removeVat": "إزالة الضريبة",
+      "calculate": "حساب"
+    },
+    "VibrationTester": {
+      "vibrate": "اهتزاز",
+      "pattern": "نمط",
+      "duration": "المدة",
+      "test": "اختبار"
+    },
+    "WeekNumber": {
+      "currentWeek": "رقم الأسبوع الحالي",
+      "yearProgress": "تقدم السنة",
+      "week": "أسبوع"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "رقم الهاتف",
+      "message": "الرسالة",
+      "generate": "توليد",
+      "copy": "نسخ",
+      "placeholder": "مرحباً، أنا مهتم..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "الصق رابط فيديو يوتيوب...",
+      "getThumbnail": "جلب الصورة المصغرة",
+      "download": "تحميل"
+    },
+    "CrontabGenerator": {
+      "minute": "دقيقة",
+      "hour": "ساعة",
+      "day": "يوم",
+      "month": "شهر",
+      "weekday": "يوم من الأسبوع",
+      "expression": "تعبير",
+      "description": "الوصف"
+    },
+    "ChmodCalculator": {
+      "owner": "المالك",
+      "group": "المجموعة",
+      "others": "الآخرون",
+      "read": "قراءة",
+      "write": "كتابة",
+      "execute": "تنفيذ",
+      "numeric": "رقمي",
+      "symbolic": "رمزي"
+    },
+    "HtpasswdGenerator": {
+      "username": "اسم المستخدم",
+      "password": "كلمة المرور",
+      "algorithm": "الخوارزمية",
+      "generate": "توليد",
+      "copy": "نسخ"
+    },
+    "AspectRatio": {
+      "width": "العرض",
+      "height": "الارتفاع",
+      "ratio": "النسبة",
+      "calculate": "حساب"
+    },
+    "CssClipPath": {
+      "shape": "الشكل",
+      "preview": "معاينة",
+      "copyCss": "نسخ CSS"
+    },
+    "CssCursor": {
+      "cursor": "المؤشر",
+      "preview": "معاينة",
+      "copyCss": "نسخ CSS"
+    },
+    "CssTriangle": {
+      "direction": "الاتجاه",
+      "size": "الحجم",
+      "color": "اللون",
+      "preview": "معاينة",
+      "copyCss": "نسخ CSS"
+    },
+    "MetaGenerator": {
+      "title": "العنوان",
+      "description": "الوصف",
+      "keywords": "الكلمات المفتاحية",
+      "author": "المؤلف",
+      "url": "الرابط",
+      "image": "الصورة",
+      "generate": "توليد",
+      "copy": "نسخ",
+      "titlePlaceholder": "موقعي الرائع",
+      "descriptionPlaceholder": "وصف مختصر لموقعك...",
+      "keywordsPlaceholder": "ويب، أدوات، تطوير",
+      "authorPlaceholder": "اسمك",
+      "outputPlaceholder": "ستظهر وسوم Meta هنا..."
+    },
+    "OgGenerator": {
+      "title": "العنوان",
+      "description": "الوصف",
+      "url": "الرابط",
+      "image": "الصورة",
+      "type": "النوع",
+      "generate": "tوليد",
+      "copy": "نسخ"
+    },
+    "TwitterCard": {
+      "cardType": "نوع البطاقة",
+      "title": "العنوان",
+      "description": "الوصف",
+      "image": "الصورة",
+      "generate": "توليد",
+      "copy": "نسخ"
+    },
+    "MarkdownTable": {
+      "rows": "الصفوف",
+      "columns": "الأعمدة",
+      "header": "الرأس",
+      "addRow": "إضافة صف",
+      "addColumn": "إضافة عمود",
+      "generate": "توليد",
+      "copy": "نسخ"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value",
+      "format": "تنسيق",
+      "copy": "نسخ"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "تنسيق JSON: أفضل الممارسات للمطورين",
+      "excerpt": "تعرف على سبب أهمية تنسيق JSON الصحيح للتصحيح وكيفية أتمتته في سير عملك.",
+      "category": "تطوير"
+    },
+    "mastering-regex": {
+      "title": "إتقان التعابير النمطية: دليل مرئي",
+      "excerpt": "التعابير النمطية ليست مخيفة. نقوم بتفكيك الأنماط الشائعة للتحقق من البريد الإلكتروني والروابط والمزيد.",
+      "category": "دليل تعليمي"
+    },
+    "cron-job-scheduling": {
+      "title": "جدولة مهام Cron: كيفية جدولة المهام",
+      "excerpt": "افهم صيغة النجوم الخمسة لـ Cron وكيفية جدولة النسخ الاحتياطي ورسائل البريد الإلكتروني والبرامج النصية على Linux.",
+      "category": "ديف أوبس"
+    },
+    "secure-password-storage-local": {
+      "title": "لماذا مديري كلمات المرور المحليين أكثر أماناً",
+      "excerpt": "الانتهاكات السحابية شائعة. تعرف على سبب كون تخزين كلمات المرور محلياً باستخدام تشفير AES-256 هو الرهان الأكثر أماناً للأمان الشخصي.",
+      "category": "أمان"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "بحث في الأدوات...",
+    "noResults": "لم يتم العثور على نتائج.",
+    "select": "تحديد",
+    "navigate": "تصفح"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "إرسال تعليق",
+    "feedback": "تعليقات",
+    "thankYou": "شكراً لك!",
+    "feedbackSent": "تم إرسال تعليقك بنجاح.",
+    "close": "إغلاق",
+    "name": "الاسم (اختياري)",
+    "namePlaceholder": "اسمك",
+    "email": "البريد الإلكتروني (اختياري)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "نوع التعليق",
+    "typeSuggestion": "💡 اقتراح",
+    "typeBug": "🐛 تقرير خطأ",
+    "typeFeature": "✨ طلب ميزة",
+    "typeOther": "📝 أخرى",
+    "message": "الرسالة *",
+    "messagePlaceholder": "أخبرنا برأيك...",
+    "sending": "جار الإرسال...",
+    "weReadEveryMessage": "نحن نقرأ كل رسالة. شكراً لمساعدتنا على التحسن!"
+  },
+  "ShareButton": {
+    "shareTool": "مشاركة الأداة",
+    "copiedLink": "تم نسخ الرابط!"
+  },
+  "TextDiff": {
+    "original": "النص الأصلي",
+    "changed": "النص المتغير",
+    "update": "تحديث الفرق",
+    "old": "قديم",
+    "new": "جديد",
+    "content": "المحتوى"
+  },
+  "CrontabGenerator": {
+    "minute": "دقيقة",
+    "hour": "ساعة",
+    "day": "يوم",
+    "month": "شهر",
+    "weekday": "يوم الأسبوع",
+    "min": "دقيقة",
+    "mon": "إثنين",
+    "week": "أسبوع",
+    "presets": "إعدادات سريعة",
+    "everyMinute": "كل دقيقة",
+    "every5Minutes": "كل 5 دقائق",
+    "everyHour": "كل ساعة",
+    "everyDayMidnight": "كل يوم عند منتصف الليل",
+    "everyWeek": "كل أسبوع",
+    "everyMonth": "كل شهر"
+  },
+  "SpeechToText": {
+    "notSupported": "متصفحك لا يدعم Web Speech API. يرجى استخدام Chrome.",
+    "placeholder": "سيظهر النص المفرغ هنا...",
+    "listening": "جار الاستماع...",
+    "start": "انقر على الميكروفون للبدء"
+  },
+  "OgGenerator": {
+    "title": "العنوان",
+    "description": "الوصف",
+    "image": "رابط الصورة",
+    "url": "الرابط الأساسي",
+    "type": "النوع",
+    "website": "موقع",
+    "article": "مقال",
+    "profile": "ملف شخصي",
+    "preview": "معاينة (Facebook/LinkedIn)",
+    "generatedHtml": "HTML المولد",
+    "copy": "نسخ"
+  },
+  "WeekNumber": {
+    "checkLabel": "تحقق من رقم الأسبوع للتاريخ",
+    "yearProgress": "تقدم السنة"
+  },
+  "RelatedTools": {
+    "title": "قد يعجبك أيضاً",
+    "subtitle": "استكشف أدوات مطورين شائعة أخرى",
+    "openTool": "فتح الأداة"
+  },
+  "Breadcrumb": {
+    "home": "الرئيسية",
+    "tools": "الأدوات"
+  },
+  "SvgToPng": {
+    "upload": "رفع ملف SVG",
+    "browse": "أو انقر للتصفح",
+    "paste": "...أو الصق كود SVG",
+    "preview": "معاينة PNG (2x Scale)",
+    "download": "تحميل PNG",
+    "errorType": "يرجى رفع ملف SVG صالح.",
+    "errorRender": "فشل عرض SVG. تأكد من أنه XML صالح.",
+    "errorProcess": "خطأ في معالجة SVG."
+  },
+  "GradientGenerator": {
+    "config": "الإعدادات",
+    "colors": "الألوان",
+    "type": "النوع",
+    "angle": "الزاوية",
+    "random": "عشوائي",
+    "copyCss": "نسخ CSS",
+    "copied": "تم النسخ"
+  },
+  "TimezoneConverter": {
+    "date": "التاريخ",
+    "time": "الوقت (المحلي)",
+    "invalid": "غير صالح",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "نيويورك (EST/EDT)",
+      "losAngeles": "لوس أنجلوس (PST/PDT)",
+      "london": "لندن (GMT/BST)",
+      "paris": "باريس (CET/CEST)",
+      "tokyo": "طوكيو (JST)",
+      "sydney": "سيدني (AEST/AEDT)",
+      "dubai": "دبي (GST)",
+      "india": "الهند (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "مولد الأرقام",
+    "listGen": "مولد القوائم",
+    "coinGen": "مولد العملة",
+    "min": "أدنى",
+    "max": "أقصى",
+    "count": "العدد",
+    "generate": "توليد",
+    "listLabel": "عناصر القائمة (واحد لكل سطر)",
+    "pick": "اختر عنصراً عشوائياً",
+    "winner": "الفائز هو...",
+    "flip": "رمي العملة",
+    "heads": "وجه",
+    "tails": "ظهر"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "جار تسجيل شاشتك...",
+    "titleFree": "مسجل شاشة مجاني عبر الإنترنت",
+    "desc": "التقط شاشتك أو نافذة التطبيق أو علامة تبويب المتصفح. لا علامة مائية، لا حد زمني.",
+    "start": "بدء التسجيل",
+    "stop": "إيقاف التسجيل",
+    "browserSupport": "يعمل بشكل أفضل في Chrome و Edge و Firefox على سطح المكتب."
+  },
+  "CssCursor": {
+    "hoverTest": "مرر هنا للاختبار"
+  },
+  "VatCalculator": {
+    "amount": "المبلغ",
+    "rate": "نسبة الضريبة (%)",
+    "addVat": "إضافة ضريبة",
+    "removeVat": "إزالة ضريبة",
+    "netAmount": "المبلغ الصافي",
+    "vatAmount": "قيمة الضريبة",
+    "grossTotal": "الإجمال الكلي",
+    "netTotal": "صافي الإجمالي",
+    "grossAmount": "المبلغ الإجمالي"
+  },
+  "MyIP": {
+    "ipLabel": "عنوان IP العام الخاص بك",
+    "loading": "جار التحميل...",
+    "isp": "مزود الإنترنت (ISP)",
+    "location": "الموقع",
+    "asn": "ASN",
+    "timezone": "المنطقة الزمنية",
+    "note": "هذا هو عنوان IP المرئي للمواقع التي تزورها. قد يختلف عن IP المحلي إذا كنت تستخدم VPN أو بروكسي."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "أدخل الرابط",
+    "formatted": "المخرج المنسق",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "placeholder": "الصق رابطاً أعلاه لرؤيته منسقاً."
+  },
+  "WhatsAppLink": {
+    "phone": "رقم الهاتف (مع رمز الدولة)",
+    "message": "رسالة معبأة مسبقاً",
+    "hint": "لا تضمن + أو - أو ().",
+    "yourLink": "رابط واتساب الخاص بك",
+    "open": "فتح المحادثة"
+  },
+  "UrlParser": {
+    "enterUrl": "أدخل الرابط",
+    "params": "معلمات الاستعلام",
+    "error": "رابط غير صالح"
+  },
+  "FaviconGenerator": {
+    "upload": "رفع صورة",
+    "browse": "موصى به: 512x512 PNG",
+    "original": "أصلي",
+    "favicon": "favicon.ico (32x32)",
+    "download": "تحميل Favicon.png",
+    "note": "* يولد حالياً 32x32 PNG favicons. أعد التسمية إلى .ico إذا لزم الأمر للدعم القديم."
+  },
+  "SubnetCalculator": {
+    "ip": "عنوان IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "حساب",
+    "subnetMask": "قناع الشبكة الفرعية",
+    "networkAddress": "عنوان الشبكة",
+    "firstHost": "أول مضيف",
+    "lastHost": "آخر مضيف",
+    "broadcastAddress": "عنوان البث",
+    "totalHosts": "إجمالي المضيفين"
+  },
+  "SlugGenerator": {
+    "inputLabel": "أدخل عنوان المقال / النص",
+    "generated": "الرابط المختصر المولد",
+    "copy": "نسخ الرابط"
+  },
+  "SqlToJson": {
+    "inputLabel": "أدخل SQL (جمل INSERT فقط)",
+    "convert": "تحويل لـ JSON",
+    "error": "لم يمكن تحليل SQL. تأكد من أنها جمل INSERT INTO قياسية."
+  },
+  "MarkdownTable": {
+    "addRow": "+ إضافة صف",
+    "addCol": "+ إضافة عمود",
+    "headerPlaceholder": "رأس",
+    "outputLabel": "مخرج Markdown",
+    "copy": "نسخ Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "نوع البطاقة",
+    "siteHandle": "معرف الموقع (مثال @twitter)",
+    "title": "العنوان",
+    "description": "الوصف",
+    "imageUrl": "رابط الصورة",
+    "preview": "معاينة",
+    "generatedHtml": "HTML المولد",
+    "copy": "نسخ",
+    "placeholderTitle": "عنوان البطاقة",
+    "placeholderDesc": "الوصف يذهب هنا..."
+  },
+  "TextToSpeech": {
+    "placeholder": "أدخل النص للتحدث...",
+    "voice": "الصوت",
+    "speed": "السرعة",
+    "pitch": "النبرة",
+    "speak": "تحدث"
+  },
+  "TokenGenerator": {
+    "length": "الطول",
+    "includeNumbers": "تضمين أرقام",
+    "includeSymbols": "تضمين رموز",
+    "generate": "توليد الرمز"
+  },
+  "CssTriangle": {
+    "direction": "الاتجاه",
+    "color": "اللون",
+    "width": "العرض (px)",
+    "height": "الارتفاع (px)",
+    "copy": "نسخ"
+  },
+  "UnitConverter": {
+    "length": "الطول",
+    "weight": "الوزن",
+    "temperature": "درجة الحرارة",
+    "meters": "أمتار",
+    "kilometers": "كيلومترات",
+    "centimeters": "سنتيمترات",
+    "millimeters": "مليمترات",
+    "inches": "بوصات",
+    "feet": "أقدام",
+    "yards": "ياردات",
+    "miles": "أميال",
+    "kilograms": "كيلوجرامات",
+    "grams": "جرامات",
+    "pounds": "باوندات",
+    "ounces": "أوقيات",
+    "celsius": "مئوية",
+    "fahrenheit": "فهرنهايت",
+    "kelvin": "كلفن"
+  },
+  "CssClipPath": {
+    "shapes": "الأشكال",
+    "preview": "معاينة",
+    "cssCode": "كود CSS",
+    "copy": "نسخ",
+    "copied": "تم النسخ"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "رفع صورة",
+    "uploadDesc": "JPG أو PNG أو WebP. نضغطها محلياً.",
+    "selectImage": "اختر صورة",
+    "settings": "إعدادات الضغط",
+    "quality": "الجودة",
+    "originalSize": "الحجم الأصلي",
+    "compressedSize": "الحجم المضغوط",
+    "saving": "توفير",
+    "download": "تحميل"
+  },
+  "HtpasswdGenerator": {
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "algorithm": "الخوارزمية",
+    "generate": "توليد المدخل",
+    "result": "النتيجة",
+    "sha1": "SHA-1 (غير آمن لكنه قياسي)",
+    "notSupported": "يتم دعم SHA-1 فقط في هذا الإصدار من العميل."
+  },
+  "MetaTags": {
+    "pageTitle": "عنوان الصفحة",
+    "description": "الوصف",
+    "author": "المؤلف"
+  },
+  "AgeCalculator": {
+    "dob": "تاريخ الميلاد",
+    "age": "العمر",
+    "years": "سنوات",
+    "months": "أشهر",
+    "days": "أيام",
+    "nextBirthday": "عيد الميلاد القادم"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "رابط الموقع (مطلوب)",
+    "source": "مصدر الحملة (مطلوب)",
+    "medium": "وسط الحملة (مطلوب)",
+    "name": "اسم الحملة (مطلوب)",
+    "term": "مصطلح الحملة (اختياري)",
+    "content": "محتوى الحملة (اختياري)",
+    "generatedUrl": "الرابط المولد",
+    "copy": "نسخ الرابط"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "وقت Unix الحالي",
+    "timestampLabel": "الطابع الزمني (ثواني)",
+    "isoLabel": "تنسيق التاريخ ISO",
+    "utcDate": "تاريخ UTC",
+    "localDate": "التاريخ المحلي",
+    "relative": "نسبي"
+  },
+  "SignatureGenerator": {
+    "color": "اللون",
+    "width": "العرض",
+    "clear": "مسح",
+    "download": "تحميل PNG",
+    "signHere": "وقع هنا",
+    "note": "تتم معالجة التواقيع محلياً في متصفحك. نحن لا نخزنها أو نرفعها."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "معاينة حية"
+  },
+  "CipherTools": {
+    "shiftAmount": "مقدار الإزاحة (N)",
+    "inputText": "نص الإدخال",
+    "outputText": "نص الإخراج",
+    "rot13": "ROT13",
+    "caesar": "قيصر (+3)",
+    "shift1": "إزاحة +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "دقة الشاشة",
+    "browser": "المتصفح",
+    "cpuCores": "نوى المعالج",
+    "battery": "البطارية",
+    "detailedSpecs": "مواصفات مفصلة",
+    "userAgent": "وكيل المستخدم",
+    "platform": "المنصة",
+    "windowSize": "حجم النافذة",
+    "pixelRatio": "نسبة البكسل",
+    "colorDepth": "عمق اللون",
+    "ram": "RAM",
+    "cookiesEnabled": "الكوكيز مفعلة",
+    "onlineStatus": "حالة الاتصال",
+    "unknown": "غير معروف",
+    "yes": "نعم",
+    "no": "لا",
+    "enabled": "مفعل",
+    "disabled": "معطل"
+  },
+  "ChmodCalculator": {
+    "owner": "المالك",
+    "group": "المجموعة",
+    "public": "الجمهور",
+    "read": "قراءة",
+    "write": "كتابة",
+    "execute": "تنفيذ",
+    "numeric": "رقمي",
+    "symbolic": "رمزي"
+  },
+  "PasswordManager": {
+    "title": "مدير كلمات المرور",
+    "desc": "تخزين وإدارة كلمات مرورك محلياً بأمان.",
+    "unlock": "فتح الخزنة",
+    "create": "إنشاء خزنة جديدة",
+    "unlockDesc": "أدخل كلمة المرور الرئيسية للوصول إلى حساباتك.",
+    "createDesc": "عين كلمة مرور رئيسية قوية. تشفر بياناتك محلياً.",
+    "masterPassword": "كلمة المرور الرئيسية",
+    "unlockBtn": "فتح",
+    "createBtn": "إنشاء خزنة",
+    "note": "تخزن البيانات في متصفحك باستخدام تشفير AES-GCM. لا يمكننا استعادة كلمة مرورك إذا فقدتها.",
+    "myPasswords": "كلمات مروري",
+    "addNew": "إضافة جديد",
+    "search": "بحث في الحسابات...",
+    "noPasswords": "لم يتم العثور على كلمات مرور.",
+    "addAccount": "إضافة حساب",
+    "accountTitle": "العنوان / الموقع",
+    "username": "اسم المستخدم / البريد",
+    "password": "كلمة المرور",
+    "url": "الرابط (اختياري)",
+    "save": "حفظ الحساب",
+    "cancel": "إلغاء",
+    "incorrectPassword": "كلمة مرور غير صحيحة أو بيانات تالفة.",
+    "loading": "جار التحميل..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "تفاصيل الموقع",
+    "pageTitle": "عنوان الصفحة",
+    "description": "الوصف",
+    "keywords": "الكلمات المفتاحية (مفصولة بفواصل)",
+    "author": "المؤلف",
+    "socialPreview": "معاينة اجتماعية (OG & Twitter)",
+    "websiteUrl": "رابط الموقع",
+    "previewImage": "رابط صورة المعاينة",
+    "generatedHtml": "HTML المولد",
+    "copy": "نسخ HTML",
+    "copied": "تم النسخ"
+  },
+  "VibrationTester": {
+    "worksOnly": "يعمل فقط على الأجهزة ذات معدات الاهتزاز (مثل الهواتف).",
+    "duration": "المدة (ms)",
+    "vibrateOnce": "اهتزاز مرة واحدة",
+    "pulsePattern": "نمط النبض",
+    "longPulse": "نبض طويل",
+    "stop": "إيقاف"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "لماذا يعد تنسيق JSON مهمًا",
+      "block_2": "JSON (ترميز كائن JavaScript) هي لغة الويب.لكن JSON الخام الذي يتم إرجاعه من واجهات برمجة التطبيقات غالبًا ما يكون عبارة عن فوضى صغيرة.وتنسيقه يجعله قابلاً للقراءة، وقابلاً للتصحيح، وآمنًا.",
+      "block_3": "1.سهولة القراءة هي الملك",
+      "block_4": "عندما تقوم بتصحيح أخطاء استجابة واجهة برمجة التطبيقات المكونة من 5000 سطر، فإن المسافة البادئة تنقذ الأرواح.يستخدم <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline-offset-4 hover:text-[#ea580c]\">منسق JSON</a> مسافات بادئة بمسافتين أو 4 مسافات لتوضيح البنية.",
+      "block_5": "2.التحقق من الصحة",
+      "block_6": "قد تؤدي فاصلة واحدة مفقودة إلى تعطيل تطبيقك.تحقق دائمًا من صحة JSON الخاص بك قبل إلزامه بملفات التكوين.",
+      "block_7": "الاستنتاج",
+      "block_8": "لا تضيع وقتك في فحص الأقواس يدويًا.استخدم الأدوات الآلية."
+    },
+    "mastering-regex": {
+      "block_1": "شرح التعبير العادي",
+      "block_2": "التعبيرات العادية قوية ولكنها مربكة.دعونا نتصورها.",
+      "block_3": "الأنماط الشائعة",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "اختبر هذه الأنماط على الفور باستخدام <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline-offset-4 hover:text-[#ea580c]\">اختبار Regex</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "نجوم كرون الخمس",
+      "block_2": "الدقيقة، الساعة، يوم الشهر، الشهر، يوم الأسبوع.هذا كل ما في الأمر.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * Command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">أمثلة</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">تشغيل كل يوم عند منتصف الليل: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * Command_to_run",
+      "block_5": "أمثلة",
+      "block_6": "تشغيل كل 15 دقيقة: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "هل تحتاج إلى مساعدة؟استخدم <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> لإنشاء التعبيرات بشكل مرئي."
+    },
+    "secure-password-storage-local": {
+      "block_1": "مشكلة الخزائن السحابية",
+      "block_2": "تعرضت LastPass وOkta وغيرهما من الشركات العملاقة للانتهاكات.عندما يكون مخزنك متصلاً بالإنترنت، فهو هدف.",
+      "block_3": "الحل: التشفير المحلي",
+      "block_4": "خطنا <strong class=\"text-[var(--title-color)] الجديد الجديد-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline-offset-4 hover:text-[#ea580c]\">يعمل مدير كلمات المرور المحلي</a></strong> بالكامل في متصفحك.ويستخدم <strong class=\"text-[var(--title-color)]font-semibold\">تشفير AES-GCM 256 بت</strong> المشتق من كلمة المرور الرئيسية باستخدام PBKDF2.",
+      "block_5": "كيفية العمل",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">لا معرفة:</strong> لا نرى كلمة المرور الخاصة بك مطلقًا.فهو لا يغادر جهازك أبدًا.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">التخزين دون اتصال:</strong> يتم تخزين مخزنك المشفر في LocalStorage بالمتصفح الخاص بك.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] الخط-semibold\">قابل للتصدير:</strong> يمكنك تصدير/نسخ بياناتك الأولية المشفرة في أي وقت.</li>",
+      "block_7": "توقف عن الوثوق في السحابة باستخدام مفاتيحك الرئيسية.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">جرب مدير كلمات المرور المحلي</a> اليوم."
+    }
+  }
+}

@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Инструменты",
+    "blog": "Блог",
+    "github": "GitHub",
+    "searchPlaceholder": "Поиск..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Бесплатные онлайн-инструменты для разработчиков",
+    "description": "90+ бесплатных онлайн-инструментов для всех. Форматеры, конвертеры, генераторы и утилиты. Быстро, конфиденциально и без регистрации."
+  },
+  "NotFound": {
+    "title": "Страница не найдена",
+    "description": "Извините, мы не смогли найти страницу, которую вы ищете.",
+    "backHome": "Вернуться на главную",
+    "suggestions": "Попробуйте найти инструмент или посмотрите популярные инструменты ниже."
+  },
+  "Homepage": {
+    "heroTag": "100+ Бесплатных инструментов • Приватно • Без регистрации",
+    "titleLine1": "Ежедневные инструменты разработчика",
+    "titleLine2": "Которые просто работают",
+    "subtitle": "Быстрые, красивые и ориентированные на конфиденциальность инструменты для разработчиков, дизайнеров и всех остальных. Все работает в вашем браузере.",
+    "recentTools": "Недавно использованные",
+    "noRecentText": "Начните использовать инструменты, чтобы увидеть их здесь",
+    "searchResults": "Результаты поиска",
+    "popularTools": "Популярные",
+    "toolsCount": "{count} инструментов доступно",
+    "features": {
+      "fast": {
+        "title": "Молниеносно быстро",
+        "desc": "Все инструменты работают локально в вашем браузере"
+      },
+      "private": {
+        "title": "100% Приватно",
+        "desc": "Ваши данные никогда не покидают устройство"
+      },
+      "simple": {
+        "title": "Создано для всех",
+        "desc": "Просто для новичка, мощно для профи"
+      },
+      "free": {
+        "title": "Всегда бесплатно",
+        "desc": "Без аккаунтов, без ограничений"
+      }
+    },
+    "categories": {
+      "All": "Все",
+      "Favorites": "Избранное",
+      "Developer": "Разработчик",
+      "Design": "Дизайн",
+      "Content": "Контент",
+      "Security": "Безопасность",
+      "Productivity": "Продуктивность",
+      "Math": "Математика",
+      "Utility": "Утилиты"
+    },
+    "cta": {
+      "title": "Готовы повысить свою продуктивность?",
+      "text": "Начните бесплатно использовать наши инструменты для разработчиков. Без регистрации, без сбора данных.",
+      "button": "Начать бесплатно"
+    },
+    "openTool": "Открыть инструмент",
+    "noResults": "Инструменты не найдены по запросу",
+    "clearFilters": "Очистить фильтры"
+  },
+  "Footer": {
+    "builtWith": "Сделано с ❤️",
+    "allTools": "Все инструменты",
+    "blog": "Блог",
+    "about": "О нас",
+    "privacy": "Конфиденциальность",
+    "terms": "Условия"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Форматер JSON",
+      "description": "Мгновенно форматируйте, проверяйте и улучшайте JSON."
+    },
+    "base64-encoder": {
+      "name": "Кодировщик Base64",
+      "description": "Кодирование и декодирование строк Base64"
+    },
+    "url-encoder": {
+      "name": "URL-кодировщик",
+      "description": "Безопасное кодирование и декодирование URL-адресов"
+    },
+    "jwt-decoder": {
+      "name": "JWT-декодер",
+      "description": "Декодирование и проверка веб-токенов JSON"
+    },
+    "regex-tester": {
+      "name": "Тестер регулярных выражений",
+      "description": "Тестируйте регулярные выражения в режиме реального времени"
+    },
+    "hash-generator": {
+      "name": "Хэш-генератор",
+      "description": "Генерация хэшей MD5, SHA-1, SHA-256."
+    },
+    "uuid-generator": {
+      "name": "Генератор UUID",
+      "description": "Мгновенно создавайте случайные UUID/GUID"
+    },
+    "css-minifier": {
+      "name": "CSS-минификатор",
+      "description": "Минимизируйте и оптимизируйте свой CSS-код"
+    },
+    "markdown-editor": {
+      "name": "Предварительный просмотр уценки",
+      "description": "Редактор Markdown в реальном времени и предварительный просмотр"
+    },
+    "color-converter": {
+      "name": "Конвертер цветов",
+      "description": "Преобразование Hex, RGB, HSL и CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Инструмент временных меток",
+      "description": "Преобразование временных меток Unix в человеческие даты"
+    },
+    "sql-formatter": {
+      "name": "SQL-форматер",
+      "description": "Форматируйте и улучшайте SQL-запросы"
+    },
+    "password-generator": {
+      "name": "Генератор паролей",
+      "description": "Создавайте безопасные случайные пароли"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Создание текста-заполнителя для дизайнов"
+    },
+    "image-base64": {
+      "name": "Изображение в Base64",
+      "description": "Преобразование изображений в строки Base64"
+    },
+    "qr-generator": {
+      "name": "Генератор QR-кода",
+      "description": "Генерируйте QR-коды для URL-адресов и текста"
+    },
+    "word-counter": {
+      "name": "Счетчик слов",
+      "description": "Подсчитайте слова, символы и время чтения"
+    },
+    "case-converter": {
+      "name": "Конвертер корпусов",
+      "description": "Чемодан с верблюдом, змеей, кебабом и паскалем"
+    },
+    "text-diff": {
+      "name": "Проверка текстовых различий",
+      "description": "Сравните два текста и найдите различия."
+    },
+    "slug-generator": {
+      "name": "Генератор слизней",
+      "description": "Создавайте оптимизированные для SEO URL-адреса"
+    },
+    "gradient-generator": {
+      "name": "Генератор градиента",
+      "description": "Создавайте красивые градиенты CSS"
+    },
+    "image-compressor": {
+      "name": "Сжатие изображений",
+      "description": "Сжимайте изображения локально и конфиденциально"
+    },
+    "device-info": {
+      "name": "Информация об устройстве",
+      "description": "Просмотр экрана, информации о браузере и системе"
+    },
+    "random-generator": {
+      "name": "Случайный генератор",
+      "description": "Выбирайте числа, монеты и элементы списка"
+    },
+    "unit-converter": {
+      "name": "Конвертер единиц измерения",
+      "description": "Конвертировать длину, вес и температуру"
+    },
+    "pomodoro-timer": {
+      "name": "Таймер Помидора",
+      "description": "Таймер фокусировки для продуктивности"
+    },
+    "yt-thumbnail": {
+      "name": "Загрузчик миниатюр",
+      "description": "Получите миниатюры видео YouTube"
+    },
+    "my-ip": {
+      "name": "Какой у меня IP",
+      "description": "Просмотр общедоступного IP-адреса и информации о сети"
+    },
+    "keycode-info": {
+      "name": "Информация о ключевом коде",
+      "description": "Отладчик событий клавиатуры JavaScript"
+    },
+    "signature-generator": {
+      "name": "Генератор подписей",
+      "description": "Рисуйте и загружайте цифровые подписи"
+    },
+    "screen-recorder": {
+      "name": "Устройство записи экрана",
+      "description": "Запись экрана и загрузка видео"
+    },
+    "credit-card-validator": {
+      "name": "Валидатор карт",
+      "description": "Подтвердите номера кредитных карт"
+    },
+    "password-manager": {
+      "name": "Локальный менеджер паролей",
+      "description": "Безопасное хранение паролей локально с помощью шифрования"
+    },
+    "deep-link-tester": {
+      "name": "Тестер глубоких ссылок",
+      "description": "Тестируйте, запускайте и управляйте мобильными глубокими ссылками"
+    },
+    "image-converter": {
+      "name": "Конвертер изображений",
+      "description": "Конвертируйте PNG/JPG в WebP локально для оптимизации изображений."
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Конвертируйте JSON в CSV и наоборот"
+    },
+    "bmi-calculator": {
+      "name": "Калькулятор ИМТ",
+      "description": "Рассчитать индекс массы тела (ИМТ)"
+    },
+    "dns-lookup": {
+      "name": "DNS-поиск",
+      "description": "Запрос DNS-записей (A, MX, NS) мгновенно"
+    },
+    "age-calculator": {
+      "name": "Калькулятор возраста",
+      "description": "Рассчитайте точный возраст и общее количество дней"
+    },
+    "loan-calculator": {
+      "name": "Кредитный калькулятор",
+      "description": "Рассчитайте ежемесячный EMI и общую сумму процентов"
+    },
+    "discount-calculator": {
+      "name": "Калькулятор скидок",
+      "description": "Рассчитайте цену продажи и экономию"
+    },
+    "interest-calculator": {
+      "name": "Калькулятор процентов",
+      "description": "Калькулятор простых и сложных процентов"
+    },
+    "html-encoder": {
+      "name": "HTML-кодер/декодер",
+      "description": "Экранируйте специальные символы или декодируйте HTML"
+    },
+    "list-sorter": {
+      "name": "Сортировщик списков",
+      "description": "Сортировка, реверс, перемешивание и дедупликация списков"
+    },
+    "box-shadow": {
+      "name": "Генератор теней коробки",
+      "description": "Визуально генерировать тени блоков CSS"
+    },
+    "date-diff": {
+      "name": "Разница в дате",
+      "description": "Рассчитать продолжительность между двумя датами"
+    },
+    "sql-to-json": {
+      "name": "SQL в JSON",
+      "description": "Преобразование SQL INSERT в объекты JSON"
+    },
+    "keyword-density": {
+      "name": "Плотность ключевых слов",
+      "description": "Анализ частоты ключевых слов для SEO"
+    },
+    "json-diff": {
+      "name": "JSON разница",
+      "description": "Сравните два объекта JSON рядом"
+    },
+    "cipher-tools": {
+      "name": "Инструменты шифрования",
+      "description": "Кодер/декодер ROT13 и Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Генератор случайных токенов",
+      "description": "Генерируйте безопасные случайные токены"
+    },
+    "favicon-generator": {
+      "name": "Генератор фавиконов",
+      "description": "Создание значков .ico и PNG"
+    },
+    "robots-generator": {
+      "name": "Генератор robots.txt",
+      "description": "Создайте robots.txt для SEO"
+    },
+    "grid-generator": {
+      "name": "Генератор CSS-сеток",
+      "description": "Визуальный конструктор макетов CSS Grid"
+    },
+    "hmac-generator": {
+      "name": "HMAC-генератор",
+      "description": "Генерация кодов аутентификации сообщений с хеш-ключом"
+    },
+    "http-status": {
+      "name": "Коды состояния HTTP",
+      "description": "Справочный список кодов состояния HTTP"
+    },
+    "week-number": {
+      "name": "Номер недели",
+      "description": "Номер текущей недели и прогресс за год"
+    },
+    "text-tools": {
+      "name": "Текстовый преобразователь",
+      "description": "Переворачивать, переворачивать и кодировать текст"
+    },
+    "url-parser": {
+      "name": "URL-парсер",
+      "description": "Разделить URL-адреса на протокол, хост, путь и параметры."
+    },
+    "markdown-table": {
+      "name": "Генератор таблиц уценки",
+      "description": "Создавайте таблицы Markdown визуально"
+    },
+    "whatsapp-link": {
+      "name": "Генератор ссылок WhatsApp",
+      "description": "Создавайте прямые ссылки на чат WhatsApp"
+    },
+    "paypal-link": {
+      "name": "Генератор ссылок PayPal",
+      "description": "Создайте ссылки для оплаты PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG в PNG",
+      "description": "Конвертировать код/файл SVG в изображение PNG"
+    },
+    "prime-factors": {
+      "name": "Основные факторы",
+      "description": "Найти простые множители числа"
+    },
+    "iban-validator": {
+      "name": "IBAN-валидатор",
+      "description": "Проверка номеров международных банковских счетов"
+    },
+    "ascii-converter": {
+      "name": "ASCII-конвертер",
+      "description": "Преобразование текста в десятичные коды ASCII"
+    },
+    "utm-builder": {
+      "name": "UTM-строитель",
+      "description": "Создайте URL-адреса кампаний Google Analytics."
+    },
+    "meta-tags": {
+      "name": "Генератор метатегов",
+      "description": "Генерация метатегов SEO для веб-сайтов"
+    },
+    "og-generator": {
+      "name": "Открытый генератор графов",
+      "description": "Создание метатегов Open Graph для обмена в социальных сетях"
+    },
+    "twitter-card": {
+      "name": "Генератор твиттер-карт",
+      "description": "Создание метатегов карты Twitter"
+    },
+    "aspect-ratio": {
+      "name": "Калькулятор соотношения сторон",
+      "description": "Рассчитать соотношение сторон и размеры"
+    },
+    "css-cursor": {
+      "name": "CSS-курсор",
+      "description": "Справочник по свойствам курсора Visual CSS"
+    },
+    "css-triangle": {
+      "name": "Генератор треугольников CSS",
+      "description": "Генерация треугольников на чистом CSS"
+    },
+    "percentage-calculator": {
+      "name": "Калькулятор процентов",
+      "description": "Рассчитать проценты и изменения"
+    },
+    "vat-calculator": {
+      "name": "Калькулятор НДС",
+      "description": "Рассчитать суммы добавления/удаления НДС"
+    },
+    "stopwatch": {
+      "name": "Секундомер",
+      "description": "Простой секундомер на основе браузера"
+    },
+    "text-to-speech": {
+      "name": "Преобразование текста в речь",
+      "description": "Преобразование текста в разговорный голос"
+    },
+    "speech-to-text": {
+      "name": "Речь в текст",
+      "description": "Преобразование разговорного голоса в текст"
+    },
+    "vibration-tester": {
+      "name": "Тестер вибрации",
+      "description": "Вибродвигатель испытательного устройства"
+    },
+    "chmod-calculator": {
+      "name": "Калькулятор Chmod",
+      "description": "Рассчитать права доступа к файлам Linux"
+    },
+    "crontab-generator": {
+      "name": "Генератор Кронтаба",
+      "description": "Генерация выражений расписания cron"
+    },
+    "htpasswd-generator": {
+      "name": "Генератор Htpasswd",
+      "description": "Создание базовых записей аутентификации"
+    },
+    "subnet-calculator": {
+      "name": "Калькулятор подсети",
+      "description": "Рассчитать сетевые подсети и диапазоны IP-адресов"
+    },
+    "mac-generator": {
+      "name": "Генератор MAC-адресов",
+      "description": "Генерировать случайные MAC-адреса"
+    },
+    "timezone-converter": {
+      "name": "Конвертер часовых поясов",
+      "description": "Преобразование времени между несколькими зонами"
+    },
+    "email-validator": {
+      "name": "Валидатор электронной почты",
+      "description": "Проверка формата электронной почты и обнаружение опечаток"
+    },
+    "password-strength": {
+      "name": "Надежность пароля",
+      "description": "Проверьте надежность пароля"
+    },
+    "roman-numerals": {
+      "name": "Конвертер римских цифр",
+      "description": "Преобразование между римскими и десятичными числами"
+    },
+    "margin-calculator": {
+      "name": "Калькулятор маржи",
+      "description": "Рассчитать прибыль и наценку"
+    },
+    "roi-calculator": {
+      "name": "Калькулятор рентабельности инвестиций",
+      "description": "Рассчитать рентабельность инвестиций"
+    },
+    "fuel-calculator": {
+      "name": "Калькулятор стоимости топлива",
+      "description": "Рассчитать стоимость топлива в поездке"
+    },
+    "pretty-print-url": {
+      "name": "Красивый URL-адрес для печати",
+      "description": "Отформатируйте и украсьте URL-адреса для удобства чтения."
+    }
+  },
+  "Terms": {
+    "title": "Условия использования",
+    "lastUpdated": "Последнее обновление",
+    "sections": {
+      "acceptance": {
+        "title": "1. Принятие Условий",
+        "content": "Получая доступ и используя DailyDevTools, вы принимаете и соглашаетесь соблюдать условия и положения настоящего соглашения."
+      },
+      "useLicense": {
+        "title": "2. Используйте лицензию",
+        "content": "DailyDevTools можно использовать бесплатно в личных и коммерческих целях. Вы не можете:",
+        "list": {
+          "0": "Попытайтесь перепроектировать или очистить значительные части сайта.",
+          "1": "Использовать веб-сайт любым способом, который причиняет или может причинить ущерб веб-сайту или ухудшить доступность или доступность веб-сайта."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Отказ от ответственности",
+        "content": "Инструменты DailyDevTools предоставляются «как есть». Мы не даем никаких гарантий, явных или подразумеваемых..."
+      },
+      "limitations": {
+        "title": "4. Ограничения",
+        "content": "Ни при каких обстоятельствах DailyDevTools или ее поставщики не несут ответственности за какой-либо ущерб..."
+      },
+      "revisions": {
+        "title": "5. Изменения",
+        "content": "Материалы, появляющиеся на DailyDevTools, могут содержать технические, типографские или фотографические ошибки..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "политика конфиденциальности",
+    "lastUpdated": "Последнее обновление",
+    "intro": "Добро пожаловать в DailyDevTools. Мы уважаем вашу конфиденциальность и обязуемся защищать ваши личные данные.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Как работают наши инструменты (локальная обработка)",
+        "content": "Самое главное: инструменты полностью работают в вашем браузере. Данные никогда не покидают ваше устройство."
+      },
+      "dataCollection": {
+        "title": "3. Данные, которые мы собираем",
+        "content": "Мы не собираем контент. Мы используем Google Analytics для статистики использования."
+      },
+      "cookies": {
+        "title": "4. Файлы cookie",
+        "content": "Мы используем файлы cookie для аналитики и местных предпочтений."
+      },
+      "thirdParty": {
+        "title": "5. Сторонние ссылки",
+        "content": "Наш сайт может содержать ссылки на третьи лица."
+      },
+      "changes": {
+        "title": "6. Изменения в настоящей Политике",
+        "content": "Мы можем время от времени обновлять эту политику."
+      },
+      "contact": {
+        "title": "7. Свяжитесь с нами",
+        "content": "Свяжитесь с нами через GitHub или социальные сети."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Ресурсы для разработчиков",
+    "subtitle": "Подробное описание инструментов, которые мы создаем, и лежащих в их основе концепций.",
+    "readMore": "Читать далее",
+    "backToBlog": "Вернуться в блог",
+    "enjoyedArticle": "Понравилась эта статья?",
+    "checkTools": "Ознакомьтесь с нашими инструментами"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Вход",
+      "output": "Выход",
+      "format": "Формат",
+      "minify": "Минимизировать",
+      "download": "Скачать",
+      "copy": "Копировать",
+      "paste": "Вставить",
+      "copied": "Скопировано!",
+      "upload": "Загрузить",
+      "sample": "Образец",
+      "clear": "Очистить",
+      "indent": "Отступ:",
+      "chars": "символы",
+      "error": "Ошибка",
+      "invalid": "Неверный ввод",
+      "result": "Результат",
+      "generate": "Генерировать",
+      "calculate": "Рассчитать",
+      "convert": "Конвертировать",
+      "validate": "Подтвердить",
+      "resultPlaceholder": "Результат появится здесь..."
+    },
+    "Base64Encoder": {
+      "encode": "Кодировать",
+      "decode": "Декодировать",
+      "textToEncode": "Текст для кодирования",
+      "base64ToDecode": "Base64 для декодирования",
+      "enterText": "Введите текст для кодирования...",
+      "enterBase64": "Введите Base64 для декодирования...",
+      "encodeAction": "Кодировать в Base64",
+      "decodeAction": "Декодирование из Base64",
+      "base64Output": "Вывод Base64",
+      "decodedText": "Декодированный текст",
+      "resultPlaceholder": "Результат появится здесь...",
+      "invalidInput": "Неверный ввод для {mode}."
+    },
+    "QrGenerator": {
+      "content": "Содержание",
+      "placeholder": "https://example.com",
+      "customization": "Кастомизация",
+      "foreground": "передний план",
+      "background": "Фон",
+      "download": "Скачать"
+    },
+    "HashGenerator": {
+      "inputText": "Введите текст",
+      "placeholder": "Введите текст для хеширования...",
+      "waiting": "Ожидание ввода..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Создать новый",
+      "configuration": "Конфигурация",
+      "length": "Длина пароля",
+      "uppercase": "Прописные буквы (А–Я)",
+      "numbers": "Числа (0-9)",
+      "symbols": "Символы (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Вставьте сюда свой JSON...",
+      "outputPlaceholder": "Здесь появится форматированный JSON...",
+      "spaces": "пространства"
+    },
+    "UrlEncoder": {
+      "encode": "Кодировать",
+      "decode": "Декодировать",
+      "urlToEncode": "URL-адрес для кодирования",
+      "encodedUrlToDecode": "Закодированный URL для декодирования",
+      "enterUrlToEncode": "Введите URL или текст для кодирования...",
+      "enterUrlToDecode": "Введите закодированный URL-адрес для декодирования...",
+      "encodeAction": "Закодировать URL",
+      "decodeAction": "Декодировать URL-адрес",
+      "encodedUrl": "Закодированный URL-адрес",
+      "decodedUrl": "Декодированный URL-адрес",
+      "resultPlaceholder": "Результат появится здесь...",
+      "chars": "символы",
+      "invalidInput": "Неверный ввод для {mode}."
+    },
+    "JwtDecoder": {
+      "pasteToken": "Вставьте свой токен JWT",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Декодировать JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Изданный",
+      "expires": "Срок действия истекает"
+    },
+    "RegexTester": {
+      "expression": "Выражение",
+      "expressionPlaceholder": "Группа захвата (abc)...",
+      "testString": "Тестовая строка",
+      "testStringPlaceholder": "Вставьте сюда свою тестовую строку...",
+      "matchHighlights": "Основные моменты матча",
+      "matches": "спички",
+      "matchInfo": "Информация о матче",
+      "match": "Соответствовать",
+      "index": "Индекс",
+      "group": "Группа",
+      "noMatches": "Совпадений не найдено",
+      "highlightPlaceholder": "Здесь будут освещаться матчи...",
+      "flagsHelp": "g: глобальный, i: игнорировать регистр, m: многострочный"
+    },
+    "UuidGenerator": {
+      "generate": "Генерировать",
+      "generateCount": "Создать:",
+      "copyAll": "Копировать все",
+      "copyUuid": "Скопировать UUID",
+      "generatedAt": "Создано локально в {time} • UUID версии 4."
+    },
+    "WordCounter": {
+      "words": "Слова",
+      "characters": "Персонажи",
+      "sentences": "Предложения",
+      "paragraphs": "Абзацы",
+      "readingTime": "Время чтения",
+      "min": "min",
+      "textInput": "Ввод текста",
+      "inputPlaceholder": "Начните вводить или вставьте сюда свой текст, чтобы проанализировать...",
+      "clear": "Прозрачный"
+    },
+    "TimestampConverter": {
+      "timestamp": "Временная метка",
+      "humanDate": "Человеческое свидание",
+      "convert": "Конвертировать",
+      "currentTimestamp": "Текущая временная метка",
+      "inputPlaceholder": "Введите временную метку Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Вставьте сюда свой SQL-запрос...",
+      "outputPlaceholder": "Здесь появится форматированный SQL..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Вставьте сюда свой CSS-код...",
+      "outputPlaceholder": "Здесь появится минимизированный CSS..."
+    },
+    "MarkdownEditor": {
+      "editor": "Редактор",
+      "preview": "Предварительный просмотр",
+      "inputPlaceholder": "Введите Markdown здесь..."
+    },
+    "TextDiff": {
+      "original": "Исходный текст",
+      "changed": "Измененный текст",
+      "compare": "Сравнивать",
+      "differences": "Различия"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Введите текст для конвертации...",
+      "generatedSlug": "Сгенерированный слизень"
+    },
+    "ImageCompressor": {
+      "selectImage": "Выберите изображение",
+      "quality": "Качество",
+      "compress": "Компресс",
+      "download": "Скачать",
+      "originalSize": "Исходный размер",
+      "compressedSize": "Сжатый размер"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Абзацы",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "GradientGenerator": {
+      "angle": "Угол",
+      "colors": "Цвета",
+      "addColor": "Добавить цвет",
+      "copyCss": "Копировать CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Дата рождения",
+      "calculate": "Рассчитать",
+      "years": "Годы",
+      "months": "Месяцы",
+      "days": "Дни",
+      "totalDays": "Всего дней",
+      "nextBirthday": "Следующий день рождения через"
+    },
+    "AsciiConverter": {
+      "text": "Текст",
+      "ascii": "ASCII",
+      "convert": "Конвертировать",
+      "inputPlaceholder": "Введите текст..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Горизонтальный (X)",
+      "vertical": "Вертикальный (Y)",
+      "blur": "Размытие",
+      "spread": "Распространение",
+      "colorOpacity": "Цвет и непрозрачность",
+      "inset": "Вставка"
+    },
+    "BmiCalculator": {
+      "metric": "Метрическая система (кг/см)",
+      "imperial": "Британский (фунты/дюймы)",
+      "weight": "Масса",
+      "height": "Высота",
+      "calculate": "Рассчитать ИМТ",
+      "bmiScore": "Ваш показатель ИМТ",
+      "underweight": "Недостаток веса",
+      "normal": "Нормальный вес",
+      "overweight": "Избыточный вес",
+      "obese": "ожирение"
+    },
+    "CaseConverter": {
+      "inputText": "Введите текст",
+      "inputPlaceholder": "Введите текст здесь...",
+      "upper": "UPPERCASE",
+      "lower": "строчные буквы",
+      "title": "Название регистра",
+      "sentence": "Случай предложения",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Копировать",
+      "conversions": "Конверсии",
+      "clear": "Прозрачный"
+    },
+    "ColorConverter": {
+      "hexLabels": "Шестнадцатеричный цвет",
+      "rgbLabels": "Цвет RGB",
+      "hslLabels": "Цвет HSL",
+      "cmykLabels": "Цвет CMYK",
+      "copy": "Копировать",
+      "hexToRgbNote": "* В настоящее время поддерживается только преобразование HEX в RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Номер карты",
+      "validate": "Подтвердить",
+      "valid": "Действительный номер кредитной карты",
+      "invalid": "Неверный номер кредитной карты",
+      "placeholder": "Введите номер карты...",
+      "type": "Тип карты",
+      "checkDigit": "Контрольная цифра",
+      "luhnValid": "Алгоритм Луна действителен"
+    },
+    "CipherTools": {
+      "encode": "Кодировать",
+      "decode": "Декодировать",
+      "rot13": "ROT13",
+      "caesar": "Шифр Цезаря",
+      "shift": "Сдвиг",
+      "inputPlaceholder": "Привет, мир",
+      "outputPlaceholder": "Результат появится здесь..."
+    },
+    "CronGenerator": {
+      "minute": "минута",
+      "hour": "Час",
+      "dayMonth": "День (Месяц)",
+      "month": "Месяц",
+      "dayWeek": "День (Неделя)",
+      "presets": "Общие пресеты",
+      "everyMinute": "Каждую минуту",
+      "everyHour": "Каждый час",
+      "everyDayMidnight": "Каждый день в полночь",
+      "everySunday": "Каждое воскресенье",
+      "everyMonth": "Каждый месяц",
+      "everyYear": "Каждый год",
+      "formatInfo": "Формат: * * * * * (Минуты Час DayOfMonth Месяц DayOfWeek)",
+      "usageInfo": "Используйте * для «каждого», */n для «каждого n», 1,2,3 для конкретного списка."
+    },
+    "DateDiff": {
+      "startDate": "Дата начала",
+      "endDate": "Дата окончания",
+      "calculate": "Рассчитать",
+      "difference": "Разница",
+      "years": "Годы",
+      "months": "Месяцы",
+      "days": "Дни",
+      "totalDays": "Всего дней",
+      "totalWeeks": "Всего недель",
+      "totalHours": "Всего часов"
+    },
+    "DeepLinkTester": {
+      "testLink": "Тестовая ссылка",
+      "savedLinks": "Сохраненные ссылки",
+      "searchPlaceholder": "Искать сохраненные ссылки...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Запуск",
+      "save": "Сохранять",
+      "delete": "Удалить",
+      "opens": "открывается",
+      "scanQr": "Сканируйте с помощью мобильного устройства для проверки",
+      "noSavedLinks": "Сохраненных ссылок не найдено.",
+      "enterLabel": "Введите ярлык для этой ссылки:",
+      "saved": "Спасено!",
+      "confirmDelete": "Удалить эту ссылку?"
+    },
+    "DeviceInfo": {
+      "screen": "Экран",
+      "browser": "Браузер",
+      "system": "Система",
+      "resolution": "Разрешение",
+      "colorDepth": "Глубина цвета",
+      "userAgent": "Пользовательский агент",
+      "platform": "Платформа",
+      "language": "Язык"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Первоначальная цена",
+      "discountPercent": "Скидка",
+      "additionalDiscount": "Дополнительная скидка",
+      "calculate": "Рассчитать",
+      "youSave": "Вы экономите",
+      "finalPrice": "Окончательная цена",
+      "salesTax": "Налог с продаж"
+    },
+    "DnsLookup": {
+      "domain": "Домен",
+      "lookup": "Искать",
+      "recordType": "Тип записи",
+      "results": "Результаты",
+      "placeholder": "example.com",
+      "status": "Статус",
+      "time": "Время",
+      "server": "Сервер",
+      "answerSection": "Раздел ответов",
+      "name": "Имя",
+      "type": "Тип",
+      "ttl": "TTL",
+      "data": "Данные",
+      "noRecords": "Записи не найдены"
+    },
+    "EmailValidator": {
+      "email": "Адрес электронной почты",
+      "validate": "Подтвердить",
+      "valid": "Действительный",
+      "invalid": "Неверный",
+      "suggestion": "Предположение",
+      "placeholder": "пользователь@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Загрузить изображение",
+      "generate": "Генерировать",
+      "download": "Скачать",
+      "sizes": "Размеры"
+    },
+    "FuelCalculator": {
+      "distance": "Расстояние",
+      "fuelEfficiency": "Топливная эффективность",
+      "fuelPrice": "Цена на топливо",
+      "calculate": "Рассчитать",
+      "result": "Результат",
+      "totalCost": "Общая стоимость",
+      "fuelNeeded": "Необходимое топливо"
+    },
+    "GridGenerator": {
+      "columns": "Столбцы",
+      "rows": "Строки",
+      "gap": "Зазор",
+      "preview": "Предварительный просмотр",
+      "copyCss": "Копировать CSS",
+      "rowGap": "Разрыв между строками",
+      "colGap": "Столбец разрыв",
+      "options": "Параметры"
+    },
+    "HmacGenerator": {
+      "message": "Сообщение",
+      "secret": "Секрет",
+      "algorithm": "Алгоритм",
+      "generate": "Генерировать",
+      "inputPlaceholder": "Введите текст...",
+      "secretPlaceholder": "Секрет..."
+    },
+    "HtmlEncoder": {
+      "encode": "Кодировать",
+      "decode": "Декодировать",
+      "resultPlaceholder": "Результат появится здесь...",
+      "inputPlaceholder": "Вставьте HTML сюда..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Код поиска (например, 404) или имя...",
+      "code": "Код",
+      "name": "Имя",
+      "description": "Описание"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Подтвердить",
+      "valid": "Действительный",
+      "invalid": "Неверный",
+      "placeholder": "Введите IBAN...",
+      "inputLabel": "Введите номер IBAN",
+      "validTitle": "Действительный эталон",
+      "invalidTitle": "Неверная контрольная сумма",
+      "validDesc": "Формат IBAN и контрольная сумма верны.",
+      "invalidDesc": "IBAN не соответствует алгоритму контрольной суммы."
+    },
+    "ImageBase64": {
+      "upload": "Загрузить",
+      "convert": "Конвертировать",
+      "copy": "Копировать",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Загрузить изображение",
+      "convertToBase64": "Преобразовать в Base64",
+      "convertToImage": "Преобразовать в изображение",
+      "base64String": "Строка Base64",
+      "download": "Скачать"
+    },
+    "ImageConverter": {
+      "selectImage": "Выберите изображение",
+      "format": "Формат",
+      "convert": "Конвертировать",
+      "download": "Скачать",
+      "quality": "Качество"
+    },
+    "InterestCalculator": {
+      "principal": "Главный",
+      "rate": "Процентная ставка",
+      "time": "Период времени (лет)",
+      "calculate": "Рассчитать",
+      "simpleInterest": "Простой",
+      "compoundInterest": "Сложный",
+      "totalAmount": "Общая стоимость",
+      "type": "Тип",
+      "frequency": "Сложная частота",
+      "annually": "Ежегодно",
+      "monthly": "Ежемесячно",
+      "daily": "Ежедневно",
+      "year": "Год"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Введите JSON...",
+      "convert": "Конвертировать",
+      "format": "Формат",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON в CSV",
+      "csvToJson": "CSV в JSON",
+      "jsonInput": "JSON-ввод",
+      "csvInput": "CSV-вход",
+      "jsonOutput": "Вывод JSON",
+      "csvOutput": "CSV-вывод"
+    },
+    "JsonDiff": {
+      "original": "Исходный JSON",
+      "modified": "Измененный JSON",
+      "compare": "Сравнивать",
+      "differences": "Различия"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Нажмите любую клавишу",
+      "key": "Ключ",
+      "code": "Код",
+      "keyCode": "Ключевой код",
+      "which": "который",
+      "location": "Расположение",
+      "modifiers": "Модификаторы",
+      "standard": "Стандартный",
+      "left": "Левый",
+      "right": "Верно",
+      "numpad": "Цифровая клавиатура",
+      "space": "(Космос)",
+      "info": "Отображение событий JavaScript KeyCode, Code и т. д."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Вставьте сюда свой текст, чтобы проанализировать частоту ключевых слов...",
+      "analyze": "Анализировать",
+      "keyword": "Ключевое слово",
+      "count": "Считать",
+      "density": "Плотность"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Введите свой список здесь...",
+      "sort": "Сортировать",
+      "reverse": "Обеспечить регресс",
+      "shuffle": "Перетасовать",
+      "deduplicate": "дедупликация",
+      "ascending": "восходящий",
+      "descending": "По убыванию",
+      "length": "Длина",
+      "trim": "Обрезать пусто",
+      "lines": "Линии:",
+      "chars": "Персонажи:"
+    },
+    "LoanCalculator": {
+      "principal": "Главный",
+      "interestRate": "Процентная ставка",
+      "term": "Срок",
+      "calculate": "Рассчитать",
+      "monthlyPayment": "Ежемесячный платеж",
+      "totalInterest": "Общий процент",
+      "totalPayment": "Общая сумма платежа",
+      "loanDetails": "Детали кредита",
+      "loanAmount": "Сумма кредита",
+      "loanTerm": "Срок кредита",
+      "years": "Годы",
+      "months": "Месяцы",
+      "interest": "Интерес"
+    },
+    "MacGenerator": {
+      "generate": "Генерировать",
+      "copy": "Копировать",
+      "separator": "Сепаратор",
+      "format": "Формат",
+      "quantity": "Количество",
+      "uppercase": "Прописные буквы"
+    },
+    "MarginCalculator": {
+      "cost": "Расходы",
+      "price": "Цена продажи",
+      "calculate": "Рассчитать",
+      "margin": "Допуск",
+      "markup": "Разметка",
+      "profit": "Выгода",
+      "revenue": "Доход",
+      "netProfit": "Чистая прибыль",
+      "grossMargin": "Валовая прибыль"
+    },
+    "PasswordManager": {
+      "masterPassword": "Мастер-пароль",
+      "unlock": "Разблокировать",
+      "searchPlaceholder": "Поиск аккаунтов...",
+      "addNew": "Добавить новый",
+      "siteName": "Название сайта",
+      "username": "Имя пользователя",
+      "password": "Пароль",
+      "save": "Сохранять",
+      "delete": "Удалить"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Введите здесь...",
+      "strength": "Сила",
+      "weak": "Слабый",
+      "fair": "Справедливый",
+      "good": "Хороший",
+      "strong": "Сильный",
+      "requirements": "Требования",
+      "length": "8+ персонажей",
+      "number": "Включает номер",
+      "uppercase": "Включает прописные буквы",
+      "symbol": "Включает символ"
+    },
+    "PayPalLink": {
+      "username": "Имя пользователя PayPal.me",
+      "amount": "Количество",
+      "currency": "Валюта",
+      "generate": "Генерировать",
+      "itemName": "Название предмета",
+      "link": "Связь",
+      "yourLink": "Ваша ссылка на PayPal",
+      "openPaypal": "Открыть PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Правила",
+      "addRule": "Добавить правило",
+      "allow": "Позволять",
+      "disallow": "Запретить",
+      "sitemap": "URL-адрес карты сайта (необязательно)",
+      "output": "Сгенерированный файл robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Ценить",
+      "percentage": "Процент",
+      "calculate": "Рассчитать",
+      "result": "Результат",
+      "whatIs": "Что такое",
+      "of": "% из",
+      "isWhatPercentOf": "это какой % от",
+      "percentChangeFrom": "% изменения с",
+      "to": "к"
+    },
+    "PomodoroTimer": {
+      "work": "Время фокусировки",
+      "shortBreak": "Короткий перерыв",
+      "longBreak": "Длинный перерыв",
+      "start": "Начинать",
+      "pause": "Пауза",
+      "reset": "Перезагрузить",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Число",
+      "calculate": "Рассчитать",
+      "factors": "Основные факторы",
+      "inputLabel": "Введите номер",
+      "placeholder": "например 120",
+      "isPrime": "Это число является Праймом!",
+      "isComposite": "Это число является составным"
+    },
+    "RoiCalculator": {
+      "investment": "Инвестиции",
+      "returns": "Возврат",
+      "calculate": "Рассчитать",
+      "roi": "ROI",
+      "profit": "Выгода",
+      "finalValue": "Окончательное значение",
+      "time": "Время (лет)",
+      "totalGain": "Общий выигрыш",
+      "annualizedRoi": "Годовая рентабельность инвестиций"
+    },
+    "RomanNumerals": {
+      "decimal": "десятичный",
+      "decimalPlaceholder": "2024",
+      "roman": "Роман",
+      "convert": "Конвертировать",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Начать запись",
+      "stopRecording": "Остановить запись",
+      "download": "Скачать",
+      "recording": "Запись..."
+    },
+    "SignatureGenerator": {
+      "draw": "Рисовать",
+      "clear": "Прозрачный",
+      "download": "Скачать",
+      "penColor": "Цвет ручки",
+      "penSize": "Размер ручки"
+    },
+    "SpeechToText": {
+      "startListening": "Начать слушать",
+      "stopListening": "Хватит слушать",
+      "transcript": "Стенограмма",
+      "placeholder": "Стенограмма появится здесь..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "ВСТАВИТЬ В пользователей (идентификатор, имя, возраст) ЗНАЧЕНИЯ (1, «Джон», 30);",
+      "convert": "Конвертировать",
+      "result": "Результат"
+    },
+    "Stopwatch": {
+      "start": "Начинать",
+      "stop": "Останавливаться",
+      "reset": "Перезагрузить",
+      "lap": "Колени"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-адрес",
+      "subnetMask": "Маска подсети",
+      "calculate": "Рассчитать",
+      "networkAddress": "Сетевой адрес",
+      "broadcastAddress": "Широковещательный адрес",
+      "usableHosts": "Используемые хосты"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Вставить SVG",
+      "uploadSvg": "Загрузить SVG",
+      "convert": "Конвертировать",
+      "download": "Скачать"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Введите текст, чтобы говорить...",
+      "speak": "Говорить",
+      "stop": "Останавливаться",
+      "voice": "Голос",
+      "rate": "Ставка",
+      "pitch": "Подача"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Напечатайте что-нибудь...",
+      "reverse": "Обеспечить регресс",
+      "uppercase": "Прописные буквы",
+      "lowercase": "строчные буквы",
+      "encode": "Кодировать"
+    },
+    "TimezoneConverter": {
+      "from": "От",
+      "to": "К",
+      "convert": "Конвертировать",
+      "currentTime": "Текущее время"
+    },
+    "TokenGenerator": {
+      "length": "Длина",
+      "generate": "Генерировать",
+      "copy": "Копировать",
+      "includeNumbers": "Включить цифры",
+      "includeSymbols": "Включить символы"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Введите URL...",
+      "parse": "Разобрать",
+      "protocol": "Протокол",
+      "host": "Хозяин",
+      "path": "Путь",
+      "query": "Запрос"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL-адрес веб-сайта",
+      "source": "Источник",
+      "medium": "Середина",
+      "campaign": "Кампания",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "VatCalculator": {
+      "amount": "Количество",
+      "vatRate": "Ставка НДС",
+      "addVat": "Добавить НДС",
+      "removeVat": "Удалить НДС",
+      "calculate": "Рассчитать"
+    },
+    "VibrationTester": {
+      "vibrate": "Вибрация",
+      "pattern": "Шаблон",
+      "duration": "Продолжительность",
+      "test": "Тест"
+    },
+    "WeekNumber": {
+      "currentWeek": "Номер текущей недели",
+      "yearProgress": "Год прогресса",
+      "week": "Неделя"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Номер телефона",
+      "message": "Сообщение",
+      "generate": "Генерировать",
+      "copy": "Копировать",
+      "placeholder": "Здравствуйте, мне интересно..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Вставить URL-адрес видео YouTube...",
+      "getThumbnail": "Получить миниатюру",
+      "download": "Скачать"
+    },
+    "CrontabGenerator": {
+      "minute": "минута",
+      "hour": "Час",
+      "day": "День",
+      "month": "Месяц",
+      "weekday": "Будний день",
+      "expression": "Выражение",
+      "description": "Описание"
+    },
+    "ChmodCalculator": {
+      "owner": "Владелец",
+      "group": "Группа",
+      "others": "Другие",
+      "read": "Читать",
+      "write": "Писать",
+      "execute": "Выполнять",
+      "numeric": "Числовой",
+      "symbolic": "Символический"
+    },
+    "HtpasswdGenerator": {
+      "username": "Имя пользователя",
+      "password": "Пароль",
+      "algorithm": "Алгоритм",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "AspectRatio": {
+      "width": "Ширина",
+      "height": "Высота",
+      "ratio": "Соотношение",
+      "calculate": "Рассчитать"
+    },
+    "CssClipPath": {
+      "shape": "Форма",
+      "preview": "Предварительный просмотр",
+      "copyCss": "Копировать CSS"
+    },
+    "CssCursor": {
+      "cursor": "Курсор",
+      "preview": "Предварительный просмотр",
+      "copyCss": "Копировать CSS"
+    },
+    "CssTriangle": {
+      "direction": "Направление",
+      "size": "Размер",
+      "color": "Цвет",
+      "preview": "Предварительный просмотр",
+      "copyCss": "Копировать CSS"
+    },
+    "MetaGenerator": {
+      "title": "Заголовок",
+      "description": "Описание",
+      "keywords": "Ключевые слова",
+      "author": "Автор",
+      "url": "URL",
+      "image": "Изображение",
+      "generate": "Генерировать",
+      "copy": "Копировать",
+      "titlePlaceholder": "Мой потрясающий сайт",
+      "descriptionPlaceholder": "Краткое описание вашего сайта...",
+      "keywordsPlaceholder": "сеть, инструменты, разработка",
+      "authorPlaceholder": "Ваше имя",
+      "outputPlaceholder": "Здесь появятся мета-теги..."
+    },
+    "OgGenerator": {
+      "title": "Заголовок",
+      "description": "Описание",
+      "url": "URL",
+      "image": "Изображение",
+      "type": "Тип",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "TwitterCard": {
+      "cardType": "Тип карты",
+      "title": "Заголовок",
+      "description": "Описание",
+      "image": "Изображение",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "MarkdownTable": {
+      "rows": "Строки",
+      "columns": "Столбцы",
+      "header": "Заголовок",
+      "addRow": "Добавить строку",
+      "addColumn": "Добавить столбец",
+      "generate": "Генерировать",
+      "copy": "Копировать"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Формат",
+      "copy": "Копировать"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Форматирование JSON: лучшие практики для разработчиков",
+      "excerpt": "Узнайте, почему правильное форматирование JSON важно для отладки и как автоматизировать его в рабочем процессе.",
+      "category": "Разработка"
+    },
+    "mastering-regex": {
+      "title": "Освоение регулярных выражений: визуальное руководство",
+      "excerpt": "Regex не должен пугать. Мы разберем общие шаблоны проверки электронной почты, URL-адресов и многого другого.",
+      "category": "Учебник"
+    },
+    "cron-job-scheduling": {
+      "title": "Задачи Cron раскрыты: как планировать задачи",
+      "excerpt": "Поймите 5-звездочный синтаксис Cron и то, как планировать резервное копирование, электронную почту и сценарии в Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Почему локальные менеджеры паролей безопаснее (альтернатива KeyPass)",
+      "excerpt": "Нарушения в облаках являются обычным явлением. Узнайте, почему локальное хранение паролей с шифрованием AES-256 — самый безопасный вариант для обеспечения личной безопасности.",
+      "category": "Безопасность"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Инструменты поиска...",
+    "noResults": "Результаты не найдены.",
+    "select": "Выбирать",
+    "navigate": "Навигация"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Отправить отзыв",
+    "feedback": "Обратная связь",
+    "thankYou": "Спасибо!",
+    "feedbackSent": "Ваш отзыв успешно отправлен.",
+    "close": "Закрывать",
+    "name": "Имя (необязательно)",
+    "namePlaceholder": "Ваше имя",
+    "email": "Электронная почта (необязательно)",
+    "emailPlaceholder": "ваш@email.com",
+    "feedbackType": "Тип обратной связи",
+    "typeSuggestion": "💡 Предложение",
+    "typeBug": "🐛 Отчет об ошибке",
+    "typeFeature": "✨ Запрос на добавление функции",
+    "typeOther": "📝 Другое",
+    "message": "Сообщение *",
+    "messagePlaceholder": "Расскажите нам, что вы думаете...",
+    "sending": "Отправка...",
+    "weReadEveryMessage": "Мы читаем каждое сообщение. Спасибо, что помогаете нам совершенствоваться!"
+  },
+  "ShareButton": {
+    "shareTool": "Инструмент «Поделиться»",
+    "copiedLink": "Скопирована ссылка!"
+  },
+  "TextDiff": {
+    "original": "Исходный текст",
+    "changed": "Измененный текст",
+    "update": "Обновить разницу",
+    "old": "Старый",
+    "new": "Новый",
+    "content": "Содержание"
+  },
+  "CrontabGenerator": {
+    "minute": "минута",
+    "hour": "Час",
+    "day": "День",
+    "month": "Месяц",
+    "weekday": "Будний день",
+    "min": "Мин",
+    "mon": "Пн.",
+    "week": "Неделя",
+    "presets": "Быстрые настройки",
+    "everyMinute": "Каждую минуту",
+    "every5Minutes": "Каждые 5 минут",
+    "everyHour": "Каждый час",
+    "everyDayMidnight": "Каждый день в полночь",
+    "everyWeek": "Каждую неделю",
+    "everyMonth": "Каждый месяц"
+  },
+  "SpeechToText": {
+    "notSupported": "Ваш браузер не поддерживает API Web Speech. Пожалуйста, используйте Chrome.",
+    "placeholder": "Стенограмма появится здесь...",
+    "listening": "Слушаю...",
+    "start": "Нажмите микрофон, чтобы начать"
+  },
+  "OgGenerator": {
+    "title": "Заголовок",
+    "description": "Описание",
+    "image": "URL-адрес изображения",
+    "url": "Канонический URL-адрес",
+    "type": "Тип",
+    "website": "Веб-сайт",
+    "article": "Статья",
+    "profile": "Профиль",
+    "preview": "Предварительный просмотр (Facebook/LinkedIn)",
+    "generatedHtml": "Сгенерированный HTML",
+    "copy": "Копировать"
+  },
+  "WeekNumber": {
+    "checkLabel": "Проверьте номер недели на дату",
+    "yearProgress": "Год прогресса"
+  },
+  "RelatedTools": {
+    "title": "Вам также может понравиться",
+    "subtitle": "Изучите другие популярные инструменты разработчика",
+    "openTool": "Открыть инструмент"
+  },
+  "Breadcrumb": {
+    "home": "Дом",
+    "tools": "Инструменты"
+  },
+  "SvgToPng": {
+    "upload": "Загрузить SVG-файл",
+    "browse": "или нажмите, чтобы просмотреть",
+    "paste": "...или вставьте код SVG",
+    "preview": "Предварительный просмотр PNG (масштаб 2x)",
+    "download": "Скачать PNG",
+    "errorType": "Пожалуйста, загрузите действительный файл SVG.",
+    "errorRender": "Не удалось отобразить SVG. Убедитесь, что это действительный XML.",
+    "errorProcess": "Ошибка обработки SVG."
+  },
+  "GradientGenerator": {
+    "config": "Конфигурация",
+    "colors": "Цвета",
+    "type": "Тип",
+    "angle": "Угол",
+    "random": "Случайный",
+    "copyCss": "Копировать CSS",
+    "copied": "Скопировано"
+  },
+  "TimezoneConverter": {
+    "date": "Дата",
+    "time": "Время (местное)",
+    "invalid": "Неверный",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "Нью-Йорк (EST/EDT)",
+      "losAngeles": "Лос-Анджелес (PST/PDT)",
+      "london": "Лондон (GMT/BST)",
+      "paris": "Париж (CET/CEST)",
+      "tokyo": "Токио (JST)",
+      "sydney": "Сидней (AEST/AEDT)",
+      "dubai": "Дубай (НДС)",
+      "india": "Индия (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Генератор чисел",
+    "listGen": "Генератор списков",
+    "coinGen": "Генератор монет",
+    "min": "Мин",
+    "max": "Макс",
+    "count": "Считать",
+    "generate": "Генерировать",
+    "listLabel": "Элементы списка (по одному в строке)",
+    "pick": "Выберите случайный предмет",
+    "winner": "Победителем является...",
+    "flip": "Подбросить монету",
+    "heads": "Руководители",
+    "tails": "Решка"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Запись экрана...",
+    "titleFree": "Бесплатный онлайн-рекордер экрана",
+    "desc": "Сделайте снимок экрана, окна приложения или вкладки браузера. Никаких водяных знаков, никаких ограничений по времени.",
+    "start": "Начать запись",
+    "stop": "Остановить запись",
+    "browserSupport": "Лучше всего работает в Chrome, Edge и Firefox на рабочем столе."
+  },
+  "CssCursor": {
+    "hoverTest": "Наведите курсор сюда, чтобы проверить"
+  },
+  "VatCalculator": {
+    "amount": "Количество",
+    "rate": "Ставка НДС (%)",
+    "addVat": "Добавить НДС",
+    "removeVat": "Удалить НДС",
+    "netAmount": "Чистая сумма",
+    "vatAmount": "Сумма НДС",
+    "grossTotal": "Валовая сумма",
+    "netTotal": "Чистая сумма",
+    "grossAmount": "Валовая сумма"
+  },
+  "MyIP": {
+    "ipLabel": "Ваш публичный IP-адрес",
+    "loading": "Загрузка...",
+    "isp": "Интернет-провайдер (ISP)",
+    "location": "Расположение",
+    "asn": "ASN",
+    "timezone": "Часовой пояс",
+    "note": "Это IP-адрес, видимый веб-сайтам, которые вы посещаете. Он может отличаться от вашего локального IP-адреса, если вы используете VPN или прокси."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Введите URL",
+    "formatted": "Форматированный вывод",
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "placeholder": "Вставьте URL-адрес выше, чтобы увидеть его в формате."
+  },
+  "WhatsAppLink": {
+    "phone": "Номер телефона (с кодом страны)",
+    "message": "Предварительно заполненное сообщение",
+    "hint": "Не включайте +, - или ().",
+    "yourLink": "Ваша ссылка на WhatsApp",
+    "open": "Открыть чат"
+  },
+  "UrlParser": {
+    "enterUrl": "Введите URL",
+    "params": "Параметры запроса",
+    "error": "Неверный URL-адрес"
+  },
+  "FaviconGenerator": {
+    "upload": "Загрузить изображение",
+    "browse": "Рекомендуется: 512x512 PNG.",
+    "original": "Оригинал",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Скачать Фавикон.png",
+    "note": "* В настоящее время генерирует значки PNG размером 32x32. При необходимости переименуйте в .ico для поддержки устаревших версий."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-адрес",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Рассчитать",
+    "subnetMask": "Маска подсети",
+    "networkAddress": "Сетевой адрес",
+    "firstHost": "Первый хост",
+    "lastHost": "Последний хост",
+    "broadcastAddress": "Широковещательный адрес",
+    "totalHosts": "Всего хостов"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Введите название статьи/текст",
+    "generated": "Сгенерированный слизень",
+    "copy": "Копировать пул"
+  },
+  "SqlToJson": {
+    "inputLabel": "Входной SQL (только операторы INSERT)",
+    "convert": "Преобразовать в JSON",
+    "error": "Не удалось разобрать SQL. Убедитесь, что это стандартные инструкции INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Добавить строку",
+    "addCol": "+ Добавить столбец",
+    "headerPlaceholder": "Заголовок",
+    "outputLabel": "Вывод уценки",
+    "copy": "Копировать уценку"
+  },
+  "TwitterCard": {
+    "cardType": "Тип карты",
+    "siteHandle": "Дескриптор сайта (например, @twitter)",
+    "title": "Заголовок",
+    "description": "Описание",
+    "imageUrl": "URL-адрес изображения",
+    "preview": "Предварительный просмотр",
+    "generatedHtml": "Сгенерированный HTML",
+    "copy": "Копировать",
+    "placeholderTitle": "Название карты",
+    "placeholderDesc": "Описание здесь..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Введите текст, чтобы говорить...",
+    "voice": "Голос",
+    "speed": "Скорость",
+    "pitch": "Подача",
+    "speak": "Говорить"
+  },
+  "TokenGenerator": {
+    "length": "Длина",
+    "includeNumbers": "Включить цифры",
+    "includeSymbols": "Включить символы",
+    "generate": "Создать токен"
+  },
+  "CssTriangle": {
+    "direction": "Направление",
+    "color": "Цвет",
+    "width": "Ширина (пикселей)",
+    "height": "Высота (пикселей)",
+    "copy": "Копировать"
+  },
+  "UnitConverter": {
+    "length": "Длина",
+    "weight": "Масса",
+    "temperature": "Температура",
+    "meters": "Метры",
+    "kilometers": "Километры",
+    "centimeters": "Сантиметры",
+    "millimeters": "Миллиметры",
+    "inches": "Дюймы",
+    "feet": "Ноги",
+    "yards": "Ярды",
+    "miles": "Майлз",
+    "kilograms": "Килограммы",
+    "grams": "Граммы",
+    "pounds": "фунтов",
+    "ounces": "Унции",
+    "celsius": "Цельсия",
+    "fahrenheit": "Фаренгейт",
+    "kelvin": "Кельвин"
+  },
+  "CssClipPath": {
+    "shapes": "Формы",
+    "preview": "Предварительный просмотр",
+    "cssCode": "CSS-код",
+    "copy": "Копировать",
+    "copied": "Скопировано"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Загрузить изображение",
+    "uploadDesc": "JPG, PNG или WebP. Мы сжимаем его локально.",
+    "selectImage": "Выберите изображение",
+    "settings": "Настройки сжатия",
+    "quality": "Качество",
+    "originalSize": "Исходный размер",
+    "compressedSize": "Сжатый размер",
+    "saving": "Сохранение",
+    "download": "Скачать"
+  },
+  "HtpasswdGenerator": {
+    "username": "Имя пользователя",
+    "password": "Пароль",
+    "algorithm": "Алгоритм",
+    "generate": "Создать запись",
+    "result": "Результат",
+    "sha1": "SHA-1 (небезопасно, но стандартно)",
+    "notSupported": "В этой клиентской версии поддерживается только SHA-1."
+  },
+  "MetaTags": {
+    "pageTitle": "Название страницы",
+    "description": "Описание",
+    "author": "Автор"
+  },
+  "AgeCalculator": {
+    "dob": "Дата рождения",
+    "age": "Возраст",
+    "years": "годы",
+    "months": "месяцы",
+    "days": "дни",
+    "nextBirthday": "Следующий день рождения"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL-адрес веб-сайта (обязательно)",
+    "source": "Источник кампании (обязательно)",
+    "medium": "Канал кампании (обязательно)",
+    "name": "Название кампании (обязательно)",
+    "term": "Срок кампании (необязательно)",
+    "content": "Содержание кампании (необязательно)",
+    "generatedUrl": "Сгенерированный URL-адрес",
+    "copy": "Копировать URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Текущее время Unix",
+    "timestampLabel": "Временная метка (секунды)",
+    "isoLabel": "Формат даты ISO",
+    "utcDate": "Дата UTC",
+    "localDate": "Местная дата",
+    "relative": "Родственник"
+  },
+  "SignatureGenerator": {
+    "color": "Цвет",
+    "width": "Ширина",
+    "clear": "Прозрачный",
+    "download": "Скачать PNG",
+    "signHere": "Подпишитесь здесь",
+    "note": "Подписи обрабатываются локально в вашем браузере. Мы не храним и не загружаем их."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Живой просмотр"
+  },
+  "CipherTools": {
+    "shiftAmount": "Сумма смещения (Н)",
+    "inputText": "Введите текст",
+    "outputText": "Выходной текст",
+    "rot13": "ROT13",
+    "caesar": "Цезарь (+3)",
+    "shift1": "Шифт +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Разрешение экрана",
+    "browser": "Браузер",
+    "cpuCores": "Ядра процессора",
+    "battery": "Батарея",
+    "detailedSpecs": "Подробные характеристики",
+    "userAgent": "Пользовательский агент",
+    "platform": "Платформа",
+    "windowSize": "Размер окна",
+    "pixelRatio": "Соотношение пикселей",
+    "colorDepth": "Глубина цвета",
+    "ram": "RAM",
+    "cookiesEnabled": "Файлы cookie включены",
+    "onlineStatus": "Онлайн-статус",
+    "unknown": "Неизвестный",
+    "yes": "Да",
+    "no": "Нет",
+    "enabled": "Включено",
+    "disabled": "Неполноценный"
+  },
+  "ChmodCalculator": {
+    "owner": "Владелец",
+    "group": "Группа",
+    "public": "Общественный",
+    "read": "Читать",
+    "write": "Писать",
+    "execute": "Выполнять",
+    "numeric": "Числовой",
+    "symbolic": "Символический"
+  },
+  "PasswordManager": {
+    "title": "Менеджер паролей",
+    "desc": "Надежно храните свои пароли и управляйте ими локально.",
+    "unlock": "Разблокировать хранилище",
+    "create": "Создать новое хранилище",
+    "unlockDesc": "Введите свой мастер-пароль для доступа к своим учетным записям.",
+    "createDesc": "Установите надежный мастер-пароль. Он шифрует ваши данные локально.",
+    "masterPassword": "Мастер-пароль",
+    "unlockBtn": "Разблокировать",
+    "createBtn": "Создать хранилище",
+    "note": "Данные хранятся в вашем браузере с использованием шифрования AES-GCM. Мы не сможем восстановить ваш пароль, если он утерян.",
+    "myPasswords": "Мои пароли",
+    "addNew": "Добавить новый",
+    "search": "Поиск аккаунтов...",
+    "noPasswords": "Пароли не найдены.",
+    "addAccount": "Добавить аккаунт",
+    "accountTitle": "Название / Веб-сайт",
+    "username": "Имя пользователя / адрес электронной почты",
+    "password": "Пароль",
+    "url": "URL-адрес (необязательно)",
+    "save": "Сохранить аккаунт",
+    "cancel": "Отмена",
+    "incorrectPassword": "Неправильный пароль или поврежденные данные.",
+    "loading": "Загрузка..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Подробности веб-сайта",
+    "pageTitle": "Название страницы",
+    "description": "Описание",
+    "keywords": "Ключевые слова (через запятую)",
+    "author": "Автор",
+    "socialPreview": "Социальный предварительный просмотр (OG и Twitter)",
+    "websiteUrl": "URL-адрес веб-сайта",
+    "previewImage": "URL-адрес предварительного просмотра изображения",
+    "generatedHtml": "Сгенерированный HTML",
+    "copy": "Копировать HTML",
+    "copied": "Скопировано"
+  },
+  "VibrationTester": {
+    "worksOnly": "Работает только на устройствах с виброаппаратурой (например, телефонах).",
+    "duration": "Длительность (мс)",
+    "vibrateOnce": "Вибрировать один раз",
+    "pulsePattern": "Импульсный шаблон",
+    "longPulse": "Длинный пульс",
+    "stop": "Останавливаться"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Почему форматирование JSON имеет значение",
+      "block_2": "JSON (нотация объектов JavaScript) — это язык Интернета.Но необработанный JSON, возвращаемый API, часто представляет собой минимизированный беспорядок.форматирование делает его читабельным, отлаживаемым и безопасным.",
+      "block_3": "1.Читабельность превыше всего",
+      "block_4": "При отладке ответа API длиной 5000 строк отступы спасают жизни.Наш <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> использует отступы в 2 или 4 пробела, чтобы сделать структуру понятной.",
+      "block_5": "2.Проверка",
+      "block_6": "Единственная пропущенная запятая может сломать ваше приложение.Всегда проверяйте JSON перед его сохранением в файлах конфигурации.",
+      "block_7": "Вывод",
+      "block_8": "Не тратьте время на проверку скобок вручную.Используйте автоматизированные инструменты."
+    },
+    "mastering-regex": {
+      "block_1": "Объяснение регулярных выражений",
+      "block_2": "Регулярные выражения — это мощный инструмент, но сбивающий с толку.давайте визуализируем их.",
+      "block_3": "Общие шаблоны",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Электронная почта:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-моно text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Телефон:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-моно text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Мгновенно протестируйте эти шаблоны с помощью нашего <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">тестера регулярных выражений</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 звезд Крона",
+      "block_2": "Минута, Час, День месяца, Месяц, День недели.Вот и все.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Примеры</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Запускать каждый день в полночь: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Примеры",
+      "block_6": "Выполнять каждые 15 минут: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Нужна помощь?Используйте наш <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">генератор Cron</a> для визуального создания выражений."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Проблема с облачными хранилищами",
+      "block_2": "LastPass, Okta и другие гиганты пострадали от нарушений.Когда ваше хранилище подключено к сети, оно является целью.",
+      "block_3": "Решение: локальное шифрование",
+      "block_4": "Наш новый <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Локальный менеджер паролей</a></strong> полностью работает в вашем браузере.Он использует <strong class=\"text-[var(--title-color)] font-semibold\">256-битное шифрование AES-GCM</strong>, полученное из вашего главного пароля с помощью PBKDF2.",
+      "block_5": "Как это работает",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Нулевое разглашение:</strong> Мы никогда не видим ваш пароль.Он никогда не покидает ваше устройство.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Автономное хранилище:</strong> Ваше зашифрованное хранилище хранится в LocalStorage вашего браузера.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Экспортируемый:</strong> Вы можете экспортировать или создать резервную копию своих необработанных зашифрованных данных в любое время.</li>",
+      "block_7": "Не доверяйте облаку свои главные ключи.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Попробуйте локальный менеджер паролей</a> сегодня."
+    }
+  }
+}

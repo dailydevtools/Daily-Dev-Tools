@@ -6,8 +6,10 @@ import Link from "next/link";
 import ToolIcon from "./ToolIcon";
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function RelatedTools() {
+    const t = useTranslations('RelatedTools');
     const pathname = usePathname();
     const [randomTools, setRandomTools] = useState<typeof tools>([]);
 
@@ -22,25 +24,25 @@ export default function RelatedTools() {
     if (randomTools.length === 0) return null;
 
     return (
-        <div style={{ marginTop: 80, borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: 40, paddingBottom: 40 }}>
-            <div style={{ textAlign: 'center', marginBottom: 32 }}>
-                <h3 style={{ fontSize: 24, fontWeight: 'bold', color: 'white', marginBottom: 8 }}>You might also like</h3>
-                <p style={{ color: '#9ca3af' }}>Explore other popular developer tools</p>
+        <div className="mt-20 border-t border-[rgba(255,255,255,0.05)] py-10">
+            <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-white mb-2">{t('title')}</h3>
+                <p className="text-[#9ca3af]">{t('subtitle')}</p>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 20 }}>
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
                 {randomTools.map(tool => (
-                    <Link key={tool.id} href={`/tools/${tool.id}`} className="glass-card" style={{ padding: 24, display: 'block', textDecoration: 'none' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 12 }}>
-                            <div style={{ color: '#fb923c' }}>
+                    <Link key={tool.id} href={`/tools/${tool.id}`} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 block p-6 no-underline bg-[var(--card-bg)]">
+                        <div className="flex items-center gap-4 mb-3">
+                            <div className="text-[#fb923c]">
                                 <ToolIcon name={tool.icon} size={24} />
                             </div>
-                            <h4 style={{ fontSize: 16, fontWeight: 600, color: 'white' }}>{tool.name}</h4>
+                            <h4 className="text-base font-semibold text-white">{tool.name}</h4>
                         </div>
-                        <p style={{ fontSize: 13, color: '#9ca3af', marginBottom: 16, lineHeight: 1.5 }}>{tool.description}</p>
-                        <div style={{ display: 'flex', alignItems: 'center', color: '#fb923c', fontSize: 13, fontWeight: 500 }}>
-                            <span>Open Tool</span>
-                            <ArrowRight size={14} style={{ marginLeft: 6 }} />
+                        <p className="text-[13px] text-[#9ca3af] mb-4 leading-relaxed">{tool.description}</p>
+                        <div className="flex items-center text-[#fb923c] text-[13px] font-medium">
+                            <span>{t('openTool')}</span>
+                            <ArrowRight size={14} className="ml-1.5" />
                         </div>
                     </Link>
                 ))}

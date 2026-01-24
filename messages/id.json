@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Alat",
+    "blog": "blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Cari..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Alat Pengembang Online Gratis",
+    "description": "90+ alat online gratis untuk semua orang. Pemformat, konverter, generator, dan utilitas. Cepat, pribadi, dan tidak perlu registrasi."
+  },
+  "NotFound": {
+    "title": "Halaman Tidak Ditemukan",
+    "description": "Maaf, kami tidak dapat menemukan halaman yang Anda cari.",
+    "backHome": "Kembali ke Beranda",
+    "suggestions": "Coba cari alat atau jelajahi alat populer kami di bawah ini."
+  },
+  "Homepage": {
+    "heroTag": "100+ Alat Gratis • Pribadi • Tanpa Daftar",
+    "titleLine1": "Alat Pengembang Sehari-hari",
+    "titleLine2": "Yang Berfungsi Dengan Baik",
+    "subtitle": "Alat yang cepat, indah, dan berfokus pada privasi untuk pengembang, desainer, dan semua orang. Semuanya berjalan di browser Anda.",
+    "recentTools": "Baru Digunakan",
+    "noRecentText": "Mulai gunakan alat untuk melihatnya di sini",
+    "searchResults": "Hasil Pencarian",
+    "popularTools": "Populer",
+    "toolsCount": "{count} alat tersedia",
+    "features": {
+      "fast": {
+        "title": "Sangat Cepat",
+        "desc": "Semua alat berjalan secara lokal di browser Anda"
+      },
+      "private": {
+        "title": "100% Pribadi",
+        "desc": "Data Anda tidak pernah meninggalkan perangkat Anda"
+      },
+      "simple": {
+        "title": "Dibuat untuk Semua",
+        "desc": "Cukup sederhana untuk siapa saja, kuat untuk para profesional"
+      },
+      "free": {
+        "title": "Selalu Gratis",
+        "desc": "Tanpa akun, tanpa batas"
+      }
+    },
+    "categories": {
+      "All": "Semua",
+      "Favorites": "Favorit",
+      "Developer": "Pengembang",
+      "Design": "Desain",
+      "Content": "Konten",
+      "Security": "Keamanan",
+      "Productivity": "Produktivitas",
+      "Math": "Matematika",
+      "Utility": "Utilitas"
+    },
+    "cta": {
+      "title": "Siap meningkatkan produktivitas Anda?",
+      "text": "Mulai gunakan alat pengembang kami secara gratis. Tidak perlu mendaftar, tidak ada pengumpulan data.",
+      "button": "Mulai Gratis"
+    },
+    "openTool": "Buka alat",
+    "noResults": "Tidak ditemukan alat yang cocok dengan",
+    "clearFilters": "Hapus filter"
+  },
+  "Footer": {
+    "builtWith": "Dibuat dengan ❤️ oleh",
+    "allTools": "Semua Alat",
+    "blog": "blog",
+    "about": "Tentang",
+    "privacy": "Privasi",
+    "terms": "Syarat"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Pemformat JSON",
+      "description": "Format, validasi & percantik JSON secara instan"
+    },
+    "base64-encoder": {
+      "name": "Pembuat Enkode Base64",
+      "description": "Mengkodekan dan mendekode string Base64"
+    },
+    "url-encoder": {
+      "name": "Pembuat Enkode URL",
+      "description": "Enkode dan dekode URL dengan aman"
+    },
+    "jwt-decoder": {
+      "name": "Dekoder JWT",
+      "description": "Dekode dan periksa Token Web JSON"
+    },
+    "regex-tester": {
+      "name": "Penguji Regex",
+      "description": "Uji ekspresi reguler secara real-time"
+    },
+    "hash-generator": {
+      "name": "Pembuat Hash",
+      "description": "Hasilkan hash MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Pembuat UUID",
+      "description": "Hasilkan UUID/GUID acak secara instan"
+    },
+    "css-minifier": {
+      "name": "Pengecil CSS",
+      "description": "Perkecil dan optimalkan kode CSS Anda"
+    },
+    "markdown-editor": {
+      "name": "Pratinjau Penurunan Harga",
+      "description": "Editor dan pratinjau penurunan harga secara real-time"
+    },
+    "color-converter": {
+      "name": "Konverter Warna",
+      "description": "Konversi Hex, RGB, HSL dan CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Alat Stempel Waktu",
+      "description": "Ubah stempel waktu Unix menjadi tanggal manusia"
+    },
+    "sql-formatter": {
+      "name": "Pemformat SQL",
+      "description": "Memformat dan mempercantik kueri SQL"
+    },
+    "password-generator": {
+      "name": "Pembuat Kata Sandi",
+      "description": "Buat kata sandi acak yang aman"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Hasilkan teks placeholder untuk desain"
+    },
+    "image-base64": {
+      "name": "Gambar ke Base64",
+      "description": "Konversikan gambar ke string Base64"
+    },
+    "qr-generator": {
+      "name": "Pembuat Kode QR",
+      "description": "Hasilkan kode QR untuk URL dan teks"
+    },
+    "word-counter": {
+      "name": "Penghitung Kata",
+      "description": "Hitung kata, karakter & waktu membaca"
+    },
+    "case-converter": {
+      "name": "Konverter Kasus",
+      "description": "Kotak unta, ular, kebab & pascal"
+    },
+    "text-diff": {
+      "name": "Pemeriksa Perbedaan Teks",
+      "description": "Bandingkan dua teks dan temukan perbedaannya"
+    },
+    "slug-generator": {
+      "name": "Pembuat Siput",
+      "description": "Hasilkan siput URL yang ramah SEO"
+    },
+    "gradient-generator": {
+      "name": "Generator Gradien",
+      "description": "Buat gradien CSS yang indah"
+    },
+    "image-compressor": {
+      "name": "Kompresor Gambar",
+      "description": "Kompres gambar secara lokal & pribadi"
+    },
+    "device-info": {
+      "name": "Informasi Perangkat",
+      "description": "Lihat informasi layar, browser & sistem"
+    },
+    "random-generator": {
+      "name": "Generator Acak",
+      "description": "Pilih nomor, koin & item daftar"
+    },
+    "unit-converter": {
+      "name": "Pengonversi Satuan",
+      "description": "Konversi Panjang, Berat & Suhu"
+    },
+    "pomodoro-timer": {
+      "name": "Pengatur Waktu Pomodoro",
+      "description": "Pengatur waktu fokus untuk produktivitas"
+    },
+    "yt-thumbnail": {
+      "name": "Pengunduh Gambar Kecil",
+      "description": "Dapatkan thumbnail video YouTube"
+    },
+    "my-ip": {
+      "name": "Apa IP Saya",
+      "description": "Lihat IP publik & info jaringan"
+    },
+    "keycode-info": {
+      "name": "Info Kode Kunci",
+      "description": "Debugger acara keyboard JavaScript"
+    },
+    "signature-generator": {
+      "name": "Pembuat Tanda Tangan",
+      "description": "Gambar & unduh tanda tangan digital"
+    },
+    "screen-recorder": {
+      "name": "Perekam Layar",
+      "description": "Rekam layar & unduh video"
+    },
+    "credit-card-validator": {
+      "name": "Validator Kartu",
+      "description": "Validasi nomor kartu kredit"
+    },
+    "password-manager": {
+      "name": "Pengelola Kata Sandi Lokal",
+      "description": "Simpan kata sandi secara lokal dengan aman dengan enkripsi"
+    },
+    "deep-link-tester": {
+      "name": "Penguji Tautan Dalam",
+      "description": "Uji, luncurkan & kelola tautan dalam seluler"
+    },
+    "image-converter": {
+      "name": "Pengonversi Gambar",
+      "description": "Konversikan PNG/JPG ke WebP secara lokal untuk mengoptimalkan gambar"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Konversi JSON ke CSV dan sebaliknya"
+    },
+    "bmi-calculator": {
+      "name": "Kalkulator BMI",
+      "description": "Hitung Indeks Massa Tubuh (BMI)"
+    },
+    "dns-lookup": {
+      "name": "Pencarian DNS",
+      "description": "Kueri data DNS (A, MX, NS) secara instan"
+    },
+    "age-calculator": {
+      "name": "Kalkulator Usia",
+      "description": "Hitung usia yang tepat dan total hari"
+    },
+    "loan-calculator": {
+      "name": "Kalkulator Pinjaman",
+      "description": "Hitung EMI bulanan dan total bunga"
+    },
+    "discount-calculator": {
+      "name": "Kalkulator Diskon",
+      "description": "Hitung harga jual dan tabungan"
+    },
+    "interest-calculator": {
+      "name": "Kalkulator Bunga",
+      "description": "Kalkulator bunga sederhana vs bunga majemuk"
+    },
+    "html-encoder": {
+      "name": "Enkoder/Dekoder HTML",
+      "description": "Keluar dari karakter khusus atau dekode HTML"
+    },
+    "list-sorter": {
+      "name": "Penyortir Daftar",
+      "description": "Urutkan, balikkan, acak, dan hapus duplikat daftar"
+    },
+    "box-shadow": {
+      "name": "Pembuat Bayangan Kotak",
+      "description": "Menghasilkan bayangan kotak CSS secara visual"
+    },
+    "date-diff": {
+      "name": "Perbedaan Tanggal",
+      "description": "Hitung durasi antara dua tanggal"
+    },
+    "sql-to-json": {
+      "name": "SQL ke JSON",
+      "description": "Konversikan SQL INSERT ke objek JSON"
+    },
+    "keyword-density": {
+      "name": "Kepadatan Kata Kunci",
+      "description": "Analisis frekuensi kata kunci untuk SEO"
+    },
+    "json-diff": {
+      "name": "Perbedaan JSON",
+      "description": "Bandingkan dua objek JSON secara berdampingan"
+    },
+    "cipher-tools": {
+      "name": "Alat Sandi",
+      "description": "Enkoder/dekoder ROT13 dan Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Generator Token Acak",
+      "description": "Hasilkan token acak yang aman"
+    },
+    "favicon-generator": {
+      "name": "Pembuat Favicon",
+      "description": "Buat favicon .ico dan PNG"
+    },
+    "robots-generator": {
+      "name": "Pembuat Robots.txt",
+      "description": "Buat robots.txt untuk SEO"
+    },
+    "grid-generator": {
+      "name": "Pembuat Kotak CSS",
+      "description": "Pembuat tata letak Visual CSS Grid"
+    },
+    "hmac-generator": {
+      "name": "Pembangkit HMAC",
+      "description": "Hasilkan kode otentikasi pesan hash yang dikunci"
+    },
+    "http-status": {
+      "name": "Kode Status HTTP",
+      "description": "Daftar referensi kode status HTTP"
+    },
+    "week-number": {
+      "name": "Nomor Minggu",
+      "description": "Jumlah minggu saat ini dan kemajuan tahun"
+    },
+    "text-tools": {
+      "name": "Transformator Teks",
+      "description": "Membalikkan, membalik, dan menyandikan teks"
+    },
+    "url-parser": {
+      "name": "Pengurai URL",
+      "description": "Pisahkan URL menjadi protokol, host, jalur, params"
+    },
+    "markdown-table": {
+      "name": "Generator Tabel Penurunan Harga",
+      "description": "Buat tabel penurunan harga secara visual"
+    },
+    "whatsapp-link": {
+      "name": "Pembuat Tautan WhatsApp",
+      "description": "Buat tautan obrolan WhatsApp langsung"
+    },
+    "paypal-link": {
+      "name": "Pembuat Tautan PayPal",
+      "description": "Buat tautan pembayaran PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG ke PNG",
+      "description": "Konversikan kode/file SVG ke gambar PNG"
+    },
+    "prime-factors": {
+      "name": "Faktor Prima",
+      "description": "Temukan faktor prima suatu bilangan"
+    },
+    "iban-validator": {
+      "name": "Validator IBAN",
+      "description": "Validasi Nomor Rekening Bank Internasional"
+    },
+    "ascii-converter": {
+      "name": "Konverter ASCII",
+      "description": "Ubah teks menjadi kode desimal ASCII"
+    },
+    "utm-builder": {
+      "name": "Pembangun UTM",
+      "description": "Buat URL kampanye Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Pembuat Meta Tag",
+      "description": "Hasilkan tag meta SEO untuk situs web"
+    },
+    "og-generator": {
+      "name": "Buka Generator Grafik",
+      "description": "Buat tag meta Open Graph untuk berbagi sosial"
+    },
+    "twitter-card": {
+      "name": "Pembuat Kartu Twitter",
+      "description": "Buat tag meta Kartu Twitter"
+    },
+    "aspect-ratio": {
+      "name": "Kalkulator Rasio Aspek",
+      "description": "Hitung rasio aspek dan dimensi"
+    },
+    "css-cursor": {
+      "name": "Kursor CSS",
+      "description": "Referensi properti kursor CSS visual"
+    },
+    "css-triangle": {
+      "name": "Generator Segitiga CSS",
+      "description": "Hasilkan segitiga CSS murni"
+    },
+    "percentage-calculator": {
+      "name": "Kalkulator Persentase",
+      "description": "Hitung persentase dan perubahannya"
+    },
+    "vat-calculator": {
+      "name": "Kalkulator PPN",
+      "description": "Hitung jumlah tambah/hapus PPN"
+    },
+    "stopwatch": {
+      "name": "Stopwatch",
+      "description": "Stopwatch sederhana berbasis browser"
+    },
+    "text-to-speech": {
+      "name": "Teks ke Ucapan",
+      "description": "Ubah teks menjadi suara lisan"
+    },
+    "speech-to-text": {
+      "name": "Pidato ke Teks",
+      "description": "Ubah suara lisan menjadi teks"
+    },
+    "vibration-tester": {
+      "name": "Penguji Getaran",
+      "description": "Motor getaran alat uji"
+    },
+    "chmod-calculator": {
+      "name": "Kalkulator Chmod",
+      "description": "Hitung izin file Linux"
+    },
+    "crontab-generator": {
+      "name": "Generator Crontab",
+      "description": "Hasilkan ekspresi jadwal cron"
+    },
+    "htpasswd-generator": {
+      "name": "Generator Htpasswd",
+      "description": "Hasilkan entri autentikasi dasar"
+    },
+    "subnet-calculator": {
+      "name": "Kalkulator Subnet",
+      "description": "Hitung subnet jaringan dan rentang IP"
+    },
+    "mac-generator": {
+      "name": "Pembuat Alamat MAC",
+      "description": "Hasilkan alamat MAC acak"
+    },
+    "timezone-converter": {
+      "name": "Konverter Zona Waktu",
+      "description": "Konversi waktu antara beberapa zona"
+    },
+    "email-validator": {
+      "name": "Validator Email",
+      "description": "Validasi format email dan deteksi kesalahan ketik"
+    },
+    "password-strength": {
+      "name": "Kekuatan Kata Sandi",
+      "description": "Periksa skor kekuatan kata sandi"
+    },
+    "roman-numerals": {
+      "name": "Konverter Angka Romawi",
+      "description": "Konversi antara angka Romawi dan desimal"
+    },
+    "margin-calculator": {
+      "name": "Kalkulator Margin",
+      "description": "Hitung margin keuntungan dan markup"
+    },
+    "roi-calculator": {
+      "name": "Kalkulator ROI",
+      "description": "Hitung Pengembalian Investasi"
+    },
+    "fuel-calculator": {
+      "name": "Kalkulator Biaya Bahan Bakar",
+      "description": "Hitung biaya bahan bakar perjalanan"
+    },
+    "pretty-print-url": {
+      "name": "URL Cetak Cantik",
+      "description": "Format dan percantik URL agar mudah dibaca"
+    }
+  },
+  "Terms": {
+    "title": "Ketentuan Layanan",
+    "lastUpdated": "Terakhir diperbarui",
+    "sections": {
+      "acceptance": {
+        "title": "1. Penerimaan Persyaratan",
+        "content": "Dengan mengakses dan menggunakan DailyDevTools, Anda menerima dan menyetujui untuk terikat pada syarat dan ketentuan perjanjian ini."
+      },
+      "useLicense": {
+        "title": "2. Gunakan Lisensi",
+        "content": "DailyDevTools gratis digunakan untuk tujuan pribadi dan komersial. Anda tidak boleh:",
+        "list": {
+          "0": "Mencoba merekayasa balik atau mengikis sebagian besar situs.",
+          "1": "Menggunakan situs web dengan cara apa pun yang menyebabkan, atau dapat menyebabkan, kerusakan pada situs web atau penurunan ketersediaan atau aksesibilitas situs web."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Penafian",
+        "content": "Alat-alat di DailyDevTools disediakan \"sebagaimana adanya\". Kami tidak memberikan jaminan, tersurat maupun tersirat..."
+      },
+      "limitations": {
+        "title": "4. Keterbatasan",
+        "content": "Dalam keadaan apa pun DailyDevTools atau pemasoknya tidak bertanggung jawab atas segala kerusakan..."
+      },
+      "revisions": {
+        "title": "5. Revisi",
+        "content": "Materi yang muncul di DailyDevTools mungkin mengandung kesalahan teknis, tipografi, atau fotografi..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Kebijakan Privasi",
+    "lastUpdated": "Terakhir diperbarui",
+    "intro": "Selamat datang di DailyDevTools. Kami menghormati privasi Anda dan berkomitmen untuk melindungi data pribadi Anda.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Cara Kerja Alat Kami (Pemrosesan Lokal)",
+        "content": "Yang paling penting: Alat-alat tersebut berjalan sepenuhnya di browser Anda. Data tidak pernah meninggalkan perangkat Anda."
+      },
+      "dataCollection": {
+        "title": "3. Data yang Kami Kumpulkan",
+        "content": "Kami tidak mengumpulkan konten. Kami menggunakan Google Analytics untuk statistik penggunaan."
+      },
+      "cookies": {
+        "title": "4. Kue",
+        "content": "Kami menggunakan cookie untuk analisis dan preferensi lokal."
+      },
+      "thirdParty": {
+        "title": "5. Tautan Pihak Ketiga",
+        "content": "Situs kami mungkin berisi tautan ke pihak ketiga."
+      },
+      "changes": {
+        "title": "6. Perubahan Kebijakan Ini",
+        "content": "Kami dapat memperbarui kebijakan ini dari waktu ke waktu."
+      },
+      "contact": {
+        "title": "7. Hubungi Kami",
+        "content": "Hubungi kami melalui GitHub atau media sosial."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Sumber Daya Pengembang",
+    "subtitle": "Pelajari lebih dalam tentang alat yang kami buat dan konsep di baliknya.",
+    "readMore": "Baca selengkapnya",
+    "backToBlog": "Kembali ke Blog",
+    "enjoyedArticle": "Menikmati artikel ini?",
+    "checkTools": "Lihat Alat kami"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Masukan",
+      "output": "Keluaran",
+      "format": "Format",
+      "minify": "Mengecilkan",
+      "download": "Unduh",
+      "copy": "Salin",
+      "paste": "Pasta",
+      "copied": "Disalin!",
+      "upload": "Mengunggah",
+      "sample": "Mencicipi",
+      "clear": "Bersihkan",
+      "indent": "Indentasi:",
+      "chars": "karakter",
+      "error": "Kesalahan",
+      "invalid": "Masukan Tidak Valid",
+      "result": "Hasil",
+      "generate": "Menghasilkan",
+      "calculate": "Menghitung",
+      "convert": "Mengubah",
+      "validate": "Mengesahkan",
+      "resultPlaceholder": "Hasilnya akan muncul di sini..."
+    },
+    "Base64Encoder": {
+      "encode": "Menyandi",
+      "decode": "Membaca sandi",
+      "textToEncode": "Teks untuk Dikodekan",
+      "base64ToDecode": "Base64 untuk Mendekode",
+      "enterText": "Masukkan teks untuk dikodekan...",
+      "enterBase64": "Masukkan Base64 untuk memecahkan kode...",
+      "encodeAction": "Enkode ke Base64",
+      "decodeAction": "Dekode dari Base64",
+      "base64Output": "Keluaran Base64",
+      "decodedText": "Teks yang Didekodekan",
+      "resultPlaceholder": "Hasilnya akan muncul di sini...",
+      "invalidInput": "Masukan tidak valid untuk {mode}"
+    },
+    "QrGenerator": {
+      "content": "Isi",
+      "placeholder": "https://example.com",
+      "customization": "Kustomisasi",
+      "foreground": "Latar depan",
+      "background": "Latar belakang",
+      "download": "Unduh"
+    },
+    "HashGenerator": {
+      "inputText": "Masukkan Teks",
+      "placeholder": "Masukkan teks ke hash...",
+      "waiting": "Menunggu masukan..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Hasilkan Baru",
+      "configuration": "Konfigurasi",
+      "length": "Panjang Kata Sandi",
+      "uppercase": "Huruf besar (A-Z)",
+      "numbers": "Angka (0-9)",
+      "symbols": "Simbol (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Rekatkan JSON Anda di sini...",
+      "outputPlaceholder": "JSON yang diformat akan muncul di sini...",
+      "spaces": "spasi"
+    },
+    "UrlEncoder": {
+      "encode": "Menyandi",
+      "decode": "Membaca sandi",
+      "urlToEncode": "URL untuk Dikodekan",
+      "encodedUrlToDecode": "URL yang disandikan untuk Didekode",
+      "enterUrlToEncode": "Masukkan URL atau teks untuk dikodekan...",
+      "enterUrlToDecode": "Masukkan URL yang disandikan untuk memecahkan kode...",
+      "encodeAction": "Kodekan URL",
+      "decodeAction": "Dekode URL",
+      "encodedUrl": "URL yang dikodekan",
+      "decodedUrl": "URL yang didekodekan",
+      "resultPlaceholder": "Hasilnya akan muncul di sini...",
+      "chars": "karakter",
+      "invalidInput": "Masukan tidak valid untuk {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Tempelkan token JWT Anda",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Dekode JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Diterbitkan",
+      "expires": "Kedaluwarsa"
+    },
+    "RegexTester": {
+      "expression": "Ekspresi",
+      "expressionPlaceholder": "Grup tangkapan (abc)...",
+      "testString": "Rangkaian Tes",
+      "testStringPlaceholder": "Tempel string pengujian Anda di sini...",
+      "matchHighlights": "Sorotan Pertandingan",
+      "matches": "cocok",
+      "matchInfo": "Informasi Pertandingan",
+      "match": "Cocok",
+      "index": "Indeks",
+      "group": "Kelompok",
+      "noMatches": "Tidak ada kecocokan yang ditemukan",
+      "highlightPlaceholder": "Pertandingan akan disorot di sini...",
+      "flagsHelp": "g: global, i: abaikan kasus, m: multiline"
+    },
+    "UuidGenerator": {
+      "generate": "Menghasilkan",
+      "generateCount": "Menghasilkan:",
+      "copyAll": "Salin Semua",
+      "copyUuid": "Salin UUID",
+      "generatedAt": "Dibuat secara lokal pada {time} • UUID versi 4"
+    },
+    "WordCounter": {
+      "words": "Kata-kata",
+      "characters": "Karakter",
+      "sentences": "Kalimat",
+      "paragraphs": "Paragraf",
+      "readingTime": "Waktu Membaca",
+      "min": "min",
+      "textInput": "Masukan Teks",
+      "inputPlaceholder": "Mulai ketik atau tempel teks Anda di sini untuk menganalisis...",
+      "clear": "Jernih"
+    },
+    "TimestampConverter": {
+      "timestamp": "Stempel waktu",
+      "humanDate": "Tanggal Manusia",
+      "convert": "Mengubah",
+      "currentTimestamp": "Stempel Waktu Saat Ini",
+      "inputPlaceholder": "Masukkan stempel waktu Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Tempel kueri SQL Anda di sini...",
+      "outputPlaceholder": "SQL yang diformat akan muncul di sini..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Tempelkan kode CSS Anda di sini...",
+      "outputPlaceholder": "CSS yang diperkecil akan muncul di sini..."
+    },
+    "MarkdownEditor": {
+      "editor": "Editor",
+      "preview": "Pratinjau",
+      "inputPlaceholder": "Masukkan Penurunan Harga di sini..."
+    },
+    "TextDiff": {
+      "original": "Teks Asli",
+      "changed": "Teks Berubah",
+      "compare": "Membandingkan",
+      "differences": "Perbedaan"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Masukkan teks untuk dikonversi...",
+      "generatedSlug": "Siput yang Dihasilkan"
+    },
+    "ImageCompressor": {
+      "selectImage": "Pilih Gambar",
+      "quality": "Kualitas",
+      "compress": "Kompres",
+      "download": "Unduh",
+      "originalSize": "Ukuran Asli",
+      "compressedSize": "Ukuran Terkompresi"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragraf",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "GradientGenerator": {
+      "angle": "Sudut",
+      "colors": "Warna",
+      "addColor": "Tambahkan Warna",
+      "copyCss": "Salin CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Tanggal Lahir",
+      "calculate": "Menghitung",
+      "years": "Bertahun-tahun",
+      "months": "Bulan",
+      "days": "hari",
+      "totalDays": "Jumlah Hari",
+      "nextBirthday": "Ulang Tahun Berikutnya Pada"
+    },
+    "AsciiConverter": {
+      "text": "Teks",
+      "ascii": "ASCII",
+      "convert": "Mengubah",
+      "inputPlaceholder": "Masukkan teks..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horisontal (X)",
+      "vertical": "Vertikal (Y)",
+      "blur": "Mengaburkan",
+      "spread": "Menyebar",
+      "colorOpacity": "Warna & Opasitas",
+      "inset": "Sisipan"
+    },
+    "BmiCalculator": {
+      "metric": "Metrik (kg/cm)",
+      "imperial": "Imperial (pon/inci)",
+      "weight": "Berat",
+      "height": "Tinggi",
+      "calculate": "Hitung BMI",
+      "bmiScore": "Skor BMI Anda",
+      "underweight": "Berat badan kurang",
+      "normal": "Berat Badan Biasa",
+      "overweight": "Kegemukan",
+      "obese": "Kegemukan"
+    },
+    "CaseConverter": {
+      "inputText": "Masukkan Teks",
+      "inputPlaceholder": "Ketik teks Anda di sini...",
+      "upper": "UPPERCASE",
+      "lower": "huruf kecil",
+      "title": "Judul Kasus",
+      "sentence": "Kasus kalimat",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Menyalin",
+      "conversions": "Konversi",
+      "clear": "Jernih"
+    },
+    "ColorConverter": {
+      "hexLabels": "Warna HEX",
+      "rgbLabels": "Warna RGB",
+      "hslLabels": "Warna HSL",
+      "cmykLabels": "Warna CMYK",
+      "copy": "Menyalin",
+      "hexToRgbNote": "* Saat ini hanya mendukung konversi HEX ke RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Nomor Kartu",
+      "validate": "Mengesahkan",
+      "valid": "Nomor Kartu Kredit yang Valid",
+      "invalid": "Nomor Kartu Kredit Tidak Valid",
+      "placeholder": "Masukkan nomor kartu...",
+      "type": "Jenis Kartu",
+      "checkDigit": "Periksa Digit",
+      "luhnValid": "Algoritma Luhn Valid"
+    },
+    "CipherTools": {
+      "encode": "Menyandi",
+      "decode": "Membaca sandi",
+      "rot13": "ROT13",
+      "caesar": "Sandi Caesar",
+      "shift": "Menggeser",
+      "inputPlaceholder": "Halo Dunia",
+      "outputPlaceholder": "Hasilnya akan muncul di sini..."
+    },
+    "CronGenerator": {
+      "minute": "Menit",
+      "hour": "Jam",
+      "dayMonth": "Hari (Bulan)",
+      "month": "Bulan",
+      "dayWeek": "Hari (Minggu)",
+      "presets": "Preset Umum",
+      "everyMinute": "Setiap menit",
+      "everyHour": "Setiap jam",
+      "everyDayMidnight": "Setiap hari pada tengah malam",
+      "everySunday": "Setiap hari Minggu",
+      "everyMonth": "Setiap bulan",
+      "everyYear": "Setiap tahun",
+      "formatInfo": "Format: * * * * * (Menit Jam Hari Bulan Bulan Hari Minggu)",
+      "usageInfo": "Gunakan * untuk 'setiap', */n untuk 'setiap n', 1,2,3 untuk daftar tertentu."
+    },
+    "DateDiff": {
+      "startDate": "Tanggal Mulai",
+      "endDate": "Tanggal Berakhir",
+      "calculate": "Menghitung",
+      "difference": "Perbedaan",
+      "years": "Bertahun-tahun",
+      "months": "Bulan",
+      "days": "hari",
+      "totalDays": "Jumlah Hari",
+      "totalWeeks": "Jumlah Minggu",
+      "totalHours": "Jumlah Jam"
+    },
+    "DeepLinkTester": {
+      "testLink": "Tautan Tes",
+      "savedLinks": "Tautan Tersimpan",
+      "searchPlaceholder": "Telusuri tautan tersimpan...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Meluncurkan",
+      "save": "Menyimpan",
+      "delete": "Menghapus",
+      "opens": "terbuka",
+      "scanQr": "Pindai dengan perangkat seluler Anda untuk mengujinya",
+      "noSavedLinks": "Tidak ada tautan tersimpan yang ditemukan.",
+      "enterLabel": "Masukkan label untuk tautan ini:",
+      "saved": "Disimpan!",
+      "confirmDelete": "Hapus tautan ini?"
+    },
+    "DeviceInfo": {
+      "screen": "Layar",
+      "browser": "Peramban",
+      "system": "Sistem",
+      "resolution": "Resolusi",
+      "colorDepth": "Kedalaman Warna",
+      "userAgent": "Agen Pengguna",
+      "platform": "Platform",
+      "language": "Bahasa"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Harga Asli",
+      "discountPercent": "Diskon",
+      "additionalDiscount": "Diskon Tambahan",
+      "calculate": "Menghitung",
+      "youSave": "Anda Menyimpan",
+      "finalPrice": "Harga Akhir",
+      "salesTax": "Pajak penjualan"
+    },
+    "DnsLookup": {
+      "domain": "Domain",
+      "lookup": "Pencarian",
+      "recordType": "Jenis Rekaman",
+      "results": "Hasil",
+      "placeholder": "contoh.com",
+      "status": "Status",
+      "time": "Waktu",
+      "server": "pelayan",
+      "answerSection": "Bagian Jawaban",
+      "name": "Nama",
+      "type": "Jenis",
+      "ttl": "TTL",
+      "data": "Data",
+      "noRecords": "Tidak ada catatan yang ditemukan"
+    },
+    "EmailValidator": {
+      "email": "Alamat Surel",
+      "validate": "Mengesahkan",
+      "valid": "Sah",
+      "invalid": "Tidak sah",
+      "suggestion": "Saran",
+      "placeholder": "pengguna@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Unggah Gambar",
+      "generate": "Menghasilkan",
+      "download": "Unduh",
+      "sizes": "Ukuran"
+    },
+    "FuelCalculator": {
+      "distance": "Jarak",
+      "fuelEfficiency": "Efisiensi Bahan Bakar",
+      "fuelPrice": "Harga Bahan Bakar",
+      "calculate": "Menghitung",
+      "result": "Hasil",
+      "totalCost": "Jumlah Biaya",
+      "fuelNeeded": "Bahan Bakar Dibutuhkan"
+    },
+    "GridGenerator": {
+      "columns": "Kolom",
+      "rows": "Baris",
+      "gap": "Celah",
+      "preview": "Pratinjau",
+      "copyCss": "Salin CSS",
+      "rowGap": "Kesenjangan Baris",
+      "colGap": "Celah Kolom",
+      "options": "Pilihan"
+    },
+    "HmacGenerator": {
+      "message": "Pesan",
+      "secret": "Rahasia",
+      "algorithm": "Algoritma",
+      "generate": "Menghasilkan",
+      "inputPlaceholder": "Masukkan teks...",
+      "secretPlaceholder": "Rahasia..."
+    },
+    "HtmlEncoder": {
+      "encode": "Menyandi",
+      "decode": "Membaca sandi",
+      "resultPlaceholder": "Hasilnya akan muncul di sini...",
+      "inputPlaceholder": "Rekatkan HTML di sini..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Kode pencarian (misalnya 404) atau nama...",
+      "code": "Kode",
+      "name": "Nama",
+      "description": "Keterangan"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Mengesahkan",
+      "valid": "Sah",
+      "invalid": "Tidak sah",
+      "placeholder": "Masuk IBAN...",
+      "inputLabel": "Masukkan Nomor IBAN",
+      "validTitle": "Tolok Ukur yang Valid",
+      "invalidTitle": "Checksum tidak valid",
+      "validDesc": "Format IBAN dan checksum sudah benar.",
+      "invalidDesc": "IBAN tidak cocok dengan algoritma checksum."
+    },
+    "ImageBase64": {
+      "upload": "Mengunggah",
+      "convert": "Mengubah",
+      "copy": "Menyalin",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Unggah Gambar",
+      "convertToBase64": "Konversikan ke Base64",
+      "convertToImage": "Konversikan ke Gambar",
+      "base64String": "Tali Base64",
+      "download": "Unduh"
+    },
+    "ImageConverter": {
+      "selectImage": "Pilih Gambar",
+      "format": "Format",
+      "convert": "Mengubah",
+      "download": "Unduh",
+      "quality": "Kualitas"
+    },
+    "InterestCalculator": {
+      "principal": "Kepala sekolah",
+      "rate": "Suku bunga",
+      "time": "Jangka Waktu (Tahun)",
+      "calculate": "Menghitung",
+      "simpleInterest": "Sederhana",
+      "compoundInterest": "Menggabungkan",
+      "totalAmount": "Nilai Total",
+      "type": "Jenis",
+      "frequency": "Frekuensi Gabungan",
+      "annually": "Setiap tahun",
+      "monthly": "Bulanan",
+      "daily": "Sehari-hari",
+      "year": "Tahun"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Masukkan JSON...",
+      "convert": "Mengubah",
+      "format": "Format",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON ke CSV",
+      "csvToJson": "CSV ke JSON",
+      "jsonInput": "Masukan JSON",
+      "csvInput": "Masukan CSV",
+      "jsonOutput": "Keluaran JSON",
+      "csvOutput": "Keluaran CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON asli",
+      "modified": "JSON yang dimodifikasi",
+      "compare": "Membandingkan",
+      "differences": "Perbedaan"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Tekan tombol apa saja",
+      "key": "Kunci",
+      "code": "Kode",
+      "keyCode": "Kode Kunci",
+      "which": "yang",
+      "location": "Lokasi",
+      "modifiers": "Pengubah",
+      "standard": "Standar",
+      "left": "Kiri",
+      "right": "Benar",
+      "numpad": "papan angka",
+      "space": "(Ruang angkasa)",
+      "info": "Tampilkan acara JavaScript KeyCode, Kode, dan lainnya."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Tempelkan teks Anda di sini untuk menganalisis frekuensi kata kunci...",
+      "analyze": "Menganalisa",
+      "keyword": "Kata kunci",
+      "count": "Menghitung",
+      "density": "Kepadatan"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Masukkan daftar Anda di sini...",
+      "sort": "Menyortir",
+      "reverse": "Balik",
+      "shuffle": "Acak",
+      "deduplicate": "Hapus duplikat",
+      "ascending": "Naik",
+      "descending": "Menurun",
+      "length": "Panjang",
+      "trim": "Potong Kosong",
+      "lines": "Garis:",
+      "chars": "Karakter:"
+    },
+    "LoanCalculator": {
+      "principal": "Kepala sekolah",
+      "interestRate": "Suku bunga",
+      "term": "Ketentuan",
+      "calculate": "Menghitung",
+      "monthlyPayment": "Pembayaran Bulanan",
+      "totalInterest": "Jumlah Bunga",
+      "totalPayment": "Jumlah Pembayaran",
+      "loanDetails": "Detail Pinjaman",
+      "loanAmount": "Jumlah Pinjaman",
+      "loanTerm": "Jangka Waktu Pinjaman",
+      "years": "Bertahun-tahun",
+      "months": "Bulan",
+      "interest": "Minat"
+    },
+    "MacGenerator": {
+      "generate": "Menghasilkan",
+      "copy": "Menyalin",
+      "separator": "Pemisah",
+      "format": "Format",
+      "quantity": "Kuantitas",
+      "uppercase": "Huruf besar"
+    },
+    "MarginCalculator": {
+      "cost": "Biaya",
+      "price": "Harga penjualan",
+      "calculate": "Menghitung",
+      "margin": "Batas",
+      "markup": "Menandai",
+      "profit": "Laba",
+      "revenue": "Pendapatan",
+      "netProfit": "Laba Bersih",
+      "grossMargin": "Margin Kotor"
+    },
+    "PasswordManager": {
+      "masterPassword": "Kata Sandi Utama",
+      "unlock": "Membuka kunci",
+      "searchPlaceholder": "Telusuri akun...",
+      "addNew": "Tambahkan Baru",
+      "siteName": "Nama Situs",
+      "username": "Nama belakang",
+      "password": "Kata sandi",
+      "save": "Menyimpan",
+      "delete": "Menghapus"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Ketik di sini...",
+      "strength": "Kekuatan",
+      "weak": "Lemah",
+      "fair": "Adil",
+      "good": "Bagus",
+      "strong": "Kuat",
+      "requirements": "Persyaratan",
+      "length": "8+ karakter",
+      "number": "Termasuk nomor",
+      "uppercase": "Termasuk huruf besar",
+      "symbol": "Termasuk simbol"
+    },
+    "PayPalLink": {
+      "username": "Nama Pengguna PayPal.me",
+      "amount": "Jumlah",
+      "currency": "Mata uang",
+      "generate": "Menghasilkan",
+      "itemName": "Nama Barang",
+      "link": "Link",
+      "yourLink": "Tautan PayPal Anda",
+      "openPaypal": "Buka PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Aturan",
+      "addRule": "Tambahkan Aturan",
+      "allow": "Mengizinkan",
+      "disallow": "Melarang",
+      "sitemap": "URL Peta Situs (Opsional)",
+      "output": "Robots.txt yang dihasilkan"
+    },
+    "PercentageCalculator": {
+      "value": "Nilai",
+      "percentage": "Persentase",
+      "calculate": "Menghitung",
+      "result": "Hasil",
+      "whatIs": "Apa",
+      "of": "% dari",
+      "isWhatPercentOf": "adalah berapa% dari",
+      "percentChangeFrom": "% perubahan dari",
+      "to": "ke"
+    },
+    "PomodoroTimer": {
+      "work": "Waktu Fokus",
+      "shortBreak": "Istirahat Singkat",
+      "longBreak": "Istirahat Panjang",
+      "start": "Awal",
+      "pause": "Berhenti sebentar",
+      "reset": "Mengatur ulang",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Nomor",
+      "calculate": "Menghitung",
+      "factors": "Faktor Prima",
+      "inputLabel": "Masukkan nomor",
+      "placeholder": "misalnya 120",
+      "isPrime": "Angka ini adalah bilangan prima!",
+      "isComposite": "Nomor ini adalah Komposit"
+    },
+    "RoiCalculator": {
+      "investment": "Investasi",
+      "returns": "Kembali",
+      "calculate": "Menghitung",
+      "roi": "ROI",
+      "profit": "Laba",
+      "finalValue": "Nilai Akhir",
+      "time": "Waktu (Tahun)",
+      "totalGain": "Keuntungan Total",
+      "annualizedRoi": "ROI tahunan"
+    },
+    "RomanNumerals": {
+      "decimal": "Desimal",
+      "decimalPlaceholder": "2024",
+      "roman": "Roma",
+      "convert": "Mengubah",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Mulai Merekam",
+      "stopRecording": "Berhenti Merekam",
+      "download": "Unduh",
+      "recording": "Rekaman..."
+    },
+    "SignatureGenerator": {
+      "draw": "Menggambar",
+      "clear": "Jernih",
+      "download": "Unduh",
+      "penColor": "Warna Pena",
+      "penSize": "Ukuran Pena"
+    },
+    "SpeechToText": {
+      "startListening": "Mulai Mendengarkan",
+      "stopListening": "Berhenti Mendengarkan",
+      "transcript": "Salinan",
+      "placeholder": "Transkrip akan muncul di sini..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "MASUKKAN KE pengguna (id, nama, umur) NILAI (1, 'John', 30);",
+      "convert": "Mengubah",
+      "result": "Hasil"
+    },
+    "Stopwatch": {
+      "start": "Awal",
+      "stop": "Berhenti",
+      "reset": "Mengatur ulang",
+      "lap": "Pangkuan"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Alamat IP",
+      "subnetMask": "Subnet Masker",
+      "calculate": "Menghitung",
+      "networkAddress": "Alamat Jaringan",
+      "broadcastAddress": "Alamat Siaran",
+      "usableHosts": "Host yang Dapat Digunakan"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Tempel SVG",
+      "uploadSvg": "Unggah SVG",
+      "convert": "Mengubah",
+      "download": "Unduh"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Masukkan teks untuk berbicara...",
+      "speak": "Berbicara",
+      "stop": "Berhenti",
+      "voice": "Suara",
+      "rate": "Kecepatan",
+      "pitch": "Melempar"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Ketik sesuatu...",
+      "reverse": "Balik",
+      "uppercase": "Huruf besar",
+      "lowercase": "Huruf kecil",
+      "encode": "Menyandi"
+    },
+    "TimezoneConverter": {
+      "from": "Dari",
+      "to": "Ke",
+      "convert": "Mengubah",
+      "currentTime": "Waktu Saat Ini"
+    },
+    "TokenGenerator": {
+      "length": "Panjang",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin",
+      "includeNumbers": "Sertakan Angka",
+      "includeSymbols": "Sertakan Simbol"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Masukkan URL...",
+      "parse": "Mengurai",
+      "protocol": "Protokol",
+      "host": "Tuan rumah",
+      "path": "Jalur",
+      "query": "Pertanyaan"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL situs web",
+      "source": "Sumber",
+      "medium": "Sedang",
+      "campaign": "Kampanye",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "VatCalculator": {
+      "amount": "Jumlah",
+      "vatRate": "Tarif PPN",
+      "addVat": "Tambahkan PPN",
+      "removeVat": "Hapus PPN",
+      "calculate": "Menghitung"
+    },
+    "VibrationTester": {
+      "vibrate": "Bergetar",
+      "pattern": "Pola",
+      "duration": "Lamanya",
+      "test": "Tes"
+    },
+    "WeekNumber": {
+      "currentWeek": "Nomor Minggu Saat Ini",
+      "yearProgress": "Kemajuan Tahun",
+      "week": "Pekan"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Nomor telepon",
+      "message": "Pesan",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin",
+      "placeholder": "Halo, saya tertarik..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Tempel URL Video YouTube...",
+      "getThumbnail": "Dapatkan Gambar Kecil",
+      "download": "Unduh"
+    },
+    "CrontabGenerator": {
+      "minute": "Menit",
+      "hour": "Jam",
+      "day": "Hari",
+      "month": "Bulan",
+      "weekday": "Hari kerja",
+      "expression": "Ekspresi",
+      "description": "Keterangan"
+    },
+    "ChmodCalculator": {
+      "owner": "Pemilik",
+      "group": "Kelompok",
+      "others": "Yang lain",
+      "read": "Membaca",
+      "write": "Menulis",
+      "execute": "Menjalankan",
+      "numeric": "numerik",
+      "symbolic": "Simbolis"
+    },
+    "HtpasswdGenerator": {
+      "username": "Nama belakang",
+      "password": "Kata sandi",
+      "algorithm": "Algoritma",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "AspectRatio": {
+      "width": "Lebar",
+      "height": "Tinggi",
+      "ratio": "Perbandingan",
+      "calculate": "Menghitung"
+    },
+    "CssClipPath": {
+      "shape": "Membentuk",
+      "preview": "Pratinjau",
+      "copyCss": "Salin CSS"
+    },
+    "CssCursor": {
+      "cursor": "Kursor",
+      "preview": "Pratinjau",
+      "copyCss": "Salin CSS"
+    },
+    "CssTriangle": {
+      "direction": "Arah",
+      "size": "Ukuran",
+      "color": "Warna",
+      "preview": "Pratinjau",
+      "copyCss": "Salin CSS"
+    },
+    "MetaGenerator": {
+      "title": "Judul",
+      "description": "Keterangan",
+      "keywords": "Kata kunci",
+      "author": "Pengarang",
+      "url": "URL",
+      "image": "Gambar",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin",
+      "titlePlaceholder": "Situs Web Saya yang Luar Biasa",
+      "descriptionPlaceholder": "Deskripsi singkat tentang situs Anda...",
+      "keywordsPlaceholder": "web, alat, pengembang",
+      "authorPlaceholder": "Nama Anda",
+      "outputPlaceholder": "Tag meta akan muncul di sini..."
+    },
+    "OgGenerator": {
+      "title": "Judul",
+      "description": "Keterangan",
+      "url": "URL",
+      "image": "Gambar",
+      "type": "Jenis",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "TwitterCard": {
+      "cardType": "Jenis Kartu",
+      "title": "Judul",
+      "description": "Keterangan",
+      "image": "Gambar",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "MarkdownTable": {
+      "rows": "Baris",
+      "columns": "Kolom",
+      "header": "Tajuk",
+      "addRow": "Tambahkan Baris",
+      "addColumn": "Tambahkan Kolom",
+      "generate": "Menghasilkan",
+      "copy": "Menyalin"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Format",
+      "copy": "Menyalin"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Pemformatan JSON: Praktik Terbaik untuk Pengembang",
+      "excerpt": "Pelajari mengapa pemformatan JSON yang tepat penting untuk proses debug dan cara mengotomatiskannya dalam alur kerja Anda.",
+      "category": "Perkembangan"
+    },
+    "mastering-regex": {
+      "title": "Menguasai Ekspresi Reguler: Panduan visual",
+      "excerpt": "Regex tidak harus menakutkan. Kami menguraikan pola umum untuk validasi email, URL, dan lainnya.",
+      "category": "tutorial"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demistified: Cara Menjadwalkan Tugas",
+      "excerpt": "Pahami sintaks bintang 5 Cron dan cara menjadwalkan pencadangan, email, dan skrip di Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Mengapa Pengelola Kata Sandi Lokal Lebih Aman (Alternatif KeyPass)",
+      "excerpt": "Pelanggaran cloud sering terjadi. Pelajari mengapa menyimpan kata sandi secara lokal dengan enkripsi AES-256 adalah cara paling aman untuk keamanan pribadi.",
+      "category": "Keamanan"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Alat pencarian...",
+    "noResults": "Tidak ada hasil yang ditemukan.",
+    "select": "Memilih",
+    "navigate": "Navigasi"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Kirim Masukan",
+    "feedback": "Masukan",
+    "thankYou": "Terima kasih!",
+    "feedbackSent": "Masukan Anda telah berhasil dikirim.",
+    "close": "Menutup",
+    "name": "Nama (opsional)",
+    "namePlaceholder": "Namamu",
+    "email": "Email (opsional)",
+    "emailPlaceholder": "anda@email.com",
+    "feedbackType": "Jenis Umpan Balik",
+    "typeSuggestion": "💡 Saran",
+    "typeBug": "🐛 Laporan Bug",
+    "typeFeature": "✨ Permintaan Fitur",
+    "typeOther": "📝 Lainnya",
+    "message": "Pesan *",
+    "messagePlaceholder": "Beritahu kami apa pendapat Anda...",
+    "sending": "Mengirim...",
+    "weReadEveryMessage": "Kami membaca setiap pesan. Terima kasih telah membantu kami menjadi lebih baik!"
+  },
+  "ShareButton": {
+    "shareTool": "Bagikan Alat",
+    "copiedLink": "Tautan Disalin!"
+  },
+  "TextDiff": {
+    "original": "Teks Asli",
+    "changed": "Teks Berubah",
+    "update": "Perbarui Perbedaan",
+    "old": "Tua",
+    "new": "Baru",
+    "content": "Isi"
+  },
+  "CrontabGenerator": {
+    "minute": "Menit",
+    "hour": "Jam",
+    "day": "Hari",
+    "month": "Bulan",
+    "weekday": "Hari kerja",
+    "min": "Minimal",
+    "mon": "Senin",
+    "week": "Pekan",
+    "presets": "Preset Cepat",
+    "everyMinute": "Setiap menit",
+    "every5Minutes": "Setiap 5 menit",
+    "everyHour": "Setiap jam",
+    "everyDayMidnight": "Setiap hari pada tengah malam",
+    "everyWeek": "Setiap minggu",
+    "everyMonth": "Setiap bulan"
+  },
+  "SpeechToText": {
+    "notSupported": "Browser Anda tidak mendukung Web Speech API. Silakan gunakan Chrome.",
+    "placeholder": "Transkrip akan muncul di sini...",
+    "listening": "Mendengarkan...",
+    "start": "Klik mikrofon untuk memulai"
+  },
+  "OgGenerator": {
+    "title": "Judul",
+    "description": "Keterangan",
+    "image": "URL gambar",
+    "url": "URL kanonik",
+    "type": "Jenis",
+    "website": "Situs web",
+    "article": "Artikel",
+    "profile": "Profil",
+    "preview": "Pratinjau (Facebook/LinkedIn)",
+    "generatedHtml": "HTML yang dihasilkan",
+    "copy": "Menyalin"
+  },
+  "WeekNumber": {
+    "checkLabel": "Periksa Nomor Minggu untuk Tanggal",
+    "yearProgress": "Kemajuan Tahun"
+  },
+  "RelatedTools": {
+    "title": "Anda mungkin juga menyukainya",
+    "subtitle": "Jelajahi alat pengembang populer lainnya",
+    "openTool": "Buka Alat"
+  },
+  "Breadcrumb": {
+    "home": "Rumah",
+    "tools": "Peralatan"
+  },
+  "SvgToPng": {
+    "upload": "Unggah Berkas SVG",
+    "browse": "atau klik untuk menelusuri",
+    "paste": "...atau tempel Kode SVG",
+    "preview": "Pratinjau PNG (Skala 2x)",
+    "download": "Unduh PNG",
+    "errorType": "Harap unggah file SVG yang valid.",
+    "errorRender": "Gagal merender SVG. Pastikan itu adalah XML yang valid.",
+    "errorProcess": "Kesalahan saat memproses SVG."
+  },
+  "GradientGenerator": {
+    "config": "Konfigurasi",
+    "colors": "Warna",
+    "type": "Jenis",
+    "angle": "Sudut",
+    "random": "Acak",
+    "copyCss": "Salin CSS",
+    "copied": "Disalin"
+  },
+  "TimezoneConverter": {
+    "date": "Tanggal",
+    "time": "Waktu (Lokal)",
+    "invalid": "Tidak sah",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "London (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Penghasil Angka",
+    "listGen": "Pembuat Daftar",
+    "coinGen": "Penghasil Koin",
+    "min": "Minimal",
+    "max": "Maks",
+    "count": "Menghitung",
+    "generate": "Menghasilkan",
+    "listLabel": "Item Daftar (satu per baris)",
+    "pick": "Pilih Barang Acak",
+    "winner": "Pemenangnya adalah...",
+    "flip": "Balik Koin",
+    "heads": "Kepala",
+    "tails": "Ekor"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Merekam layar Anda...",
+    "titleFree": "Perekam Layar Online Gratis",
+    "desc": "Tangkap layar, jendela aplikasi, atau tab browser Anda. Tanpa tanda air, tanpa batas waktu.",
+    "start": "Mulai Merekam",
+    "stop": "Berhenti Merekam",
+    "browserSupport": "Berfungsi paling baik di Chrome, Edge, dan Firefox di Desktop."
+  },
+  "CssCursor": {
+    "hoverTest": "Arahkan kursor ke sini untuk menguji"
+  },
+  "VatCalculator": {
+    "amount": "Jumlah",
+    "rate": "Tarif PPN (%)",
+    "addVat": "Tambahkan PPN",
+    "removeVat": "Hapus PPN",
+    "netAmount": "Jumlah Bersih",
+    "vatAmount": "Jumlah PPN",
+    "grossTotal": "Jumlah Kotor",
+    "netTotal": "Jumlah Bersih",
+    "grossAmount": "Jumlah Kotor"
+  },
+  "MyIP": {
+    "ipLabel": "Alamat IP Publik Anda",
+    "loading": "Memuat...",
+    "isp": "Penyedia Internet (ISP)",
+    "location": "Lokasi",
+    "asn": "ASN",
+    "timezone": "Zona waktu",
+    "note": "Ini adalah alamat IP yang terlihat oleh situs web yang Anda kunjungi. Ini mungkin berbeda dari IP lokal Anda jika Anda menggunakan VPN atau proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Masukkan URL",
+    "formatted": "Keluaran yang Diformat",
+    "copy": "Menyalin",
+    "copied": "Disalin",
+    "placeholder": "Tempelkan URL di atas untuk melihatnya diformat."
+  },
+  "WhatsAppLink": {
+    "phone": "Nomor Telepon (dengan Kode Negara)",
+    "message": "Pesan yang sudah diisi sebelumnya",
+    "hint": "Jangan sertakan +, -, atau ().",
+    "yourLink": "Tautan WhatsApp Anda",
+    "open": "Buka Obrolan"
+  },
+  "UrlParser": {
+    "enterUrl": "Masukkan URL",
+    "params": "Parameter Kueri",
+    "error": "URL tidak valid"
+  },
+  "FaviconGenerator": {
+    "upload": "Unggah Gambar",
+    "browse": "Direkomendasikan: PNG 512x512",
+    "original": "Asli",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Unduh Favicon.png",
+    "note": "* Saat ini menghasilkan favicon PNG 32x32. Ganti nama menjadi .ico jika diperlukan untuk dukungan lama."
+  },
+  "SubnetCalculator": {
+    "ip": "Alamat IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Menghitung",
+    "subnetMask": "Subnet Masker",
+    "networkAddress": "Alamat Jaringan",
+    "firstHost": "Tuan Rumah Pertama",
+    "lastHost": "Tuan Rumah Terakhir",
+    "broadcastAddress": "Alamat Siaran",
+    "totalHosts": "Jumlah Tuan Rumah"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Masukkan Judul Artikel/Teks",
+    "generated": "Siput yang Dihasilkan",
+    "copy": "Salin Siput"
+  },
+  "SqlToJson": {
+    "inputLabel": "Masukkan SQL (hanya pernyataan INSERT)",
+    "convert": "Konversikan ke JSON",
+    "error": "Tidak dapat menguraikan SQL. Pastikan itu adalah pernyataan standar INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Tambahkan Baris",
+    "addCol": "+ Tambahkan Kolom",
+    "headerPlaceholder": "Tajuk",
+    "outputLabel": "Output Penurunan Harga",
+    "copy": "Salin Penurunan Harga"
+  },
+  "TwitterCard": {
+    "cardType": "Jenis Kartu",
+    "siteHandle": "Pengendalian Situs (misalnya @twitter)",
+    "title": "Judul",
+    "description": "Keterangan",
+    "imageUrl": "URL gambar",
+    "preview": "Pratinjau",
+    "generatedHtml": "HTML yang dihasilkan",
+    "copy": "Menyalin",
+    "placeholderTitle": "Judul Kartu",
+    "placeholderDesc": "Deskripsi ada di sini..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Masukkan teks untuk berbicara...",
+    "voice": "Suara",
+    "speed": "Kecepatan",
+    "pitch": "Melempar",
+    "speak": "Berbicara"
+  },
+  "TokenGenerator": {
+    "length": "Panjang",
+    "includeNumbers": "Sertakan Angka",
+    "includeSymbols": "Sertakan Simbol",
+    "generate": "Hasilkan Token"
+  },
+  "CssTriangle": {
+    "direction": "Arah",
+    "color": "Warna",
+    "width": "Lebar (px)",
+    "height": "Tinggi (px)",
+    "copy": "Menyalin"
+  },
+  "UnitConverter": {
+    "length": "Panjang",
+    "weight": "Berat",
+    "temperature": "Suhu",
+    "meters": "Meter",
+    "kilometers": "Kilometer",
+    "centimeters": "Sentimeter",
+    "millimeters": "milimeter",
+    "inches": "inci",
+    "feet": "Kaki",
+    "yards": "Yard",
+    "miles": "mil",
+    "kilograms": "Kilogram",
+    "grams": "gram",
+    "pounds": "Pound",
+    "ounces": "Ons",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Bentuk",
+    "preview": "Pratinjau",
+    "cssCode": "Kode CSS",
+    "copy": "Menyalin",
+    "copied": "Disalin"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Unggah Gambar",
+    "uploadDesc": "JPG, PNG atau WebP. Kami mengompresnya secara lokal.",
+    "selectImage": "Pilih Gambar",
+    "settings": "Pengaturan Kompresi",
+    "quality": "Kualitas",
+    "originalSize": "Ukuran Asli",
+    "compressedSize": "Ukuran Terkompresi",
+    "saving": "Penghematan",
+    "download": "Unduh"
+  },
+  "HtpasswdGenerator": {
+    "username": "Nama belakang",
+    "password": "Kata sandi",
+    "algorithm": "Algoritma",
+    "generate": "Hasilkan Entri",
+    "result": "Hasil",
+    "sha1": "SHA-1 (Tidak aman tetapi standar)",
+    "notSupported": "Hanya SHA-1 yang didukung dalam versi sisi klien ini."
+  },
+  "MetaTags": {
+    "pageTitle": "Judul Halaman",
+    "description": "Keterangan",
+    "author": "Pengarang"
+  },
+  "AgeCalculator": {
+    "dob": "Tanggal lahir",
+    "age": "Usia",
+    "years": "bertahun-tahun",
+    "months": "bulan",
+    "days": "hari",
+    "nextBirthday": "Ulang Tahun Berikutnya"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL Situs Web (Wajib)",
+    "source": "Sumber Kampanye (Wajib)",
+    "medium": "Media Kampanye (Wajib)",
+    "name": "Nama Kampanye (Wajib)",
+    "term": "Jangka Waktu Kampanye (Opsional)",
+    "content": "Konten Kampanye (Opsional)",
+    "generatedUrl": "URL yang dihasilkan",
+    "copy": "Salin URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Waktu Unix Saat Ini",
+    "timestampLabel": "Stempel waktu (Detik)",
+    "isoLabel": "Format Tanggal ISO",
+    "utcDate": "Tanggal UTC",
+    "localDate": "Tanggal Lokal",
+    "relative": "Relatif"
+  },
+  "SignatureGenerator": {
+    "color": "Warna",
+    "width": "Lebar",
+    "clear": "Jernih",
+    "download": "Unduh PNG",
+    "signHere": "Tanda tangan di sini",
+    "note": "Tanda tangan diproses secara lokal di browser Anda. Kami tidak menyimpan atau mengunggahnya."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Pratinjau Langsung"
+  },
+  "CipherTools": {
+    "shiftAmount": "Jumlah Pergeseran (N)",
+    "inputText": "Masukkan Teks",
+    "outputText": "Teks Keluaran",
+    "rot13": "ROT13",
+    "caesar": "Kaisar (+3)",
+    "shift1": "Geser +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Resolusi Layar",
+    "browser": "Peramban",
+    "cpuCores": "Inti CPU",
+    "battery": "Baterai",
+    "detailedSpecs": "Spesifikasi Detail",
+    "userAgent": "Agen Pengguna",
+    "platform": "Platform",
+    "windowSize": "Ukuran Jendela",
+    "pixelRatio": "Rasio Piksel",
+    "colorDepth": "Kedalaman Warna",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookie Diaktifkan",
+    "onlineStatus": "Status Daring",
+    "unknown": "Tidak dikenal",
+    "yes": "Ya",
+    "no": "TIDAK",
+    "enabled": "Diaktifkan",
+    "disabled": "Dengan disabilitas"
+  },
+  "ChmodCalculator": {
+    "owner": "Pemilik",
+    "group": "Kelompok",
+    "public": "Publik",
+    "read": "Membaca",
+    "write": "Menulis",
+    "execute": "Menjalankan",
+    "numeric": "numerik",
+    "symbolic": "Simbolis"
+  },
+  "PasswordManager": {
+    "title": "Pengelola Kata Sandi",
+    "desc": "Simpan dan kelola kata sandi Anda secara lokal dengan aman.",
+    "unlock": "Buka kunci Gudang",
+    "create": "Buat Gudang Baru",
+    "unlockDesc": "Masukkan kata sandi utama Anda untuk mengakses akun Anda.",
+    "createDesc": "Tetapkan kata sandi utama yang kuat. Ini mengenkripsi data Anda secara lokal.",
+    "masterPassword": "Kata Sandi Utama",
+    "unlockBtn": "Membuka kunci",
+    "createBtn": "Buat Gudang",
+    "note": "Data disimpan di browser Anda menggunakan enkripsi AES-GCM. Kami tidak dapat memulihkan kata sandi Anda jika hilang.",
+    "myPasswords": "Kata Sandi Saya",
+    "addNew": "Tambahkan Baru",
+    "search": "Telusuri akun...",
+    "noPasswords": "Tidak ada kata sandi yang ditemukan.",
+    "addAccount": "Tambahkan Akun",
+    "accountTitle": "Judul / Situs Web",
+    "username": "Nama Pengguna / Email",
+    "password": "Kata sandi",
+    "url": "URL (Opsional)",
+    "save": "Simpan Akun",
+    "cancel": "Membatalkan",
+    "incorrectPassword": "Kata sandi salah atau data rusak.",
+    "loading": "Memuat..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Detail Situs Web",
+    "pageTitle": "Judul Halaman",
+    "description": "Keterangan",
+    "keywords": "Kata kunci (dipisahkan koma)",
+    "author": "Pengarang",
+    "socialPreview": "Pratinjau Sosial (OG & Twitter)",
+    "websiteUrl": "URL situs web",
+    "previewImage": "Pratinjau URL Gambar",
+    "generatedHtml": "HTML yang dihasilkan",
+    "copy": "Salin HTML",
+    "copied": "Disalin"
+  },
+  "VibrationTester": {
+    "worksOnly": "Hanya berfungsi pada perangkat dengan perangkat keras getar (misalnya ponsel).",
+    "duration": "Durasi (md)",
+    "vibrateOnce": "Bergetar Sekali",
+    "pulsePattern": "Pola Denyut Nadi",
+    "longPulse": "Pulsa Panjang",
+    "stop": "Berhenti"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Mengapa Pemformatan JSON Penting",
+      "block_2": "JSON (JavaScript Object Notation) adalah bahasa web.Namun JSON mentah yang dikembalikan dari API sering kali hanya menimbulkan kekacauan kecil.memformatnya membuatnya dapat dibaca, dapat di-debug, dan aman.",
+      "block_3": "1.Keterbacaan adalah Raja",
+      "block_4": "Saat Anda men-debug respons API 5000 baris, indentasi menyelamatkan nyawa.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> kami menggunakan lekukan 2 spasi atau 4 spasi untuk memperjelas struktur.",
+      "block_5": "2.Validasi",
+      "block_6": "Satu koma yang hilang dapat merusak aplikasi Anda.Selalu validasi JSON Anda sebelum memasukkannya ke file konfigurasi.",
+      "block_7": "Kesimpulan",
+      "block_8": "Jangan buang waktu memeriksa tanda kurung secara manual.Gunakan alat otomatis."
+    },
+    "mastering-regex": {
+      "block_1": "Penjelasan Regex",
+      "block_2": "Ekspresi reguler sangat kuat namun membingungkan.mari kita visualisasikannya.",
+      "block_3": "Pola Umum",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 font-mono bulat teks-[0.9em] teks-[#fb923c] batasperbatasan-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telepon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 font-mono bulat teks-[0.9em] teks-[#fb923c] batasborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Uji pola ini secara instan dengan <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Penguji Regex</a> kami."
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 Bintang Cron",
+      "block_2": "Menit, Jam, Hari dalam Bulan, Bulan, Hari dalam Seminggu.Itu saja.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Contoh</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Jalankan setiap hari pada tengah malam: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Contoh",
+      "block_6": "Jalankan setiap 15 menit: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Butuh bantuan?Gunakan <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> kami untuk membuat ekspresi secara visual."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Masalah dengan Cloud Vaults",
+      "block_2": "LastPass, Okta, dan raksasa lainnya mengalami pelanggaran.Saat brankas Anda online, itu adalah target.",
+      "block_3": "Solusi: Enkripsi Lokal",
+      "block_4": "<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Pengelola Kata Sandi Lokal</a></strong> baru kami berjalan sepenuhnya di browser Anda.Ia menggunakan <strong class=\"text-[var(--title-color)] font-semibold\">enkripsi AES-GCM 256-bit</strong> yang berasal dari sandi utama Anda menggunakan PBKDF2.",
+      "block_5": "Cara kerjanya",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Nol Pengetahuan:</strong> Kami tidak pernah melihat kata sandi Anda.Itu tidak pernah meninggalkan perangkat Anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Penyimpanan Offline:</strong> Gudang terenkripsi Anda disimpan di Penyimpanan Lokal browser Anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Dapat diekspor:</strong> Anda dapat mengekspor/mencadangkan data mentah terenkripsi kapan saja.</li>",
+      "block_7": "Berhenti mempercayai cloud dengan kunci master Anda.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Coba Pengelola Kata Sandi Lokal</a> sekarang."
+    }
+  }
+}

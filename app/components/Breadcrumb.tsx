@@ -4,8 +4,10 @@ import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { tools } from "../data/tools";
+import { useTranslations } from "next-intl";
 
 export default function Breadcrumb() {
+    const t = useTranslations('Breadcrumb');
     const pathname = usePathname();
     const parts = pathname.split('/').filter(Boolean);
 
@@ -20,51 +22,27 @@ export default function Breadcrumb() {
     if (!isToolPage) return null;
 
     return (
-        <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 8,
-            fontSize: 14,
-            color: 'var(--muted-text)',
-            marginBottom: 24,
-            flexWrap: 'wrap'
-        }}>
+        <div className="flex items-center gap-2 text-sm text-[var(--muted-text)] mb-6 flex-wrap">
             <Link
                 href="/"
-                style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: 6,
-                    color: 'var(--muted-text)',
-                    textDecoration: 'none',
-                    transition: 'color 0.2s'
-                }}
-                className="hover:text-primary"
+                className="flex items-center gap-1.5 text-[var(--muted-text)] no-underline transition-colors duration-200 hover:text-primary"
             >
                 <Home size={14} />
-                <span>Home</span>
+                <span>{t('home')}</span>
             </Link>
 
-            <ChevronRight size={14} style={{ opacity: 0.5 }} />
+            <ChevronRight size={14} className="opacity-50" />
 
             <Link
                 href="/#tools"
-                style={{
-                    color: 'var(--muted-text)',
-                    textDecoration: 'none',
-                    transition: 'color 0.2s'
-                }}
-                className="hover:text-primary"
+                className="text-[var(--muted-text)] no-underline transition-colors duration-200 hover:text-primary"
             >
-                Tools
+                {t('tools')}
             </Link>
 
-            <ChevronRight size={14} style={{ opacity: 0.5 }} />
+            <ChevronRight size={14} className="opacity-50" />
 
-            <span style={{
-                color: 'var(--title-color)',
-                fontWeight: 500
-            }}>
+            <span className="text-[var(--title-color)] font-medium">
                 {toolName}
             </span>
         </div>

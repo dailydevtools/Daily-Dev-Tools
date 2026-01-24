@@ -1,0 +1,1814 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Eszközök",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Keresés..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Ingyenes Online Fejlesztői Eszközök",
+    "description": "90+ ingyenes online eszköz mindenkinek. Formázók, átalakítók, generátorok és segédprogramok. Gyors, privát és regisztráció nem szükséges."
+  },
+  "NotFound": {
+    "title": "Az oldal nem található",
+    "description": "Sajnáljuk, nem találjuk a keresett oldalt.",
+    "backHome": "Vissza a Kezdőlapra",
+    "suggestions": "Próbáljon meg keresni egy eszközt, vagy böngésszen népszerű eszközeink között alább."
+  },
+  "Homepage": {
+    "heroTag": "100+ Ingyenes Eszköz • Privát • Nincs Regisztráció",
+    "titleLine1": "Napi Fejlesztői Eszközök",
+    "titleLine2": "Amik Egyszerűen Működnek",
+    "subtitle": "Gyors, gyönyörű és adatvédelem-központú eszközök fejlesztőknek, tervezőknek és mindenkinek. Minden a böngészőjében fut.",
+    "recentTools": "Nemrég Használt",
+    "noRecentText": "Kezdje el használni az eszközöket, hogy itt lássa őket",
+    "searchResults": "Keresési Eredmények",
+    "popularTools": "Népszerű",
+    "toolsCount": "{count} eszköz elérhető",
+    "features": {
+      "fast": {
+        "title": "Villámgyors",
+        "desc": "Minden eszköz helyi szinten fut a böngészőjében"
+      },
+      "private": {
+        "title": "100% Privát",
+        "desc": "Az adatai soha nem hagyják el az eszközét"
+      },
+      "simple": {
+        "title": "Mindenkinek Készült",
+        "desc": "Elég egyszerű bárkinek, elég erős a profiknak"
+      },
+      "free": {
+        "title": "Mindig Ingyenes",
+        "desc": "Nincsenek fiókok, nincsenek korlátok"
+      }
+    },
+    "categories": {
+      "All": "Összes",
+      "Favorites": "Kedvencek",
+      "Developer": "Fejlesztő",
+      "Design": "Tervezés",
+      "Content": "Tartalom",
+      "Security": "Biztonság",
+      "Productivity": "Termelékenység",
+      "Math": "Matematika",
+      "Utility": "Segédprogram"
+    },
+    "cta": {
+      "title": "Készen áll a termelékenység növelésére?",
+      "text": "Kezdje el ingyenesen használni fejlesztői eszközeinket. Nincs regisztráció, nincs adatgyűjtés.",
+      "button": "Kezdés Ingyenesen"
+    },
+    "openTool": "Eszköz megnyitása",
+    "noResults": "Nem található eszköz, amely megfelel",
+    "clearFilters": "Szűrők törlése"
+  },
+  "Footer": {
+    "builtWith": "Készítette ❤️-vel",
+    "allTools": "Összes Eszköz",
+    "blog": "Blog",
+    "about": "Rólunk",
+    "privacy": "Adatvédelem",
+    "terms": "Feltételek"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON formázó",
+      "description": "Formázza, érvényesítse és szépítse a JSON-t azonnal"
+    },
+    "base64-encoder": {
+      "name": "Base64 kódoló",
+      "description": "Base64 karakterláncok kódolása és dekódolása"
+    },
+    "url-encoder": {
+      "name": "URL kódoló",
+      "description": "Az URL-ek biztonságos kódolása és dekódolása"
+    },
+    "jwt-decoder": {
+      "name": "JWT dekóder",
+      "description": "Dekódolja és ellenőrizze a JSON webes tokeneket"
+    },
+    "regex-tester": {
+      "name": "Regex tesztelő",
+      "description": "Tesztelje a reguláris kifejezéseket valós időben"
+    },
+    "hash-generator": {
+      "name": "Hash generátor",
+      "description": "MD5, SHA-1, SHA-256 kivonatok létrehozása"
+    },
+    "uuid-generator": {
+      "name": "UUID generátor",
+      "description": "Véletlenszerű UUID/GUID-ok létrehozása azonnal"
+    },
+    "css-minifier": {
+      "name": "CSS Minifier",
+      "description": "Minimalizálja és optimalizálja CSS-kódját"
+    },
+    "markdown-editor": {
+      "name": "Markdown előnézet",
+      "description": "Valós idejű Markdown szerkesztő és előnézet"
+    },
+    "color-converter": {
+      "name": "Színátalakító",
+      "description": "Hex, RGB, HSL és CMYK konvertálása"
+    },
+    "timestamp-converter": {
+      "name": "Időbélyegző eszköz",
+      "description": "Konvertálja a Unix időbélyegeket emberi dátumokká"
+    },
+    "sql-formatter": {
+      "name": "SQL formázó",
+      "description": "Formázza és szépítse az SQL-lekérdezéseket"
+    },
+    "password-generator": {
+      "name": "Jelszógenerátor",
+      "description": "Hozzon létre biztonságos, véletlenszerű jelszavakat"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Helyőrző szöveg létrehozása tervekhez"
+    },
+    "image-base64": {
+      "name": "Kép a Base64-be",
+      "description": "Konvertálja a képeket Base64 karakterláncokká"
+    },
+    "qr-generator": {
+      "name": "QR kód generátor",
+      "description": "QR-kódok generálása URL-ekhez és szövegekhez"
+    },
+    "word-counter": {
+      "name": "Szószámláló",
+      "description": "Számolja meg a szavakat, a karaktereket és az olvasási időt"
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "description": "Teve, kígyó, kebab és pascal tok"
+    },
+    "text-diff": {
+      "name": "Szöveg Diff Ellenőrző",
+      "description": "Hasonlítson össze két szöveget, és keresse meg a különbségeket"
+    },
+    "slug-generator": {
+      "name": "Slug generátor",
+      "description": "Hozzon létre SEO-barát URL-slugokat"
+    },
+    "gradient-generator": {
+      "name": "Gradiens generátor",
+      "description": "Hozzon létre gyönyörű CSS színátmeneteket"
+    },
+    "image-compressor": {
+      "name": "Képkompresszor",
+      "description": "Tömörítse a képeket helyileg és privát módon"
+    },
+    "device-info": {
+      "name": "Eszközinformáció",
+      "description": "Képernyő, böngésző és rendszerinformációk megtekintése"
+    },
+    "random-generator": {
+      "name": "Véletlenszerű generátor",
+      "description": "Válasszon számokat, érméket és listaelemeket"
+    },
+    "unit-converter": {
+      "name": "Mértékegység-átalakító",
+      "description": "Hossz, súly és hőmérséklet konvertálása"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro időzítő",
+      "description": "Fókusz időzítő a termelékenység érdekében"
+    },
+    "yt-thumbnail": {
+      "name": "Miniatűr letöltő",
+      "description": "Szerezzen be YouTube-videók miniatűrjeit"
+    },
+    "my-ip": {
+      "name": "Mi az IP-m",
+      "description": "Nyilvános IP- és hálózati adatok megtekintése"
+    },
+    "keycode-info": {
+      "name": "Kulcskód információ",
+      "description": "JavaScript billentyűzet esemény hibakereső"
+    },
+    "signature-generator": {
+      "name": "Aláírás-generátor",
+      "description": "Digitális aláírások rajzolása és letöltése"
+    },
+    "screen-recorder": {
+      "name": "Képernyőrögzítő",
+      "description": "Képernyő rögzítése és videó letöltése"
+    },
+    "credit-card-validator": {
+      "name": "Kártyaérvényesítő",
+      "description": "Érvényesítse a hitelkártyaszámokat"
+    },
+    "password-manager": {
+      "name": "Helyi jelszókezelő",
+      "description": "Biztonságosan tárolja a jelszavakat helyben titkosítással"
+    },
+    "deep-link-tester": {
+      "name": "Mélylink tesztelő",
+      "description": "Mobil mélylinkek tesztelése, elindítása és kezelése"
+    },
+    "image-converter": {
+      "name": "Képkonverter",
+      "description": "PNG/JPG konvertálása WebP formátumba helyileg a képek optimalizálásához"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Konvertálja a JSON-t CSV-vé és fordítva"
+    },
+    "bmi-calculator": {
+      "name": "BMI kalkulátor",
+      "description": "A testtömegindex (BMI) kiszámítása"
+    },
+    "dns-lookup": {
+      "name": "DNS keresés",
+      "description": "A DNS rekordok (A, MX, NS) azonnali lekérdezése"
+    },
+    "age-calculator": {
+      "name": "Életkor kalkulátor",
+      "description": "Számolja ki a pontos életkort és a napok számát"
+    },
+    "loan-calculator": {
+      "name": "Hitelkalkulátor",
+      "description": "Számítsa ki a havi EMI-t és a teljes kamatot"
+    },
+    "discount-calculator": {
+      "name": "Kedvezmény kalkulátor",
+      "description": "Számolja ki az eladási árat és a megtakarítást"
+    },
+    "interest-calculator": {
+      "name": "Kamatkalkulátor",
+      "description": "Egyszerű vs összetett kamatkalkulátor"
+    },
+    "html-encoder": {
+      "name": "HTML kódoló/dekódoló",
+      "description": "Speciális karakterek kihagyása vagy HTML dekódolása"
+    },
+    "list-sorter": {
+      "name": "Listarendező",
+      "description": "Listák rendezése, visszafordítása, keverése és ismétlődésének megszüntetése"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Generator",
+      "description": "Vizuálisan generáljon CSS doboz-árnyékokat"
+    },
+    "date-diff": {
+      "name": "Dátumkülönbség",
+      "description": "Számítsa ki a két dátum közötti időtartamot"
+    },
+    "sql-to-json": {
+      "name": "SQL-ről JSON-ra",
+      "description": "Az SQL INSERT-ek konvertálása JSON-objektumokká"
+    },
+    "keyword-density": {
+      "name": "Kulcsszó sűrűség",
+      "description": "Elemezze a kulcsszavak gyakoriságát a SEO-hoz"
+    },
+    "json-diff": {
+      "name": "JSON Diff",
+      "description": "Hasonlítson össze két JSON-objektumot egymás mellett"
+    },
+    "cipher-tools": {
+      "name": "Titkosító eszközök",
+      "description": "ROT13 és Caesar Cipher kódoló/dekódoló"
+    },
+    "token-generator": {
+      "name": "Random Token Generator",
+      "description": "Biztonságos véletlenszerű tokeneket generál"
+    },
+    "favicon-generator": {
+      "name": "Favicon generátor",
+      "description": "Hozzon létre .ico és PNG faviconokat"
+    },
+    "robots-generator": {
+      "name": "Robots.txt generátor",
+      "description": "Hozzon létre robots.txt fájlt a keresőoptimalizáláshoz"
+    },
+    "grid-generator": {
+      "name": "CSS Grid Generator",
+      "description": "Vizuális CSS Grid elrendezéskészítő"
+    },
+    "hmac-generator": {
+      "name": "HMAC generátor",
+      "description": "Kulcsos hash üzenet-hitelesítési kódokat generál"
+    },
+    "http-status": {
+      "name": "HTTP állapotkódok",
+      "description": "A HTTP állapotkódok referencialistája"
+    },
+    "week-number": {
+      "name": "Hét száma",
+      "description": "Az aktuális hét száma és az év előrehaladása"
+    },
+    "text-tools": {
+      "name": "Szöveg transzformátor",
+      "description": "Szöveg megfordítása, átfordítása és kódolása"
+    },
+    "url-parser": {
+      "name": "URL-elemző",
+      "description": "Az URL-ek felosztása protokollra, gazdagépre, elérési útra és paraméterekre"
+    },
+    "markdown-table": {
+      "name": "Markdown Table Generator",
+      "description": "Hozzon létre Markdown táblázatokat vizuálisan"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp linkgenerátor",
+      "description": "Hozzon létre közvetlen WhatsApp csevegési linkeket"
+    },
+    "paypal-link": {
+      "name": "PayPal linkgenerátor",
+      "description": "Hozzon létre PayPal.me fizetési linkeket"
+    },
+    "svg-to-png": {
+      "name": "SVG-ből PNG-be",
+      "description": "Konvertálja az SVG kódot/fájlt PNG képpé"
+    },
+    "prime-factors": {
+      "name": "Elsődleges tényezők",
+      "description": "Keresse meg egy szám prímtényezőit"
+    },
+    "iban-validator": {
+      "name": "IBAN Validator",
+      "description": "Érvényesítse a nemzetközi bankszámlaszámokat"
+    },
+    "ascii-converter": {
+      "name": "ASCII konverter",
+      "description": "Szöveg konvertálása ASCII decimális kódokká"
+    },
+    "utm-builder": {
+      "name": "UTM Builder",
+      "description": "Google Analytics kampány URL-ek létrehozása"
+    },
+    "meta-tags": {
+      "name": "Meta Tag Generator",
+      "description": "SEO metacímkék létrehozása webhelyekhez"
+    },
+    "og-generator": {
+      "name": "Nyissa meg a Grafikongenerátort",
+      "description": "Hozzon létre Open Graph metacímkéket a közösségi megosztáshoz"
+    },
+    "twitter-card": {
+      "name": "Twitter kártya generátor",
+      "description": "Hozzon létre Twitter-kártya metacímkéket"
+    },
+    "aspect-ratio": {
+      "name": "Képarány kalkulátor",
+      "description": "Számítsa ki a képarányokat és a méreteket"
+    },
+    "css-cursor": {
+      "name": "CSS kurzor",
+      "description": "Vizuális CSS kurzor tulajdonság hivatkozás"
+    },
+    "css-triangle": {
+      "name": "CSS háromszög generátor",
+      "description": "Tiszta CSS-háromszögek létrehozása"
+    },
+    "percentage-calculator": {
+      "name": "Százalékkalkulátor",
+      "description": "Számolja ki a százalékokat és a változásokat"
+    },
+    "vat-calculator": {
+      "name": "ÁFA kalkulátor",
+      "description": "Számítsa ki az áfa hozzáadását / eltávolítását"
+    },
+    "stopwatch": {
+      "name": "Stopperóra",
+      "description": "Egyszerű böngésző alapú stopper"
+    },
+    "text-to-speech": {
+      "name": "Text to Speech",
+      "description": "Szöveg konvertálása beszélt hanggá"
+    },
+    "speech-to-text": {
+      "name": "Beszéd szöveggé",
+      "description": "A beszélt hangot szöveggé alakíthatja"
+    },
+    "vibration-tester": {
+      "name": "Rezgésvizsgáló",
+      "description": "Teszteszköz vibrációs motorja"
+    },
+    "chmod-calculator": {
+      "name": "Chmod kalkulátor",
+      "description": "Számítsa ki a Linux fájljogosultságokat"
+    },
+    "crontab-generator": {
+      "name": "Crontab generátor",
+      "description": "Cron ütemezési kifejezések létrehozása"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd generátor",
+      "description": "Alapvető hitelesítési bejegyzések létrehozása"
+    },
+    "subnet-calculator": {
+      "name": "Alhálózati kalkulátor",
+      "description": "Hálózati alhálózatok és IP-tartományok kiszámítása"
+    },
+    "mac-generator": {
+      "name": "MAC cím generátor",
+      "description": "Véletlenszerű MAC-címeket generál"
+    },
+    "timezone-converter": {
+      "name": "Időzóna konverter",
+      "description": "Konvertálja az időt több zóna között"
+    },
+    "email-validator": {
+      "name": "E-mail Validator",
+      "description": "Érvényesítse az e-mail formátumot és észlelje az elírásokat"
+    },
+    "password-strength": {
+      "name": "Jelszó erőssége",
+      "description": "Ellenőrizze a jelszó erősségi pontszámát"
+    },
+    "roman-numerals": {
+      "name": "Római szám-átalakító",
+      "description": "Konvertálás római és decimális számok között"
+    },
+    "margin-calculator": {
+      "name": "Margin kalkulátor",
+      "description": "Számítsa ki a haszonkulcsot és a felárat"
+    },
+    "roi-calculator": {
+      "name": "ROI kalkulátor",
+      "description": "Számítsa ki a befektetés megtérülését"
+    },
+    "fuel-calculator": {
+      "name": "Üzemanyagköltség kalkulátor",
+      "description": "Számolja ki az utazási üzemanyagköltséget"
+    },
+    "pretty-print-url": {
+      "name": "Szép nyomtatott URL",
+      "description": "Formázza és szépítse az URL-eket az olvashatóság érdekében"
+    }
+  },
+  "Terms": {
+    "title": "Szolgáltatási feltételek",
+    "lastUpdated": "Utoljára frissítve",
+    "sections": {
+      "acceptance": {
+        "title": "1. A feltételek elfogadása",
+        "content": "A DailyDevTools elérésével és használatával Ön elfogadja és magára nézve kötelezőnek ismeri el a jelen szerződés feltételeit és rendelkezéseit."
+      },
+      "useLicense": {
+        "title": "2. Licenc használata",
+        "content": "A DailyDevTools ingyenesen használható személyes és kereskedelmi célokra. Nem lehet:",
+        "list": {
+          "0": "Próbálja meg visszafejteni vagy lekaparni a webhely jelentős részét.",
+          "1": "Használja a weboldalt bármilyen módon, amely kárt okoz vagy okozhat a webhelyen, vagy rontja a weboldal elérhetőségét vagy elérhetőségét."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Jogi nyilatkozat",
+        "content": "A DailyDevTools eszközei „ahogy vannak”. Nem vállalunk sem kifejezett, sem hallgatólagos garanciát..."
+      },
+      "limitations": {
+        "title": "4. Korlátozások",
+        "content": "A DailyDevTools vagy beszállítói semmilyen esetben sem felelősek semmilyen kárért..."
+      },
+      "revisions": {
+        "title": "5. Revíziók",
+        "content": "A DailyDevTools-on megjelenő anyagok technikai, tipográfiai vagy fényképészeti hibákat tartalmazhatnak..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Adatvédelmi szabályzat",
+    "lastUpdated": "Utoljára frissítve",
+    "intro": "Üdvözli a DailyDevTools. Tiszteletben tartjuk magánéletét, és elkötelezettek vagyunk személyes adatainak védelme mellett.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Hogyan működnek eszközeink (helyi feldolgozás)",
+        "content": "A legfontosabb: Az eszközök teljes egészében a böngészőben futnak. Az adatok soha nem hagyják el a készüléket."
+      },
+      "dataCollection": {
+        "title": "3. Az általunk gyűjtött adatok",
+        "content": "Nem gyűjtünk tartalmat. A használati statisztikákhoz a Google Analytics szolgáltatást használjuk."
+      },
+      "cookies": {
+        "title": "4. Cookie-k",
+        "content": "Az elemzéshez és a helyi beállításokhoz cookie-kat használunk."
+      },
+      "thirdParty": {
+        "title": "5. Harmadik féltől származó hivatkozások",
+        "content": "Oldalunk harmadik felekre mutató hivatkozásokat tartalmazhat."
+      },
+      "changes": {
+        "title": "6. A jelen szabályzat változásai",
+        "content": "Ezt a szabályzatot időről időre frissíthetjük."
+      },
+      "contact": {
+        "title": "7. Vegye fel velünk a kapcsolatot",
+        "content": "Lépjen kapcsolatba velünk a GitHubon vagy a közösségi médián keresztül."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Fejlesztői erőforrások",
+    "subtitle": "Mélyen belemerül az általunk készített eszközökbe és a mögöttük rejlő koncepciókba.",
+    "readMore": "Olvass tovább",
+    "backToBlog": "Vissza a Bloghoz",
+    "enjoyedArticle": "Tetszett ez a cikk?",
+    "checkTools": "Tekintse meg eszközeinket"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Bemenet",
+      "output": "Kimenet",
+      "format": "Formátum",
+      "minify": "Minimalizálás",
+      "download": "Letöltés",
+      "copy": "Másolás",
+      "paste": "Paszta",
+      "copied": "Másolva!",
+      "upload": "Feltöltés",
+      "sample": "Minta",
+      "clear": "Törlés",
+      "indent": "Behúzás:",
+      "chars": "karakterek",
+      "error": "Hiba",
+      "invalid": "Érvénytelen bevitel",
+      "result": "Eredmény",
+      "generate": "Generál",
+      "calculate": "Számítsa ki",
+      "convert": "Megtérít",
+      "validate": "Érvényesít",
+      "resultPlaceholder": "Az eredmény itt fog megjelenni..."
+    },
+    "Base64Encoder": {
+      "encode": "Kódol",
+      "decode": "Dekódolni",
+      "textToEncode": "Kódolni kívánt szöveg",
+      "base64ToDecode": "Base64 dekódolni",
+      "enterText": "Írja be a kódolandó szöveget...",
+      "enterBase64": "Írja be a Base64-et a dekódoláshoz...",
+      "encodeAction": "Kódolás Base64-be",
+      "decodeAction": "Dekódolás a Base64-ből",
+      "base64Output": "Base64 kimenet",
+      "decodedText": "Dekódolt szöveg",
+      "resultPlaceholder": "Az eredmény itt fog megjelenni...",
+      "invalidInput": "Érvénytelen bevitel a következőhöz: {mode}"
+    },
+    "QrGenerator": {
+      "content": "Tartalom",
+      "placeholder": "https://example.com",
+      "customization": "Testreszabás",
+      "foreground": "Előtér",
+      "background": "Háttér",
+      "download": "Letöltés"
+    },
+    "HashGenerator": {
+      "inputText": "Szöveg bevitele",
+      "placeholder": "Írjon be szöveget a kivonathoz...",
+      "waiting": "Várakozás a bevitelre..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Új létrehozása",
+      "configuration": "Konfiguráció",
+      "length": "Jelszó hossza",
+      "uppercase": "Nagybetűk (A-Z)",
+      "numbers": "Számok (0-9)",
+      "symbols": "Szimbólumok (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Illessze be a JSON-fájlt ide...",
+      "outputPlaceholder": "A formázott JSON itt fog megjelenni...",
+      "spaces": "terek"
+    },
+    "UrlEncoder": {
+      "encode": "Kódol",
+      "decode": "Dekódolni",
+      "urlToEncode": "URL a kódoláshoz",
+      "encodedUrlToDecode": "Kódolt URL a dekódoláshoz",
+      "enterUrlToEncode": "Írja be a kódolandó URL-t vagy szöveget...",
+      "enterUrlToDecode": "Írja be a kódolt URL-t a dekódoláshoz...",
+      "encodeAction": "URL kódolása",
+      "decodeAction": "URL dekódolása",
+      "encodedUrl": "Kódolt URL",
+      "decodedUrl": "Dekódolt URL",
+      "resultPlaceholder": "Az eredmény itt fog megjelenni...",
+      "chars": "karakterek",
+      "invalidInput": "Érvénytelen bevitel a következőhöz: {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Illessze be a JWT tokenjét",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "JWT dekódolása",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Kiadva",
+      "expires": "Lejár"
+    },
+    "RegexTester": {
+      "expression": "Kifejezés",
+      "expressionPlaceholder": "Rögzítési csoport (abc)...",
+      "testString": "Tesztkarakterlánc",
+      "testStringPlaceholder": "Illessze be ide a tesztkarakterláncot...",
+      "matchHighlights": "Match Highlights",
+      "matches": "mérkőzések",
+      "matchInfo": "Match Information",
+      "match": "Mérkőzés",
+      "index": "Index",
+      "group": "Csoport",
+      "noMatches": "Nincs találat",
+      "highlightPlaceholder": "A mérkőzések itt lesznek kiemelve...",
+      "flagsHelp": "g: globális, i: kis- és nagybetűk figyelmen kívül hagyása, m: többsoros"
+    },
+    "UuidGenerator": {
+      "generate": "Generál",
+      "generateCount": "Létrehoz:",
+      "copyAll": "Összes másolása",
+      "copyUuid": "UUID másolása",
+      "generatedAt": "Helyileg generálva: {time} • 4-es verziójú UUID-k"
+    },
+    "WordCounter": {
+      "words": "Szavak",
+      "characters": "Karakterek",
+      "sentences": "Mondatok",
+      "paragraphs": "Bekezdések",
+      "readingTime": "Olvasási idő",
+      "min": "min",
+      "textInput": "Szövegbevitel",
+      "inputPlaceholder": "Kezdjen el beírni vagy illessze be ide a szöveget az elemzéshez...",
+      "clear": "Világos"
+    },
+    "TimestampConverter": {
+      "timestamp": "Időbélyeg",
+      "humanDate": "Emberi dátum",
+      "convert": "Megtérít",
+      "currentTimestamp": "Jelenlegi időbélyeg",
+      "inputPlaceholder": "Írja be a Unix időbélyeget..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Illessze be ide az SQL-lekérdezést...",
+      "outputPlaceholder": "A formázott SQL itt fog megjelenni..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Illessze be a CSS-kódot ide...",
+      "outputPlaceholder": "Itt fog megjelenni a kicsinyített CSS..."
+    },
+    "MarkdownEditor": {
+      "editor": "Szerkesztő",
+      "preview": "Előnézet",
+      "inputPlaceholder": "Írja be ide a Markdown-t..."
+    },
+    "TextDiff": {
+      "original": "Eredeti szöveg",
+      "changed": "Módosított szöveg",
+      "compare": "Hasonlítsa össze",
+      "differences": "Különbségek"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Írja be a konvertálandó szöveget...",
+      "generatedSlug": "Generált Slug"
+    },
+    "ImageCompressor": {
+      "selectImage": "Válassza a Kép lehetőséget",
+      "quality": "Minőség",
+      "compress": "Borogatás",
+      "download": "Letöltés",
+      "originalSize": "Eredeti Méret",
+      "compressedSize": "Tömörített méret"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Bekezdések",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "GradientGenerator": {
+      "angle": "Szög",
+      "colors": "Színek",
+      "addColor": "Szín hozzáadása",
+      "copyCss": "CSS másolása"
+    },
+    "AgeCalculator": {
+      "birthDate": "Születési dátum",
+      "calculate": "Számítsa ki",
+      "years": "Évek",
+      "months": "Hónapok",
+      "days": "Napok",
+      "totalDays": "Összes nap",
+      "nextBirthday": "Következő születésnap"
+    },
+    "AsciiConverter": {
+      "text": "Szöveg",
+      "ascii": "ASCII",
+      "convert": "Megtérít",
+      "inputPlaceholder": "Írja be a szöveget..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Vízszintes (X)",
+      "vertical": "Függőleges (Y)",
+      "blur": "Elhomályosít",
+      "spread": "Terjedés",
+      "colorOpacity": "Szín és átlátszatlanság",
+      "inset": "Betét"
+    },
+    "BmiCalculator": {
+      "metric": "Metrikus (kg/cm)",
+      "imperial": "birodalmi (lbs/in)",
+      "weight": "Súly",
+      "height": "Magasság",
+      "calculate": "Számítsa ki a BMI-t",
+      "bmiScore": "Az Ön BMI pontszáma",
+      "underweight": "Súlyszegény",
+      "normal": "Normál súly",
+      "overweight": "Túlsúly",
+      "obese": "Elhízott"
+    },
+    "CaseConverter": {
+      "inputText": "Szöveg bevitele",
+      "inputPlaceholder": "Írja be ide a szövegét...",
+      "upper": "UPPERCASE",
+      "lower": "kisbetűvel",
+      "title": "Cím Case",
+      "sentence": "Mondat eset",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Másolat",
+      "conversions": "Konverziók",
+      "clear": "Világos"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX szín",
+      "rgbLabels": "RGB szín",
+      "hslLabels": "HSL szín",
+      "cmykLabels": "CMYK szín",
+      "copy": "Másolat",
+      "hexToRgbNote": "* Jelenleg csak a HEX-ből RGB/HSL-be konvertálást támogatja."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Kártyaszám",
+      "validate": "Érvényesít",
+      "valid": "Érvényes hitelkártyaszám",
+      "invalid": "Érvénytelen hitelkártyaszám",
+      "placeholder": "Írja be a kártya számát...",
+      "type": "Kártya típusa",
+      "checkDigit": "Ellenőrző szám",
+      "luhnValid": "Luhn algoritmus Érvényes"
+    },
+    "CipherTools": {
+      "encode": "Kódol",
+      "decode": "Dekódolni",
+      "rot13": "ROT13",
+      "caesar": "Caesar Cipher",
+      "shift": "Váltás",
+      "inputPlaceholder": "Hello World",
+      "outputPlaceholder": "Az eredmény itt fog megjelenni..."
+    },
+    "CronGenerator": {
+      "minute": "Perc",
+      "hour": "Óra",
+      "dayMonth": "nap (hónap)",
+      "month": "Hónap",
+      "dayWeek": "nap (hét)",
+      "presets": "Közös előbeállítások",
+      "everyMinute": "Minden percben",
+      "everyHour": "Minden órában",
+      "everyDayMidnight": "Minden nap éjfélkor",
+      "everySunday": "Minden vasárnap",
+      "everyMonth": "Minden hónapban",
+      "everyYear": "Minden évben",
+      "formatInfo": "Formátum: * * * * * (perc óra DayOfMonth Month DayOfWeek)",
+      "usageInfo": "Használja a * karaktert 'minden', */n-t 'minden n'-hez, 1,2,3-at adott listához."
+    },
+    "DateDiff": {
+      "startDate": "Kezdés dátuma",
+      "endDate": "Befejezés dátuma",
+      "calculate": "Számítsa ki",
+      "difference": "Különbség",
+      "years": "Évek",
+      "months": "Hónapok",
+      "days": "Napok",
+      "totalDays": "Összes nap",
+      "totalWeeks": "Összes hét",
+      "totalHours": "Összes óra"
+    },
+    "DeepLinkTester": {
+      "testLink": "Teszt link",
+      "savedLinks": "Mentett linkek",
+      "searchPlaceholder": "Mentett linkek keresése...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Dob",
+      "save": "Megtakarítás",
+      "delete": "Töröl",
+      "opens": "megnyílik",
+      "scanQr": "A teszteléshez szkennelje be mobileszközével",
+      "noSavedLinks": "Nem található mentett link.",
+      "enterLabel": "Adjon meg egy címkét ehhez a linkhez:",
+      "saved": "Mentve!",
+      "confirmDelete": "Törli ezt a linket?"
+    },
+    "DeviceInfo": {
+      "screen": "Képernyő",
+      "browser": "Böngésző",
+      "system": "Rendszer",
+      "resolution": "Felbontás",
+      "colorDepth": "Színmélység",
+      "userAgent": "Felhasználói ügynök",
+      "platform": "Platform",
+      "language": "Nyelv"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Eredeti ár",
+      "discountPercent": "Kedvezmény",
+      "additionalDiscount": "További kedvezmény",
+      "calculate": "Számítsa ki",
+      "youSave": "Megmented",
+      "finalPrice": "Végső ár",
+      "salesTax": "Forgalmi adó"
+    },
+    "DnsLookup": {
+      "domain": "Domain",
+      "lookup": "Keresés",
+      "recordType": "Felvétel típusa",
+      "results": "Eredmények",
+      "placeholder": "example.com",
+      "status": "Állapot",
+      "time": "Idő",
+      "server": "Szerver",
+      "answerSection": "Válasz szakasz",
+      "name": "Név",
+      "type": "Írja be",
+      "ttl": "TTL",
+      "data": "Adat",
+      "noRecords": "Nem található rekord"
+    },
+    "EmailValidator": {
+      "email": "E-mail cím",
+      "validate": "Érvényesít",
+      "valid": "Érvényes",
+      "invalid": "Érvénytelen",
+      "suggestion": "Javaslat",
+      "placeholder": "felhasznalo@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Kép feltöltése",
+      "generate": "Generál",
+      "download": "Letöltés",
+      "sizes": "Méretek"
+    },
+    "FuelCalculator": {
+      "distance": "Távolság",
+      "fuelEfficiency": "Üzemanyag-hatékonyság",
+      "fuelPrice": "Üzemanyag ár",
+      "calculate": "Számítsa ki",
+      "result": "Eredmény",
+      "totalCost": "Teljes költség",
+      "fuelNeeded": "Üzemanyag szükséges"
+    },
+    "GridGenerator": {
+      "columns": "Oszlopok",
+      "rows": "Sorok",
+      "gap": "Rés",
+      "preview": "Előnézet",
+      "copyCss": "CSS másolása",
+      "rowGap": "Sorköz",
+      "colGap": "Távköz",
+      "options": "Opciók"
+    },
+    "HmacGenerator": {
+      "message": "Üzenet",
+      "secret": "Titkos",
+      "algorithm": "Algoritmus",
+      "generate": "Generál",
+      "inputPlaceholder": "Szöveg bevitele...",
+      "secretPlaceholder": "Titkos..."
+    },
+    "HtmlEncoder": {
+      "encode": "Kódol",
+      "decode": "Dekódolni",
+      "resultPlaceholder": "Az eredmény itt fog megjelenni...",
+      "inputPlaceholder": "Illessze be a HTML-t ide..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Keressen kódot (pl. 404) vagy nevet...",
+      "code": "Kód",
+      "name": "Név",
+      "description": "Leírás"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Érvényesít",
+      "valid": "Érvényes",
+      "invalid": "Érvénytelen",
+      "placeholder": "Írja be az IBAN-t...",
+      "inputLabel": "Írja be az IBAN számot",
+      "validTitle": "Érvényes benchmark",
+      "invalidTitle": "Érvénytelen ellenőrző összeg",
+      "validDesc": "Az IBAN formátum és az ellenőrző összeg helyes.",
+      "invalidDesc": "Az IBAN nem egyezik az ellenőrzőösszeg algoritmussal."
+    },
+    "ImageBase64": {
+      "upload": "Feltöltés",
+      "convert": "Megtérít",
+      "copy": "Másolat",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Kép feltöltése",
+      "convertToBase64": "Konvertálja Base64-re",
+      "convertToImage": "Átalakítás képre",
+      "base64String": "Base64 karakterlánc",
+      "download": "Letöltés"
+    },
+    "ImageConverter": {
+      "selectImage": "Válassza a Kép lehetőséget",
+      "format": "Formátum",
+      "convert": "Megtérít",
+      "download": "Letöltés",
+      "quality": "Minőség"
+    },
+    "InterestCalculator": {
+      "principal": "Fő",
+      "rate": "Kamatláb",
+      "time": "Időszak (év)",
+      "calculate": "Számítsa ki",
+      "simpleInterest": "Egyszerű",
+      "compoundInterest": "Összetett",
+      "totalAmount": "Teljes érték",
+      "type": "Írja be",
+      "frequency": "Összetett frekvencia",
+      "annually": "Évente",
+      "monthly": "Havi",
+      "daily": "Napi",
+      "year": "Év"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Írja be a JSON-t...",
+      "convert": "Megtérít",
+      "format": "Formátum",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON-ból CSV-be",
+      "csvToJson": "CSV-ből JSON-ba",
+      "jsonInput": "JSON bemenet",
+      "csvInput": "CSV bemenet",
+      "jsonOutput": "JSON kimenet",
+      "csvOutput": "CSV kimenet"
+    },
+    "JsonDiff": {
+      "original": "Eredeti JSON",
+      "modified": "Módosított JSON",
+      "compare": "Hasonlítsa össze",
+      "differences": "Különbségek"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Nyomja meg bármelyik gombot",
+      "key": "Kulcsfontosságú",
+      "code": "Kód",
+      "keyCode": "KeyCode",
+      "which": "melyik",
+      "location": "Elhelyezkedés",
+      "modifiers": "Módosítók",
+      "standard": "Standard",
+      "left": "Balra",
+      "right": "Jobbra",
+      "numpad": "Numpad",
+      "space": "(Tér)",
+      "info": "JavaScript-esemény kulcskódja, kódja és egyebek megjelenítése."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Illessze ide a szöveget a kulcsszó gyakoriságának elemzéséhez...",
+      "analyze": "Elemezze",
+      "keyword": "Kulcsszó",
+      "count": "Gróf",
+      "density": "Sűrűség"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Írd be ide a listádat...",
+      "sort": "Fajta",
+      "reverse": "Fordított",
+      "shuffle": "Keverés",
+      "deduplicate": "Deduplikálás",
+      "ascending": "Emelkedő",
+      "descending": "Csökkenő",
+      "length": "Hossz",
+      "trim": "Trim Empty",
+      "lines": "Sorok:",
+      "chars": "Karakterek:"
+    },
+    "LoanCalculator": {
+      "principal": "Fő",
+      "interestRate": "Kamatláb",
+      "term": "Term",
+      "calculate": "Számítsa ki",
+      "monthlyPayment": "Havi fizetés",
+      "totalInterest": "Teljes kamat",
+      "totalPayment": "Teljes fizetés",
+      "loanDetails": "Kölcsön részletei",
+      "loanAmount": "Kölcsön összege",
+      "loanTerm": "Kölcsön futamideje",
+      "years": "Évek",
+      "months": "Hónapok",
+      "interest": "Kamat"
+    },
+    "MacGenerator": {
+      "generate": "Generál",
+      "copy": "Másolat",
+      "separator": "Szétválasztó",
+      "format": "Formátum",
+      "quantity": "Mennyiség",
+      "uppercase": "Nagybetűs"
+    },
+    "MarginCalculator": {
+      "cost": "Költség",
+      "price": "Eladási Ár",
+      "calculate": "Számítsa ki",
+      "margin": "Margó",
+      "markup": "Jelölés",
+      "profit": "Nyereség",
+      "revenue": "Bevétel",
+      "netProfit": "Nettó nyereség",
+      "grossMargin": "Bruttó árrés"
+    },
+    "PasswordManager": {
+      "masterPassword": "Mester jelszó",
+      "unlock": "Kinyit",
+      "searchPlaceholder": "Fiókok keresése...",
+      "addNew": "Új hozzáadása",
+      "siteName": "Webhely neve",
+      "username": "Felhasználónév",
+      "password": "Jelszó",
+      "save": "Megtakarítás",
+      "delete": "Töröl"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Írd ide...",
+      "strength": "Erő",
+      "weak": "Gyenge",
+      "fair": "Igazságos",
+      "good": "Jó",
+      "strong": "Erős",
+      "requirements": "Követelmények",
+      "length": "8+ karakter",
+      "number": "Számot tartalmaz",
+      "uppercase": "Nagybetűket tartalmaz",
+      "symbol": "Tartalmazza a szimbólumot"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me felhasználónév",
+      "amount": "Összeg",
+      "currency": "Valuta",
+      "generate": "Generál",
+      "itemName": "Elem neve",
+      "link": "Link",
+      "yourLink": "Az Ön PayPal linkje",
+      "openPaypal": "Nyissa meg a PayPal-t"
+    },
+    "RobotsGenerator": {
+      "rules": "Szabályok",
+      "addRule": "Szabály hozzáadása",
+      "allow": "Engedélyezze",
+      "disallow": "Letiltás",
+      "sitemap": "Webhelytérkép URL (opcionális)",
+      "output": "Létrehozva a robots.txt fájlt"
+    },
+    "PercentageCalculator": {
+      "value": "Érték",
+      "percentage": "Százalék",
+      "calculate": "Számítsa ki",
+      "result": "Eredmény",
+      "whatIs": "Mi az",
+      "of": "%-a",
+      "isWhatPercentOf": "hány százaléka",
+      "percentChangeFrom": "%-os változás",
+      "to": "hogy"
+    },
+    "PomodoroTimer": {
+      "work": "Fókuszidő",
+      "shortBreak": "Rövid szünet",
+      "longBreak": "Hosszú szünet",
+      "start": "Indul",
+      "pause": "Szünet",
+      "reset": "Reset",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Szám",
+      "calculate": "Számítsa ki",
+      "factors": "Elsődleges tényezők",
+      "inputLabel": "Írjon be egy számot",
+      "placeholder": "például 120",
+      "isPrime": "Ez a szám a Prime!",
+      "isComposite": "Ez a szám összetett"
+    },
+    "RoiCalculator": {
+      "investment": "Beruházás",
+      "returns": "Visszatér",
+      "calculate": "Számítsa ki",
+      "roi": "ROI",
+      "profit": "Nyereség",
+      "finalValue": "Végső érték",
+      "time": "Idő (év)",
+      "totalGain": "Teljes nyereség",
+      "annualizedRoi": "Éves ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Decimális",
+      "decimalPlaceholder": "2024",
+      "roman": "római",
+      "convert": "Megtérít",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Indítsa el a Felvételt",
+      "stopRecording": "Felvétel leállítása",
+      "download": "Letöltés",
+      "recording": "Felvétel..."
+    },
+    "SignatureGenerator": {
+      "draw": "Rajzolj",
+      "clear": "Világos",
+      "download": "Letöltés",
+      "penColor": "Toll színe",
+      "penSize": "Toll mérete"
+    },
+    "SpeechToText": {
+      "startListening": "Kezdje el a Hallgatást",
+      "stopListening": "Hagyd abba a hallgatást",
+      "transcript": "Átirat",
+      "placeholder": "Az átirat itt fog megjelenni..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO felhasználók (azonosító, név, életkor) ÉRTÉKEK (1, 'János', 30);",
+      "convert": "Megtérít",
+      "result": "Eredmény"
+    },
+    "Stopwatch": {
+      "start": "Indul",
+      "stop": "Stop",
+      "reset": "Reset",
+      "lap": "Lap"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-cím",
+      "subnetMask": "Alhálózati maszk",
+      "calculate": "Számítsa ki",
+      "networkAddress": "Hálózati cím",
+      "broadcastAddress": "Műsorszórási cím",
+      "usableHosts": "Használható hostok"
+    },
+    "SvgToPng": {
+      "pasteSvg": "SVG beillesztése",
+      "uploadSvg": "SVG feltöltése",
+      "convert": "Megtérít",
+      "download": "Letöltés"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Írjon be szöveget a beszédhez...",
+      "speak": "Beszél",
+      "stop": "Stop",
+      "voice": "Hang",
+      "rate": "Arány",
+      "pitch": "Hangmagasság"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Írj be valamit...",
+      "reverse": "Fordított",
+      "uppercase": "Nagybetűs",
+      "lowercase": "Kisbetűs",
+      "encode": "Kódol"
+    },
+    "TimezoneConverter": {
+      "from": "Tól",
+      "to": "To",
+      "convert": "Megtérít",
+      "currentTime": "Jelenlegi idő"
+    },
+    "TokenGenerator": {
+      "length": "Hossz",
+      "generate": "Generál",
+      "copy": "Másolat",
+      "includeNumbers": "Tartalmazza a számokat",
+      "includeSymbols": "Tartalmazza a szimbólumokat"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Írja be az URL-t...",
+      "parse": "Elemzés",
+      "protocol": "Jegyzőkönyv",
+      "host": "Házigazda",
+      "path": "Útvonal",
+      "query": "Lekérdezés"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Webhely URL-je",
+      "source": "Forrás",
+      "medium": "Közepes",
+      "campaign": "Kampány",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "VatCalculator": {
+      "amount": "Összeg",
+      "vatRate": "ÁFA kulcs",
+      "addVat": "Adja hozzá az áfát",
+      "removeVat": "Távolítsa el az áfát",
+      "calculate": "Számítsa ki"
+    },
+    "VibrationTester": {
+      "vibrate": "Rezeg",
+      "pattern": "Minta",
+      "duration": "Időtartam",
+      "test": "Teszt"
+    },
+    "WeekNumber": {
+      "currentWeek": "Aktuális hét száma",
+      "yearProgress": "Év Haladás",
+      "week": "Hét"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefonszám",
+      "message": "Üzenet",
+      "generate": "Generál",
+      "copy": "Másolat",
+      "placeholder": "Sziasztok, érdekel..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "YouTube videó URL beillesztése...",
+      "getThumbnail": "Miniatűr letöltése",
+      "download": "Letöltés"
+    },
+    "CrontabGenerator": {
+      "minute": "Perc",
+      "hour": "Óra",
+      "day": "Nap",
+      "month": "Hónap",
+      "weekday": "Hétköznap",
+      "expression": "Kifejezés",
+      "description": "Leírás"
+    },
+    "ChmodCalculator": {
+      "owner": "Tulajdonos",
+      "group": "Csoport",
+      "others": "Mások",
+      "read": "Olvas",
+      "write": "Írj",
+      "execute": "Végrehajtás",
+      "numeric": "Numerikus",
+      "symbolic": "Szimbolikus"
+    },
+    "HtpasswdGenerator": {
+      "username": "Felhasználónév",
+      "password": "Jelszó",
+      "algorithm": "Algoritmus",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "AspectRatio": {
+      "width": "Szélesség",
+      "height": "Magasság",
+      "ratio": "Hányados",
+      "calculate": "Számítsa ki"
+    },
+    "CssClipPath": {
+      "shape": "Alak",
+      "preview": "Előnézet",
+      "copyCss": "CSS másolása"
+    },
+    "CssCursor": {
+      "cursor": "Kurzor",
+      "preview": "Előnézet",
+      "copyCss": "CSS másolása"
+    },
+    "CssTriangle": {
+      "direction": "Irány",
+      "size": "Méret",
+      "color": "Szín",
+      "preview": "Előnézet",
+      "copyCss": "CSS másolása"
+    },
+    "MetaGenerator": {
+      "title": "Cím",
+      "description": "Leírás",
+      "keywords": "Kulcsszavak",
+      "author": "Szerző",
+      "url": "URL",
+      "image": "Kép",
+      "generate": "Generál",
+      "copy": "Másolat",
+      "titlePlaceholder": "Csodálatos Weboldalam",
+      "descriptionPlaceholder": "Webhelyének rövid leírása...",
+      "keywordsPlaceholder": "web, eszközök, fejlesztés",
+      "authorPlaceholder": "Az Ön neve",
+      "outputPlaceholder": "Itt jelennek meg a metacímkék..."
+    },
+    "OgGenerator": {
+      "title": "Cím",
+      "description": "Leírás",
+      "url": "URL",
+      "image": "Kép",
+      "type": "Írja be",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "TwitterCard": {
+      "cardType": "Kártya típusa",
+      "title": "Cím",
+      "description": "Leírás",
+      "image": "Kép",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "MarkdownTable": {
+      "rows": "Sorok",
+      "columns": "Oszlopok",
+      "header": "Fejléc",
+      "addRow": "Sor hozzáadása",
+      "addColumn": "Oszlop hozzáadása",
+      "generate": "Generál",
+      "copy": "Másolat"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Formátum",
+      "copy": "Másolat"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON formázás: bevált módszerek fejlesztők számára",
+      "excerpt": "Megtudhatja, miért fontos a megfelelő JSON formázás a hibakereséshez, és hogyan automatizálhatja azt a munkafolyamatban.",
+      "category": "Fejlesztés"
+    },
+    "mastering-regex": {
+      "title": "Reguláris kifejezések elsajátítása: vizuális útmutató",
+      "excerpt": "A Regexnek nem kell félelmetesnek lennie. Lebontjuk az e-mail-ellenőrzés, az URL-ek és egyebek gyakori mintáit.",
+      "category": "oktatóanyag"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: Hogyan ütemezzünk feladatokat",
+      "excerpt": "Ismerje meg a Cron ötcsillagos szintaxisát, valamint a biztonsági mentések, e-mailek és szkriptek ütemezését Linuxon.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Miért biztonságosabbak a helyi jelszókezelők (KeyPass alternatíva)",
+      "excerpt": "Gyakoriak a felhőszakadások. Ismerje meg, miért a jelszavak helyi tárolása AES-256 titkosítással a személyes biztonság szempontjából a legbiztonságosabb megoldás.",
+      "category": "Biztonság"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Keresőeszközök...",
+    "noResults": "Nincs találat.",
+    "select": "Válassza ki",
+    "navigate": "Navigáljon"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Visszajelzés küldése",
+    "feedback": "Visszacsatolás",
+    "thankYou": "Köszönöm!",
+    "feedbackSent": "Visszajelzését sikeresen elküldtük.",
+    "close": "Közeli",
+    "name": "Név (nem kötelező)",
+    "namePlaceholder": "A neved",
+    "email": "E-mail (nem kötelező)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Visszajelzés típusa",
+    "typeSuggestion": "💡 Javaslat",
+    "typeBug": "🐛 Hibajelentés",
+    "typeFeature": "✨ Funkciókérés",
+    "typeOther": "📝 Egyéb",
+    "message": "Üzenet*",
+    "messagePlaceholder": "Mondd el, mit gondolsz...",
+    "sending": "Küldés...",
+    "weReadEveryMessage": "Minden üzenetet elolvasunk. Köszönjük, hogy segít a fejlesztésben!"
+  },
+  "ShareButton": {
+    "shareTool": "Megosztás eszköz",
+    "copiedLink": "Link másolva!"
+  },
+  "TextDiff": {
+    "original": "Eredeti szöveg",
+    "changed": "Módosított szöveg",
+    "update": "Frissítse Diff",
+    "old": "Régi",
+    "new": "Új",
+    "content": "Tartalom"
+  },
+  "CrontabGenerator": {
+    "minute": "Perc",
+    "hour": "Óra",
+    "day": "Nap",
+    "month": "Hónap",
+    "weekday": "Hétköznap",
+    "min": "Min",
+    "mon": "Hétfő",
+    "week": "Hét",
+    "presets": "Gyors előbeállítások",
+    "everyMinute": "Minden percben",
+    "every5Minutes": "5 percenként",
+    "everyHour": "Minden órában",
+    "everyDayMidnight": "Minden nap éjfélkor",
+    "everyWeek": "Minden héten",
+    "everyMonth": "Minden hónapban"
+  },
+  "SpeechToText": {
+    "notSupported": "Az Ön böngészője nem támogatja a Web Speech API-t. Kérjük, használja a Chrome-ot.",
+    "placeholder": "Az átirat itt fog megjelenni...",
+    "listening": "Hallgat...",
+    "start": "Kattintson a mikrofonra az indításhoz"
+  },
+  "OgGenerator": {
+    "title": "Cím",
+    "description": "Leírás",
+    "image": "Kép URL-je",
+    "url": "Kanonikus URL",
+    "type": "Írja be",
+    "website": "Weboldal",
+    "article": "Cikk",
+    "profile": "Profil",
+    "preview": "Előnézet (Facebook/LinkedIn)",
+    "generatedHtml": "Generált HTML",
+    "copy": "Másolat"
+  },
+  "WeekNumber": {
+    "checkLabel": "Ellenőrizze a hét számát a dátumhoz",
+    "yearProgress": "Év Haladás"
+  },
+  "RelatedTools": {
+    "title": "Neked is tetszhet",
+    "subtitle": "Fedezzen fel más népszerű fejlesztői eszközöket",
+    "openTool": "Nyissa meg az Eszközt"
+  },
+  "Breadcrumb": {
+    "home": "Otthon",
+    "tools": "Eszközök"
+  },
+  "SvgToPng": {
+    "upload": "SVG fájl feltöltése",
+    "browse": "vagy kattintson a böngészéshez",
+    "paste": "...vagy illessze be az SVG kódot",
+    "preview": "PNG előnézet (2x lépték)",
+    "download": "PNG letöltése",
+    "errorType": "Kérjük, töltsön fel egy érvényes SVG-fájlt.",
+    "errorRender": "Nem sikerült renderelni az SVG-t. Győződjön meg arról, hogy az érvényes XML.",
+    "errorProcess": "Hiba az SVG feldolgozása közben."
+  },
+  "GradientGenerator": {
+    "config": "Konfiguráció",
+    "colors": "Színek",
+    "type": "Írja be",
+    "angle": "Szög",
+    "random": "Véletlen",
+    "copyCss": "CSS másolása",
+    "copied": "Másolva"
+  },
+  "TimezoneConverter": {
+    "date": "Dátum",
+    "time": "Idő (helyi)",
+    "invalid": "Érvénytelen",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "London (GMT/BST)",
+      "paris": "Párizs (CET/CEST)",
+      "tokyo": "Tokió (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Számgenerátor",
+    "listGen": "Listagenerátor",
+    "coinGen": "Érmegenerátor",
+    "min": "Min",
+    "max": "Max",
+    "count": "Gróf",
+    "generate": "Generál",
+    "listLabel": "Listaelemek (soronként egy)",
+    "pick": "Válasszon véletlenszerű elemet",
+    "winner": "A nyertes...",
+    "flip": "Flip Coin",
+    "heads": "Fejek",
+    "tails": "Frakk"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Képernyő rögzítése...",
+    "titleFree": "Ingyenes online képernyőrögzítő",
+    "desc": "Rögzítse képernyőjét, alkalmazásablakát vagy böngészőlapját. Nincs vízjel, nincs időkorlát.",
+    "start": "Indítsa el a Felvételt",
+    "stop": "Felvétel leállítása",
+    "browserSupport": "A legjobban a Chrome, az Edge és a Firefox böngészőben működik asztali számítógépen."
+  },
+  "CssCursor": {
+    "hoverTest": "Mutasson ide a teszteléshez"
+  },
+  "VatCalculator": {
+    "amount": "Összeg",
+    "rate": "ÁFA kulcs (%)",
+    "addVat": "Adja hozzá az áfát",
+    "removeVat": "Távolítsa el az áfát",
+    "netAmount": "Nettó összeg",
+    "vatAmount": "ÁFA összege",
+    "grossTotal": "Bruttó Összesen",
+    "netTotal": "Nettó összesen",
+    "grossAmount": "Bruttó összeg"
+  },
+  "MyIP": {
+    "ipLabel": "Nyilvános IP-címe",
+    "loading": "Terhelés...",
+    "isp": "Internetszolgáltató (ISP)",
+    "location": "Elhelyezkedés",
+    "asn": "ASN",
+    "timezone": "Időzóna",
+    "note": "Ez az Ön által felkeresett webhelyek számára látható IP-cím. Ha VPN-t vagy proxyt használ, eltérhet a helyi IP-től."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Írja be az URL-t",
+    "formatted": "Formázott kimenet",
+    "copy": "Másolat",
+    "copied": "Másolva",
+    "placeholder": "Illesszen be egy URL-t fent, hogy megtekinthesse a formázást."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefonszám (országkóddal)",
+    "message": "Előre kitöltött üzenet",
+    "hint": "Ne szerepeljen +, - és ()",
+    "yourLink": "Az Ön WhatsApp linkje",
+    "open": "Nyissa meg a Chat lehetőséget"
+  },
+  "UrlParser": {
+    "enterUrl": "Írja be az URL-t",
+    "params": "Lekérdezési paraméterek",
+    "error": "Érvénytelen URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Kép feltöltése",
+    "browse": "Ajánlott: 512x512 PNG",
+    "original": "Eredeti",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Töltse le a Favicon.png-t",
+    "note": "* Jelenleg 32x32 PNG faviconokat generál. Ha az örökölt támogatáshoz szükséges, nevezze át .ico-ra."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-cím",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Számítsa ki",
+    "subnetMask": "Alhálózati maszk",
+    "networkAddress": "Hálózati cím",
+    "firstHost": "Első házigazda",
+    "lastHost": "Utolsó házigazda",
+    "broadcastAddress": "Műsorszórási cím",
+    "totalHosts": "Összes házigazda"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Írja be a cikk címét / szövegét",
+    "generated": "Generált Slug",
+    "copy": "Slug másolása"
+  },
+  "SqlToJson": {
+    "inputLabel": "Bemeneti SQL (csak INSERT utasítások)",
+    "convert": "Konvertálja JSON-ba",
+    "error": "Nem sikerült elemezni az SQL-t. Győződjön meg arról, hogy szabványos INSERT INTO utasítások."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Sor hozzáadása",
+    "addCol": "+ Oszlop hozzáadása",
+    "headerPlaceholder": "Fejléc",
+    "outputLabel": "Markdown kimenet",
+    "copy": "Markdown másolása"
+  },
+  "TwitterCard": {
+    "cardType": "Kártya típusa",
+    "siteHandle": "Site Handle (pl. @twitter)",
+    "title": "Cím",
+    "description": "Leírás",
+    "imageUrl": "Kép URL-je",
+    "preview": "Előnézet",
+    "generatedHtml": "Generált HTML",
+    "copy": "Másolat",
+    "placeholderTitle": "Kártya címe",
+    "placeholderDesc": "A leírás itt található..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Írjon be szöveget a beszédhez...",
+    "voice": "Hang",
+    "speed": "Sebesség",
+    "pitch": "Hangmagasság",
+    "speak": "Beszél"
+  },
+  "TokenGenerator": {
+    "length": "Hossz",
+    "includeNumbers": "Tartalmazza a számokat",
+    "includeSymbols": "Tartalmazza a szimbólumokat",
+    "generate": "Token generálása"
+  },
+  "CssTriangle": {
+    "direction": "Irány",
+    "color": "Szín",
+    "width": "Szélesség (px)",
+    "height": "Magasság (px)",
+    "copy": "Másolat"
+  },
+  "UnitConverter": {
+    "length": "Hossz",
+    "weight": "Súly",
+    "temperature": "Hőmérséklet",
+    "meters": "Mérők",
+    "kilometers": "Kilométer",
+    "centimeters": "centiméter",
+    "millimeters": "Milliméter",
+    "inches": "hüvelyk",
+    "feet": "Lábak",
+    "yards": "Udvarok",
+    "miles": "Mérföld",
+    "kilograms": "Kilogramm",
+    "grams": "gramm",
+    "pounds": "Font",
+    "ounces": "uncia",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Alakzatok",
+    "preview": "Előnézet",
+    "cssCode": "CSS kód",
+    "copy": "Másolat",
+    "copied": "Másolva"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Kép feltöltése",
+    "uploadDesc": "JPG, PNG vagy WebP. Helyben tömörítjük.",
+    "selectImage": "Válassza a Kép lehetőséget",
+    "settings": "Tömörítési beállítások",
+    "quality": "Minőség",
+    "originalSize": "Eredeti Méret",
+    "compressedSize": "Tömörített méret",
+    "saving": "Megtakarítás",
+    "download": "Letöltés"
+  },
+  "HtpasswdGenerator": {
+    "username": "Felhasználónév",
+    "password": "Jelszó",
+    "algorithm": "Algoritmus",
+    "generate": "Bejegyzés generálása",
+    "result": "Eredmény",
+    "sha1": "SHA-1 (nem biztonságos, de szabványos)",
+    "notSupported": "Ebben az ügyféloldali verzióban csak az SHA-1 támogatott."
+  },
+  "MetaTags": {
+    "pageTitle": "Oldal címe",
+    "description": "Leírás",
+    "author": "Szerző"
+  },
+  "AgeCalculator": {
+    "dob": "Születési idő",
+    "age": "Kor",
+    "years": "év",
+    "months": "hónap",
+    "days": "napokon",
+    "nextBirthday": "Következő születésnap"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Webhely URL-címe (kötelező)",
+    "source": "Kampány forrása (kötelező)",
+    "medium": "Kampány médium (kötelező)",
+    "name": "Kampány neve (kötelező)",
+    "term": "Kampány időtartama (opcionális)",
+    "content": "Kampánytartalom (opcionális)",
+    "generatedUrl": "Létrehozott URL",
+    "copy": "URL másolása"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Jelenlegi Unix idő",
+    "timestampLabel": "Időbélyeg (másodperc)",
+    "isoLabel": "ISO dátumformátum",
+    "utcDate": "UTC dátum",
+    "localDate": "Helyi dátum",
+    "relative": "Relatív"
+  },
+  "SignatureGenerator": {
+    "color": "Szín",
+    "width": "Szélesség",
+    "clear": "Világos",
+    "download": "PNG letöltése",
+    "signHere": "Itt írd alá",
+    "note": "Az aláírások feldolgozása helyileg, a böngészőben történik. Nem tároljuk és nem töltjük fel őket."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Élő előnézet"
+  },
+  "CipherTools": {
+    "shiftAmount": "Eltolás összege (N)",
+    "inputText": "Szöveg bevitele",
+    "outputText": "Kimeneti szöveg",
+    "rot13": "ROT13",
+    "caesar": "Caesar (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Képernyőfelbontás",
+    "browser": "Böngésző",
+    "cpuCores": "CPU magok",
+    "battery": "Akkumulátor",
+    "detailedSpecs": "Részletes specifikációk",
+    "userAgent": "Felhasználói ügynök",
+    "platform": "Platform",
+    "windowSize": "Ablak mérete",
+    "pixelRatio": "Pixel arány",
+    "colorDepth": "Színmélység",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookie-k engedélyezve",
+    "onlineStatus": "Online állapot",
+    "unknown": "Ismeretlen",
+    "yes": "Igen",
+    "no": "Nem",
+    "enabled": "Engedélyezve",
+    "disabled": "Letiltva"
+  },
+  "ChmodCalculator": {
+    "owner": "Tulajdonos",
+    "group": "Csoport",
+    "public": "Nyilvános",
+    "read": "Olvas",
+    "write": "Írj",
+    "execute": "Végrehajtás",
+    "numeric": "Numerikus",
+    "symbolic": "Szimbolikus"
+  },
+  "PasswordManager": {
+    "title": "Jelszókezelő",
+    "desc": "Biztonságosan tárolja és kezelje jelszavait helyben.",
+    "unlock": "A Vault feloldása",
+    "create": "Új trezor létrehozása",
+    "unlockDesc": "Adja meg fő jelszavát a fiókok eléréséhez.",
+    "createDesc": "Állítson be erős fő jelszót. Helyben titkosítja az adatait.",
+    "masterPassword": "Mester jelszó",
+    "unlockBtn": "Kinyit",
+    "createBtn": "Hozzon létre Vault",
+    "note": "Az adatokat az Ön böngészője AES-GCM titkosítással tárolja. Elveszett jelszavát nem tudjuk visszaállítani.",
+    "myPasswords": "Saját jelszavaim",
+    "addNew": "Új hozzáadása",
+    "search": "Fiókok keresése...",
+    "noPasswords": "Nem találhatók jelszavak.",
+    "addAccount": "Fiók hozzáadása lehetőségre",
+    "accountTitle": "Cím / Webhely",
+    "username": "Felhasználónév / Email",
+    "password": "Jelszó",
+    "url": "URL (nem kötelező)",
+    "save": "Fiók mentése",
+    "cancel": "Mégse",
+    "incorrectPassword": "Hibás jelszó vagy sérült adatok.",
+    "loading": "Terhelés..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Weboldal Részletek",
+    "pageTitle": "Oldal címe",
+    "description": "Leírás",
+    "keywords": "Kulcsszavak (vesszővel elválasztva)",
+    "author": "Szerző",
+    "socialPreview": "Közösségi előnézet (OG és Twitter)",
+    "websiteUrl": "Webhely URL-je",
+    "previewImage": "Előnézet kép URL-je",
+    "generatedHtml": "Generált HTML",
+    "copy": "HTML másolása",
+    "copied": "Másolva"
+  },
+  "VibrationTester": {
+    "worksOnly": "Csak vibrációs hardverrel rendelkező eszközökön működik (pl. telefonok).",
+    "duration": "Időtartam (ms)",
+    "vibrateOnce": "Rezgés egyszer",
+    "pulsePattern": "Pulzusminta",
+    "longPulse": "Hosszú pulzus",
+    "stop": "Stop"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Miért számít a JSON formázás?",
+      "block_2": "A JSON (JavaScript Object Notation) a web nyelve.Ám az API-kból visszaküldött nyers JSON gyakran csak egy kisebb rendetlenség.formázása olvashatóvá, hibakereshetővé és biztonságossá teszi.",
+      "block_3": "1.Az olvashatóság a király",
+      "block_4": "5000 soros API-válasz hibakeresése során a behúzás életeket menthet meg.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON-formázónk</a> 2 szóközzel vagy 4 szóközzel történő behúzást használ a szerkezet egyértelművé tételéhez.",
+      "block_5": "2.Érvényesítés",
+      "block_6": "Egyetlen hiányzó vessző tönkreteheti az alkalmazást.Mindig ellenőrizze a JSON-ját, mielőtt a konfigurációs fájlokba helyezné.",
+      "block_7": "Következtetés",
+      "block_8": "Ne pazarolja az időt a zárójelek kézi ellenőrzésére.Használjon automatizált eszközöket."
+    },
+    "mastering-regex": {
+      "block_1": "Regex magyarázata",
+      "block_2": "A reguláris kifejezések erőteljesek, de zavaróak.vizualizáljuk őket.",
+      "block_3": "Gyakori minták",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Tesztelje ezeket a mintákat azonnal az <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex tesztelőnkkel</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "A Cron 5 csillaga",
+      "block_2": "Perc, Óra, Hónap, Hónap, Hét napja.Ennyi az egész.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * parancs_futtatása</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Példák</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás minden nap éjfélkor: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border-[color) *]</code> border-[color) *]</b>border-0\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás 15 percenként: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border border-[var(]--border/-1><p>)\n\n<p class=\"mb-6 text-[var(--foreground)]\">Segítségre van szüksége?Használja <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron generátorunkat</a> a kifejezések vizuális létrehozásához.",
+      "block_4": "* * * * * parancs_futtatása",
+      "block_5": "Példák"
+    },
+    "secure-password-storage-local": {
+      "block_1": "A felhőtárolókkal kapcsolatos probléma",
+      "block_2": "A LastPass, az Okta és más óriások jogsértéseket szenvedtek el.Ha a trezor online van, akkor célpont.",
+      "block_3": "A megoldás: Helyi titkosítás",
+      "block_4": "Új <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] aláhúzás aláhúzás-offset-4 hover:><5 Password run\" hover:text-0[#ea\">Local-0[#ea>a böngészőjében.<strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256 bites titkosítást</strong> használ, amely az Ön fő jelszavából származik a PBKDF2 használatával.",
+      "block_5": "Hogyan működik",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zéró tudás:</strong> soha nem látjuk jelszavát.Soha nem hagyja el az eszközt.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline tárhely:</strong> Titkosított tárolóját a böngészője LocalStorage tárolja.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportálható:</strong> Nyers titkosított adatairól bármikor exportálhat/menthet biztonsági másolatot.</li>",
+      "block_7": "Ne bízzon többé a felhőben a főkulcsokkal.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Próbálja ki a Helyi jelszókezelőt</a> még ma."
+    }
+  }
+}

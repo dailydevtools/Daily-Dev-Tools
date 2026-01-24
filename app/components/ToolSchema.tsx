@@ -23,8 +23,8 @@ export default function ToolSchema({ name, description, url, category }: ToolSch
         },
         "provider": {
             "@type": "Organization",
-            "name": "QuickDevTools",
-            "url": "https://quickdevtools.com"
+            "name": "DailyDevTools",
+            "url": "https://dailydev.tools"
         }
     };
 

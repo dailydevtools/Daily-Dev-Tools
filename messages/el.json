@@ -1,0 +1,1815 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Εργαλεία",
+    "blog": "Ιστολόγιο",
+    "github": "GitHub",
+    "searchPlaceholder": "Αναζήτηση..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Δωρεάν Online Εργαλεία Προγραμματιστών",
+    "description": "90+ δωρεάν online εργαλεία για όλους. Μορφοποιητές, μετατροπείς, γεννήτριες και βοηθητικά προγράμματα. Γρήγορα, ιδιωτικά και χωρίς εγγραφή."
+  },
+  "NotFound": {
+    "title": "Η σελίδα δεν βρέθηκε",
+    "description": "Συγγνώμη, δεν μπορέσαμε να βρούμε τη σελίδα που ψάχνετε.",
+    "backHome": "Επιστροφή στην Αρχική",
+    "suggestions": "Δοκιμάστε να αναζητήσετε ένα εργαλείο ή περιηγηθείτε στα δημοφιλή εργαλεία μας παρακάτω."
+  },
+  "Homepage": {
+    "heroTag": "100+ Δωρεάν Εργαλεία • Ιδιωτικά • Χωρίς Εγγραφή",
+    "titleLine1": "Καθημερινά Εργαλεία Προγραμματιστή",
+    "titleLine2": "Που Απλά Δουλεύουν",
+    "subtitle": "Γρήγορα, όμορφα και εστιασμένα στην ιδιωτικότητα εργαλεία για προγραμματιστές, σχεδιαστές και όλους. Όλα τρέχουν στον browser σας.",
+    "recentTools": "Πρόσφατα Χρησιμοποιημένα",
+    "noRecentText": "Ξεκινήστε να χρησιμοποιείτε εργαλεία για να τα δείτε εδώ",
+    "searchResults": "Αποτελέσματα Αναζήτησης",
+    "popularTools": "Δημοφιλή",
+    "toolsCount": "{count} διαθέσιμα εργαλεία",
+    "features": {
+      "fast": {
+        "title": "Αστραπιαία Γρήγορα",
+        "desc": "Όλα τα εργαλεία τρέχουν τοπικά στον browser σας"
+      },
+      "private": {
+        "title": "100% Ιδιωτικά",
+        "desc": "Τα δεδομένα σας δεν φεύγουν ποτέ από τη συσκευή σας"
+      },
+      "simple": {
+        "title": "Φτιαγμένα για Όλους",
+        "desc": "Αρκετά απλά για όλους, ισχυρά για επαγγελματίες"
+      },
+      "free": {
+        "title": "Πάντα Δωρεάν",
+        "desc": "Χωρίς λογαριασμούς, χωρίς όρια"
+      }
+    },
+    "categories": {
+      "All": "Όλα",
+      "Favorites": "Αγαπημένα",
+      "Developer": "Προγραμματιστής",
+      "Design": "Σχεδιασμός",
+      "Content": "Περιεχόμενο",
+      "Security": "Ασφάλεια",
+      "Productivity": "Παραγωγικότητα",
+      "Math": "Μαθηματικά",
+      "Utility": "Βοηθητικό Πρόγραμμα"
+    },
+    "cta": {
+      "title": "Έτοιμοι να αυξήσετε την παραγωγικότητά σας;",
+      "text": "Ξεκινήστε να χρησιμοποιείτε τα εργαλεία προγραμματιστών μας δωρεάν. Χωρίς εγγραφή, χωρίς συλλογή δεδομένων.",
+      "button": "Ξεκινήστε Δωρεάν"
+    },
+    "openTool": "Άνοιγμα εργαλείου",
+    "noResults": "Δεν βρέθηκαν εργαλεία που να ταιριάζουν με",
+    "clearFilters": "Καθαρισμός φίλτρων"
+  },
+  "Footer": {
+    "builtWith": "Φτιαγμένο με ❤️ από",
+    "allTools": "Όλα τα Εργαλεία",
+    "blog": "Ιστολόγιο",
+    "about": "Σχετικά",
+    "privacy": "Ιδιωτικότητα",
+    "terms": "Όροι"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Μορφοποιητής JSON",
+      "description": "Μορφοποίηση, επικύρωση και ωραιοποίηση JSON άμεσα"
+    },
+    "base64-encoder": {
+      "name": "Κωδικοποιητής Base64",
+      "description": "Κωδικοποίηση και αποκωδικοποίηση συμβολοσειρών Base64"
+    },
+    "url-encoder": {
+      "name": "Κωδικοποιητής URL",
+      "description": "Ασφαλής κωδικοποίηση και αποκωδικοποίηση URL"
+    },
+    "jwt-decoder": {
+      "name": "Αποκωδικοποιητής JWT",
+      "description": "Αποκωδικοποίηση και επιθεώρηση JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "Έλεγχος Regex",
+      "description": "Δοκιμή κανονικών εκφράσεων σε πραγματικό χρόνο"
+    },
+    "hash-generator": {
+      "name": "Γεννήτρια Hash",
+      "description": "Δημιουργία hashes MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Γεννήτρια UUID",
+      "description": "Άμεση δημιουργία τυχαίων UUIDs/GUIDs"
+    },
+    "css-minifier": {
+      "name": "Ελαχιστοποίηση CSS",
+      "description": "Ελαχιστοποίηση και βελτιστοποίηση κώδικα CSS"
+    },
+    "markdown-editor": {
+      "name": "Προεπισκόπηση Markdown",
+      "description": "Επεξεργαστής και προεπισκόπηση Markdown σε πραγματικό χρόνο"
+    },
+    "color-converter": {
+      "name": "Μετατροπέας Χρωμάτων",
+      "description": "Μετατροπή Hex, RGB, HSL και CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Εργαλείο Timestamp",
+      "description": "Μετατροπή Unix timestamps σε αναγνώσιμες ημερομηνίες"
+    },
+    "sql-formatter": {
+      "name": "Μορφοποιητής SQL",
+      "description": "Μορφοποίηση και ωραιοποίηση ερωτημάτων SQL"
+    },
+    "password-generator": {
+      "name": "Γεννήτρια Κωδικών",
+      "description": "Δημιουργία ασφαλών, τυχαίων κωδικών πρόσβασης"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Δημιουργία κειμένου placeholder για σχέδια"
+    },
+    "image-base64": {
+      "name": "Εικόνα σε Base64",
+      "description": "Μετατροπή εικόνων σε συμβολοσειρές Base64"
+    },
+    "qr-generator": {
+      "name": "Γεννήτρια QR Code",
+      "description": "Δημιουργία κωδικών QR για URLs και κείμενο"
+    },
+    "word-counter": {
+      "name": "Μετρητής Λέξεων",
+      "description": "Μέτρηση λέξεων, χαρακτήρων και χρόνου ανάγνωσης"
+    },
+    "case-converter": {
+      "name": "Μετατροπέας Πεζών-Κεφαλαίων",
+      "description": "Μετατροπή camel, snake, kebab & pascal case"
+    },
+    "text-diff": {
+      "name": "Έλεγχος Διαφορών Κειμένου",
+      "description": "Σύγκριση δύο κειμένων και εύρεση διαφορών"
+    },
+    "slug-generator": {
+      "name": "Γεννήτρια Slug",
+      "description": "Δημιουργία SEO-friendly URL slugs"
+    },
+    "gradient-generator": {
+      "name": "Γεννήτρια Ντεγκραντέ",
+      "description": "Δημιουργία όμορφων ντεγκραντέ CSS"
+    },
+    "image-compressor": {
+      "name": "Συμπίεση Εικόνας",
+      "description": "Συμπίεση εικόνων τοπικά και ιδιωτικά"
+    },
+    "device-info": {
+      "name": "Πληροφορίες Συσκευής",
+      "description": "Προβολή πληροφοριών οθόνης, browser και συστήματος"
+    },
+    "random-generator": {
+      "name": "Γεννήτρια Τυχαίων",
+      "description": "Επιλογή αριθμών, νομισμάτων και στοιχείων λίστας"
+    },
+    "unit-converter": {
+      "name": "Μετατροπέας Μονάδων",
+      "description": "Μετατροπή Μήκους, Βάρους & Θερμοκρασίας"
+    },
+    "pomodoro-timer": {
+      "name": "Χρονόμετρο Pomodoro",
+      "description": "Χρονόμετρο εστίασης για παραγωγικότητα"
+    },
+    "yt-thumbnail": {
+      "name": "Λήψη Μικρογραφιών",
+      "description": "Λήψη μικρογραφιών βίντεο YouTube"
+    },
+    "my-ip": {
+      "name": "Ποια είναι η IP μου",
+      "description": "Προβολή δημόσιας IP και πληροφοριών δικτύου"
+    },
+    "keycode-info": {
+      "name": "Πληροφορίες Keycode",
+      "description": "Debugger συμβάντων πληκτρολογίου JavaScript"
+    },
+    "signature-generator": {
+      "name": "Γεννήτρια Υπογραφής",
+      "description": "Σχεδίαση & λήψη ψηφιακών υπογραφών"
+    },
+    "screen-recorder": {
+      "name": "Καταγραφή Οθόνης",
+      "description": "Καταγραφή οθόνης & λήψη βίντεο"
+    },
+    "credit-card-validator": {
+      "name": "Επικύρωση Κάρτας",
+      "description": "Επικύρωση αριθμών πιστωτικών καρτών"
+    },
+    "password-manager": {
+      "name": "Τοπικός Διαχειριστής Κωδικών",
+      "description": "Ασφαλής αποθήκευση κωδικών τοπικά με κρυπτογράφηση"
+    },
+    "deep-link-tester": {
+      "name": "Έλεγχος Deep Link",
+      "description": "Δοκιμή, εκκίνηση & διαχείριση mobile deep links"
+    },
+    "image-converter": {
+      "name": "Μετατροπέας Εικόνας",
+      "description": "Μετατροπή PNG/JPG σε WebP τοπικά για βελτιστοποίηση εικόνων"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Μετατροπή JSON σε CSV και αντίστροφα"
+    },
+    "bmi-calculator": {
+      "name": "Υπολογιστής ΔΜΣ",
+      "description": "Υπολογισμός Δείκτη Μάζας Σώματος (BMI)"
+    },
+    "dns-lookup": {
+      "name": "Αναζήτηση DNS",
+      "description": "Άμεση αναζήτηση εγγραφών DNS (A, MX, NS)"
+    },
+    "age-calculator": {
+      "name": "Υπολογιστής Ηλικίας",
+      "description": "Υπολογισμός ακριβούς ηλικίας και συνολικών ημερών"
+    },
+    "loan-calculator": {
+      "name": "Υπολογιστής Δανείου",
+      "description": "Υπολογισμός μηνιαίας δόσης και συνολικού τόκου"
+    },
+    "discount-calculator": {
+      "name": "Υπολογιστής Έκπτωσης",
+      "description": "Υπολογισμός τιμής πώλησης και οφέλους"
+    },
+    "interest-calculator": {
+      "name": "Υπολογιστής Τόκου",
+      "description": "Υπολογιστής απλού vs ανατοκισμού"
+    },
+    "html-encoder": {
+      "name": "Κωδικοποίηση/Αποκωδικοποίηση HTML",
+      "description": "Διαφυγή ειδικών χαρακτήρων ή αποκωδικοποίηση HTML"
+    },
+    "list-sorter": {
+      "name": "Ταξινόμηση Λίστας",
+      "description": "Ταξινόμηση, αντιστροφή, ανακάτεμα και αφαίρεση διπλότυπων"
+    },
+    "box-shadow": {
+      "name": "Γεννήτρια Box Shadow",
+      "description": "Οπτική δημιουργία CSS box-shadows"
+    },
+    "date-diff": {
+      "name": "Διαφορά Ημερομηνιών",
+      "description": "Υπολογισμός διάρκειας μεταξύ δύο ημερομηνιών"
+    },
+    "sql-to-json": {
+      "name": "SQL σε JSON",
+      "description": "Μετατροπή SQL INSERTs σε αντικείμενα JSON"
+    },
+    "keyword-density": {
+      "name": "Πυκνότητα Λέξεων-Κλειδιών",
+      "description": "Ανάλυση συχνότητας λέξεων-κλειδιών για SEO"
+    },
+    "json-diff": {
+      "name": "JSON Διαφ",
+      "description": "Σύγκριση δύο αντικειμένων JSON δίπλα-δίπλα"
+    },
+    "cipher-tools": {
+      "name": "Εργαλεία Κρυπτογράφησης",
+      "description": "Κωδικοποιητής/Αποκωδικοποιητής ROT13 και Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Γεννήτρια Τυχαίων Token",
+      "description": "Δημιουργία ασφαλών τυχαίων tokens"
+    },
+    "favicon-generator": {
+      "name": "Γεννήτρια Favicon",
+      "description": "Δημιουργία .ico και PNG favicons"
+    },
+    "robots-generator": {
+      "name": "Γεννήτρια Robots.txt",
+      "description": "Δημιουργία robots.txt για SEO"
+    },
+    "grid-generator": {
+      "name": "Γεννήτρια CSS Grid",
+      "description": "Οπτικός κατασκευαστής διάταξης CSS Grid"
+    },
+    "hmac-generator": {
+      "name": "Γεννήτρια HMAC",
+      "description": "Δημιουργία κωδικών ελέγχου ταυτότητας μηνυμάτων (HMAC)"
+    },
+    "http-status": {
+      "name": "Κωδικοί Κατάστασης HTTP",
+      "description": "Λίστα αναφοράς κωδικών κατάστασης HTTP"
+    },
+    "week-number": {
+      "name": "Αριθμός Εβδομάδας",
+      "description": "Τρέχων αριθμός εβδομάδας και πρόοδος έτους"
+    },
+    "text-tools": {
+      "name": "Μετασχηματιστής Κειμένου",
+      "description": "Αντιστροφή, αναστροφή και κωδικοποίηση κειμένου"
+    },
+    "url-parser": {
+      "name": "Ανάλυση URL",
+      "description": "Διαχωρισμός URLs σε πρωτόκολλο, host, διαδρομή, παραμέτρους"
+    },
+    "markdown-table": {
+      "name": "Γεννήτρια Πίνακα Markdown",
+      "description": "Δημιουργία πινάκων Markdown οπτικά"
+    },
+    "whatsapp-link": {
+      "name": "Γεννήτρια Συνδέσμου WhatsApp",
+      "description": "Δημιουργία άμεσων συνδέσμων συνομιλίας WhatsApp"
+    },
+    "paypal-link": {
+      "name": "Γεννήτρια Συνδέσμου PayPal",
+      "description": "Δημιουργία συνδέσμων πληρωμής PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG σε PNG",
+      "description": "Μετατροπή κώδικα/αρχείου SVG σε εικόνα PNG"
+    },
+    "prime-factors": {
+      "name": "Πρώτοι Παράγοντες",
+      "description": "Εύρεση πρώτων παραγόντων ενός αριθμού"
+    },
+    "iban-validator": {
+      "name": "Επικύρωση IBAN",
+      "description": "Επικύρωση Διεθνών Αριθμών Τραπεζικών Λογαριασμών"
+    },
+    "ascii-converter": {
+      "name": "Μετατροπέας ASCII",
+      "description": "Μετατροπή κειμένου σε δεκαδικούς κωδικούς ASCII"
+    },
+    "utm-builder": {
+      "name": "Δημιουργία UTM",
+      "description": "Δημιουργία URLs καμπάνιας Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Γεννήτρια Meta Tag",
+      "description": "Δημιουργία SEO meta tags για ιστοσελίδες"
+    },
+    "og-generator": {
+      "name": "Γεννήτρια Open Graph",
+      "description": "Δημιουργία Open Graph meta tags για κοινοποίηση στα social media"
+    },
+    "twitter-card": {
+      "name": "Γεννήτρια Twitter Card",
+      "description": "Δημιουργία Twitter Card meta tags"
+    },
+    "aspect-ratio": {
+      "name": "Υπολογιστής Αναλογίας Εικόνας",
+      "description": "Υπολογισμός αναλογιών και διαστάσεων"
+    },
+    "css-cursor": {
+      "name": "Δρομέας CSS",
+      "description": "Οπτική αναφορά ιδιότητας CSS cursor"
+    },
+    "css-triangle": {
+      "name": "Γεννήτρια Τριγώνου CSS",
+      "description": "Δημιουργία τριγώνων καθαρού CSS"
+    },
+    "percentage-calculator": {
+      "name": "Υπολογιστής Ποσοστών",
+      "description": "Υπολογισμός ποσοστών και αλλαγών"
+    },
+    "vat-calculator": {
+      "name": "Υπολογιστής ΦΠΑ",
+      "description": "Υπολογισμός ποσών προσθήκης/αφαίρεσης ΦΠΑ"
+    },
+    "stopwatch": {
+      "name": "Χρονόμετρο",
+      "description": "Απλό χρονόμετρο στον browser"
+    },
+    "text-to-speech": {
+      "name": "Κείμενο σε Ομιλία",
+      "description": "Μετατροπή κειμένου σε προφορικό λόγο"
+    },
+    "speech-to-text": {
+      "name": "Ομιλία σε Κείμενο",
+      "description": "Μετατροπή προφορικού λόγου σε κείμενο"
+    },
+    "vibration-tester": {
+      "name": "Δοκιμή Δόνησης",
+      "description": "Δοκιμή μοτέρ δόνησης συσκευής"
+    },
+    "chmod-calculator": {
+      "name": "Υπολογιστής Chmod",
+      "description": "Υπολογισμός δικαιωμάτων αρχείων Linux"
+    },
+    "crontab-generator": {
+      "name": "Γεννήτρια Crontab",
+      "description": "Δημιουργία εκφράσεων χρονοδιαγράμματος cron"
+    },
+    "htpasswd-generator": {
+      "name": "Γεννήτρια Htpasswd",
+      "description": "Δημιουργία εγγραφών basic auth"
+    },
+    "subnet-calculator": {
+      "name": "Υπολογιστής Subnet",
+      "description": "Υπολογισμός υποδικτύων και περιοχών IP"
+    },
+    "mac-generator": {
+      "name": "Γεννήτρια Διευθύνσεων MAC",
+      "description": "Δημιουργία τυχαίων διευθύνσεων MAC"
+    },
+    "timezone-converter": {
+      "name": "Μετατροπέας Ζώνης Ώρας",
+      "description": "Μετατροπή ώρας μεταξύ πολλαπλών ζωνών"
+    },
+    "email-validator": {
+      "name": "Επικύρωση Email",
+      "description": "Επικύρωση μορφής email και εντοπισμός τυπογραφικών"
+    },
+    "password-strength": {
+      "name": "Ισχύς Κωδικού",
+      "description": "Έλεγχος βαθμολογίας ισχύος κωδικού πρόσβασης"
+    },
+    "roman-numerals": {
+      "name": "Μετατροπέας Ρωμαϊκών Αριθμών",
+      "description": "Μετατροπή μεταξύ Ρωμαϊκών και δεκαδικών αριθμών"
+    },
+    "margin-calculator": {
+      "name": "Υπολογιστής Περιθωρίου",
+      "description": "Υπολογισμός περιθωρίου κέρδους και markup"
+    },
+    "roi-calculator": {
+      "name": "Υπολογιστής ROI",
+      "description": "Υπολογισμός Απόδοσης Επένδυσης (Return on Investment)"
+    },
+    "fuel-calculator": {
+      "name": "Υπολογιστής Καυσίμων",
+      "description": "Υπολογισμός κόστους καυσίμων ταξιδιού"
+    },
+    "pretty-print-url": {
+      "name": "URL όμορφης εκτύπωσης",
+      "description": "Μορφοποίηση και ωραιοποίηση URLs για αναγνωσιμότητα"
+    }
+  },
+  "Terms": {
+    "title": "Όροι Χρήσης",
+    "lastUpdated": "Τελευταία ενημέρωση",
+    "sections": {
+      "acceptance": {
+        "title": "1. Αποδοχή των Όρων",
+        "content": "Με την πρόσβαση και τη χρήση του DailyDevTools, αποδέχεστε και συμφωνείτε να δεσμεύεστε από τους όρους και τις διατάξεις αυτής της συμφωνίας."
+      },
+      "useLicense": {
+        "title": "2. Άδεια Χρήσης",
+        "content": "Το DailyDevTools είναι δωρεάν για προσωπική και εμπορική χρήση. Δεν επιτρέπεται:",
+        "list": {
+          "0": "Προσπάθεια αντίστροφης μηχανικής ή απόσπασης σημαντικών τμημάτων του ιστότοπου.",
+          "1": "Χρήση του ιστότοπου με οποιονδήποτε τρόπο που προκαλεί, ή μπορεί να προκαλέσει, ζημιά στον ιστότοπο ή μείωση της διαθεσιμότητας ή της προσβασιμότητας του ιστότοπου."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Αποποίηση Ευθυνών",
+        "content": "Τα εργαλεία στο DailyDevTools παρέχονται \"ως έχουν\". Δεν παρέχουμε καμία εγγύηση, ρητή ή σιωπηρή..."
+      },
+      "limitations": {
+        "title": "4. Περιορισμοί",
+        "content": "Σε καμία περίπτωση το DailyDevTools ή οι προμηθευτές του δεν ευθύνονται για τυχόν ζημιές..."
+      },
+      "revisions": {
+        "title": "5. Αναθεωρήσεις",
+        "content": "Το υλικό που εμφανίζεται στο DailyDevTools μπορεί να περιλαμβάνει τεχνικά, τυπογραφικά ή φωτογραφικά λάθη..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Πολιτική Απορρήτου",
+    "lastUpdated": "Τελευταία ενημέρωση",
+    "intro": "Καλώς ήρθατε στο DailyDevTools. Σεβόμαστε το απόρρητό σας και δεσμευόμαστε να προστατεύουμε τα προσωπικά σας δεδομένα.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Πώς Λειτουργούν τα Εργαλεία μας (Τοπική Επεξεργασία)",
+        "content": "Το πιο σημαντικό: Τα εργαλεία εκτελούνται εξ ολοκλήρου στον browser σας. Τα δεδομένα δεν φεύγουν ποτέ από τη συσκευή σας."
+      },
+      "dataCollection": {
+        "title": "3. Δεδομένα που Συλλέγουμε",
+        "content": "Δεν συλλέγουμε περιεχόμενο. Χρησιμοποιούμε το Google Analytics για στατιστικά χρήσης."
+      },
+      "cookies": {
+        "title": "4. Μπισκότα",
+        "content": "Χρησιμοποιούμε cookies για αναλυτικά στοιχεία και τοπικές προτιμήσεις."
+      },
+      "thirdParty": {
+        "title": "5. Σύνδεσμοί Τρίτων",
+        "content": "Ο ιστότοπός μας μπορεί να περιέχει συνδέσμους προς τρίτους."
+      },
+      "changes": {
+        "title": "6. Αλλαγές σε αυτή την Πολιτική",
+        "content": "Μπορεί να ενημερώνουμε αυτή την πολιτική κατά καιρούς."
+      },
+      "contact": {
+        "title": "7. Επικοινωνήστε μαζί μας",
+        "content": "Επικοινωνήστε μαζί μας μέσω GitHub ή social media."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Πόροι Προγραμματιστών",
+    "subtitle": "Αναλύσεις στα εργαλεία που φτιάχνουμε και τις έννοιες πίσω από αυτά.",
+    "readMore": "Διαβάστε περισσότερα",
+    "backToBlog": "Πίσω στο Ιστολόγιο",
+    "enjoyedArticle": "Σας άρεσε αυτό το άρθρο;",
+    "checkTools": "Δείτε τα Εργαλεία μας"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Είσοδος",
+      "output": "Έξοδος",
+      "format": "Σχήμα και διάταξις βιβλίου",
+      "minify": "Ελαχιστοποίηση",
+      "download": "Λήψη",
+      "copy": "Αντιγραφή",
+      "paste": "Πάστα",
+      "copied": "Αντιγράφηκε!",
+      "upload": "Μεταφόρτωση",
+      "sample": "Δείγμα",
+      "clear": "Καθαρισμός",
+      "indent": "Δαντελώνω:",
+      "chars": "οστεοφυλάκιο",
+      "error": "Σφάλμα",
+      "invalid": "Μη έγκυρη εισαγωγή",
+      "result": "Αποτέλεσμα",
+      "generate": "Παράγω",
+      "calculate": "Υπολογίζω",
+      "convert": "Μετατρέπω",
+      "validate": "Επικυρώνω",
+      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ..."
+    },
+    "Base64Encoder": {
+      "encode": "Κωδικοποίηση",
+      "decode": "Αποκρυπτογραφώ",
+      "textToEncode": "Κείμενο για κωδικοποίηση",
+      "base64ToDecode": "Base64 για αποκωδικοποίηση",
+      "enterText": "Εισαγάγετε κείμενο για κωδικοποίηση...",
+      "enterBase64": "Εισαγάγετε το Base64 για αποκωδικοποίηση...",
+      "encodeAction": "Κωδικοποίηση στο Base64",
+      "decodeAction": "Αποκωδικοποίηση από το Base64",
+      "base64Output": "Έξοδος Base64",
+      "decodedText": "Αποκωδικοποιημένο κείμενο",
+      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ...",
+      "invalidInput": "Μη έγκυρη εισαγωγή για {mode}"
+    },
+    "QrGenerator": {
+      "content": "Περιεχόμενο",
+      "placeholder": "https://example.com",
+      "customization": "Προσαρμογή",
+      "foreground": "Προσκήνιο",
+      "background": "Φόντο",
+      "download": "Λήψη"
+    },
+    "HashGenerator": {
+      "inputText": "Εισαγωγή κειμένου",
+      "placeholder": "Εισαγάγετε κείμενο για κατακερματισμό...",
+      "waiting": "Αναμονή για εισαγωγή..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Δημιουργία νέου",
+      "configuration": "Διαμόρφωση",
+      "length": "Μήκος κωδικού πρόσβασης",
+      "uppercase": "Κεφάλαια (Α-Ω)",
+      "numbers": "Αριθμοί (0-9)",
+      "symbols": "Σύμβολα (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Επικολλήστε το JSON σας εδώ...",
+      "outputPlaceholder": "Το μορφοποιημένο JSON θα εμφανιστεί εδώ...",
+      "spaces": "χώρους"
+    },
+    "UrlEncoder": {
+      "encode": "Κωδικοποίηση",
+      "decode": "Αποκρυπτογραφώ",
+      "urlToEncode": "URL για κωδικοποίηση",
+      "encodedUrlToDecode": "Κωδικοποιημένη διεύθυνση URL για αποκωδικοποίηση",
+      "enterUrlToEncode": "Εισαγάγετε διεύθυνση URL ή κείμενο για κωδικοποίηση...",
+      "enterUrlToDecode": "Εισαγάγετε κωδικοποιημένη διεύθυνση URL για αποκωδικοποίηση...",
+      "encodeAction": "Κωδικοποιήστε τη διεύθυνση URL",
+      "decodeAction": "Αποκωδικοποίηση διεύθυνσης URL",
+      "encodedUrl": "Κωδικοποιημένη διεύθυνση URL",
+      "decodedUrl": "Αποκωδικοποιημένη διεύθυνση URL",
+      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ...",
+      "chars": "οστεοφυλάκιο",
+      "invalidInput": "Μη έγκυρη εισαγωγή για {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Επικολλήστε το JWT διακριτικό σας",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Αποκωδικοποίηση JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Εκδοθείς",
+      "expires": "Λήγει"
+    },
+    "RegexTester": {
+      "expression": "Εκφραση",
+      "expressionPlaceholder": "Ομάδα λήψης (abc)...",
+      "testString": "Δοκιμαστική συμβολοσειρά",
+      "testStringPlaceholder": "Επικολλήστε τη συμβολοσειρά δοκιμής σας εδώ...",
+      "matchHighlights": "Τα κυριότερα σημεία του αγώνα",
+      "matches": "σπίρτα",
+      "matchInfo": "Πληροφορίες αγώνα",
+      "match": "Αγώνας",
+      "index": "Δείκτης",
+      "group": "Ομάδα",
+      "noMatches": "Δεν βρέθηκαν αντιστοιχίες",
+      "highlightPlaceholder": "Οι αγώνες θα τονιστούν εδώ...",
+      "flagsHelp": "ζ: καθολική, i: παράβλεψη πεζών-κεφαλαίων, m: πολύγραμμη"
+    },
+    "UuidGenerator": {
+      "generate": "Παράγω",
+      "generateCount": "Παράγω:",
+      "copyAll": "Αντιγραφή όλων",
+      "copyUuid": "Αντιγραφή UUID",
+      "generatedAt": "Δημιουργήθηκε τοπικά στις {time} • UUID έκδοσης 4"
+    },
+    "WordCounter": {
+      "words": "Λόγια",
+      "characters": "Χαρακτήρες",
+      "sentences": "Προτάσεις",
+      "paragraphs": "Παράγραφοι",
+      "readingTime": "Ώρα ανάγνωσης",
+      "min": "min",
+      "textInput": "Εισαγωγή κειμένου",
+      "inputPlaceholder": "Ξεκινήστε να πληκτρολογείτε ή επικολλήστε το κείμενό σας εδώ για ανάλυση...",
+      "clear": "Σαφής"
+    },
+    "TimestampConverter": {
+      "timestamp": "Χρονική σήμανση",
+      "humanDate": "Ανθρώπινη ημερομηνία",
+      "convert": "Μετατρέπω",
+      "currentTimestamp": "Τρέχουσα χρονική σήμανση",
+      "inputPlaceholder": "Εισαγάγετε τη χρονική σήμανση Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Επικολλήστε το ερώτημά σας SQL εδώ...",
+      "outputPlaceholder": "Η μορφοποιημένη SQL θα εμφανιστεί εδώ..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Επικολλήστε τον κώδικα CSS σας εδώ...",
+      "outputPlaceholder": "Το Minified CSS θα εμφανιστεί εδώ..."
+    },
+    "MarkdownEditor": {
+      "editor": "Συντάκτης",
+      "preview": "Πρεμιέρα",
+      "inputPlaceholder": "Εισαγάγετε το Markdown εδώ..."
+    },
+    "TextDiff": {
+      "original": "Πρωτότυπο Κείμενο",
+      "changed": "Κείμενο που άλλαξε",
+      "compare": "Συγκρίνω",
+      "differences": "Διαφορές"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Εισαγάγετε κείμενο για μετατροπή...",
+      "generatedSlug": "Δημιουργήθηκε γυμνοσάλιαγκος"
+    },
+    "ImageCompressor": {
+      "selectImage": "Επιλέξτε Εικόνα",
+      "quality": "Ποιότητα",
+      "compress": "Κομπρέσα",
+      "download": "Λήψη",
+      "originalSize": "Αρχικό Μέγεθος",
+      "compressedSize": "Συμπιεσμένο μέγεθος"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Παράγραφοι",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "GradientGenerator": {
+      "angle": "Γωνία",
+      "colors": "Χρωματιστά",
+      "addColor": "Προσθήκη χρώματος",
+      "copyCss": "Αντιγραφή CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Ημερομηνία Γέννησης",
+      "calculate": "Υπολογίζω",
+      "years": "Χρόνια",
+      "months": "Μήνες",
+      "days": "Μέρες",
+      "totalDays": "Σύνολο ημερών",
+      "nextBirthday": "Επόμενα γενέθλια In"
+    },
+    "AsciiConverter": {
+      "text": "Κείμενο",
+      "ascii": "ASCII",
+      "convert": "Μετατρέπω",
+      "inputPlaceholder": "Εισαγάγετε κείμενο..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Οριζόντια (X)",
+      "vertical": "Κατακόρυφη (Y)",
+      "blur": "Θολούρα",
+      "spread": "Εξάπλωση",
+      "colorOpacity": "Χρώμα & Αδιαφάνεια",
+      "inset": "Ενθεση"
+    },
+    "BmiCalculator": {
+      "metric": "Μετρική (kg/cm)",
+      "imperial": "Imperial (lbs/in)",
+      "weight": "Βάρος",
+      "height": "Υψος",
+      "calculate": "Υπολογίστε το ΔΜΣ",
+      "bmiScore": "Η βαθμολογία σας BMI",
+      "underweight": "Λιποβαρής",
+      "normal": "Κανονικό Βάρος",
+      "overweight": "Υπέρβαρος",
+      "obese": "Παχύσαρκος"
+    },
+    "CaseConverter": {
+      "inputText": "Εισαγωγή κειμένου",
+      "inputPlaceholder": "Πληκτρολογήστε το κείμενό σας εδώ...",
+      "upper": "UPPERCASE",
+      "lower": "πεζά",
+      "title": "Υπόθεση τίτλου",
+      "sentence": "Περίπτωση ποινής",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Αντίγραφο",
+      "conversions": "Μετατροπές",
+      "clear": "Σαφής"
+    },
+    "ColorConverter": {
+      "hexLabels": "Χρώμα HEX",
+      "rgbLabels": "Χρώμα RGB",
+      "hslLabels": "Χρώμα HSL",
+      "cmykLabels": "Χρώμα CMYK",
+      "copy": "Αντίγραφο",
+      "hexToRgbNote": "* Προς το παρόν υποστηρίζει μόνο μετατροπή HEX σε RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Αριθμός κάρτας",
+      "validate": "Επικυρώνω",
+      "valid": "Έγκυρος αριθμός πιστωτικής κάρτας",
+      "invalid": "Μη έγκυρος αριθμός πιστωτικής κάρτας",
+      "placeholder": "Εισαγάγετε τον αριθμό της κάρτας...",
+      "type": "Τύπος κάρτας",
+      "checkDigit": "Αριθμός ελέγχου",
+      "luhnValid": "Ο αλγόριθμος Luhn είναι έγκυρος"
+    },
+    "CipherTools": {
+      "encode": "Κωδικοποίηση",
+      "decode": "Αποκρυπτογραφώ",
+      "rot13": "ROT13",
+      "caesar": "Caesar Cipher",
+      "shift": "Αλλαγή",
+      "inputPlaceholder": "Γεια σου Κόσμο",
+      "outputPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ..."
+    },
+    "CronGenerator": {
+      "minute": "Λεπτό",
+      "hour": "Ωρα",
+      "dayMonth": "Ημέρα (Μήνας)",
+      "month": "Μήνας",
+      "dayWeek": "Ημέρα (Εβδομάδα)",
+      "presets": "Κοινές προεπιλογές",
+      "everyMinute": "Κάθε λεπτό",
+      "everyHour": "Κάθε ώρα",
+      "everyDayMidnight": "Κάθε μέρα τα μεσάνυχτα",
+      "everySunday": "Κάθε Κυριακή",
+      "everyMonth": "Κάθε μήνα",
+      "everyYear": "Κάθε χρόνο",
+      "formatInfo": "Μορφή: * * * * * (Λεπτική ώρα ΗμέραΜήνα Μήνας ΗμέραΕβδομάδας)",
+      "usageInfo": "Χρησιμοποιήστε * για 'κάθε', */n για 'κάθε n', 1,2,3 για συγκεκριμένη λίστα."
+    },
+    "DateDiff": {
+      "startDate": "Ημερομηνία έναρξης",
+      "endDate": "Ημερομηνία λήξης",
+      "calculate": "Υπολογίζω",
+      "difference": "Διαφορά",
+      "years": "Χρόνια",
+      "months": "Μήνες",
+      "days": "Μέρες",
+      "totalDays": "Σύνολο ημερών",
+      "totalWeeks": "Σύνολο εβδομάδων",
+      "totalHours": "Σύνολο ωρών"
+    },
+    "DeepLinkTester": {
+      "testLink": "Σύνδεσμος δοκιμής",
+      "savedLinks": "Αποθηκευμένοι σύνδεσμοι",
+      "searchPlaceholder": "Αναζήτηση αποθηκευμένων συνδέσμων...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Εκτόξευση",
+      "save": "Εκτός",
+      "delete": "Διαγράφω",
+      "opens": "ανοίγει",
+      "scanQr": "Σάρωση με την κινητή συσκευή σας για δοκιμή",
+      "noSavedLinks": "Δεν βρέθηκαν αποθηκευμένοι σύνδεσμοι.",
+      "enterLabel": "Εισαγάγετε μια ετικέτα για αυτόν τον σύνδεσμο:",
+      "saved": "Αποθηκεύτηκε!",
+      "confirmDelete": "Διαγραφή αυτού του συνδέσμου;"
+    },
+    "DeviceInfo": {
+      "screen": "Οθόνη",
+      "browser": "Πρόγραμμα περιήγησης",
+      "system": "Σύστημα",
+      "resolution": "Ψήφισμα",
+      "colorDepth": "Βάθος χρώματος",
+      "userAgent": "Πράκτορας χρήστη",
+      "platform": "Πλατφόρμα",
+      "language": "Γλώσσα"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Αρχική Τιμή",
+      "discountPercent": "Εκπτωση",
+      "additionalDiscount": "Πρόσθετη Έκπτωση",
+      "calculate": "Υπολογίζω",
+      "youSave": "Αποταμιεύετε",
+      "finalPrice": "Τελική Τιμή",
+      "salesTax": "Φόρος επί των πωλήσεων"
+    },
+    "DnsLookup": {
+      "domain": "Πεδίο ορισμού",
+      "lookup": "Αναζήτηση",
+      "recordType": "Τύπος εγγραφής",
+      "results": "Αποτελέσματα",
+      "placeholder": "example.com",
+      "status": "Κατάσταση",
+      "time": "Φορά",
+      "server": "Υπηρέτης",
+      "answerSection": "Ενότητα απαντήσεων",
+      "name": "Ονομα",
+      "type": "Τύπος",
+      "ttl": "TTL",
+      "data": "Δεδομένα",
+      "noRecords": "Δεν βρέθηκαν εγγραφές"
+    },
+    "EmailValidator": {
+      "email": "Διεύθυνση Email",
+      "validate": "Επικυρώνω",
+      "valid": "Εγκυρος",
+      "invalid": "Ακυρος",
+      "suggestion": "Πρόταση",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Μεταφόρτωση εικόνας",
+      "generate": "Παράγω",
+      "download": "Λήψη",
+      "sizes": "Μεγέθη"
+    },
+    "FuelCalculator": {
+      "distance": "Απόσταση",
+      "fuelEfficiency": "Απόδοση καυσίμου",
+      "fuelPrice": "Τιμή καυσίμου",
+      "calculate": "Υπολογίζω",
+      "result": "Αποτέλεσμα",
+      "totalCost": "Συνολικό Κόστος",
+      "fuelNeeded": "Απαιτείται καύσιμο"
+    },
+    "GridGenerator": {
+      "columns": "Στήλες",
+      "rows": "Σειρές",
+      "gap": "Χάσμα",
+      "preview": "Πρεμιέρα",
+      "copyCss": "Αντιγραφή CSS",
+      "rowGap": "Κενό γραμμής",
+      "colGap": "Κενό στήλης",
+      "options": "Επιλογές"
+    },
+    "HmacGenerator": {
+      "message": "Μήνυμα",
+      "secret": "Μυστικό",
+      "algorithm": "Αλγόριθμος",
+      "generate": "Παράγω",
+      "inputPlaceholder": "Εισαγωγή κειμένου...",
+      "secretPlaceholder": "Μυστικό..."
+    },
+    "HtmlEncoder": {
+      "encode": "Κωδικοποίηση",
+      "decode": "Αποκρυπτογραφώ",
+      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ...",
+      "inputPlaceholder": "Επικόλληση HTML εδώ..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Αναζήτηση κωδικού (π.χ. 404) ή ονόματος...",
+      "code": "Κώδικας",
+      "name": "Ονομα",
+      "description": "Περιγραφή"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Επικυρώνω",
+      "valid": "Εγκυρος",
+      "invalid": "Ακυρος",
+      "placeholder": "Εισάγετε IBAN...",
+      "inputLabel": "Εισαγάγετε τον αριθμό IBAN",
+      "validTitle": "Έγκυρο σημείο αναφοράς",
+      "invalidTitle": "Μη έγκυρο άθροισμα ελέγχου",
+      "validDesc": "Η μορφή IBAN και το άθροισμα ελέγχου είναι σωστά.",
+      "invalidDesc": "Ο IBAN δεν ταιριάζει με τον αλγόριθμο αθροίσματος ελέγχου."
+    },
+    "ImageBase64": {
+      "upload": "Μεταφόρτωση",
+      "convert": "Μετατρέπω",
+      "copy": "Αντίγραφο",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Μεταφόρτωση εικόνας",
+      "convertToBase64": "Μετατροπή σε Base64",
+      "convertToImage": "Μετατροπή σε Εικόνα",
+      "base64String": "Base64 String",
+      "download": "Λήψη"
+    },
+    "ImageConverter": {
+      "selectImage": "Επιλέξτε Εικόνα",
+      "format": "Σχήμα και διάταξις βιβλίου",
+      "convert": "Μετατρέπω",
+      "download": "Λήψη",
+      "quality": "Ποιότητα"
+    },
+    "InterestCalculator": {
+      "principal": "Κύριος",
+      "rate": "Επιτόκιο",
+      "time": "Χρονική περίοδος (Έτη)",
+      "calculate": "Υπολογίζω",
+      "simpleInterest": "Απλός",
+      "compoundInterest": "Χημική ένωση",
+      "totalAmount": "Συνολική αξία",
+      "type": "Τύπος",
+      "frequency": "Σύνθετη Συχνότητα",
+      "annually": "Ετησίως",
+      "monthly": "Μηνιαίος",
+      "daily": "Καθημερινά",
+      "year": "Ετος"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Εισαγάγετε JSON...",
+      "convert": "Μετατρέπω",
+      "format": "Σχήμα και διάταξις βιβλίου",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON σε CSV",
+      "csvToJson": "CSV σε JSON",
+      "jsonInput": "Είσοδος JSON",
+      "csvInput": "Είσοδος CSV",
+      "jsonOutput": "Έξοδος JSON",
+      "csvOutput": "Έξοδος CSV"
+    },
+    "JsonDiff": {
+      "original": "Πρωτότυπο JSON",
+      "modified": "Τροποποιημένο JSON",
+      "compare": "Συγκρίνω",
+      "differences": "Διαφορές"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Πατήστε οποιοδήποτε πλήκτρο",
+      "key": "Κλειδί",
+      "code": "Κώδικας",
+      "keyCode": "Κωδικός κλειδιού",
+      "which": "ο οποίος",
+      "location": "Τοποθεσία",
+      "modifiers": "Τροποποιητές",
+      "standard": "Πρότυπο",
+      "left": "Αριστερά",
+      "right": "Δικαίωμα",
+      "numpad": "Numpad",
+      "space": "(Χώρος)",
+      "info": "Εμφάνιση Κωδικού κλειδιού συμβάντος JavaScript, Κώδικα και άλλα."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Επικολλήστε το κείμενό σας εδώ για να αναλύσετε τη συχνότητα των λέξεων-κλειδιών...",
+      "analyze": "Αναλύω",
+      "keyword": "Λέξη-κλειδί",
+      "count": "Κόμης",
+      "density": "Πυκνότητα"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Εισαγάγετε τη λίστα σας εδώ...",
+      "sort": "Είδος",
+      "reverse": "Αντίστροφο",
+      "shuffle": "Ανάμιξη",
+      "deduplicate": "Κατάργηση διπλότυπων",
+      "ascending": "Αύξουσα",
+      "descending": "Φθίνων",
+      "length": "Μήκος",
+      "trim": "Κενό περικοπή",
+      "lines": "Γραμμές:",
+      "chars": "Χαρακτήρες:"
+    },
+    "LoanCalculator": {
+      "principal": "Κύριος",
+      "interestRate": "Επιτόκιο",
+      "term": "Ορος",
+      "calculate": "Υπολογίζω",
+      "monthlyPayment": "Μηνιαία πληρωμή",
+      "totalInterest": "Συνολικός τόκος",
+      "totalPayment": "Συνολική πληρωμή",
+      "loanDetails": "Στοιχεία δανείου",
+      "loanAmount": "Ποσό Δανείου",
+      "loanTerm": "Διάρκεια δανείου",
+      "years": "Χρόνια",
+      "months": "Μήνες",
+      "interest": "Τόκος"
+    },
+    "MacGenerator": {
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο",
+      "separator": "Διαχωριστής",
+      "format": "Σχήμα και διάταξις βιβλίου",
+      "quantity": "Ποσότητα",
+      "uppercase": "Κεφαλαία"
+    },
+    "MarginCalculator": {
+      "cost": "Κόστος",
+      "price": "Τιμή πωλήσεως",
+      "calculate": "Υπολογίζω",
+      "margin": "Περιθώριο",
+      "markup": "Σήμανση",
+      "profit": "Κέρδος",
+      "revenue": "Πρόσοδος",
+      "netProfit": "Καθαρό Κέρδος",
+      "grossMargin": "Μικτό Περιθώριο"
+    },
+    "PasswordManager": {
+      "masterPassword": "Κύριος κωδικός πρόσβασης",
+      "unlock": "Ξεκλειδώνω",
+      "searchPlaceholder": "Αναζήτηση λογαριασμών...",
+      "addNew": "Προσθήκη νέου",
+      "siteName": "Όνομα τοποθεσίας",
+      "username": "Όνομα χρήστη",
+      "password": "Σύνθημα",
+      "save": "Εκτός",
+      "delete": "Διαγράφω"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Πληκτρολογήστε εδώ...",
+      "strength": "Δύναμη",
+      "weak": "Αδύναμος",
+      "fair": "Εκθεση",
+      "good": "Καλός",
+      "strong": "Ισχυρός",
+      "requirements": "Απαιτήσεις",
+      "length": "8+ χαρακτήρες",
+      "number": "Περιλαμβάνει τον αριθμό",
+      "uppercase": "Περιλαμβάνει κεφαλαία",
+      "symbol": "Περιλαμβάνει σύμβολο"
+    },
+    "PayPalLink": {
+      "username": "Όνομα χρήστη PayPal.me",
+      "amount": "Ποσό",
+      "currency": "Νόμισμα",
+      "generate": "Παράγω",
+      "itemName": "Όνομα αντικειμένου",
+      "link": "Σύνδεσμος",
+      "yourLink": "Ο σύνδεσμος PayPal σας",
+      "openPaypal": "Ανοίξτε το PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Κανόνες",
+      "addRule": "Προσθήκη κανόνα",
+      "allow": "Επιτρέπω",
+      "disallow": "Απαγορεύω",
+      "sitemap": "URL χάρτη ιστότοπου (Προαιρετικό)",
+      "output": "Δημιουργήθηκε το robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Αξία",
+      "percentage": "Ποσοστό",
+      "calculate": "Υπολογίζω",
+      "result": "Αποτέλεσμα",
+      "whatIs": "Τι είναι",
+      "of": "% των",
+      "isWhatPercentOf": "είναι τι % του",
+      "percentChangeFrom": "% αλλαγή από",
+      "to": "να"
+    },
+    "PomodoroTimer": {
+      "work": "Χρόνος εστίασης",
+      "shortBreak": "Σύντομο διάλειμμα",
+      "longBreak": "Μεγάλο διάλειμμα",
+      "start": "Αρχή",
+      "pause": "Παύση",
+      "reset": "Επαναφορά",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Αριθμός",
+      "calculate": "Υπολογίζω",
+      "factors": "Πρωταρχικοί Παράγοντες",
+      "inputLabel": "Εισαγάγετε έναν αριθμό",
+      "placeholder": "π.χ. 120",
+      "isPrime": "Αυτός ο αριθμός είναι Prime!",
+      "isComposite": "Αυτός ο αριθμός είναι Σύνθετος"
+    },
+    "RoiCalculator": {
+      "investment": "Επένδυση",
+      "returns": "Επιστροφές",
+      "calculate": "Υπολογίζω",
+      "roi": "ROI",
+      "profit": "Κέρδος",
+      "finalValue": "Τελική Αξία",
+      "time": "Χρόνος (Έτη)",
+      "totalGain": "Συνολικό Κέρδος",
+      "annualizedRoi": "Ετήσια απόδοση επένδυσης (ROI)."
+    },
+    "RomanNumerals": {
+      "decimal": "Δεκαδικός",
+      "decimalPlaceholder": "2024",
+      "roman": "ρωμαϊκός",
+      "convert": "Μετατρέπω",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Ξεκινήστε την εγγραφή",
+      "stopRecording": "Διακοπή εγγραφής",
+      "download": "Λήψη",
+      "recording": "Εγγραφή..."
+    },
+    "SignatureGenerator": {
+      "draw": "Ισοπαλία",
+      "clear": "Σαφής",
+      "download": "Λήψη",
+      "penColor": "Χρώμα στυλό",
+      "penSize": "Μέγεθος στυλό"
+    },
+    "SpeechToText": {
+      "startListening": "Ξεκινήστε να ακούτε",
+      "stopListening": "Σταματήστε να ακούτε",
+      "transcript": "Αντίγραφο",
+      "placeholder": "Η μεταγραφή θα εμφανιστεί εδώ..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO users (αναγνωριστικό, όνομα, ηλικία) VALUES (1, 'John', 30);",
+      "convert": "Μετατρέπω",
+      "result": "Αποτέλεσμα"
+    },
+    "Stopwatch": {
+      "start": "Αρχή",
+      "stop": "Στάση",
+      "reset": "Επαναφορά",
+      "lap": "Ποδιά"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Διεύθυνση IP",
+      "subnetMask": "Μάσκα υποδικτύου",
+      "calculate": "Υπολογίζω",
+      "networkAddress": "Διεύθυνση δικτύου",
+      "broadcastAddress": "Διεύθυνση εκπομπής",
+      "usableHosts": "Χρησιμοποιήσιμοι κεντρικοί υπολογιστές"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Επικόλληση SVG",
+      "uploadSvg": "Μεταφόρτωση SVG",
+      "convert": "Μετατρέπω",
+      "download": "Λήψη"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Εισαγάγετε κείμενο για να μιλήσετε...",
+      "speak": "Μιλώ",
+      "stop": "Στάση",
+      "voice": "Φωνή",
+      "rate": "Τιμή",
+      "pitch": "Πίσσα"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Πληκτρολογήστε κάτι...",
+      "reverse": "Αντίστροφο",
+      "uppercase": "Κεφαλαία",
+      "lowercase": "Πεζά",
+      "encode": "Κωδικοποίηση"
+    },
+    "TimezoneConverter": {
+      "from": "Από",
+      "to": "Να",
+      "convert": "Μετατρέπω",
+      "currentTime": "Τρέχουσα ώρα"
+    },
+    "TokenGenerator": {
+      "length": "Μήκος",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο",
+      "includeNumbers": "Συμπεριλάβετε Αριθμούς",
+      "includeSymbols": "Συμπεριλάβετε σύμβολα"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Εισαγάγετε τη διεύθυνση URL...",
+      "parse": "Αναλύω λέξη",
+      "protocol": "Πρωτόκολλο",
+      "host": "Πλήθος",
+      "path": "Μονοπάτι",
+      "query": "Ερώτηση"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL ιστότοπου",
+      "source": "Πηγή",
+      "medium": "Μέσον",
+      "campaign": "Εκστρατεία",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "VatCalculator": {
+      "amount": "Ποσό",
+      "vatRate": "Συντελεστής ΦΠΑ",
+      "addVat": "Προσθήκη ΦΠΑ",
+      "removeVat": "Κατάργηση ΦΠΑ",
+      "calculate": "Υπολογίζω"
+    },
+    "VibrationTester": {
+      "vibrate": "Δονούμαι",
+      "pattern": "Πρότυπο",
+      "duration": "Διάρκεια",
+      "test": "Δοκιμή"
+    },
+    "WeekNumber": {
+      "currentWeek": "Αριθμός τρέχουσας εβδομάδας",
+      "yearProgress": "Έτος πρόοδος",
+      "week": "Εβδομάδα"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Αριθμός τηλεφώνου",
+      "message": "Μήνυμα",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο",
+      "placeholder": "Γεια σας, με ενδιαφέρει..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Επικόλληση διεύθυνσης URL βίντεο YouTube...",
+      "getThumbnail": "Λήψη μικρογραφίας",
+      "download": "Λήψη"
+    },
+    "CrontabGenerator": {
+      "minute": "Λεπτό",
+      "hour": "Ωρα",
+      "day": "Ημέρα",
+      "month": "Μήνας",
+      "weekday": "Καθημερινή",
+      "expression": "Εκφραση",
+      "description": "Περιγραφή"
+    },
+    "ChmodCalculator": {
+      "owner": "Ιδιοκτήτης",
+      "group": "Ομάδα",
+      "others": "Άλλοι",
+      "read": "Ανάγνωση",
+      "write": "Γράφω",
+      "execute": "Εκτελώ",
+      "numeric": "Αριθμητικός",
+      "symbolic": "Συμβολικός"
+    },
+    "HtpasswdGenerator": {
+      "username": "Όνομα χρήστη",
+      "password": "Σύνθημα",
+      "algorithm": "Αλγόριθμος",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "AspectRatio": {
+      "width": "Πλάτος",
+      "height": "Υψος",
+      "ratio": "Αναλογία",
+      "calculate": "Υπολογίζω"
+    },
+    "CssClipPath": {
+      "shape": "Σχήμα",
+      "preview": "Πρεμιέρα",
+      "copyCss": "Αντιγραφή CSS"
+    },
+    "CssCursor": {
+      "cursor": "Δρομέας",
+      "preview": "Πρεμιέρα",
+      "copyCss": "Αντιγραφή CSS"
+    },
+    "CssTriangle": {
+      "direction": "Κατεύθυνση",
+      "size": "Μέγεθος",
+      "color": "Χρώμα",
+      "preview": "Πρεμιέρα",
+      "copyCss": "Αντιγραφή CSS"
+    },
+    "MetaGenerator": {
+      "title": "Τίτλος",
+      "description": "Περιγραφή",
+      "keywords": "Λέξεις-κλειδιά",
+      "author": "Συγγραφέας",
+      "url": "URL",
+      "image": "Εικών",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο",
+      "titlePlaceholder": "Ο φοβερός μου ιστότοπος",
+      "descriptionPlaceholder": "Μια σύντομη περιγραφή του ιστότοπού σας...",
+      "keywordsPlaceholder": "web, εργαλεία, dev",
+      "authorPlaceholder": "Το όνομά σας",
+      "outputPlaceholder": "Οι μετα-ετικέτες θα εμφανιστούν εδώ..."
+    },
+    "OgGenerator": {
+      "title": "Τίτλος",
+      "description": "Περιγραφή",
+      "url": "URL",
+      "image": "Εικών",
+      "type": "Τύπος",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "TwitterCard": {
+      "cardType": "Τύπος κάρτας",
+      "title": "Τίτλος",
+      "description": "Περιγραφή",
+      "image": "Εικών",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "MarkdownTable": {
+      "rows": "Σειρές",
+      "columns": "Στήλες",
+      "header": "Επί κεφαλής",
+      "addRow": "Προσθήκη σειράς",
+      "addColumn": "Προσθήκη στήλης",
+      "generate": "Παράγω",
+      "copy": "Αντίγραφο"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Σχήμα και διάταξις βιβλίου",
+      "copy": "Αντίγραφο"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Μορφοποίηση JSON: Βέλτιστες πρακτικές για προγραμματιστές",
+      "excerpt": "Μάθετε γιατί η σωστή μορφοποίηση JSON είναι σημαντική για τον εντοπισμό σφαλμάτων και πώς να την αυτοματοποιήσετε στη ροή εργασίας σας.",
+      "category": "Ανάπτυξη"
+    },
+    "mastering-regex": {
+      "title": "Mastering Regular Expressions: Ένας οπτικός οδηγός",
+      "excerpt": "Το Regex δεν χρειάζεται να είναι τρομακτικό. Αναλύουμε κοινά μοτίβα για επικύρωση email, διευθύνσεις URL και πολλά άλλα.",
+      "category": "Φροντιστήριο"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: Πώς να προγραμματίσετε εργασίες",
+      "excerpt": "Κατανοήστε τη σύνταξη 5 αστέρων του Cron και πώς να προγραμματίζετε αντίγραφα ασφαλείας, email και σενάρια στο Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Γιατί οι τοπικοί διαχειριστές κωδικών πρόσβασης είναι πιο ασφαλείς (Εναλλακτική λύση KeyPass)",
+      "excerpt": "Οι παραβιάσεις στο cloud είναι συχνές. Μάθετε γιατί η τοπική αποθήκευση κωδικών πρόσβασης με κρυπτογράφηση AES-256 είναι το ασφαλέστερο στοίχημα για προσωπική ασφάλεια.",
+      "category": "Ασφάλεια"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Εργαλεία αναζήτησης...",
+    "noResults": "Δεν βρέθηκαν αποτελέσματα.",
+    "select": "Επιλέγω",
+    "navigate": "Διαπλέω"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Αποστολή σχολίων",
+    "feedback": "Ανατροφοδότηση",
+    "thankYou": "Σας ευχαριστώ!",
+    "feedbackSent": "Τα σχόλιά σας στάλθηκαν με επιτυχία.",
+    "close": "Κοντά",
+    "name": "Όνομα (προαιρετικό)",
+    "namePlaceholder": "Το όνομά σου",
+    "email": "Email (προαιρετικό)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Τύπος σχολίων",
+    "typeSuggestion": "💡 Πρόταση",
+    "typeBug": "🐛 Αναφορά σφάλματος",
+    "typeFeature": "✨ Αίτημα δυνατότητας",
+    "typeOther": "📝 Άλλο",
+    "message": "Μήνυμα *",
+    "messagePlaceholder": "Πείτε μας τη γνώμη σας...",
+    "sending": "Αποστολή...",
+    "weReadEveryMessage": "Διαβάζουμε κάθε μήνυμα. Σας ευχαριστούμε που μας βοηθάτε να βελτιωθούμε!"
+  },
+  "ShareButton": {
+    "shareTool": "Εργαλείο κοινής χρήσης",
+    "copiedLink": "Αντιγραμμένος σύνδεσμος!"
+  },
+  "TextDiff": {
+    "original": "Πρωτότυπο Κείμενο",
+    "changed": "Κείμενο που άλλαξε",
+    "update": "Ενημέρωση Διαφ",
+    "old": "Παλιός",
+    "new": "Νέος",
+    "content": "Περιεχόμενο"
+  },
+  "CrontabGenerator": {
+    "minute": "Λεπτό",
+    "hour": "Ωρα",
+    "day": "Ημέρα",
+    "month": "Μήνας",
+    "weekday": "Καθημερινή",
+    "min": "Ελάχ",
+    "mon": "Δευτ",
+    "week": "Εβδομάδα",
+    "presets": "Γρήγορες προεπιλογές",
+    "everyMinute": "Κάθε λεπτό",
+    "every5Minutes": "Κάθε 5 λεπτά",
+    "everyHour": "Κάθε ώρα",
+    "everyDayMidnight": "Κάθε μέρα τα μεσάνυχτα",
+    "everyWeek": "Κάθε εβδομάδα",
+    "everyMonth": "Κάθε μήνα"
+  },
+  "SpeechToText": {
+    "notSupported": "Το πρόγραμμα περιήγησής σας δεν υποστηρίζει το Web Speech API. Χρησιμοποιήστε το Chrome.",
+    "placeholder": "Η μεταγραφή θα εμφανιστεί εδώ...",
+    "listening": "Ακούγοντας...",
+    "start": "Κάντε κλικ στο μικρόφωνο για να ξεκινήσετε"
+  },
+  "OgGenerator": {
+    "title": "Τίτλος",
+    "description": "Περιγραφή",
+    "image": "Διεύθυνση URL εικόνας",
+    "url": "Κανονική διεύθυνση URL",
+    "type": "Τύπος",
+    "website": "Δικτυακός τόπος",
+    "article": "Αρθρο",
+    "profile": "Προφίλ",
+    "preview": "Προεπισκόπηση (Facebook/LinkedIn)",
+    "generatedHtml": "Δημιουργήθηκε HTML",
+    "copy": "Αντίγραφο"
+  },
+  "WeekNumber": {
+    "checkLabel": "Ελέγξτε τον αριθμό εβδομάδας για την ημερομηνία",
+    "yearProgress": "Έτος πρόοδος"
+  },
+  "RelatedTools": {
+    "title": "Μπορεί επίσης να σας αρέσει",
+    "subtitle": "Εξερευνήστε άλλα δημοφιλή εργαλεία προγραμματιστών",
+    "openTool": "Ανοίξτε το Εργαλείο"
+  },
+  "Breadcrumb": {
+    "home": "Σπίτι",
+    "tools": "Εργαλεία"
+  },
+  "SvgToPng": {
+    "upload": "Μεταφόρτωση αρχείου SVG",
+    "browse": "ή κάντε κλικ για περιήγηση",
+    "paste": "...ή επικολλήστε τον κώδικα SVG",
+    "preview": "Προεπισκόπηση PNG (2x κλίμακα)",
+    "download": "Λήψη PNG",
+    "errorType": "Ανεβάστε ένα έγκυρο αρχείο SVG.",
+    "errorRender": "Αποτυχία απόδοσης SVG. Βεβαιωθείτε ότι είναι έγκυρο XML.",
+    "errorProcess": "Σφάλμα κατά την επεξεργασία του SVG."
+  },
+  "GradientGenerator": {
+    "config": "Διαμόρφωση",
+    "colors": "Χρωματιστά",
+    "type": "Τύπος",
+    "angle": "Γωνία",
+    "random": "Τυχαίος",
+    "copyCss": "Αντιγραφή CSS",
+    "copied": "Αντιγράφηκε"
+  },
+  "TimezoneConverter": {
+    "date": "Ημερομηνία",
+    "time": "Ώρα (Τοπική)",
+    "invalid": "Ακυρος",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "Νέα Υόρκη (EST/EDT)",
+      "losAngeles": "Λος Άντζελες (PST/PDT)",
+      "london": "Λονδίνο (GMT/BST)",
+      "paris": "Παρίσι (CET/CEST)",
+      "tokyo": "Τόκιο (JST)",
+      "sydney": "Σίδνεϊ (AEST/AEDT)",
+      "dubai": "Ντουμπάι (GST)",
+      "india": "Ινδία (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Γεννήτρια Αριθμών",
+    "listGen": "Γεννήτρια λίστας",
+    "coinGen": "Γεννήτρια νομισμάτων",
+    "min": "Ελάχ",
+    "max": "Μέγ",
+    "count": "Κόμης",
+    "generate": "Παράγω",
+    "listLabel": "Στοιχεία λίστας (ένα ανά γραμμή)",
+    "pick": "Επιλέξτε τυχαίο στοιχείο",
+    "winner": "Ο νικητής είναι...",
+    "flip": "Αναστροφή νομίσματος",
+    "heads": "Κεφάλια",
+    "tails": "Ουρές"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Εγγραφή της οθόνης σας...",
+    "titleFree": "Δωρεάν ηλεκτρονική συσκευή εγγραφής οθόνης",
+    "desc": "Καταγράψτε την οθόνη, το παράθυρο της εφαρμογής ή την καρτέλα του προγράμματος περιήγησης. Χωρίς υδατογράφημα, χωρίς χρονικό όριο.",
+    "start": "Ξεκινήστε την εγγραφή",
+    "stop": "Διακοπή εγγραφής",
+    "browserSupport": "Λειτουργεί καλύτερα σε Chrome, Edge και Firefox στην επιφάνεια εργασίας."
+  },
+  "CssCursor": {
+    "hoverTest": "Τοποθετήστε το δείκτη του ποντικιού εδώ για δοκιμή"
+  },
+  "VatCalculator": {
+    "amount": "Ποσό",
+    "rate": "Συντελεστής ΦΠΑ (%)",
+    "addVat": "Προσθήκη ΦΠΑ",
+    "removeVat": "Κατάργηση ΦΠΑ",
+    "netAmount": "Καθαρό Ποσό",
+    "vatAmount": "Ποσό ΦΠΑ",
+    "grossTotal": "Μικτό Σύνολο",
+    "netTotal": "Καθαρό Σύνολο",
+    "grossAmount": "Μικτό Ποσό"
+  },
+  "MyIP": {
+    "ipLabel": "Η δημόσια διεύθυνση IP σας",
+    "loading": "Φόρτωση...",
+    "isp": "Πάροχος Διαδικτύου (ISP)",
+    "location": "Τοποθεσία",
+    "asn": "ASN",
+    "timezone": "Ζώνη ώρας",
+    "note": "Αυτή είναι η διεύθυνση IP που είναι ορατή στους ιστότοπους που επισκέπτεστε. Μπορεί να διαφέρει από την τοπική σας IP εάν χρησιμοποιείτε VPN ή διακομιστή μεσολάβησης."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Εισαγάγετε τη διεύθυνση URL",
+    "formatted": "Μορφοποιημένη έξοδος",
+    "copy": "Αντίγραφο",
+    "copied": "Αντιγράφηκε",
+    "placeholder": "Επικολλήστε ένα URL παραπάνω για να το δείτε μορφοποιημένο."
+  },
+  "WhatsAppLink": {
+    "phone": "Αριθμός τηλεφώνου (με κωδικό χώρας)",
+    "message": "Προσυμπληρωμένο Μήνυμα",
+    "hint": "Μην συμπεριλάβετε +, - ή ().",
+    "yourLink": "Ο σύνδεσμος WhatsApp σας",
+    "open": "Ανοίξτε το Chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Εισαγάγετε τη διεύθυνση URL",
+    "params": "Παράμετροι ερωτήματος",
+    "error": "Μη έγκυρη διεύθυνση URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Μεταφόρτωση εικόνας",
+    "browse": "Προτείνεται: 512x512 PNG",
+    "original": "Πρωτότυπο",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Λήψη Favicon.png",
+    "note": "* Αυτήν τη στιγμή δημιουργείται favicons 32x32 PNG. Μετονομάστε σε .ico εάν χρειάζεται για υποστήριξη παλαιού τύπου."
+  },
+  "SubnetCalculator": {
+    "ip": "Διεύθυνση IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Υπολογίζω",
+    "subnetMask": "Μάσκα υποδικτύου",
+    "networkAddress": "Διεύθυνση δικτύου",
+    "firstHost": "Πρώτος οικοδεσπότης",
+    "lastHost": "Τελευταίος οικοδεσπότης",
+    "broadcastAddress": "Διεύθυνση εκπομπής",
+    "totalHosts": "Σύνολο οικοδεσπότες"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Εισαγάγετε τον τίτλο / κείμενο του άρθρου",
+    "generated": "Δημιουργήθηκε γυμνοσάλιαγκος",
+    "copy": "Copy Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "Εισαγωγή SQL (ΕΙΣΑΓΩΓΗ μόνο δηλώσεων)",
+    "convert": "Μετατροπή σε JSON",
+    "error": "Δεν ήταν δυνατή η ανάλυση της SQL. Βεβαιωθείτε ότι είναι τυπικές δηλώσεις INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Προσθήκη σειράς",
+    "addCol": "+ Προσθήκη στήλης",
+    "headerPlaceholder": "Επί κεφαλής",
+    "outputLabel": "Έξοδος Markdown",
+    "copy": "Αντιγραφή Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Τύπος κάρτας",
+    "siteHandle": "Χειρισμός ιστότοπου (π.χ. @twitter)",
+    "title": "Τίτλος",
+    "description": "Περιγραφή",
+    "imageUrl": "Διεύθυνση URL εικόνας",
+    "preview": "Πρεμιέρα",
+    "generatedHtml": "Δημιουργήθηκε HTML",
+    "copy": "Αντίγραφο",
+    "placeholderTitle": "Τίτλος κάρτας",
+    "placeholderDesc": "Η περιγραφή πηγαίνει εδώ..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Εισαγάγετε κείμενο για να μιλήσετε...",
+    "voice": "Φωνή",
+    "speed": "Ταχύτητα",
+    "pitch": "Πίσσα",
+    "speak": "Μιλώ"
+  },
+  "TokenGenerator": {
+    "length": "Μήκος",
+    "includeNumbers": "Συμπεριλάβετε Αριθμούς",
+    "includeSymbols": "Συμπεριλάβετε σύμβολα",
+    "generate": "Δημιουργία διακριτικού"
+  },
+  "CssTriangle": {
+    "direction": "Κατεύθυνση",
+    "color": "Χρώμα",
+    "width": "Πλάτος (px)",
+    "height": "Ύψος (px)",
+    "copy": "Αντίγραφο"
+  },
+  "UnitConverter": {
+    "length": "Μήκος",
+    "weight": "Βάρος",
+    "temperature": "Θερμοκρασία",
+    "meters": "Μετρητές",
+    "kilometers": "Χιλιόμετρα",
+    "centimeters": "εκατοστά",
+    "millimeters": "Χιλιοστά",
+    "inches": "ίντσες",
+    "feet": "Πόδια",
+    "yards": "αυλές",
+    "miles": "Μίλια",
+    "kilograms": "κιλά",
+    "grams": "γραμμάρια",
+    "pounds": "λίρες",
+    "ounces": "ουγγιές",
+    "celsius": "Κελσίου",
+    "fahrenheit": "θερμόμετρο Φαρενάιτ",
+    "kelvin": "Κέλβιν"
+  },
+  "CssClipPath": {
+    "shapes": "Σχήματα",
+    "preview": "Πρεμιέρα",
+    "cssCode": "Κωδικός CSS",
+    "copy": "Αντίγραφο",
+    "copied": "Αντιγράφηκε"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Ανεβάστε μια εικόνα",
+    "uploadDesc": "JPG, PNG ή WebP. Το συμπιέζουμε τοπικά.",
+    "selectImage": "Επιλέξτε Εικόνα",
+    "settings": "Ρυθμίσεις συμπίεσης",
+    "quality": "Ποιότητα",
+    "originalSize": "Αρχικό Μέγεθος",
+    "compressedSize": "Συμπιεσμένο μέγεθος",
+    "saving": "Οικονομία",
+    "download": "Λήψη"
+  },
+  "HtpasswdGenerator": {
+    "username": "Όνομα χρήστη",
+    "password": "Σύνθημα",
+    "algorithm": "Αλγόριθμος",
+    "generate": "Δημιουργία Καταχώρισης",
+    "result": "Αποτέλεσμα",
+    "sha1": "SHA-1 (Ασφαλές αλλά τυπικό)",
+    "notSupported": "Μόνο το SHA-1 υποστηρίζεται σε αυτήν την έκδοση πελάτη."
+  },
+  "MetaTags": {
+    "pageTitle": "Τίτλος σελίδας",
+    "description": "Περιγραφή",
+    "author": "Συγγραφέας"
+  },
+  "AgeCalculator": {
+    "dob": "Ημερομηνία γεννήσεως",
+    "age": "Ηλικία",
+    "years": "χρόνια",
+    "months": "μήνες",
+    "days": "ημέρες",
+    "nextBirthday": "Επόμενα γενέθλια"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL ιστότοπου (Απαιτείται)",
+    "source": "Πηγή καμπάνιας (Απαιτείται)",
+    "medium": "Μέσο καμπάνιας (Απαιτείται)",
+    "name": "Όνομα καμπάνιας (Απαιτείται)",
+    "term": "Όρος καμπάνιας (Προαιρετικό)",
+    "content": "Περιεχόμενο καμπάνιας (Προαιρετικό)",
+    "generatedUrl": "Δημιουργήθηκε διεύθυνση URL",
+    "copy": "Αντιγραφή διεύθυνσης URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Τρέχουσα ώρα Unix",
+    "timestampLabel": "Χρονική σήμανση (δευτερόλεπτα)",
+    "isoLabel": "Μορφή ημερομηνίας ISO",
+    "utcDate": "Ημερομηνία UTC",
+    "localDate": "Τοπική ημερομηνία",
+    "relative": "Σχετικός"
+  },
+  "SignatureGenerator": {
+    "color": "Χρώμα",
+    "width": "Πλάτος",
+    "clear": "Σαφής",
+    "download": "Λήψη PNG",
+    "signHere": "Υπογράψτε εδώ",
+    "note": "Οι υπογραφές επεξεργάζονται τοπικά στο πρόγραμμα περιήγησής σας. Δεν τα αποθηκεύουμε ούτε τα ανεβάζουμε."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Ζωντανή προεπισκόπηση"
+  },
+  "CipherTools": {
+    "shiftAmount": "Ποσό μετατόπισης (N)",
+    "inputText": "Εισαγωγή κειμένου",
+    "outputText": "Κείμενο εξόδου",
+    "rot13": "ROT13",
+    "caesar": "Καίσαρας (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Ανάλυση οθόνης",
+    "browser": "Πρόγραμμα περιήγησης",
+    "cpuCores": "Πυρήνες CPU",
+    "battery": "Μπαταρία",
+    "detailedSpecs": "Αναλυτικές προδιαγραφές",
+    "userAgent": "Πράκτορας χρήστη",
+    "platform": "Πλατφόρμα",
+    "windowSize": "Μέγεθος παραθύρου",
+    "pixelRatio": "Αναλογία εικονοστοιχείων",
+    "colorDepth": "Βάθος χρώματος",
+    "ram": "RAM",
+    "cookiesEnabled": "Τα cookies είναι ενεργοποιημένα",
+    "onlineStatus": "Κατάσταση Διαδικτύου",
+    "unknown": "Αγνωστος",
+    "yes": "Ναί",
+    "no": "Οχι",
+    "enabled": "Ενεργοποιημένο",
+    "disabled": "Ανάπηρος"
+  },
+  "ChmodCalculator": {
+    "owner": "Ιδιοκτήτης",
+    "group": "Ομάδα",
+    "public": "Κοινό",
+    "read": "Ανάγνωση",
+    "write": "Γράφω",
+    "execute": "Εκτελώ",
+    "numeric": "Αριθμητικός",
+    "symbolic": "Συμβολικός"
+  },
+  "PasswordManager": {
+    "title": "Διαχειριστής κωδικών πρόσβασης",
+    "desc": "Αποθηκεύστε και διαχειριστείτε τους κωδικούς σας τοπικά με ασφάλεια.",
+    "unlock": "Ξεκλειδώστε το Vault",
+    "create": "Δημιουργία νέου θησαυροφυλακίου",
+    "unlockDesc": "Εισαγάγετε τον κύριο κωδικό πρόσβασης για πρόσβαση στους λογαριασμούς σας.",
+    "createDesc": "Ορίστε έναν ισχυρό κύριο κωδικό πρόσβασης. Κρυπτογραφεί τα δεδομένα σας τοπικά.",
+    "masterPassword": "Κύριος κωδικός πρόσβασης",
+    "unlockBtn": "Ξεκλειδώνω",
+    "createBtn": "Δημιουργία Vault",
+    "note": "Τα δεδομένα αποθηκεύονται στο πρόγραμμα περιήγησής σας χρησιμοποιώντας κρυπτογράφηση AES-GCM. Δεν μπορούμε να ανακτήσουμε τον κωδικό πρόσβασής σας εάν χαθεί.",
+    "myPasswords": "Οι κωδικοί μου",
+    "addNew": "Προσθήκη νέου",
+    "search": "Αναζήτηση λογαριασμών...",
+    "noPasswords": "Δεν βρέθηκαν κωδικοί πρόσβασης.",
+    "addAccount": "Προσθήκη λογαριασμού",
+    "accountTitle": "Τίτλος / Ιστοσελίδα",
+    "username": "Όνομα χρήστη / Email",
+    "password": "Σύνθημα",
+    "url": "URL (Προαιρετικό)",
+    "save": "Αποθήκευση λογαριασμού",
+    "cancel": "Ματαίωση",
+    "incorrectPassword": "Λανθασμένος κωδικός πρόσβασης ή κατεστραμμένα δεδομένα.",
+    "loading": "Φόρτωση..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Λεπτομέρειες ιστότοπου",
+    "pageTitle": "Τίτλος σελίδας",
+    "description": "Περιγραφή",
+    "keywords": "Λέξεις-κλειδιά (χωρισμένες με κόμματα)",
+    "author": "Συγγραφέας",
+    "socialPreview": "Προεπισκόπηση κοινωνικής δικτύωσης (OG & Twitter)",
+    "websiteUrl": "URL ιστότοπου",
+    "previewImage": "Προεπισκόπηση URL εικόνας",
+    "generatedHtml": "Δημιουργήθηκε HTML",
+    "copy": "Αντιγραφή HTML",
+    "copied": "Αντιγράφηκε"
+  },
+  "VibrationTester": {
+    "worksOnly": "Λειτουργεί μόνο σε συσκευές με υλικό δόνησης (π.χ. τηλέφωνα).",
+    "duration": "Διάρκεια (ms)",
+    "vibrateOnce": "Δόνηση μία φορά",
+    "pulsePattern": "Μοτίβο παλμού",
+    "longPulse": "Μακρύς Παλμός",
+    "stop": "Στάση"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Γιατί έχει σημασία η μορφοποίηση JSON",
+      "block_2": "Το JSON (JavaScript Object Notation) είναι η γλώσσα του Ιστού.Αλλά το ακατέργαστο JSON που επιστρέφεται από τα API είναι συχνά ένα ελαχιστοποιημένο χάος.Η μορφοποίησή του το καθιστά αναγνώσιμο, εντοπισμό σφαλμάτων και ασφαλές.",
+      "block_3": "1.Η αναγνωσιμότητα είναι βασιλιάς",
+      "block_4": "Όταν διορθώνετε μια απόκριση API 5000 γραμμών, η εσοχή σώζει ζωές.Το <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> χρησιμοποιεί εσοχή 2 διαστημάτων ή 4 διαστημάτων για να κάνει τη δομή σαφή.",
+      "block_5": "2.Επικύρωση",
+      "block_6": "Ένα κόμμα που λείπει μπορεί να σπάσει την εφαρμογή σας.Πάντα να επικυρώνετε το JSON σας πριν το δεσμεύσετε σε αρχεία διαμόρφωσης.",
+      "block_7": "Συμπέρασμα",
+      "block_8": "Μην χάνετε χρόνο ελέγχοντας χειροκίνητα τις αγκύλες.Χρησιμοποιήστε αυτοματοποιημένα εργαλεία."
+    },
+    "mastering-regex": {
+      "block_1": "Εξήγηση Regex",
+      "block_2": "Οι τυπικές εκφράσεις είναι ισχυρές αλλά προκαλούν σύγχυση.Ας τα οπτικοποιήσουμε.",
+      "block_3": "Κοινά μοτίβα",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Ηλεκτρονικό ταχυδρομείο:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένο font-mono text-[0.9em] text-[0.9em]92cborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Τηλέφωνο:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένο font-mono text-[0.9em] border39 text-[0.9em]border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Δοκιμάστε αυτά τα μοτίβα αμέσως με τον <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Ελεγκτή Regex</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "The 5 Stars of Cron",
+      "block_2": "Λεπτό, ώρα, ημέρα του μήνα, μήνας, ημέρα της εβδομάδας.Αυτό είναι όλο.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * *</co_to_ru\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Παραδείγματα</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Εκτέλεση κάθε μέρα τα μεσάνυχτα: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *-col->var*</code>",
+      "block_4": "Παραδείγματα",
+      "block_5": "Εκτέλεση κάθε 15 λεπτά: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *)*5*</code>",
+      "block_6": "Χρειάζεστε βοήθεια;Χρησιμοποιήστε το <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Γεννήτρια Cron</a> για να δημιουργήσετε εκφράσεις οπτικά."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Το πρόβλημα με τα Cloud Vaults",
+      "block_2": "Η LastPass, η Okta και άλλοι γίγαντες έχουν υποστεί παραβιάσεις.Όταν το θησαυροφυλάκιό σας είναι συνδεδεμένο, είναι στόχος.",
+      "block_3": "Η λύση: Τοπική κρυπτογράφηση",
+      "block_4": "Το νέο μας <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:sword:text-Το Manager</a></strong> εκτελείται εξ ολοκλήρου στο πρόγραμμα περιήγησής σας.Χρησιμοποιεί <strong class=\"text-[var(--title-color)] font-semibold\">κρυπτογράφηση 256-bit AES-GCM</strong> που προέρχεται από τον κύριο κωδικό πρόσβασής σας χρησιμοποιώντας PBKDF2.",
+      "block_5": "Πώς λειτουργεί",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Μηδενική γνώση:</strong> Δεν βλέπουμε ποτέ τον κωδικό πρόσβασής σας.Δεν φεύγει ποτέ από τη συσκευή σας.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Αποθήκευση εκτός σύνδεσης:</strong> Το κρυπτογραφημένο θησαυροφυλάκιό σας αποθηκεύεται στο LocalStorage του προγράμματος περιήγησής σας.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Εξαγώγιμο:</strong> Μπορείτε να εξαγάγετε/δημιουργήσετε αντίγραφα ασφαλείας των ακατέργαστων κρυπτογραφημένων δεδομένων σας ανά πάσα στιγμή.</li>",
+      "block_7": "Σταματήστε να εμπιστεύεστε το cloud με τα κύρια κλειδιά σας.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Δοκιμάστε το Local Password Manager</a> σήμερα."
+    }
+  }
+}

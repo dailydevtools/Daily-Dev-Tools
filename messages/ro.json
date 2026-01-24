@@ -1,0 +1,1814 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Instrumente",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Căutare..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Instrumente Gratuite pentru Dezvoltatori Online",
+    "description": "90+ instrumente online gratuite pentru toată lumea. Formatoare, convertoare, generatoare și utilitare. Rapid, privat și fără înregistrare."
+  },
+  "NotFound": {
+    "title": "Pagina nu a fost găsită",
+    "description": "Ne pare rău, nu am putut găsi pagina pe care o căutați.",
+    "backHome": "Înapoi la Acasă",
+    "suggestions": "Încercați să căutați un instrument sau răsfoiți instrumentele noastre populare mai jos."
+  },
+  "Homepage": {
+    "heroTag": "100+ Instrumente Gratuite • Privat • Fără Înregistrare",
+    "titleLine1": "Instrumente Zilnice pentru Dezvoltatori",
+    "titleLine2": "Care Pur și Simplu Funcționează",
+    "subtitle": "Instrumente rapide, frumoase și axate pe confidențialitate pentru dezvoltatori, designeri și toată lumea. Totul rulează în browserul tău.",
+    "recentTools": "Utilizate Recent",
+    "noRecentText": "Începe să folosești instrumente pentru a le vedea aici",
+    "searchResults": "Rezultate Căutare",
+    "popularTools": "Populare",
+    "toolsCount": "{count} instrumente disponibile",
+    "features": {
+      "fast": {
+        "title": "Ultra Rapid",
+        "desc": "Toate instrumentele rulează local în browserul tău"
+      },
+      "private": {
+        "title": "100% Privat",
+        "desc": "Datele tale nu părăsesc niciodată dispozitivul tău"
+      },
+      "simple": {
+        "title": "Construit pentru Toată Lumea",
+        "desc": "Destul de simplu pentru oricine, puternic pentru profesioniști"
+      },
+      "free": {
+        "title": "Mereu Gratuit",
+        "desc": "Fără conturi, fără limite"
+      }
+    },
+    "categories": {
+      "All": "Toate",
+      "Favorites": "Favorite",
+      "Developer": "Dezvoltator",
+      "Design": "Proiecta",
+      "Content": "Conținut",
+      "Security": "Securitate",
+      "Productivity": "Productivitate",
+      "Math": "Matematică",
+      "Utility": "Utilitate"
+    },
+    "cta": {
+      "title": "Ești gata să îți crești productivitatea?",
+      "text": "Începe să folosești instrumentele noastre pentru dezvoltatori gratuit. Fără înregistrare, fără colectare de date.",
+      "button": "Începe Gratuit"
+    },
+    "openTool": "Deschide instrument",
+    "noResults": "Nu s-au găsit instrumente care să se potrivească cu",
+    "clearFilters": "Șterge filtrele"
+  },
+  "Footer": {
+    "builtWith": "Construit cu ❤️ de",
+    "allTools": "Toate Instrumentele",
+    "blog": "Blog",
+    "about": "Despre",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Formatator JSON",
+      "description": "Formatați, validați și înfrumusețați JSON instantaneu"
+    },
+    "base64-encoder": {
+      "name": "Codificator Base64",
+      "description": "Codificați și decodificați șirurile Base64"
+    },
+    "url-encoder": {
+      "name": "Codificator URL",
+      "description": "Codificați și decodați adresele URL în siguranță"
+    },
+    "jwt-decoder": {
+      "name": "Decodor JWT",
+      "description": "Decodați și inspectați jetoanele web JSON"
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "description": "Testați expresiile regulate în timp real"
+    },
+    "hash-generator": {
+      "name": "Generator de hash",
+      "description": "Generați hashuri MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Generator UUID",
+      "description": "Generați instantaneu UUID-uri/GUID-uri aleatorii"
+    },
+    "css-minifier": {
+      "name": "Minificator CSS",
+      "description": "Minimizează și optimizează-ți codul CSS"
+    },
+    "markdown-editor": {
+      "name": "Previzualizare Markdown",
+      "description": "Editor și previzualizare Markdown în timp real"
+    },
+    "color-converter": {
+      "name": "Convertor de culoare",
+      "description": "Convertiți Hex, RGB, HSL și CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Instrumentul de marcaj temporal",
+      "description": "Convertiți marcajele de timp Unix în date umane"
+    },
+    "sql-formatter": {
+      "name": "Formatator SQL",
+      "description": "Formatați și înfrumusețați interogările SQL"
+    },
+    "password-generator": {
+      "name": "Generator de parole",
+      "description": "Creați parole sigure, aleatorii"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generați text substituent pentru modele"
+    },
+    "image-base64": {
+      "name": "Imagine către Base64",
+      "description": "Convertiți imaginile în șiruri Base64"
+    },
+    "qr-generator": {
+      "name": "Generator de coduri QR",
+      "description": "Generați coduri QR pentru adrese URL și text"
+    },
+    "word-counter": {
+      "name": "Contor de cuvinte",
+      "description": "Numărați cuvintele, caracterele și timpul de lectură"
+    },
+    "case-converter": {
+      "name": "Convertor de caz",
+      "description": "Carcasă pentru cămilă, șarpe, kebab și pascal"
+    },
+    "text-diff": {
+      "name": "Verificator de diferențe de text",
+      "description": "Comparați două texte și găsiți diferențele"
+    },
+    "slug-generator": {
+      "name": "Generator de melci",
+      "description": "Generați adrese URL prietenoase cu SEO"
+    },
+    "gradient-generator": {
+      "name": "Generator de gradient",
+      "description": "Creați gradiente CSS frumoase"
+    },
+    "image-compressor": {
+      "name": "Compresor de imagine",
+      "description": "Comprimați imaginile local și privat"
+    },
+    "device-info": {
+      "name": "Informații despre dispozitiv",
+      "description": "Vizualizați informații despre ecran, browser și sistem"
+    },
+    "random-generator": {
+      "name": "Generator aleatoriu",
+      "description": "Alegeți numere, monede și articole din listă"
+    },
+    "unit-converter": {
+      "name": "Convertor de unitate",
+      "description": "Convertiți lungimea, greutatea și temperatura"
+    },
+    "pomodoro-timer": {
+      "name": "Cronometrul Pomodoro",
+      "description": "Temporizator de focalizare pentru productivitate"
+    },
+    "yt-thumbnail": {
+      "name": "Descărcător de miniaturi",
+      "description": "Obțineți miniaturi ale videoclipurilor YouTube"
+    },
+    "my-ip": {
+      "name": "Care este IP-ul meu",
+      "description": "Vedeți IP-ul public și informațiile de rețea"
+    },
+    "keycode-info": {
+      "name": "Informații despre codul cheie",
+      "description": "Depanator de evenimente de la tastatură JavaScript"
+    },
+    "signature-generator": {
+      "name": "Generator de semnături",
+      "description": "Desenați și descărcați semnături digitale"
+    },
+    "screen-recorder": {
+      "name": "Screen Recorder",
+      "description": "Înregistrați ecranul și descărcați videoclipul"
+    },
+    "credit-card-validator": {
+      "name": "Validator de card",
+      "description": "Validați numerele cardului de credit"
+    },
+    "password-manager": {
+      "name": "Manager local de parole",
+      "description": "Stocați în siguranță parolele la nivel local cu criptare"
+    },
+    "deep-link-tester": {
+      "name": "Tester de legături profunde",
+      "description": "Testați, lansați și gestionați legăturile profunde mobile"
+    },
+    "image-converter": {
+      "name": "Convertor de imagini",
+      "description": "Convertiți local PNG/JPG în WebP pentru a optimiza imaginile"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Convertiți JSON în CSV și invers"
+    },
+    "bmi-calculator": {
+      "name": "Calculator IMC",
+      "description": "Calculați indicele de masă corporală (IMC)"
+    },
+    "dns-lookup": {
+      "name": "Căutare DNS",
+      "description": "Interogați înregistrările DNS (A, MX, NS) instantaneu"
+    },
+    "age-calculator": {
+      "name": "Calculator de vârstă",
+      "description": "Calculați vârsta exactă și numărul total de zile"
+    },
+    "loan-calculator": {
+      "name": "Calculator de împrumut",
+      "description": "Calculați EMI lunar și dobânda totală"
+    },
+    "discount-calculator": {
+      "name": "Calculator de reduceri",
+      "description": "Calculați prețul de vânzare și economiile"
+    },
+    "interest-calculator": {
+      "name": "Calculator dobândă",
+      "description": "Calculator de dobândă simplu vs compus"
+    },
+    "html-encoder": {
+      "name": "Codificator/Decodor HTML",
+      "description": "Escape caractere speciale sau decoda HTML"
+    },
+    "list-sorter": {
+      "name": "List Sorter",
+      "description": "Sortați, inversați, amestecați și deduplicați liste"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Generator",
+      "description": "Generați vizual casete-umbre CSS"
+    },
+    "date-diff": {
+      "name": "Diferența de dată",
+      "description": "Calculați durata dintre două date"
+    },
+    "sql-to-json": {
+      "name": "SQL în JSON",
+      "description": "Convertiți SQL INSERT în obiecte JSON"
+    },
+    "keyword-density": {
+      "name": "Densitatea cuvintelor cheie",
+      "description": "Analizați frecvența cuvintelor cheie pentru SEO"
+    },
+    "json-diff": {
+      "name": "Diferență JSON",
+      "description": "Comparați două obiecte JSON unul lângă altul"
+    },
+    "cipher-tools": {
+      "name": "Instrumente de cifrare",
+      "description": "Codificator/decodor ROT13 și Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Generator de jetoane aleatorii",
+      "description": "Generați jetoane aleatoare sigure"
+    },
+    "favicon-generator": {
+      "name": "Generator de favicon",
+      "description": "Creați faviconuri .ico și PNG"
+    },
+    "robots-generator": {
+      "name": "Robots.txt Generator",
+      "description": "Creați robots.txt pentru SEO"
+    },
+    "grid-generator": {
+      "name": "Generator de grilă CSS",
+      "description": "Creator vizual CSS Grid layout builder"
+    },
+    "hmac-generator": {
+      "name": "Generator HMAC",
+      "description": "Generați coduri de autentificare a mesajelor cu coduri hash"
+    },
+    "http-status": {
+      "name": "Codurile de stare HTTP",
+      "description": "Lista de referință a codurilor de stare HTTP"
+    },
+    "week-number": {
+      "name": "Numărul săptămânii",
+      "description": "Numărul săptămânii curente și progresul anului"
+    },
+    "text-tools": {
+      "name": "Transformator de text",
+      "description": "Inversați, răsturnați și codificați textul"
+    },
+    "url-parser": {
+      "name": "Analizor URL",
+      "description": "Împărțiți adresele URL în protocol, gazdă, cale, parametri"
+    },
+    "markdown-table": {
+      "name": "Markdown Table Generator",
+      "description": "Creați vizual tabele Markdown"
+    },
+    "whatsapp-link": {
+      "name": "Generator de linkuri WhatsApp",
+      "description": "Creați legături directe de chat WhatsApp"
+    },
+    "paypal-link": {
+      "name": "Generator de linkuri PayPal",
+      "description": "Creați linkuri de plată PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG în PNG",
+      "description": "Convertiți codul/fișierul SVG în imagine PNG"
+    },
+    "prime-factors": {
+      "name": "Factori primi",
+      "description": "Găsiți factorii primi ai unui număr"
+    },
+    "iban-validator": {
+      "name": "Validator IBAN",
+      "description": "Validați numerele internaționale de cont bancar"
+    },
+    "ascii-converter": {
+      "name": "Convertor ASCII",
+      "description": "Convertiți textul în coduri zecimale ASCII"
+    },
+    "utm-builder": {
+      "name": "UTM Builder",
+      "description": "Creați adrese URL pentru campanii Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Generator de metaetichete",
+      "description": "Generați metaetichete SEO pentru site-uri web"
+    },
+    "og-generator": {
+      "name": "Deschideți Generatorul de grafice",
+      "description": "Creați metaetichete Open Graph pentru partajarea socială"
+    },
+    "twitter-card": {
+      "name": "Generator de carduri Twitter",
+      "description": "Creați metaetichete Twitter Card"
+    },
+    "aspect-ratio": {
+      "name": "Calculator pentru raportul de aspect",
+      "description": "Calculați raporturile de aspect și dimensiunile"
+    },
+    "css-cursor": {
+      "name": "Cursor CSS",
+      "description": "Referință la proprietatea cursorului CSS vizual"
+    },
+    "css-triangle": {
+      "name": "Generator de triunghi CSS",
+      "description": "Generați triunghiuri CSS pure"
+    },
+    "percentage-calculator": {
+      "name": "Calculator procentual",
+      "description": "Calculați procente și modificări"
+    },
+    "vat-calculator": {
+      "name": "Calculator TVA",
+      "description": "Calculați sumele de adăugare/eliminare de TVA"
+    },
+    "stopwatch": {
+      "name": "Cronometru",
+      "description": "Cronometru simplu bazat pe browser"
+    },
+    "text-to-speech": {
+      "name": "Text to Speech",
+      "description": "Transformați textul în voce vorbită"
+    },
+    "speech-to-text": {
+      "name": "Vorbire către text",
+      "description": "Transformați vocea vorbită în text"
+    },
+    "vibration-tester": {
+      "name": "Tester de vibrații",
+      "description": "Dispozitiv de testare a motorului de vibrații"
+    },
+    "chmod-calculator": {
+      "name": "Calculator Chmod",
+      "description": "Calculați permisiunile pentru fișiere Linux"
+    },
+    "crontab-generator": {
+      "name": "Generator Crontab",
+      "description": "Generați expresii cron program"
+    },
+    "htpasswd-generator": {
+      "name": "Generator Htpasswd",
+      "description": "Generați intrări de autentificare de bază"
+    },
+    "subnet-calculator": {
+      "name": "Calculator de subrețea",
+      "description": "Calculați subrețelele de rețea și intervalele IP"
+    },
+    "mac-generator": {
+      "name": "Generator de adrese MAC",
+      "description": "Generați adrese MAC aleatoare"
+    },
+    "timezone-converter": {
+      "name": "Convertor de fus orar",
+      "description": "Convertiți timpul între mai multe zone"
+    },
+    "email-validator": {
+      "name": "Validator de e-mail",
+      "description": "Validați formatul de e-mail și detectați greșelile de scriere"
+    },
+    "password-strength": {
+      "name": "Puterea parolei",
+      "description": "Verificați scorul de putere al parolei"
+    },
+    "roman-numerals": {
+      "name": "Convertor de numere romane",
+      "description": "Convertiți între numere romane și zecimale"
+    },
+    "margin-calculator": {
+      "name": "Calculator de marjă",
+      "description": "Calculați marja de profit și markup"
+    },
+    "roi-calculator": {
+      "name": "Calculator ROI",
+      "description": "Calculați rentabilitatea investiției"
+    },
+    "fuel-calculator": {
+      "name": "Calculator costul combustibilului",
+      "description": "Calculați costul combustibilului pentru călătorie"
+    },
+    "pretty-print-url": {
+      "name": "Pretty Print URL",
+      "description": "Formatați și înfrumusețați adresele URL pentru lizibilitate"
+    }
+  },
+  "Terms": {
+    "title": "Termeni și condiții",
+    "lastUpdated": "Ultima actualizare",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptarea Termenilor",
+        "content": "Prin accesarea și utilizarea DailyDevTools, acceptați și sunteți de acord să fiți legat de termenii și prevederile acestui acord."
+      },
+      "useLicense": {
+        "title": "2. Utilizați licența",
+        "content": "DailyDevTools este folosit gratuit în scopuri personale și comerciale. Nu puteți:",
+        "list": {
+          "0": "Încercați să faceți inginerie inversă sau să curățați porțiuni semnificative ale site-ului.",
+          "1": "Utilizați site-ul web în orice mod care cauzează sau poate cauza deteriorarea site-ului web sau afectarea disponibilității sau accesibilității site-ului web."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Exonerare de responsabilitate",
+        "content": "Instrumentele de pe DailyDevTools sunt furnizate „ca atare”. Nu oferim garanții, exprese sau implicite..."
+      },
+      "limitations": {
+        "title": "4. Limitări",
+        "content": "În niciun caz DailyDevTools sau furnizorii săi nu vor fi răspunzători pentru orice daune..."
+      },
+      "revisions": {
+        "title": "5. Revizuirile",
+        "content": "Materialele care apar pe DailyDevTools pot include erori tehnice, tipografice sau fotografice..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Politica de confidențialitate",
+    "lastUpdated": "Ultima actualizare",
+    "intro": "Bun venit la DailyDevTools. Vă respectăm confidențialitatea și ne angajăm să vă protejăm datele personale.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Cum funcționează instrumentele noastre (procesare locală)",
+        "content": "Cel mai important: instrumentele rulează în întregime în browser. Datele nu părăsesc niciodată dispozitivul dvs."
+      },
+      "dataCollection": {
+        "title": "3. Datele pe care le colectăm",
+        "content": "Nu colectăm conținut. Folosim Google Analytics pentru statistici de utilizare."
+      },
+      "cookies": {
+        "title": "4. Cookie-uri",
+        "content": "Folosim cookie-uri pentru analize și preferințe locale."
+      },
+      "thirdParty": {
+        "title": "5. Link-uri terță parte",
+        "content": "Site-ul nostru poate conține link-uri către terți."
+      },
+      "changes": {
+        "title": "6. Modificări ale acestei politici",
+        "content": "Este posibil să actualizăm această politică din când în când."
+      },
+      "contact": {
+        "title": "7. Contactați-ne",
+        "content": "Contactați-ne prin GitHub sau rețelele sociale."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Resurse pentru dezvoltatori",
+    "subtitle": "Scufundări profunde în instrumentele pe care le construim și conceptele din spatele lor.",
+    "readMore": "Citeşte mai mult",
+    "backToBlog": "Înapoi la Blog",
+    "enjoyedArticle": "Ti-a placut acest articol?",
+    "checkTools": "Consultați instrumentele noastre"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Intrare",
+      "output": "Ieșire",
+      "format": "Format",
+      "minify": "Minimizează",
+      "download": "Descărcare",
+      "copy": "Copiere",
+      "paste": "Pastă",
+      "copied": "Copiat!",
+      "upload": "Încărcați",
+      "sample": "Eşantion",
+      "clear": "Golește",
+      "indent": "Indentare:",
+      "chars": "caractere",
+      "error": "Eroare",
+      "invalid": "Intrare nevalidă",
+      "result": "Rezultat",
+      "generate": "Genera",
+      "calculate": "Calcula",
+      "convert": "Convertit",
+      "validate": "Valida",
+      "resultPlaceholder": "Rezultatul va apărea aici..."
+    },
+    "Base64Encoder": {
+      "encode": "Codifica",
+      "decode": "Decodați",
+      "textToEncode": "Text pentru a codifica",
+      "base64ToDecode": "Base64 pentru a decoda",
+      "enterText": "Introdu textul pentru a codifica...",
+      "enterBase64": "Introduceți Base64 pentru a decoda...",
+      "encodeAction": "Codați la Base64",
+      "decodeAction": "Decodați din Base64",
+      "base64Output": "Ieșire Base64",
+      "decodedText": "Text decodat",
+      "resultPlaceholder": "Rezultatul va apărea aici...",
+      "invalidInput": "Intrare nevalidă pentru {mode}"
+    },
+    "QrGenerator": {
+      "content": "Conţinut",
+      "placeholder": "https://example.com",
+      "customization": "Personalizare",
+      "foreground": "Prim plan",
+      "background": "Fundal",
+      "download": "Descărcați"
+    },
+    "HashGenerator": {
+      "inputText": "Introduceți text",
+      "placeholder": "Introdu textul pentru hash...",
+      "waiting": "Se așteaptă intrarea..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Generați nou",
+      "configuration": "Configurare",
+      "length": "Lungimea parolei",
+      "uppercase": "Litere mari (A-Z)",
+      "numbers": "Numere (0-9)",
+      "symbols": "Simboluri (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Lipiți-vă JSON aici...",
+      "outputPlaceholder": "JSON formatat va apărea aici...",
+      "spaces": "spatii"
+    },
+    "UrlEncoder": {
+      "encode": "Codifica",
+      "decode": "Decodați",
+      "urlToEncode": "URL de codat",
+      "encodedUrlToDecode": "URL codificat pentru decodare",
+      "enterUrlToEncode": "Introduceți adresa URL sau textul de codat...",
+      "enterUrlToDecode": "Introduceți adresa URL codificată pentru a decoda...",
+      "encodeAction": "Codați adresa URL",
+      "decodeAction": "Decodați adresa URL",
+      "encodedUrl": "URL codificat",
+      "decodedUrl": "URL decodat",
+      "resultPlaceholder": "Rezultatul va apărea aici...",
+      "chars": "caractere",
+      "invalidInput": "Intrare nevalidă pentru {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Lipiți jetonul dvs. JWT",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Decodați JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Emis",
+      "expires": "Expiră"
+    },
+    "RegexTester": {
+      "expression": "Expresie",
+      "expressionPlaceholder": "Captură grup (abc)...",
+      "testString": "Șirul de testare",
+      "testStringPlaceholder": "Lipiți șirul de test aici...",
+      "matchHighlights": "Repere ale meciului",
+      "matches": "chibrituri",
+      "matchInfo": "Informații despre meci",
+      "match": "Meci",
+      "index": "Index",
+      "group": "Grup",
+      "noMatches": "Nu s-au găsit potriviri",
+      "highlightPlaceholder": "Meciurile vor fi evidențiate aici...",
+      "flagsHelp": "g: global, i: ignora majuscule, m: mai multe linii"
+    },
+    "UuidGenerator": {
+      "generate": "Genera",
+      "generateCount": "Genera:",
+      "copyAll": "Copiați tot",
+      "copyUuid": "Copiați UUID",
+      "generatedAt": "Generat local la {time} • Versiunea 4 UUID-uri"
+    },
+    "WordCounter": {
+      "words": "Cuvinte",
+      "characters": "Personaje",
+      "sentences": "Propoziții",
+      "paragraphs": "Paragrafe",
+      "readingTime": "Timp de lectură",
+      "min": "min",
+      "textInput": "Introducere text",
+      "inputPlaceholder": "Începeți să introduceți sau să inserați textul aici pentru a analiza...",
+      "clear": "Clar"
+    },
+    "TimestampConverter": {
+      "timestamp": "Marca temporală",
+      "humanDate": "Data umană",
+      "convert": "Convertit",
+      "currentTimestamp": "Marca temporală curentă",
+      "inputPlaceholder": "Introduceți marca temporală Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Lipiți interogarea SQL aici...",
+      "outputPlaceholder": "SQL formatat va apărea aici..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Lipiți codul CSS aici...",
+      "outputPlaceholder": "CSS minimizat va apărea aici..."
+    },
+    "MarkdownEditor": {
+      "editor": "Editor",
+      "preview": "Previzualizare",
+      "inputPlaceholder": "Introdu Markdown aici..."
+    },
+    "TextDiff": {
+      "original": "Textul original",
+      "changed": "Text schimbat",
+      "compare": "Comparaţie",
+      "differences": "Diferențele"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Introdu textul pentru a converti...",
+      "generatedSlug": "Slug generat"
+    },
+    "ImageCompressor": {
+      "selectImage": "Selectați Imagine",
+      "quality": "Calitate",
+      "compress": "Comprima",
+      "download": "Descărcați",
+      "originalSize": "Dimensiune originală",
+      "compressedSize": "Dimensiune comprimată"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragrafe",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "GradientGenerator": {
+      "angle": "Unghi",
+      "colors": "Culori",
+      "addColor": "Adăugați culoare",
+      "copyCss": "Copiați CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Data de naștere",
+      "calculate": "Calcula",
+      "years": "ani",
+      "months": "Luni",
+      "days": "Zile",
+      "totalDays": "Total de zile",
+      "nextBirthday": "Urmatoarea zi de nastere In"
+    },
+    "AsciiConverter": {
+      "text": "Text",
+      "ascii": "ASCII",
+      "convert": "Convertit",
+      "inputPlaceholder": "Introdu text..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Orizontală (X)",
+      "vertical": "Verticală (Y)",
+      "blur": "Estompa",
+      "spread": "Răspândire",
+      "colorOpacity": "Culoare și opacitate",
+      "inset": "Medalion"
+    },
+    "BmiCalculator": {
+      "metric": "Metric (kg/cm)",
+      "imperial": "Imperial (lbs/in)",
+      "weight": "Greutate",
+      "height": "Înălţime",
+      "calculate": "Calculați IMC",
+      "bmiScore": "Scorul dvs. de IMC",
+      "underweight": "Subponderal",
+      "normal": "Greutate normală",
+      "overweight": "Excesul de greutate",
+      "obese": "Obez"
+    },
+    "CaseConverter": {
+      "inputText": "Introduceți text",
+      "inputPlaceholder": "Introdu textul aici...",
+      "upper": "UPPERCASE",
+      "lower": "litere mici",
+      "title": "Cazul de titlu",
+      "sentence": "Cazul sentinței",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Copie",
+      "conversions": "Conversii",
+      "clear": "Clar"
+    },
+    "ColorConverter": {
+      "hexLabels": "Culoare HEX",
+      "rgbLabels": "Culoare RGB",
+      "hslLabels": "Culoare HSL",
+      "cmykLabels": "Culoare CMYK",
+      "copy": "Copie",
+      "hexToRgbNote": "* În prezent acceptă numai conversia HEX în RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Numărul de card",
+      "validate": "Valida",
+      "valid": "Număr valid al cardului de credit",
+      "invalid": "Număr card de credit nevalid",
+      "placeholder": "Introduceți numărul cardului...",
+      "type": "Tip card",
+      "checkDigit": "Cifra de verificare",
+      "luhnValid": "Algoritmul Luhn este valabil"
+    },
+    "CipherTools": {
+      "encode": "Codifica",
+      "decode": "Decodați",
+      "rot13": "ROT13",
+      "caesar": "Cifrul Cezarului",
+      "shift": "Schimbare",
+      "inputPlaceholder": "Salut Lume",
+      "outputPlaceholder": "Rezultatul va apărea aici..."
+    },
+    "CronGenerator": {
+      "minute": "Minut",
+      "hour": "Oră",
+      "dayMonth": "Zi (lună)",
+      "month": "Lună",
+      "dayWeek": "Zi (săptămâna)",
+      "presets": "Presetări comune",
+      "everyMinute": "În fiecare minut",
+      "everyHour": "În fiecare oră",
+      "everyDayMidnight": "În fiecare zi la miezul nopții",
+      "everySunday": "În fiecare duminică",
+      "everyMonth": "În fiecare lună",
+      "everyYear": "În fiecare an",
+      "formatInfo": "Format: * * * * * (minut, oră, zi din lună, lună, zi din săptămână)",
+      "usageInfo": "Utilizați * pentru „fiecare”, */n pentru „fiecare n”, 1,2,3 pentru o listă specifică."
+    },
+    "DateDiff": {
+      "startDate": "Data de începere",
+      "endDate": "Data de încheiere",
+      "calculate": "Calcula",
+      "difference": "Diferenţă",
+      "years": "ani",
+      "months": "Luni",
+      "days": "Zile",
+      "totalDays": "Total de zile",
+      "totalWeeks": "Total săptămâni",
+      "totalHours": "Total de ore"
+    },
+    "DeepLinkTester": {
+      "testLink": "Test Link",
+      "savedLinks": "Linkuri salvate",
+      "searchPlaceholder": "Căutați linkuri salvate...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Lansa",
+      "save": "Salva",
+      "delete": "Şterge",
+      "opens": "se deschide",
+      "scanQr": "Scanați cu dispozitivul mobil pentru a testa",
+      "noSavedLinks": "Nu s-au găsit linkuri salvate.",
+      "enterLabel": "Introduceți o etichetă pentru acest link:",
+      "saved": "Salvat!",
+      "confirmDelete": "Ștergeți acest link?"
+    },
+    "DeviceInfo": {
+      "screen": "Ecran",
+      "browser": "Browser",
+      "system": "Sistem",
+      "resolution": "Rezoluţie",
+      "colorDepth": "Adâncimea culorii",
+      "userAgent": "Agent utilizator",
+      "platform": "Platformă",
+      "language": "Limbă"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Pret original",
+      "discountPercent": "Reducere",
+      "additionalDiscount": "Reducere suplimentară",
+      "calculate": "Calcula",
+      "youSave": "Salvați",
+      "finalPrice": "Prețul final",
+      "salesTax": "Taxa pe Vânzări"
+    },
+    "DnsLookup": {
+      "domain": "Domeniu",
+      "lookup": "Priveşte în sus",
+      "recordType": "Tip de înregistrare",
+      "results": "Rezultate",
+      "placeholder": "exemplu.com",
+      "status": "Stare",
+      "time": "Timp",
+      "server": "Server",
+      "answerSection": "Secțiunea de răspuns",
+      "name": "Nume",
+      "type": "Tip",
+      "ttl": "TTL",
+      "data": "Date",
+      "noRecords": "Nu au fost găsite înregistrări"
+    },
+    "EmailValidator": {
+      "email": "Adresa de e-mail",
+      "validate": "Valida",
+      "valid": "Valabil",
+      "invalid": "Invalid",
+      "suggestion": "Sugestie",
+      "placeholder": "utilizator@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Încărcați imaginea",
+      "generate": "Genera",
+      "download": "Descărcați",
+      "sizes": "Dimensiuni"
+    },
+    "FuelCalculator": {
+      "distance": "Distanţă",
+      "fuelEfficiency": "Eficiența combustibilului",
+      "fuelPrice": "Prețul combustibilului",
+      "calculate": "Calcula",
+      "result": "Rezultat",
+      "totalCost": "Costul total",
+      "fuelNeeded": "Necesar combustibil"
+    },
+    "GridGenerator": {
+      "columns": "Coloane",
+      "rows": "Rânduri",
+      "gap": "Decalaj",
+      "preview": "Previzualizare",
+      "copyCss": "Copiați CSS",
+      "rowGap": "Row Gap",
+      "colGap": "Gap de coloană",
+      "options": "Opțiuni"
+    },
+    "HmacGenerator": {
+      "message": "Mesaj",
+      "secret": "Secret",
+      "algorithm": "Algoritm",
+      "generate": "Genera",
+      "inputPlaceholder": "Introduceți text...",
+      "secretPlaceholder": "Secret..."
+    },
+    "HtmlEncoder": {
+      "encode": "Codifica",
+      "decode": "Decodați",
+      "resultPlaceholder": "Rezultatul va apărea aici...",
+      "inputPlaceholder": "Lipiți HTML aici..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Cod de căutare (de ex. 404) sau nume...",
+      "code": "Cod",
+      "name": "Nume",
+      "description": "Descriere"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Valida",
+      "valid": "Valabil",
+      "invalid": "Invalid",
+      "placeholder": "Introdu IBAN...",
+      "inputLabel": "Introduceți numărul IBAN",
+      "validTitle": "Benchmark valid",
+      "invalidTitle": "Sumă de control nevalidă",
+      "validDesc": "Formatul IBAN și suma de control sunt corecte.",
+      "invalidDesc": "IBAN-ul nu se potrivește cu algoritmul sumei de control."
+    },
+    "ImageBase64": {
+      "upload": "Încărcați",
+      "convert": "Convertit",
+      "copy": "Copie",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Încărcați imaginea",
+      "convertToBase64": "Convertiți în Base64",
+      "convertToImage": "Convertiți în imagine",
+      "base64String": "Base64 String",
+      "download": "Descărcați"
+    },
+    "ImageConverter": {
+      "selectImage": "Selectați Imagine",
+      "format": "Format",
+      "convert": "Convertit",
+      "download": "Descărcați",
+      "quality": "Calitate"
+    },
+    "InterestCalculator": {
+      "principal": "Principal",
+      "rate": "Dobândă",
+      "time": "Perioada de timp (ani)",
+      "calculate": "Calcula",
+      "simpleInterest": "Simplu",
+      "compoundInterest": "Compus",
+      "totalAmount": "Valoarea totală",
+      "type": "Tip",
+      "frequency": "Frecvența compusă",
+      "annually": "Anual",
+      "monthly": "Lunar",
+      "daily": "Zilnic",
+      "year": "An"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Introduceți JSON...",
+      "convert": "Convertit",
+      "format": "Format",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON în CSV",
+      "csvToJson": "CSV în JSON",
+      "jsonInput": "Intrare JSON",
+      "csvInput": "Intrare CSV",
+      "jsonOutput": "Ieșire JSON",
+      "csvOutput": "Ieșire CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON original",
+      "modified": "JSON modificat",
+      "compare": "Comparaţie",
+      "differences": "Diferențele"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Apăsați orice tastă",
+      "key": "Cheie",
+      "code": "Cod",
+      "keyCode": "KeyCode",
+      "which": "care",
+      "location": "Locaţie",
+      "modifiers": "Modificatori",
+      "standard": "Standard",
+      "left": "Stânga",
+      "right": "Corect",
+      "numpad": "Numpad",
+      "space": "(Spaţiu)",
+      "info": "Afișează evenimentul JavaScript KeyCode, Code și multe altele."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Lipiți textul aici pentru a analiza frecvența cuvintelor cheie...",
+      "analyze": "Analiza",
+      "keyword": "Cuvânt cheie",
+      "count": "Conta",
+      "density": "Densitate"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Introdu lista ta aici...",
+      "sort": "Sorta",
+      "reverse": "Verso",
+      "shuffle": "Amesteca",
+      "deduplicate": "Deduplicați",
+      "ascending": "Ascendent",
+      "descending": "Descendent",
+      "length": "Lungime",
+      "trim": "Trim Empty",
+      "lines": "linii:",
+      "chars": "Personaje:"
+    },
+    "LoanCalculator": {
+      "principal": "Principal",
+      "interestRate": "Dobândă",
+      "term": "Termen",
+      "calculate": "Calcula",
+      "monthlyPayment": "Plata lunara",
+      "totalInterest": "Dobânda totală",
+      "totalPayment": "Plata totala",
+      "loanDetails": "Detalii de împrumut",
+      "loanAmount": "Suma împrumutului",
+      "loanTerm": "Termenul împrumutului",
+      "years": "ani",
+      "months": "Luni",
+      "interest": "Interes"
+    },
+    "MacGenerator": {
+      "generate": "Genera",
+      "copy": "Copie",
+      "separator": "Separator",
+      "format": "Format",
+      "quantity": "Cantitate",
+      "uppercase": "majuscule"
+    },
+    "MarginCalculator": {
+      "cost": "Cost",
+      "price": "Pretul de vanzare",
+      "calculate": "Calcula",
+      "margin": "Marja",
+      "markup": "Markup",
+      "profit": "Profit",
+      "revenue": "Venituri",
+      "netProfit": "Profit net",
+      "grossMargin": "Marja brută"
+    },
+    "PasswordManager": {
+      "masterPassword": "Parolă principală",
+      "unlock": "Deblocați",
+      "searchPlaceholder": "Căutați conturi...",
+      "addNew": "Adăugați nou",
+      "siteName": "Numele site-ului",
+      "username": "Nume de utilizator",
+      "password": "Parolă",
+      "save": "Salva",
+      "delete": "Şterge"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Tastați aici...",
+      "strength": "Rezistenţă",
+      "weak": "Slab",
+      "fair": "Corect",
+      "good": "Bun",
+      "strong": "Puternic",
+      "requirements": "Cerințe",
+      "length": "8+ caractere",
+      "number": "Include numărul",
+      "uppercase": "Include majuscule",
+      "symbol": "Include simbolul"
+    },
+    "PayPalLink": {
+      "username": "Nume de utilizator PayPal.me",
+      "amount": "Cantitate",
+      "currency": "Valută",
+      "generate": "Genera",
+      "itemName": "Nume articol",
+      "link": "Legătură",
+      "yourLink": "Linkul dvs. PayPal",
+      "openPaypal": "Deschide PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Reguli",
+      "addRule": "Adăugați o regulă",
+      "allow": "Permite",
+      "disallow": "Nu permiteți",
+      "sitemap": "Adresa URL a sitemapului (opțional)",
+      "output": "Robots.txt generat"
+    },
+    "PercentageCalculator": {
+      "value": "Valoare",
+      "percentage": "Procent",
+      "calculate": "Calcula",
+      "result": "Rezultat",
+      "whatIs": "Ce este",
+      "of": "% din",
+      "isWhatPercentOf": "este cât % din",
+      "percentChangeFrom": "% modificare de la",
+      "to": "la"
+    },
+    "PomodoroTimer": {
+      "work": "Timpul de focalizare",
+      "shortBreak": "Pauza scurta",
+      "longBreak": "Pauza lunga",
+      "start": "Început",
+      "pause": "Pauză",
+      "reset": "Resetați",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Număr",
+      "calculate": "Calcula",
+      "factors": "Factori primi",
+      "inputLabel": "Introduceți un număr",
+      "placeholder": "de ex. 120",
+      "isPrime": "Acest număr este Prime!",
+      "isComposite": "Acest număr este compus"
+    },
+    "RoiCalculator": {
+      "investment": "Investiție",
+      "returns": "Retururi",
+      "calculate": "Calcula",
+      "roi": "ROI",
+      "profit": "Profit",
+      "finalValue": "Valoarea finală",
+      "time": "Timp (ani)",
+      "totalGain": "Câștig total",
+      "annualizedRoi": "ROI anualizat"
+    },
+    "RomanNumerals": {
+      "decimal": "Zecimal",
+      "decimalPlaceholder": "2024",
+      "roman": "român",
+      "convert": "Convertit",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Începeți înregistrarea",
+      "stopRecording": "Opriți înregistrarea",
+      "download": "Descărcați",
+      "recording": "Înregistrare..."
+    },
+    "SignatureGenerator": {
+      "draw": "Remiză",
+      "clear": "Clar",
+      "download": "Descărcați",
+      "penColor": "Culoare stilou",
+      "penSize": "Dimensiunea stiloului"
+    },
+    "SpeechToText": {
+      "startListening": "Începeți să ascultați",
+      "stopListening": "Nu mai asculta",
+      "transcript": "Transcriere",
+      "placeholder": "Transcrierea va apărea aici..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO utilizatori (id, nume, vârstă) VALUES (1, „Ioan”, 30);",
+      "convert": "Convertit",
+      "result": "Rezultat"
+    },
+    "Stopwatch": {
+      "start": "Început",
+      "stop": "Stop",
+      "reset": "Resetați",
+      "lap": "Poala"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Adresa IP",
+      "subnetMask": "Masca de subrețea",
+      "calculate": "Calcula",
+      "networkAddress": "Adresa de rețea",
+      "broadcastAddress": "Adresa de difuzare",
+      "usableHosts": "Gazde utilizabile"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Lipiți SVG",
+      "uploadSvg": "Încărcați SVG",
+      "convert": "Convertit",
+      "download": "Descărcați"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Introdu textul pentru a vorbi...",
+      "speak": "Vorbi",
+      "stop": "Stop",
+      "voice": "Voce",
+      "rate": "Rata",
+      "pitch": "Pas"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Scrie ceva...",
+      "reverse": "Verso",
+      "uppercase": "majuscule",
+      "lowercase": "Litere mici",
+      "encode": "Codifica"
+    },
+    "TimezoneConverter": {
+      "from": "Din",
+      "to": "La",
+      "convert": "Convertit",
+      "currentTime": "Ora curentă"
+    },
+    "TokenGenerator": {
+      "length": "Lungime",
+      "generate": "Genera",
+      "copy": "Copie",
+      "includeNumbers": "Includeți numere",
+      "includeSymbols": "Includeți simboluri"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Introduceți adresa URL...",
+      "parse": "Analiza",
+      "protocol": "Protocol",
+      "host": "Gazdă",
+      "path": "Cale",
+      "query": "Interogare"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Adresa URL a site-ului web",
+      "source": "Sursă",
+      "medium": "Mediu",
+      "campaign": "Campanie",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "VatCalculator": {
+      "amount": "Cantitate",
+      "vatRate": "Cota de TVA",
+      "addVat": "Adăugați TVA",
+      "removeVat": "Eliminați TVA-ul",
+      "calculate": "Calcula"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrați",
+      "pattern": "Model",
+      "duration": "Durată",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Numărul săptămânii curente",
+      "yearProgress": "Progresul anului",
+      "week": "Săptămână"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Număr de telefon",
+      "message": "Mesaj",
+      "generate": "Genera",
+      "copy": "Copie",
+      "placeholder": "Salut, sunt interesat..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Inserați adresa URL a videoclipului YouTube...",
+      "getThumbnail": "Obțineți miniatură",
+      "download": "Descărcați"
+    },
+    "CrontabGenerator": {
+      "minute": "Minut",
+      "hour": "Oră",
+      "day": "Zi",
+      "month": "Lună",
+      "weekday": "Ziua săptămânii",
+      "expression": "Expresie",
+      "description": "Descriere"
+    },
+    "ChmodCalculator": {
+      "owner": "Proprietar",
+      "group": "Grup",
+      "others": "Alţii",
+      "read": "Citire",
+      "write": "Scrie",
+      "execute": "Executa",
+      "numeric": "Numeric",
+      "symbolic": "Simbolic"
+    },
+    "HtpasswdGenerator": {
+      "username": "Nume de utilizator",
+      "password": "Parolă",
+      "algorithm": "Algoritm",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "AspectRatio": {
+      "width": "Lăţime",
+      "height": "Înălţime",
+      "ratio": "Raport",
+      "calculate": "Calcula"
+    },
+    "CssClipPath": {
+      "shape": "Formă",
+      "preview": "Previzualizare",
+      "copyCss": "Copiați CSS"
+    },
+    "CssCursor": {
+      "cursor": "Cursor",
+      "preview": "Previzualizare",
+      "copyCss": "Copiați CSS"
+    },
+    "CssTriangle": {
+      "direction": "Direcţie",
+      "size": "Dimensiune",
+      "color": "Culoare",
+      "preview": "Previzualizare",
+      "copyCss": "Copiați CSS"
+    },
+    "MetaGenerator": {
+      "title": "Titlu",
+      "description": "Descriere",
+      "keywords": "Cuvinte cheie",
+      "author": "Autor",
+      "url": "URL",
+      "image": "Imagine",
+      "generate": "Genera",
+      "copy": "Copie",
+      "titlePlaceholder": "Site-ul meu minunat",
+      "descriptionPlaceholder": "O scurtă descriere a site-ului dvs....",
+      "keywordsPlaceholder": "web, instrumente, dev",
+      "authorPlaceholder": "Numele dumneavoastră",
+      "outputPlaceholder": "Metaetichetele vor apărea aici..."
+    },
+    "OgGenerator": {
+      "title": "Titlu",
+      "description": "Descriere",
+      "url": "URL",
+      "image": "Imagine",
+      "type": "Tip",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "TwitterCard": {
+      "cardType": "Tip card",
+      "title": "Titlu",
+      "description": "Descriere",
+      "image": "Imagine",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "MarkdownTable": {
+      "rows": "Rânduri",
+      "columns": "Coloane",
+      "header": "Antet",
+      "addRow": "Adăugați un rând",
+      "addColumn": "Adăugați o coloană",
+      "generate": "Genera",
+      "copy": "Copie"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Format",
+      "copy": "Copie"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Formatare JSON: Cele mai bune practici pentru dezvoltatori",
+      "excerpt": "Aflați de ce este importantă formatarea JSON adecvată pentru depanare și cum să o automatizați în fluxul dvs. de lucru.",
+      "category": "Dezvoltare"
+    },
+    "mastering-regex": {
+      "title": "Stăpânirea expresiilor regulate: un ghid vizual",
+      "excerpt": "Regex nu trebuie să fie înfricoșător. Defalcăm modelele comune pentru validarea e-mailurilor, adresele URL și multe altele.",
+      "category": "Tutorial"
+    },
+    "cron-job-scheduling": {
+      "title": "Jobs Cron demistificat: Cum să programați sarcini",
+      "excerpt": "Înțelegeți sintaxa de 5 stele a lui Cron și cum să programați copii de rezervă, e-mailuri și scripturi pe Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "De ce managerii locali de parole sunt mai siguri (alternativă KeyPass)",
+      "excerpt": "Încălcările cloud sunt frecvente. Aflați de ce stocarea parolelor la nivel local cu criptarea AES-256 este cel mai sigur pariu pentru securitatea personală.",
+      "category": "Securitate"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Instrumente de căutare...",
+    "noResults": "Nu s-au găsit rezultate.",
+    "select": "Selecta",
+    "navigate": "Navigați"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Trimiteți feedback",
+    "feedback": "Feedback",
+    "thankYou": "Multumesc!",
+    "feedbackSent": "Feedbackul dvs. a fost trimis cu succes.",
+    "close": "Aproape",
+    "name": "Nume (opțional)",
+    "namePlaceholder": "Numele dumneavoastră",
+    "email": "E-mail (opțional)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Tip de feedback",
+    "typeSuggestion": "💡 Sugestie",
+    "typeBug": "🐛 Raport de eroare",
+    "typeFeature": "✨ Solicitare de caracteristici",
+    "typeOther": "📝 Altele",
+    "message": "Mesaj *",
+    "messagePlaceholder": "Spune-ne ce crezi...",
+    "sending": "Se trimite...",
+    "weReadEveryMessage": "Citim fiecare mesaj. Vă mulțumim că ne ajutați să ne îmbunătățim!"
+  },
+  "ShareButton": {
+    "shareTool": "Partajare instrument",
+    "copiedLink": "Link copiat!"
+  },
+  "TextDiff": {
+    "original": "Textul original",
+    "changed": "Text schimbat",
+    "update": "Actualizați diferența",
+    "old": "Vechi",
+    "new": "Nou",
+    "content": "Conţinut"
+  },
+  "CrontabGenerator": {
+    "minute": "Minut",
+    "hour": "Oră",
+    "day": "Zi",
+    "month": "Lună",
+    "weekday": "Ziua săptămânii",
+    "min": "Min",
+    "mon": "Lun",
+    "week": "Săptămână",
+    "presets": "Presetari rapide",
+    "everyMinute": "În fiecare minut",
+    "every5Minutes": "La fiecare 5 minute",
+    "everyHour": "În fiecare oră",
+    "everyDayMidnight": "În fiecare zi la miezul nopții",
+    "everyWeek": "În fiecare săptămână",
+    "everyMonth": "În fiecare lună"
+  },
+  "SpeechToText": {
+    "notSupported": "Browserul dvs. nu acceptă API-ul Web Speech. Vă rugăm să utilizați Chrome.",
+    "placeholder": "Transcrierea va apărea aici...",
+    "listening": "Ascultare...",
+    "start": "Faceți clic pe microfon pentru a începe"
+  },
+  "OgGenerator": {
+    "title": "Titlu",
+    "description": "Descriere",
+    "image": "Adresa URL a imaginii",
+    "url": "URL canonic",
+    "type": "Tip",
+    "website": "Site-ul web",
+    "article": "Articol",
+    "profile": "Profil",
+    "preview": "Previzualizare (Facebook/LinkedIn)",
+    "generatedHtml": "HTML generat",
+    "copy": "Copie"
+  },
+  "WeekNumber": {
+    "checkLabel": "Verificați numărul săptămânii pentru dată",
+    "yearProgress": "Progresul anului"
+  },
+  "RelatedTools": {
+    "title": "S-ar putea să vă placă și",
+    "subtitle": "Explorați alte instrumente populare pentru dezvoltatori",
+    "openTool": "Deschideți Instrumentul"
+  },
+  "Breadcrumb": {
+    "home": "Acasă",
+    "tools": "Instrumente"
+  },
+  "SvgToPng": {
+    "upload": "Încărcați fișierul SVG",
+    "browse": "sau faceți clic pentru a naviga",
+    "paste": "...sau lipiți codul SVG",
+    "preview": "Previzualizare PNG (scalare 2x)",
+    "download": "Descărcați PNG",
+    "errorType": "Vă rugăm să încărcați un fișier SVG valid.",
+    "errorRender": "Redarea SVG a eșuat. Asigurați-vă că este XML valid.",
+    "errorProcess": "Eroare la procesarea SVG."
+  },
+  "GradientGenerator": {
+    "config": "Configurare",
+    "colors": "Culori",
+    "type": "Tip",
+    "angle": "Unghi",
+    "random": "Aleatoriu",
+    "copyCss": "Copiați CSS",
+    "copied": "Copiat"
+  },
+  "TimezoneConverter": {
+    "date": "Data",
+    "time": "Ora (locală)",
+    "invalid": "Invalid",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Londra (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Generator de numere",
+    "listGen": "Generator de liste",
+    "coinGen": "Generator de monede",
+    "min": "Min",
+    "max": "Max",
+    "count": "Conta",
+    "generate": "Genera",
+    "listLabel": "Lista articole (unul pe rând)",
+    "pick": "Alegeți un articol aleatoriu",
+    "winner": "Câștigătorul este...",
+    "flip": "Flip Coin",
+    "heads": "Capete",
+    "tails": "Cozi"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Se înregistrează ecranul...",
+    "titleFree": "Înregistrator de ecran online gratuit",
+    "desc": "Capturați ecranul, fereastra aplicației sau fila browserului. Fără filigran, fără limită de timp.",
+    "start": "Începeți înregistrarea",
+    "stop": "Opriți înregistrarea",
+    "browserSupport": "Funcționează cel mai bine în Chrome, Edge și Firefox pe desktop."
+  },
+  "CssCursor": {
+    "hoverTest": "Treceți cursorul aici pentru a testa"
+  },
+  "VatCalculator": {
+    "amount": "Cantitate",
+    "rate": "Rata TVA (%)",
+    "addVat": "Adăugați TVA",
+    "removeVat": "Eliminați TVA-ul",
+    "netAmount": "Suma netă",
+    "vatAmount": "Suma TVA",
+    "grossTotal": "Total brut",
+    "netTotal": "Total net",
+    "grossAmount": "Suma brută"
+  },
+  "MyIP": {
+    "ipLabel": "Adresa IP publică",
+    "loading": "Încărcare...",
+    "isp": "Furnizor de Internet (ISP)",
+    "location": "Locaţie",
+    "asn": "ASN",
+    "timezone": "fus orar",
+    "note": "Aceasta este adresa IP vizibilă pentru site-urile web pe care le vizitați. Poate fi diferit de IP-ul dvs. local dacă utilizați un VPN sau un proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Introduceți adresa URL",
+    "formatted": "Ieșire formatată",
+    "copy": "Copie",
+    "copied": "Copiat",
+    "placeholder": "Lipiți o adresă URL mai sus pentru a o vedea formatată."
+  },
+  "WhatsAppLink": {
+    "phone": "Număr de telefon (cu codul țării)",
+    "message": "Mesaj pre-completat",
+    "hint": "Nu includeți +, - sau ().",
+    "yourLink": "Link-ul tău WhatsApp",
+    "open": "Deschide Chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Introduceți adresa URL",
+    "params": "Parametrii de interogare",
+    "error": "Adresă URL nevalidă"
+  },
+  "FaviconGenerator": {
+    "upload": "Încărcați imaginea",
+    "browse": "Recomandat: 512x512 PNG",
+    "original": "Original",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Descărcați Favicon.png",
+    "note": "* În prezent generează faviconuri PNG de 32x32. Redenumiți în .ico dacă este necesar pentru suportul vechi."
+  },
+  "SubnetCalculator": {
+    "ip": "Adresa IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Calcula",
+    "subnetMask": "Masca de subrețea",
+    "networkAddress": "Adresa de rețea",
+    "firstHost": "Prima gazdă",
+    "lastHost": "Ultima gazdă",
+    "broadcastAddress": "Adresa de difuzare",
+    "totalHosts": "Total gazde"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Introduceți titlul articolului / textul",
+    "generated": "Slug generat",
+    "copy": "Copiați Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "SQL de intrare (numai instrucțiunile INSERT)",
+    "convert": "Convertiți în JSON",
+    "error": "Nu s-a putut analiza SQL. Asigurați-vă că sunt instrucțiuni standard INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Adăugați un rând",
+    "addCol": "+ Adăugați o coloană",
+    "headerPlaceholder": "Antet",
+    "outputLabel": "Ieșire Markdown",
+    "copy": "Copiați Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Tip card",
+    "siteHandle": "Detaliu site (de exemplu, @twitter)",
+    "title": "Titlu",
+    "description": "Descriere",
+    "imageUrl": "Adresa URL a imaginii",
+    "preview": "Previzualizare",
+    "generatedHtml": "HTML generat",
+    "copy": "Copie",
+    "placeholderTitle": "Titlul cardului",
+    "placeholderDesc": "Descrierea intra aici..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Introdu textul pentru a vorbi...",
+    "voice": "Voce",
+    "speed": "Viteză",
+    "pitch": "Pas",
+    "speak": "Vorbi"
+  },
+  "TokenGenerator": {
+    "length": "Lungime",
+    "includeNumbers": "Includeți numere",
+    "includeSymbols": "Includeți simboluri",
+    "generate": "Generați Token"
+  },
+  "CssTriangle": {
+    "direction": "Direcţie",
+    "color": "Culoare",
+    "width": "Lățime (px)",
+    "height": "Înălțime (px)",
+    "copy": "Copie"
+  },
+  "UnitConverter": {
+    "length": "Lungime",
+    "weight": "Greutate",
+    "temperature": "Temperatură",
+    "meters": "Contoare",
+    "kilometers": "Kilometri",
+    "centimeters": "centimetri",
+    "millimeters": "Milimetri",
+    "inches": "inci",
+    "feet": "Picioarele",
+    "yards": "Yarzi",
+    "miles": "Miles",
+    "kilograms": "Kilograme",
+    "grams": "Grame",
+    "pounds": "Lire sterline",
+    "ounces": "Uncii",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Forme",
+    "preview": "Previzualizare",
+    "cssCode": "Cod CSS",
+    "copy": "Copie",
+    "copied": "Copiat"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Încărcați o imagine",
+    "uploadDesc": "JPG, PNG sau WebP. Îl comprimăm local.",
+    "selectImage": "Selectați Imagine",
+    "settings": "Setări de compresie",
+    "quality": "Calitate",
+    "originalSize": "Dimensiune originală",
+    "compressedSize": "Dimensiune comprimată",
+    "saving": "Economisire",
+    "download": "Descărcați"
+  },
+  "HtpasswdGenerator": {
+    "username": "Nume de utilizator",
+    "password": "Parolă",
+    "algorithm": "Algoritm",
+    "generate": "Generare intrare",
+    "result": "Rezultat",
+    "sha1": "SHA-1 (Nesigur, dar standard)",
+    "notSupported": "Doar SHA-1 este acceptat în această versiune la nivelul clientului."
+  },
+  "MetaTags": {
+    "pageTitle": "Titlul paginii",
+    "description": "Descriere",
+    "author": "Autor"
+  },
+  "AgeCalculator": {
+    "dob": "Data nașterii",
+    "age": "Vârstă",
+    "years": "ani",
+    "months": "luni",
+    "days": "zile",
+    "nextBirthday": "Urmatoarea zi de nastere"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Adresa URL a site-ului web (obligatoriu)",
+    "source": "Sursa campaniei (obligatorie)",
+    "medium": "Mediu de campanie (obligatoriu)",
+    "name": "Numele campaniei (obligatoriu)",
+    "term": "Termenul campaniei (opțional)",
+    "content": "Conținutul campaniei (opțional)",
+    "generatedUrl": "Adresa URL generată",
+    "copy": "Copiați adresa URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Ora Unix curentă",
+    "timestampLabel": "Marcaj temporal (secunde)",
+    "isoLabel": "Format ISO Data",
+    "utcDate": "Data UTC",
+    "localDate": "Data locală",
+    "relative": "Relativ"
+  },
+  "SignatureGenerator": {
+    "color": "Culoare",
+    "width": "Lăţime",
+    "clear": "Clar",
+    "download": "Descărcați PNG",
+    "signHere": "Semnează aici",
+    "note": "Semnăturile sunt procesate local în browserul dvs. Nu le stocăm și nu le încărcăm."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Previzualizare live"
+  },
+  "CipherTools": {
+    "shiftAmount": "Suma de schimb (N)",
+    "inputText": "Introduceți text",
+    "outputText": "Text de ieșire",
+    "rot13": "ROT13",
+    "caesar": "Cezar (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Rezoluția ecranului",
+    "browser": "Browser",
+    "cpuCores": "Nuclee CPU",
+    "battery": "Baterie",
+    "detailedSpecs": "Specificații detaliate",
+    "userAgent": "Agent utilizator",
+    "platform": "Platformă",
+    "windowSize": "Dimensiunea ferestrei",
+    "pixelRatio": "Raportul pixelilor",
+    "colorDepth": "Adâncimea culorii",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookie-uri activate",
+    "onlineStatus": "Stare online",
+    "unknown": "Necunoscut",
+    "yes": "Da",
+    "no": "Nu",
+    "enabled": "Activat",
+    "disabled": "Dezactivat"
+  },
+  "ChmodCalculator": {
+    "owner": "Proprietar",
+    "group": "Grup",
+    "public": "Public",
+    "read": "Citire",
+    "write": "Scrie",
+    "execute": "Executa",
+    "numeric": "Numeric",
+    "symbolic": "Simbolic"
+  },
+  "PasswordManager": {
+    "title": "Manager de parole",
+    "desc": "Stocați și gestionați-vă în siguranță parolele la nivel local.",
+    "unlock": "Deblocați Seiful",
+    "create": "Creați un nou seif",
+    "unlockDesc": "Introduceți parola principală pentru a vă accesa conturile.",
+    "createDesc": "Setați o parolă principală puternică. Acesta vă criptează datele local.",
+    "masterPassword": "Parolă principală",
+    "unlockBtn": "Deblocați",
+    "createBtn": "Creați seif",
+    "note": "Datele sunt stocate în browser folosind criptarea AES-GCM. Nu vă putem recupera parola dacă este pierdută.",
+    "myPasswords": "Parolele mele",
+    "addNew": "Adăugați nou",
+    "search": "Căutați conturi...",
+    "noPasswords": "Nu s-au găsit parole.",
+    "addAccount": "Adăugați un cont",
+    "accountTitle": "Titlu/Site web",
+    "username": "Nume de utilizator / E-mail",
+    "password": "Parolă",
+    "url": "URL (Opțional)",
+    "save": "Salvați contul",
+    "cancel": "Anula",
+    "incorrectPassword": "Parolă incorectă sau date corupte.",
+    "loading": "Încărcare..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Detalii site",
+    "pageTitle": "Titlul paginii",
+    "description": "Descriere",
+    "keywords": "Cuvinte cheie (separate prin virgulă)",
+    "author": "Autor",
+    "socialPreview": "Previzualizare socială (OG și Twitter)",
+    "websiteUrl": "Adresa URL a site-ului web",
+    "previewImage": "Adresa URL a imaginii de previzualizare",
+    "generatedHtml": "HTML generat",
+    "copy": "Copiați HTML",
+    "copied": "Copiat"
+  },
+  "VibrationTester": {
+    "worksOnly": "Funcționează numai pe dispozitive cu hardware cu vibrații (de exemplu, telefoane).",
+    "duration": "Durata (ms)",
+    "vibrateOnce": "Vibrați o dată",
+    "pulsePattern": "Model puls",
+    "longPulse": "Puls lung",
+    "stop": "Stop"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "De ce este importantă formatarea JSON",
+      "block_2": "JSON (JavaScript Object Notation) este limbajul web.Dar JSON brut returnat de la API-uri este adesea o mizerie redusă.formatarea îl face lizibil, depanabil și sigur.",
+      "block_3": "1.Lizibilitatea este rege",
+      "block_4": "Când depanați un răspuns API de 5000 de linii, indentarea salvează vieți.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Formatorul JSON</a> folosește indentarea în 2 sau 4 spații pentru a clarifica structura.",
+      "block_5": "2.Validare",
+      "block_6": "O singură virgulă lipsă vă poate rupe aplicația.Validați-vă întotdeauna JSON înainte de a-l trimite în fișierele de configurare.",
+      "block_7": "Concluzie",
+      "block_8": "Nu pierdeți timpul verificând manual parantezele.Utilizați instrumente automate."
+    },
+    "mastering-regex": {
+      "block_1": "Regex explicat",
+      "block_2": "Expresiile regulate sunt puternice, dar confuze.să le vizualizăm.",
+      "block_3": "Modele comune",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c]border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Testează aceste modele instantaneu cu <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Testerul Regex</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "Cele 5 stele ale lui Cron",
+      "block_2": "Minut, Ora, Ziua lunii, Luna, Ziua săptămânii.Asta este tot.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Exemple</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Rulează în fiecare zi la miezul nopții: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var()*></*->\">0-color\n<p class=\"mb-6 text-[var(--foreground)]\">Rulează la fiecare 15 minute: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var() *-]\">*-/var() *-->*</code>",
+      "block_4": "Exemple",
+      "block_5": "Aveți nevoie de ajutor?Utilizați <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Generatorul Cron</a> pentru a crea expresii vizual."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Problema cu Cloud Vaults",
+      "block_2": "LastPass, Okta și alți giganți au suferit încălcări.Când seiful dvs. este online, este o țintă.",
+      "block_3": "Soluția: criptare locală",
+      "block_4": "Noul nostru <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580> browser-ul dvs. rulează întregul Manager de parole]\">Local></strong></strong>.Utilizează <strong class=\"text-[var(--title-color)] font-semibold\">criptare AES-GCM pe 256 de biți</strong> derivată din parola dvs. principală folosind PBKDF2.",
+      "block_5": "Cum funcționează",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero cunoștințe:</strong> nu vă vedem niciodată parola.Nu părăsește niciodată dispozitivul dvs.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Stocare offline:</strong> seiful dvs. criptat este stocat în spațiul de stocare local al browserului dvs.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportabil:</strong> puteți exporta/sau copia de rezervă oricând datele criptate brute.</li>",
+      "block_7": "Nu mai ai încredere în cloud cu cheile tale principale.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Încercați Managerul local de parole</a> astăzi."
+    }
+  }
+}

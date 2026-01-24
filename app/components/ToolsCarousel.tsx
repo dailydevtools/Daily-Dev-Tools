@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tool } from "../data/tools";
 import ToolIcon from "./ToolIcon";
+import { useTranslations } from "next-intl";
 
 interface ToolsCarouselProps {
     tools: Tool[];
@@ -14,6 +15,8 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
     const scrollRef = useRef<HTMLDivElement>(null);
     const [canScrollLeft, setCanScrollLeft] = useState(false);
     const [canScrollRight, setCanScrollRight] = useState(true);
+    const tTools = useTranslations('Tools');
+    const t = useTranslations('Homepage');
 
     const checkScroll = () => {
         if (scrollRef.current) {
@@ -42,50 +45,26 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
     };
 
     return (
-        <div style={{ position: "relative", group: "carousel-group" } as any}>
+        <div className="relative group/carousel-group">
             {/* Scroll Container */}
             <div
                 ref={scrollRef}
                 onScroll={checkScroll}
-                className="no-scrollbar"
-                style={{
-                    display: "flex",
-                    gap: 16,
-                    overflowX: "auto",
-                    scrollSnapType: "x mandatory",
-                    padding: "4px 0",
-                }}
+                className="flex gap-4 overflow-x-auto snap-x snap-mandatory py-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
             >
                 {tools.map((tool) => (
                     <Link
                         key={tool.id}
                         href={`/tools/${tool.id}`}
-                        className="glass-card flex-shrink-0 snap-start min-w-[85%] md:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)]"
-                        style={{
-                            padding: "20px",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 16,
-                            textDecoration: "none",
-                            border: "1px solid var(--border-color)",
-                            background: "var(--card-bg)",
-                            scrollSnapAlign: "start",
-                            boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
-                        }}
+                        className="group flex-shrink-0 snap-start min-w-[85%] md:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)] p-5 flex items-center gap-4 no-underline border border-[var(--card-border)] bg-[var(--card-bg)] shadow-[0_4px_16px_rgba(0,0,0,0.15)] backdrop-blur-xl rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1"
                     >
-                        <div
-                            className="icon-box-primary"
-                            style={{
-                                width: 48,
-                                height: 48,
-                            }}
-                        >
-                            <ToolIcon name={tool.icon} size={24} style={{ color: '#fb923c' }} />
+                        <div className="w-12 h-12 flex items-center justify-center bg-[#f973161a] text-[#fb923c] rounded-xl border border-[#f9731633] transition-transform duration-300 group-hover:scale-110">
+                            <ToolIcon name={tool.icon} size={24} className="text-[#fb923c]" />
                         </div>
                         <div className="text-start">
-                            <span style={{ color: "var(--muted-text)", fontSize: 11, textTransform: 'uppercase', letterSpacing: 0.5, fontWeight: 600, display: 'block', marginBottom: 2 }}>{tool.category}</span>
-                            <span style={{ color: "var(--title-color)", fontSize: 16, fontWeight: 600, display: 'block' }}>
-                                {tool.name}
+                            <span className="text-[var(--muted-text)] text-[11px] uppercase tracking-[0.5px] font-semibold block mb-0.5">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
+                            <span className="text-[var(--title-color)] text-base font-semibold block">
+                                {tTools(`${tool.id}.name`, { fallback: tool.name })}
                             </span>
                         </div>
                     </Link>
@@ -96,26 +75,7 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
             <button
                 onClick={() => scroll("left")}
                 disabled={!canScrollLeft}
-                style={{
-                    position: "absolute",
-                    left: -20,
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    width: 40,
-                    height: 40,
-                    borderRadius: 20,
-                    background: "var(--card-bg)",
-                    border: "1px solid var(--border-color)",
-                    color: "var(--title-color)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: canScrollLeft ? "pointer" : "not-allowed",
-                    zIndex: 10,
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
-                    opacity: canScrollLeft ? 1 : 0.3,
-                    transition: "all 0.2s"
-                }}
+                className={`absolute -left-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--title-color)] flex items-center justify-center z-10 shadow-[0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-200 ${canScrollLeft ? "cursor-pointer opacity-100" : "cursor-not-allowed opacity-30"}`}
             >
                 <ChevronLeft size={20} />
             </button>
@@ -123,26 +83,7 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
             <button
                 onClick={() => scroll("right")}
                 disabled={!canScrollRight}
-                style={{
-                    position: "absolute",
-                    right: -20,
-                    top: "50%",
-                    transform: "translateY(-50%)",
-                    width: 40,
-                    height: 40,
-                    borderRadius: 20,
-                    background: "var(--card-bg)",
-                    border: "1px solid var(--border-color)",
-                    color: "var(--title-color)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    cursor: canScrollRight ? "pointer" : "not-allowed",
-                    zIndex: 10,
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
-                    opacity: canScrollRight ? 1 : 0.3,
-                    transition: "all 0.2s"
-                }}
+                className={`absolute -right-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--title-color)] flex items-center justify-center z-10 shadow-[0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-200 ${canScrollRight ? "cursor-pointer opacity-100" : "cursor-not-allowed opacity-30"}`}
             >
                 <ChevronRight size={20} />
             </button>

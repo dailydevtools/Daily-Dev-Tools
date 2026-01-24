@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Hulpmiddelen",
+    "blog": "Bloggen",
+    "github": "GitHub",
+    "searchPlaceholder": "Zoeken..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Gratis Online Ontwikkelaarstools",
+    "description": "90+ gratis online tools voor iedereen. Formatteerders, converters, generatoren en hulpprogramma's. Snel, privé en geen registratie vereist."
+  },
+  "NotFound": {
+    "title": "Pagina niet gevonden",
+    "description": "Sorry, we konden de pagina die je zoekt niet vinden.",
+    "backHome": "Terug naar Home",
+    "suggestions": "Probeer te zoeken naar een tool of blader door onze populaire tools hieronder."
+  },
+  "Homepage": {
+    "heroTag": "100+ Gratis Tools • Privé • Geen Registratie",
+    "titleLine1": "Dagelijkse Ontwikkelaarstools",
+    "titleLine2": "Die Gewoon Werken",
+    "subtitle": "Snelle, mooie en privacygerichte tools voor ontwikkelaars, ontwerpers en iedereen. Alles draait in je browser.",
+    "recentTools": "Recent Gebruikt",
+    "noRecentText": "Begin met het gebruik van tools om ze hier te zien",
+    "searchResults": "Zoekresultaten",
+    "popularTools": "Populair",
+    "toolsCount": "{count} tools beschikbaar",
+    "features": {
+      "fast": {
+        "title": "Razendsnel",
+        "desc": "Alle tools draaien lokaal in je browser"
+      },
+      "private": {
+        "title": "100% Privé",
+        "desc": "Je gegevens verlaten nooit je apparaat"
+      },
+      "simple": {
+        "title": "Gebouwd voor Iedereen",
+        "desc": "Eenvoudig genoeg voor iedereen, krachtig voor pro's"
+      },
+      "free": {
+        "title": "Altijd Gratis",
+        "desc": "Geen accounts, geen limieten"
+      }
+    },
+    "categories": {
+      "All": "Alles",
+      "Favorites": "Favorieten",
+      "Developer": "Ontwikkelaar",
+      "Design": "Ontwerp",
+      "Content": "Inhoud",
+      "Security": "Beveiliging",
+      "Productivity": "Productiviteit",
+      "Math": "Wiskunde",
+      "Utility": "Hulpprogramma"
+    },
+    "cta": {
+      "title": "Klaar om je productiviteit te verhogen?",
+      "text": "Begin gratis met het gebruik van onze ontwikkelaarstools. Geen registratie vereist, geen gegevensverzameling.",
+      "button": "Start Gratis"
+    },
+    "openTool": "Gereedschap openen",
+    "noResults": "Geen tools gevonden die overeenkomen met",
+    "clearFilters": "Filters wissen"
+  },
+  "Footer": {
+    "builtWith": "Gebouwd met ❤️ door",
+    "allTools": "Alle Tools",
+    "blog": "Bloggen",
+    "about": "Over",
+    "privacy": "Privacy",
+    "terms": "Voorwaarden"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON-formatter",
+      "description": "Formatteer, valideer en verfraai JSON onmiddellijk"
+    },
+    "base64-encoder": {
+      "name": "Base64-encoder",
+      "description": "Codeer en decodeer Base64-reeksen"
+    },
+    "url-encoder": {
+      "name": "URL-encoder",
+      "description": "Codeer en decodeer URL's veilig"
+    },
+    "jwt-decoder": {
+      "name": "JWT-decoder",
+      "description": "Decodeer en inspecteer JSON-webtokens"
+    },
+    "regex-tester": {
+      "name": "Regex-tester",
+      "description": "Test reguliere expressies in realtime"
+    },
+    "hash-generator": {
+      "name": "Hasjgenerator",
+      "description": "Genereer MD5-, SHA-1-, SHA-256-hashes"
+    },
+    "uuid-generator": {
+      "name": "UUID-generator",
+      "description": "Genereer direct willekeurige UUID's/GUID's"
+    },
+    "css-minifier": {
+      "name": "CSS-verkleiner",
+      "description": "Verklein en optimaliseer uw CSS-code"
+    },
+    "markdown-editor": {
+      "name": "Afwaarderingsvoorbeeld",
+      "description": "Realtime Markdown-editor en preview"
+    },
+    "color-converter": {
+      "name": "Kleurconverter",
+      "description": "Converteer Hex, RGB, HSL en CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Tijdstempel-tool",
+      "description": "Converteer Unix-tijdstempels naar menselijke datums"
+    },
+    "sql-formatter": {
+      "name": "SQL-formatter",
+      "description": "Formatteer en verfraai SQL-query's"
+    },
+    "password-generator": {
+      "name": "Wachtwoordgenerator",
+      "description": "Creëer veilige, willekeurige wachtwoorden"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Genereer tijdelijke tekst voor ontwerpen"
+    },
+    "image-base64": {
+      "name": "Afbeelding naar Base64",
+      "description": "Converteer afbeeldingen naar Base64-tekenreeksen"
+    },
+    "qr-generator": {
+      "name": "QR-codegenerator",
+      "description": "Genereer QR-codes voor URL's en tekst"
+    },
+    "word-counter": {
+      "name": "Woordteller",
+      "description": "Tel woorden, karakters en leestijd"
+    },
+    "case-converter": {
+      "name": "Case-converter",
+      "description": "Kameel-, slang-, kebab- en pascalkoffer"
+    },
+    "text-diff": {
+      "name": "Tekstverschilcontrole",
+      "description": "Vergelijk twee teksten en zoek de verschillen"
+    },
+    "slug-generator": {
+      "name": "Slakkengenerator",
+      "description": "Genereer SEO-vriendelijke URL-slugs"
+    },
+    "gradient-generator": {
+      "name": "Verloopgenerator",
+      "description": "Maak prachtige CSS-gradiënten"
+    },
+    "image-compressor": {
+      "name": "Beeldcompressor",
+      "description": "Comprimeer afbeeldingen lokaal en privé"
+    },
+    "device-info": {
+      "name": "Apparaatinformatie",
+      "description": "Bekijk scherm-, browser- en systeeminformatie"
+    },
+    "random-generator": {
+      "name": "Willekeurige generator",
+      "description": "Kies nummers, munten en lijstitems"
+    },
+    "unit-converter": {
+      "name": "Eenheidsomzetter",
+      "description": "Converteer lengte, gewicht en temperatuur"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro-timer",
+      "description": "Focustimer voor productiviteit"
+    },
+    "yt-thumbnail": {
+      "name": "Miniatuurdownloader",
+      "description": "Ontvang YouTube-videominiaturen"
+    },
+    "my-ip": {
+      "name": "Wat is mijn IP",
+      "description": "Bekijk openbare IP- en netwerkinformatie"
+    },
+    "keycode-info": {
+      "name": "Sleutelcode-info",
+      "description": "Debugger voor JavaScript-toetsenbordgebeurtenissen"
+    },
+    "signature-generator": {
+      "name": "Handtekeninggenerator",
+      "description": "Digitale handtekeningen tekenen en downloaden"
+    },
+    "screen-recorder": {
+      "name": "Schermrecorder",
+      "description": "Scherm opnemen en video downloaden"
+    },
+    "credit-card-validator": {
+      "name": "Kaartvalidator",
+      "description": "Valideer creditcardnummers"
+    },
+    "password-manager": {
+      "name": "Lokale wachtwoordbeheerder",
+      "description": "Bewaar wachtwoorden veilig lokaal met encryptie"
+    },
+    "deep-link-tester": {
+      "name": "Deeplink-tester",
+      "description": "Test, start en beheer mobiele deep links"
+    },
+    "image-converter": {
+      "name": "Beeldconvertor",
+      "description": "Converteer PNG/JPG lokaal naar WebP om afbeeldingen te optimaliseren"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Converteer JSON naar CSV en omgekeerd"
+    },
+    "bmi-calculator": {
+      "name": "BMI-calculator",
+      "description": "Bereken de Body Mass Index (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS-zoekopdracht",
+      "description": "Vraag direct DNS-records (A, MX, NS) op"
+    },
+    "age-calculator": {
+      "name": "Leeftijdscalculator",
+      "description": "Bereken de precieze leeftijd en het totale aantal dagen"
+    },
+    "loan-calculator": {
+      "name": "Leningcalculator",
+      "description": "Bereken maandelijkse EMI en totale rente"
+    },
+    "discount-calculator": {
+      "name": "Kortingscalculator",
+      "description": "Bereken de verkoopprijs en besparingen"
+    },
+    "interest-calculator": {
+      "name": "Rentecalculator",
+      "description": "Eenvoudige versus samengestelde rentecalculator"
+    },
+    "html-encoder": {
+      "name": "HTML-encoder/decoder",
+      "description": "Ontsnap aan speciale tekens of decodeer HTML"
+    },
+    "list-sorter": {
+      "name": "Lijstsorteerder",
+      "description": "Lijsten sorteren, omkeren, in willekeurige volgorde afspelen en ontdubbelen"
+    },
+    "box-shadow": {
+      "name": "Boxschaduwgenerator",
+      "description": "Genereer visueel CSS-vakschaduwen"
+    },
+    "date-diff": {
+      "name": "Datum verschil",
+      "description": "Bereken de duur tussen twee datums"
+    },
+    "sql-to-json": {
+      "name": "SQL naar JSON",
+      "description": "Converteer SQL INSERT's naar JSON-objecten"
+    },
+    "keyword-density": {
+      "name": "Zoekwoorddichtheid",
+      "description": "Analyseer de zoekwoordfrequentie voor SEO"
+    },
+    "json-diff": {
+      "name": "JSON-verschil",
+      "description": "Vergelijk twee JSON-objecten naast elkaar"
+    },
+    "cipher-tools": {
+      "name": "Codeerhulpmiddelen",
+      "description": "ROT13 en Caesar Cipher-encoder/decoder"
+    },
+    "token-generator": {
+      "name": "Willekeurige tokengenerator",
+      "description": "Genereer veilige willekeurige tokens"
+    },
+    "favicon-generator": {
+      "name": "Favicon-generator",
+      "description": "Maak .ico- en PNG-favicons"
+    },
+    "robots-generator": {
+      "name": "Robots.txt-generator",
+      "description": "Maak robots.txt voor SEO"
+    },
+    "grid-generator": {
+      "name": "CSS-rastergenerator",
+      "description": "Visuele CSS-rasterlay-outbouwer"
+    },
+    "hmac-generator": {
+      "name": "HMAC-generator",
+      "description": "Genereer gecodeerde hash-berichtverificatiecodes"
+    },
+    "http-status": {
+      "name": "HTTP-statuscodes",
+      "description": "Referentielijst met HTTP-statuscodes"
+    },
+    "week-number": {
+      "name": "Weeknummer",
+      "description": "Huidig ​​weeknummer en jaarvoortgang"
+    },
+    "text-tools": {
+      "name": "Teksttransformator",
+      "description": "Tekst omkeren, spiegelen en coderen"
+    },
+    "url-parser": {
+      "name": "URL-parser",
+      "description": "Splits URL's in protocol, host, pad, params"
+    },
+    "markdown-table": {
+      "name": "Markdown-tabelgenerator",
+      "description": "Maak visueel Markdown-tabellen"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp-linkgenerator",
+      "description": "Creëer directe WhatsApp-chatlinks"
+    },
+    "paypal-link": {
+      "name": "PayPal-linkgenerator",
+      "description": "Maak PayPal.me-betalingslinks aan"
+    },
+    "svg-to-png": {
+      "name": "SVG naar PNG",
+      "description": "Converteer SVG-code/bestand naar PNG-afbeelding"
+    },
+    "prime-factors": {
+      "name": "Primaire factoren",
+      "description": "Zoek priemfactoren van een getal"
+    },
+    "iban-validator": {
+      "name": "IBAN-validator",
+      "description": "Valideer internationale bankrekeningnummers"
+    },
+    "ascii-converter": {
+      "name": "ASCII-converter",
+      "description": "Converteer tekst naar ASCII-decimale codes"
+    },
+    "utm-builder": {
+      "name": "UTM-bouwer",
+      "description": "Creëer campagne-URL's voor Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Metataggenerator",
+      "description": "Genereer SEO-metatags voor websites"
+    },
+    "og-generator": {
+      "name": "Open grafiekgenerator",
+      "description": "Maak Open Graph-metatags voor sociaal delen"
+    },
+    "twitter-card": {
+      "name": "Twitter-kaartgenerator",
+      "description": "Maak Twitter Card-metatags"
+    },
+    "aspect-ratio": {
+      "name": "Rekenmachine voor beeldverhouding",
+      "description": "Bereken beeldverhoudingen en afmetingen"
+    },
+    "css-cursor": {
+      "name": "CSS-cursor",
+      "description": "Visuele verwijzing naar CSS-cursoreigenschappen"
+    },
+    "css-triangle": {
+      "name": "CSS-driehoekgenerator",
+      "description": "Genereer pure CSS-driehoeken"
+    },
+    "percentage-calculator": {
+      "name": "Percentagecalculator",
+      "description": "Bereken percentages en veranderingen"
+    },
+    "vat-calculator": {
+      "name": "BTW-calculator",
+      "description": "Bereken de bedragen voor het toevoegen/verwijderen van BTW"
+    },
+    "stopwatch": {
+      "name": "Stopwatch",
+      "description": "Eenvoudige browsergebaseerde stopwatch"
+    },
+    "text-to-speech": {
+      "name": "Tekst naar spraak",
+      "description": "Zet tekst om in gesproken stem"
+    },
+    "speech-to-text": {
+      "name": "Spraak naar tekst",
+      "description": "Zet gesproken stem om in tekst"
+    },
+    "vibration-tester": {
+      "name": "Trillingstester",
+      "description": "Trilmotor van testapparaat"
+    },
+    "chmod-calculator": {
+      "name": "Chmod-calculator",
+      "description": "Bereken Linux-bestandsrechten"
+    },
+    "crontab-generator": {
+      "name": "Crontab-generator",
+      "description": "Genereer cron-schema-expressies"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd-generator",
+      "description": "Genereer basisverificatiegegevens"
+    },
+    "subnet-calculator": {
+      "name": "Subnetcalculator",
+      "description": "Bereken netwerksubnetten en IP-bereiken"
+    },
+    "mac-generator": {
+      "name": "MAC-adresgenerator",
+      "description": "Genereer willekeurige MAC-adressen"
+    },
+    "timezone-converter": {
+      "name": "Tijdzone-omzetter",
+      "description": "Converteer tijd tussen meerdere zones"
+    },
+    "email-validator": {
+      "name": "E-mailvalidator",
+      "description": "Valideer het e-mailformaat en detecteer typefouten"
+    },
+    "password-strength": {
+      "name": "Wachtwoordsterkte",
+      "description": "Controleer de wachtwoordsterktescore"
+    },
+    "roman-numerals": {
+      "name": "Romeinse cijferomzetter",
+      "description": "Converteren tussen Romeinse en decimale getallen"
+    },
+    "margin-calculator": {
+      "name": "Margecalculator",
+      "description": "Bereken de winstmarge en opslag"
+    },
+    "roi-calculator": {
+      "name": "ROI-calculator",
+      "description": "Bereken het rendement op uw investering"
+    },
+    "fuel-calculator": {
+      "name": "Brandstofkostencalculator",
+      "description": "Bereken de brandstofkosten voor de rit"
+    },
+    "pretty-print-url": {
+      "name": "Mooie afdruk-URL",
+      "description": "Formatteer en verfraai URL's voor leesbaarheid"
+    }
+  },
+  "Terms": {
+    "title": "Servicevoorwaarden",
+    "lastUpdated": "Laatst bijgewerkt",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptatie van voorwaarden",
+        "content": "Door DailyDevTools te openen en te gebruiken, accepteert u en gaat u ermee akkoord gebonden te zijn aan de voorwaarden en bepalingen van deze overeenkomst."
+      },
+      "useLicense": {
+        "title": "2. Gebruik licentie",
+        "content": "DailyDevTools is gratis te gebruiken voor persoonlijke en commerciële doeleinden. U mag niet:",
+        "list": {
+          "0": "Probeer aanzienlijke delen van de site te reverse-engineeren of schrapen.",
+          "1": "De website gebruiken op een manier die schade aan de website veroorzaakt of kan veroorzaken of de beschikbaarheid of toegankelijkheid van de website aantast."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Disclaimer",
+        "content": "De tools op DailyDevTools worden geleverd \"zoals ze zijn\". Wij geven geen garanties, expliciet of impliciet..."
+      },
+      "limitations": {
+        "title": "4. Beperkingen",
+        "content": "In geen geval zijn DailyDevTools of haar leveranciers aansprakelijk voor enige schade..."
+      },
+      "revisions": {
+        "title": "5. Revisies",
+        "content": "De materialen die op DailyDevTools verschijnen, kunnen technische, typografische of fotografische fouten bevatten..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt",
+    "intro": "Welkom bij DailyDevTools. Wij respecteren uw privacy en doen er alles aan om uw persoonlijke gegevens te beschermen.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Hoe onze tools werken (lokale verwerking)",
+        "content": "Het allerbelangrijkste: de tools draaien volledig in uw browser. Gegevens verlaten nooit uw apparaat."
+      },
+      "dataCollection": {
+        "title": "3. Gegevens die we verzamelen",
+        "content": "Wij verzamelen geen inhoud. Voor gebruiksstatistieken gebruiken wij Google Analytics."
+      },
+      "cookies": {
+        "title": "4. Koekjes",
+        "content": "We gebruiken cookies voor analyses en lokale voorkeuren."
+      },
+      "thirdParty": {
+        "title": "5. Links naar derden",
+        "content": "Onze site kan links naar derden bevatten."
+      },
+      "changes": {
+        "title": "6. Wijzigingen in dit beleid",
+        "content": "We kunnen dit beleid van tijd tot tijd bijwerken."
+      },
+      "contact": {
+        "title": "7. Neem contact met ons op",
+        "content": "Neem contact met ons op via GitHub of sociale media."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Bronnen voor ontwikkelaars",
+    "subtitle": "Duikt diep in de tools die we bouwen en de concepten erachter.",
+    "readMore": "Lees meer",
+    "backToBlog": "Terug naar Blog",
+    "enjoyedArticle": "Genoten van dit artikel?",
+    "checkTools": "Bekijk onze hulpmiddelen"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Invoer",
+      "output": "Uitvoer",
+      "format": "Formaat",
+      "minify": "Kleineren",
+      "download": "Downloaden",
+      "copy": "Kopiëren",
+      "paste": "Plakken",
+      "copied": "Gekopieerd!",
+      "upload": "Uploaden",
+      "sample": "Steekproef",
+      "clear": "Wissen",
+      "indent": "Inspringen:",
+      "chars": "tekens",
+      "error": "Fout",
+      "invalid": "Ongeldige invoer",
+      "result": "Resultaat",
+      "generate": "Genereer",
+      "calculate": "Berekenen",
+      "convert": "Overzetten",
+      "validate": "Valideer",
+      "resultPlaceholder": "Het resultaat verschijnt hier..."
+    },
+    "Base64Encoder": {
+      "encode": "Coderen",
+      "decode": "Decoderen",
+      "textToEncode": "Tekst om te coderen",
+      "base64ToDecode": "Base64 om te decoderen",
+      "enterText": "Voer tekst in om te coderen...",
+      "enterBase64": "Voer Base64 in om te decoderen...",
+      "encodeAction": "Codeer naar Base64",
+      "decodeAction": "Decodeer vanuit Base64",
+      "base64Output": "Base64-uitvoer",
+      "decodedText": "Gedecodeerde tekst",
+      "resultPlaceholder": "Het resultaat verschijnt hier...",
+      "invalidInput": "Ongeldige invoer voor {mode}"
+    },
+    "QrGenerator": {
+      "content": "Inhoud",
+      "placeholder": "https://example.com",
+      "customization": "Maatwerk",
+      "foreground": "Voorgrond",
+      "background": "Achtergrond",
+      "download": "Downloaden"
+    },
+    "HashGenerator": {
+      "inputText": "Invoertekst",
+      "placeholder": "Voer tekst in om te hashen...",
+      "waiting": "Wachten op invoer..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Nieuw genereren",
+      "configuration": "Configuratie",
+      "length": "Wachtwoordlengte",
+      "uppercase": "Hoofdletters (A-Z)",
+      "numbers": "Cijfers (0-9)",
+      "symbols": "Symbolen (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Plak uw JSON hier...",
+      "outputPlaceholder": "Geformatteerde JSON wordt hier weergegeven...",
+      "spaces": "ruimtes"
+    },
+    "UrlEncoder": {
+      "encode": "Coderen",
+      "decode": "Decoderen",
+      "urlToEncode": "URL om te coderen",
+      "encodedUrlToDecode": "Gecodeerde URL om te decoderen",
+      "enterUrlToEncode": "Voer de URL of tekst in om te coderen...",
+      "enterUrlToDecode": "Voer de gecodeerde URL in om te decoderen...",
+      "encodeAction": "Codeer URL",
+      "decodeAction": "Decodeer URL",
+      "encodedUrl": "Gecodeerde URL",
+      "decodedUrl": "Gedecodeerde URL",
+      "resultPlaceholder": "Het resultaat verschijnt hier...",
+      "chars": "tekens",
+      "invalidInput": "Ongeldige invoer voor {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Plak uw JWT-token",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "JWT decoderen",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Uitgegeven",
+      "expires": "Verloopt"
+    },
+    "RegexTester": {
+      "expression": "Uitdrukking",
+      "expressionPlaceholder": "Groep vastleggen (abc)...",
+      "testString": "Testreeks",
+      "testStringPlaceholder": "Plak hier uw testreeks...",
+      "matchHighlights": "Match hoogtepunten",
+      "matches": "wedstrijden",
+      "matchInfo": "Wedstrijdinformatie",
+      "match": "Overeenkomst",
+      "index": "Index",
+      "group": "Groep",
+      "noMatches": "Geen overeenkomsten gevonden",
+      "highlightPlaceholder": "Wedstrijden worden hier uitgelicht...",
+      "flagsHelp": "g: globaal, i: hoofdlettergebruik negeren, m: meerdere regels"
+    },
+    "UuidGenerator": {
+      "generate": "Genereer",
+      "generateCount": "Genereer:",
+      "copyAll": "Kopieer alles",
+      "copyUuid": "Kopieer UUID",
+      "generatedAt": "Lokaal gegenereerd om {time} • UUID's van versie 4"
+    },
+    "WordCounter": {
+      "words": "Woorden",
+      "characters": "Karakters",
+      "sentences": "Zinnen",
+      "paragraphs": "Paragrafen",
+      "readingTime": "Leestijd",
+      "min": "min",
+      "textInput": "Tekstinvoer",
+      "inputPlaceholder": "Begin met typen of plak uw tekst hier om te analyseren...",
+      "clear": "Duidelijk"
+    },
+    "TimestampConverter": {
+      "timestamp": "Tijdstempel",
+      "humanDate": "Menselijke datum",
+      "convert": "Overzetten",
+      "currentTimestamp": "Huidige tijdstempel",
+      "inputPlaceholder": "Voer Unix-tijdstempel in..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Plak hier uw SQL-query...",
+      "outputPlaceholder": "Geformatteerde SQL verschijnt hier..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Plak hier uw CSS-code...",
+      "outputPlaceholder": "Hier verschijnt geminimaliseerde CSS..."
+    },
+    "MarkdownEditor": {
+      "editor": "Editor",
+      "preview": "Voorbeeld",
+      "inputPlaceholder": "Voer hier Markdown in..."
+    },
+    "TextDiff": {
+      "original": "Originele tekst",
+      "changed": "Gewijzigde tekst",
+      "compare": "Vergelijken",
+      "differences": "Verschillen"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Voer tekst in om te converteren...",
+      "generatedSlug": "Gegenereerde slak"
+    },
+    "ImageCompressor": {
+      "selectImage": "Selecteer Afbeelding",
+      "quality": "Kwaliteit",
+      "compress": "Comprimeren",
+      "download": "Downloaden",
+      "originalSize": "Origineel formaat",
+      "compressedSize": "Gecomprimeerde grootte"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragrafen",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "GradientGenerator": {
+      "angle": "Hoek",
+      "colors": "Kleuren",
+      "addColor": "Kleur toevoegen",
+      "copyCss": "Kopieer CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Geboortedatum",
+      "calculate": "Berekenen",
+      "years": "Jaren",
+      "months": "Maanden",
+      "days": "Dagen",
+      "totalDays": "Totaal aantal dagen",
+      "nextBirthday": "Volgende verjaardag binnen"
+    },
+    "AsciiConverter": {
+      "text": "Tekst",
+      "ascii": "ASCII",
+      "convert": "Overzetten",
+      "inputPlaceholder": "Tekst invoeren..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horizontaal (X)",
+      "vertical": "Verticaal (Y)",
+      "blur": "Vervagen",
+      "spread": "Spreiding",
+      "colorOpacity": "Kleur en dekking",
+      "inset": "Inzet"
+    },
+    "BmiCalculator": {
+      "metric": "Metrisch (kg/cm)",
+      "imperial": "Imperiaal (lbs/inch)",
+      "weight": "Gewicht",
+      "height": "Hoogte",
+      "calculate": "Bereken BMI",
+      "bmiScore": "Uw BMI-score",
+      "underweight": "Ondergewicht",
+      "normal": "Normaal gewicht",
+      "overweight": "Overgewicht",
+      "obese": "Zwaarlijvig"
+    },
+    "CaseConverter": {
+      "inputText": "Invoertekst",
+      "inputPlaceholder": "Typ hier uw tekst...",
+      "upper": "UPPERCASE",
+      "lower": "kleine letters",
+      "title": "Titel zaak",
+      "sentence": "Zin geval",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Kopiëren",
+      "conversions": "Conversies",
+      "clear": "Duidelijk"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX-kleur",
+      "rgbLabels": "RGB-kleur",
+      "hslLabels": "HSL-kleur",
+      "cmykLabels": "CMYK-kleur",
+      "copy": "Kopiëren",
+      "hexToRgbNote": "* Ondersteunt momenteel alleen conversie van HEX naar RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Kaartnummer",
+      "validate": "Valideer",
+      "valid": "Geldig creditcardnummer",
+      "invalid": "Ongeldig creditcardnummer",
+      "placeholder": "Kaartnummer invoeren...",
+      "type": "Kaarttype",
+      "checkDigit": "Controleer cijfer",
+      "luhnValid": "Luhn-algoritme geldig"
+    },
+    "CipherTools": {
+      "encode": "Coderen",
+      "decode": "Decoderen",
+      "rot13": "ROT13",
+      "caesar": "Caesarcijfer",
+      "shift": "Verschuiving",
+      "inputPlaceholder": "Hallo wereld",
+      "outputPlaceholder": "Het resultaat verschijnt hier..."
+    },
+    "CronGenerator": {
+      "minute": "Minuut",
+      "hour": "Uur",
+      "dayMonth": "Dag (maand)",
+      "month": "Maand",
+      "dayWeek": "Dag (week)",
+      "presets": "Algemene voorinstellingen",
+      "everyMinute": "Elke minuut",
+      "everyHour": "Elk uur",
+      "everyDayMidnight": "Elke dag om middernacht",
+      "everySunday": "Elke zondag",
+      "everyMonth": "Elke maand",
+      "everyYear": "Elk jaar",
+      "formatInfo": "Formaat: * * * * * (Minuut Uur DayOfMonth Maand DayOfWeek)",
+      "usageInfo": "Gebruik * voor 'elke', */n voor 'elke n', 1,2,3 voor een specifieke lijst."
+    },
+    "DateDiff": {
+      "startDate": "Startdatum",
+      "endDate": "Einddatum",
+      "calculate": "Berekenen",
+      "difference": "Verschil",
+      "years": "Jaren",
+      "months": "Maanden",
+      "days": "Dagen",
+      "totalDays": "Totaal aantal dagen",
+      "totalWeeks": "Totaal weken",
+      "totalHours": "Totaal aantal uren"
+    },
+    "DeepLinkTester": {
+      "testLink": "Testlink",
+      "savedLinks": "Opgeslagen koppelingen",
+      "searchPlaceholder": "Opgeslagen koppelingen zoeken...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Launch",
+      "save": "Redden",
+      "delete": "Verwijderen",
+      "opens": "opent",
+      "scanQr": "Scan met uw mobiele apparaat om te testen",
+      "noSavedLinks": "Geen opgeslagen links gevonden.",
+      "enterLabel": "Voer een label in voor deze link:",
+      "saved": "Opgeslagen!",
+      "confirmDelete": "Deze link verwijderen?"
+    },
+    "DeviceInfo": {
+      "screen": "Scherm",
+      "browser": "Browser",
+      "system": "Systeem",
+      "resolution": "Oplossing",
+      "colorDepth": "Kleurdiepte",
+      "userAgent": "Gebruikersagent",
+      "platform": "Platform",
+      "language": "Taal"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Originele prijs",
+      "discountPercent": "Korting",
+      "additionalDiscount": "Extra korting",
+      "calculate": "Berekenen",
+      "youSave": "Jij bespaart",
+      "finalPrice": "Uiteindelijke prijs",
+      "salesTax": "Omzetbelasting"
+    },
+    "DnsLookup": {
+      "domain": "Domein",
+      "lookup": "Opzoeken",
+      "recordType": "Recordtype",
+      "results": "Resultaten",
+      "placeholder": "voorbeeld.com",
+      "status": "Status",
+      "time": "Tijd",
+      "server": "Server",
+      "answerSection": "Antwoordsectie",
+      "name": "Naam",
+      "type": "Type",
+      "ttl": "TTL",
+      "data": "Gegevens",
+      "noRecords": "Geen gegevens gevonden"
+    },
+    "EmailValidator": {
+      "email": "E-mailadres",
+      "validate": "Valideer",
+      "valid": "Geldig",
+      "invalid": "Ongeldig",
+      "suggestion": "Suggestie",
+      "placeholder": "gebruiker@voorbeeld.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Afbeelding uploaden",
+      "generate": "Genereer",
+      "download": "Downloaden",
+      "sizes": "Maten"
+    },
+    "FuelCalculator": {
+      "distance": "Afstand",
+      "fuelEfficiency": "Brandstofefficiëntie",
+      "fuelPrice": "Brandstofprijs",
+      "calculate": "Berekenen",
+      "result": "Resultaat",
+      "totalCost": "Totale kosten",
+      "fuelNeeded": "Brandstof nodig"
+    },
+    "GridGenerator": {
+      "columns": "Kolommen",
+      "rows": "Rijen",
+      "gap": "Gat",
+      "preview": "Voorbeeld",
+      "copyCss": "Kopieer CSS",
+      "rowGap": "Rijafstand",
+      "colGap": "Kolomopening",
+      "options": "Opties"
+    },
+    "HmacGenerator": {
+      "message": "Bericht",
+      "secret": "Geheim",
+      "algorithm": "Algoritme",
+      "generate": "Genereer",
+      "inputPlaceholder": "Tekst invoeren...",
+      "secretPlaceholder": "Geheim..."
+    },
+    "HtmlEncoder": {
+      "encode": "Coderen",
+      "decode": "Decoderen",
+      "resultPlaceholder": "Het resultaat verschijnt hier...",
+      "inputPlaceholder": "Plak hier HTML..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Zoekcode (bijvoorbeeld 404) of naam...",
+      "code": "Code",
+      "name": "Naam",
+      "description": "Beschrijving"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Valideer",
+      "valid": "Geldig",
+      "invalid": "Ongeldig",
+      "placeholder": "Vul IBAN in...",
+      "inputLabel": "Vul het IBAN-nummer in",
+      "validTitle": "Geldige benchmark",
+      "invalidTitle": "Ongeldige controlesom",
+      "validDesc": "Het IBAN-formaat en de controlesom zijn correct.",
+      "invalidDesc": "Het IBAN komt niet overeen met het checksum-algoritme."
+    },
+    "ImageBase64": {
+      "upload": "Uploaden",
+      "convert": "Overzetten",
+      "copy": "Kopiëren",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Afbeelding uploaden",
+      "convertToBase64": "Converteren naar Base64",
+      "convertToImage": "Converteren naar afbeelding",
+      "base64String": "Base64-reeks",
+      "download": "Downloaden"
+    },
+    "ImageConverter": {
+      "selectImage": "Selecteer Afbeelding",
+      "format": "Formaat",
+      "convert": "Overzetten",
+      "download": "Downloaden",
+      "quality": "Kwaliteit"
+    },
+    "InterestCalculator": {
+      "principal": "Voornaam",
+      "rate": "Rente",
+      "time": "Tijdsperiode (jaren)",
+      "calculate": "Berekenen",
+      "simpleInterest": "Eenvoudig",
+      "compoundInterest": "Verbinding",
+      "totalAmount": "Totale waarde",
+      "type": "Type",
+      "frequency": "Samengestelde frequentie",
+      "annually": "Jaarlijks",
+      "monthly": "Maandelijks",
+      "daily": "Dagelijks",
+      "year": "Jaar"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Voer JSON in...",
+      "convert": "Overzetten",
+      "format": "Formaat",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON naar CSV",
+      "csvToJson": "CSV naar JSON",
+      "jsonInput": "JSON-invoer",
+      "csvInput": "CSV-invoer",
+      "jsonOutput": "JSON-uitvoer",
+      "csvOutput": "CSV-uitvoer"
+    },
+    "JsonDiff": {
+      "original": "Originele JSON",
+      "modified": "Gewijzigde JSON",
+      "compare": "Vergelijken",
+      "differences": "Verschillen"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Druk op een willekeurige toets",
+      "key": "Sleutel",
+      "code": "Code",
+      "keyCode": "Sleutelcode",
+      "which": "welke",
+      "location": "Locatie",
+      "modifiers": "Modificatoren",
+      "standard": "Standaard",
+      "left": "Links",
+      "right": "Rechts",
+      "numpad": "Numpad",
+      "space": "(Ruimte)",
+      "info": "Geef JavaScript-gebeurtenis KeyCode, Code en meer weer."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Plak uw tekst hier om de zoekwoordfrequentie te analyseren...",
+      "analyze": "Analyseren",
+      "keyword": "Trefwoord",
+      "count": "Graaf",
+      "density": "Dikte"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Vul hier uw lijst in...",
+      "sort": "Soort",
+      "reverse": "Achteruit",
+      "shuffle": "Schudden",
+      "deduplicate": "Ontdubbelen",
+      "ascending": "Oplopend",
+      "descending": "Aflopend",
+      "length": "Lengte",
+      "trim": "Trim leeg",
+      "lines": "Lijnen:",
+      "chars": "Karakters:"
+    },
+    "LoanCalculator": {
+      "principal": "Voornaam",
+      "interestRate": "Rente",
+      "term": "Termijn",
+      "calculate": "Berekenen",
+      "monthlyPayment": "Maandelijkse betaling",
+      "totalInterest": "Totale rente",
+      "totalPayment": "Totale betaling",
+      "loanDetails": "Leningdetails",
+      "loanAmount": "Leningbedrag",
+      "loanTerm": "Leningtermijn",
+      "years": "Jaren",
+      "months": "Maanden",
+      "interest": "Interesse"
+    },
+    "MacGenerator": {
+      "generate": "Genereer",
+      "copy": "Kopiëren",
+      "separator": "Scheidingsteken",
+      "format": "Formaat",
+      "quantity": "Hoeveelheid",
+      "uppercase": "Hoofdletters"
+    },
+    "MarginCalculator": {
+      "cost": "Kosten",
+      "price": "Verkoopprijs",
+      "calculate": "Berekenen",
+      "margin": "Marge",
+      "markup": "Opmaak",
+      "profit": "Winst",
+      "revenue": "Winst",
+      "netProfit": "Netto winst",
+      "grossMargin": "Bruto marge"
+    },
+    "PasswordManager": {
+      "masterPassword": "Hoofdwachtwoord",
+      "unlock": "Ontgrendelen",
+      "searchPlaceholder": "Accounts zoeken...",
+      "addNew": "Nieuw toevoegen",
+      "siteName": "Sitenaam",
+      "username": "Gebruikersnaam",
+      "password": "Wachtwoord",
+      "save": "Redden",
+      "delete": "Verwijderen"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Typ hier...",
+      "strength": "Kracht",
+      "weak": "Zwak",
+      "fair": "Eerlijk",
+      "good": "Goed",
+      "strong": "Sterk",
+      "requirements": "Vereisten",
+      "length": "8+ tekens",
+      "number": "Inclusief nummer",
+      "uppercase": "Inclusief hoofdletters",
+      "symbol": "Inclusief symbool"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me-gebruikersnaam",
+      "amount": "Hoeveelheid",
+      "currency": "Munteenheid",
+      "generate": "Genereer",
+      "itemName": "Artikelnaam",
+      "link": "Link",
+      "yourLink": "Uw PayPal-link",
+      "openPaypal": "PayPal openen"
+    },
+    "RobotsGenerator": {
+      "rules": "Regels",
+      "addRule": "Regel toevoegen",
+      "allow": "Toestaan",
+      "disallow": "Niet toestaan",
+      "sitemap": "Sitemap-URL (optioneel)",
+      "output": "Gegenereerde robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Waarde",
+      "percentage": "Percentage",
+      "calculate": "Berekenen",
+      "result": "Resultaat",
+      "whatIs": "Wat is",
+      "of": "% van",
+      "isWhatPercentOf": "is wat % van",
+      "percentChangeFrom": "% verandering van",
+      "to": "naar"
+    },
+    "PomodoroTimer": {
+      "work": "Focustijd",
+      "shortBreak": "Korte pauze",
+      "longBreak": "Lange pauze",
+      "start": "Begin",
+      "pause": "Pauze",
+      "reset": "Opnieuw instellen",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Nummer",
+      "calculate": "Berekenen",
+      "factors": "Primaire factoren",
+      "inputLabel": "Voer een nummer in",
+      "placeholder": "bijv. 120",
+      "isPrime": "Dit nummer is Prime!",
+      "isComposite": "Dit nummer is samengesteld"
+    },
+    "RoiCalculator": {
+      "investment": "Investering",
+      "returns": "Retouren",
+      "calculate": "Berekenen",
+      "roi": "ROI",
+      "profit": "Winst",
+      "finalValue": "Eindwaarde",
+      "time": "Tijd (jaren)",
+      "totalGain": "Totale winst",
+      "annualizedRoi": "Geannualiseerde ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Decimale",
+      "decimalPlaceholder": "2024",
+      "roman": "Romeins",
+      "convert": "Overzetten",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Begin met opnemen",
+      "stopRecording": "Stop met opnemen",
+      "download": "Downloaden",
+      "recording": "Opnemen..."
+    },
+    "SignatureGenerator": {
+      "draw": "Tekenen",
+      "clear": "Duidelijk",
+      "download": "Downloaden",
+      "penColor": "Penkleur",
+      "penSize": "Pengrootte"
+    },
+    "SpeechToText": {
+      "startListening": "Begin met luisteren",
+      "stopListening": "Stop met luisteren",
+      "transcript": "Afschrift",
+      "placeholder": "Het transcript verschijnt hier..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO gebruikers (id, naam, leeftijd) VALUES (1, 'John', 30);",
+      "convert": "Overzetten",
+      "result": "Resultaat"
+    },
+    "Stopwatch": {
+      "start": "Begin",
+      "stop": "Stop",
+      "reset": "Opnieuw instellen",
+      "lap": "Ronde"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-adres",
+      "subnetMask": "Subnetmasker",
+      "calculate": "Berekenen",
+      "networkAddress": "Netwerkadres",
+      "broadcastAddress": "Broadcast-adres",
+      "usableHosts": "Bruikbare hosts"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Plak SVG",
+      "uploadSvg": "Upload SVG",
+      "convert": "Overzetten",
+      "download": "Downloaden"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Voer tekst in om uit te spreken...",
+      "speak": "Spreken",
+      "stop": "Stop",
+      "voice": "Stem",
+      "rate": "Tarief",
+      "pitch": "Toonhoogte"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Typ iets...",
+      "reverse": "Achteruit",
+      "uppercase": "Hoofdletters",
+      "lowercase": "Kleine letters",
+      "encode": "Coderen"
+    },
+    "TimezoneConverter": {
+      "from": "Van",
+      "to": "Naar",
+      "convert": "Overzetten",
+      "currentTime": "Huidige tijd"
+    },
+    "TokenGenerator": {
+      "length": "Lengte",
+      "generate": "Genereer",
+      "copy": "Kopiëren",
+      "includeNumbers": "Inclusief cijfers",
+      "includeSymbols": "Inclusief symbolen"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Voer URL in...",
+      "parse": "Parseren",
+      "protocol": "Protocol",
+      "host": "Gastheer",
+      "path": "Pad",
+      "query": "Vraag"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Website-URL",
+      "source": "Bron",
+      "medium": "Medium",
+      "campaign": "Campagne",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "VatCalculator": {
+      "amount": "Hoeveelheid",
+      "vatRate": "BTW-tarief",
+      "addVat": "BTW toevoegen",
+      "removeVat": "Btw afschaffen",
+      "calculate": "Berekenen"
+    },
+    "VibrationTester": {
+      "vibrate": "Trillen",
+      "pattern": "Patroon",
+      "duration": "Duur",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Huidig ​​weeknummer",
+      "yearProgress": "Jaar vooruitgang",
+      "week": "Week"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefoonnummer",
+      "message": "Bericht",
+      "generate": "Genereer",
+      "copy": "Kopiëren",
+      "placeholder": "Hallo, ik ben geïnteresseerd..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Plak de YouTube-video-URL...",
+      "getThumbnail": "Miniatuur ophalen",
+      "download": "Downloaden"
+    },
+    "CrontabGenerator": {
+      "minute": "Minuut",
+      "hour": "Uur",
+      "day": "Dag",
+      "month": "Maand",
+      "weekday": "Weekdag",
+      "expression": "Uitdrukking",
+      "description": "Beschrijving"
+    },
+    "ChmodCalculator": {
+      "owner": "Eigenaar",
+      "group": "Groep",
+      "others": "Anderen",
+      "read": "Lezen",
+      "write": "Schrijven",
+      "execute": "Uitvoeren",
+      "numeric": "Numeriek",
+      "symbolic": "Symbolisch"
+    },
+    "HtpasswdGenerator": {
+      "username": "Gebruikersnaam",
+      "password": "Wachtwoord",
+      "algorithm": "Algoritme",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "AspectRatio": {
+      "width": "Breedte",
+      "height": "Hoogte",
+      "ratio": "Verhouding",
+      "calculate": "Berekenen"
+    },
+    "CssClipPath": {
+      "shape": "Vorm",
+      "preview": "Voorbeeld",
+      "copyCss": "Kopieer CSS"
+    },
+    "CssCursor": {
+      "cursor": "Cursor",
+      "preview": "Voorbeeld",
+      "copyCss": "Kopieer CSS"
+    },
+    "CssTriangle": {
+      "direction": "Richting",
+      "size": "Maat",
+      "color": "Kleur",
+      "preview": "Voorbeeld",
+      "copyCss": "Kopieer CSS"
+    },
+    "MetaGenerator": {
+      "title": "Titel",
+      "description": "Beschrijving",
+      "keywords": "Trefwoorden",
+      "author": "Auteur",
+      "url": "URL",
+      "image": "Afbeelding",
+      "generate": "Genereer",
+      "copy": "Kopiëren",
+      "titlePlaceholder": "Mijn geweldige website",
+      "descriptionPlaceholder": "Een korte beschrijving van uw site...",
+      "keywordsPlaceholder": "web, tools, ontwikkelaar",
+      "authorPlaceholder": "Jouw naam",
+      "outputPlaceholder": "Metatags verschijnen hier..."
+    },
+    "OgGenerator": {
+      "title": "Titel",
+      "description": "Beschrijving",
+      "url": "URL",
+      "image": "Afbeelding",
+      "type": "Type",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "TwitterCard": {
+      "cardType": "Kaarttype",
+      "title": "Titel",
+      "description": "Beschrijving",
+      "image": "Afbeelding",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "MarkdownTable": {
+      "rows": "Rijen",
+      "columns": "Kolommen",
+      "header": "Koptekst",
+      "addRow": "Rij toevoegen",
+      "addColumn": "Kolom toevoegen",
+      "generate": "Genereer",
+      "copy": "Kopiëren"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Formaat",
+      "copy": "Kopiëren"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON-opmaak: best practices voor ontwikkelaars",
+      "excerpt": "Ontdek waarom de juiste JSON-opmaak belangrijk is voor foutopsporing en hoe u deze in uw workflow kunt automatiseren.",
+      "category": "Ontwikkeling"
+    },
+    "mastering-regex": {
+      "title": "Reguliere expressies beheersen: een visuele gids",
+      "excerpt": "Regex hoeft niet eng te zijn. We analyseren algemene patronen voor e-mailvalidatie, URL's en meer.",
+      "category": "Handleiding"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs gedemystificeerd: taken plannen",
+      "excerpt": "Begrijp de 5-sterrensyntaxis van Cron en hoe u back-ups, e-mails en scripts op Linux plant.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Waarom lokale wachtwoordbeheerders veiliger zijn (KeyPass-alternatief)",
+      "excerpt": "Cloudinbreuken komen vaak voor. Ontdek waarom het lokaal opslaan van wachtwoorden met AES-256-codering de veiligste gok is voor persoonlijke veiligheid.",
+      "category": "Beveiliging"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Zoekhulpmiddelen...",
+    "noResults": "Geen resultaten gevonden.",
+    "select": "Selecteer",
+    "navigate": "Navigeren"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Stuur feedback",
+    "feedback": "Feedback",
+    "thankYou": "Bedankt!",
+    "feedbackSent": "Uw feedback is succesvol verzonden.",
+    "close": "Dichtbij",
+    "name": "Naam (optioneel)",
+    "namePlaceholder": "Jouw naam",
+    "email": "E-mail (optioneel)",
+    "emailPlaceholder": "jouw@e-mail.com",
+    "feedbackType": "Feedbacktype",
+    "typeSuggestion": "💡 Suggestie",
+    "typeBug": "🐛 Bugrapport",
+    "typeFeature": "✨ Functieverzoek",
+    "typeOther": "📝Anders",
+    "message": "Bericht *",
+    "messagePlaceholder": "Vertel ons wat je denkt...",
+    "sending": "Verzenden...",
+    "weReadEveryMessage": "Wij lezen elk bericht. Bedankt dat je ons helpt verbeteren!"
+  },
+  "ShareButton": {
+    "shareTool": "Gereedschap delen",
+    "copiedLink": "Gekopieerde link!"
+  },
+  "TextDiff": {
+    "original": "Originele tekst",
+    "changed": "Gewijzigde tekst",
+    "update": "Update verschil",
+    "old": "Oud",
+    "new": "Nieuw",
+    "content": "Inhoud"
+  },
+  "CrontabGenerator": {
+    "minute": "Minuut",
+    "hour": "Uur",
+    "day": "Dag",
+    "month": "Maand",
+    "weekday": "Weekdag",
+    "min": "Min",
+    "mon": "ma",
+    "week": "Week",
+    "presets": "Snelle voorinstellingen",
+    "everyMinute": "Elke minuut",
+    "every5Minutes": "Elke 5 minuten",
+    "everyHour": "Elk uur",
+    "everyDayMidnight": "Elke dag om middernacht",
+    "everyWeek": "Elke week",
+    "everyMonth": "Elke maand"
+  },
+  "SpeechToText": {
+    "notSupported": "Uw browser ondersteunt de Web Speech API niet. Gebruik alstublieft Chrome.",
+    "placeholder": "Het transcript verschijnt hier...",
+    "listening": "Luisteren...",
+    "start": "Klik op de microfoon om te starten"
+  },
+  "OgGenerator": {
+    "title": "Titel",
+    "description": "Beschrijving",
+    "image": "Afbeeldings-URL",
+    "url": "Canonieke URL",
+    "type": "Type",
+    "website": "Website",
+    "article": "Artikel",
+    "profile": "Profiel",
+    "preview": "Voorbeeld (Facebook/LinkedIn)",
+    "generatedHtml": "Gegenereerde HTML",
+    "copy": "Kopiëren"
+  },
+  "WeekNumber": {
+    "checkLabel": "Controleer weeknummer voor datum",
+    "yearProgress": "Jaar vooruitgang"
+  },
+  "RelatedTools": {
+    "title": "Misschien vind je het ook leuk",
+    "subtitle": "Ontdek andere populaire ontwikkelaarstools",
+    "openTool": "Gereedschap openen"
+  },
+  "Breadcrumb": {
+    "home": "Thuis",
+    "tools": "Hulpmiddelen"
+  },
+  "SvgToPng": {
+    "upload": "Upload SVG-bestand",
+    "browse": "of klik om te bladeren",
+    "paste": "...of plak SVG-code",
+    "preview": "PNG-voorbeeld (2x schaal)",
+    "download": "PNG downloaden",
+    "errorType": "Upload een geldig SVG-bestand.",
+    "errorRender": "Kan SVG niet renderen. Zorg ervoor dat het een geldige XML is.",
+    "errorProcess": "Fout bij verwerken van SVG."
+  },
+  "GradientGenerator": {
+    "config": "Configuratie",
+    "colors": "Kleuren",
+    "type": "Type",
+    "angle": "Hoek",
+    "random": "Willekeurig",
+    "copyCss": "Kopieer CSS",
+    "copied": "Gekopieerd"
+  },
+  "TimezoneConverter": {
+    "date": "Datum",
+    "time": "Tijd (lokaal)",
+    "invalid": "Ongeldig",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Londen (GMT/BST)",
+      "paris": "Parijs (CET/CEST)",
+      "tokyo": "Tokio (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Nummergenerator",
+    "listGen": "Lijstgenerator",
+    "coinGen": "Muntgenerator",
+    "min": "Min",
+    "max": "Max",
+    "count": "Graaf",
+    "generate": "Genereer",
+    "listLabel": "Lijstitems (één per regel)",
+    "pick": "Kies een willekeurig item",
+    "winner": "De winnaar is...",
+    "flip": "Munt omdraaien",
+    "heads": "Hoofden",
+    "tails": "Staarten"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Uw scherm opnemen...",
+    "titleFree": "Gratis online schermrecorder",
+    "desc": "Leg uw scherm, app-venster of browsertabblad vast. Geen watermerk, geen tijdslimiet.",
+    "start": "Begin met opnemen",
+    "stop": "Stop met opnemen",
+    "browserSupport": "Werkt het beste in Chrome, Edge en Firefox op desktop."
+  },
+  "CssCursor": {
+    "hoverTest": "Beweeg hierheen om te testen"
+  },
+  "VatCalculator": {
+    "amount": "Hoeveelheid",
+    "rate": "Btw-tarief (%)",
+    "addVat": "BTW toevoegen",
+    "removeVat": "Btw afschaffen",
+    "netAmount": "Netto bedrag",
+    "vatAmount": "BTW-bedrag",
+    "grossTotal": "Bruto Totaal",
+    "netTotal": "Netto totaal",
+    "grossAmount": "Bruto bedrag"
+  },
+  "MyIP": {
+    "ipLabel": "Uw openbare IP-adres",
+    "loading": "Laden...",
+    "isp": "Internetprovider (ISP)",
+    "location": "Locatie",
+    "asn": "ASN",
+    "timezone": "Tijdzone",
+    "note": "Dit is het IP-adres dat zichtbaar is voor websites die u bezoekt. Als u een VPN of proxy gebruikt, kan dit afwijken van uw lokale IP-adres."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Voer URL in",
+    "formatted": "Geformatteerde uitvoer",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd",
+    "placeholder": "Plak hierboven een URL om deze opgemaakt te zien."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefoonnummer (met landcode)",
+    "message": "Vooraf ingevuld bericht",
+    "hint": "Neem geen +, - of () op.",
+    "yourLink": "Jouw WhatsApp-link",
+    "open": "Chat openen"
+  },
+  "UrlParser": {
+    "enterUrl": "Voer URL in",
+    "params": "Queryparameters",
+    "error": "Ongeldige URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Afbeelding uploaden",
+    "browse": "Aanbevolen: PNG van 512 x 512",
+    "original": "Origineel",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Download Favicon.png",
+    "note": "* Genereert momenteel 32x32 PNG-favicons. Hernoem de naam naar .ico indien nodig voor oudere ondersteuning."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-adres",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Berekenen",
+    "subnetMask": "Subnetmasker",
+    "networkAddress": "Netwerkadres",
+    "firstHost": "Eerste gastheer",
+    "lastHost": "Laatste gastheer",
+    "broadcastAddress": "Broadcast-adres",
+    "totalHosts": "Totaal aantal hosts"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Voer de titel/tekst van het artikel in",
+    "generated": "Gegenereerde slak",
+    "copy": "Kopieer Slak"
+  },
+  "SqlToJson": {
+    "inputLabel": "Invoer-SQL (alleen INSERT-instructies)",
+    "convert": "Converteren naar JSON",
+    "error": "Kan SQL niet parseren. Zorg ervoor dat het standaard INSERT INTO-instructies zijn."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Rij toevoegen",
+    "addCol": "+ Kolom toevoegen",
+    "headerPlaceholder": "Koptekst",
+    "outputLabel": "Afwaarderingsuitvoer",
+    "copy": "Kopieer Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Kaarttype",
+    "siteHandle": "Sitehandvat (bijvoorbeeld @twitter)",
+    "title": "Titel",
+    "description": "Beschrijving",
+    "imageUrl": "Afbeeldings-URL",
+    "preview": "Voorbeeld",
+    "generatedHtml": "Gegenereerde HTML",
+    "copy": "Kopiëren",
+    "placeholderTitle": "Kaarttitel",
+    "placeholderDesc": "Beschrijving komt hier..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Voer tekst in om uit te spreken...",
+    "voice": "Stem",
+    "speed": "Snelheid",
+    "pitch": "Toonhoogte",
+    "speak": "Spreken"
+  },
+  "TokenGenerator": {
+    "length": "Lengte",
+    "includeNumbers": "Inclusief cijfers",
+    "includeSymbols": "Inclusief symbolen",
+    "generate": "Token genereren"
+  },
+  "CssTriangle": {
+    "direction": "Richting",
+    "color": "Kleur",
+    "width": "Breedte (px)",
+    "height": "Hoogte (px)",
+    "copy": "Kopiëren"
+  },
+  "UnitConverter": {
+    "length": "Lengte",
+    "weight": "Gewicht",
+    "temperature": "Temperatuur",
+    "meters": "Meters",
+    "kilometers": "Kilometers",
+    "centimeters": "Centimeter",
+    "millimeters": "Millimeters",
+    "inches": "Inch",
+    "feet": "Voeten",
+    "yards": "Werven",
+    "miles": "Mijlen",
+    "kilograms": "Kilogrammen",
+    "grams": "Gram",
+    "pounds": "Ponden",
+    "ounces": "Ons",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Vormen",
+    "preview": "Voorbeeld",
+    "cssCode": "CSS-code",
+    "copy": "Kopiëren",
+    "copied": "Gekopieerd"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Upload een afbeelding",
+    "uploadDesc": "JPG, PNG of WebP. Wij comprimeren het lokaal.",
+    "selectImage": "Selecteer Afbeelding",
+    "settings": "Compressie-instellingen",
+    "quality": "Kwaliteit",
+    "originalSize": "Origineel formaat",
+    "compressedSize": "Gecomprimeerde grootte",
+    "saving": "Besparing",
+    "download": "Downloaden"
+  },
+  "HtpasswdGenerator": {
+    "username": "Gebruikersnaam",
+    "password": "Wachtwoord",
+    "algorithm": "Algoritme",
+    "generate": "Genereer invoer",
+    "result": "Resultaat",
+    "sha1": "SHA-1 (onveilig maar standaard)",
+    "notSupported": "Alleen SHA-1 wordt ondersteund in deze clientversie."
+  },
+  "MetaTags": {
+    "pageTitle": "Paginatitel",
+    "description": "Beschrijving",
+    "author": "Auteur"
+  },
+  "AgeCalculator": {
+    "dob": "Geboortedatum",
+    "age": "Leeftijd",
+    "years": "jaren",
+    "months": "maanden",
+    "days": "dagen",
+    "nextBirthday": "Volgende verjaardag"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Website-URL (vereist)",
+    "source": "Campagnebron (vereist)",
+    "medium": "Campagnemedium (vereist)",
+    "name": "Campagnenaam (vereist)",
+    "term": "Campagnetermijn (optioneel)",
+    "content": "Campagne-inhoud (optioneel)",
+    "generatedUrl": "Gegenereerde URL",
+    "copy": "Kopieer URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Huidige Unix-tijd",
+    "timestampLabel": "Tijdstempel (seconden)",
+    "isoLabel": "ISO-datumformaat",
+    "utcDate": "UTC-datum",
+    "localDate": "Lokale datum",
+    "relative": "Relatief"
+  },
+  "SignatureGenerator": {
+    "color": "Kleur",
+    "width": "Breedte",
+    "clear": "Duidelijk",
+    "download": "PNG downloaden",
+    "signHere": "Teken hier",
+    "note": "Handtekeningen worden lokaal in uw browser verwerkt. Wij slaan ze niet op en uploaden ze niet."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Live voorbeeld"
+  },
+  "CipherTools": {
+    "shiftAmount": "Dienstbedrag (N)",
+    "inputText": "Invoertekst",
+    "outputText": "Uitvoertekst",
+    "rot13": "ROT13",
+    "caesar": "Caesar (+3)",
+    "shift1": "Verschuiving +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Schermresolutie",
+    "browser": "Browser",
+    "cpuCores": "CPU-kernen",
+    "battery": "Batterij",
+    "detailedSpecs": "Gedetailleerde specificaties",
+    "userAgent": "Gebruikersagent",
+    "platform": "Platform",
+    "windowSize": "Venstergrootte",
+    "pixelRatio": "Pixelverhouding",
+    "colorDepth": "Kleurdiepte",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookies ingeschakeld",
+    "onlineStatus": "Onlinestatus",
+    "unknown": "Onbekend",
+    "yes": "Ja",
+    "no": "Nee",
+    "enabled": "Ingeschakeld",
+    "disabled": "Gehandicapt"
+  },
+  "ChmodCalculator": {
+    "owner": "Eigenaar",
+    "group": "Groep",
+    "public": "Openbaar",
+    "read": "Lezen",
+    "write": "Schrijven",
+    "execute": "Uitvoeren",
+    "numeric": "Numeriek",
+    "symbolic": "Symbolisch"
+  },
+  "PasswordManager": {
+    "title": "Wachtwoordbeheerder",
+    "desc": "Bewaar en beheer uw wachtwoorden veilig lokaal.",
+    "unlock": "Ontgrendel kluis",
+    "create": "Maak een nieuwe kluis",
+    "unlockDesc": "Voer uw hoofdwachtwoord in om toegang te krijgen tot uw accounts.",
+    "createDesc": "Stel een sterk hoofdwachtwoord in. Het codeert uw gegevens lokaal.",
+    "masterPassword": "Hoofdwachtwoord",
+    "unlockBtn": "Ontgrendelen",
+    "createBtn": "Kluis maken",
+    "note": "Gegevens worden in uw browser opgeslagen met behulp van AES-GCM-codering. We kunnen uw wachtwoord niet herstellen als u het kwijtraakt.",
+    "myPasswords": "Mijn wachtwoorden",
+    "addNew": "Nieuw toevoegen",
+    "search": "Accounts zoeken...",
+    "noPasswords": "Geen wachtwoorden gevonden.",
+    "addAccount": "Account toevoegen",
+    "accountTitle": "Titel / Website",
+    "username": "Gebruikersnaam / E-mailadres",
+    "password": "Wachtwoord",
+    "url": "URL (optioneel)",
+    "save": "Account opslaan",
+    "cancel": "Annuleren",
+    "incorrectPassword": "Onjuist wachtwoord of beschadigde gegevens.",
+    "loading": "Laden..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Websitedetails",
+    "pageTitle": "Paginatitel",
+    "description": "Beschrijving",
+    "keywords": "Trefwoorden (door komma's gescheiden)",
+    "author": "Auteur",
+    "socialPreview": "Sociale preview (OG en Twitter)",
+    "websiteUrl": "Website-URL",
+    "previewImage": "Voorbeeldafbeelding-URL",
+    "generatedHtml": "Gegenereerde HTML",
+    "copy": "Kopieer HTML",
+    "copied": "Gekopieerd"
+  },
+  "VibrationTester": {
+    "worksOnly": "Werkt alleen op apparaten met vibratiehardware (bijvoorbeeld telefoons).",
+    "duration": "Duur (ms)",
+    "vibrateOnce": "Eén keer trillen",
+    "pulsePattern": "Pulspatroon",
+    "longPulse": "Lange puls",
+    "stop": "Stop"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Waarom JSON-opmaak belangrijk is",
+      "block_2": "JSON (JavaScript Object Notation) is de taal van het web.Maar onbewerkte JSON die door API's wordt geretourneerd, is vaak een kleine puinhoop.Door het te formatteren wordt het leesbaar, debugbaar en veilig.",
+      "block_3": "1.Leesbaarheid is koning",
+      "block_4": "Wanneer u fouten oplost in een API-antwoord van 5000 regels, redt inspringen levens.Onze <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> gebruikt inspringing met 2 spaties of 4 spaties om de structuur duidelijk te maken.",
+      "block_5": "2.Validatie",
+      "block_6": "Een enkele ontbrekende komma kan uw app kapot maken.Valideer altijd uw JSON voordat u deze vastlegt in configuratiebestanden.",
+      "block_7": "Conclusie",
+      "block_8": "Verspil geen tijd met het handmatig controleren van haakjes.Gebruik geautomatiseerde tools."
+    },
+    "mastering-regex": {
+      "block_1": "Regex uitgelegd",
+      "block_2": "Reguliere expressies zijn krachtig maar verwarrend.laten we ze visualiseren.",
+      "block_3": "Algemene patronen",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 afgerond lettertype-mono tekst-[0.9em] tekst-[#fb923c] randborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefoon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 afgerond lettertype-mono tekst-[0.9em] tekst-[#fb923c] randborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Test deze patronen direct met onze <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "De 5 sterren van Cron",
+      "block_2": "Minuut, Uur, Dag van de maand, Maand, Dag van de week.Dat is alles.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Voorbeelden</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Elke dag om middernacht uitgevoerd: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 afgerond lettertype-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Voorbeelden",
+      "block_6": "Elke 15 minuten uitgevoerd: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 afgerond lettertype-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Hulp nodig?Gebruik onze <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> om expressies visueel samen te stellen."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Het probleem met Cloud Vaults",
+      "block_2": "LastPass, Okta en andere giganten hebben te maken gehad met inbreuken.Wanneer uw kluis online is, is deze een doelwit.",
+      "block_3": "De oplossing: lokale codering",
+      "block_4": "Onze nieuwe <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Lokale wachtwoordbeheerder</a></strong> draait volledig in uw browser.Het maakt gebruik van <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bit encryptie</strong> afgeleid van uw hoofdwachtwoord met behulp van PBKDF2.",
+      "block_5": "Hoe het werkt",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Geen kennis:</strong> We zien je wachtwoord nooit.Het verlaat uw apparaat nooit.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline opslag:</strong> uw gecodeerde kluis wordt opgeslagen in de LocalStorage van uw browser.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exporteerbaar:</strong> u kunt uw onbewerkte gecodeerde gegevens op elk gewenst moment exporteren/back-uppen.</li>",
+      "block_7": "Vertrouw niet langer op de cloud met uw hoofdsleutels.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Probeer de lokale wachtwoordbeheerder</a> vandaag nog."
+    }
+  }
+}

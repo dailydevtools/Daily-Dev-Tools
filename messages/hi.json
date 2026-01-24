@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "उपकरण",
+    "blog": "ब्लॉग",
+    "github": "गिटहब",
+    "searchPlaceholder": "खोजें..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - मुफ़्त ऑनलाइन डेवलपर उपकरण",
+    "description": "सभी के लिए 90+ मुफ़्त ऑनलाइन उपकरण। फॉर्मेटर्स, कन्वर्टर्स, जेनरेटर्स और यूटिलिटीज। तेज़, निजी और पंजीकरण की आवश्यकता नहीं।"
+  },
+  "NotFound": {
+    "title": "पृष्ठ नहीं मिला",
+    "description": "क्षमा करें, हमें वह पृष्ठ नहीं मिला जिसकी आप तलाश कर रहे हैं।",
+    "backHome": "होम पर वापस जाएं",
+    "suggestions": "कोई उपकरण खोजने का प्रयास करें या नीचे हमारे लोकप्रिय उपकरण ब्राउज़ करें।"
+  },
+  "Homepage": {
+    "heroTag": "100+ मुफ़्त टूल • निजी • कोई साइनअप नहीं",
+    "titleLine1": "दैनिक डेवलपर उपकरण",
+    "titleLine2": "जो बस काम करते हैं",
+    "subtitle": "डेवलपर्स, डिजाइनरों और सभी के लिए तेज़, सुंदर और गोपनीयता-केंद्रित उपकरण। सब कुछ आपके ब्राउज़र में चलता है।",
+    "recentTools": "हाल ही में उपयोग किया गया",
+    "noRecentText": "उन्हें यहाँ देखने के लिए उपकरणों का उपयोग करना शुरू करें",
+    "searchResults": "खोज परिणाम",
+    "popularTools": "लोकप्रिय",
+    "toolsCount": "{count} उपकरण उपलब्ध",
+    "features": {
+      "fast": {
+        "title": "बिजली की तरह तेज़",
+        "desc": "सभी उपकरण आपके ब्राउज़र में स्थानीय रूप से चलते हैं"
+      },
+      "private": {
+        "title": "100% निजी",
+        "desc": "आपका डेटा कभी भी आपका डिवाइस नहीं छोड़ता है"
+      },
+      "simple": {
+        "title": "सबके लिए बनाया गया",
+        "desc": "किसी के लिए भी पर्याप्त सरल, पेशेवरों के लिए शक्तिशाली"
+      },
+      "free": {
+        "title": "हमेशा मुफ़्त",
+        "desc": "कोई खाता नहीं, कोई सीमा नहीं"
+      }
+    },
+    "categories": {
+      "All": "सभी",
+      "Favorites": "पसंदीदा",
+      "Developer": "डेवलपर",
+      "Design": "डिज़ाइन",
+      "Content": "सामग्री",
+      "Security": "सुरक्षा",
+      "Productivity": "उत्पादकता",
+      "Math": "गणित",
+      "Utility": "उपयोगिता"
+    },
+    "cta": {
+      "title": "अपनी उत्पादकता बढ़ाने के लिए तैयार हैं?",
+      "text": "हमारे डेवलपर टूल का निःशुल्क उपयोग शुरू करें। कोई साइनअप आवश्यक नहीं, कोई डेटा एकत्र नहीं किया गया।",
+      "button": "निःशुल्क शुरू करें"
+    },
+    "openTool": "उपकरण खोलें",
+    "noResults": "इससे मेल खाते कोई उपकरण नहीं मिले",
+    "clearFilters": "फ़िल्टर साफ़ करें"
+  },
+  "Footer": {
+    "builtWith": "❤️ के साथ बनाया गया",
+    "allTools": "सभी उपकरण",
+    "blog": "ब्लॉग",
+    "about": "के बारे में",
+    "privacy": "गोपनीयता",
+    "terms": "शर्तें"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON फ़ॉर्मेटर",
+      "description": "JSON को तुरंत फॉर्मेट, वैलिडेट और सुंदर बनाएं"
+    },
+    "base64-encoder": {
+      "name": "Base64 एनकोडर",
+      "description": "Base64 स्ट्रिंग्स को एनकोड और डिकोड करें"
+    },
+    "url-encoder": {
+      "name": "URL एनकोडर",
+      "description": "URL को सुरक्षित रूप से एनकोड और डिकोड करें"
+    },
+    "jwt-decoder": {
+      "name": "JWT डिकोडर",
+      "description": "JSON वेब टोकन को डिकोड और निरीक्षण करें"
+    },
+    "regex-tester": {
+      "name": "Regex टेस्टर",
+      "description": "रीयल-टाइम में रेगुलर एक्सप्रेशन का परीक्षण करें"
+    },
+    "hash-generator": {
+      "name": "हैश जेनरेटर",
+      "description": "MD5, SHA-1, SHA-256 हैश जेनरेट करें"
+    },
+    "uuid-generator": {
+      "name": "UUID जेनरेटर",
+      "description": "तुरंत रैंडम UUIDs/GUIDs जेनरेट करें"
+    },
+    "css-minifier": {
+      "name": "CSS मिनिफायर",
+      "description": "अपने CSS कोड को मिनिफाई और ऑप्टिमाइज़ करें"
+    },
+    "markdown-editor": {
+      "name": "मार्कडाउन प्रीव्यू",
+      "description": "रीयल-टाइम मार्कडाउन एडिटर और प्रीव्यू"
+    },
+    "color-converter": {
+      "name": "कलर कन्वर्टर",
+      "description": "Hex, RGB, HSL और CMYK कनवर्ट करें"
+    },
+    "timestamp-converter": {
+      "name": "टाइमस्टैम्प टूल",
+      "description": "यूनिक्स टाइमस्टैम्प को मानव तिथियों में बदलें"
+    },
+    "sql-formatter": {
+      "name": "SQL फ़ॉर्मेटर",
+      "description": "SQL क्वेरीज़ को फॉर्मेट और सुंदर बनाएं"
+    },
+    "password-generator": {
+      "name": "पासवर्ड जेनरेटर",
+      "description": "सुरक्षित, रैंडम पासवर्ड बनाएं"
+    },
+    "lorem-ipsum": {
+      "name": "लोरेम इप्सम",
+      "description": "डिज़ाइन के लिए प्लेसहोल्डर टेक्स्ट जेनरेट करें"
+    },
+    "image-base64": {
+      "name": "इमेज टू Base64",
+      "description": "इमेज को Base64 स्ट्रिंग्स में बदलें"
+    },
+    "qr-generator": {
+      "name": "QR कोड जेनरेटर",
+      "description": "URL और टेक्स्ट के लिए QR कोड जेनरेट करें"
+    },
+    "word-counter": {
+      "name": "शब्द काउंटर",
+      "description": "शब्द, अक्षर और पढ़ने का समय गिनें"
+    },
+    "case-converter": {
+      "name": "केस कन्वर्टर",
+      "description": "कैमल, स्नेक, कबाब और पास्कल केस"
+    },
+    "text-diff": {
+      "name": "टेक्स्ट डिफ चेकर",
+      "description": "दो टेक्स्ट की तुलना करें और अंतर खोजें"
+    },
+    "slug-generator": {
+      "name": "स्लग जेनरेटर",
+      "description": "SEO-फ्रेंडली URL स्लग जेनरेट करें"
+    },
+    "gradient-generator": {
+      "name": "ग्रेडिएंट जेनरेटर",
+      "description": "सुंदर CSS ग्रेडिएंट्स बनाएं"
+    },
+    "image-compressor": {
+      "name": "इमेज कंप्रेसर",
+      "description": "इमेज को स्थानीय और निजी तौर पर कंप्रेस करें"
+    },
+    "device-info": {
+      "name": "डिवाइस जानकारी",
+      "description": "स्क्रीन, ब्राउज़र और सिस्टम की जानकारी देखें"
+    },
+    "random-generator": {
+      "name": "रैंडम जेनरेटर",
+      "description": "नंबर, सिक्के और सूची आइटम चुनें"
+    },
+    "unit-converter": {
+      "name": "यूनिट कन्वर्टर",
+      "description": "लंबाई, वजन और तापमान कनवर्ट करें"
+    },
+    "pomodoro-timer": {
+      "name": "पोमोडोरो टाइमर",
+      "description": "उत्पादकता के लिए फोकस टाइमर"
+    },
+    "yt-thumbnail": {
+      "name": "थंबनेल डाउनलोडर",
+      "description": "YouTube वीडियो थंबनेल प्राप्त करें"
+    },
+    "my-ip": {
+      "name": "मेरा IP क्या है",
+      "description": "सार्वजनिक IP और नेटवर्क जानकारी देखें"
+    },
+    "keycode-info": {
+      "name": "कीकोड जानकारी",
+      "description": "जावास्क्रिप्ट कीबोर्ड इवेंट डिबगर"
+    },
+    "signature-generator": {
+      "name": "सिग्नेचर जेनरेटर",
+      "description": "डिजिटल हस्ताक्षर ड्रा करें और डाउनलोड करें"
+    },
+    "screen-recorder": {
+      "name": "स्क्रीन रिकॉर्डर",
+      "description": "स्क्रीन रिकॉर्ड करें और वीडियो डाउनलोड करें"
+    },
+    "credit-card-validator": {
+      "name": "कार्ड वैलिडेटर",
+      "description": "क्रेडिट कार्ड नंबर मान्य करें"
+    },
+    "password-manager": {
+      "name": "लोकल पासवर्ड मैनेजर",
+      "description": "एन्क्रिप्शन के साथ स्थानीय रूप से पासवर्ड सुरक्षित रखें"
+    },
+    "deep-link-tester": {
+      "name": "डीप लिंक टेस्टर",
+      "description": "मोबाइल डीप लिंक का परीक्षण, लॉन्च और प्रबंधन करें"
+    },
+    "image-converter": {
+      "name": "इमेज कन्वर्टर",
+      "description": "इमेज को ऑप्टिमाइज़ करने के लिए PNG/JPG को स्थानीय रूप से WebP में बदलें"
+    },
+    "json-converter": {
+      "name": "JSON <> सीएसवी",
+      "description": "JSON को CSV में बदलें और इसके विपरीत"
+    },
+    "bmi-calculator": {
+      "name": "BMI कैलकुलेटर",
+      "description": "बॉडी मास इंडेक्स (BMI) की गणना करें"
+    },
+    "dns-lookup": {
+      "name": "DNS लुकअप",
+      "description": "तुरंत DNS रिकॉर्ड्स (A, MX, NS) क्वेरी करें"
+    },
+    "age-calculator": {
+      "name": "आयु कैलकुलेटर",
+      "description": "सटीक आयु और कुल दिनों की गणना करें"
+    },
+    "loan-calculator": {
+      "name": "लोन कैलकुलेटर",
+      "description": "मासिक EMI और कुल ब्याज की गणना करें"
+    },
+    "discount-calculator": {
+      "name": "डिस्काउंट कैलकुलेटर",
+      "description": "बिक्री मूल्य और बचत की गणना करें"
+    },
+    "interest-calculator": {
+      "name": "ब्याज कैलकुलेटर",
+      "description": "साधारण बनाम चक्रवृद्धि ब्याज कैलकुलेटर"
+    },
+    "html-encoder": {
+      "name": "HTML एनकोडर/डिकोडर",
+      "description": "विशेष वर्णों को एस्केप करें या HTML डिकोड करें"
+    },
+    "list-sorter": {
+      "name": "लिस्ट सॉर्टर",
+      "description": "सूचियों को सॉर्ट, रिवर्स, शफल और डीडुप्लिकेट करें"
+    },
+    "box-shadow": {
+      "name": "बॉक्स शैडो जेनरेटर",
+      "description": "विज़ुअली CSS बॉक्स-शैडो जेनरेट करें"
+    },
+    "date-diff": {
+      "name": "तिथि अंतर",
+      "description": "दो तिथियों के बीच की अवधि की गणना करें"
+    },
+    "sql-to-json": {
+      "name": "SQL टू JSON",
+      "description": "SQL INSERTs को JSON ऑब्जेक्ट्स में बदलें"
+    },
+    "keyword-density": {
+      "name": "कीवर्ड डेंसिटी",
+      "description": "SEO के लिए कीवर्ड आवृत्ति का विश्लेषण करें"
+    },
+    "json-diff": {
+      "name": "JSON डिफ",
+      "description": "दो JSON ऑब्जेक्ट्स की साथ-साथ तुलना करें"
+    },
+    "cipher-tools": {
+      "name": "सिफर टूल्स",
+      "description": "ROT13 और सीज़र सिफर एनकोडर/डिकोडर"
+    },
+    "token-generator": {
+      "name": "रैंडम टोकन जेनरेटर",
+      "description": "सुरक्षित रैंडम टोकन जेनरेट करें"
+    },
+    "favicon-generator": {
+      "name": "फेविकॉन जेनरेटर",
+      "description": ".ico और PNG फेविकॉन बनाएं"
+    },
+    "robots-generator": {
+      "name": "Robots.txt जेनरेटर",
+      "description": "SEO के लिए robots.txt बनाएं"
+    },
+    "grid-generator": {
+      "name": "CSS ग्रिड जेनरेटर",
+      "description": "विज़ुअल CSS ग्रिड लेआउट बिल्डर"
+    },
+    "hmac-generator": {
+      "name": "HMAC जेनरेटर",
+      "description": "कीड-हैश मैसेज ऑथेंटिकेशन कोड जेनरेट करें"
+    },
+    "http-status": {
+      "name": "HTTP स्टेटस कोड्स",
+      "description": "HTTP स्टेटस कोड्स की संदर्भ सूची"
+    },
+    "week-number": {
+      "name": "सप्ताह संख्या",
+      "description": "वर्तमान सप्ताह संख्या और वर्ष की प्रगति"
+    },
+    "text-tools": {
+      "name": "टेक्स्ट ट्रांसफार्मर",
+      "description": "टेक्स्ट को उल्टा करें, फ्लिप करें और एनकोड करें"
+    },
+    "url-parser": {
+      "name": "URL पार्सर",
+      "description": "URL को प्रोटोकॉल, होस्ट, पाथ, params में विभाजित करें"
+    },
+    "markdown-table": {
+      "name": "मार्कडाउन टेबल जेनरेटर",
+      "description": "विज़ुअली मार्कडाउन टेबल बनाएं"
+    },
+    "whatsapp-link": {
+      "name": "व्हाट्सएप लिंक जेनरेटर",
+      "description": "डायरेक्ट व्हाट्सएप चैट लिंक बनाएं"
+    },
+    "paypal-link": {
+      "name": "पेपाल लिंक जेनरेटर",
+      "description": "PayPal.me भुगतान लिंक बनाएं"
+    },
+    "svg-to-png": {
+      "name": "SVG टू PNG",
+      "description": "SVG कोड/फ़ाइल को PNG इमेज में बदलें"
+    },
+    "prime-factors": {
+      "name": "अभाज्य गुणनखंड",
+      "description": "किसी संख्या के अभाज्य गुणनखंड खोजें"
+    },
+    "iban-validator": {
+      "name": "IBAN वैलिडेटर",
+      "description": "अंतर्राष्ट्रीय बैंक खाता संख्या मान्य करें"
+    },
+    "ascii-converter": {
+      "name": "ASCII कन्वर्टर",
+      "description": "टेक्स्ट को ASCII दशमलव कोड में बदलें"
+    },
+    "utm-builder": {
+      "name": "UTM बिल्डर",
+      "description": "Google Analytics अभियान URL बनाएं"
+    },
+    "meta-tags": {
+      "name": "मेटा टैग जेनरेटर",
+      "description": "वेबसाइटों के लिए SEO मेटा टैग जेनरेट करें"
+    },
+    "og-generator": {
+      "name": "ओपन ग्राफ जेनरेटर",
+      "description": "सोशल शेयरिंग के लिए ओपन ग्राफ मेटा टैग बनाएं"
+    },
+    "twitter-card": {
+      "name": "ट्विटर कार्ड जेनरेटर",
+      "description": "ट्विटर कार्ड मेटा टैग बनाएं"
+    },
+    "aspect-ratio": {
+      "name": "आस्पेक्ट रेशियो कैलकुलेटर",
+      "description": "आस्पेक्ट रेशियो और आयामों की गणना करें"
+    },
+    "css-cursor": {
+      "name": "CSS कर्सर",
+      "description": "विज़ुअल CSS कर्सर प्रॉपर्टी संदर्भ"
+    },
+    "css-triangle": {
+      "name": "CSS ट्राएंगल जेनरेटर",
+      "description": "शुद्ध CSS त्रिकोण जेनरेट करें"
+    },
+    "percentage-calculator": {
+      "name": "प्रतिशत कैलकुलेटर",
+      "description": "प्रतिशत और परिवर्तन की गणना करें"
+    },
+    "vat-calculator": {
+      "name": "VAT कैलकुलेटर",
+      "description": "VAT जोड़ने/हटाने की राशि की गणना करें"
+    },
+    "stopwatch": {
+      "name": "स्टॉपवॉच",
+      "description": "सरल ब्राउज़र-आधारित स्टॉपवॉच"
+    },
+    "text-to-speech": {
+      "name": "टेक्स्ट टू स्पीच",
+      "description": "टेक्स्ट को बोली जाने वाली आवाज़ में बदलें"
+    },
+    "speech-to-text": {
+      "name": "स्पीच टू टेक्स्ट",
+      "description": "बोली जाने वाली आवाज़ को टेक्स्ट में बदलें"
+    },
+    "vibration-tester": {
+      "name": "वाइब्रेशन टेस्टर",
+      "description": "डिवाइस वाइब्रेशन मोटर का परीक्षण करें"
+    },
+    "chmod-calculator": {
+      "name": "Chmod कैलकुलेटर",
+      "description": "लिनक्स फ़ाइल अनुमतियों की गणना करें"
+    },
+    "crontab-generator": {
+      "name": "क्रोनटैब जेनरेटर",
+      "description": "क्रॉन शेड्यूल एक्सप्रेशन जेनरेट करें"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd जेनरेटर",
+      "description": "बेसिक ऑथेंटिकेशन एंट्रीज़ जेनरेट करें"
+    },
+    "subnet-calculator": {
+      "name": "सबनेट कैलकुलेटर",
+      "description": "नेटवर्क सबनेट और IP रेंज की गणना करें"
+    },
+    "mac-generator": {
+      "name": "MAC एड्रेस जेनरेटर",
+      "description": "रैंडम MAC एड्रेस जेनरेट करें"
+    },
+    "timezone-converter": {
+      "name": "टाइम ज़ोन कन्वर्टर",
+      "description": "कई ज़ोन के बीच समय कनवर्ट करें"
+    },
+    "email-validator": {
+      "name": "ईमेल वैलिडेटर",
+      "description": "ईमेल प्रारूप मान्य करें और टाइपो का पता लगाएं"
+    },
+    "password-strength": {
+      "name": "पासवर्ड स्ट्रेंथ",
+      "description": "पासवर्ड शक्ति स्कोर की जाँच करें"
+    },
+    "roman-numerals": {
+      "name": "रोमन अंक कन्वर्टर",
+      "description": "रोमन और दशमलव संख्याओं के बीच कनवर्ट करें"
+    },
+    "margin-calculator": {
+      "name": "मार्जिन कैलकुलेटर",
+      "description": "लाभ मार्जिन और मार्कअप की गणना करें"
+    },
+    "roi-calculator": {
+      "name": "ROI कैलकुलेटर",
+      "description": "निवेश पर रिटर्न की गणना करें"
+    },
+    "fuel-calculator": {
+      "name": "ईंधन लागत कैलकुलेटर",
+      "description": "यात्रा ईंधन लागत की गणना करें"
+    },
+    "pretty-print-url": {
+      "name": "प्रिटी प्रिंट URL",
+      "description": "पठनीयता के लिए URL को फॉर्मेट और सुंदर बनाएं"
+    }
+  },
+  "Terms": {
+    "title": "सेवा की शर्तें",
+    "lastUpdated": "अंतिम अपडेट",
+    "sections": {
+      "acceptance": {
+        "title": "1. शर्तों की स्वीकृति",
+        "content": "DailyDevTools का उपयोग करके, आप इस समझौते की शर्तों से बंधे होने के लिए सहमत हैं।"
+      },
+      "useLicense": {
+        "title": "2. लाइसेंस का उपयोग करें",
+        "content": "DailyDevTools व्यक्तिगत और व्यावसायिक उद्देश्यों के लिए उपयोग करने के लिए स्वतंत्र है। आप नहीं कर सकते:",
+        "list": {
+          "0": "साइट के महत्वपूर्ण हिस्सों को रिवर्स इंजीनियर या स्क्रैप करने का प्रयास करें।",
+          "1": "वेबसाइट का उपयोग इस तरह से करें जिससे वेबसाइट को नुकसान हो या वेबसाइट की उपलब्धता या पहुंच में बाधा उत्पन्न हो।"
+        }
+      },
+      "disclaimer": {
+        "title": "3. अस्वीकरण",
+        "content": "DailyDevTools पर उपकरण \"जैसे हैं\" प्रदान किए गए हैं। हम कोई वारंटी नहीं देते, व्यक्त या निहित..."
+      },
+      "limitations": {
+        "title": "4. सीमाएं",
+        "content": "किसी भी स्थिति में DailyDevTools या इसके आपूर्तिकर्ता किसी भी नुकसान के लिए उत्तरदायी नहीं होंगे..."
+      },
+      "revisions": {
+        "title": "5. संशोधन",
+        "content": "DailyDevTools पर दिखाई देने वाली सामग्री में तकनीकी, टंकण या फोटोग्राफिक त्रुटियां शामिल हो सकती हैं..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "गोपनीयता नीति",
+    "lastUpdated": "अंतिम अपडेट",
+    "intro": "DailyDevTools में आपका स्वागत है। हम आपकी गोपनीयता का सम्मान करते हैं और आपके व्यक्तिगत डेटा की सुरक्षा के लिए प्रतिबद्ध हैं।",
+    "sections": {
+      "localProcessing": {
+        "title": "2. हमारे उपकरण कैसे काम करते हैं (स्थानीय प्रसंस्करण)",
+        "content": "सबसे महत्वपूर्ण: उपकरण पूरी तरह से आपके ब्राउज़र में चलते हैं। डेटा कभी भी आपके डिवाइस को नहीं छोड़ता है।"
+      },
+      "dataCollection": {
+        "title": "3. डेटा हम एकत्र करते हैं",
+        "content": "हम सामग्री एकत्र नहीं करते हैं। हम उपयोग के आंकड़ों के लिए Google Analytics का उपयोग करते हैं।"
+      },
+      "cookies": {
+        "title": "4. कुकीज़",
+        "content": "हम विश्लेषण और स्थानीय प्राथमिकताओं के लिए कुकीज़ का उपयोग करते हैं।"
+      },
+      "thirdParty": {
+        "title": "5. तृतीय-पक्ष लिंक",
+        "content": "हमारी साइट में तृतीय पक्षों के लिंक हो सकते हैं।"
+      },
+      "changes": {
+        "title": "6. इस नीति में परिवर्तन",
+        "content": "हम समय-समय पर इस नीति को अपडेट कर सकते हैं।"
+      },
+      "contact": {
+        "title": "7. हमसे संपर्क करें",
+        "content": "GitHub या सोशल मीडिया के माध्यम से हमसे संपर्क करें।"
+      }
+    }
+  },
+  "Blog": {
+    "title": "डेवलपर संसाधन",
+    "subtitle": "हमारे द्वारा बनाए गए उपकरणों और उनके पीछे की अवधारणाओं में गहरा गोता।",
+    "readMore": "और पढ़ें",
+    "backToBlog": "ब्लॉग पर वापस",
+    "enjoyedArticle": "लेख का आनंद लिया?",
+    "checkTools": "हमारे उपकरण देखें"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "इनपुट",
+      "output": "आउटपुट",
+      "format": "फॉर्मेट",
+      "minify": "मिनिफाई",
+      "download": "डाउनलोड",
+      "copy": "कॉपी",
+      "paste": "पेस्ट करें",
+      "copied": "कॉपी किया!",
+      "upload": "अपलोड",
+      "sample": "नमूना",
+      "clear": "साफ़ करें",
+      "indent": "इंडेंट:",
+      "chars": "घर का काम",
+      "error": "त्रुटि",
+      "invalid": "अमान्य इनपुट",
+      "result": "परिणाम",
+      "generate": "उत्पन्न",
+      "calculate": "गणना",
+      "convert": "बदलना",
+      "validate": "मान्य",
+      "resultPlaceholder": "परिणाम यहां दिखाई देगा..."
+    },
+    "Base64Encoder": {
+      "encode": "एनकोड",
+      "decode": "डिकोड",
+      "textToEncode": "एनकोड करने के लिए टेक्स्ट",
+      "base64ToDecode": "डिकोड करने के लिए Base64",
+      "enterText": "एनकोड करने के लिए टेक्स्ट दर्ज करें...",
+      "enterBase64": "डिकोड करने के लिए Base64 दर्ज करें...",
+      "encodeAction": "Base64 में एनकोड करें",
+      "decodeAction": "Base64 से डिकोड करें",
+      "base64Output": "Base64 आउटपुट",
+      "decodedText": "डिकोड किया गया टेक्स्ट",
+      "resultPlaceholder": "परिणाम यहाँ दिखाई देगा...",
+      "invalidInput": "{mode} के लिए अमान्य इनपुट"
+    },
+    "QrGenerator": {
+      "content": "सामग्री",
+      "placeholder": "https://example.com",
+      "customization": "कस्टमाइजेशन",
+      "foreground": "अग्रभूमि",
+      "background": "पृष्ठभूमि",
+      "download": "डाउनलोड"
+    },
+    "HashGenerator": {
+      "inputText": "इनपुट टेक्स्ट",
+      "placeholder": "हैश करने के लिए टेक्स्ट दर्ज करें...",
+      "waiting": "इनपुट का इंतजार..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "नया जनरेट करें",
+      "configuration": "कॉन्फ़िगरेशन",
+      "length": "पासवर्ड लंबाई",
+      "uppercase": "अपरकेस (A-Z)",
+      "numbers": "नंबर (0-9)",
+      "symbols": "प्रतीक (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "अपना JSON यहां चिपकाएं...",
+      "outputPlaceholder": "स्वरूपित JSON यहां दिखाई देगा...",
+      "spaces": "खाली स्थान"
+    },
+    "UrlEncoder": {
+      "encode": "एन्कोड",
+      "decode": "व्याख्या करना",
+      "urlToEncode": "एनकोड करने के लिए यूआरएल",
+      "encodedUrlToDecode": "डिकोड करने के लिए एनकोडेड यूआरएल",
+      "enterUrlToEncode": "एन्कोड करने के लिए URL या टेक्स्ट दर्ज करें...",
+      "enterUrlToDecode": "डिकोड करने के लिए एन्कोडेड URL दर्ज करें...",
+      "encodeAction": "यूआरएल एनकोड करें",
+      "decodeAction": "यूआरएल डिकोड करें",
+      "encodedUrl": "एन्कोडेड यूआरएल",
+      "decodedUrl": "डिकोड किया गया यूआरएल",
+      "resultPlaceholder": "परिणाम यहां दिखाई देगा...",
+      "chars": "घर का काम",
+      "invalidInput": "{मोड} के लिए अमान्य इनपुट"
+    },
+    "JwtDecoder": {
+      "pasteToken": "अपना JWT टोकन चिपकाएँ",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "जेडब्ल्यूटी को डिकोड करें",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "जारी किए गए",
+      "expires": "समय-सीमा समाप्त"
+    },
+    "RegexTester": {
+      "expression": "अभिव्यक्ति",
+      "expressionPlaceholder": "समूह कैप्चर करें (एबीसी)...",
+      "testString": "टेस्ट स्ट्रिंग",
+      "testStringPlaceholder": "अपनी परीक्षण स्ट्रिंग यहां चिपकाएं...",
+      "matchHighlights": "मिलान हाइलाइट्स",
+      "matches": "माचिस",
+      "matchInfo": "मिलान सूचना",
+      "match": "मिलान",
+      "index": "अनुक्रमणिका",
+      "group": "समूह",
+      "noMatches": "कोई मेल नहीं मिले",
+      "highlightPlaceholder": "मैचों पर यहां प्रकाश डाला जाएगा...",
+      "flagsHelp": "जी: ग्लोबल, आई: इग्नोर केस, एम: मल्टीलाइन"
+    },
+    "UuidGenerator": {
+      "generate": "उत्पन्न",
+      "generateCount": "उत्पन्न:",
+      "copyAll": "सभी को कॉपी करें",
+      "copyUuid": "यूयूआईडी कॉपी करें",
+      "generatedAt": "{समय} पर स्थानीय रूप से उत्पन्न • संस्करण 4 यूयूआईडी"
+    },
+    "WordCounter": {
+      "words": "शब्द",
+      "characters": "अक्षर",
+      "sentences": "वाक्य",
+      "paragraphs": "पैराग्राफ",
+      "readingTime": "पढ़ने का समय",
+      "min": "min",
+      "textInput": "पाठ इनपुट",
+      "inputPlaceholder": "विश्लेषण करने के लिए यहां टाइप करना प्रारंभ करें या अपना टेक्स्ट पेस्ट करें...",
+      "clear": "स्पष्ट"
+    },
+    "TimestampConverter": {
+      "timestamp": "समय-चिह्न",
+      "humanDate": "मानव तिथि",
+      "convert": "बदलना",
+      "currentTimestamp": "वर्तमान टाइमस्टैम्प",
+      "inputPlaceholder": "यूनिक्स टाइमस्टैम्प दर्ज करें..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "अपनी SQL क्वेरी यहां चिपकाएँ...",
+      "outputPlaceholder": "स्वरूपित SQL यहां दिखाई देगा..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "अपना सीएसएस कोड यहां पेस्ट करें...",
+      "outputPlaceholder": "मिनिफाइड सीएसएस यहां दिखाई देगा..."
+    },
+    "MarkdownEditor": {
+      "editor": "संपादक",
+      "preview": "पूर्व दर्शन",
+      "inputPlaceholder": "यहां मार्कडाउन दर्ज करें..."
+    },
+    "TextDiff": {
+      "original": "मूललेख",
+      "changed": "परिवर्तित पाठ",
+      "compare": "तुलना करना",
+      "differences": "मतभेद"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "कनवर्ट करने के लिए टेक्स्ट दर्ज करें...",
+      "generatedSlug": "उत्पन्न स्लग"
+    },
+    "ImageCompressor": {
+      "selectImage": "छवि का चयन करें",
+      "quality": "गुणवत्ता",
+      "compress": "संकुचित करें",
+      "download": "डाउनलोड करना",
+      "originalSize": "मूल आकार",
+      "compressedSize": "संपीड़ित आकार"
+    },
+    "LoremIpsum": {
+      "paragraphs": "पैराग्राफ",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "GradientGenerator": {
+      "angle": "कोण",
+      "colors": "रंग",
+      "addColor": "रंग जोड़ें",
+      "copyCss": "सीएसएस कॉपी करें"
+    },
+    "AgeCalculator": {
+      "birthDate": "जन्म तिथि",
+      "calculate": "गणना",
+      "years": "साल",
+      "months": "महीने",
+      "days": "दिन",
+      "totalDays": "कुल दिन",
+      "nextBirthday": "अगले जन्मदिन में"
+    },
+    "AsciiConverter": {
+      "text": "मूलपाठ",
+      "ascii": "ASCII",
+      "convert": "बदलना",
+      "inputPlaceholder": "पाठ दर्ज करें..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "क्षैतिज (एक्स)",
+      "vertical": "लंबवत (वाई)",
+      "blur": "कलंक",
+      "spread": "फैलाना",
+      "colorOpacity": "रंग एवं अपारदर्शिता",
+      "inset": "इनसेट"
+    },
+    "BmiCalculator": {
+      "metric": "मीट्रिक (किलो/सेमी)",
+      "imperial": "इंपीरियल (पाउंड/इंच)",
+      "weight": "वज़न",
+      "height": "ऊंचाई",
+      "calculate": "बीएमआई की गणना करें",
+      "bmiScore": "आपका बीएमआई स्कोर",
+      "underweight": "वजन",
+      "normal": "सामान्य वज़न",
+      "overweight": "अधिक वजन",
+      "obese": "मोटा"
+    },
+    "CaseConverter": {
+      "inputText": "इनपुट पाठ",
+      "inputPlaceholder": "यहां अपना पाठ लिखें...",
+      "upper": "UPPERCASE",
+      "lower": "छोटे",
+      "title": "शीर्षक खाना",
+      "sentence": "वाक्य मामले",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "प्रतिलिपि",
+      "conversions": "रूपांतरण",
+      "clear": "स्पष्ट"
+    },
+    "ColorConverter": {
+      "hexLabels": "हेक्स रंग",
+      "rgbLabels": "आरजीबी रंग",
+      "hslLabels": "एचएसएल रंग",
+      "cmykLabels": "सीएमवाईके रंग",
+      "copy": "प्रतिलिपि",
+      "hexToRgbNote": "* वर्तमान में केवल HEX से RGB/HSL रूपांतरण का समर्थन करता है।"
+    },
+    "CreditCardValidator": {
+      "cardNumber": "कार्ड संख्या",
+      "validate": "मान्य",
+      "valid": "वैध क्रेडिट कार्ड नंबर",
+      "invalid": "अमान्य क्रेडिट कार्ड नंबर",
+      "placeholder": "कार्ड नंबर दर्ज करें...",
+      "type": "कार्ड का प्रकार",
+      "checkDigit": "संख्या जांचें",
+      "luhnValid": "लुहान एल्गोरिथम मान्य"
+    },
+    "CipherTools": {
+      "encode": "एन्कोड",
+      "decode": "व्याख्या करना",
+      "rot13": "ROT13",
+      "caesar": "सीज़र सिफर",
+      "shift": "बदलाव",
+      "inputPlaceholder": "हैलो वर्ल्ड",
+      "outputPlaceholder": "परिणाम यहां दिखाई देगा..."
+    },
+    "CronGenerator": {
+      "minute": "मिनट",
+      "hour": "घंटा",
+      "dayMonth": "दिन (महीना)",
+      "month": "महीना",
+      "dayWeek": "दिन (सप्ताह)",
+      "presets": "सामान्य प्रीसेट",
+      "everyMinute": "हर मिनट",
+      "everyHour": "हर घंटे",
+      "everyDayMidnight": "हर दिन आधी रात को",
+      "everySunday": "हर रविवार",
+      "everyMonth": "प्रत्येक माह",
+      "everyYear": "प्रत्येक वर्ष",
+      "formatInfo": "प्रारूप: * * * * * (मिनट घंटा दिन महीना महीना दिन सप्ताह)",
+      "usageInfo": "'प्रत्येक' के लिए *, 'प्रत्येक n' के लिए */n, विशिष्ट सूची के लिए 1,2,3 का उपयोग करें।"
+    },
+    "DateDiff": {
+      "startDate": "आरंभ करने की तिथि",
+      "endDate": "अंतिम तिथि",
+      "calculate": "गणना",
+      "difference": "अंतर",
+      "years": "साल",
+      "months": "महीने",
+      "days": "दिन",
+      "totalDays": "कुल दिन",
+      "totalWeeks": "कुल सप्ताह",
+      "totalHours": "कुल घंटे"
+    },
+    "DeepLinkTester": {
+      "testLink": "परीक्षण लिंक",
+      "savedLinks": "सहेजे गए लिंक",
+      "searchPlaceholder": "सहेजे गए लिंक खोजें...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "शुरू करना",
+      "save": "बचाना",
+      "delete": "मिटाना",
+      "opens": "खुलता है",
+      "scanQr": "परीक्षण करने के लिए अपने मोबाइल डिवाइस से स्कैन करें",
+      "noSavedLinks": "कोई सहेजा गया लिंक नहीं मिला.",
+      "enterLabel": "इस लिंक के लिए एक लेबल दर्ज करें:",
+      "saved": "सहेजा गया!",
+      "confirmDelete": "यह लिंक हटाएं?"
+    },
+    "DeviceInfo": {
+      "screen": "स्क्रीन",
+      "browser": "ब्राउज़र",
+      "system": "प्रणाली",
+      "resolution": "संकल्प",
+      "colorDepth": "रंग की गहराई",
+      "userAgent": "उपयोगकर्ता एजेंट",
+      "platform": "प्लैटफ़ॉर्म",
+      "language": "भाषा"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "असली कीमत",
+      "discountPercent": "छूट",
+      "additionalDiscount": "अतिरिक्त छूट",
+      "calculate": "गणना",
+      "youSave": "आप बचाते हैं",
+      "finalPrice": "अंतिम कीमत",
+      "salesTax": "बिक्री कर"
+    },
+    "DnsLookup": {
+      "domain": "कार्यक्षेत्र",
+      "lookup": "ऊपर देखो",
+      "recordType": "रिकॉर्ड प्रकार",
+      "results": "परिणाम",
+      "placeholder": "example.com",
+      "status": "स्थिति",
+      "time": "समय",
+      "server": "सर्वर",
+      "answerSection": "उत्तर अनुभाग",
+      "name": "नाम",
+      "type": "प्रकार",
+      "ttl": "TTL",
+      "data": "डेटा",
+      "noRecords": "कोई रिकॉर्ड नहीं मिला"
+    },
+    "EmailValidator": {
+      "email": "मेल पता",
+      "validate": "मान्य",
+      "valid": "वैध",
+      "invalid": "अमान्य",
+      "suggestion": "सुझाव",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "तस्विर अपलोड करना",
+      "generate": "उत्पन्न",
+      "download": "डाउनलोड करना",
+      "sizes": "आकार"
+    },
+    "FuelCalculator": {
+      "distance": "दूरी",
+      "fuelEfficiency": "ईंधन दक्षता",
+      "fuelPrice": "ईंधन की कीमत",
+      "calculate": "गणना",
+      "result": "परिणाम",
+      "totalCost": "कुल लागत",
+      "fuelNeeded": "ईंधन की आवश्यकता"
+    },
+    "GridGenerator": {
+      "columns": "कॉलम",
+      "rows": "पंक्तियों",
+      "gap": "अंतर",
+      "preview": "पूर्व दर्शन",
+      "copyCss": "सीएसएस कॉपी करें",
+      "rowGap": "पंक्ति अंतराल",
+      "colGap": "कॉलम गैप",
+      "options": "विकल्प"
+    },
+    "HmacGenerator": {
+      "message": "संदेश",
+      "secret": "गुप्त",
+      "algorithm": "एल्गोरिदम",
+      "generate": "उत्पन्न",
+      "inputPlaceholder": "इनपुट पाठ...",
+      "secretPlaceholder": "गुप्त..."
+    },
+    "HtmlEncoder": {
+      "encode": "एन्कोड",
+      "decode": "व्याख्या करना",
+      "resultPlaceholder": "परिणाम यहां दिखाई देगा...",
+      "inputPlaceholder": "HTML यहां चिपकाएँ..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "कोड खोजें (उदा. 404) या नाम...",
+      "code": "कोड",
+      "name": "नाम",
+      "description": "विवरण"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "मान्य",
+      "valid": "वैध",
+      "invalid": "अमान्य",
+      "placeholder": "IBAN दर्ज करें...",
+      "inputLabel": "IBAN नंबर दर्ज करें",
+      "validTitle": "वैध बेंचमार्क",
+      "invalidTitle": "अमान्य चेकसम",
+      "validDesc": "IBAN प्रारूप और चेकसम सही हैं.",
+      "invalidDesc": "IBAN चेकसम एल्गोरिथम से मेल नहीं खाता।"
+    },
+    "ImageBase64": {
+      "upload": "अपलोड करें",
+      "convert": "बदलना",
+      "copy": "प्रतिलिपि",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "तस्विर अपलोड करना",
+      "convertToBase64": "बेस64 में कनवर्ट करें",
+      "convertToImage": "छवि में कनवर्ट करें",
+      "base64String": "बेस64 स्ट्रिंग",
+      "download": "डाउनलोड करना"
+    },
+    "ImageConverter": {
+      "selectImage": "छवि का चयन करें",
+      "format": "प्रारूप",
+      "convert": "बदलना",
+      "download": "डाउनलोड करना",
+      "quality": "गुणवत्ता"
+    },
+    "InterestCalculator": {
+      "principal": "प्रधानाचार्य",
+      "rate": "ब्याज दर",
+      "time": "समय अवधि (वर्ष)",
+      "calculate": "गणना",
+      "simpleInterest": "सरल",
+      "compoundInterest": "मिश्रण",
+      "totalAmount": "कुल मूल्य",
+      "type": "प्रकार",
+      "frequency": "यौगिक आवृत्ति",
+      "annually": "हर साल",
+      "monthly": "महीने के",
+      "daily": "दैनिक",
+      "year": "वर्ष"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "JSON दर्ज करें...",
+      "convert": "बदलना",
+      "format": "प्रारूप",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON से CSV",
+      "csvToJson": "सीएसवी से जेएसओएन",
+      "jsonInput": "JSON इनपुट",
+      "csvInput": "सीएसवी इनपुट",
+      "jsonOutput": "JSON आउटपुट",
+      "csvOutput": "सीएसवी आउटपुट"
+    },
+    "JsonDiff": {
+      "original": "मूल JSON",
+      "modified": "संशोधित JSON",
+      "compare": "तुलना करना",
+      "differences": "मतभेद"
+    },
+    "KeycodeInfo": {
+      "pressKey": "कोई बटन दबाएं",
+      "key": "चाबी",
+      "code": "कोड",
+      "keyCode": "कुंजी कोड",
+      "which": "कौन",
+      "location": "जगह",
+      "modifiers": "संशोधक",
+      "standard": "मानक",
+      "left": "बाएं",
+      "right": "सही",
+      "numpad": "नमपैड",
+      "space": "(अंतरिक्ष)",
+      "info": "जावास्क्रिप्ट ईवेंट कीकोड, कोड और बहुत कुछ प्रदर्शित करें।"
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "कीवर्ड आवृत्ति का विश्लेषण करने के लिए अपना टेक्स्ट यहां पेस्ट करें...",
+      "analyze": "विश्लेषण करें",
+      "keyword": "कीवर्ड",
+      "count": "गिनती करना",
+      "density": "घनत्व"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "अपनी सूची यहां दर्ज करें...",
+      "sort": "क्रम से लगाना",
+      "reverse": "रिवर्स",
+      "shuffle": "मिश्रण",
+      "deduplicate": "डुप्लिकेट करें",
+      "ascending": "आरोही",
+      "descending": "अवरोही",
+      "length": "लंबाई",
+      "trim": "खाली ट्रिम करें",
+      "lines": "पंक्तियाँ:",
+      "chars": "पात्र:"
+    },
+    "LoanCalculator": {
+      "principal": "प्रधानाचार्य",
+      "interestRate": "ब्याज दर",
+      "term": "अवधि",
+      "calculate": "गणना",
+      "monthlyPayment": "मासिक भुगतान",
+      "totalInterest": "कुल ब्याज",
+      "totalPayment": "कुल भुगतान",
+      "loanDetails": "ऋण विवरण",
+      "loanAmount": "ऋण राशि",
+      "loanTerm": "ऋण अवधि",
+      "years": "साल",
+      "months": "महीने",
+      "interest": "दिलचस्पी"
+    },
+    "MacGenerator": {
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि",
+      "separator": "सेपरेटर",
+      "format": "प्रारूप",
+      "quantity": "मात्रा",
+      "uppercase": "अपरकेस"
+    },
+    "MarginCalculator": {
+      "cost": "लागत",
+      "price": "विक्रय मूल्य",
+      "calculate": "गणना",
+      "margin": "अंतर",
+      "markup": "मार्कअप",
+      "profit": "लाभ",
+      "revenue": "आय",
+      "netProfit": "शुद्ध लाभ",
+      "grossMargin": "सकल मुनाफा"
+    },
+    "PasswordManager": {
+      "masterPassword": "मास्टर पासवर्ड",
+      "unlock": "अनलॉक",
+      "searchPlaceholder": "खाते खोजें...",
+      "addNew": "नया जोड़ो",
+      "siteName": "जगह का नाम",
+      "username": "उपयोगकर्ता नाम",
+      "password": "पासवर्ड",
+      "save": "बचाना",
+      "delete": "मिटाना"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "यहाँ टाइप करें...",
+      "strength": "ताकत",
+      "weak": "कमज़ोर",
+      "fair": "गोरा",
+      "good": "अच्छा",
+      "strong": "मज़बूत",
+      "requirements": "आवश्यकताएं",
+      "length": "8+ अक्षर",
+      "number": "संख्या शामिल है",
+      "uppercase": "अपरकेस शामिल है",
+      "symbol": "प्रतीक शामिल है"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me उपयोगकर्ता नाम",
+      "amount": "मात्रा",
+      "currency": "मुद्रा",
+      "generate": "उत्पन्न",
+      "itemName": "आइटम नाम",
+      "link": "जोड़ना",
+      "yourLink": "आपका पेपैल लिंक",
+      "openPaypal": "पेपैल खोलें"
+    },
+    "RobotsGenerator": {
+      "rules": "नियम",
+      "addRule": "नियम जोड़ें",
+      "allow": "अनुमति दें",
+      "disallow": "अनुमति न दें",
+      "sitemap": "साइटमैप यूआरएल (वैकल्पिक)",
+      "output": "जेनरेटेड robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "कीमत",
+      "percentage": "को PERCENTAGE",
+      "calculate": "गणना",
+      "result": "परिणाम",
+      "whatIs": "क्या है",
+      "of": "% का",
+      "isWhatPercentOf": "का कितना % है",
+      "percentChangeFrom": "से % परिवर्तन",
+      "to": "को"
+    },
+    "PomodoroTimer": {
+      "work": "फोकस समय",
+      "shortBreak": "छोटा सा ब्रेक",
+      "longBreak": "लंबा ब्रेक",
+      "start": "शुरू",
+      "pause": "विराम",
+      "reset": "रीसेट करें",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "संख्या",
+      "calculate": "गणना",
+      "factors": "प्रधान कारक",
+      "inputLabel": "एक नंबर दर्ज करें",
+      "placeholder": "जैसे 120",
+      "isPrime": "यह संख्या प्रधान है!",
+      "isComposite": "यह संख्या समग्र है"
+    },
+    "RoiCalculator": {
+      "investment": "निवेश",
+      "returns": "रिटर्न",
+      "calculate": "गणना",
+      "roi": "ROI",
+      "profit": "लाभ",
+      "finalValue": "अंतिम मूल्य",
+      "time": "समय (वर्ष)",
+      "totalGain": "कुल लाभ",
+      "annualizedRoi": "वार्षिक आरओआई"
+    },
+    "RomanNumerals": {
+      "decimal": "दशमलव",
+      "decimalPlaceholder": "2024",
+      "roman": "रोमन",
+      "convert": "बदलना",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "रिकॉर्डिंग प्रारंभ करें",
+      "stopRecording": "रिकॉर्डिंग बंद करें",
+      "download": "डाउनलोड करना",
+      "recording": "रिकॉर्डिंग..."
+    },
+    "SignatureGenerator": {
+      "draw": "खींचना",
+      "clear": "स्पष्ट",
+      "download": "डाउनलोड करना",
+      "penColor": "कलम का रंग",
+      "penSize": "कलम का आकार"
+    },
+    "SpeechToText": {
+      "startListening": "सुनना शुरू करें",
+      "stopListening": "सुनना बंद करो",
+      "transcript": "प्रतिलिपि",
+      "placeholder": "प्रतिलेख यहां दिखाई देगा..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "उपयोगकर्ताओं में सम्मिलित करें (आईडी, नाम, आयु) मान (1, 'जॉन', 30);",
+      "convert": "बदलना",
+      "result": "परिणाम"
+    },
+    "Stopwatch": {
+      "start": "शुरू",
+      "stop": "रुकना",
+      "reset": "रीसेट करें",
+      "lap": "गोद"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "आईपी ​​पता",
+      "subnetMask": "सबनेट मास्क",
+      "calculate": "गणना",
+      "networkAddress": "नेटवर्क पता",
+      "broadcastAddress": "ब्रॉडकास्ट पता",
+      "usableHosts": "प्रयोग करने योग्य होस्ट"
+    },
+    "SvgToPng": {
+      "pasteSvg": "एसवीजी चिपकाएँ",
+      "uploadSvg": "एसवीजी अपलोड करें",
+      "convert": "बदलना",
+      "download": "डाउनलोड करना"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "बोलने के लिए टेक्स्ट दर्ज करें...",
+      "speak": "बोलना",
+      "stop": "रुकना",
+      "voice": "आवाज़",
+      "rate": "दर",
+      "pitch": "आवाज़ का उतार-चढ़ाव"
+    },
+    "TextTools": {
+      "inputPlaceholder": "कुछ लिखें...",
+      "reverse": "रिवर्स",
+      "uppercase": "अपरकेस",
+      "lowercase": "छोटे",
+      "encode": "एन्कोड"
+    },
+    "TimezoneConverter": {
+      "from": "से",
+      "to": "को",
+      "convert": "बदलना",
+      "currentTime": "वर्तमान समय"
+    },
+    "TokenGenerator": {
+      "length": "लंबाई",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि",
+      "includeNumbers": "संख्याएँ शामिल करें",
+      "includeSymbols": "प्रतीक शामिल करें"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "यूआरएल दर्ज करें...",
+      "parse": "पार्स",
+      "protocol": "शिष्टाचार",
+      "host": "मेज़बान",
+      "path": "पथ",
+      "query": "सवाल"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "वेबसाइट यूआरएल",
+      "source": "स्रोत",
+      "medium": "मध्यम",
+      "campaign": "अभियान",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "VatCalculator": {
+      "amount": "मात्रा",
+      "vatRate": "वैट दर",
+      "addVat": "वैट जोड़ें",
+      "removeVat": "वैट हटाओ",
+      "calculate": "गणना"
+    },
+    "VibrationTester": {
+      "vibrate": "कंपन",
+      "pattern": "नमूना",
+      "duration": "अवधि",
+      "test": "परीक्षा"
+    },
+    "WeekNumber": {
+      "currentWeek": "वर्तमान सप्ताह संख्या",
+      "yearProgress": "वर्ष प्रगति",
+      "week": "सप्ताह"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "फ़ोन नंबर",
+      "message": "संदेश",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि",
+      "placeholder": "नमस्ते, मुझे दिलचस्पी है..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "YouTube वीडियो URL चिपकाएँ...",
+      "getThumbnail": "थंबनेल प्राप्त करें",
+      "download": "डाउनलोड करना"
+    },
+    "CrontabGenerator": {
+      "minute": "मिनट",
+      "hour": "घंटा",
+      "day": "दिन",
+      "month": "महीना",
+      "weekday": "काम करने के दिन",
+      "expression": "अभिव्यक्ति",
+      "description": "विवरण"
+    },
+    "ChmodCalculator": {
+      "owner": "मालिक",
+      "group": "समूह",
+      "others": "अन्य",
+      "read": "पढ़ना",
+      "write": "लिखना",
+      "execute": "निष्पादित करना",
+      "numeric": "संख्यात्मक",
+      "symbolic": "प्रतीकात्मक"
+    },
+    "HtpasswdGenerator": {
+      "username": "उपयोगकर्ता नाम",
+      "password": "पासवर्ड",
+      "algorithm": "एल्गोरिदम",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "AspectRatio": {
+      "width": "चौड़ाई",
+      "height": "ऊंचाई",
+      "ratio": "अनुपात",
+      "calculate": "गणना"
+    },
+    "CssClipPath": {
+      "shape": "आकार",
+      "preview": "पूर्व दर्शन",
+      "copyCss": "सीएसएस कॉपी करें"
+    },
+    "CssCursor": {
+      "cursor": "कर्सर",
+      "preview": "पूर्व दर्शन",
+      "copyCss": "सीएसएस कॉपी करें"
+    },
+    "CssTriangle": {
+      "direction": "दिशा",
+      "size": "आकार",
+      "color": "रंग",
+      "preview": "पूर्व दर्शन",
+      "copyCss": "सीएसएस कॉपी करें"
+    },
+    "MetaGenerator": {
+      "title": "शीर्षक",
+      "description": "विवरण",
+      "keywords": "कीवर्ड",
+      "author": "लेखक",
+      "url": "URL",
+      "image": "छवि",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि",
+      "titlePlaceholder": "मेरी अद्भुत वेबसाइट",
+      "descriptionPlaceholder": "आपकी साइट का संक्षिप्त विवरण...",
+      "keywordsPlaceholder": "वेब, उपकरण, विकास",
+      "authorPlaceholder": "आपका नाम",
+      "outputPlaceholder": "मेटा टैग यहां दिखाई देंगे..."
+    },
+    "OgGenerator": {
+      "title": "शीर्षक",
+      "description": "विवरण",
+      "url": "URL",
+      "image": "छवि",
+      "type": "प्रकार",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "TwitterCard": {
+      "cardType": "कार्ड का प्रकार",
+      "title": "शीर्षक",
+      "description": "विवरण",
+      "image": "छवि",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "MarkdownTable": {
+      "rows": "पंक्तियों",
+      "columns": "कॉलम",
+      "header": "हैडर",
+      "addRow": "लाइन जोड़ो",
+      "addColumn": "कॉलम जोड़ें",
+      "generate": "उत्पन्न",
+      "copy": "प्रतिलिपि"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "प्रारूप",
+      "copy": "प्रतिलिपि"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON फॉर्मेटिंग: डेवलपर्स के लिए सर्वोत्तम अभ्यास",
+      "excerpt": "जानें कि डीबगिंग के लिए उचित JSON फॉर्मेटिंग क्यों मायने रखती है और इसे अपने वर्कफ़्लो में कैसे स्वचालित करें।",
+      "category": "डेवलपमेंट"
+    },
+    "mastering-regex": {
+      "title": "रेगुलर एक्सप्रेशन में महारत हासिल करना: एक दृश्य गाइड",
+      "excerpt": "Regex को डरावना नहीं होना चाहिए। हम ईमेल वैलिडेशन, URL और अधिक के लिए सामान्य पैटर्न को तोड़ते हैं।",
+      "category": "ट्यूटोरियल"
+    },
+    "cron-job-scheduling": {
+      "title": "क्रॉन जॉब्स रहस्योद्घाटन: टास्क शेड्यूल कैसे करें",
+      "excerpt": "क्रॉन के 5-स्टार सिंटैक्स को समझें और लिनक्स पर बैकअप, ईमेल और स्क्रिप्ट कैसे शेड्यूल करें।",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "स्थानीय पासवर्ड मैनेजर सुरक्षित क्यों हैं (KeyPass विकल्प)",
+      "excerpt": "क्लाउड उल्लंघन आम हैं। जानें कि व्यक्तिगत सुरक्षा के लिए AES-256 एन्क्रिप्शन के साथ स्थानीय रूप से पासवर्ड संग्रहीत करना सबसे सुरक्षित दांव क्यों है।",
+      "category": "सुरक्षा"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "उपकरण खोजें...",
+    "noResults": "कोई परिणाम नहीं मिला।",
+    "select": "चुनें",
+    "navigate": "नेविगेट करें"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "प्रतिक्रिया भेजें",
+    "feedback": "प्रतिक्रिया",
+    "thankYou": "धन्यवाद!",
+    "feedbackSent": "आपकी प्रतिक्रिया सफलतापूर्वक भेज दी गई है.",
+    "close": "बंद करना",
+    "name": "नाम: (वैकल्पिक)",
+    "namePlaceholder": "आपका नाम",
+    "email": "ईमेल वैकल्पिक)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "फीडबैक प्रकार",
+    "typeSuggestion": "💡सुझाव",
+    "typeBug": "🐛 बग रिपोर्ट",
+    "typeFeature": "✨ फ़ीचर अनुरोध",
+    "typeOther": "📝 अन्य",
+    "message": "संदेश *",
+    "messagePlaceholder": "हमें बताएँ आप क्या सोचते हैं...",
+    "sending": "भेजा जा रहा है...",
+    "weReadEveryMessage": "हम हर संदेश पढ़ते हैं. हमें बेहतर बनाने में मदद करने के लिए शुक्रिया!"
+  },
+  "ShareButton": {
+    "shareTool": "शेयर टूल",
+    "copiedLink": "लिंक कॉपी किया गया!"
+  },
+  "TextDiff": {
+    "original": "मूललेख",
+    "changed": "परिवर्तित पाठ",
+    "update": "अद्यतन अंतर",
+    "old": "पुराना",
+    "new": "नया",
+    "content": "सामग्री"
+  },
+  "CrontabGenerator": {
+    "minute": "मिनट",
+    "hour": "घंटा",
+    "day": "दिन",
+    "month": "महीना",
+    "weekday": "काम करने के दिन",
+    "min": "मिन",
+    "mon": "सोम",
+    "week": "सप्ताह",
+    "presets": "त्वरित प्रीसेट",
+    "everyMinute": "हर मिनट",
+    "every5Minutes": "हर 5 मिनट में",
+    "everyHour": "हर घंटे",
+    "everyDayMidnight": "हर दिन आधी रात को",
+    "everyWeek": "हर हफ्ते",
+    "everyMonth": "प्रत्येक माह"
+  },
+  "SpeechToText": {
+    "notSupported": "आपका ब्राउज़र वेब स्पीच एपीआई का समर्थन नहीं करता है. कृपया क्रोम का उपयोग करें.",
+    "placeholder": "प्रतिलेख यहां दिखाई देगा...",
+    "listening": "सुनना...",
+    "start": "प्रारंभ करने के लिए माइक्रोफ़ोन पर क्लिक करें"
+  },
+  "OgGenerator": {
+    "title": "शीर्षक",
+    "description": "विवरण",
+    "image": "छवि यूआरएल",
+    "url": "कैनोनिकल यूआरएल",
+    "type": "प्रकार",
+    "website": "वेबसाइट",
+    "article": "लेख",
+    "profile": "प्रोफ़ाइल",
+    "preview": "पूर्वावलोकन (फेसबुक/लिंक्डइन)",
+    "generatedHtml": "जेनरेट किया गया HTML",
+    "copy": "प्रतिलिपि"
+  },
+  "WeekNumber": {
+    "checkLabel": "दिनांक के लिए सप्ताह संख्या जांचें",
+    "yearProgress": "वर्ष प्रगति"
+  },
+  "RelatedTools": {
+    "title": "आप इसे भी पसंद कर सकते हैं",
+    "subtitle": "अन्य लोकप्रिय डेवलपर टूल खोजें",
+    "openTool": "टूल खोलें"
+  },
+  "Breadcrumb": {
+    "home": "घर",
+    "tools": "औजार"
+  },
+  "SvgToPng": {
+    "upload": "एसवीजी फ़ाइल अपलोड करें",
+    "browse": "या ब्राउज़ करने के लिए क्लिक करें",
+    "paste": "...या एसवीजी कोड पेस्ट करें",
+    "preview": "पीएनजी पूर्वावलोकन (2x स्केल)",
+    "download": "पीएनजी डाउनलोड करें",
+    "errorType": "कृपया एक वैध एसवीजी फ़ाइल अपलोड करें।",
+    "errorRender": "एसवीजी प्रस्तुत करने में विफल. सुनिश्चित करें कि यह वैध XML है.",
+    "errorProcess": "एसवीजी संसाधित करने में त्रुटि."
+  },
+  "GradientGenerator": {
+    "config": "विन्यास",
+    "colors": "रंग",
+    "type": "प्रकार",
+    "angle": "कोण",
+    "random": "यादृच्छिक",
+    "copyCss": "सीएसएस कॉपी करें",
+    "copied": "कॉपी किया गया"
+  },
+  "TimezoneConverter": {
+    "date": "तारीख",
+    "time": "समय (स्थानीय)",
+    "invalid": "अमान्य",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "न्यूयॉर्क (ईएसटी/ईडीटी)",
+      "losAngeles": "लॉस एंजिल्स (पीएसटी/पीडीटी)",
+      "london": "लंदन (जीएमटी/बीएसटी)",
+      "paris": "पेरिस (सीईटी/सीईएसटी)",
+      "tokyo": "टोक्यो (जेएसटी)",
+      "sydney": "सिडनी (एईएसटी/एईडीटी)",
+      "dubai": "दुबई (जीएसटी)",
+      "india": "भारत (आईएसटी)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "संख्या जनरेटर",
+    "listGen": "सूची जेनरेटर",
+    "coinGen": "सिक्का जेनरेटर",
+    "min": "मिन",
+    "max": "अधिकतम",
+    "count": "गिनती करना",
+    "generate": "उत्पन्न",
+    "listLabel": "सूची आइटम (प्रति पंक्ति एक)",
+    "pick": "यादृच्छिक वस्तु चुनें",
+    "winner": "विजेता है...",
+    "flip": "सिक्का पलटें",
+    "heads": "सिर",
+    "tails": "पूंछ"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "आपकी स्क्रीन रिकॉर्ड की जा रही है...",
+    "titleFree": "निःशुल्क ऑनलाइन स्क्रीन रिकॉर्डर",
+    "desc": "अपनी स्क्रीन, ऐप विंडो, या ब्राउज़र टैब कैप्चर करें। कोई वॉटरमार्क नहीं, कोई समय सीमा नहीं.",
+    "start": "रिकॉर्डिंग प्रारंभ करें",
+    "stop": "रिकॉर्डिंग बंद करें",
+    "browserSupport": "डेस्कटॉप पर क्रोम, एज और फ़ायरफ़ॉक्स में सबसे अच्छा काम करता है।"
+  },
+  "CssCursor": {
+    "hoverTest": "परीक्षण करने के लिए यहां होवर करें"
+  },
+  "VatCalculator": {
+    "amount": "मात्रा",
+    "rate": "वैट दर (%)",
+    "addVat": "वैट जोड़ें",
+    "removeVat": "वैट हटाओ",
+    "netAmount": "शुद्ध राशि",
+    "vatAmount": "वैट राशि",
+    "grossTotal": "सकल कुल",
+    "netTotal": "शुद्ध योग",
+    "grossAmount": "सकल राशि"
+  },
+  "MyIP": {
+    "ipLabel": "आपका सार्वजनिक आईपी पता",
+    "loading": "लोड हो रहा है...",
+    "isp": "इंटरनेट प्रदाता (आईएसपी)",
+    "location": "जगह",
+    "asn": "ASN",
+    "timezone": "समयक्षेत्र",
+    "note": "यह वह आईपी पता है जो आपके द्वारा देखी जाने वाली वेबसाइटों पर दिखाई देता है। यदि आप वीपीएन या प्रॉक्सी का उपयोग करते हैं तो यह आपके स्थानीय आईपी से भिन्न हो सकता है।"
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "यूआरएल दर्ज करें",
+    "formatted": "स्वरूपित आउटपुट",
+    "copy": "प्रतिलिपि",
+    "copied": "कॉपी किया गया",
+    "placeholder": "इसे स्वरूपित देखने के लिए ऊपर एक URL चिपकाएँ।"
+  },
+  "WhatsAppLink": {
+    "phone": "फ़ोन नंबर (देश कोड के साथ)",
+    "message": "पहले से भरा हुआ संदेश",
+    "hint": "+, -, या () शामिल न करें।",
+    "yourLink": "आपका व्हाट्सएप लिंक",
+    "open": "चैट खोलें"
+  },
+  "UrlParser": {
+    "enterUrl": "यूआरएल दर्ज करें",
+    "params": "क्वेरी पैरामीटर",
+    "error": "असामान्य यूआरएल"
+  },
+  "FaviconGenerator": {
+    "upload": "तस्विर अपलोड करना",
+    "browse": "अनुशंसित: 512x512 पीएनजी",
+    "original": "मूल",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Favicon.png डाउनलोड करें",
+    "note": "* वर्तमान में 32x32 पीएनजी फ़ेविकॉन उत्पन्न करता है। यदि विरासती समर्थन के लिए आवश्यक हो तो .ico का नाम बदलें।"
+  },
+  "SubnetCalculator": {
+    "ip": "आईपी ​​पता",
+    "cidr": "सीआईडीआर (/{cidr})",
+    "calculate": "गणना",
+    "subnetMask": "सबनेट मास्क",
+    "networkAddress": "नेटवर्क पता",
+    "firstHost": "प्रथम मेज़बान",
+    "lastHost": "अंतिम मेज़बान",
+    "broadcastAddress": "ब्रॉडकास्ट पता",
+    "totalHosts": "कुल मेज़बान"
+  },
+  "SlugGenerator": {
+    "inputLabel": "आलेख शीर्षक/पाठ दर्ज करें",
+    "generated": "उत्पन्न स्लग",
+    "copy": "स्लग कॉपी करें"
+  },
+  "SqlToJson": {
+    "inputLabel": "इनपुट एसक्यूएल (केवल कथन सम्मिलित करें)",
+    "convert": "JSON में कनवर्ट करें",
+    "error": "SQL को पार्स नहीं किया जा सका. सुनिश्चित करें कि यह मानक INSERT INTO कथन है।"
+  },
+  "MarkdownTable": {
+    "addRow": "+ पंक्ति जोड़ें",
+    "addCol": "+ कॉलम जोड़ें",
+    "headerPlaceholder": "हैडर",
+    "outputLabel": "मार्कडाउन आउटपुट",
+    "copy": "मार्कडाउन कॉपी करें"
+  },
+  "TwitterCard": {
+    "cardType": "कार्ड का प्रकार",
+    "siteHandle": "साइट हैंडल (उदा. @twitter)",
+    "title": "शीर्षक",
+    "description": "विवरण",
+    "imageUrl": "छवि यूआरएल",
+    "preview": "पूर्व दर्शन",
+    "generatedHtml": "जेनरेट किया गया HTML",
+    "copy": "प्रतिलिपि",
+    "placeholderTitle": "कार्ड शीर्षक",
+    "placeholderDesc": "विवरण यहां दिया गया है..."
+  },
+  "TextToSpeech": {
+    "placeholder": "बोलने के लिए टेक्स्ट दर्ज करें...",
+    "voice": "आवाज़",
+    "speed": "रफ़्तार",
+    "pitch": "आवाज़ का उतार-चढ़ाव",
+    "speak": "बोलना"
+  },
+  "TokenGenerator": {
+    "length": "लंबाई",
+    "includeNumbers": "संख्याएँ शामिल करें",
+    "includeSymbols": "प्रतीक शामिल करें",
+    "generate": "टोकन जनरेट करें"
+  },
+  "CssTriangle": {
+    "direction": "दिशा",
+    "color": "रंग",
+    "width": "चौड़ाई (पीएक्स)",
+    "height": "ऊंचाई (पीएक्स)",
+    "copy": "प्रतिलिपि"
+  },
+  "UnitConverter": {
+    "length": "लंबाई",
+    "weight": "वज़न",
+    "temperature": "तापमान",
+    "meters": "मीटर की दूरी पर",
+    "kilometers": "किलोमीटर",
+    "centimeters": "सेंटीमीटर",
+    "millimeters": "मिलीमीटर",
+    "inches": "इंच",
+    "feet": "पैर",
+    "yards": "गज",
+    "miles": "मील",
+    "kilograms": "किलोग्राम",
+    "grams": "ग्राम",
+    "pounds": "पाउंड",
+    "ounces": "औंस",
+    "celsius": "सेल्सीयस",
+    "fahrenheit": "फ़ारेनहाइट",
+    "kelvin": "केल्विन"
+  },
+  "CssClipPath": {
+    "shapes": "आकार",
+    "preview": "पूर्व दर्शन",
+    "cssCode": "सीएसएस कोड",
+    "copy": "प्रतिलिपि",
+    "copied": "कॉपी किया गया"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "एक छवि अपलोड करें",
+    "uploadDesc": "जेपीजी, पीएनजी या वेबपी। हम इसे स्थानीय रूप से संपीड़ित करते हैं।",
+    "selectImage": "छवि का चयन करें",
+    "settings": "संपीड़न सेटिंग्स",
+    "quality": "गुणवत्ता",
+    "originalSize": "मूल आकार",
+    "compressedSize": "संपीड़ित आकार",
+    "saving": "सहेजा जा रहा है",
+    "download": "डाउनलोड करना"
+  },
+  "HtpasswdGenerator": {
+    "username": "उपयोगकर्ता नाम",
+    "password": "पासवर्ड",
+    "algorithm": "एल्गोरिदम",
+    "generate": "प्रविष्टि उत्पन्न करें",
+    "result": "परिणाम",
+    "sha1": "SHA-1 (असुरक्षित लेकिन मानक)",
+    "notSupported": "इस क्लाइंट-साइड संस्करण में केवल SHA-1 समर्थित है।"
+  },
+  "MetaTags": {
+    "pageTitle": "पृष्ठ शीर्षक",
+    "description": "विवरण",
+    "author": "लेखक"
+  },
+  "AgeCalculator": {
+    "dob": "जन्मतिथि",
+    "age": "आयु",
+    "years": "साल",
+    "months": "महीने",
+    "days": "दिन",
+    "nextBirthday": "अगला जन्मदिन"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "वेबसाइट यूआरएल (आवश्यक)",
+    "source": "अभियान स्रोत (आवश्यक)",
+    "medium": "अभियान माध्यम (आवश्यक)",
+    "name": "अभियान का नाम (आवश्यक)",
+    "term": "अभियान अवधि (वैकल्पिक)",
+    "content": "अभियान सामग्री (वैकल्पिक)",
+    "generatedUrl": "जनरेट किया गया यूआरएल",
+    "copy": "यूआरएल कॉपी करें"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "वर्तमान यूनिक्स समय",
+    "timestampLabel": "टाइमस्टैम्प (सेकंड)",
+    "isoLabel": "आईएसओ दिनांक प्रारूप",
+    "utcDate": "यूटीसी दिनांक",
+    "localDate": "स्थानीय तिथि",
+    "relative": "रिश्तेदार"
+  },
+  "SignatureGenerator": {
+    "color": "रंग",
+    "width": "चौड़ाई",
+    "clear": "स्पष्ट",
+    "download": "पीएनजी डाउनलोड करें",
+    "signHere": "यहाँ हस्ताक्षर कीजिए",
+    "note": "हस्ताक्षर आपके ब्राउज़र में स्थानीय रूप से संसाधित होते हैं। हम उन्हें संग्रहीत या अपलोड नहीं करते हैं."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "लाइव पूर्वावलोकन"
+  },
+  "CipherTools": {
+    "shiftAmount": "शिफ्ट राशि (एन)",
+    "inputText": "इनपुट पाठ",
+    "outputText": "आउटपुट टेक्स्ट",
+    "rot13": "ROT13",
+    "caesar": "सीज़र (+3)",
+    "shift1": "शिफ्ट +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "स्क्रीन संकल्प",
+    "browser": "ब्राउज़र",
+    "cpuCores": "सीपीयू कोर",
+    "battery": "बैटरी",
+    "detailedSpecs": "विस्तृत विवरण",
+    "userAgent": "उपयोगकर्ता एजेंट",
+    "platform": "प्लैटफ़ॉर्म",
+    "windowSize": "खिड़की का आकार",
+    "pixelRatio": "पिक्सेल अनुपात",
+    "colorDepth": "रंग की गहराई",
+    "ram": "RAM",
+    "cookiesEnabled": "कुकीज़ सक्षम",
+    "onlineStatus": "ऑनलाइन स्थिति",
+    "unknown": "अज्ञात",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "enabled": "सक्रिय",
+    "disabled": "अक्षम"
+  },
+  "ChmodCalculator": {
+    "owner": "मालिक",
+    "group": "समूह",
+    "public": "जनता",
+    "read": "पढ़ना",
+    "write": "लिखना",
+    "execute": "निष्पादित करना",
+    "numeric": "संख्यात्मक",
+    "symbolic": "प्रतीकात्मक"
+  },
+  "PasswordManager": {
+    "title": "पासवर्ड मैनेजर",
+    "desc": "अपने पासवर्ड को स्थानीय रूप से सुरक्षित रूप से संग्रहीत और प्रबंधित करें।",
+    "unlock": "तिजोरी अनलॉक करें",
+    "create": "नया वॉल्ट बनाएं",
+    "unlockDesc": "अपने खातों तक पहुंचने के लिए अपना मास्टर पासवर्ड दर्ज करें।",
+    "createDesc": "एक मजबूत मास्टर पासवर्ड सेट करें. यह आपके डेटा को स्थानीय रूप से एन्क्रिप्ट करता है।",
+    "masterPassword": "मास्टर पासवर्ड",
+    "unlockBtn": "अनलॉक",
+    "createBtn": "वॉल्ट बनाएं",
+    "note": "डेटा आपके ब्राउज़र में AES-GCM एन्क्रिप्शन का उपयोग करके संग्रहीत किया जाता है। यदि आपका पासवर्ड खो गया है तो हम उसे पुनर्प्राप्त नहीं कर सकते।",
+    "myPasswords": "मेरे पासवर्ड",
+    "addNew": "नया जोड़ो",
+    "search": "खाते खोजें...",
+    "noPasswords": "कोई पासवर्ड नहीं मिला.",
+    "addAccount": "खाता जोड़ें",
+    "accountTitle": "शीर्षक/वेबसाइट",
+    "username": "उपयोक्तानाम/ईमेल",
+    "password": "पासवर्ड",
+    "url": "यूआरएल (वैकल्पिक)",
+    "save": "खाता सहेजें",
+    "cancel": "रद्द करना",
+    "incorrectPassword": "ग़लत पासवर्ड या दूषित डेटा.",
+    "loading": "लोड हो रहा है..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "वेबसाइट विवरण",
+    "pageTitle": "पृष्ठ शीर्षक",
+    "description": "विवरण",
+    "keywords": "कीवर्ड (अल्पविराम से अलग)",
+    "author": "लेखक",
+    "socialPreview": "सामाजिक पूर्वावलोकन (ओजी और ट्विटर)",
+    "websiteUrl": "वेबसाइट यूआरएल",
+    "previewImage": "छवि URL का पूर्वावलोकन करें",
+    "generatedHtml": "जेनरेट किया गया HTML",
+    "copy": "HTML कॉपी करें",
+    "copied": "कॉपी किया गया"
+  },
+  "VibrationTester": {
+    "worksOnly": "केवल कंपन हार्डवेयर वाले उपकरणों (जैसे फ़ोन) पर काम करता है।",
+    "duration": "अवधि (एमएस)",
+    "vibrateOnce": "एक बार कंपन करें",
+    "pulsePattern": "नाड़ी पैटर्न",
+    "longPulse": "लंबी नाड़ी",
+    "stop": "रुकना"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "JSON फ़ॉर्मेटिंग क्यों मायने रखती है",
+      "block_2": "JSON (जावास्क्रिप्ट ऑब्जेक्ट नोटेशन) वेब की भाषा है।लेकिन एपीआई से लौटाया गया कच्चा JSON अक्सर एक छोटी सी गड़बड़ी होती है।इसे फ़ॉर्मेट करने से यह पढ़ने योग्य, डिबग करने योग्य और सुरक्षित हो जाता है।",
+      "block_3": "1.पठनीयता राजा है",
+      "block_4": "जब आप 5000-लाइन एपीआई प्रतिक्रिया को डीबग कर रहे होते हैं, तो इंडेंटेशन जीवन बचाता है।हमारा <a href='/tools/json-formatter' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>JSON फॉर्मेटर</a> संरचना को स्पष्ट करने के लिए 2-स्पेस या 4-स्पेस इंडेंटेशन का उपयोग करता है।",
+      "block_5": "2.सत्यापन",
+      "block_6": "एक भी गायब अल्पविराम आपके ऐप को तोड़ सकता है।अपने JSON को कॉन्फ़िग फ़ाइलों में डालने से पहले हमेशा सत्यापित करें।",
+      "block_7": "निष्कर्ष",
+      "block_8": "कोष्ठक को मैन्युअल रूप से जांचने में समय बर्बाद न करें।स्वचालित टूल का उपयोग करें."
+    },
+    "mastering-regex": {
+      "block_1": "रेगेक्स समझाया",
+      "block_2": "नियमित अभिव्यक्ति शक्तिशाली लेकिन भ्रमित करने वाली होती हैं।आइए उनकी कल्पना करें।",
+      "block_3": "सामान्य पैटर्न",
+      "block_4": "<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>ईमेल:</strong> <code class='bg-[var(--card-hover-bg)] px-1.5 py-0.5 गोलाकार फ़ॉन्ट-मोनो टेक्स्ट-[0.9em] टेक्स्ट-[#fb923c] बॉर्डरborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>फ़ोन:</strong> <code class='bg-[var(--card-hover-bg)] px-1.5 py-0.5 गोलाकार फ़ॉन्ट-मोनो टेक्स्ट-[0.9em] टेक्स्ट-[#fb923c] बॉर्डरborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "हमारे <a href='/tools/regex-tester' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>रेगेक्स टेस्टर</a> से इन पैटर्न का तुरंत परीक्षण करें।"
+    },
+    "cron-job-scheduling": {
+      "block_1": "क्रॉन के 5 सितारे",
+      "block_2": "मिनट, घंटा, महीने का दिन, महीना, सप्ताह का दिन।बस इतना ही है.",
+      "block_3": "<code class='bg-transparent p-0 text-[var(--foreground)] border-none'>* * * * * Command_to_run</code></pre>\n\n<h3 class='text-[22px] फ़ॉन्ट-सेमीबोल्ड टेक्स्ट-[var(--title-color)] mt-8 mb-4'>उदाहरण</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">हर दिन आधी रात को चलाएँ: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 गोलाकार फ़ॉन्ट-मोनो text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * Command_to_run",
+      "block_5": "उदाहरण",
+      "block_6": "प्रत्येक 15 मिनट में चलाएँ: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 गोलाकार फ़ॉन्ट-मोनो text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "मदद चाहिए?अभिव्यक्ति को दृश्य रूप से बनाने के लिए हमारे <a href='/tools/cron-generator' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>क्रॉन जेनरेटर</a> का उपयोग करें।"
+    },
+    "secure-password-storage-local": {
+      "block_1": "क्लाउड वॉल्ट के साथ समस्या",
+      "block_2": "लास्टपास, ओक्टा और अन्य दिग्गजों को उल्लंघनों का सामना करना पड़ा है।जब आपकी तिजोरी ऑनलाइन होती है, तो यह एक लक्ष्य है।",
+      "block_3": "समाधान: स्थानीय एन्क्रिप्शन",
+      "block_4": "हमारा नया <strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'><a href='/tools/password-manager' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>लोकल पासवर्ड मैनेजर</a></strong> पूरी तरह से आपके ब्राउज़र में चलता है।यह PBKDF2 का उपयोग करके आपके मास्टर पासवर्ड से प्राप्त <strong class=\"text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड\">AES-GCM 256-बिट एन्क्रिप्शन</strong> का उपयोग करता है।",
+      "block_5": "यह कैसे काम करता है",
+      "block_6": "<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>शून्य ज्ञान:</strong> हम आपका पासवर्ड कभी नहीं देखते हैं।यह आपके डिवाइस को कभी नहीं छोड़ता।</li>\n<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>ऑफ़लाइन स्टोरेज:</strong> आपका एन्क्रिप्टेड वॉल्ट आपके ब्राउज़र के लोकलस्टोरेज में संग्रहीत होता है।</li>\n<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>निर्यात योग्य:</strong> आप अपने कच्चे एन्क्रिप्टेड डेटा को किसी भी समय निर्यात/बैकअप कर सकते हैं।</li>",
+      "block_7": "अपनी मास्टर कुंजियों के साथ क्लाउड पर भरोसा करना बंद करें।<a href='/tools/password-manager' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>आज ही स्थानीय पासवर्ड मैनेजर आज़माएं</a>।"
+    }
+  }
+}

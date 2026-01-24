@@ -1,0 +1,1822 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "ツール",
+    "blog": "ブログ",
+    "github": "GitHub",
+    "searchPlaceholder": "検索..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - 無料のオンライン開発者ツール",
+    "description": "誰でも使える90以上の無料オンラインツール。フォーマッター、コンバーター、ジェネレーター、ユーティリティなど。高速、プライベート、登録不要。"
+  },
+  "NotFound": {
+    "title": "ページが見つかりません",
+    "description": "申し訳ありませんが、お探しのページは見つかりませんでした。",
+    "backHome": "ホームに戻る",
+    "suggestions": "ツールを検索するか、以下の人気ツールをご覧ください。"
+  },
+  "Homepage": {
+    "heroTag": "100+ 無料ツール • プライベート • 登録不要",
+    "titleLine1": "日々の開発者ツール",
+    "titleLine2": "確実に機能する",
+    "subtitle": "開発者、デザイナー、そしてすべての人のための、高速で美しく、プライバシーに配慮したツール。すべてブラウザで実行されます。",
+    "recentTools": "最近使用したツール",
+    "noRecentText": "ツールを使用するとここに表示されます",
+    "searchResults": "検索結果",
+    "popularTools": "人気",
+    "toolsCount": "{count} ツール利用可能",
+    "features": {
+      "fast": {
+        "title": "超高速",
+        "desc": "すべてのツールはブラウザ内でローカルに実行されます"
+      },
+      "private": {
+        "title": "100% プライベート",
+        "desc": "データがデバイスから送信されることはありません"
+      },
+      "simple": {
+        "title": "誰でも使える",
+        "desc": "誰にでもシンプル、プロには強力"
+      },
+      "free": {
+        "title": "常に無料",
+        "desc": "アカウント不要、制限なし"
+      }
+    },
+    "categories": {
+      "All": "すべて",
+      "Favorites": "お気に入り",
+      "Developer": "開発者",
+      "Design": "デザイン",
+      "Content": "コンテンツ",
+      "Security": "セキュリティ",
+      "Productivity": "生産性",
+      "Math": "数学",
+      "Utility": "ユーティリティ"
+    },
+    "cta": {
+      "title": "生産性を向上させる準備はできましたか？",
+      "text": "無料の開発者ツールを使い始めましょう。登録不要、データ収集なし、純粋な生産性向上。",
+      "button": "無料で始める"
+    },
+    "openTool": "ツールを開く",
+    "noResults": "一致するツールが見つかりません",
+    "clearFilters": "フィルターをクリア"
+  },
+  "Footer": {
+    "builtWith": "開発者 ❤️",
+    "allTools": "すべてのツール",
+    "blog": "ブログ",
+    "about": "概要",
+    "privacy": "プライバシー",
+    "terms": "利用規約"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSONフォーマッター",
+      "description": "JSONを瞬時にフォーマット、検証、整形"
+    },
+    "base64-encoder": {
+      "name": "Base64エンコーダー",
+      "description": "Base64文字列のエンコードとデコード"
+    },
+    "url-encoder": {
+      "name": "URLエンコーダー",
+      "description": "URLを安全にエンコードとデコード"
+    },
+    "jwt-decoder": {
+      "name": "JWTデコーダー",
+      "description": "JSON Web Tokenのデコードと検査"
+    },
+    "regex-tester": {
+      "name": "正規表現テスター",
+      "description": "リアルタイムで正規表現をテスト"
+    },
+    "hash-generator": {
+      "name": "ハッシュ生成",
+      "description": "MD5, SHA-1, SHA-256ハッシュを生成"
+    },
+    "uuid-generator": {
+      "name": "UUID生成",
+      "description": "ランダムなUUID/GUIDを瞬時に生成"
+    },
+    "css-minifier": {
+      "name": "CSSミニファイア",
+      "description": "CSSコードの軽量化と最適化"
+    },
+    "markdown-editor": {
+      "name": "Markdownプレビュー",
+      "description": "リアルタイムMarkdownエディタとプレビュー"
+    },
+    "color-converter": {
+      "name": "カラーコンバータ",
+      "description": "Hex, RGB, HSL, CMYKの変換"
+    },
+    "timestamp-converter": {
+      "name": "タイムスタンプツール",
+      "description": "Unixタイムスタンプを日時に変換"
+    },
+    "sql-formatter": {
+      "name": "SQLフォーマッター",
+      "description": "SQLクエリの整形と美化"
+    },
+    "password-generator": {
+      "name": "パスワード生成",
+      "description": "安全でランダムなパスワードを作成"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum生成",
+      "description": "デザイン用のダミーテキストを生成"
+    },
+    "image-base64": {
+      "name": "画像 Base64変換",
+      "description": "画像をBase64文字列に変換"
+    },
+    "qr-generator": {
+      "name": "QRコード生成",
+      "description": "URLやテキストからQRコードを作成"
+    },
+    "word-counter": {
+      "name": "文字数カウント",
+      "description": "単語数、文字数、読了時間をカウント"
+    },
+    "case-converter": {
+      "name": "ケース変換",
+      "description": "キャメル、スネーク、ケバブ、パスカルケース変換"
+    },
+    "text-diff": {
+      "name": "テキスト差分比較",
+      "description": "2つのテキストを比較して差分を表示"
+    },
+    "slug-generator": {
+      "name": "スラッグ生成",
+      "description": "SEO向けのURLスラッグを生成"
+    },
+    "gradient-generator": {
+      "name": "グラデーション生成",
+      "description": "美しいCSSグラデーションを作成"
+    },
+    "image-compressor": {
+      "name": "画像圧縮",
+      "description": "画像をローカルで安全に圧縮"
+    },
+    "device-info": {
+      "name": "デバイス情報",
+      "description": "画面、ブラウザ、システム情報を表示"
+    },
+    "random-generator": {
+      "name": "ランダム生成",
+      "description": "数値、コイン、リスト項目のランダム選択"
+    },
+    "unit-converter": {
+      "name": "単位変換",
+      "description": "長さ、重さ、温度などの単位を変換"
+    },
+    "pomodoro-timer": {
+      "name": "ポモドーロタイマー",
+      "description": "生産性のための集中タイマー"
+    },
+    "yt-thumbnail": {
+      "name": "サムネイルダウンローダー",
+      "description": "YouTube動画のサムネイルを取得"
+    },
+    "my-ip": {
+      "name": "IPアドレス確認",
+      "description": "パブリックIPとネットワーク情報を表示"
+    },
+    "keycode-info": {
+      "name": "キーコード情報",
+      "description": "JavaScriptキーボードイベントデバッガー"
+    },
+    "signature-generator": {
+      "name": "署名生成",
+      "description": "デジタル署名を描画してダウンロード"
+    },
+    "screen-recorder": {
+      "name": "画面録画",
+      "description": "画面を録画して動画をダウンロード"
+    },
+    "credit-card-validator": {
+      "name": "カード検証",
+      "description": "クレジットカード番号の検証"
+    },
+    "password-manager": {
+      "name": "ローカルパスワード管理",
+      "description": "パスワードを暗号化してローカルに安全保存"
+    },
+    "deep-link-tester": {
+      "name": "ディープリンクテスター",
+      "description": "モバイルディープリンクのテストと起動"
+    },
+    "image-converter": {
+      "name": "画像変換",
+      "description": "PNG/JPGをWebPに変換して最適化"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV変換",
+      "description": "JSONとCSVの相互変換"
+    },
+    "bmi-calculator": {
+      "name": "BMI計算",
+      "description": "ボディマス指数(BMI)を計算"
+    },
+    "dns-lookup": {
+      "name": "DNSルックアップ",
+      "description": "DNSレコード(A, MX, NS)を瞬時に検索"
+    },
+    "age-calculator": {
+      "name": "年齢計算",
+      "description": "正確な年齢と総日数を計算"
+    },
+    "loan-calculator": {
+      "name": "ローン計算",
+      "description": "月々の支払額と総利息を計算"
+    },
+    "discount-calculator": {
+      "name": "割引計算",
+      "description": "セール価格と割引額を計算"
+    },
+    "interest-calculator": {
+      "name": "金利計算",
+      "description": "単利・複利計算ツール"
+    },
+    "html-encoder": {
+      "name": "HTMLエンコーダー/デコーダー",
+      "description": "特殊文字のエスケープとHTMLデコード"
+    },
+    "list-sorter": {
+      "name": "リストソーター",
+      "description": "リストの並べ替え、反転、重複排除"
+    },
+    "box-shadow": {
+      "name": "Box Shadow生成",
+      "description": "CSS Box Shadowを視覚的に生成"
+    },
+    "date-diff": {
+      "name": "日付差分計算",
+      "description": "2つの日付間の期間を計算"
+    },
+    "sql-to-json": {
+      "name": "SQLからJSONへ",
+      "description": "SQL INSERT文をJSONオブジェクトに変換"
+    },
+    "keyword-density": {
+      "name": "キーワード出現率",
+      "description": "SEO用のキーワード頻度分析"
+    },
+    "json-diff": {
+      "name": "JSON差分比較",
+      "description": "2つのJSONオブジェクトを並べて比較"
+    },
+    "cipher-tools": {
+      "name": "暗号化ツール",
+      "description": "ROT13およびシーザー暗号のエンコード/デコード"
+    },
+    "token-generator": {
+      "name": "ランダムトークン生成",
+      "description": "安全なランダムトークンを生成"
+    },
+    "favicon-generator": {
+      "name": "ファビコン生成",
+      "description": ".ico および PNG ファビコンを作成"
+    },
+    "robots-generator": {
+      "name": "Robots.txt生成",
+      "description": "SEO用のrobots.txtを作成"
+    },
+    "grid-generator": {
+      "name": "CSS Grid生成",
+      "description": "CSS Gridレイアウトを視覚的に作成"
+    },
+    "hmac-generator": {
+      "name": "HMAC生成",
+      "description": "キー付きハッシュメッセージ認証コードを生成"
+    },
+    "http-status": {
+      "name": "HTTPステータスコード",
+      "description": "HTTPステータスコード一覧リファレンス"
+    },
+    "week-number": {
+      "name": "週番号",
+      "description": "現在の週番号と年の進捗を表示"
+    },
+    "text-tools": {
+      "name": "テキスト変換",
+      "description": "テキストの反転、エンコードなど"
+    },
+    "url-parser": {
+      "name": "URLパーサー",
+      "description": "URLをプロトコル、ホスト、パスなどに分割"
+    },
+    "markdown-table": {
+      "name": "Markdownテーブル生成",
+      "description": "Markdownテーブルを視覚的に作成"
+    },
+    "whatsapp-link": {
+      "name": "WhatsAppリンク生成",
+      "description": "WhatsAppのチャットリンクを作成"
+    },
+    "paypal-link": {
+      "name": "PayPalリンク生成",
+      "description": "PayPal.me支払いリンクを作成"
+    },
+    "svg-to-png": {
+      "name": "SVG PNG変換",
+      "description": "SVGコード/ファイルをPNG画像に変換"
+    },
+    "prime-factors": {
+      "name": "素因数分解",
+      "description": "数値の素因数を検索"
+    },
+    "iban-validator": {
+      "name": "IBAN検証",
+      "description": "国際銀行口座番号(IBAN)を検証"
+    },
+    "ascii-converter": {
+      "name": "ASCII変換",
+      "description": "テキストをASCIIコードに変換"
+    },
+    "utm-builder": {
+      "name": "UTMビルダー",
+      "description": "Google AnalyticsキャンペーンURLを作成"
+    },
+    "meta-tags": {
+      "name": "メタタグ生成",
+      "description": "ウェブサイト用のSEOメタタグを生成"
+    },
+    "og-generator": {
+      "name": "Open Graph生成",
+      "description": "ソーシャルシェア用のOGメタタグを作成"
+    },
+    "twitter-card": {
+      "name": "Twitter Card生成",
+      "description": "Twitter Cardメタタグを作成"
+    },
+    "aspect-ratio": {
+      "name": "アスペクト比計算",
+      "description": "アスペクト比と寸法を計算"
+    },
+    "css-cursor": {
+      "name": "CSSカーソル",
+      "description": "CSSカーソルプロパティのリファレンス"
+    },
+    "css-triangle": {
+      "name": "CSS三角形生成",
+      "description": "純粋なCSSで三角形を生成"
+    },
+    "percentage-calculator": {
+      "name": "パーセント計算",
+      "description": "割合や変化率を計算"
+    },
+    "vat-calculator": {
+      "name": "消費税(VAT)計算",
+      "description": "税込・税抜金額を計算"
+    },
+    "stopwatch": {
+      "name": "ストップウォッチ",
+      "description": "シンプルなブラウザベースのストップウォッチ"
+    },
+    "text-to-speech": {
+      "name": "テキスト読み上げ",
+      "description": "テキストを音声に変換"
+    },
+    "speech-to-text": {
+      "name": "音声認識",
+      "description": "音声をテキストに変換"
+    },
+    "vibration-tester": {
+      "name": "バイブレーションテスト",
+      "description": "デバイスのバイブレーション機能をテスト"
+    },
+    "chmod-calculator": {
+      "name": "Chmod計算",
+      "description": "Linuxファイルパーミッションを計算"
+    },
+    "crontab-generator": {
+      "name": "Crontab生成",
+      "description": "cronスケジュール式を作成"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd生成",
+      "description": "Basic認証用のエントリを生成"
+    },
+    "subnet-calculator": {
+      "name": "サブネット計算",
+      "description": "ネットワークサブネットとIP範囲を計算"
+    },
+    "mac-generator": {
+      "name": "MACアドレス生成",
+      "description": "ランダムなMACアドレスを生成"
+    },
+    "timezone-converter": {
+      "name": "タイムゾーン変換",
+      "description": "複数ゾーン間の時間を変換"
+    },
+    "email-validator": {
+      "name": "メールアドレス検証",
+      "description": "形式チェックとタイポ検知"
+    },
+    "password-strength": {
+      "name": "パスワード強度診断",
+      "description": "パスワードの強度スコアをチェック"
+    },
+    "roman-numerals": {
+      "name": "ローマ数字変換",
+      "description": "ローマ数字と10進数の相互変換"
+    },
+    "margin-calculator": {
+      "name": "利益率計算",
+      "description": "利益率とマークアップを計算"
+    },
+    "roi-calculator": {
+      "name": "ROI計算",
+      "description": "投資利益率(ROI)を計算"
+    },
+    "fuel-calculator": {
+      "name": "燃料費計算",
+      "description": "移動の燃料コストを計算"
+    },
+    "pretty-print-url": {
+      "name": "URL整形",
+      "description": "URLを読みやすく整形"
+    }
+  },
+  "Terms": {
+    "title": "利用規約",
+    "lastUpdated": "最終更新日",
+    "sections": {
+      "acceptance": {
+        "title": "1. 規約への同意",
+        "content": "DailyDevTools にアクセスして使用すると、本契約の条項と条項に拘束されることに同意したものとみなされます。"
+      },
+      "useLicense": {
+        "title": "2. 使用ライセンス",
+        "content": "DailyDevTools は個人目的でも商用目的でも無料で使用できます。次のことは禁止されています:",
+        "list": {
+          "0": "サイトの重要な部分をリバース エンジニアリングまたはスクレイピングしようとします。",
+          "1": "Web サイトに損害を与えたり、Web サイトの可用性やアクセシビリティを損なったりする、またはその可能性のある方法で Web サイトを使用すること。"
+        }
+      },
+      "disclaimer": {
+        "title": "3. 免責事項",
+        "content": "DailyDevTools のツールは「現状のまま」提供されます。当社は、明示的か黙示的かを問わず、いかなる保証も行いません。"
+      },
+      "limitations": {
+        "title": "4. 制限事項",
+        "content": "いかなる場合においても、DailyDevTools またはそのサプライヤーは損害に対して責任を負いません。"
+      },
+      "revisions": {
+        "title": "5. 改訂",
+        "content": "DailyDevTools に表示される資料には、技術的間違い、誤字、または写真上の間違いが含まれる可能性があります..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日",
+    "intro": "DailyDevTools へようこそ。当社はお客様のプライバシーを尊重し、個人データの保護に努めます。",
+    "sections": {
+      "localProcessing": {
+        "title": "2. ツールの仕組み (ローカル処理)",
+        "content": "最も重要なことは、ツールは完全にブラウザ内で実行されるということです。データがデバイスの外に出ることはありません。"
+      },
+      "dataCollection": {
+        "title": "3. 当社が収集するデータ",
+        "content": "私たちはコンテンツを収集しません。使用状況統計には Google Analytics を使用します。"
+      },
+      "cookies": {
+        "title": "4. クッキー",
+        "content": "分析とローカル設定のために Cookie を使用します。"
+      },
+      "thirdParty": {
+        "title": "5. サードパーティのリンク",
+        "content": "当社のサイトには第三者へのリンクが含まれている場合があります。"
+      },
+      "changes": {
+        "title": "6. 本ポリシーの変更",
+        "content": "当社はこのポリシーを随時更新することがあります。"
+      },
+      "contact": {
+        "title": "7. お問い合わせ",
+        "content": "GitHub またはソーシャル メディア経由でご連絡ください。"
+      }
+    }
+  },
+  "Blog": {
+    "title": "開発者リソース",
+    "subtitle": "私たちが構築するツールとそれらの背後にある概念を深く掘り下げます。",
+    "readMore": "続きを読む",
+    "backToBlog": "ブログに戻る",
+    "enjoyedArticle": "この記事を楽しんでいただけましたか？",
+    "checkTools": "ツールをチェック"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "入力",
+      "output": "出力",
+      "format": "整形",
+      "minify": "軽量化",
+      "download": "ダウンロード",
+      "copy": "コピー",
+      "paste": "貼り付け",
+      "copied": "コピーしました！",
+      "upload": "アップロード",
+      "sample": "サンプル",
+      "clear": "クリア",
+      "indent": "インデント:",
+      "chars": "文字",
+      "error": "エラー",
+      "invalid": "無効な入力",
+      "result": "結果",
+      "generate": "生成",
+      "calculate": "計算",
+      "convert": "変換",
+      "validate": "検証",
+      "resultPlaceholder": "結果がここに表示されます..."
+    },
+    "Base64Encoder": {
+      "encode": "エンコード",
+      "decode": "デコード",
+      "textToEncode": "エンコードするテキスト",
+      "base64ToDecode": "デコードするBase64",
+      "enterText": "エンコードするテキストを入力...",
+      "enterBase64": "デコードするBase64を入力...",
+      "encodeAction": "Base64にエンコード",
+      "decodeAction": "Base64からデコード",
+      "base64Output": "Base64出力",
+      "decodedText": "デコードされたテキスト",
+      "resultPlaceholder": "結果がここに表示されます...",
+      "invalidInput": "{mode}の入力が無効です"
+    },
+    "QrGenerator": {
+      "content": "コンテンツ",
+      "placeholder": "https://example.com",
+      "customization": "カスタマイズ",
+      "foreground": "前景色",
+      "background": "背景色",
+      "download": "ダウンロード"
+    },
+    "HashGenerator": {
+      "inputText": "入力テキスト",
+      "placeholder": "ハッシュ化するテキストを入力...",
+      "waiting": "入力を待機中..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "新規生成",
+      "configuration": "設定",
+      "length": "パスワードの長さ",
+      "uppercase": "大文字 (A-Z)",
+      "numbers": "数字 (0-9)",
+      "symbols": "記号 (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "ここにJSONを貼り付け...",
+      "outputPlaceholder": "フォーマットされたJSONがここに表示されます...",
+      "spaces": "スペース"
+    },
+    "UrlEncoder": {
+      "encode": "エンコード",
+      "decode": "デコード",
+      "urlToEncode": "エンコードするURL",
+      "encodedUrlToDecode": "デコードするエンコード済みURL",
+      "enterUrlToEncode": "エンコードするURLまたはテキストを入力...",
+      "enterUrlToDecode": "デコードするエンコード済みURLを入力...",
+      "encodeAction": "URLをエンコード",
+      "decodeAction": "URLをデコード",
+      "encodedUrl": "エンコードされたURL",
+      "decodedUrl": "デコードされたURL",
+      "resultPlaceholder": "結果がここに表示されます...",
+      "chars": "文字",
+      "invalidInput": "{mode}の入力が無効です"
+    },
+    "JwtDecoder": {
+      "pasteToken": "JWTトークンを貼り付け",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "JWTをデコード",
+      "header": "ヘッダー",
+      "payload": "ペイロード",
+      "issued": "発行日時",
+      "expires": "有効期限"
+    },
+    "RegexTester": {
+      "expression": "正規表現",
+      "expressionPlaceholder": "キャプチャグループ (abc)...",
+      "testString": "テスト文字列",
+      "testStringPlaceholder": "ここにテスト文字列を貼り付け...",
+      "matchHighlights": "マッチハイライト",
+      "matches": "件のマッチ",
+      "matchInfo": "マッチ情報",
+      "match": "マッチ",
+      "index": "インデックス",
+      "group": "グループ",
+      "noMatches": "マッチが見つかりません",
+      "highlightPlaceholder": "マッチがここにハイライト表示されます...",
+      "flagsHelp": "g: グローバル, i: 大文字小文字無視, m: 複数行"
+    },
+    "UuidGenerator": {
+      "generate": "生成",
+      "generateCount": "生成数:",
+      "copyAll": "すべてコピー",
+      "copyUuid": "UUIDをコピー",
+      "generatedAt": "ローカルで生成: {time} • バージョン4 UUID"
+    },
+    "WordCounter": {
+      "words": "単語",
+      "characters": "文字",
+      "sentences": "文",
+      "paragraphs": "段落",
+      "readingTime": "読了時間",
+      "min": "分",
+      "textInput": "テキスト入力",
+      "inputPlaceholder": "ここにテキストを入力または貼り付けして分析...",
+      "clear": "クリア"
+    },
+    "TimestampConverter": {
+      "timestamp": "タイムスタンプ",
+      "humanDate": "日時",
+      "convert": "変換",
+      "currentTimestamp": "現在のタイムスタンプ",
+      "inputPlaceholder": "Unixタイムスタンプを入力..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "ここにSQLクエリを貼り付け...",
+      "outputPlaceholder": "フォーマットされたSQLがここに表示されます..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "ここにCSSコードを貼り付け...",
+      "outputPlaceholder": "軽量化されたCSSがここに表示されます..."
+    },
+    "MarkdownEditor": {
+      "editor": "エディター",
+      "preview": "プレビュー",
+      "inputPlaceholder": "ここにMarkdownを入力..."
+    },
+    "TextDiff": {
+      "original": "元のテキスト",
+      "changed": "変更後のテキスト",
+      "compare": "比較",
+      "differences": "差分"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "変換するテキストを入力...",
+      "generatedSlug": "生成されたスラッグ"
+    },
+    "ImageCompressor": {
+      "selectImage": "画像を選択",
+      "quality": "品質",
+      "compress": "圧縮",
+      "download": "ダウンロード",
+      "originalSize": "元のサイズ",
+      "compressedSize": "圧縮後のサイズ"
+    },
+    "LoremIpsum": {
+      "paragraphs": "段落数",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "GradientGenerator": {
+      "angle": "角度",
+      "colors": "カラー",
+      "addColor": "カラーを追加",
+      "copyCss": "CSSをコピー"
+    },
+    "AgeCalculator": {
+      "birthDate": "生年月日",
+      "calculate": "計算",
+      "years": "年",
+      "months": "月",
+      "days": "日",
+      "totalDays": "合計日数",
+      "nextBirthday": "次の誕生日まで"
+    },
+    "AsciiConverter": {
+      "text": "テキスト",
+      "ascii": "ASCII",
+      "convert": "変換",
+      "inputPlaceholder": "テキストを入力..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "水平 (X)",
+      "vertical": "垂直 (Y)",
+      "blur": "ぼかし",
+      "spread": "広がり",
+      "colorOpacity": "色と不透明度",
+      "inset": "内側 (Inset)"
+    },
+    "BmiCalculator": {
+      "metric": "メートル法 (kg/cm)",
+      "imperial": "ヤード・ポンド法 (lbs/in)",
+      "weight": "体重",
+      "height": "身長",
+      "calculate": "BMIを計算",
+      "bmiScore": "あなたのBMIスコア",
+      "underweight": "低体重",
+      "normal": "標準体重",
+      "overweight": "過体重",
+      "obese": "肥満"
+    },
+    "CaseConverter": {
+      "inputText": "入力テキスト",
+      "inputPlaceholder": "変換するテキストを入力...",
+      "upper": "大文字",
+      "lower": "小文字",
+      "title": "タイトルケース",
+      "sentence": "センテンスケース",
+      "camel": "キャメルケース",
+      "pascal": "パスカルケース",
+      "snake": "スネークケース",
+      "kebab": "ケバブケース",
+      "copy": "コピー",
+      "conversions": "変換",
+      "clear": "クリア"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEXカラー",
+      "rgbLabels": "RGBカラー",
+      "hslLabels": "HSLカラー",
+      "cmykLabels": "CMYKカラー",
+      "copy": "コピー",
+      "hexToRgbNote": "※ 現在HEXからRGB/HSL変換のみ対応"
+    },
+    "CreditCardValidator": {
+      "cardNumber": "カード番号",
+      "validate": "検証",
+      "valid": "有効なクレジットカード番号",
+      "invalid": "無効なクレジットカード番号",
+      "placeholder": "カード番号を入力...",
+      "type": "カードタイプ",
+      "checkDigit": "チェックデジット",
+      "luhnValid": "Luhnアルゴリズム検証済み"
+    },
+    "CipherTools": {
+      "encode": "エンコード",
+      "decode": "デコード",
+      "rot13": "ROT13",
+      "caesar": "シーザー暗号",
+      "shift": "シフト",
+      "inputPlaceholder": "こんにちは世界",
+      "outputPlaceholder": "結果がここに表示されます..."
+    },
+    "CronGenerator": {
+      "minute": "分",
+      "hour": "時",
+      "dayMonth": "日 (月)",
+      "month": "月",
+      "dayWeek": "曜日 (週)",
+      "presets": "一般的なプリセット",
+      "everyMinute": "毎分",
+      "everyHour": "毎時",
+      "everyDayMidnight": "毎日真夜中",
+      "everySunday": "毎週日曜日",
+      "everyMonth": "毎月",
+      "everyYear": "毎年",
+      "formatInfo": "形式: * * * * * (分 時 日 月 曜日)",
+      "usageInfo": "* は「毎」、*/n は「nごと」、1,2,3 は指定リストを使用します。"
+    },
+    "DateDiff": {
+      "startDate": "開始日",
+      "endDate": "終了日",
+      "calculate": "計算",
+      "difference": "差分",
+      "years": "年",
+      "months": "月",
+      "days": "日",
+      "totalDays": "総日数",
+      "totalWeeks": "総週数",
+      "totalHours": "総時間"
+    },
+    "DeepLinkTester": {
+      "testLink": "リンクをテスト",
+      "savedLinks": "保存されたリンク",
+      "searchPlaceholder": "保存されたリンクを検索...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "起動",
+      "save": "保存",
+      "delete": "削除",
+      "opens": "回開く",
+      "scanQr": "モバイルデバイスでスキャンしてテスト",
+      "noSavedLinks": "保存されたリンクは見つかりません。",
+      "enterLabel": "このリンクのラベルを入力してください：",
+      "saved": "保存しました！",
+      "confirmDelete": "このリンクを削除しますか？"
+    },
+    "DeviceInfo": {
+      "screen": "画面",
+      "browser": "ブラウザ",
+      "system": "システム",
+      "resolution": "解像度",
+      "colorDepth": "色深度",
+      "userAgent": "ユーザーエージェント",
+      "platform": "プラットフォーム",
+      "language": "言語"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "元の価格",
+      "discountPercent": "割引率",
+      "additionalDiscount": "追加割引",
+      "calculate": "計算",
+      "youSave": "お得額",
+      "finalPrice": "最終価格",
+      "salesTax": "消費税"
+    },
+    "DnsLookup": {
+      "domain": "ドメイン",
+      "lookup": "検索",
+      "recordType": "レコードタイプ",
+      "results": "結果",
+      "placeholder": "例.com",
+      "status": "ステータス",
+      "time": "時間",
+      "server": "サーバー",
+      "answerSection": "回答",
+      "name": "名前",
+      "type": "タイプ",
+      "ttl": "TTL",
+      "data": "データ",
+      "noRecords": "レコードが見つかりません"
+    },
+    "EmailValidator": {
+      "email": "メールアドレス",
+      "validate": "検証",
+      "valid": "有効",
+      "invalid": "無効",
+      "suggestion": "提案",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "画像をアップロード",
+      "generate": "生成",
+      "download": "ダウンロード",
+      "sizes": "サイズ"
+    },
+    "FuelCalculator": {
+      "distance": "距離",
+      "fuelEfficiency": "燃費",
+      "fuelPrice": "燃料価格",
+      "calculate": "計算",
+      "result": "結果",
+      "totalCost": "推定燃料コスト",
+      "fuelNeeded": "必要燃料"
+    },
+    "GridGenerator": {
+      "columns": "列",
+      "rows": "行",
+      "gap": "ギャップ",
+      "preview": "プレビュー",
+      "copyCss": "CSSをコピー",
+      "rowGap": "行の間隔",
+      "colGap": "列の間隔",
+      "options": "オプション",
+      "generate": "生成",
+      "css": "CSS"
+    },
+    "HmacGenerator": {
+      "message": "メッセージ",
+      "secret": "秘密鍵",
+      "algorithm": "アルゴリズム",
+      "generate": "生成",
+      "inputPlaceholder": "テキストを入力...",
+      "secretPlaceholder": "秘密鍵..."
+    },
+    "HtmlEncoder": {
+      "encode": "エンコード",
+      "decode": "デコード",
+      "resultPlaceholder": "結果がここに表示されます...",
+      "inputPlaceholder": "ここにHTMLを貼り付け..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "ステータスコードを検索...",
+      "code": "コード",
+      "name": "名前",
+      "description": "説明",
+      "message": "メッセージ"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "検証",
+      "valid": "有効",
+      "invalid": "無効",
+      "placeholder": "IBANを入力...",
+      "inputLabel": "IBAN番号を入力",
+      "validTitle": "有効なIBAN",
+      "invalidTitle": "無効なIBAN",
+      "validDesc": "フォーマットとチェックサムが正しいです。",
+      "invalidDesc": "チェックサムが一致しません。",
+      "country": "国",
+      "bankCode": "銀行コード"
+    },
+    "ImageBase64": {
+      "upload": "アップロード",
+      "convert": "変換",
+      "copy": "コピー",
+      "placeholder": "data:image/png;base64,...",
+      "uploadImage": "画像をアップロード",
+      "convertToBase64": "Base64に変換",
+      "convertToImage": "画像に変換",
+      "base64String": "Base64文字列",
+      "download": "ダウンロード"
+    },
+    "ImageConverter": {
+      "selectImage": "画像を選択",
+      "format": "フォーマット",
+      "convert": "変換",
+      "download": "ダウンロード",
+      "quality": "画質",
+      "uploadImage": "画像をアップロード"
+    },
+    "InterestCalculator": {
+      "principal": "元本",
+      "rate": "金利",
+      "time": "期間 (年)",
+      "calculate": "計算",
+      "simpleInterest": "単利",
+      "compoundInterest": "複利",
+      "totalAmount": "総額",
+      "type": "タイプ",
+      "frequency": "複利頻度",
+      "annually": "年1回",
+      "monthly": "月1回",
+      "daily": "毎日",
+      "year": "年"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "JSONを入力...",
+      "convert": "変換",
+      "format": "フォーマット",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSONからCSVへ",
+      "csvToJson": "CSVからJSONへ",
+      "jsonInput": "JSON入力",
+      "csvInput": "CSV入力",
+      "jsonOutput": "JSON出力",
+      "csvOutput": "CSV出力"
+    },
+    "JsonDiff": {
+      "original": "元のJSON",
+      "modified": "変更後のJSON",
+      "compare": "比較",
+      "differences": "差分"
+    },
+    "KeycodeInfo": {
+      "pressKey": "任意のキーを押してください",
+      "key": "キー",
+      "code": "コード",
+      "keyCode": "キーコード",
+      "which": "どれの",
+      "location": "位置",
+      "modifiers": "修飾キー",
+      "standard": "標準",
+      "left": "左",
+      "right": "右",
+      "numpad": "テンキー",
+      "space": "(スペース)",
+      "info": "JavaScriptのイベントキーコードやコードなどを表示します。"
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "キーワード頻度を分析するテキストを貼り付け...",
+      "analyze": "分析",
+      "keyword": "キーワード",
+      "count": "回数",
+      "density": "出現率"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "ここにリストを入力...",
+      "sort": "ソート",
+      "reverse": "反転",
+      "shuffle": "シャッフル",
+      "deduplicate": "重複削除",
+      "ascending": "昇順",
+      "descending": "降順",
+      "length": "長さ順",
+      "trim": "空行削除",
+      "lines": "行数:",
+      "chars": "文字数:"
+    },
+    "LoanCalculator": {
+      "principal": "元本",
+      "interestRate": "金利",
+      "term": "期間",
+      "calculate": "計算",
+      "monthlyPayment": "月々の支払い",
+      "totalInterest": "総利息",
+      "totalPayment": "総支払額",
+      "loanDetails": "ローン詳細",
+      "loanAmount": "借入額",
+      "loanTerm": "借入期間",
+      "years": "年",
+      "months": "ヶ月",
+      "interest": "利息"
+    },
+    "MacGenerator": {
+      "generate": "生成",
+      "copy": "コピー",
+      "separator": "区切り文字",
+      "format": "フォーマット",
+      "quantity": "生成数",
+      "uppercase": "大文字"
+    },
+    "MarginCalculator": {
+      "cost": "原価",
+      "price": "販売価格",
+      "calculate": "計算",
+      "margin": "利益率",
+      "markup": "マークアップ",
+      "profit": "利益",
+      "revenue": "収益",
+      "netProfit": "純利益",
+      "grossMargin": "粗利益率"
+    },
+    "PasswordManager": {
+      "masterPassword": "マスターパスワード",
+      "unlock": "解除",
+      "searchPlaceholder": "アカウントを検索...",
+      "addNew": "新規追加",
+      "siteName": "サイト名",
+      "username": "ユーザー名",
+      "password": "パスワード",
+      "save": "保存",
+      "delete": "削除"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "ここに入力...",
+      "strength": "強度",
+      "weak": "弱い",
+      "fair": "普通",
+      "good": "良い",
+      "strong": "強い",
+      "requirements": "要件",
+      "length": "8文字以上",
+      "number": "数字を含む",
+      "uppercase": "大文字を含む",
+      "symbol": "記号を含む"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me ユーザー名",
+      "amount": "金額",
+      "currency": "通貨",
+      "generate": "生成",
+      "itemName": "商品名",
+      "link": "リンク",
+      "yourLink": "作成されたリンク",
+      "openPaypal": "PayPalを開く"
+    },
+    "RobotsGenerator": {
+      "rules": "ルール",
+      "addRule": "ルールを追加",
+      "allow": "許可",
+      "disallow": "不許可",
+      "sitemap": "サイトマップURL (オプション)",
+      "output": "生成されたrobots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "値",
+      "percentage": "パーセント",
+      "calculate": "計算",
+      "result": "結果",
+      "whatIs": "とは何ですか",
+      "of": "％ の",
+      "isWhatPercentOf": "は何%ですか",
+      "percentChangeFrom": "% からの変化",
+      "to": "に"
+    },
+    "PomodoroTimer": {
+      "work": "集中時間",
+      "shortBreak": "短い休憩",
+      "longBreak": "長い休憩",
+      "start": "開始",
+      "pause": "一時停止",
+      "reset": "リセット",
+      "minutes": "分"
+    },
+    "PrimeFactors": {
+      "number": "数値",
+      "calculate": "計算",
+      "factors": "素因数",
+      "inputLabel": "数値を入力",
+      "placeholder": "例: 120",
+      "isPrime": "この数字は素数です！",
+      "isComposite": "この数字は合成数です"
+    },
+    "RoiCalculator": {
+      "investment": "投資額",
+      "returns": "リターン",
+      "calculate": "計算",
+      "roi": "ROI",
+      "profit": "利益",
+      "finalValue": "最終価値",
+      "time": "期間 (年)",
+      "totalGain": "総利益",
+      "annualizedRoi": "年率ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "10進数",
+      "decimalPlaceholder": "2024",
+      "roman": "ローマ数字",
+      "convert": "変換",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "録画開始",
+      "stopRecording": "録画停止",
+      "download": "ダウンロード",
+      "recording": "録画中..."
+    },
+    "SignatureGenerator": {
+      "draw": "描画",
+      "clear": "クリア",
+      "download": "ダウンロード",
+      "penColor": "ペンの色",
+      "penSize": "ペンのサイズ"
+    },
+    "SpeechToText": {
+      "startListening": "聞き取り開始",
+      "stopListening": "聞き取り停止",
+      "transcript": "書き起こし",
+      "placeholder": "書き起こしがここに表示されます..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO ユーザー (ID、名前、年齢) VALUES (1, 'John', 30);",
+      "convert": "変換",
+      "result": "結果"
+    },
+    "Stopwatch": {
+      "start": "開始",
+      "stop": "停止",
+      "reset": "リセット",
+      "lap": "ラップ"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IPアドレス",
+      "subnetMask": "サブネットマスク",
+      "calculate": "計算",
+      "networkAddress": "ネットワークアドレス",
+      "broadcastAddress": "ブロードキャストアドレス",
+      "usableHosts": "使用可能ホスト数"
+    },
+    "SvgToPng": {
+      "pasteSvg": "SVGを貼り付け",
+      "uploadSvg": "SVGをアップロード",
+      "convert": "変換",
+      "download": "ダウンロード"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "読み上げるテキストを入力...",
+      "speak": "読み上げ",
+      "stop": "停止",
+      "voice": "音声",
+      "rate": "速度",
+      "pitch": "ピッチ"
+    },
+    "TextTools": {
+      "inputPlaceholder": "ここに入力...",
+      "reverse": "反転",
+      "uppercase": "大文字",
+      "lowercase": "小文字",
+      "encode": "エンコード"
+    },
+    "TimezoneConverter": {
+      "from": "変換元",
+      "to": "変換先",
+      "convert": "変換",
+      "currentTime": "現在時刻"
+    },
+    "TokenGenerator": {
+      "length": "長さ",
+      "generate": "生成",
+      "copy": "コピー",
+      "includeNumbers": "数字を含める",
+      "includeSymbols": "記号を含める"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "URLを入力...",
+      "parse": "解析",
+      "protocol": "プロトコル",
+      "host": "ホスト",
+      "path": "パス",
+      "query": "クエリ"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "ウェブサイトURL",
+      "source": "ソース",
+      "medium": "メディア",
+      "campaign": "キャンペーン",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "VatCalculator": {
+      "amount": "金額",
+      "vatRate": "税率",
+      "addVat": "税込価格",
+      "removeVat": "税抜価格",
+      "calculate": "計算"
+    },
+    "VibrationTester": {
+      "vibrate": "振動",
+      "pattern": "パターン",
+      "duration": "時間",
+      "test": "テスト"
+    },
+    "WeekNumber": {
+      "currentWeek": "現在の週番号",
+      "yearProgress": "年の進捗",
+      "week": "週"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "電話番号",
+      "message": "メッセージ",
+      "generate": "生成",
+      "copy": "コピー",
+      "placeholder": "こんにちは、興味があります..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "YouTube動画のURLを貼り付け...",
+      "getThumbnail": "サムネイルを取得",
+      "download": "ダウンロード"
+    },
+    "CrontabGenerator": {
+      "minute": "分",
+      "hour": "時",
+      "day": "日",
+      "month": "月",
+      "weekday": "曜日",
+      "expression": "式",
+      "description": "説明"
+    },
+    "ChmodCalculator": {
+      "owner": "所有者",
+      "group": "グループ",
+      "others": "その他",
+      "read": "読み取り",
+      "write": "書き込み",
+      "execute": "実行",
+      "numeric": "数値表記",
+      "symbolic": "記号表記"
+    },
+    "HtpasswdGenerator": {
+      "username": "ユーザー名",
+      "password": "パスワード",
+      "algorithm": "アルゴリズム",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "AspectRatio": {
+      "width": "幅",
+      "height": "高さ",
+      "ratio": "比率",
+      "calculate": "計算"
+    },
+    "CssClipPath": {
+      "shape": "形状",
+      "preview": "プレビュー",
+      "copyCss": "CSSをコピー"
+    },
+    "CssCursor": {
+      "cursor": "カーソル",
+      "preview": "プレビュー",
+      "copyCss": "CSSをコピー"
+    },
+    "CssTriangle": {
+      "direction": "方向",
+      "size": "サイズ",
+      "color": "色",
+      "preview": "プレビュー",
+      "copyCss": "CSSをコピー"
+    },
+    "MetaGenerator": {
+      "title": "タイトル",
+      "description": "説明",
+      "keywords": "キーワード",
+      "author": "著者",
+      "url": "URL",
+      "image": "画像",
+      "generate": "生成",
+      "copy": "コピー",
+      "titlePlaceholder": "素晴らしいウェブサイト",
+      "descriptionPlaceholder": "サイトの簡単な説明...",
+      "keywordsPlaceholder": "ウェブ、ツール、開発",
+      "authorPlaceholder": "あなたの名前",
+      "outputPlaceholder": "メタタグがここに表示されます..."
+    },
+    "OgGenerator": {
+      "title": "タイトル",
+      "description": "説明",
+      "url": "URL",
+      "image": "画像",
+      "type": "タイプ",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "TwitterCard": {
+      "cardType": "カードタイプ",
+      "title": "タイトル",
+      "description": "説明",
+      "image": "画像",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "MarkdownTable": {
+      "rows": "行",
+      "columns": "列",
+      "header": "ヘッダー",
+      "addRow": "行を追加",
+      "addColumn": "列を追加",
+      "generate": "生成",
+      "copy": "コピー"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "整形",
+      "copy": "コピー"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSONフォーマット：開発者のためのベストプラクティス",
+      "excerpt": "デバッグのために適切なJSONフォーマットが重要な理由と、ワークフローでそれを自動化する方法を学びます。",
+      "category": "開発"
+    },
+    "mastering-regex": {
+      "title": "正規表現の習得：ビジュアルガイド",
+      "excerpt": "正規表現は怖くありません。メール検証、URLなどの一般的なパターンを分解します。",
+      "category": "チュートリアル"
+    },
+    "cron-job-scheduling": {
+      "title": "Cronジョブの解明：タスクのスケジュール方法",
+      "excerpt": "Cronの5つ星構文を理解し、Linuxでバックアップ、メール、スクリプトをスケジュールする方法。",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "ローカルパスワードマネージャーが安全な理由（KeyPassの代替）",
+      "excerpt": "クラウドの侵害は一般的です。AES-256暗号化を使用してローカルにパスワードを保存することが、個人のセキュリティにとって最も安全な賭けである理由を学びます。",
+      "category": "セキュリティ"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "ツールを検索...",
+    "noResults": "結果が見つかりません。",
+    "select": "選択",
+    "navigate": "移動"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "フィードバックを送信",
+    "feedback": "フィードバック",
+    "thankYou": "ありがとうございます！",
+    "feedbackSent": "フィードバックが正常に送信されました。",
+    "close": "閉じる",
+    "name": "名前 (任意)",
+    "namePlaceholder": "お名前",
+    "email": "メールアドレス (任意)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "フィードバックの種類",
+    "typeSuggestion": "💡 提案",
+    "typeBug": "🐛 バグ報告",
+    "typeFeature": "✨ 機能リクエスト",
+    "typeOther": "📝 その他",
+    "message": "メッセージ *",
+    "messagePlaceholder": "ご意見をお聞かせください...",
+    "sending": "送信中...",
+    "weReadEveryMessage": "すべてのメッセージに目を通しています。改善にご協力いただきありがとうございます！"
+  },
+  "ShareButton": {
+    "shareTool": "ツールを共有",
+    "copiedLink": "リンクをコピーしました！"
+  },
+  "TextDiff": {
+    "original": "元のテキスト",
+    "changed": "変更後のテキスト",
+    "update": "差分を更新",
+    "old": "旧",
+    "new": "新",
+    "content": "内容"
+  },
+  "CrontabGenerator": {
+    "minute": "分",
+    "hour": "時",
+    "day": "日",
+    "month": "月",
+    "weekday": "曜日",
+    "min": "分",
+    "mon": "月",
+    "week": "週",
+    "presets": "クイックプリセット",
+    "everyMinute": "毎分",
+    "every5Minutes": "5分ごと",
+    "everyHour": "毎時",
+    "everyDayMidnight": "毎日深夜",
+    "everyWeek": "毎週",
+    "everyMonth": "毎月"
+  },
+  "SpeechToText": {
+    "notSupported": "お使いのブラウザはWeb Speech APIをサポートしていません。Chromeを使用してください。",
+    "placeholder": "音声認識の結果がここに表示されます...",
+    "listening": "聞き取り中...",
+    "start": "マイクをクリックして開始"
+  },
+  "OgGenerator": {
+    "title": "タイトル",
+    "description": "説明",
+    "image": "画像URL",
+    "url": "カノニカルURL",
+    "type": "タイプ",
+    "website": "ウェブサイト",
+    "article": "記事",
+    "profile": "プロフィール",
+    "preview": "プレビュー (Facebook/LinkedIn)",
+    "generatedHtml": "生成されたHTML",
+    "copy": "コピー"
+  },
+  "WeekNumber": {
+    "checkLabel": "日付から週番号を確認",
+    "yearProgress": "年の進捗"
+  },
+  "RelatedTools": {
+    "title": "こちらもおすすめ",
+    "subtitle": "他の人気の開発者ツールを見る",
+    "openTool": "ツールを開く"
+  },
+  "Breadcrumb": {
+    "home": "ホーム",
+    "tools": "ツール"
+  },
+  "SvgToPng": {
+    "upload": "SVGファイルをアップロード",
+    "browse": "またはクリックして選択",
+    "paste": "...またはSVGコードを貼り付け",
+    "preview": "PNGプレビュー (2倍)",
+    "download": "PNGをダウンロード",
+    "errorType": "有効なSVGファイルをアップロードしてください。",
+    "errorRender": "SVGのレンダリングに失敗しました。有効なXMLであることを確認してください。",
+    "errorProcess": "SVGの処理中にエラーが発生しました。"
+  },
+  "GradientGenerator": {
+    "config": "設定",
+    "colors": "色",
+    "type": "タイプ",
+    "angle": "角度",
+    "random": "ランダム",
+    "copyCss": "CSSをコピー",
+    "copied": "コピーしました"
+  },
+  "TimezoneConverter": {
+    "date": "日付",
+    "time": "時刻 (ローカル)",
+    "invalid": "無効",
+    "zones": {
+      "utc": "協定世界時 (UTC)",
+      "newYork": "ニューヨーク (EST/EDT)",
+      "losAngeles": "ロサンゼルス (PST/PDT)",
+      "london": "ロンドン (GMT/BST)",
+      "paris": "パリ (CET/CEST)",
+      "tokyo": "東京 (JST)",
+      "sydney": "シドニー (AEST/AEDT)",
+      "dubai": "ドバイ (GST)",
+      "india": "インド (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "乱数生成",
+    "listGen": "リストから選択",
+    "coinGen": "コイントス",
+    "min": "最小値",
+    "max": "最大値",
+    "count": "個数",
+    "generate": "生成",
+    "listLabel": "リスト項目 (1行に1つ)",
+    "pick": "ランダムに選択",
+    "winner": "結果は...",
+    "flip": "コインを投げる",
+    "heads": "表",
+    "tails": "裏"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "画面を録画中...",
+    "titleFree": "無料オンライン画面録画",
+    "desc": "画面、アプリウィンドウ、またはブラウザタブをキャプチャします。透かしなし、時間制限なし。",
+    "start": "録画を開始",
+    "stop": "録画を停止",
+    "browserSupport": "デスクトップ版 Chrome、Edge、Firefox で最適に動作します。"
+  },
+  "CssCursor": {
+    "hoverTest": "ここにカーソルを合わせてテスト"
+  },
+  "VatCalculator": {
+    "amount": "金額",
+    "rate": "消費税率 (%)",
+    "addVat": "税込計算 (内税)",
+    "removeVat": "税抜計算 (外税)",
+    "netAmount": "税抜金額",
+    "vatAmount": "消費税額",
+    "grossTotal": "税込合計",
+    "netTotal": "税抜合計",
+    "grossAmount": "税込金額"
+  },
+  "MyIP": {
+    "ipLabel": "あなたのパブリックIPアドレス",
+    "loading": "読み込み中...",
+    "isp": "インターネットプロバイダー (ISP)",
+    "location": "場所",
+    "asn": "ASN",
+    "timezone": "タイムゾーン",
+    "note": "これはあなたがアクセスしたウェブサイトに表示されるIPアドレスです。VPNやプロキシを使用している場合、ローカルIPとは異なる場合があります。"
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "URLを入力",
+    "formatted": "整形された出力",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "placeholder": "上にURLを貼り付けて整形します。"
+  },
+  "WhatsAppLink": {
+    "phone": "電話番号 (国番号付き)",
+    "message": "事前入力メッセージ",
+    "hint": "+、-、() は含めないでください。",
+    "yourLink": "あなたのWhatsAppリンク",
+    "open": "チャットを開く"
+  },
+  "UrlParser": {
+    "enterUrl": "URLを入力",
+    "params": "クエリパラメータ",
+    "error": "無効なURL"
+  },
+  "FaviconGenerator": {
+    "upload": "画像をアップロード",
+    "browse": "推奨: 512x512 PNG",
+    "original": "オリジナル",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Favicon.png をダウンロード",
+    "note": "* 現在は32x32のPNGファビコンを生成します。レガシーサポートが必要な場合は .ico にリネームしてください。"
+  },
+  "SubnetCalculator": {
+    "ip": "IPアドレス",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "計算",
+    "subnetMask": "サブネットマスク",
+    "networkAddress": "ネットワークアドレス",
+    "firstHost": "最初のホスト",
+    "lastHost": "最後のホスト",
+    "broadcastAddress": "ブロードキャストアドレス",
+    "totalHosts": "総ホスト数"
+  },
+  "SlugGenerator": {
+    "inputLabel": "記事タイトル / テキストを入力",
+    "generated": "生成されたスラッグ",
+    "copy": "スラッグをコピー"
+  },
+  "SqlToJson": {
+    "inputLabel": "入力SQL (INSERT文のみ)",
+    "convert": "JSONに変換",
+    "error": "SQLを解析できませんでした。標準的なINSERT INTO文であることを確認してください。"
+  },
+  "MarkdownTable": {
+    "addRow": "+ 行を追加",
+    "addCol": "+ 列を追加",
+    "headerPlaceholder": "ヘッダー",
+    "outputLabel": "Markdown出力",
+    "copy": "Markdownをコピー"
+  },
+  "TwitterCard": {
+    "cardType": "カードタイプ",
+    "siteHandle": "サイトハンドル (例: @twitter)",
+    "title": "タイトル",
+    "description": "説明",
+    "imageUrl": "画像URL",
+    "preview": "プレビュー",
+    "generatedHtml": "生成されたHTML",
+    "copy": "コピー",
+    "placeholderTitle": "カードタイトル",
+    "placeholderDesc": "説明がここに入ります..."
+  },
+  "TextToSpeech": {
+    "placeholder": "読み上げるテキストを入力...",
+    "voice": "音声",
+    "speed": "速度",
+    "pitch": "ピッチ",
+    "speak": "再生"
+  },
+  "TokenGenerator": {
+    "length": "長さ",
+    "includeNumbers": "数字を含める",
+    "includeSymbols": "記号を含める",
+    "generate": "トークンを生成"
+  },
+  "CssTriangle": {
+    "direction": "方向",
+    "color": "色",
+    "width": "幅 (px)",
+    "height": "高さ (px)",
+    "copy": "コピー"
+  },
+  "UnitConverter": {
+    "length": "長さ",
+    "weight": "重さ",
+    "temperature": "温度",
+    "meters": "メートル",
+    "kilometers": "キロメートル",
+    "centimeters": "センチメートル",
+    "millimeters": "ミリメートル",
+    "inches": "インチ",
+    "feet": "フィート",
+    "yards": "ヤード",
+    "miles": "マイル",
+    "kilograms": "キログラム",
+    "grams": "グラム",
+    "pounds": "ポンド",
+    "ounces": "オンス",
+    "celsius": "摂氏 (Celsius)",
+    "fahrenheit": "華氏 (Fahrenheit)",
+    "kelvin": "ケルビン (Kelvin)"
+  },
+  "CssClipPath": {
+    "shapes": "形状",
+    "preview": "プレビュー",
+    "cssCode": "CSSコード",
+    "copy": "コピー",
+    "copied": "コピー完了"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "画像をアップロード",
+    "uploadDesc": "JPG, PNG, WebP。ローカルで圧縮されます。",
+    "selectImage": "画像を選択",
+    "settings": "圧縮設定",
+    "quality": "品質",
+    "originalSize": "元のサイズ",
+    "compressedSize": "圧縮後のサイズ",
+    "saving": "節約",
+    "download": "ダウンロード"
+  },
+  "HtpasswdGenerator": {
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "algorithm": "アルゴリズム",
+    "generate": "エントリを生成",
+    "result": "結果",
+    "sha1": "SHA-1 (非推奨ですが標準的)",
+    "notSupported": "このクライアントサイドバージョンではSHA-1のみサポートされています。"
+  },
+  "MetaTags": {
+    "pageTitle": "ページタイトル",
+    "description": "説明 (Description)",
+    "author": "著者 (Author)"
+  },
+  "AgeCalculator": {
+    "dob": "生年月日",
+    "age": "年齢",
+    "years": "歳",
+    "months": "ヶ月",
+    "days": "日",
+    "nextBirthday": "次の誕生日"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "ウェブサイトURL (必須)",
+    "source": "キャンペーンソース (必須)",
+    "medium": "キャンペーンメディア (必須)",
+    "name": "キャンペーン名 (必須)",
+    "term": "キャンペーン用語 (任意)",
+    "content": "キャンペーンコンテンツ (任意)",
+    "generatedUrl": "生成されたURL",
+    "copy": "URLをコピー"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "現在のUNIX時間",
+    "timestampLabel": "タイムスタンプ (秒)",
+    "isoLabel": "ISO日付形式",
+    "utcDate": "UTC日付",
+    "localDate": "現地日付",
+    "relative": "相対"
+  },
+  "SignatureGenerator": {
+    "color": "色",
+    "width": "太さ",
+    "clear": "クリア",
+    "download": "PNGをダウンロード",
+    "signHere": "ここに署名",
+    "note": "署名はブラウザ内でローカルに処理されます。保存やアップロードはされません。"
+  },
+  "MarkdownEditor": {
+    "previewLabel": "ライブプレビュー"
+  },
+  "CipherTools": {
+    "shiftAmount": "シフト量 (N)",
+    "inputText": "入力テキスト",
+    "outputText": "出力テキスト",
+    "rot13": "ROT13",
+    "caesar": "シーザー暗号 (+3)",
+    "shift1": "シフト +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "画面解像度",
+    "browser": "ブラウザ",
+    "cpuCores": "CPUコア数",
+    "battery": "バッテリー",
+    "detailedSpecs": "詳細スペック",
+    "userAgent": "ユーザーエージェント",
+    "platform": "プラットフォーム",
+    "windowSize": "ウィンドウサイズ",
+    "pixelRatio": "ピクセル比",
+    "colorDepth": "色深度",
+    "ram": "RAM",
+    "cookiesEnabled": "クッキー有効",
+    "onlineStatus": "オンライン状態",
+    "unknown": "不明",
+    "yes": "はい",
+    "no": "いいえ",
+    "enabled": "有効",
+    "disabled": "無効"
+  },
+  "ChmodCalculator": {
+    "owner": "所有者 (Owner)",
+    "group": "グループ (Group)",
+    "public": "その他 (Public)",
+    "read": "読み取り (Read)",
+    "write": "書き込み (Write)",
+    "execute": "実行 (Execute)",
+    "numeric": "数値 (Numeric)",
+    "symbolic": "記号 (Symbolic)"
+  },
+  "PasswordManager": {
+    "title": "パスワードマネージャー",
+    "desc": "パスワードをローカルに安全に保存・管理します。",
+    "unlock": "保管庫をロック解除",
+    "create": "新しい保管庫を作成",
+    "unlockDesc": "アカウントにアクセスするにはマスターパスワードを入力してください。",
+    "createDesc": "強力なマスターパスワードを設定してください。データはローカルで暗号化されます。",
+    "masterPassword": "マスターパスワード",
+    "unlockBtn": "ロック解除",
+    "createBtn": "保管庫を作成",
+    "note": "データはAES-GCM暗号化を使用してブラウザに保存されます。パスワードを紛失した場合、復元することはできません。",
+    "myPasswords": "マイパスワード",
+    "addNew": "新規追加",
+    "search": "アカウントを検索...",
+    "noPasswords": "パスワードが見つかりません。",
+    "addAccount": "アカウントを追加",
+    "accountTitle": "タイトル / ウェブサイト",
+    "username": "ユーザー名 / メールアドレス",
+    "password": "パスワード",
+    "url": "URL (任意)",
+    "save": "アカウントを保存",
+    "cancel": "キャンセル",
+    "incorrectPassword": "パスワードが間違っているか、データが破損しています。",
+    "loading": "読み込み中..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "ウェブサイト詳細",
+    "pageTitle": "ページタイトル",
+    "description": "説明 (Description)",
+    "keywords": "キーワード (カンマ区切り)",
+    "author": "著者 (Author)",
+    "socialPreview": "ソーシャルプレビュー (OG & Twitter)",
+    "websiteUrl": "ウェブサイトURL",
+    "previewImage": "プレビュー画像URL",
+    "generatedHtml": "生成されたHTML",
+    "copy": "HTMLをコピー",
+    "copied": "コピー完了"
+  },
+  "VibrationTester": {
+    "worksOnly": "振動ハードウェアを搭載したデバイス（例：スマートフォン）でのみ動作します。",
+    "duration": "持続時間 (ms)",
+    "vibrateOnce": "1回振動",
+    "pulsePattern": "パルスパターン",
+    "longPulse": "長いパルス",
+    "stop": "停止"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "なぜJSONのフォーマットが重要なのか",
+      "block_2": "JSON (JavaScript Object Notation) はWebの言語です。しかし、APIから返される生のJSONは、多くの場合、縮小された混乱状態です。フォーマットすることで、読みやすく、デバッグしやすく、安全になります。",
+      "block_3": "1. 可読性は王様",
+      "block_4": "5000行のAPIレスポンスをデバッグしているとき、インデントは命を救います。私たちの<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSONフォーマット</a>ツールは、2スペースまたは4スペースのインデントを使用して構造を明確にします。",
+      "block_5": "2. 検証",
+      "block_6": "たった一つのカンマの欠落がアプリを壊す可能性があります。設定ファイルにコミットする前に、常にJSONを検証してください。",
+      "block_7": "結論",
+      "block_8": "括弧を手動でチェックする時間を無駄にしないでください。自動化ツールを使用しましょう。"
+    },
+    "mastering-regex": {
+      "block_1": "正規表現の解説",
+      "block_2": "正規表現は強力ですが、混乱しやすいものです。可視化してみましょう。",
+      "block_3": "一般的なパターン",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">メールアドレス:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">電話番号:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "当社の<a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">正規表現テスター</a>で、これらのパターンを今すぐテストしてみてください。"
+    },
+    "cron-job-scheduling": {
+      "block_1": "Cronの5つの星",
+      "block_2": "分、時、日、月、曜日。それだけです。",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">例</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">毎日深夜0時に実行: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "例",
+      "block_6": "15分ごとに実行: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "助けが必要ですか？ <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cronジェネレーター</a>を使用して、視覚的に式を作成してください。"
+    },
+    "secure-password-storage-local": {
+      "block_1": "クラウド保管庫の問題点",
+      "block_2": "LastPass、Okta、その他の大手企業が侵害被害に遭っています。保管庫がオンラインにある場合、それは標的になります。",
+      "block_3": "解決策：ローカル暗号化",
+      "block_4": "当社の新しい<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">ローカルパスワードマネージャー</a></strong>は、完全にブラウザ上で動作します。マスターパスワードからPBKDF2を使用して派生した<strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256ビット暗号化</strong>を使用しています。",
+      "block_5": "仕組み",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ゼロ知識:</strong> 私たちはあなたのパスワードを見ることはありません。デバイスから離れることはありません。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">オフラインストレージ:</strong> 暗号化された保管庫は、ブラウザのローカルストレージに保存されます。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">エクスポート可能:</strong> 生の暗号化データをいつでもエクスポート/バックアップできます。</li>",
+      "block_7": "マスターキーの管理をクラウドに任せるのはやめましょう。今日から<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">ローカルパスワードマネージャー</a>をお試しください。"
+    }
+  }
+}

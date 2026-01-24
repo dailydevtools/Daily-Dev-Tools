@@ -1,7 +1,20 @@
 {
-  "name": "dailydevtools",
-  "version": "0.1.0",
+  "name": "daily-dev-tools",
+  "version": "1.0.0",
+  "description": "Fast, free, and privacy-focused developer tools.",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohanpaliyal/Daily-Dev-Tools.git"
+  },
+  "keywords": [
+    "developer-tools",
+    "nextjs",
+    "utility",
+    "privacy-focused"
+  ],
+  "author": "Sohan Paliyal",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,8 +22,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "isomorphic-dompurify": "^2.30.0",
     "lucide-react": "^0.468.0",
     "next": "16.1.3",
+    "next-intl": "^4.7.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

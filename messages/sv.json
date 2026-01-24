@@ -1,0 +1,1814 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Verktyg",
+    "blog": "Blogg",
+    "github": "GitHub",
+    "searchPlaceholder": "Sök..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Gratis Online Utvecklarverktyg",
+    "description": "90+ gratis onlineverktyg för alla. Formaterare, omvandlare, generatorer och verktyg. Snabbt, privat och ingen registrering krävs."
+  },
+  "NotFound": {
+    "title": "Sidan hittades inte",
+    "description": "Tyvärr, vi kunde inte hitta sidan du letar efter.",
+    "backHome": "Tillbaka till Hem",
+    "suggestions": "Prova att söka efter ett verktyg eller bläddra bland våra populära verktyg nedan."
+  },
+  "Homepage": {
+    "heroTag": "100+ Gratis Verktyg • Privat • Ingen Registrering",
+    "titleLine1": "Dagliga Utvecklarverktyg",
+    "titleLine2": "Som Bara Fungerar",
+    "subtitle": "Snabba, vackra och integritetsfokuserade verktyg för utvecklare, designers och alla. Allt körs i din webbläsare.",
+    "recentTools": "Nyligen Använda",
+    "noRecentText": "Börja använda verktyg för att se dem här",
+    "searchResults": "Sökresultat",
+    "popularTools": "Populära",
+    "toolsCount": "{count} verktyg tillgängliga",
+    "features": {
+      "fast": {
+        "title": "Blixtsnabbt",
+        "desc": "Alla verktyg körs lokalt i din webbläsare"
+      },
+      "private": {
+        "title": "100% Privat",
+        "desc": "Dina data lämnar aldrig din enhet"
+      },
+      "simple": {
+        "title": "Byggt för Alla",
+        "desc": "Enkelt nog för alla, kraftfullt för proffs"
+      },
+      "free": {
+        "title": "Alltid Gratis",
+        "desc": "Inga konton, inga gränser"
+      }
+    },
+    "categories": {
+      "All": "Alla",
+      "Favorites": "Favoriter",
+      "Developer": "Utvecklare",
+      "Design": "Design",
+      "Content": "Innehåll",
+      "Security": "Säkerhet",
+      "Productivity": "Produktivitet",
+      "Math": "Matematik",
+      "Utility": "Verktyg"
+    },
+    "cta": {
+      "title": "Redo att öka din produktivitet?",
+      "text": "Börja använda våra utvecklarverktyg gratis. Ingen registrering krävs, ingen datainsamling.",
+      "button": "Börja Gratis"
+    },
+    "openTool": "Öppna verktyg",
+    "noResults": "Inga verktyg hittades som matchar",
+    "clearFilters": "Rensa filter"
+  },
+  "Footer": {
+    "builtWith": "Byggt med ❤️ av",
+    "allTools": "Alla Verktyg",
+    "blog": "Blogg",
+    "about": "Om",
+    "privacy": "Integritet",
+    "terms": "Villkor"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON-formaterare",
+      "description": "Formatera, validera och försköna JSON direkt"
+    },
+    "base64-encoder": {
+      "name": "Base64-kodare",
+      "description": "Koda och avkoda Base64-strängar"
+    },
+    "url-encoder": {
+      "name": "URL-kodare",
+      "description": "Koda och avkoda URL:er säkert"
+    },
+    "jwt-decoder": {
+      "name": "JWT-avkodare",
+      "description": "Avkoda och inspektera JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "Regex-testare",
+      "description": "Testa reguljära uttryck i realtid"
+    },
+    "hash-generator": {
+      "name": "Hash-generator",
+      "description": "Generera MD5, SHA-1, SHA-256 hash"
+    },
+    "uuid-generator": {
+      "name": "UUID-generator",
+      "description": "Generera slumpmässiga UUID/GUID direkt"
+    },
+    "css-minifier": {
+      "name": "CSS-minifierare",
+      "description": "Minifiera och optimera din CSS-kod"
+    },
+    "markdown-editor": {
+      "name": "Markdown-förhandsgranskning",
+      "description": "Markdown-redigerare med realtidsförhandsgranskning"
+    },
+    "color-converter": {
+      "name": "Färgkonverterare",
+      "description": "Konvertera Hex, RGB, HSL och CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Tidsstämpelverktyg",
+      "description": "Konvertera Unix-tidsstämplar till läsbara datum"
+    },
+    "sql-formatter": {
+      "name": "SQL-formaterare",
+      "description": "Formatera och försköna SQL-frågor"
+    },
+    "password-generator": {
+      "name": "Lösenordsgenerator",
+      "description": "Skapa säkra, slumpmässiga lösenord"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generera platshållartext för designer"
+    },
+    "image-base64": {
+      "name": "Bild till Base64",
+      "description": "Konvertera bilder till Base64-strängar"
+    },
+    "qr-generator": {
+      "name": "QR-kodgenerator",
+      "description": "Generera QR-koder för URL:er och text"
+    },
+    "word-counter": {
+      "name": "Ordräknare",
+      "description": "Räkna ord, tecken och lästid"
+    },
+    "case-converter": {
+      "name": "Skiftlägeskonverterare",
+      "description": "Kamel, orm, kebab & pascal fodral"
+    },
+    "text-diff": {
+      "name": "Textjämförare",
+      "description": "Jämför två texter och hitta skillnader"
+    },
+    "slug-generator": {
+      "name": "Slug-generator",
+      "description": "Generera SEO-vänliga URL-slugs"
+    },
+    "gradient-generator": {
+      "name": "Gradientgenerator",
+      "description": "Skapa vackra CSS-gradienter"
+    },
+    "image-compressor": {
+      "name": "Bildkomprimerare",
+      "description": "Komprimera bilder lokalt och privat"
+    },
+    "device-info": {
+      "name": "Enhetsinformation",
+      "description": "Visa skärm-, webbläsar- och systeminfo"
+    },
+    "random-generator": {
+      "name": "Slumpgenerator",
+      "description": "Slumpa nummer, mynt och listobjekt"
+    },
+    "unit-converter": {
+      "name": "Enhetskonverterare",
+      "description": "Konvertera längd, vikt och temperatur"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro-timer",
+      "description": "Fokustimer för produktivitet"
+    },
+    "yt-thumbnail": {
+      "name": "Miniatyrnedladdare",
+      "description": "Hämta YouTube-videominiatyrer"
+    },
+    "my-ip": {
+      "name": "Vad är min IP",
+      "description": "Visa offentlig IP och nätverksinfo"
+    },
+    "keycode-info": {
+      "name": "Tangentkodinfo",
+      "description": "JavaScript-tangentbordshändelse-debugger"
+    },
+    "signature-generator": {
+      "name": "Signaturgenerator",
+      "description": "Rita och ladda ner digitala signaturer"
+    },
+    "screen-recorder": {
+      "name": "Skärminspelare",
+      "description": "Spela in skärmen och ladda ner video"
+    },
+    "credit-card-validator": {
+      "name": "Kortvaliderare",
+      "description": "Validera kreditkortsnummer"
+    },
+    "password-manager": {
+      "name": "Lokal lösenordshanterare",
+      "description": "Lagra lösenord säkert lokalt med kryptering"
+    },
+    "deep-link-tester": {
+      "name": "Djuplänkstestare",
+      "description": "Testa, starta och hantera mobila djuplänkar"
+    },
+    "image-converter": {
+      "name": "Bildkonverterare",
+      "description": "Konvertera PNG/JPG till WebP lokalt för att optimera bilder"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Konvertera JSON till CSV och vice versa"
+    },
+    "bmi-calculator": {
+      "name": "BMI-kalkylator",
+      "description": "Beräkna kroppsmasseindex (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS-uppslagning",
+      "description": "Fråga DNS-poster (A, MX, NS) direkt"
+    },
+    "age-calculator": {
+      "name": "Ålderskalkylator",
+      "description": "Beräkna exakt ålder och totala dagar"
+    },
+    "loan-calculator": {
+      "name": "Lånekalkylator",
+      "description": "Beräkna månatlig betalning och total ränta"
+    },
+    "discount-calculator": {
+      "name": "Rabattkalkylator",
+      "description": "Beräkna reapris och besparingar"
+    },
+    "interest-calculator": {
+      "name": "Räntekalkylator",
+      "description": "Enkel vs sammansatt räntekalkylator"
+    },
+    "html-encoder": {
+      "name": "HTML-kodare/avkodare",
+      "description": "Escapa specialtecken eller avkoda HTML"
+    },
+    "list-sorter": {
+      "name": "Listsorterare",
+      "description": "Sortera, vänd, blanda och ta bort dubbletter i listor"
+    },
+    "box-shadow": {
+      "name": "Box Shadow-generator",
+      "description": "Skapa CSS box-shadows visuellt"
+    },
+    "date-diff": {
+      "name": "Datumskillnad",
+      "description": "Beräkna tid mellan två datum"
+    },
+    "sql-to-json": {
+      "name": "SQL till JSON",
+      "description": "Konvertera SQL INSERT till JSON-objekt"
+    },
+    "keyword-density": {
+      "name": "Nyckelordsdensitet",
+      "description": "Analysera nyckelordsfrekvens för SEO"
+    },
+    "json-diff": {
+      "name": "JSON-jämförelse",
+      "description": "Jämför två JSON-objekt sida vid sida"
+    },
+    "cipher-tools": {
+      "name": "Chifferverktyg",
+      "description": "ROT13 och Caesar-chiffer kodare/avkodare"
+    },
+    "token-generator": {
+      "name": "Slumpmässig tokengenerator",
+      "description": "Generera säkra slumpmässiga tokens"
+    },
+    "favicon-generator": {
+      "name": "Favicon-generator",
+      "description": "Skapa .ico- och PNG-faviconer"
+    },
+    "robots-generator": {
+      "name": "Robots.txt-generator",
+      "description": "Skapa robots.txt för SEO"
+    },
+    "grid-generator": {
+      "name": "CSS Grid-generator",
+      "description": "Visuell CSS Grid-layoutbyggare"
+    },
+    "hmac-generator": {
+      "name": "HMAC-generator",
+      "description": "Generera nyckelbaserade hash-meddelandeautentiseringskoder"
+    },
+    "http-status": {
+      "name": "HTTP-statuskoder",
+      "description": "Referenslista över HTTP-statuskoder"
+    },
+    "week-number": {
+      "name": "Veckonummer",
+      "description": "Aktuellt veckonummer och årets progress"
+    },
+    "text-tools": {
+      "name": "Texttransformerare",
+      "description": "Vänd, flippa och koda text"
+    },
+    "url-parser": {
+      "name": "URL-parser",
+      "description": "Dela upp URL:er i protokoll, värd, sökväg, parametrar"
+    },
+    "markdown-table": {
+      "name": "Markdown-tabellgenerator",
+      "description": "Skapa Markdown-tabeller visuellt"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp-länkgenerator",
+      "description": "Skapa direkta WhatsApp-chattlänkar"
+    },
+    "paypal-link": {
+      "name": "PayPal-länkgenerator",
+      "description": "Skapa PayPal.me betalningslänkar"
+    },
+    "svg-to-png": {
+      "name": "SVG till PNG",
+      "description": "Konvertera SVG-kod/fil till PNG-bild"
+    },
+    "prime-factors": {
+      "name": "Primtalsfaktorer",
+      "description": "Hitta primtalsfaktorer för ett nummer"
+    },
+    "iban-validator": {
+      "name": "IBAN-validerare",
+      "description": "Validera internationella bankkontonummer"
+    },
+    "ascii-converter": {
+      "name": "ASCII-konverterare",
+      "description": "Konvertera text till ASCII-decimalvärden"
+    },
+    "utm-builder": {
+      "name": "UTM-byggare",
+      "description": "Bygg Google Analytics-kampanj-URL:er"
+    },
+    "meta-tags": {
+      "name": "Meta-tagggenerator",
+      "description": "Generera SEO-metataggar för webbplatser"
+    },
+    "og-generator": {
+      "name": "Open Graph-generator",
+      "description": "Skapa Open Graph-metataggar för social delning"
+    },
+    "twitter-card": {
+      "name": "Twitter Card-generator",
+      "description": "Skapa Twitter Card-metataggar"
+    },
+    "aspect-ratio": {
+      "name": "Bildförhållandekalkylator",
+      "description": "Beräkna bildförhållanden och dimensioner"
+    },
+    "css-cursor": {
+      "name": "CSS-markör",
+      "description": "Visuell CSS-marköregenskapsreferens"
+    },
+    "css-triangle": {
+      "name": "CSS-triangelgenerator",
+      "description": "Generera rena CSS-trianglar"
+    },
+    "percentage-calculator": {
+      "name": "Procentkalkylator",
+      "description": "Beräkna procent och förändringar"
+    },
+    "vat-calculator": {
+      "name": "Momskalkylator",
+      "description": "Beräkna att lägga till/ta bort moms"
+    },
+    "stopwatch": {
+      "name": "Stoppur",
+      "description": "Enkel webbläsarbaserad stoppur"
+    },
+    "text-to-speech": {
+      "name": "Text till tal",
+      "description": "Konvertera text till talat ljud"
+    },
+    "speech-to-text": {
+      "name": "Tal till text",
+      "description": "Konvertera talat ljud till text"
+    },
+    "vibration-tester": {
+      "name": "Vibrationstestare",
+      "description": "Testa enhetens vibrationsmotor"
+    },
+    "chmod-calculator": {
+      "name": "Chmod-kalkylator",
+      "description": "Beräkna Linux-filbehörigheter"
+    },
+    "crontab-generator": {
+      "name": "Crontab-generator",
+      "description": "Generera cron-schemauttryck"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd-generator",
+      "description": "Generera grundläggande autentiseringsposter"
+    },
+    "subnet-calculator": {
+      "name": "Subnet-kalkylator",
+      "description": "Beräkna nätverkssubnät och IP-intervall"
+    },
+    "mac-generator": {
+      "name": "MAC-adressgenerator",
+      "description": "Generera slumpmässiga MAC-adresser"
+    },
+    "timezone-converter": {
+      "name": "Tidszonskonverterare",
+      "description": "Konvertera tid mellan flera zoner"
+    },
+    "email-validator": {
+      "name": "E-postvaliderare",
+      "description": "Validera e-postformat och upptäck stavfel"
+    },
+    "password-strength": {
+      "name": "Lösenordsstyrka",
+      "description": "Kontrollera lösenordsstyrkepoäng"
+    },
+    "roman-numerals": {
+      "name": "Romerska siffror-konverterare",
+      "description": "Konvertera mellan romerska och decimala tal"
+    },
+    "margin-calculator": {
+      "name": "Marginalkalkylator",
+      "description": "Beräkna vinstmarginal och påslag"
+    },
+    "roi-calculator": {
+      "name": "ROI-kalkylator",
+      "description": "Beräkna avkastning på investering"
+    },
+    "fuel-calculator": {
+      "name": "Bränslekostnadskalkylator",
+      "description": "Beräkna bränslekostnad för resan"
+    },
+    "pretty-print-url": {
+      "name": "Formatera URL",
+      "description": "Formatera och försköna URL:er för läsbarhet"
+    }
+  },
+  "Terms": {
+    "title": "Användarvillkor",
+    "lastUpdated": "Senast uppdaterad",
+    "sections": {
+      "acceptance": {
+        "title": "1. Godkännande av villkor",
+        "content": "Genom att komma åt och använda DailyDevTools accepterar du och samtycker till att vara bunden av villkoren i detta avtal."
+      },
+      "useLicense": {
+        "title": "2. Användningslicens",
+        "content": "DailyDevTools är gratis att använda för personliga och kommersiella ändamål. Du får inte:",
+        "list": {
+          "0": "Försöka bakåtkompilera eller skrapa betydande delar av webbplatsen.",
+          "1": "Använda webbplatsen på ett sätt som orsakar, eller kan orsaka, skada på webbplatsen eller försämring av tillgängligheten eller åtkomsten till webbplatsen."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Ansvarsfriskrivning",
+        "content": "Verktygen på DailyDevTools tillhandahålls \"som de är\". Vi ger inga garantier, uttryckliga eller underförstådda..."
+      },
+      "limitations": {
+        "title": "4. Begränsningar",
+        "content": "Under inga omständigheter ska DailyDevTools eller dess leverantörer vara ansvariga för eventuella skador..."
+      },
+      "revisions": {
+        "title": "5. Revisioner",
+        "content": "Materialet som visas på DailyDevTools kan innehålla tekniska, typografiska eller fotografiska fel..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Integritetspolicy",
+    "lastUpdated": "Senast uppdaterad",
+    "intro": "Välkommen till DailyDevTools. Vi respekterar din integritet och är engagerade i att skydda dina personuppgifter.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Hur våra verktyg fungerar (lokal bearbetning)",
+        "content": "Viktigast av allt: Verktygen körs helt i din webbläsare. Data lämnar aldrig din enhet."
+      },
+      "dataCollection": {
+        "title": "3. Data vi samlar in",
+        "content": "Vi samlar inte in innehåll. Vi använder Google Analytics för användningsstatistik."
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "Vi använder cookies för analys och lokala inställningar."
+      },
+      "thirdParty": {
+        "title": "5. Tredjepartslänkar",
+        "content": "Vår webbplats kan innehålla länkar till tredje parter."
+      },
+      "changes": {
+        "title": "6. Ändringar av denna policy",
+        "content": "Vi kan uppdatera denna policy från tid till annan."
+      },
+      "contact": {
+        "title": "7. Kontakta oss",
+        "content": "Kontakta oss via GitHub eller sociala medier."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Utvecklarresurser",
+    "subtitle": "Djupdykningar i verktygen vi bygger och koncepten bakom dem.",
+    "readMore": "Läs mer",
+    "backToBlog": "Tillbaka till bloggen",
+    "enjoyedArticle": "Gillade du denna artikel?",
+    "checkTools": "Kolla in våra verktyg"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Inmatning",
+      "output": "Utmatning",
+      "format": "Formatera",
+      "minify": "Minifiera",
+      "download": "Ladda ner",
+      "copy": "Kopiera",
+      "paste": "Klistra in",
+      "copied": "Kopierat!",
+      "upload": "Ladda upp",
+      "sample": "Exempel",
+      "clear": "Rensa",
+      "indent": "Indrag:",
+      "chars": "tecken",
+      "error": "Fel",
+      "invalid": "Ogiltig inmatning",
+      "result": "Resultat",
+      "generate": "Generera",
+      "calculate": "Beräkna",
+      "convert": "Konvertera",
+      "validate": "Validera",
+      "resultPlaceholder": "Resultatet visas här..."
+    },
+    "Base64Encoder": {
+      "encode": "Koda",
+      "decode": "Avkoda",
+      "textToEncode": "Text att koda",
+      "base64ToDecode": "Base64 att avkoda",
+      "enterText": "Ange text att koda...",
+      "enterBase64": "Ange Base64 att avkoda...",
+      "encodeAction": "Koda till Base64",
+      "decodeAction": "Avkoda från Base64",
+      "base64Output": "Base64-utdata",
+      "decodedText": "Avkodad text",
+      "resultPlaceholder": "Resultatet visas här...",
+      "invalidInput": "Ogiltig inmatning för {mode}"
+    },
+    "QrGenerator": {
+      "content": "Innehåll",
+      "placeholder": "https://example.com",
+      "customization": "Anpassning",
+      "foreground": "Förgrund",
+      "background": "Bakgrund",
+      "download": "Ladda ner"
+    },
+    "HashGenerator": {
+      "inputText": "Inmatningstext",
+      "placeholder": "Ange text att hasha...",
+      "waiting": "Väntar på inmatning..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Generera ny",
+      "configuration": "Konfiguration",
+      "length": "Lösenordslängd",
+      "uppercase": "Versaler (A-Z)",
+      "numbers": "Siffror (0-9)",
+      "symbols": "Symboler (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Klistra in din JSON här...",
+      "outputPlaceholder": "Formaterad JSON visas här...",
+      "spaces": "mellanslag"
+    },
+    "UrlEncoder": {
+      "encode": "Koda",
+      "decode": "Avkoda",
+      "urlToEncode": "URL att koda",
+      "encodedUrlToDecode": "Kodad URL att avkoda",
+      "enterUrlToEncode": "Ange URL eller text att koda...",
+      "enterUrlToDecode": "Ange kodad URL att avkoda...",
+      "encodeAction": "Koda URL",
+      "decodeAction": "Avkoda URL",
+      "encodedUrl": "Kodad URL",
+      "decodedUrl": "Avkodad URL",
+      "resultPlaceholder": "Resultatet visas här...",
+      "chars": "tecken",
+      "invalidInput": "Ogiltig inmatning för {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Klistra in din JWT-token",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Avkoda JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Utfärdad",
+      "expires": "Utgår"
+    },
+    "RegexTester": {
+      "expression": "Uttryck",
+      "expressionPlaceholder": "Fångstgrupp (abc)...",
+      "testString": "Teststräng",
+      "testStringPlaceholder": "Klistra in din teststräng här...",
+      "matchHighlights": "Matchmarkeringar",
+      "matches": "matchningar",
+      "matchInfo": "Matchinformation",
+      "match": "Match",
+      "index": "Index",
+      "group": "Grupp",
+      "noMatches": "Inga matchningar hittades",
+      "highlightPlaceholder": "Matchningar markeras här...",
+      "flagsHelp": "g: global, i: ignorera skiftläge, m: multiline"
+    },
+    "UuidGenerator": {
+      "generate": "Generera",
+      "generateCount": "Generera:",
+      "copyAll": "Kopiera alla",
+      "copyUuid": "Kopiera UUID",
+      "generatedAt": "Genererades lokalt {time} • Version 4 UUID:er"
+    },
+    "WordCounter": {
+      "words": "Ord",
+      "characters": "Tecken",
+      "sentences": "Meningar",
+      "paragraphs": "Stycken",
+      "readingTime": "Lästid",
+      "min": "min",
+      "textInput": "Textinmatning",
+      "inputPlaceholder": "Börja skriva eller klistra in din text här för att analysera...",
+      "clear": "Rensa"
+    },
+    "TimestampConverter": {
+      "timestamp": "Tidsstämpel",
+      "humanDate": "Läsbart datum",
+      "convert": "Konvertera",
+      "currentTimestamp": "Aktuell tidsstämpel",
+      "inputPlaceholder": "Ange Unix-tidsstämpel..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Klistra in din SQL-fråga här...",
+      "outputPlaceholder": "Formaterad SQL visas här..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Klistra in din CSS-kod här...",
+      "outputPlaceholder": "Minifierad CSS visas här..."
+    },
+    "MarkdownEditor": {
+      "editor": "Redigerare",
+      "preview": "Förhandsgranskning",
+      "inputPlaceholder": "Ange Markdown här..."
+    },
+    "TextDiff": {
+      "original": "Originaltext",
+      "changed": "Ändrad text",
+      "compare": "Jämför",
+      "differences": "Skillnader"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Ange text att konvertera...",
+      "generatedSlug": "Genererad slug"
+    },
+    "ImageCompressor": {
+      "selectImage": "Välj bild",
+      "quality": "Kvalitet",
+      "compress": "Komprimera",
+      "download": "Ladda ner",
+      "originalSize": "Originalstorlek",
+      "compressedSize": "Komprimerad storlek"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Stycken",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "GradientGenerator": {
+      "angle": "Vinkel",
+      "colors": "Färger",
+      "addColor": "Lägg till färg",
+      "copyCss": "Kopiera CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Födelsedatum",
+      "calculate": "Beräkna",
+      "years": "År",
+      "months": "Månader",
+      "days": "Dagar",
+      "totalDays": "Totalt dagar",
+      "nextBirthday": "Nästa födelsedagen om"
+    },
+    "AsciiConverter": {
+      "text": "Text",
+      "ascii": "ASCII",
+      "convert": "Konvertera",
+      "inputPlaceholder": "Ange text..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horisontell (X)",
+      "vertical": "Vertikal (Y)",
+      "blur": "Oskärpa",
+      "spread": "Spridning",
+      "colorOpacity": "Färg & opacitet",
+      "inset": "Infälld"
+    },
+    "BmiCalculator": {
+      "metric": "Metrisk (kg/cm)",
+      "imperial": "Imperial (lbs/tum)",
+      "weight": "Vikt",
+      "height": "Längd",
+      "calculate": "Beräkna BMI",
+      "bmiScore": "Ditt BMI-värde",
+      "underweight": "Undervikt",
+      "normal": "Normalvikt",
+      "overweight": "Övervikt",
+      "obese": "Fetma"
+    },
+    "CaseConverter": {
+      "inputText": "Inmatningstext",
+      "inputPlaceholder": "Skriv din text här...",
+      "upper": "VERSALER",
+      "lower": "gemener",
+      "title": "Inledande Versaler",
+      "sentence": "Meningsversaler",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Kopiera",
+      "conversions": "Konverteringar",
+      "clear": "Rensa"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX-färg",
+      "rgbLabels": "RGB-färg",
+      "hslLabels": "HSL-färg",
+      "cmykLabels": "CMYK-färg",
+      "copy": "Kopiera",
+      "hexToRgbNote": "* Stöder för närvarande endast HEX till RGB/HSL-konvertering."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Kortnummer",
+      "validate": "Validera",
+      "valid": "Giltigt kreditkortsnummer",
+      "invalid": "Ogiltigt kreditkortsnummer",
+      "placeholder": "Ange kortnummer...",
+      "type": "Korttyp",
+      "checkDigit": "Kontrollsiffra",
+      "luhnValid": "Luhn-algoritmen giltig"
+    },
+    "CipherTools": {
+      "encode": "Koda",
+      "decode": "Avkoda",
+      "rot13": "ROT13",
+      "caesar": "Caesar-chiffer",
+      "shift": "Skift",
+      "inputPlaceholder": "Hej världen",
+      "outputPlaceholder": "Resultatet visas här..."
+    },
+    "CronGenerator": {
+      "minute": "Minut",
+      "hour": "Timme",
+      "dayMonth": "Dag (månad)",
+      "month": "Månad",
+      "dayWeek": "Dag (vecka)",
+      "presets": "Vanliga förinställningar",
+      "everyMinute": "Varje minut",
+      "everyHour": "Varje timme",
+      "everyDayMidnight": "Varje dag vid midnatt",
+      "everySunday": "Varje söndag",
+      "everyMonth": "Varje månad",
+      "everyYear": "Varje år",
+      "formatInfo": "Format: * * * * * (Minut Timme DagIMånaden Månad Veckodag)",
+      "usageInfo": "Använd * för 'varje', */n för 'varje n', 1,2,3 för specifik lista."
+    },
+    "DateDiff": {
+      "startDate": "Startdatum",
+      "endDate": "Slutdatum",
+      "calculate": "Beräkna",
+      "difference": "Skillnad",
+      "years": "År",
+      "months": "Månader",
+      "days": "Dagar",
+      "totalDays": "Totalt dagar",
+      "totalWeeks": "Totalt veckor",
+      "totalHours": "Totalt timmar"
+    },
+    "DeepLinkTester": {
+      "testLink": "Testa länk",
+      "savedLinks": "Sparade länkar",
+      "searchPlaceholder": "Sök sparade länkar...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Starta",
+      "save": "Spara",
+      "delete": "Radera",
+      "opens": "öppnar",
+      "scanQr": "Skanna med din mobila enhet för att testa",
+      "noSavedLinks": "Inga sparade länkar hittades.",
+      "enterLabel": "Ange en etikett för denna länk:",
+      "saved": "Sparad!",
+      "confirmDelete": "Radera denna länk?"
+    },
+    "DeviceInfo": {
+      "screen": "Skärm",
+      "browser": "Webbläsare",
+      "system": "System",
+      "resolution": "Upplösning",
+      "colorDepth": "Färgdjup",
+      "userAgent": "Användaragent",
+      "platform": "Plattform",
+      "language": "Språk"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Originalpris",
+      "discountPercent": "Rabatt",
+      "additionalDiscount": "Ytterligare rabatt",
+      "calculate": "Beräkna",
+      "youSave": "Du sparar",
+      "finalPrice": "Slutpris",
+      "salesTax": "Moms"
+    },
+    "DnsLookup": {
+      "domain": "Domän",
+      "lookup": "Sök",
+      "recordType": "Posttyp",
+      "results": "Resultat",
+      "placeholder": "exempel.com",
+      "status": "Status",
+      "time": "Tid",
+      "server": "Server",
+      "answerSection": "Svarssektion",
+      "name": "Namn",
+      "type": "Typ",
+      "ttl": "TTL",
+      "data": "Data",
+      "noRecords": "Inga poster hittades"
+    },
+    "EmailValidator": {
+      "email": "E-postadress",
+      "validate": "Validera",
+      "valid": "Giltig",
+      "invalid": "Ogiltig",
+      "suggestion": "Förslag",
+      "placeholder": "användare@exempel.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Ladda upp bild",
+      "generate": "Generera",
+      "download": "Ladda ner",
+      "sizes": "Storlekar"
+    },
+    "FuelCalculator": {
+      "distance": "Avstånd",
+      "fuelEfficiency": "Bränsleförbrukning",
+      "fuelPrice": "Bränslepris",
+      "calculate": "Beräkna",
+      "result": "Resultat",
+      "totalCost": "Total kostnad",
+      "fuelNeeded": "Bränsle som behövs"
+    },
+    "GridGenerator": {
+      "columns": "Kolumner",
+      "rows": "Rader",
+      "gap": "Mellanrum",
+      "preview": "Förhandsgranskning",
+      "copyCss": "Kopiera CSS",
+      "rowGap": "Radmellanrum",
+      "colGap": "Kolumnmellanrum",
+      "options": "Alternativ"
+    },
+    "HmacGenerator": {
+      "message": "Meddelande",
+      "secret": "Hemlighet",
+      "algorithm": "Algoritm",
+      "generate": "Generera",
+      "inputPlaceholder": "Inmatningstext...",
+      "secretPlaceholder": "Hemlighet..."
+    },
+    "HtmlEncoder": {
+      "encode": "Koda",
+      "decode": "Avkoda",
+      "resultPlaceholder": "Resultatet visas här...",
+      "inputPlaceholder": "Klistra in HTML här..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Sök kod (t.ex. 404) eller namn...",
+      "code": "Kod",
+      "name": "Namn",
+      "description": "Beskrivning"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Validera",
+      "valid": "Giltig",
+      "invalid": "Ogiltig",
+      "placeholder": "Ange IBAN...",
+      "inputLabel": "Ange IBAN-nummer",
+      "validTitle": "Giltig kontrollsumma",
+      "invalidTitle": "Ogiltig kontrollsumma",
+      "validDesc": "IBAN-formatet och kontrollsumman är korrekt.",
+      "invalidDesc": "IBAN matchar inte kontrollsummaalgoritmen."
+    },
+    "ImageBase64": {
+      "upload": "Ladda upp",
+      "convert": "Konvertera",
+      "copy": "Kopiera",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Ladda upp bild",
+      "convertToBase64": "Konvertera till Base64",
+      "convertToImage": "Konvertera till bild",
+      "base64String": "Base64-sträng",
+      "download": "Ladda ner"
+    },
+    "ImageConverter": {
+      "selectImage": "Välj bild",
+      "format": "Formatera",
+      "convert": "Konvertera",
+      "download": "Ladda ner",
+      "quality": "Kvalitet"
+    },
+    "InterestCalculator": {
+      "principal": "Kapital",
+      "rate": "Räntesats",
+      "time": "Tidsperiod (år)",
+      "calculate": "Beräkna",
+      "simpleInterest": "Enkel",
+      "compoundInterest": "Sammansatt",
+      "totalAmount": "Totalt värde",
+      "type": "Typ",
+      "frequency": "Sammansatt frekvens",
+      "annually": "Årsvis",
+      "monthly": "Månadsvis",
+      "daily": "Dagligen",
+      "year": "År"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Ange JSON...",
+      "convert": "Konvertera",
+      "format": "Formatera",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON till CSV",
+      "csvToJson": "CSV till JSON",
+      "jsonInput": "JSON-inmatning",
+      "csvInput": "CSV-inmatning",
+      "jsonOutput": "JSON-utdata",
+      "csvOutput": "CSV-utdata"
+    },
+    "JsonDiff": {
+      "original": "Original JSON",
+      "modified": "Modifierad JSON",
+      "compare": "Jämför",
+      "differences": "Skillnader"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Tryck på valfri tangent",
+      "key": "Tangent",
+      "code": "Kod",
+      "keyCode": "Nyckel-kod",
+      "which": "som",
+      "location": "Plats",
+      "modifiers": "Modifierare",
+      "standard": "Standard",
+      "left": "Vänster",
+      "right": "Höger",
+      "numpad": "Numeriskt tangentbord",
+      "space": "(Mellanslag)",
+      "info": "Visa JavaScript-händelse KeyCode, Code och mer."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Klistra in din text här för att analysera nyckelordsfrekvens...",
+      "analyze": "Analysera",
+      "keyword": "Nyckelord",
+      "count": "Antal",
+      "density": "Densitet"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Ange din lista här...",
+      "sort": "Sortera",
+      "reverse": "Omvänd",
+      "shuffle": "Blanda",
+      "deduplicate": "Ta bort dubbletter",
+      "ascending": "Stigande",
+      "descending": "Fallande",
+      "length": "Längd",
+      "trim": "Ta bort tomma",
+      "lines": "Rader:",
+      "chars": "Tecken:"
+    },
+    "LoanCalculator": {
+      "principal": "Kapital",
+      "interestRate": "Räntesats",
+      "term": "Löptid",
+      "calculate": "Beräkna",
+      "monthlyPayment": "Månatlig betalning",
+      "totalInterest": "Total ränta",
+      "totalPayment": "Total betalning",
+      "loanDetails": "Lånedetaljer",
+      "loanAmount": "Lånebelopp",
+      "loanTerm": "Lånetid",
+      "years": "År",
+      "months": "Månader",
+      "interest": "Ränta"
+    },
+    "MacGenerator": {
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "separator": "Avskiljare",
+      "format": "Formatera",
+      "quantity": "Antal",
+      "uppercase": "Versaler"
+    },
+    "MarginCalculator": {
+      "cost": "Kostnad",
+      "price": "Försäljningspris",
+      "calculate": "Beräkna",
+      "margin": "Marginal",
+      "markup": "Påslag",
+      "profit": "Vinst",
+      "revenue": "Intäkt",
+      "netProfit": "Nettovinst",
+      "grossMargin": "Bruttomarginal"
+    },
+    "PasswordManager": {
+      "masterPassword": "Huvudlösenord",
+      "unlock": "Lås upp",
+      "searchPlaceholder": "Sök konton...",
+      "addNew": "Lägg till nytt",
+      "siteName": "Webbplatsnamn",
+      "username": "Användarnamn",
+      "password": "Lösenord",
+      "save": "Spara",
+      "delete": "Radera"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Skriv här...",
+      "strength": "Styrka",
+      "weak": "Svag",
+      "fair": "Ganska bra",
+      "good": "Bra",
+      "strong": "Stark",
+      "requirements": "Krav",
+      "length": "8+ tecken",
+      "number": "Innehåller siffra",
+      "uppercase": "Innehåller versal",
+      "symbol": "Innehåller symbol"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me-användarnamn",
+      "amount": "Belopp",
+      "currency": "Valuta",
+      "generate": "Generera",
+      "itemName": "Artikelnamn",
+      "link": "Länk",
+      "yourLink": "Din PayPal-länk",
+      "openPaypal": "Öppna PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Regler",
+      "addRule": "Lägg till regel",
+      "allow": "Tillåt",
+      "disallow": "Förbjud",
+      "sitemap": "Sitemap-URL (Valfritt)",
+      "output": "Genererad robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Värde",
+      "percentage": "Procent",
+      "calculate": "Beräkna",
+      "result": "Resultat",
+      "whatIs": "Vad är",
+      "of": "% av",
+      "isWhatPercentOf": "är hur många % av",
+      "percentChangeFrom": "% förändring från",
+      "to": "till"
+    },
+    "PomodoroTimer": {
+      "work": "Fokustid",
+      "shortBreak": "Kort paus",
+      "longBreak": "Lång paus",
+      "start": "Starta",
+      "pause": "Pausa",
+      "reset": "Återställ",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Nummer",
+      "calculate": "Beräkna",
+      "factors": "Primtalsfaktorer",
+      "inputLabel": "Ange ett nummer",
+      "placeholder": "t.ex. 120",
+      "isPrime": "Detta nummer är ett primtal!",
+      "isComposite": "Detta nummer är sammansatt"
+    },
+    "RoiCalculator": {
+      "investment": "Investering",
+      "returns": "Avkastning",
+      "calculate": "Beräkna",
+      "roi": "ROI",
+      "profit": "Vinst",
+      "finalValue": "Slutvärde",
+      "time": "Tid (år)",
+      "totalGain": "Total vinst",
+      "annualizedRoi": "Årlig ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Decimal",
+      "decimalPlaceholder": "2024",
+      "roman": "Romersk",
+      "convert": "Konvertera",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Starta inspelning",
+      "stopRecording": "Stoppa inspelning",
+      "download": "Ladda ner",
+      "recording": "Spelar in..."
+    },
+    "SignatureGenerator": {
+      "draw": "Rita",
+      "clear": "Rensa",
+      "download": "Ladda ner",
+      "penColor": "Pennfärg",
+      "penSize": "Pennstorlek"
+    },
+    "SpeechToText": {
+      "startListening": "Börja lyssna",
+      "stopListening": "Sluta lyssna",
+      "transcript": "Transkript",
+      "placeholder": "Transkriptet visas här..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO användare (id, namn, ålder) VÄRDEN (1, 'John', 30);",
+      "convert": "Konvertera",
+      "result": "Resultat"
+    },
+    "Stopwatch": {
+      "start": "Starta",
+      "stop": "Stoppa",
+      "reset": "Återställ",
+      "lap": "Varv"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-adress",
+      "subnetMask": "Subnätmask",
+      "calculate": "Beräkna",
+      "networkAddress": "Nätverksadress",
+      "broadcastAddress": "Broadcast-adress",
+      "usableHosts": "Användbara värdar"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Klistra in SVG",
+      "uploadSvg": "Ladda upp SVG",
+      "convert": "Konvertera",
+      "download": "Ladda ner"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Ange text att läsa upp...",
+      "speak": "Läs upp",
+      "stop": "Stoppa",
+      "voice": "Röst",
+      "rate": "Hastighet",
+      "pitch": "Tonläge"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Skriv något...",
+      "reverse": "Vänd",
+      "uppercase": "Versaler",
+      "lowercase": "Gemener",
+      "encode": "Koda"
+    },
+    "TimezoneConverter": {
+      "from": "Från",
+      "to": "Till",
+      "convert": "Konvertera",
+      "currentTime": "Aktuell tid"
+    },
+    "TokenGenerator": {
+      "length": "Längd",
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "includeNumbers": "Inkludera siffror",
+      "includeSymbols": "Inkludera symboler"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Ange URL...",
+      "parse": "Analysera",
+      "protocol": "Protokoll",
+      "host": "Värd",
+      "path": "Sökväg",
+      "query": "Fråga"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Webbplats-URL",
+      "source": "Källa",
+      "medium": "Medium",
+      "campaign": "Kampanj",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "VatCalculator": {
+      "amount": "Belopp",
+      "vatRate": "Momssats",
+      "addVat": "Lägg till moms",
+      "removeVat": "Ta bort moms",
+      "calculate": "Beräkna"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrera",
+      "pattern": "Mönster",
+      "duration": "Varaktighet",
+      "test": "Testa"
+    },
+    "WeekNumber": {
+      "currentWeek": "Aktuellt veckonummer",
+      "yearProgress": "Årets progress",
+      "week": "Vecka"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefonnummer",
+      "message": "Meddelande",
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "placeholder": "Hej, jag är intresserad..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Klistra in YouTube-video-URL...",
+      "getThumbnail": "Hämta miniatyrbild",
+      "download": "Ladda ner"
+    },
+    "CrontabGenerator": {
+      "minute": "Minut",
+      "hour": "Timme",
+      "day": "Dag",
+      "month": "Månad",
+      "weekday": "Veckodag",
+      "expression": "Uttryck",
+      "description": "Beskrivning"
+    },
+    "ChmodCalculator": {
+      "owner": "Ägare",
+      "group": "Grupp",
+      "others": "Andra",
+      "read": "Läsa",
+      "write": "Skriva",
+      "execute": "Köra",
+      "numeric": "Numerisk",
+      "symbolic": "Symbolisk"
+    },
+    "HtpasswdGenerator": {
+      "username": "Användarnamn",
+      "password": "Lösenord",
+      "algorithm": "Algoritm",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "AspectRatio": {
+      "width": "Bredd",
+      "height": "Höjd",
+      "ratio": "Förhållande",
+      "calculate": "Beräkna"
+    },
+    "CssClipPath": {
+      "shape": "Form",
+      "preview": "Förhandsgranskning",
+      "copyCss": "Kopiera CSS"
+    },
+    "CssCursor": {
+      "cursor": "Markör",
+      "preview": "Förhandsgranskning",
+      "copyCss": "Kopiera CSS"
+    },
+    "CssTriangle": {
+      "direction": "Riktning",
+      "size": "Storlek",
+      "color": "Färg",
+      "preview": "Förhandsgranskning",
+      "copyCss": "Kopiera CSS"
+    },
+    "MetaGenerator": {
+      "title": "Titel",
+      "description": "Beskrivning",
+      "keywords": "Sökord",
+      "author": "Författare",
+      "url": "URL",
+      "image": "Bild",
+      "generate": "Generera",
+      "copy": "Kopiera",
+      "titlePlaceholder": "Min fantastiska webbplats",
+      "descriptionPlaceholder": "En kort beskrivning av din webbplats...",
+      "keywordsPlaceholder": "webb, verktyg, dev",
+      "authorPlaceholder": "Ditt namn",
+      "outputPlaceholder": "Metataggar visas här..."
+    },
+    "OgGenerator": {
+      "title": "Titel",
+      "description": "Beskrivning",
+      "url": "URL",
+      "image": "Bild",
+      "type": "Typ",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "TwitterCard": {
+      "cardType": "Korttyp",
+      "title": "Titel",
+      "description": "Beskrivning",
+      "image": "Bild",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "MarkdownTable": {
+      "rows": "Rader",
+      "columns": "Kolumner",
+      "header": "Rubrik",
+      "addRow": "Lägg till rad",
+      "addColumn": "Lägg till kolumn",
+      "generate": "Generera",
+      "copy": "Kopiera"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Formatera",
+      "copy": "Kopiera"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON-formatering: Bästa praxis för utvecklare",
+      "excerpt": "Lär dig varför korrekt JSON-formatering är viktigt för felsökning och hur du automatiserar det i ditt arbetsflöde.",
+      "category": "Utveckling"
+    },
+    "mastering-regex": {
+      "title": "Behärska reguljära uttryck: En visuell guide",
+      "excerpt": "Regex behöver inte vara skrämmande. Vi bryter ner vanliga mönster för e-postvalidering, URL:er och mer.",
+      "category": "Handledning"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron-jobb avmystifierade: Hur man schemalägger uppgifter",
+      "excerpt": "Förstå femstjärnig syntax för Cron och hur man schemalägger säkerhetskopior, e-post och skript på Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Varför lokala lösenordshanterare är säkrare (KeyPass-alternativ)",
+      "excerpt": "Molnintrång är vanliga. Lär dig varför lagring av lösenord lokalt med AES-256-kryptering är det säkraste valet för personlig säkerhet.",
+      "category": "Säkerhet"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Sök verktyg...",
+    "noResults": "Inga resultat hittades.",
+    "select": "Välj",
+    "navigate": "Navigera"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Skicka feedback",
+    "feedback": "Feed-back",
+    "thankYou": "Tack!",
+    "feedbackSent": "Din feedback har skickats.",
+    "close": "Stäng",
+    "name": "Namn (valfritt)",
+    "namePlaceholder": "Ditt namn",
+    "email": "E-post (valfritt)",
+    "emailPlaceholder": "din@epost.com",
+    "feedbackType": "Feedbacktyp",
+    "typeSuggestion": "💡 Förslag",
+    "typeBug": "🐛 Buggrapport",
+    "typeFeature": "✨ Funktionsönskemål",
+    "typeOther": "📝 Övrigt",
+    "message": "Meddelande *",
+    "messagePlaceholder": "Berätta vad du tycker...",
+    "sending": "Skickar...",
+    "weReadEveryMessage": "Vi läser varje meddelande. Tack för att du hjälper oss bli bättre!"
+  },
+  "ShareButton": {
+    "shareTool": "Dela verktyg",
+    "copiedLink": "Länk kopierad!"
+  },
+  "TextDiff": {
+    "original": "Originaltext",
+    "changed": "Ändrad text",
+    "update": "Uppdatera diff",
+    "old": "Gammal",
+    "new": "Ny",
+    "content": "Innehåll"
+  },
+  "CrontabGenerator": {
+    "minute": "Minut",
+    "hour": "Timme",
+    "day": "Dag",
+    "month": "Månad",
+    "weekday": "Veckodag",
+    "min": "Min",
+    "mon": "Mån",
+    "week": "Vecka",
+    "presets": "Snabbförinställningar",
+    "everyMinute": "Varje minut",
+    "every5Minutes": "Var 5:e minut",
+    "everyHour": "Varje timme",
+    "everyDayMidnight": "Varje dag vid midnatt",
+    "everyWeek": "Varje vecka",
+    "everyMonth": "Varje månad"
+  },
+  "SpeechToText": {
+    "notSupported": "Din webbläsare stöder inte Web Speech API. Använd Chrome.",
+    "placeholder": "Transkriptet visas här...",
+    "listening": "Lyssnar...",
+    "start": "Klicka på mikrofonen för att starta"
+  },
+  "OgGenerator": {
+    "title": "Titel",
+    "description": "Beskrivning",
+    "image": "Bild-URL",
+    "url": "Kanonisk URL",
+    "type": "Typ",
+    "website": "Webbplats",
+    "article": "Artikel",
+    "profile": "Profil",
+    "preview": "Förhandsgranskning (Facebook/LinkedIn)",
+    "generatedHtml": "Genererad HTML",
+    "copy": "Kopiera"
+  },
+  "WeekNumber": {
+    "checkLabel": "Kontrollera veckonummer för datum",
+    "yearProgress": "Årets progress"
+  },
+  "RelatedTools": {
+    "title": "Du kanske också gillar",
+    "subtitle": "Utforska andra populära utvecklarverktyg",
+    "openTool": "Öppna verktyg"
+  },
+  "Breadcrumb": {
+    "home": "Hem",
+    "tools": "Verktyg"
+  },
+  "SvgToPng": {
+    "upload": "Ladda upp SVG-fil",
+    "browse": "eller klicka för att bläddra",
+    "paste": "...eller klistra in SVG-kod",
+    "preview": "PNG-förhandsgranskning (2x skala)",
+    "download": "Ladda ner PNG",
+    "errorType": "Ladda upp en giltig SVG-fil.",
+    "errorRender": "Misslyckades med att rendera SVG. Säkerställ att det är giltig XML.",
+    "errorProcess": "Fel vid bearbetning av SVG."
+  },
+  "GradientGenerator": {
+    "config": "Konfiguration",
+    "colors": "Färger",
+    "type": "Typ",
+    "angle": "Vinkel",
+    "random": "Slumpmässig",
+    "copyCss": "Kopiera CSS",
+    "copied": "Kopierat"
+  },
+  "TimezoneConverter": {
+    "date": "Datum",
+    "time": "Tid (lokal)",
+    "invalid": "Ogiltig",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "London (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "Indien (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Nummergenerator",
+    "listGen": "Listgenerator",
+    "coinGen": "Myntgenerator",
+    "min": "Min",
+    "max": "Max",
+    "count": "Antal",
+    "generate": "Generera",
+    "listLabel": "Listobjekt (ett per rad)",
+    "pick": "Välj slumpmässigt objekt",
+    "winner": "Vinnaren är...",
+    "flip": "Slå mynt",
+    "heads": "Krona",
+    "tails": "Klave"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Spelar in din skärm...",
+    "titleFree": "Gratis online skärminspelare",
+    "desc": "Fånga din skärm, appfönster eller webbläsarflik. Ingen vattenstämpel, ingen tidsgräns.",
+    "start": "Starta inspelning",
+    "stop": "Stoppa inspelning",
+    "browserSupport": "Fungerar bäst i Chrome, Edge och Firefox på Desktop."
+  },
+  "CssCursor": {
+    "hoverTest": "Håll musen här för att testa"
+  },
+  "VatCalculator": {
+    "amount": "Belopp",
+    "rate": "Momssats (%)",
+    "addVat": "Lägg till moms",
+    "removeVat": "Ta bort moms",
+    "netAmount": "Nettobelopp",
+    "vatAmount": "Momsbelopp",
+    "grossTotal": "Bruttosumma",
+    "netTotal": "Nettosumma",
+    "grossAmount": "Bruttobelopp"
+  },
+  "MyIP": {
+    "ipLabel": "Din offentliga IP-adress",
+    "loading": "Laddar...",
+    "isp": "Internetleverantör (ISP)",
+    "location": "Plats",
+    "asn": "ASN",
+    "timezone": "Tidszon",
+    "note": "Detta är IP-adressen som är synlig för webbplatser du besöker. Den kan skilja sig från din lokala IP om du använder VPN eller proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Ange URL",
+    "formatted": "Formaterad utdata",
+    "copy": "Kopiera",
+    "copied": "Kopierat",
+    "placeholder": "Klistra in en URL ovan för att se den formaterad."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefonnummer (med landskod)",
+    "message": "Förifylt meddelande",
+    "hint": "Inkludera inte +, -, eller ().",
+    "yourLink": "Din WhatsApp-länk",
+    "open": "Öppna chatt"
+  },
+  "UrlParser": {
+    "enterUrl": "Ange URL",
+    "params": "Frågeparametrar",
+    "error": "Ogiltig URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Ladda upp bild",
+    "browse": "Rekommenderas: 512x512 PNG",
+    "original": "Original",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Ladda ner Favicon.png",
+    "note": "* Genererar för närvarande 32x32 PNG-favicons. Byt namn till .ico om det behövs för äldre stöd."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-adress",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Beräkna",
+    "subnetMask": "Subnätmask",
+    "networkAddress": "Nätverksadress",
+    "firstHost": "Första värd",
+    "lastHost": "Sista värd",
+    "broadcastAddress": "Broadcast-adress",
+    "totalHosts": "Totalt värdar"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Ange artikelrubrik / text",
+    "generated": "Genererad slug",
+    "copy": "Kopiera slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "Indata SQL (endast INSERT-satser)",
+    "convert": "Konvertera till JSON",
+    "error": "Kunde inte tolka SQL. Säkerställ att det är standard INSERT INTO-satser."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Lägg till rad",
+    "addCol": "+ Lägg till kolumn",
+    "headerPlaceholder": "Rubrik",
+    "outputLabel": "Markdown-utdata",
+    "copy": "Kopiera Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Korttyp",
+    "siteHandle": "Webbplatshandle (t.ex. @twitter)",
+    "title": "Titel",
+    "description": "Beskrivning",
+    "imageUrl": "Bild-URL",
+    "preview": "Förhandsgranskning",
+    "generatedHtml": "Genererad HTML",
+    "copy": "Kopiera",
+    "placeholderTitle": "Korttitel",
+    "placeholderDesc": "Beskrivningen kommer här..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Ange text att läsa upp...",
+    "voice": "Röst",
+    "speed": "Hastighet",
+    "pitch": "Tonläge",
+    "speak": "Läs upp"
+  },
+  "TokenGenerator": {
+    "length": "Längd",
+    "includeNumbers": "Inkludera siffror",
+    "includeSymbols": "Inkludera symboler",
+    "generate": "Generera token"
+  },
+  "CssTriangle": {
+    "direction": "Riktning",
+    "color": "Färg",
+    "width": "Bredd (px)",
+    "height": "Höjd (px)",
+    "copy": "Kopiera"
+  },
+  "UnitConverter": {
+    "length": "Längd",
+    "weight": "Vikt",
+    "temperature": "Temperatur",
+    "meters": "Meter",
+    "kilometers": "Kilometer",
+    "centimeters": "Centimeter",
+    "millimeters": "Millimeter",
+    "inches": "Tum",
+    "feet": "Fot",
+    "yards": "Yard",
+    "miles": "Miles",
+    "kilograms": "Kilogram",
+    "grams": "Gram",
+    "pounds": "Pund",
+    "ounces": "Uns",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Former",
+    "preview": "Förhandsgranskning",
+    "cssCode": "CSS-kod",
+    "copy": "Kopiera",
+    "copied": "Kopierat"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Ladda upp en bild",
+    "uploadDesc": "JPG, PNG eller WebP. Vi komprimerar den lokalt.",
+    "selectImage": "Välj bild",
+    "settings": "Komprimeringsinställningar",
+    "quality": "Kvalitet",
+    "originalSize": "Originalstorlek",
+    "compressedSize": "Komprimerad storlek",
+    "saving": "Sparar",
+    "download": "Ladda ner"
+  },
+  "HtpasswdGenerator": {
+    "username": "Användarnamn",
+    "password": "Lösenord",
+    "algorithm": "Algoritm",
+    "generate": "Generera post",
+    "result": "Resultat",
+    "sha1": "SHA-1 (Osäker men standard)",
+    "notSupported": "Endast SHA-1 stöds i denna klientversion."
+  },
+  "MetaTags": {
+    "pageTitle": "Sidrubrik",
+    "description": "Beskrivning",
+    "author": "Författare"
+  },
+  "AgeCalculator": {
+    "dob": "Födelsedatum",
+    "age": "Ålder",
+    "years": "år",
+    "months": "månader",
+    "days": "dagar",
+    "nextBirthday": "Nästa födelsedag"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Webbplats-URL (obligatorisk)",
+    "source": "Kampanjkälla (obligatorisk)",
+    "medium": "Kampanjmedium (obligatorisk)",
+    "name": "Kampanjnamn (obligatorisk)",
+    "term": "Kampanjterm (valfritt)",
+    "content": "Kampanjinnehåll (valfritt)",
+    "generatedUrl": "Genererad URL",
+    "copy": "Kopiera URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Aktuell Unix-tid",
+    "timestampLabel": "Tidsstämpel (sekunder)",
+    "isoLabel": "ISO-datumformat",
+    "utcDate": "UTC-datum",
+    "localDate": "Lokalt datum",
+    "relative": "Relativ"
+  },
+  "SignatureGenerator": {
+    "color": "Färg",
+    "width": "Bredd",
+    "clear": "Rensa",
+    "download": "Ladda ner PNG",
+    "signHere": "Signera här",
+    "note": "Signaturer bearbetas lokalt i din webbläsare. Vi lagrar eller laddar inte upp dem."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Liveförhandsgranskning"
+  },
+  "CipherTools": {
+    "shiftAmount": "Skiftbelopp (N)",
+    "inputText": "Inmatningstext",
+    "outputText": "Utdatatext",
+    "rot13": "ROT13",
+    "caesar": "Caesar (+3)",
+    "shift1": "Skift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Skärmupplösning",
+    "browser": "Webbläsare",
+    "cpuCores": "CPU-kärnor",
+    "battery": "Batteri",
+    "detailedSpecs": "Detaljerade specifikationer",
+    "userAgent": "Användaragent",
+    "platform": "Plattform",
+    "windowSize": "Fönsterstorlek",
+    "pixelRatio": "Pixelförhållande",
+    "colorDepth": "Färgdjup",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookies aktiverade",
+    "onlineStatus": "Onlinestatus",
+    "unknown": "Okänd",
+    "yes": "Ja",
+    "no": "Nej",
+    "enabled": "Aktiverad",
+    "disabled": "Inaktiverad"
+  },
+  "ChmodCalculator": {
+    "owner": "Ägare",
+    "group": "Grupp",
+    "public": "Offentlig",
+    "read": "Läsa",
+    "write": "Skriva",
+    "execute": "Köra",
+    "numeric": "Numerisk",
+    "symbolic": "Symbolisk"
+  },
+  "PasswordManager": {
+    "title": "Lösenordshanterare",
+    "desc": "Lagra och hantera dina lösenord säkert lokalt.",
+    "unlock": "Lås upp valv",
+    "create": "Skapa nytt valv",
+    "unlockDesc": "Ange ditt huvudlösenord för att komma åt dina konton.",
+    "createDesc": "Ange ett starkt huvudlösenord. Det krypterar dina data lokalt.",
+    "masterPassword": "Huvudlösenord",
+    "unlockBtn": "Lås upp",
+    "createBtn": "Skapa valv",
+    "note": "Data lagras i din webbläsare med AES-GCM-kryptering. Vi kan inte återställa ditt lösenord om det förloras.",
+    "myPasswords": "Mina lösenord",
+    "addNew": "Lägg till nytt",
+    "search": "Sök konton...",
+    "noPasswords": "Inga lösenord hittades.",
+    "addAccount": "Lägg till konto",
+    "accountTitle": "Titel / webbplats",
+    "username": "Användarnamn / e-post",
+    "password": "Lösenord",
+    "url": "URL (valfritt)",
+    "save": "Spara konto",
+    "cancel": "Avbryt",
+    "incorrectPassword": "Felaktigt lösenord eller korrupt data.",
+    "loading": "Laddar..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Webbplatsdetaljer",
+    "pageTitle": "Sidrubrik",
+    "description": "Beskrivning",
+    "keywords": "Sökord (kommaseparerade)",
+    "author": "Författare",
+    "socialPreview": "Social Preview (OG & Twitter)",
+    "websiteUrl": "Webbplats-URL",
+    "previewImage": "Förhandsgranskningsbild-URL",
+    "generatedHtml": "Genererad HTML",
+    "copy": "Kopiera HTML",
+    "copied": "Kopierat"
+  },
+  "VibrationTester": {
+    "worksOnly": "Fungerar endast på enheter med vibrationshårdvara (t.ex. telefoner).",
+    "duration": "Varaktighet (ms)",
+    "vibrateOnce": "Vibrera en gång",
+    "pulsePattern": "Pulsmönster",
+    "longPulse": "Lång puls",
+    "stop": "Stoppa"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Varför JSON-formatering betyder något",
+      "block_2": "JSON (JavaScript Object Notation) är webbens språk.Men rå JSON som returneras från API:er är ofta en förminskad röra.formatering gör den läsbar, felsökningsbar och säker.",
+      "block_3": "1.Läsbarheten är kung",
+      "block_4": "När du felsöker ett 5000-rads API-svar räddar indrag liv.Vår <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> använder indrag med två mellanslag eller fyra mellanslag för att göra strukturen tydlig.",
+      "block_5": "2.Validering",
+      "block_6": "Ett enda kommatecken som saknas kan bryta din app.Validera alltid din JSON innan du överför den till konfigurationsfiler.",
+      "block_7": "Slutsats",
+      "block_8": "Slösa inte tid på att manuellt kontrollera parenteser.Använd automatiserade verktyg."
+    },
+    "mastering-regex": {
+      "block_1": "Regex Explained",
+      "block_2": "Reguljära uttryck är kraftfulla men förvirrande.låt oss visualisera dem.",
+      "block_3": "Vanliga mönster",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-post:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Testa dessa mönster direkt med vår <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "The 5 Stars of Cron",
+      "block_2": "Minut, timme, månad, månad, veckodag.Det är allt det är.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "Exempel",
+      "block_5": "Behöver du hjälp?Använd vår <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> för att skapa uttryck visuellt."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Problemet med molnvalv",
+      "block_2": "LastPass, Okta och andra jättar har drabbats av intrång.När ditt valv är online är det ett mål.",
+      "block_3": "Lösningen: lokal kryptering",
+      "block_4": "Vår nya <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea></strong>lösenordshanteraren körs i din webbläsare</a]\">.Den använder <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bitars kryptering</strong> som härrör från ditt huvudlösenord med PBKDF2.",
+      "block_5": "Så fungerar det",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Noll kunskap:</strong> Vi ser aldrig ditt lösenord.Den lämnar aldrig din enhet.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offlinelagring:</strong> Ditt krypterade valv lagras i din webbläsares LocalStorage.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exporterbar:</strong> Du kan exportera/säkerhetskopiera dina råkrypterade data när som helst.</li>",
+      "block_7": "Sluta lita på molnet med dina huvudnycklar.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Prova Local Password Manager</a> idag."
+    }
+  }
+}

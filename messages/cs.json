@@ -1,0 +1,2101 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Nástroje",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Hledat..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Bezplatné online nástroje pro vývojáře",
+    "description": "90+ bezplatných online nástrojů pro každého. Formátovače, převodníky, generátory a utility. Rychlé, soukromé a bez registrace."
+  },
+  "NotFound": {
+    "title": "Stránka nenalezena",
+    "description": "Omlouváme se, nemohli jsme najít stránku, kterou hledáte.",
+    "backHome": "Zpět na domovskou stránku",
+    "suggestions": "Zkuste vyhledat nástroj nebo si prohlédněte naše populární nástroje níže."
+  },
+  "Homepage": {
+    "heroTag": "100+ Nástrojů Zdarma • Soukromé • Žádná Registrace",
+    "titleLine1": "Denní Nástroje pro Vývojáře",
+    "titleLine2": "Které Prostě Fungují",
+    "subtitle": "Rychlé, krásné a na soukromí zaměřené nástroje pro vývojáře, designéry a všechny ostatní. Vše běží ve vašem prohlížeči.",
+    "recentTools": "Nedávno Použité",
+    "noRecentText": "Začněte používat nástroje, aby se zde zobrazily",
+    "searchResults": "Výsledky Vyhledávání",
+    "popularTools": "Populární",
+    "toolsCount": "{count} nástrojů k dispozici",
+    "features": {
+      "fast": {
+        "title": "Bleskově Rychlé",
+        "desc": "Všechny nástroje běží lokálně ve vašem prohlížeči"
+      },
+      "private": {
+        "title": "100% Soukromé",
+        "desc": "Vaše data nikdy neopustí vaše zařízení"
+      },
+      "simple": {
+        "title": "Vytvořeno pro Každého",
+        "desc": "Dostatečně jednoduché pro kohokoli, výkonné pro profesionály"
+      },
+      "free": {
+        "title": "Vždy Zdarma",
+        "desc": "Žádné účty, žádné limity"
+      }
+    },
+    "categories": {
+      "All": "Vše",
+      "Favorites": "Oblíbené",
+      "Developer": "Vývojář",
+      "Design": "Design",
+      "Content": "Obsah",
+      "Security": "Bezpečnost",
+      "Productivity": "Produktivita",
+      "Math": "Matematika",
+      "Utility": "Utilita"
+    },
+    "cta": {
+      "title": "Jste připraveni zvýšit svou produktivitu?",
+      "text": "Začněte používat naše vývojářské nástroje zdarma. Žádná registrace, žádný sběr dat.",
+      "button": "Začít Zdarma"
+    },
+    "openTool": "Otevřít nástroj",
+    "noResults": "Nebyly nalezeny žádné nástroje odpovídající",
+    "clearFilters": "Vymazat filtry"
+  },
+  "Footer": {
+    "builtWith": "Vytvořeno s ❤️ od",
+    "allTools": "Všechny Nástroje",
+    "blog": "Blog",
+    "about": "O nás",
+    "privacy": "Soukromí",
+    "terms": "Podmínky"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Formát JSON",
+      "description": "Formátujte, ověřujte a zkrášlujte JSON okamžitě"
+    },
+    "base64-encoder": {
+      "name": "Base64 kodér",
+      "description": "Kódování a dekódování řetězců Base64"
+    },
+    "url-encoder": {
+      "name": "URL Encoder",
+      "description": "Bezpečné kódování a dekódování URL"
+    },
+    "jwt-decoder": {
+      "name": "Dekodér JWT",
+      "description": "Dekódování a kontrola JSON Web Tokenů"
+    },
+    "regex-tester": {
+      "name": "Tester regulárního výrazu",
+      "description": "Testování regulárních výrazů v reálném čase"
+    },
+    "hash-generator": {
+      "name": "Generátor hash",
+      "description": "Generování hashů MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Generátor UUID",
+      "description": "Okamžité generování náhodných UUID/GUID"
+    },
+    "css-minifier": {
+      "name": "Minifikátor CSS",
+      "description": "Minifikace a optimalizace CSS kódu"
+    },
+    "markdown-editor": {
+      "name": "Náhled Markdown",
+      "description": "Markdown editor a náhled v reálném čase"
+    },
+    "color-converter": {
+      "name": "Převodník barev",
+      "description": "Převod Hex, RGB, HSL a CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Nástroj pro časové razítko",
+      "description": "Převod Unix timestampů na čitelné datum"
+    },
+    "sql-formatter": {
+      "name": "SQL Formatter",
+      "description": "Formátování a zkrášlování SQL dotazů"
+    },
+    "password-generator": {
+      "name": "Generátor hesel",
+      "description": "Vytváření bezpečných náhodných hesel"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generování výplňového textu pro návrhy"
+    },
+    "image-base64": {
+      "name": "Obrázek do Base64",
+      "description": "Převod obrázků na Base64 řetězce"
+    },
+    "qr-generator": {
+      "name": "Generátor QR kódů",
+      "description": "Generování QR kódů pro URL a text"
+    },
+    "word-counter": {
+      "name": "Počítadlo slov",
+      "description": "Počítání slov, znaků a času čtení"
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "description": "Pouzdro na velblouda, hada, kebab a pascal"
+    },
+    "text-diff": {
+      "name": "Kontrola rozdílů textu",
+      "description": "Porovnání dvou textů a hledání rozdílů"
+    },
+    "slug-generator": {
+      "name": "Generátor slimáků",
+      "description": "Generování SEO přívětivých URL slugů"
+    },
+    "gradient-generator": {
+      "name": "Generátor přechodů",
+      "description": "Vytváření krásných CSS přechodů"
+    },
+    "image-compressor": {
+      "name": "Kompresor obrazu",
+      "description": "Komprese obrázků lokálně a soukromě"
+    },
+    "device-info": {
+      "name": "Informace o zařízení",
+      "description": "Zobrazení informací o obrazovce, prohlížeči a systému"
+    },
+    "random-generator": {
+      "name": "Náhodný generátor",
+      "description": "Výběr čísel, hod mincí a položky seznamu"
+    },
+    "unit-converter": {
+      "name": "Převodník jednotek",
+      "description": "Převod délky, hmotnosti a teploty"
+    },
+    "pomodoro-timer": {
+      "name": "Časovač Pomodoro",
+      "description": "Časovač soustředění pro produktivitu"
+    },
+    "yt-thumbnail": {
+      "name": "Stahovač miniatur",
+      "description": "Stahování náhledů videí z YouTube"
+    },
+    "my-ip": {
+      "name": "Jaká je moje IP",
+      "description": "Zobrazení veřejné IP a informací o síti"
+    },
+    "keycode-info": {
+      "name": "Informace o kódu klíče",
+      "description": "Debugger kódů kláves v JavaScriptu"
+    },
+    "signature-generator": {
+      "name": "Generátor podpisu",
+      "description": "Kreslení a stahování digitálních podpisů"
+    },
+    "screen-recorder": {
+      "name": "Screen Recorder",
+      "description": "Nahrávání obrazovky a stahování videa"
+    },
+    "credit-card-validator": {
+      "name": "Validátor karet",
+      "description": "Ověřování čísel kreditních karet"
+    },
+    "password-manager": {
+      "name": "Místní správce hesel",
+      "description": "Bezpečné ukládání hesel lokálně se šifrováním"
+    },
+    "deep-link-tester": {
+      "name": "Tester hlubokých odkazů",
+      "description": "Testování, spouštění a správa mobilních deep linků"
+    },
+    "image-converter": {
+      "name": "Převodník obrázků",
+      "description": "Převod PNG/JPG na WebP lokálně pro optimalizaci obrázků"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Převod JSON na CSV a naopak"
+    },
+    "bmi-calculator": {
+      "name": "BMI kalkulačka",
+      "description": "Výpočet indexu tělesné hmotnosti (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS vyhledávání",
+      "description": "Okamžité dotazování DNS záznamů (A, MX, NS)"
+    },
+    "age-calculator": {
+      "name": "Kalkulačka věku",
+      "description": "Výpočet přesného věku a celkového počtu dní"
+    },
+    "loan-calculator": {
+      "name": "Kalkulačka půjček",
+      "description": "Výpočet měsíční splátky a celkového úroku"
+    },
+    "discount-calculator": {
+      "name": "Kalkulačka slev",
+      "description": "Výpočet prodejní ceny a úspor"
+    },
+    "interest-calculator": {
+      "name": "Úroková kalkulačka",
+      "description": "Kalkulačka jednoduchého a složeného úroku"
+    },
+    "html-encoder": {
+      "name": "HTML kodér/dekodér",
+      "description": "Escapování speciálních znaků nebo dekódování HTML"
+    },
+    "list-sorter": {
+      "name": "Řazení seznamu",
+      "description": "Řazení, obracení, míchání a odstraňování duplicit v seznamech"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Generator",
+      "description": "Vizuální generování CSS stínů"
+    },
+    "date-diff": {
+      "name": "Datum rozdíl",
+      "description": "Výpočet doby trvání mezi dvěma daty"
+    },
+    "sql-to-json": {
+      "name": "SQL na JSON",
+      "description": "Převod SQL INSERT příkazů na JSON objekty"
+    },
+    "keyword-density": {
+      "name": "Hustota klíčových slov",
+      "description": "Analýza frekvence klíčových slov pro SEO"
+    },
+    "json-diff": {
+      "name": "Rozdíl JSON",
+      "description": "Porovnání dvou JSON objektů vedle sebe"
+    },
+    "cipher-tools": {
+      "name": "Šifrovací nástroje",
+      "description": "ROT13 a Caesarova šifra kodér/dekodér"
+    },
+    "token-generator": {
+      "name": "Generátor náhodných tokenů",
+      "description": "Generování bezpečných náhodných tokenů"
+    },
+    "favicon-generator": {
+      "name": "Generátor favicon",
+      "description": "Vytváření .ico a PNG favicon"
+    },
+    "robots-generator": {
+      "name": "Generátor robots.txt",
+      "description": "Vytváření robots.txt pro SEO"
+    },
+    "grid-generator": {
+      "name": "CSS Grid Generator",
+      "description": "Vizuální tvůrce rozložení CSS Grid"
+    },
+    "hmac-generator": {
+      "name": "Generátor HMAC",
+      "description": "Generování ověřovacích kódů zpráv (HMAC)"
+    },
+    "http-status": {
+      "name": "Stavové kódy HTTP",
+      "description": "Referenční seznam HTTP stavových kódů"
+    },
+    "week-number": {
+      "name": "Číslo týdne",
+      "description": "Číslo aktuálního týdne a průběh roku"
+    },
+    "text-tools": {
+      "name": "Textový transformátor",
+      "description": "Obrácení, převrácení a kódování textu"
+    },
+    "url-parser": {
+      "name": "URL Parser",
+      "description": "Rozdělení URL na protokol, hostitele, cestu, parametry"
+    },
+    "markdown-table": {
+      "name": "Generátor tabulek markdown",
+      "description": "Vizuální vytváření Markdown tabulek"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp Link Generator",
+      "description": "Vytváření přímých odkazů na WhatsApp chat"
+    },
+    "paypal-link": {
+      "name": "PayPal Link Generator",
+      "description": "Vytváření platebních odkazů PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG do PNG",
+      "description": "Převod SVG kódu/souboru na PNG obrázek"
+    },
+    "prime-factors": {
+      "name": "Prvotní faktory",
+      "description": "Hledání prvočíselných faktorů čísla"
+    },
+    "iban-validator": {
+      "name": "Validátor IBAN",
+      "description": "Ověřování mezinárodních čísel bankovních účtů"
+    },
+    "ascii-converter": {
+      "name": "ASCII převodník",
+      "description": "Převod textu na ASCII desítkové kódy"
+    },
+    "utm-builder": {
+      "name": "Tvůrce UTM",
+      "description": "Tvorba URL kampaní pro Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Generátor metaznaček",
+      "description": "Generování SEO meta tagů pro webové stránky"
+    },
+    "og-generator": {
+      "name": "Otevřete Generátor grafů",
+      "description": "Vytváření Open Graph meta tagů pro sdílení na sociálních sítích"
+    },
+    "twitter-card": {
+      "name": "Generátor Twitter karet",
+      "description": "Vytváření meta tagů pro Twitter Card"
+    },
+    "aspect-ratio": {
+      "name": "Kalkulačka poměru stran",
+      "description": "Výpočet poměru stran a rozměrů"
+    },
+    "css-cursor": {
+      "name": "CSS kurzor",
+      "description": "Vizuální reference vlastnosti CSS cursor"
+    },
+    "css-triangle": {
+      "name": "CSS trojúhelníkový generátor",
+      "description": "Generování čistých CSS trojúhelníků"
+    },
+    "percentage-calculator": {
+      "name": "Kalkulačka procent",
+      "description": "Výpočet procent a změn"
+    },
+    "vat-calculator": {
+      "name": "Kalkulačka DPH",
+      "description": "Výpočet částek s DPH a bez DPH"
+    },
+    "stopwatch": {
+      "name": "Stopky",
+      "description": "Jednoduché stopky v prohlížeči"
+    },
+    "text-to-speech": {
+      "name": "Převod textu na řeč",
+      "description": "Převod textu na mluvené slovo"
+    },
+    "speech-to-text": {
+      "name": "Řeč na text",
+      "description": "Převod mluveného slova na text"
+    },
+    "vibration-tester": {
+      "name": "Tester vibrací",
+      "description": "Testování vibračního motorku zařízení"
+    },
+    "chmod-calculator": {
+      "name": "Kalkulačka Chmod",
+      "description": "Výpočet oprávnění souborů v Linuxu"
+    },
+    "crontab-generator": {
+      "name": "Generátor Crontab",
+      "description": "Generování výrazů cron plánu"
+    },
+    "htpasswd-generator": {
+      "name": "Generátor Htpasswd",
+      "description": "Generování záznamů pro základní ověřování"
+    },
+    "subnet-calculator": {
+      "name": "Podsíťová kalkulačka",
+      "description": "Výpočet síťových masek a rozsahů IP"
+    },
+    "mac-generator": {
+      "name": "Generátor MAC adres",
+      "description": "Generování náhodných MAC adres"
+    },
+    "timezone-converter": {
+      "name": "Převodník časového pásma",
+      "description": "Převod času mezi více časovými pásmy"
+    },
+    "email-validator": {
+      "name": "Validátor e-mailu",
+      "description": "Ověření formátu e-mailu a detekce překlepů"
+    },
+    "password-strength": {
+      "name": "Síla hesla",
+      "description": "Kontrola skóre síly hesla"
+    },
+    "roman-numerals": {
+      "name": "Převodník římských čísel",
+      "description": "Převod mezi římskými a desítkovými čísly"
+    },
+    "margin-calculator": {
+      "name": "Kalkulačka marže",
+      "description": "Výpočet ziskové marže a přirážky"
+    },
+    "roi-calculator": {
+      "name": "Kalkulačka ROI",
+      "description": "Výpočet návratnosti investic (ROI)"
+    },
+    "fuel-calculator": {
+      "name": "Kalkulačka nákladů na palivo",
+      "description": "Výpočet nákladů na palivo pro cestu"
+    },
+    "pretty-print-url": {
+      "name": "Pěkná tisková adresa URL",
+      "description": "Formátování a zkrášlování URL pro lepší čitelnost"
+    }
+  },
+  "Terms": {
+    "title": "Podmínky služby",
+    "lastUpdated": "Naposledy aktualizováno",
+    "sections": {
+      "acceptance": {
+        "title": "1. Přijetí podmínek",
+        "content": "Přístupem na DailyDevTools a jejich používáním souhlasíte s podmínkami této smlouvy."
+      },
+      "useLicense": {
+        "title": "2. Licence k použití",
+        "content": "DailyDevTools je zdarma k použití pro osobní i komerční účely. Nesmíte:",
+        "list": {
+          "0": "Pokoušet se o zpětné inženýrství nebo stahování významných částí webu.",
+          "1": "Používat web způsobem, který způsobuje nebo může způsobit poškození webu nebo narušení jeho dostupnosti."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Zřeknutí se odpovědnosti",
+        "content": "Nástroje na DailyDevTools jsou poskytovány „tak, jak jsou“. Neposkytujeme žádné záruky, výslovné ani mlčky předpokládané..."
+      },
+      "limitations": {
+        "title": "4. Omezení",
+        "content": "DailyDevTools ani jeho dodavatelé v žádném případě neodpovídají za žádné škody..."
+      },
+      "revisions": {
+        "title": "5. Revize",
+        "content": "Materiály na DailyDevTools mohou obsahovat technické, typografické nebo fotografické chyby..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Zásady ochrany osobních údajů",
+    "lastUpdated": "Naposledy aktualizováno",
+    "intro": "Vítejte na DailyDevTools. Vážíme si vašeho soukromí a zavazujeme se chránit vaše osobní údaje.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Jak naše nástroje fungují (lokální zpracování)",
+        "content": "A co je nejdůležitější: Nástroje běží zcela ve vašem prohlížeči. Data nikdy neopustí vaše zařízení."
+      },
+      "dataCollection": {
+        "title": "3. Data, která shromažďujeme",
+        "content": "Neshromažďujeme obsah. Pro statistiky používání využíváme Google Analytics."
+      },
+      "cookies": {
+        "title": "4. Soubory cookie",
+        "content": "Cookies používáme pro analytiku a lokální nastavení."
+      },
+      "thirdParty": {
+        "title": "5. Odkazy třetích stran",
+        "content": "Náš web může obsahovat odkazy na třetí strany."
+      },
+      "changes": {
+        "title": "6. Změny těchto zásad",
+        "content": "Tyto zásady můžeme čas od času aktualizovat."
+      },
+      "contact": {
+        "title": "7. Kontaktujte nás",
+        "content": "Kontaktujte nás přes GitHub nebo sociální sítě."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Zdroje pro vývojáře",
+    "subtitle": "Podrobné pohledy na nástroje, které tvoříme, a koncepty za nimi.",
+    "readMore": "Číst více",
+    "backToBlog": "Zpět na blog",
+    "enjoyedArticle": "Líbil se vám tento článek?",
+    "checkTools": "Podívejte se na naše nástroje"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Vstup",
+      "output": "Výstup",
+      "format": "Formátovat",
+      "minify": "Minifikovat",
+      "download": "Stáhnout",
+      "copy": "Kopírovat",
+      "paste": "Vložit",
+      "copied": "Zkopírováno!",
+      "upload": "Nahrát",
+      "sample": "Ukázka",
+      "clear": "Vymazat",
+      "indent": "Odsazení:",
+      "chars": "znaků",
+      "error": "Chyba",
+      "invalid": "Neplatný vstup",
+      "result": "Výsledek",
+      "generate": "Generovat",
+      "calculate": "Vypočítat",
+      "convert": "Převést",
+      "validate": "Ověřit",
+      "resultPlaceholder": "Výsledek se zobrazí zde..."
+    },
+    "Base64Encoder": {
+      "encode": "Kódovat",
+      "decode": "Dekódovat",
+      "textToEncode": "Text ke kódování",
+      "base64ToDecode": "Base64 k dekódování",
+      "enterText": "Zadejte text ke kódování...",
+      "enterBase64": "Zadejte Base64 k dekódování...",
+      "encodeAction": "Kódovat do Base64",
+      "decodeAction": "Dekódovat z Base64",
+      "base64Output": "Base64 výstup",
+      "decodedText": "Dekódovaný text",
+      "resultPlaceholder": "Výsledek se zobrazí zde...",
+      "invalidInput": "Neplatný vstup pro {mode}"
+    },
+    "QrGenerator": {
+      "content": "Obsah",
+      "placeholder": "https://priklad.cz",
+      "customization": "Přizpůsobení",
+      "foreground": "Popředí",
+      "background": "Pozadí",
+      "download": "Stáhnout"
+    },
+    "HashGenerator": {
+      "inputText": "Vstupní text",
+      "placeholder": "Zadejte text pro hashování...",
+      "waiting": "Čekání na vstup..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Generovat nové",
+      "configuration": "Konfigurace",
+      "length": "Délka hesla",
+      "uppercase": "Velká písmena (A-Z)",
+      "numbers": "Čísla (0-9)",
+      "symbols": "Symboly (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Vložte JSON zde...",
+      "outputPlaceholder": "Formátovaný JSON se zobrazí zde...",
+      "spaces": "mezery"
+    },
+    "UrlEncoder": {
+      "encode": "Kódovat",
+      "decode": "Dekódovat",
+      "urlToEncode": "URL ke kódování",
+      "encodedUrlToDecode": "Kódované URL k dekódování",
+      "enterUrlToEncode": "Zadejte URL nebo text ke kódování...",
+      "enterUrlToDecode": "Zadejte kódované URL k dekódování...",
+      "encodeAction": "Kódovat URL",
+      "decodeAction": "Dekódovat URL",
+      "encodedUrl": "Kódované URL",
+      "decodedUrl": "Dekódované URL",
+      "resultPlaceholder": "Výsledek se zobrazí zde...",
+      "chars": "znaků",
+      "invalidInput": "Neplatný vstup pro {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Vložte váš JWT token",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Dekódovat JWT",
+      "header": "HLAVIČKA",
+      "payload": "OBSAH",
+      "issued": "Vydáno",
+      "expires": "Vyprší"
+    },
+    "RegexTester": {
+      "expression": "Výraz",
+      "expressionPlaceholder": "Zachytávací skupina (abc)...",
+      "testString": "Testovací řetězec",
+      "testStringPlaceholder": "Vložte testovací řetězec zde...",
+      "matchHighlights": "Zvýraznění shod",
+      "matches": "shod",
+      "matchInfo": "Informace o shodě",
+      "match": "Shoda",
+      "index": "Index",
+      "group": "Skupina",
+      "noMatches": "Nebyly nalezeny žádné shody",
+      "highlightPlaceholder": "Shody budou zvýrazněny zde...",
+      "flagsHelp": "g: globální, i: ignorovat velikost, m: více řádků"
+    },
+    "UuidGenerator": {
+      "generate": "Generovat",
+      "generateCount": "Generovat:",
+      "copyAll": "Kopírovat vše",
+      "copyUuid": "Kopírovat UUID",
+      "generatedAt": "Vygenerováno lokálně v {time} • Verze 4 UUID"
+    },
+    "WordCounter": {
+      "words": "Slova",
+      "characters": "Znaky",
+      "sentences": "Věty",
+      "paragraphs": "Odstavce",
+      "readingTime": "Čas čtení",
+      "min": "min",
+      "textInput": "Textový vstup",
+      "inputPlaceholder": "Začněte psát nebo vložte text pro analýzu...",
+      "clear": "Vymazat"
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Vložte SQL dotaz zde...",
+      "outputPlaceholder": "Formátované SQL se zobrazí zde..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Vložte CSS kód zde...",
+      "outputPlaceholder": "Minifikované CSS se zobrazí zde..."
+    },
+    "TextDiff": {
+      "original": "Původní text",
+      "changed": "Změněný text",
+      "compare": "Porovnat",
+      "differences": "Rozdíly",
+      "update": "Aktualizovat rozdíly",
+      "old": "Starý",
+      "new": "Nový",
+      "content": "Obsah"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Zadejte text pro převod...",
+      "generatedSlug": "Vygenerovaný Slug",
+      "inputLabel": "Zadejte název článku / text",
+      "generated": "Vygenerovaný slug",
+      "copy": "Kopírovat slug"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Odstavce",
+      "generate": "Generovat",
+      "copy": "Kopírovat"
+    },
+    "AgeCalculator": {
+      "birthDate": "Datum narození",
+      "calculate": "Vypočítat",
+      "years": "Roky",
+      "months": "Měsíce",
+      "days": "Dny",
+      "totalDays": "Celkem dní",
+      "nextBirthday": "Příští narozeniny za",
+      "dob": "Datum narození",
+      "age": "Věk"
+    },
+    "AsciiConverter": {
+      "text": "Text",
+      "ascii": "ASCII",
+      "convert": "Převést",
+      "inputPlaceholder": "Zadejte text..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horizontální (X)",
+      "vertical": "Vertikální (Y)",
+      "blur": "Rozostření",
+      "spread": "Rozšíření",
+      "colorOpacity": "Barva a průhlednost",
+      "inset": "Vnitřní"
+    },
+    "BmiCalculator": {
+      "metric": "Metrické (kg/cm)",
+      "imperial": "Imperiální (lbs/in)",
+      "weight": "Váha",
+      "height": "Výška",
+      "calculate": "Vypočítat BMI",
+      "bmiScore": "Vaše BMI skóre",
+      "underweight": "Podváha",
+      "normal": "Normální váha",
+      "overweight": "Nadváha",
+      "obese": "Obezita"
+    },
+    "CaseConverter": {
+      "inputText": "Vstupní text",
+      "inputPlaceholder": "Napište text zde...",
+      "upper": "VELKÁ PÍSMENA",
+      "lower": "malá písmena",
+      "title": "Velká Počáteční",
+      "sentence": "Větný zápis",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Kopírovat",
+      "conversions": "Převody",
+      "clear": "Vymazat"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX Barva",
+      "rgbLabels": "RGB Barva",
+      "hslLabels": "HSL Barva",
+      "cmykLabels": "CMYK Barva",
+      "copy": "Kopírovat",
+      "hexToRgbNote": "* Aktuálně podporuje pouze převod HEX na RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Číslo karty",
+      "validate": "Ověřit",
+      "valid": "Platné číslo karty",
+      "invalid": "Neplatné číslo karty",
+      "placeholder": "Zadejte číslo karty...",
+      "type": "Typ karty",
+      "checkDigit": "Kontrolní číslice",
+      "luhnValid": "Luhnův algoritmus platný"
+    },
+    "CronGenerator": {
+      "minute": "Minuta",
+      "hour": "Hodina",
+      "dayMonth": "Den (Měsíc)",
+      "month": "Měsíc",
+      "dayWeek": "Den (Týden)",
+      "presets": "Běžné předvolby",
+      "everyMinute": "Každou minutu",
+      "everyHour": "Každou hodinu",
+      "everyDayMidnight": "Každý den o půlnoci",
+      "everySunday": "Každou neděli",
+      "everyMonth": "Každý měsíc",
+      "everyYear": "Každý rok",
+      "formatInfo": "Formát: * * * * * (Minuta Hodina DenMěsíce Měsíc DenTýdne)",
+      "usageInfo": "Použijte * pro 'každý', */n pro 'každý n-tý', 1,2,3 pro konkrétní seznam."
+    },
+    "DateDiff": {
+      "startDate": "Počáteční datum",
+      "endDate": "Koncové datum",
+      "calculate": "Vypočítat",
+      "difference": "Rozdíl",
+      "years": "Roky",
+      "months": "Měsíce",
+      "days": "Dny",
+      "totalDays": "Celkem dní",
+      "totalWeeks": "Celkem týdnů",
+      "totalHours": "Celkem hodin"
+    },
+    "DeepLinkTester": {
+      "testLink": "Testovací odkaz",
+      "savedLinks": "Uložené odkazy",
+      "searchPlaceholder": "Hledat uložené odkazy...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Spustit",
+      "save": "Uložit",
+      "delete": "Smazat",
+      "opens": "otevře",
+      "scanQr": "Naskenujte mobilním zařízením pro test",
+      "noSavedLinks": "Nebyly nalezeny žádné uložené odkazy.",
+      "enterLabel": "Zadejte název pro tento odkaz:",
+      "saved": "Uloženo!",
+      "confirmDelete": "Smazat tento odkaz?"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Původní cena",
+      "discountPercent": "Sleva",
+      "additionalDiscount": "Dodatečná sleva",
+      "calculate": "Vypočítat",
+      "youSave": "Ušetříte",
+      "finalPrice": "Konečná cena",
+      "salesTax": "DPH"
+    },
+    "DnsLookup": {
+      "domain": "Doména",
+      "lookup": "Vyhledat",
+      "recordType": "Typ záznamu",
+      "results": "Výsledky",
+      "placeholder": "priklad.cz",
+      "status": "Stav",
+      "time": "Čas",
+      "server": "Server",
+      "answerSection": "Sekce odpovědí",
+      "name": "Název",
+      "type": "Typ",
+      "ttl": "TTL",
+      "data": "Data",
+      "noRecords": "Nebyly nalezeny žádné záznamy"
+    },
+    "EmailValidator": {
+      "email": "E-mailová adresa",
+      "validate": "Ověřit",
+      "valid": "Platný",
+      "invalid": "Neplatný",
+      "suggestion": "Návrh",
+      "placeholder": "uzivatel@priklad.cz"
+    },
+    "FuelCalculator": {
+      "distance": "Vzdálenost",
+      "fuelEfficiency": "Spotřeba paliva",
+      "fuelPrice": "Cena paliva",
+      "calculate": "Vypočítat",
+      "result": "Výsledek",
+      "totalCost": "Celkové náklady",
+      "fuelNeeded": "Potřebné palivo"
+    },
+    "GridGenerator": {
+      "columns": "Sloupce",
+      "rows": "Řádky",
+      "gap": "Mezera",
+      "preview": "Náhled",
+      "copyCss": "Kopírovat CSS",
+      "rowGap": "Mezera řádků",
+      "colGap": "Mezera sloupců",
+      "options": "Možnosti"
+    },
+    "HmacGenerator": {
+      "message": "Zpráva",
+      "secret": "Tajemství",
+      "algorithm": "Algoritmus",
+      "generate": "Generovat",
+      "inputPlaceholder": "Vstupní text...",
+      "secretPlaceholder": "Tajemství..."
+    },
+    "HtmlEncoder": {
+      "encode": "Kódovat",
+      "decode": "Dekódovat",
+      "resultPlaceholder": "Výsledek se zobrazí zde...",
+      "inputPlaceholder": "Vložte HTML zde..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Hledat kód (např. 404) nebo název...",
+      "code": "Kód",
+      "name": "Název",
+      "description": "Popis"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Ověřit",
+      "valid": "Platný",
+      "invalid": "Neplatný",
+      "placeholder": "Zadejte IBAN...",
+      "inputLabel": "Zadejte číslo IBAN",
+      "validTitle": "Platný formát",
+      "invalidTitle": "Neplatný kontrolní součet",
+      "validDesc": "Formát IBAN a kontrolní součet jsou správné.",
+      "invalidDesc": "IBAN neodpovídá algoritmu kontrolního součtu."
+    },
+    "ImageBase64": {
+      "upload": "Nahrát",
+      "convert": "Převést",
+      "copy": "Kopírovat",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Nahrát obrázek",
+      "convertToBase64": "Převést na Base64",
+      "convertToImage": "Převést na obrázek",
+      "base64String": "Řetězec Base64",
+      "download": "Stáhnout"
+    },
+    "ImageConverter": {
+      "selectImage": "Vybrat obrázek",
+      "format": "Formát",
+      "convert": "Převést",
+      "download": "Stáhnout",
+      "quality": "Kvalita"
+    },
+    "InterestCalculator": {
+      "principal": "Jistina",
+      "rate": "Úroková sazba",
+      "time": "Doba (roky)",
+      "calculate": "Vypočítat",
+      "simpleInterest": "Jednoduchý",
+      "compoundInterest": "Složený",
+      "totalAmount": "Celková hodnota",
+      "type": "Typ",
+      "frequency": "Frekvence úročení",
+      "annually": "Ročně",
+      "monthly": "Měsíčně",
+      "daily": "Denně",
+      "year": "Rok"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Zadejte JSON...",
+      "convert": "Převést",
+      "format": "Formátovat",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON do CSV",
+      "csvToJson": "CSV na JSON",
+      "jsonInput": "Vstup JSON",
+      "csvInput": "Vstup CSV",
+      "jsonOutput": "Výstup JSON",
+      "csvOutput": "Výstup CSV"
+    },
+    "JsonDiff": {
+      "original": "Původní JSON",
+      "modified": "Změněný JSON",
+      "compare": "Porovnat",
+      "differences": "Rozdíly"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Stiskněte libovolnou klávesu",
+      "key": "Klávesa",
+      "code": "Kód",
+      "keyCode": "KeyCode",
+      "which": "který",
+      "location": "Umístění",
+      "modifiers": "Modifikátory",
+      "standard": "Standardní",
+      "left": "Levý",
+      "right": "Pravý",
+      "numpad": "Numerická klávesnice",
+      "space": "(Mezerník)",
+      "info": "Zobrazit JavaScript událost KeyCode, Code a další."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Vložte text zde pro analýzu frekvence klíčových slov...",
+      "analyze": "Analyzovat",
+      "keyword": "Klíčové slovo",
+      "count": "Počet",
+      "density": "Hustota"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Zadejte seznam zde...",
+      "sort": "Seřadit",
+      "reverse": "Obrátit",
+      "shuffle": "Zamíchat",
+      "deduplicate": "Odstranit duplicity",
+      "ascending": "Vzestupně",
+      "descending": "Sestupně",
+      "length": "Délka",
+      "trim": "Oříznout prázdné",
+      "lines": "Řádky:",
+      "chars": "Znaky:"
+    },
+    "LoanCalculator": {
+      "principal": "Jistina",
+      "interestRate": "Úroková sazba",
+      "term": "Doba splácení",
+      "calculate": "Vypočítat",
+      "monthlyPayment": "Měsíční splátka",
+      "totalInterest": "Celkový úrok",
+      "totalPayment": "Celková platba",
+      "loanDetails": "Detaily půjčky",
+      "loanAmount": "Výše půjčky",
+      "loanTerm": "Doba půjčky",
+      "years": "Roky",
+      "months": "Měsíce",
+      "interest": "Úrok"
+    },
+    "MacGenerator": {
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "separator": "Oddělovač",
+      "format": "Formát",
+      "quantity": "Množství",
+      "uppercase": "Velká písmena"
+    },
+    "MarginCalculator": {
+      "cost": "Náklady",
+      "price": "Prodejní cena",
+      "calculate": "Vypočítat",
+      "margin": "Marže",
+      "markup": "Přirážka",
+      "profit": "Zisk",
+      "revenue": "Příjmy",
+      "netProfit": "Čistý zisk",
+      "grossMargin": "Hrubá marže"
+    },
+    "PasswordManager": {
+      "masterPassword": "Hlavní heslo",
+      "unlock": "Odemknout",
+      "searchPlaceholder": "Hledat účty...",
+      "addNew": "Přidat nový",
+      "siteName": "Název stránky",
+      "username": "Uživatelské jméno",
+      "password": "Heslo",
+      "save": "Uložit",
+      "delete": "Smazat",
+      "title": "Správce hesel",
+      "desc": "Bezpečně ukládejte a spravujte svá hesla lokálně.",
+      "create": "Vytvořit nový trezor",
+      "unlockDesc": "Zadejte hlavní heslo pro přístup k účtům.",
+      "createDesc": "Nastavte silné hlavní heslo. Zašifruje vaše data lokálně.",
+      "unlockBtn": "Odemknout",
+      "createBtn": "Vytvořit trezor",
+      "note": "Data jsou uložena ve vašem prohlížeči pomocí šifrování AES-GCM. Nemůžeme obnovit vaše heslo, pokud ho ztratíte.",
+      "myPasswords": "Moje hesla",
+      "search": "Hledat účty...",
+      "noPasswords": "Nebyla nalezena žádná hesla.",
+      "addAccount": "Přidat účet",
+      "accountTitle": "Název / Webová stránka",
+      "url": "URL (Volitelné)",
+      "cancel": "Zrušit",
+      "incorrectPassword": "Nesprávné heslo nebo poškozená data.",
+      "loading": "Načítání..."
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Pište sem...",
+      "strength": "Síla",
+      "weak": "Slabé",
+      "fair": "Přijatelné",
+      "good": "Dobré",
+      "strong": "Silné",
+      "requirements": "Požadavky",
+      "length": "8+ znaků",
+      "number": "Obsahuje číslo",
+      "uppercase": "Obsahuje velké písmeno",
+      "symbol": "Obsahuje symbol"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me uživatelské jméno",
+      "amount": "Částka",
+      "currency": "Měna",
+      "generate": "Generovat",
+      "itemName": "Název položky",
+      "link": "Odkaz",
+      "yourLink": "Váš PayPal odkaz",
+      "openPaypal": "Otevřít PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Pravidla",
+      "addRule": "Přidat pravidlo",
+      "allow": "Povolit",
+      "disallow": "Zakázat",
+      "sitemap": "URL mapy stránek (Volitelné)",
+      "output": "Vygenerovaný robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Hodnota",
+      "percentage": "Procento",
+      "calculate": "Vypočítat",
+      "result": "Výsledek",
+      "whatIs": "Kolik je",
+      "of": "% z",
+      "isWhatPercentOf": "je kolik % z",
+      "percentChangeFrom": "% změna z",
+      "to": "na"
+    },
+    "PomodoroTimer": {
+      "work": "Čas soustředění",
+      "shortBreak": "Krátká přestávka",
+      "longBreak": "Dlouhá přestávka",
+      "start": "Start",
+      "pause": "Pauza",
+      "reset": "Resetovat",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Číslo",
+      "calculate": "Vypočítat",
+      "factors": "Prvočíselné faktory",
+      "inputLabel": "Zadejte číslo",
+      "placeholder": "např. 120",
+      "isPrime": "Toto číslo je prvočíslo!",
+      "isComposite": "Toto číslo je složené"
+    },
+    "RoiCalculator": {
+      "investment": "Investice",
+      "returns": "Výnosy",
+      "calculate": "Vypočítat",
+      "roi": "ROI",
+      "profit": "Zisk",
+      "finalValue": "Konečná hodnota",
+      "time": "Čas (roky)",
+      "totalGain": "Celkový zisk",
+      "annualizedRoi": "Roční ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Desítkové",
+      "decimalPlaceholder": "2024",
+      "roman": "Římské",
+      "convert": "Převést",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Začít nahrávat",
+      "stopRecording": "Zastavit nahrávání",
+      "download": "Stáhnout",
+      "recording": "Nahrávání...",
+      "titleRecording": "Nahrávání vaší obrazovky...",
+      "titleFree": "Zdarma online nahrávání obrazovky",
+      "desc": "Zachyťte svou obrazovku, okno aplikace nebo záložku prohlížeče. Bez vodoznaku, bez časového limitu.",
+      "start": "Začít nahrávat",
+      "stop": "Zastavit nahrávání",
+      "browserSupport": "Funguje nejlépe v Chrome, Edge a Firefoxu na počítači."
+    },
+    "SignatureGenerator": {
+      "draw": "Kreslit",
+      "clear": "Vymazat",
+      "download": "Stáhnout",
+      "penColor": "Barva pera",
+      "penSize": "Velikost pera",
+      "color": "Barva",
+      "width": "Šířka",
+      "signHere": "Podepište zde",
+      "note": "Podpisy jsou zpracovány lokálně ve vašem prohlížeči. Neukládáme ani nenahrávám je."
+    },
+    "SpeechToText": {
+      "startListening": "Začít naslouchat",
+      "stopListening": "Zastavit naslouchání",
+      "transcript": "Přepis",
+      "placeholder": "Přepis se objeví zde...",
+      "notSupported": "Váš prohlížeč nepodporuje Web Speech API. Použijte prosím Chrome.",
+      "listening": "Naslouchám...",
+      "start": "Klikněte na mikrofon pro start"
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO uživatelé (id, jméno, věk) VALUES (1, 'Jan', 30);",
+      "convert": "Převést",
+      "result": "Výsledek",
+      "inputLabel": "Vstup SQL (pouze INSERT příkazy)",
+      "error": "Nelze analyzovat SQL. Ujistěte se, že jsou to standardní INSERT INTO příkazy."
+    },
+    "Stopwatch": {
+      "start": "Start",
+      "stop": "Zastávka",
+      "reset": "Resetovat",
+      "lap": "Kolo"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP adresa",
+      "subnetMask": "Maska podsítě",
+      "calculate": "Vypočítat",
+      "networkAddress": "Síťová adresa",
+      "broadcastAddress": "Vysílací adresa",
+      "usableHosts": "Použitelné hosty",
+      "ip": "IP adresa",
+      "cidr": "CIDR (/{cidr})",
+      "firstHost": "První host",
+      "lastHost": "Poslední host",
+      "totalHosts": "Celkový počet hostů"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Vložit SVG",
+      "uploadSvg": "Nahrát SVG",
+      "convert": "Převést",
+      "download": "Stáhnout",
+      "upload": "Nahrát SVG soubor",
+      "browse": "nebo klikněte pro procházení",
+      "paste": "...nebo vložte SVG kód",
+      "preview": "PNG náhled (2x měřítko)",
+      "errorType": "Nahrajte prosím platný SVG soubor.",
+      "errorRender": "Nepodařilo se vykreslit SVG. Ujistěte se, že je platné XML.",
+      "errorProcess": "Chyba při zpracování SVG."
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Zadejte text k přečtení...",
+      "speak": "Mluvit",
+      "stop": "Zastávka",
+      "voice": "Hlas",
+      "rate": "Rychlost",
+      "pitch": "Výška",
+      "placeholder": "Zadejte text k přečtení...",
+      "speed": "Rychlost"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Napište něco...",
+      "reverse": "Obrátit",
+      "uppercase": "Velká písmena",
+      "lowercase": "Malá písmena",
+      "encode": "Kódovat"
+    },
+    "TimezoneConverter": {
+      "from": "Z",
+      "to": "Do",
+      "convert": "Převést",
+      "currentTime": "Aktuální čas",
+      "date": "Datum",
+      "time": "Čas (místní)",
+      "invalid": "Neplatný",
+      "zones": {
+        "utc": "UTC",
+        "newYork": "New York (EST/EDT)",
+        "losAngeles": "Los Angeles (PST/PDT)",
+        "london": "Londýn (GMT/BST)",
+        "paris": "Paříž (CET/CEST)",
+        "tokyo": "Tokio (JST)",
+        "sydney": "Sydney (AEST/AEDT)",
+        "dubai": "Dubaj (GST)",
+        "india": "Indie (IST)"
+      }
+    },
+    "TokenGenerator": {
+      "length": "Délka",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "includeNumbers": "Zahrnout čísla",
+      "includeSymbols": "Zahrnout symboly"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Zadejte URL...",
+      "parse": "Analyzovat",
+      "protocol": "Protokol",
+      "host": "Hostitel",
+      "path": "Cesta",
+      "query": "Dotaz",
+      "enterUrl": "Zadejte URL",
+      "params": "Parametry dotazu",
+      "error": "Neplatná URL"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL webové stránky",
+      "source": "Zdroj",
+      "medium": "Médium",
+      "campaign": "Kampaň",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "term": "Termín kampaně (Volitelné)",
+      "content": "Obsah kampaně (Volitelné)",
+      "generatedUrl": "Vygenerovaná URL",
+      "name": "Název kampaně (Povinné)"
+    },
+    "VatCalculator": {
+      "amount": "Částka",
+      "vatRate": "Sazba DPH",
+      "addVat": "Přidat DPH",
+      "removeVat": "Odebrat DPH",
+      "calculate": "Vypočítat",
+      "rate": "Sazba DPH (%)",
+      "netAmount": "Čistá částka",
+      "vatAmount": "Částka DPH",
+      "grossTotal": "Hrubý součet",
+      "netTotal": "Čistý součet",
+      "grossAmount": "Hrubá částka"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrovat",
+      "pattern": "Vzor",
+      "duration": "Trvání",
+      "test": "Test",
+      "worksOnly": "Funguje pouze na zařízeních s vibrační hardwarem (např. telefony).",
+      "vibrateOnce": "Vibrovat jednou",
+      "pulsePattern": "Pulzní vzor",
+      "longPulse": "Dlouhý pulz",
+      "stop": "Stop"
+    },
+    "WeekNumber": {
+      "currentWeek": "Aktuální číslo týdne",
+      "yearProgress": "Průběh roku",
+      "week": "Týden",
+      "checkLabel": "Zkontrolovat číslo týdne pro datum"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefonní číslo",
+      "message": "Zpráva",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "placeholder": "Dobrý den, mám zájem...",
+      "phone": "Telefonní číslo (s kódem země)",
+      "hint": "Nezahrnujte +, -, nebo ().",
+      "yourLink": "Váš WhatsApp odkaz",
+      "open": "Otevřít chat"
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Vložte URL YouTube videa...",
+      "getThumbnail": "Získat miniaturku",
+      "download": "Stáhnout"
+    },
+    "CrontabGenerator": {
+      "minute": "Minuta",
+      "hour": "Hodina",
+      "day": "Den",
+      "month": "Měsíc",
+      "weekday": "Den v týdnu",
+      "expression": "Výraz",
+      "description": "Popis",
+      "min": "Min",
+      "mon": "Pon",
+      "week": "Týden",
+      "presets": "Rychlé předvolby",
+      "everyMinute": "Každou minutu",
+      "every5Minutes": "Každých 5 minut",
+      "everyHour": "Každou hodinu",
+      "everyDayMidnight": "Každý den o půlnoci",
+      "everyWeek": "Každý týden",
+      "everyMonth": "Každý měsíc"
+    },
+    "ChmodCalculator": {
+      "owner": "Vlastník",
+      "group": "Skupina",
+      "others": "Ostatní",
+      "read": "Číst",
+      "write": "Zapisovat",
+      "execute": "Spustit",
+      "numeric": "Číselné",
+      "symbolic": "Symbolické",
+      "public": "Veřejné"
+    },
+    "HtpasswdGenerator": {
+      "username": "Uživatelské jméno",
+      "password": "Heslo",
+      "algorithm": "Algoritmus",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "result": "Výsledek",
+      "sha1": "SHA-1 (Nezabezpečené, ale standardní)",
+      "notSupported": "V této klientské verzi je podporován pouze SHA-1."
+    },
+    "AspectRatio": {
+      "width": "Šířka",
+      "height": "Výška",
+      "ratio": "Poměr",
+      "calculate": "Vypočítat"
+    },
+    "CssClipPath": {
+      "shape": "Tvar",
+      "preview": "Náhled",
+      "copyCss": "Kopírovat CSS",
+      "shapes": "Tvary",
+      "cssCode": "CSS kód",
+      "copy": "Kopírovat",
+      "copied": "Zkopírováno"
+    },
+    "CssCursor": {
+      "cursor": "Kurzor",
+      "preview": "Náhled",
+      "copyCss": "Kopírovat CSS",
+      "hoverTest": "Najeďte sem pro test"
+    },
+    "CssTriangle": {
+      "direction": "Směr",
+      "size": "Velikost",
+      "color": "Barva",
+      "preview": "Náhled",
+      "copyCss": "Kopírovat CSS",
+      "width": "Šířka (px)",
+      "height": "Výška (px)",
+      "copy": "Kopírovat"
+    },
+    "MetaGenerator": {
+      "title": "Název",
+      "description": "Popis",
+      "keywords": "Klíčová slova",
+      "author": "Autor",
+      "url": "URL",
+      "image": "Obrázek",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "titlePlaceholder": "Moje úžasná webová stránka",
+      "descriptionPlaceholder": "Krátký popis vaší stránky...",
+      "keywordsPlaceholder": "web, nástroje, vývoj",
+      "authorPlaceholder": "Vaše jméno",
+      "outputPlaceholder": "Meta tagy se objeví zde...",
+      "websiteDetails": "Detaily webové stránky",
+      "pageTitle": "Název stránky",
+      "socialPreview": "Sociální náhled (OG & Twitter)",
+      "websiteUrl": "URL webové stránky",
+      "previewImage": "URL náhledového obrázku",
+      "generatedHtml": "Vygenerované HTML",
+      "copied": "Zkopírováno"
+    },
+    "OgGenerator": {
+      "title": "Název",
+      "description": "Popis",
+      "url": "URL",
+      "image": "Obrázek",
+      "type": "Typ",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "website": "Webová stránka",
+      "article": "Článek",
+      "profile": "Profil",
+      "preview": "Náhled (Facebook/LinkedIn)",
+      "generatedHtml": "Vygenerované HTML"
+    },
+    "TwitterCard": {
+      "cardType": "Typ karty",
+      "title": "Název",
+      "description": "Popis",
+      "image": "Obrázek",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "siteHandle": "Handle stránky (např. @twitter)",
+      "imageUrl": "URL obrázku",
+      "preview": "Náhled",
+      "generatedHtml": "Vygenerované HTML",
+      "placeholderTitle": "Název karty",
+      "placeholderDesc": "Popis zde..."
+    },
+    "MarkdownTable": {
+      "rows": "Řádky",
+      "columns": "Sloupce",
+      "header": "Záhlaví",
+      "addRow": "Přidat řádek",
+      "addColumn": "Přidat sloupec",
+      "generate": "Generovat",
+      "copy": "Kopírovat",
+      "addCol": "+ Přidat sloupec",
+      "headerPlaceholder": "Záhlaví",
+      "outputLabel": "Markdown výstup"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Formátovat",
+      "copy": "Kopírovat",
+      "enterUrl": "Zadejte URL",
+      "formatted": "Formátovaný výstup",
+      "copied": "Zkopírováno",
+      "placeholder": "Vložte URL výše pro jeho formátování."
+    },
+    "BlogPosts": {
+      "json-formatting-best-practices": {
+        "title": "Formátování JSON: Osvědčené postupy pro vývojáře",
+        "excerpt": "Zjistěte, proč správné formátování JSON záleží pro ladění a jak ho automatizovat ve vašem pracovním postupu.",
+        "category": "Vývoj"
+      },
+      "mastering-regex": {
+        "title": "Zvládnutí regulárních výrazů: Vizuální průvodce",
+        "excerpt": "Regex nemusí být strašidelný. Rozebíráme běžné vzory pro validaci e-mailů, URL a další.",
+        "category": "Tutoriál"
+      },
+      "cron-job-scheduling": {
+        "title": "Demystifikace Cron úloh: Jak plánovat úkoly",
+        "excerpt": "Pochopte 5-hvězdičkovou syntaxi Cron a jak plánovat zálohy, e-maily a skripty na Linuxu.",
+        "category": "DevOps"
+      },
+      "secure-password-storage-local": {
+        "title": "Proč jsou lokální správci hesel bezpečnější (Alternativa KeyPass)",
+        "excerpt": "Cloudové úniky jsou běžné. Zjistěte, proč je ukládání hesel lokálně s AES-256 šifrováním nejbezpečnější sázkou pro osobní bezpečnost.",
+        "category": "Bezpečnost"
+      }
+    },
+    "CommandPalette": {
+      "searchPlaceholder": "Hledat nástroje...",
+      "noResults": "Nebyly nalezeny žádné výsledky.",
+      "select": "Vybrat",
+      "navigate": "Navigovat"
+    },
+    "FeedbackForm": {
+      "sendFeedback": "Odeslat zpětnou vazbu",
+      "feedback": "Zpětná vazba",
+      "thankYou": "Děkujeme!",
+      "feedbackSent": "Vaše zpětná vazba byla úspěšně odeslána.",
+      "close": "Zavřít",
+      "name": "Jméno (volitelné)",
+      "namePlaceholder": "Vaše jméno",
+      "email": "E-mail (volitelné)",
+      "emailPlaceholder": "vas@email.cz",
+      "feedbackType": "Typ zpětné vazby",
+      "typeSuggestion": "💡 Návrh",
+      "typeBug": "🐛 Hlášení chyby",
+      "typeFeature": "✨ Žádost o funkci",
+      "typeOther": "📝 Jiné",
+      "message": "Zpráva *",
+      "messagePlaceholder": "Řekněte nám, co si myslíte...",
+      "sending": "Odesílání...",
+      "weReadEveryMessage": "Čteme každou zprávu. Děkujeme, že nám pomáháte zlepšovat!"
+    },
+    "ShareButton": {
+      "shareTool": "Sdílet nástroj",
+      "copiedLink": "Odkaz zkopírován!"
+    },
+    "RelatedTools": {
+      "title": "Mohlo by se vám také líbit",
+      "subtitle": "Prozkoumejte další populární vývojářské nástroje",
+      "openTool": "Otevřít nástroj"
+    },
+    "Breadcrumb": {
+      "home": "Domů",
+      "tools": "Nástroje"
+    },
+    "GradientGenerator": {
+      "config": "Konfigurace",
+      "colors": "Barvy",
+      "type": "Typ",
+      "angle": "Úhel",
+      "random": "Náhodný",
+      "copyCss": "Kopírovat CSS",
+      "copied": "Zkopírováno",
+      "addColor": "Přidat barvu"
+    },
+    "RandomGenerator": {
+      "numberGen": "Generátor čísel",
+      "listGen": "Generátor seznamu",
+      "coinGen": "Generátor mincí",
+      "min": "Min",
+      "max": "Max",
+      "count": "Počet",
+      "generate": "Generovat",
+      "listLabel": "Položky seznamu (jedna na řádek)",
+      "pick": "Vybrat náhodnou položku",
+      "winner": "Vítěz je...",
+      "flip": "Hodit mincí",
+      "heads": "Panna",
+      "tails": "Orel"
+    },
+    "MyIP": {
+      "ipLabel": "Vaše veřejná IP adresa",
+      "loading": "Načítání...",
+      "isp": "Poskytovatel internetu (ISP)",
+      "location": "Umístění",
+      "asn": "ASN",
+      "timezone": "Časová zóna",
+      "note": "Toto je IP adresa viditelná pro webové stránky, které navštívíte. Může se lišit od vaší lokální IP, pokud používáte VPN nebo proxy."
+    },
+    "FaviconGenerator": {
+      "upload": "Nahrát obrázek",
+      "browse": "Doporučeno: 512x512 PNG",
+      "original": "Originál",
+      "favicon": "favicon.ico (32x32)",
+      "download": "Stáhnout Favicon.png",
+      "note": "* Aktuálně generuje 32x32 PNG favicony. Přejmenujte na .ico, pokud je potřeba pro starší podporu.",
+      "uploadImage": "Nahrát obrázek",
+      "generate": "Generovat",
+      "sizes": "Velikosti"
+    },
+    "ImageCompressor": {
+      "uploadTitle": "Nahrát obrázek",
+      "uploadDesc": "JPG, PNG nebo WebP. Komprimujeme lokálně.",
+      "selectImage": "Vybrat obrázek",
+      "settings": "Nastavení komprese",
+      "quality": "Kvalita",
+      "originalSize": "Původní velikost",
+      "compressedSize": "Komprimovaná velikost",
+      "saving": "Úspora",
+      "download": "Stáhnout",
+      "compress": "Komprimovat"
+    },
+    "MetaTags": {
+      "pageTitle": "Název stránky",
+      "description": "Popis",
+      "author": "Autor"
+    },
+    "TimestampConverter": {
+      "currentUnixTime": "Aktuální Unix čas",
+      "timestampLabel": "Časové razítko (sekundy)",
+      "isoLabel": "Formát ISO data",
+      "utcDate": "UTC datum",
+      "localDate": "Místní datum",
+      "relative": "Relativní",
+      "timestamp": "Časové razítko",
+      "humanDate": "Lidské rande",
+      "convert": "Konvertovat",
+      "currentTimestamp": "Aktuální časové razítko",
+      "inputPlaceholder": "Zadejte časové razítko Unix..."
+    },
+    "MarkdownEditor": {
+      "previewLabel": "Živý náhled",
+      "editor": "Editor",
+      "preview": "Náhled",
+      "inputPlaceholder": "Zde zadejte Markdown..."
+    },
+    "CipherTools": {
+      "shiftAmount": "Hodnota posunu (N)",
+      "inputText": "Vstupní text",
+      "outputText": "Výstupní text",
+      "rot13": "ROT13",
+      "caesar": "Caesar (+3)",
+      "shift1": "Posun +1",
+      "encode": "Zakódovat",
+      "decode": "Dekódovat",
+      "shift": "Posun",
+      "inputPlaceholder": "Ahoj světe",
+      "outputPlaceholder": "Výsledek se objeví zde..."
+    },
+    "DeviceInfo": {
+      "screenResolution": "Rozlišení obrazovky",
+      "browser": "Prohlížeč",
+      "cpuCores": "Procesorová jádra",
+      "battery": "Baterie",
+      "detailedSpecs": "Podrobné specifikace",
+      "userAgent": "User Agent",
+      "platform": "Platforma",
+      "windowSize": "Velikost okna",
+      "pixelRatio": "Poměr pixelů",
+      "colorDepth": "Barevná hloubka",
+      "ram": "RAM",
+      "cookiesEnabled": "Cookies povoleny",
+      "onlineStatus": "Online stav",
+      "unknown": "Neznámý",
+      "yes": "Ano",
+      "no": "Ne",
+      "enabled": "Povoleno",
+      "disabled": "Zakázáno",
+      "screen": "Obrazovka",
+      "system": "Systém",
+      "resolution": "Rezoluce",
+      "language": "Jazyk"
+    },
+    "UnitConverter": {
+      "length": "Délka",
+      "weight": "Váha",
+      "temperature": "Teplota",
+      "meters": "Metry",
+      "kilometers": "Kilometry",
+      "centimeters": "Centimetry",
+      "millimeters": "Milimetry",
+      "inches": "Palce",
+      "feet": "Stopy",
+      "yards": "Yardy",
+      "miles": "Míle",
+      "kilograms": "Kilogramy",
+      "grams": "Gramy",
+      "pounds": "Libry",
+      "ounces": "Unce",
+      "celsius": "Celsius",
+      "fahrenheit": "Fahrenheit",
+      "kelvin": "Kelvin"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Formátování JSON: Doporučené postupy pro vývojáře",
+      "excerpt": "Zjistěte, proč je správné formátování JSON důležité pro ladění a jak jej automatizovat ve vašem pracovním postupu.",
+      "category": "Rozvoj"
+    },
+    "mastering-regex": {
+      "title": "Zvládnutí regulárních výrazů: Vizuální průvodce",
+      "excerpt": "Regex nemusí být děsivý. Rozebíráme běžné vzory pro ověřování e-mailů, adresy URL a další.",
+      "category": "Konzultace"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: Jak naplánovat úkoly",
+      "excerpt": "Pochopte 5hvězdičkovou syntaxi Cronu a jak plánovat zálohování, e-maily a skripty v Linuxu.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Proč jsou místní správci hesel bezpečnější (alternativa KeyPass)",
+      "excerpt": "Narušení cloudu je běžné. Zjistěte, proč je místní ukládání hesel pomocí šifrování AES-256 nejbezpečnější sázkou pro osobní bezpečnost.",
+      "category": "Zabezpečení"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Vyhledávací nástroje...",
+    "noResults": "Nebyly nalezeny žádné výsledky.",
+    "select": "Vybrat",
+    "navigate": "Navigovat"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Odeslat zpětnou vazbu",
+    "feedback": "Zpětná vazba",
+    "thankYou": "Děkuju!",
+    "feedbackSent": "Vaše zpětná vazba byla úspěšně odeslána.",
+    "close": "Blízko",
+    "name": "Jméno (volitelné)",
+    "namePlaceholder": "Vaše jméno",
+    "email": "E-mail (volitelné)",
+    "emailPlaceholder": "vase@e-mail.com",
+    "feedbackType": "Typ zpětné vazby",
+    "typeSuggestion": "💡 Návrh",
+    "typeBug": "🐛 Hlášení chyby",
+    "typeFeature": "✨ Žádost o funkci",
+    "typeOther": "📝 Jiné",
+    "message": "Zpráva *",
+    "messagePlaceholder": "Řekněte nám, co si myslíte...",
+    "sending": "Odesílání...",
+    "weReadEveryMessage": "Čteme každou zprávu. Děkujeme, že nám pomáháte zlepšovat se!"
+  },
+  "ShareButton": {
+    "shareTool": "Nástroj pro sdílení",
+    "copiedLink": "Zkopírován odkaz!"
+  },
+  "TextDiff": {
+    "original": "Původní text",
+    "changed": "Změněný text",
+    "update": "Aktualizovat rozdíl",
+    "old": "Starý",
+    "new": "Nový",
+    "content": "Obsah"
+  },
+  "CrontabGenerator": {
+    "minute": "Minuta",
+    "hour": "Hodina",
+    "day": "Den",
+    "month": "Měsíc",
+    "weekday": "Všední den",
+    "min": "Min",
+    "mon": "Po",
+    "week": "Týden",
+    "presets": "Rychlé předvolby",
+    "everyMinute": "Každou minutu",
+    "every5Minutes": "Každých 5 minut",
+    "everyHour": "Každou hodinu",
+    "everyDayMidnight": "Každý den o půlnoci",
+    "everyWeek": "Každý týden",
+    "everyMonth": "Každý měsíc"
+  },
+  "SpeechToText": {
+    "notSupported": "Váš prohlížeč nepodporuje rozhraní Web Speech API. Použijte prosím Chrome.",
+    "placeholder": "Přepis se objeví zde...",
+    "listening": "Naslouchání...",
+    "start": "Začněte kliknutím na mikrofon"
+  },
+  "OgGenerator": {
+    "title": "Titul",
+    "description": "Popis",
+    "image": "Adresa URL obrázku",
+    "url": "Kanonická adresa URL",
+    "type": "Typ",
+    "website": "webové stránky",
+    "article": "Článek",
+    "profile": "Profil",
+    "preview": "Náhled (Facebook/LinkedIn)",
+    "generatedHtml": "Vygenerované HTML",
+    "copy": "Kopie"
+  },
+  "WeekNumber": {
+    "checkLabel": "Zkontrolujte číslo týdne pro datum",
+    "yearProgress": "Pokrok roku"
+  },
+  "RelatedTools": {
+    "title": "Také by se vám mohlo líbit",
+    "subtitle": "Prozkoumejte další oblíbené vývojářské nástroje",
+    "openTool": "Otevřete nástroj"
+  },
+  "Breadcrumb": {
+    "home": "Domov",
+    "tools": "Nástroje"
+  },
+  "SvgToPng": {
+    "upload": "Nahrajte soubor SVG",
+    "browse": "nebo klikněte pro procházení",
+    "paste": "...nebo vložte SVG kód",
+    "preview": "Náhled PNG (2x měřítko)",
+    "download": "Stáhnout PNG",
+    "errorType": "Nahrajte prosím platný soubor SVG.",
+    "errorRender": "Vykreslení SVG se nezdařilo. Ujistěte se, že se jedná o platný XML.",
+    "errorProcess": "Chyba při zpracování SVG."
+  },
+  "GradientGenerator": {
+    "config": "Konfigurace",
+    "colors": "Barvy",
+    "type": "Typ",
+    "angle": "Úhel",
+    "random": "Náhodný",
+    "copyCss": "Kopírovat CSS",
+    "copied": "Zkopírováno"
+  },
+  "TimezoneConverter": {
+    "date": "Datum",
+    "time": "Čas (místní)",
+    "invalid": "Neplatný",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Londýn (GMT/BST)",
+      "paris": "Paříž (SEČ/SELČ)",
+      "tokyo": "Tokio (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubaj (GST)",
+      "india": "Indie (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Generátor čísel",
+    "listGen": "Generátor seznamů",
+    "coinGen": "Generátor mincí",
+    "min": "Min",
+    "max": "Max",
+    "count": "Počítat",
+    "generate": "Generovat",
+    "listLabel": "Seznam položek (jedna na řádek)",
+    "pick": "Vyberte náhodnou položku",
+    "winner": "Vítězem je...",
+    "flip": "Flip Coin",
+    "heads": "Hlavy",
+    "tails": "Ocasy"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Nahrávání obrazovky...",
+    "titleFree": "Zdarma Online Screen Recorder",
+    "desc": "Zachyťte obrazovku, okno aplikace nebo kartu prohlížeče. Bez vodoznaku, bez časového omezení.",
+    "start": "Spusťte nahrávání",
+    "stop": "Zastavit nahrávání",
+    "browserSupport": "Funguje nejlépe v Chrome, Edge a Firefoxu na ploše."
+  },
+  "CssCursor": {
+    "hoverTest": "Chcete-li testovat, přejděte sem"
+  },
+  "VatCalculator": {
+    "amount": "Množství",
+    "rate": "sazba DPH (%)",
+    "addVat": "Přidejte DPH",
+    "removeVat": "Odebrat DPH",
+    "netAmount": "Čistá částka",
+    "vatAmount": "Částka DPH",
+    "grossTotal": "Hrubý celkem",
+    "netTotal": "Čistý celkem",
+    "grossAmount": "Hrubá částka"
+  },
+  "MyIP": {
+    "ipLabel": "Vaše veřejná IP adresa",
+    "loading": "Načítání...",
+    "isp": "Poskytovatel internetu (ISP)",
+    "location": "Umístění",
+    "asn": "ASN",
+    "timezone": "Časové pásmo",
+    "note": "Toto je IP adresa viditelná webům, které navštěvujete. Pokud používáte VPN nebo proxy, může se lišit od vaší místní IP adresy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Zadejte URL",
+    "formatted": "Formátovaný výstup",
+    "copy": "Kopie",
+    "copied": "Zkopírováno",
+    "placeholder": "Vložením adresy URL výše zobrazíte její formátování."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefonní číslo (s předvolbou země)",
+    "message": "Předvyplněná zpráva",
+    "hint": "Nezahrnujte +, - nebo ().",
+    "yourLink": "Váš odkaz na WhatsApp",
+    "open": "Otevřete chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Zadejte URL",
+    "params": "Parametry dotazu",
+    "error": "Neplatná adresa URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Nahrát obrázek",
+    "browse": "Doporučeno: 512 x 512 PNG",
+    "original": "Originál",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Stáhněte si Favicon.png",
+    "note": "* V současné době generuje 32x32 PNG favicon. V případě potřeby přejmenujte na .ico pro podporu starších verzí."
+  },
+  "SubnetCalculator": {
+    "ip": "IP adresa",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Vypočítat",
+    "subnetMask": "Maska podsítě",
+    "networkAddress": "Síťová adresa",
+    "firstHost": "První hostitel",
+    "lastHost": "Poslední hostitel",
+    "broadcastAddress": "Adresa vysílání",
+    "totalHosts": "Celkový počet hostitelů"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Zadejte název článku / text",
+    "generated": "Generovaný Slimák",
+    "copy": "Kopírovat Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "Vstupní SQL (pouze příkazy INSERT)",
+    "convert": "Převést na JSON",
+    "error": "Nelze analyzovat SQL. Ujistěte se, že se jedná o standardní příkazy INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Přidat řádek",
+    "addCol": "+ Přidat sloupec",
+    "headerPlaceholder": "Záhlaví",
+    "outputLabel": "Markdown Výstup",
+    "copy": "Zkopírujte Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Typ karty",
+    "siteHandle": "Popis webu (např. @twitter)",
+    "title": "Titul",
+    "description": "Popis",
+    "imageUrl": "Adresa URL obrázku",
+    "preview": "Náhled",
+    "generatedHtml": "Vygenerované HTML",
+    "copy": "Kopie",
+    "placeholderTitle": "Název karty",
+    "placeholderDesc": "Popis zde..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Zadejte text, který chcete vyslovit...",
+    "voice": "Hlas",
+    "speed": "Rychlost",
+    "pitch": "Pitch",
+    "speak": "Mluvit"
+  },
+  "TokenGenerator": {
+    "length": "Délka",
+    "includeNumbers": "Zahrnout čísla",
+    "includeSymbols": "Zahrnout symboly",
+    "generate": "Generovat token"
+  },
+  "CssTriangle": {
+    "direction": "Směr",
+    "color": "Barva",
+    "width": "Šířka (px)",
+    "height": "výška (px)",
+    "copy": "Kopie"
+  },
+  "UnitConverter": {
+    "length": "Délka",
+    "weight": "Hmotnost",
+    "temperature": "Teplota",
+    "meters": "metrů",
+    "kilometers": "Kilometry",
+    "centimeters": "Centimetry",
+    "millimeters": "milimetry",
+    "inches": "palce",
+    "feet": "Nohy",
+    "yards": "Yardy",
+    "miles": "Miles",
+    "kilograms": "Kilogramy",
+    "grams": "Grams",
+    "pounds": "libry",
+    "ounces": "unce",
+    "celsius": "Celsia",
+    "fahrenheit": "Fahrenheita",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Tvary",
+    "preview": "Náhled",
+    "cssCode": "CSS kód",
+    "copy": "Kopie",
+    "copied": "Zkopírováno"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Nahrajte obrázek",
+    "uploadDesc": "JPG, PNG nebo WebP. Lokálně komprimujeme.",
+    "selectImage": "Vyberte Obrázek",
+    "settings": "Nastavení komprese",
+    "quality": "Kvalitní",
+    "originalSize": "Původní velikost",
+    "compressedSize": "Stlačená velikost",
+    "saving": "Ukládání",
+    "download": "Stáhnout"
+  },
+  "HtpasswdGenerator": {
+    "username": "Uživatelské jméno",
+    "password": "Heslo",
+    "algorithm": "Algoritmus",
+    "generate": "Vygenerovat záznam",
+    "result": "Výsledek",
+    "sha1": "SHA-1 (nezabezpečené, ale standardní)",
+    "notSupported": "V této verzi na straně klienta je podporován pouze SHA-1."
+  },
+  "MetaTags": {
+    "pageTitle": "Název stránky",
+    "description": "Popis",
+    "author": "Autor"
+  },
+  "AgeCalculator": {
+    "dob": "Datum narození",
+    "age": "Stáří",
+    "years": "let",
+    "months": "měsíce",
+    "days": "dní",
+    "nextBirthday": "Další narozeniny"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Adresa URL webových stránek (povinné)",
+    "source": "Zdroj kampaně (povinné)",
+    "medium": "Médium kampaně (povinné)",
+    "name": "Název kampaně (povinné)",
+    "term": "Termín kampaně (volitelné)",
+    "content": "Obsah kampaně (volitelné)",
+    "generatedUrl": "Vygenerovaná adresa URL",
+    "copy": "Kopírovat URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Aktuální čas Unixu",
+    "timestampLabel": "Časové razítko (v sekundách)",
+    "isoLabel": "Formát data ISO",
+    "utcDate": "Datum UTC",
+    "localDate": "Místní datum",
+    "relative": "Relativní"
+  },
+  "SignatureGenerator": {
+    "color": "Barva",
+    "width": "Šířka",
+    "clear": "Jasný",
+    "download": "Stáhnout PNG",
+    "signHere": "Zde se podepište",
+    "note": "Podpisy jsou zpracovávány lokálně ve vašem prohlížeči. Neukládáme je ani nenahráváme."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Živý náhled"
+  },
+  "CipherTools": {
+    "shiftAmount": "Částka směny (N)",
+    "inputText": "Zadejte text",
+    "outputText": "Výstupní text",
+    "rot13": "ROT13",
+    "caesar": "Caesar (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Rozlišení obrazovky",
+    "browser": "Prohlížeč",
+    "cpuCores": "CPU jádra",
+    "battery": "Baterie",
+    "detailedSpecs": "Podrobné specifikace",
+    "userAgent": "User Agent",
+    "platform": "Platforma",
+    "windowSize": "Velikost okna",
+    "pixelRatio": "Poměr pixelů",
+    "colorDepth": "Barevná hloubka",
+    "ram": "RAM",
+    "cookiesEnabled": "Soubory cookie povoleny",
+    "onlineStatus": "Stav online",
+    "unknown": "Neznámý",
+    "yes": "Ano",
+    "no": "Žádný",
+    "enabled": "Povoleno",
+    "disabled": "Zakázáno"
+  },
+  "ChmodCalculator": {
+    "owner": "Majitel",
+    "group": "Skupina",
+    "public": "Veřejnost",
+    "read": "Číst",
+    "write": "Napsat",
+    "execute": "Vykonat",
+    "numeric": "Numerický",
+    "symbolic": "Symbolický"
+  },
+  "PasswordManager": {
+    "title": "Správce hesel",
+    "desc": "Bezpečně ukládejte a spravujte svá hesla lokálně.",
+    "unlock": "Odemkněte Vault",
+    "create": "Vytvořit nový trezor",
+    "unlockDesc": "Pro přístup ke svým účtům zadejte své hlavní heslo.",
+    "createDesc": "Nastavte silné hlavní heslo. Lokálně šifruje vaše data.",
+    "masterPassword": "Hlavní heslo",
+    "unlockBtn": "Odemknout",
+    "createBtn": "Vytvořit trezor",
+    "note": "Data jsou uložena ve vašem prohlížeči pomocí šifrování AES-GCM. V případě ztráty vašeho hesla nemůžeme obnovit.",
+    "myPasswords": "Moje hesla",
+    "addNew": "Přidat nový",
+    "search": "Hledat účty...",
+    "noPasswords": "Nebyla nalezena žádná hesla.",
+    "addAccount": "Přidat účet",
+    "accountTitle": "Název / Webová stránka",
+    "username": "Uživatelské jméno / Email",
+    "password": "Heslo",
+    "url": "URL (volitelné)",
+    "save": "Uložit účet",
+    "cancel": "Zrušit",
+    "incorrectPassword": "Nesprávné heslo nebo poškozená data.",
+    "loading": "Načítání..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Podrobnosti o webu",
+    "pageTitle": "Název stránky",
+    "description": "Popis",
+    "keywords": "Klíčová slova (oddělená čárkou)",
+    "author": "Autor",
+    "socialPreview": "Social Preview (OG a Twitter)",
+    "websiteUrl": "Adresa URL webových stránek",
+    "previewImage": "Adresa URL náhledu obrázku",
+    "generatedHtml": "Vygenerované HTML",
+    "copy": "Kopírovat HTML",
+    "copied": "Zkopírováno"
+  },
+  "VibrationTester": {
+    "worksOnly": "Funguje pouze na zařízeních s vibračním hardwarem (např. telefony).",
+    "duration": "Doba trvání (ms)",
+    "vibrateOnce": "Vibrovat jednou",
+    "pulsePattern": "Pulzní vzor",
+    "longPulse": "Dlouhý puls",
+    "stop": "Zastávka"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Proč na formátování JSON záleží",
+      "block_2": "JSON (JavaScript Object Notation) je jazyk webu.Ale nezpracovaný JSON vrácený z API je často miniifikovaný nepořádek.formátování jej činí čitelným, laditelným a bezpečným.",
+      "block_3": "1.Čitelnost je král",
+      "block_4": "Když ladíte 5000řádkovou odpověď API, odsazení zachraňuje životy.Náš <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">formátovač JSON</a> používá 2 nebo 4místné odsazení, aby byla struktura jasná.",
+      "block_5": "2.Ověření",
+      "block_6": "Jedna chybějící čárka může vaši aplikaci poškodit.Před odesláním do konfiguračních souborů vždy ověřte svůj JSON.",
+      "block_7": "Závěr",
+      "block_8": "Neztrácejte čas ruční kontrolou závorek.Používejte automatické nástroje."
+    },
+    "mastering-regex": {
+      "block_1": "Vysvětlení regulárního výrazu",
+      "block_2": "Regulární výrazy jsou výkonné, ale matoucí.pojďme si je představit.",
+      "block_3": "Běžné vzory",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] ohraničeníborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] ohraničeníborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Okamžitě otestujte tyto vzory pomocí našeho <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Testovacího nástroje Regex</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 hvězd Cronu",
+      "block_2": "Minuta, hodina, den v měsíci, měsíc, den v týdnu.To je vše.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Příklady</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Spouštět každý den o půlnoci: <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] border border-[var(--border-color) */ *]\">0\n<p class=\"mb-6 text-[var(--foreground)]\">Spouštět každých 15 minut: <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] border border-[var(--/15 *)]\">*\n\n<p class=\"mb-6 text-[var(--foreground)]\">Potřebujete pomoc?K vizuální tvorbě výrazů použijte náš <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a>.",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Příklady"
+    },
+    "secure-password-storage-local": {
+      "block_1": "Problém s cloudovými trezory",
+      "block_2": "LastPass, Okta a další giganti utrpěli porušení.Když je váš trezor online, je to cíl.",
+      "block_3": "Řešení: Místní šifrování",
+      "block_4": "Náš nový <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]></> zcela běží ve vašem prohlížeči hesel</a5>></strong>.Používá <strong class=\"text-[var(--title-color)] font-semibold\">256bitové šifrování AES-GCM</strong> odvozené z vašeho hlavního hesla pomocí PBKDF2.",
+      "block_5": "Jak to funguje",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Nulové znalosti:</strong> Vaše heslo nikdy nevidíme.Nikdy neopustí vaše zařízení.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline úložiště:</strong> Váš šifrovaný trezor je uložen v LocalStorage vašeho prohlížeče.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportovatelné:</strong> Nezpracovaná zašifrovaná data můžete kdykoli exportovat/zálohovat.</li>",
+      "block_7": "Přestaňte důvěřovat cloudu svými hlavními klíči.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Vyzkoušejte místního správce hesel</a> ještě dnes."
+    }
+  }
+}

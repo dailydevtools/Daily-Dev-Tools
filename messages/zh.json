@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "工具",
+    "blog": "博客",
+    "github": "GitHub",
+    "searchPlaceholder": "搜索..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - 免费在线开发者工具",
+    "description": "90+ 免费在线工具，适合所有人。格式化程序、转换器、生成器和实用程序。快速、私密、无需注册。"
+  },
+  "NotFound": {
+    "title": "未找到页面",
+    "description": "抱歉，我们找不到您要查找的页面。",
+    "backHome": "返回首页",
+    "suggestions": "尝试搜索工具或浏览下方的热门工具。"
+  },
+  "Homepage": {
+    "heroTag": "100+ 免费工具 • 私密 • 无需注册",
+    "titleLine1": "日常开发者工具",
+    "titleLine2": "简单好用",
+    "subtitle": "为开发者、设计师和所有人提供快速、美观且注重隐私的工具。所有内容均在浏览器中运行。",
+    "recentTools": "最近使用",
+    "noRecentText": "开始使用工具以在此处查看",
+    "searchResults": "搜索结果",
+    "popularTools": "热门",
+    "toolsCount": "{count} 个可用工具",
+    "features": {
+      "fast": {
+        "title": "闪电般快速",
+        "desc": "所有工具均在浏览器中本地运行"
+      },
+      "private": {
+        "title": "100% 私密",
+        "desc": "您的数据从未离开您的设备"
+      },
+      "simple": {
+        "title": "适合所有人",
+        "desc": "简单易用，功能强大"
+      },
+      "free": {
+        "title": "永远免费",
+        "desc": "无需账户，无限制"
+      }
+    },
+    "categories": {
+      "All": "全部",
+      "Favorites": "收藏",
+      "Developer": "开发者",
+      "Design": "设计",
+      "Content": "内容",
+      "Security": "安全",
+      "Productivity": "生产力",
+      "Math": "数学",
+      "Utility": "实用工具"
+    },
+    "cta": {
+      "title": "准备好提高效率了吗？",
+      "text": "免费开始使用我们的开发者工具。无需注册，不收集数据，纯粹的高效。",
+      "button": "免费开始"
+    },
+    "openTool": "打开工具",
+    "noResults": "未找到匹配的工具",
+    "clearFilters": "清除筛选"
+  },
+  "Footer": {
+    "builtWith": "构建者 ❤️",
+    "allTools": "所有工具",
+    "blog": "博客",
+    "about": "关于",
+    "privacy": "隐私",
+    "terms": "条款"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON 格式化程序",
+      "description": "立即格式化、验证和美化 JSON"
+    },
+    "base64-encoder": {
+      "name": "Base64编码器",
+      "description": "对 Base64 字符串进行编码和解码"
+    },
+    "url-encoder": {
+      "name": "网址编码器",
+      "description": "安全地编码和解码 URL"
+    },
+    "jwt-decoder": {
+      "name": "智威汤逊解码器",
+      "description": "解码并检查 JSON Web 令牌"
+    },
+    "regex-tester": {
+      "name": "正则表达式测试器",
+      "description": "实时测试正则表达式"
+    },
+    "hash-generator": {
+      "name": "哈希生成器",
+      "description": "生成 MD5、SHA-1、SHA-256 哈希值"
+    },
+    "uuid-generator": {
+      "name": "UUID生成器",
+      "description": "立即生成随机 UUID/GUID"
+    },
+    "css-minifier": {
+      "name": "CSS 缩小器",
+      "description": "缩小并优化您的 CSS 代码"
+    },
+    "markdown-editor": {
+      "name": "降价预览",
+      "description": "实时 Markdown 编辑器和预览"
+    },
+    "color-converter": {
+      "name": "颜色转换器",
+      "description": "转换 Hex、RGB、HSL 和 CMYK"
+    },
+    "timestamp-converter": {
+      "name": "时间戳工具",
+      "description": "将 Unix 时间戳转换为人类日期"
+    },
+    "sql-formatter": {
+      "name": "SQL格式化程序",
+      "description": "格式化和美化 SQL 查询"
+    },
+    "password-generator": {
+      "name": "密码生成器",
+      "description": "创建安全的随机密码"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "生成设计的占位符文本"
+    },
+    "image-base64": {
+      "name": "图像转 Base64",
+      "description": "将图像转换为 Base64 字符串"
+    },
+    "qr-generator": {
+      "name": "二维码生成器",
+      "description": "生成 URL 和文本的 QR 码"
+    },
+    "word-counter": {
+      "name": "字数统计器",
+      "description": "计算单词、字符和阅读时间"
+    },
+    "case-converter": {
+      "name": "大小写转换器",
+      "description": "骆驼、蛇、烤肉串和帕斯卡盒"
+    },
+    "text-diff": {
+      "name": "文本差异检查器",
+      "description": "比较两个文本并找出差异"
+    },
+    "slug-generator": {
+      "name": "弹头发生器",
+      "description": "生成 SEO 友好的 URL slug"
+    },
+    "gradient-generator": {
+      "name": "梯度发生器",
+      "description": "创建漂亮的 CSS 渐变"
+    },
+    "image-compressor": {
+      "name": "图像压缩器",
+      "description": "本地和私密地压缩图像"
+    },
+    "device-info": {
+      "name": "设备信息",
+      "description": "查看屏幕、浏览器和系统信息"
+    },
+    "random-generator": {
+      "name": "随机发生器",
+      "description": "选择数字、硬币和清单项目"
+    },
+    "unit-converter": {
+      "name": "单位换算",
+      "description": "转换长度、重量和温度"
+    },
+    "pomodoro-timer": {
+      "name": "番茄计时器",
+      "description": "提高生产力的焦点计时器"
+    },
+    "yt-thumbnail": {
+      "name": "缩略图下载器",
+      "description": "获取 YouTube 视频缩略图"
+    },
+    "my-ip": {
+      "name": "我的IP是什么",
+      "description": "查看公共IP和网络信息"
+    },
+    "keycode-info": {
+      "name": "键码信息",
+      "description": "JavaScript 键盘事件调试器"
+    },
+    "signature-generator": {
+      "name": "签名生成器",
+      "description": "绘制并下载数字签名"
+    },
+    "screen-recorder": {
+      "name": "屏幕录像机",
+      "description": "录制屏幕并下载视频"
+    },
+    "credit-card-validator": {
+      "name": "卡片验证器",
+      "description": "验证信用卡号码"
+    },
+    "password-manager": {
+      "name": "本地密码管理器",
+      "description": "通过加密在本地安全存储密码"
+    },
+    "deep-link-tester": {
+      "name": "深度链接测试仪",
+      "description": "测试、启动和管理移动深层链接"
+    },
+    "image-converter": {
+      "name": "图像转换器",
+      "description": "在本地将 PNG/JPG 转换为 WebP 以优化图像"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "将 JSON 转换为 CSV，反之亦然"
+    },
+    "bmi-calculator": {
+      "name": "体重指数计算器",
+      "description": "计算体重指数 (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS查询",
+      "description": "即时查询DNS记录（A、MX、NS）"
+    },
+    "age-calculator": {
+      "name": "年龄计算器",
+      "description": "计算精确的年龄和总天数"
+    },
+    "loan-calculator": {
+      "name": "贷款计算器",
+      "description": "计算每月 EMI 和总利息"
+    },
+    "discount-calculator": {
+      "name": "折扣计算器",
+      "description": "计算销售价格和节省的费用"
+    },
+    "interest-calculator": {
+      "name": "利息计算器",
+      "description": "简单与复利计算器"
+    },
+    "html-encoder": {
+      "name": "HTML 编码器/解码器",
+      "description": "转义特殊字符或解码 HTML"
+    },
+    "list-sorter": {
+      "name": "列表排序器",
+      "description": "对列表进行排序、反转、打乱和删除重复项"
+    },
+    "box-shadow": {
+      "name": "盒子阴影生成器",
+      "description": "可视化生成 CSS 框阴影"
+    },
+    "date-diff": {
+      "name": "日期差异",
+      "description": "计算两个日期之间的持续时间"
+    },
+    "sql-to-json": {
+      "name": "SQL 到 JSON",
+      "description": "将 SQL INSERT 转换为 JSON 对象"
+    },
+    "keyword-density": {
+      "name": "关键词密度",
+      "description": "分析关键词频率以进行SEO"
+    },
+    "json-diff": {
+      "name": "JSON 差异",
+      "description": "并排比较两个 JSON 对象"
+    },
+    "cipher-tools": {
+      "name": "密码工具",
+      "description": "ROT13 和凯撒密码编码器/解码器"
+    },
+    "token-generator": {
+      "name": "随机令牌生成器",
+      "description": "生成安全的随机令牌"
+    },
+    "favicon-generator": {
+      "name": "网站图标生成器",
+      "description": "创建 .ico 和 PNG 图标"
+    },
+    "robots-generator": {
+      "name": "Robots.txt 生成器",
+      "description": "为 SEO 创建 robots.txt"
+    },
+    "grid-generator": {
+      "name": "CSS 网格生成器",
+      "description": "视觉 CSS 网格布局生成器"
+    },
+    "hmac-generator": {
+      "name": "HMAC 生成器",
+      "description": "生成密钥哈希消息身份验证代码"
+    },
+    "http-status": {
+      "name": "HTTP 状态代码",
+      "description": "HTTP状态码参考列表"
+    },
+    "week-number": {
+      "name": "周数",
+      "description": "当前周数和年份进度"
+    },
+    "text-tools": {
+      "name": "文本转换器",
+      "description": "反转、翻转和编码文本"
+    },
+    "url-parser": {
+      "name": "网址解析器",
+      "description": "将 URL 拆分为协议、主机、路径、参数"
+    },
+    "markdown-table": {
+      "name": "Markdown 表生成器",
+      "description": "直观地创建 Markdown 表格"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp 链接生成器",
+      "description": "创建直接 WhatsApp 聊天链接"
+    },
+    "paypal-link": {
+      "name": "贝宝链接生成器",
+      "description": "创建 PayPal.me 付款链接"
+    },
+    "svg-to-png": {
+      "name": "SVG 转 PNG",
+      "description": "将 SVG 代码/文件转换为 PNG 图像"
+    },
+    "prime-factors": {
+      "name": "主要因素",
+      "description": "找到一个数的质因数"
+    },
+    "iban-validator": {
+      "name": "IBAN 验证器",
+      "description": "验证国际银行帐号"
+    },
+    "ascii-converter": {
+      "name": "ASCII 转换器",
+      "description": "将文本转换为 ASCII 十进制代码"
+    },
+    "utm-builder": {
+      "name": "UTM生成器",
+      "description": "构建 Google Analytics 活动 URL"
+    },
+    "meta-tags": {
+      "name": "元标签生成器",
+      "description": "为网站生成 SEO 元标记"
+    },
+    "og-generator": {
+      "name": "开放图生成器",
+      "description": "创建开放图谱元标签以进行社交共享"
+    },
+    "twitter-card": {
+      "name": "Twitter 卡片生成器",
+      "description": "创建 Twitter 卡元标记"
+    },
+    "aspect-ratio": {
+      "name": "纵横比计算器",
+      "description": "计算纵横比和尺寸"
+    },
+    "css-cursor": {
+      "name": "CSS 光标",
+      "description": "视觉 CSS 光标属性参考"
+    },
+    "css-triangle": {
+      "name": "CSS 三角形生成器",
+      "description": "生成纯 CSS 三角形"
+    },
+    "percentage-calculator": {
+      "name": "百分比计算器",
+      "description": "计算百分比和变化"
+    },
+    "vat-calculator": {
+      "name": "增值税计算器",
+      "description": "计算增值税添加/删除金额"
+    },
+    "stopwatch": {
+      "name": "跑表",
+      "description": "简单的基于浏览器的秒表"
+    },
+    "text-to-speech": {
+      "name": "文字转语音",
+      "description": "将文本转换为语音"
+    },
+    "speech-to-text": {
+      "name": "语音转文字",
+      "description": "将语音转换为文本"
+    },
+    "vibration-tester": {
+      "name": "振动测试仪",
+      "description": "振动电机试验装置"
+    },
+    "chmod-calculator": {
+      "name": "Chmod 计算器",
+      "description": "计算Linux文件权限"
+    },
+    "crontab-generator": {
+      "name": "定时任务生成器",
+      "description": "生成 cron 计划表达式"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd 生成器",
+      "description": "生成基本身份验证条目"
+    },
+    "subnet-calculator": {
+      "name": "子网计算器",
+      "description": "计算网络子网和 IP 范围"
+    },
+    "mac-generator": {
+      "name": "MAC地址生成器",
+      "description": "生成随机 MAC 地址"
+    },
+    "timezone-converter": {
+      "name": "时区转换器",
+      "description": "在多个区域之间转换时间"
+    },
+    "email-validator": {
+      "name": "电子邮件验证器",
+      "description": "验证电子邮件格式并检测拼写错误"
+    },
+    "password-strength": {
+      "name": "密码强度",
+      "description": "检查密码强度分数"
+    },
+    "roman-numerals": {
+      "name": "罗马数字转换器",
+      "description": "罗马数字和十进制数字之间的转换"
+    },
+    "margin-calculator": {
+      "name": "保证金计算器",
+      "description": "计算利润率和加价"
+    },
+    "roi-calculator": {
+      "name": "投资回报率计算器",
+      "description": "计算投资回报率"
+    },
+    "fuel-calculator": {
+      "name": "燃油成本计算器",
+      "description": "计算行程燃油成本"
+    },
+    "pretty-print-url": {
+      "name": "漂亮的打印网址",
+      "description": "格式化和美化 URL 以提高可读性"
+    }
+  },
+  "Terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "acceptance": {
+        "title": "1. 接受条款",
+        "content": "通过访问和使用 DailyDevTools，您接受并同意受本协议的条款和规定的约束。"
+      },
+      "useLicense": {
+        "title": "2. 使用许可",
+        "content": "DailyDevTools 可免费用于个人和商业目的。你不可以：",
+        "list": {
+          "0": "尝试对网站进行逆向工程或抓取重要部分。",
+          "1": "以任何导致或可能导致网站损坏或网站可用性或可访问性受损的方式使用网站。"
+        }
+      },
+      "disclaimer": {
+        "title": "3. 免责声明",
+        "content": "DailyDevTools 上的工具“按原样”提供。我们不做任何明示或暗示的保证..."
+      },
+      "limitations": {
+        "title": "4. 局限性",
+        "content": "在任何情况下，DailyDevTools 或其供应商均不对任何损害承担责任..."
+      },
+      "revisions": {
+        "title": "5. 修订",
+        "content": "DailyDevTools 上出现的材料可能包括技术、印刷或摄影错误......"
+      }
+    }
+  },
+  "Privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新",
+    "intro": "欢迎来到 DailyDevTools。我们尊重您的隐私并致力于保护您的个人数据。",
+    "sections": {
+      "localProcessing": {
+        "title": "2.我们的工具如何工作（本地处理）",
+        "content": "最重要的是：这些工具完全在您的浏览器中运行。数据永远不会离开您的设备。"
+      },
+      "dataCollection": {
+        "title": "3. 我们收集的数据",
+        "content": "我们不收集内容。我们使用 Google Analytics 进行使用统计。"
+      },
+      "cookies": {
+        "title": "4. 饼干",
+        "content": "我们使用 cookie 进行分析和本地偏好。"
+      },
+      "thirdParty": {
+        "title": "5. 第三方链接",
+        "content": "我们的网站可能包含第三方链接。"
+      },
+      "changes": {
+        "title": "6. 本政策的变更",
+        "content": "我们可能会不时更新本政策。"
+      },
+      "contact": {
+        "title": "7. 联系我们",
+        "content": "通过 GitHub 或社交媒体联系我们。"
+      }
+    }
+  },
+  "Blog": {
+    "title": "开发者资源",
+    "subtitle": "深入探讨我们构建的工具及其背后的概念。",
+    "readMore": "阅读更多",
+    "backToBlog": "返回博客",
+    "enjoyedArticle": "喜欢这篇文章吗？",
+    "checkTools": "查看我们的工具"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "输入",
+      "output": "输出",
+      "format": "格式",
+      "minify": "缩小",
+      "download": "下载",
+      "copy": "复制",
+      "paste": "粘贴",
+      "copied": "复制了！",
+      "upload": "上传",
+      "sample": "样本",
+      "clear": "清除",
+      "indent": "缩进：",
+      "chars": "字符",
+      "error": "错误",
+      "invalid": "输入无效",
+      "result": "结果",
+      "generate": "产生",
+      "calculate": "计算",
+      "convert": "转变",
+      "validate": "证实",
+      "resultPlaceholder": "结果将出现在这里..."
+    },
+    "Base64Encoder": {
+      "encode": "编码",
+      "decode": "解码",
+      "textToEncode": "文本编码",
+      "base64ToDecode": "Base64 解码",
+      "enterText": "输入要编码的文本...",
+      "enterBase64": "输入Base64进行解码...",
+      "encodeAction": "编码为 Base64",
+      "decodeAction": "从 Base64 解码",
+      "base64Output": "Base64 输出",
+      "decodedText": "解码文本",
+      "resultPlaceholder": "结果将出现在这里...",
+      "invalidInput": "{mode} 输入无效"
+    },
+    "QrGenerator": {
+      "content": "内容",
+      "placeholder": "https://example.com",
+      "customization": "定制化",
+      "foreground": "前景",
+      "background": "背景",
+      "download": "下载"
+    },
+    "HashGenerator": {
+      "inputText": "输入文字",
+      "placeholder": "输入要散列的文本...",
+      "waiting": "等待输入..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "生成新的",
+      "configuration": "配置",
+      "length": "密码长度",
+      "uppercase": "大写 (A-Z)",
+      "numbers": "数字（0-9）",
+      "symbols": "符号 (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "将您的 JSON 粘贴到此处...",
+      "outputPlaceholder": "格式化的 JSON 将出现在这里...",
+      "spaces": "空间"
+    },
+    "UrlEncoder": {
+      "encode": "编码",
+      "decode": "解码",
+      "urlToEncode": "要编码的 URL",
+      "encodedUrlToDecode": "要解码的编码 URL",
+      "enterUrlToEncode": "输入要编码的 URL 或文本...",
+      "enterUrlToDecode": "输入编码后的 URL 进行解码...",
+      "encodeAction": "编码网址",
+      "decodeAction": "解码网址",
+      "encodedUrl": "编码的网址",
+      "decodedUrl": "解码后的网址",
+      "resultPlaceholder": "结果将出现在这里...",
+      "chars": "字符",
+      "invalidInput": "{mode} 输入无效"
+    },
+    "JwtDecoder": {
+      "pasteToken": "粘贴您的 JWT 令牌",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "解码智威汤逊",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "发布",
+      "expires": "过期"
+    },
+    "RegexTester": {
+      "expression": "表达",
+      "expressionPlaceholder": "捕获组 (abc)...",
+      "testString": "测试串",
+      "testStringPlaceholder": "将您的测试字符串粘贴到此处...",
+      "matchHighlights": "比赛亮点",
+      "matches": "比赛",
+      "matchInfo": "比赛信息",
+      "match": "匹配",
+      "index": "指数",
+      "group": "团体",
+      "noMatches": "未找到匹配项",
+      "highlightPlaceholder": "比赛将在此处突出显示...",
+      "flagsHelp": "g：全局，i：忽略大小写，m：多行"
+    },
+    "UuidGenerator": {
+      "generate": "产生",
+      "generateCount": "产生：",
+      "copyAll": "全部复制",
+      "copyUuid": "复制UUID",
+      "generatedAt": "在 {time} 本地生成 • 版本 4 UUID"
+    },
+    "WordCounter": {
+      "words": "字",
+      "characters": "人物",
+      "sentences": "句子",
+      "paragraphs": "段落",
+      "readingTime": "阅读时间",
+      "min": "min",
+      "textInput": "文字输入",
+      "inputPlaceholder": "开始在此处输入或粘贴您的文本以进行分析...",
+      "clear": "清除"
+    },
+    "TimestampConverter": {
+      "timestamp": "时间戳",
+      "humanDate": "人类日期",
+      "convert": "转变",
+      "currentTimestamp": "当前时间戳",
+      "inputPlaceholder": "输入 Unix 时间戳..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "将您的 SQL 查询粘贴到此处...",
+      "outputPlaceholder": "格式化的 SQL 将出现在这里..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "将您的 CSS 代码粘贴到此处...",
+      "outputPlaceholder": "缩小的 CSS 将出现在这里..."
+    },
+    "MarkdownEditor": {
+      "editor": "编辑",
+      "preview": "预览",
+      "inputPlaceholder": "在这里输入 Markdown..."
+    },
+    "TextDiff": {
+      "original": "原文",
+      "changed": "更改文本",
+      "compare": "比较",
+      "differences": "差异"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "输入要转换的文字...",
+      "generatedSlug": "生成的弹头"
+    },
+    "ImageCompressor": {
+      "selectImage": "选择图像",
+      "quality": "质量",
+      "compress": "压缩",
+      "download": "下载",
+      "originalSize": "原始尺寸",
+      "compressedSize": "压缩尺寸"
+    },
+    "LoremIpsum": {
+      "paragraphs": "段落",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "GradientGenerator": {
+      "angle": "角度",
+      "colors": "颜色",
+      "addColor": "添加颜色",
+      "copyCss": "复制CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "出生日期",
+      "calculate": "计算",
+      "years": "年",
+      "months": "几个月",
+      "days": "天",
+      "totalDays": "总天数",
+      "nextBirthday": "下一个生日在"
+    },
+    "AsciiConverter": {
+      "text": "文本",
+      "ascii": "ASCII",
+      "convert": "转变",
+      "inputPlaceholder": "输入文字..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "水平（X）",
+      "vertical": "垂直（Y）",
+      "blur": "模糊",
+      "spread": "传播",
+      "colorOpacity": "颜色和不透明度",
+      "inset": "插图"
+    },
+    "BmiCalculator": {
+      "metric": "公制（公斤/厘米）",
+      "imperial": "英制（磅/英寸）",
+      "weight": "重量",
+      "height": "高度",
+      "calculate": "计算体重指数",
+      "bmiScore": "您的体重指数",
+      "underweight": "减持",
+      "normal": "正常体重",
+      "overweight": "超重",
+      "obese": "肥胖"
+    },
+    "CaseConverter": {
+      "inputText": "输入文字",
+      "inputPlaceholder": "在此输入您的文字...",
+      "upper": "UPPERCASE",
+      "lower": "小写",
+      "title": "标题案例",
+      "sentence": "句格",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "复制",
+      "conversions": "转换",
+      "clear": "清除"
+    },
+    "ColorConverter": {
+      "hexLabels": "十六进制颜色",
+      "rgbLabels": "RGB颜色",
+      "hslLabels": "HSL颜色",
+      "cmykLabels": "CMYK颜色",
+      "copy": "复制",
+      "hexToRgbNote": "* 目前仅支持 HEX 到 RGB/HSL 转换。"
+    },
+    "CreditCardValidator": {
+      "cardNumber": "卡号",
+      "validate": "证实",
+      "valid": "有效的信用卡号码",
+      "invalid": "信用卡号无效",
+      "placeholder": "输入卡号...",
+      "type": "卡类型",
+      "checkDigit": "校验位",
+      "luhnValid": "Luhn 算法有效"
+    },
+    "CipherTools": {
+      "encode": "编码",
+      "decode": "解码",
+      "rot13": "ROT13",
+      "caesar": "凯撒密码",
+      "shift": "转移",
+      "inputPlaceholder": "你好世界",
+      "outputPlaceholder": "结果将出现在这里..."
+    },
+    "CronGenerator": {
+      "minute": "分钟",
+      "hour": "小时",
+      "dayMonth": "日（月）",
+      "month": "月",
+      "dayWeek": "日（周）",
+      "presets": "常用预设",
+      "everyMinute": "每分钟",
+      "everyHour": "每小时",
+      "everyDayMidnight": "每天半夜",
+      "everySunday": "每个星期日",
+      "everyMonth": "每个月",
+      "everyYear": "每年",
+      "formatInfo": "格式： * * * * * （分钟 小时 DayOfMonth Month DayOfWeek）",
+      "usageInfo": "使用 * 表示“每个”，*/n 表示“每个 n”，1,2,3 表示特定列表。"
+    },
+    "DateDiff": {
+      "startDate": "开始日期",
+      "endDate": "结束日期",
+      "calculate": "计算",
+      "difference": "不同之处",
+      "years": "年",
+      "months": "几个月",
+      "days": "天",
+      "totalDays": "总天数",
+      "totalWeeks": "总周数",
+      "totalHours": "总小时数"
+    },
+    "DeepLinkTester": {
+      "testLink": "测试链接",
+      "savedLinks": "已保存的链接",
+      "searchPlaceholder": "搜索已保存的链接...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "发射",
+      "save": "节省",
+      "delete": "删除",
+      "opens": "打开",
+      "scanQr": "使用移动设备扫描进行测试",
+      "noSavedLinks": "未找到已保存的链接。",
+      "enterLabel": "输入此链接的标签：",
+      "saved": "得救了！",
+      "confirmDelete": "删除这个链接吗？"
+    },
+    "DeviceInfo": {
+      "screen": "屏幕",
+      "browser": "浏览器",
+      "system": "系统",
+      "resolution": "解决",
+      "colorDepth": "颜色深度",
+      "userAgent": "用户代理",
+      "platform": "平台",
+      "language": "语言"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "原价",
+      "discountPercent": "折扣",
+      "additionalDiscount": "额外折扣",
+      "calculate": "计算",
+      "youSave": "您保存",
+      "finalPrice": "最终价格",
+      "salesTax": "销售税"
+    },
+    "DnsLookup": {
+      "domain": "领域",
+      "lookup": "抬头",
+      "recordType": "记录类型",
+      "results": "结果",
+      "placeholder": "example.com",
+      "status": "地位",
+      "time": "时间",
+      "server": "服务器",
+      "answerSection": "答案部分",
+      "name": "姓名",
+      "type": "类型",
+      "ttl": "TTL",
+      "data": "数据",
+      "noRecords": "没有找到记录"
+    },
+    "EmailValidator": {
+      "email": "电子邮件",
+      "validate": "证实",
+      "valid": "有效的",
+      "invalid": "无效的",
+      "suggestion": "建议",
+      "placeholder": "用户@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "上传图片",
+      "generate": "产生",
+      "download": "下载",
+      "sizes": "尺寸"
+    },
+    "FuelCalculator": {
+      "distance": "距离",
+      "fuelEfficiency": "燃油效率",
+      "fuelPrice": "燃油价格",
+      "calculate": "计算",
+      "result": "结果",
+      "totalCost": "总成本",
+      "fuelNeeded": "需要燃料"
+    },
+    "GridGenerator": {
+      "columns": "专栏",
+      "rows": "行数",
+      "gap": "差距",
+      "preview": "预览",
+      "copyCss": "复制CSS",
+      "rowGap": "行距",
+      "colGap": "柱间隙",
+      "options": "选项"
+    },
+    "HmacGenerator": {
+      "message": "信息",
+      "secret": "秘密",
+      "algorithm": "算法",
+      "generate": "产生",
+      "inputPlaceholder": "输入文字...",
+      "secretPlaceholder": "秘密..."
+    },
+    "HtmlEncoder": {
+      "encode": "编码",
+      "decode": "解码",
+      "resultPlaceholder": "结果将出现在这里...",
+      "inputPlaceholder": "将 HTML 粘贴到此处..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "搜索代码（例如 404）或名称...",
+      "code": "代码",
+      "name": "姓名",
+      "description": "描述"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "证实",
+      "valid": "有效的",
+      "invalid": "无效的",
+      "placeholder": "输入国际银行账号...",
+      "inputLabel": "输入 IBAN 号码",
+      "validTitle": "有效基准",
+      "invalidTitle": "无效的校验和",
+      "validDesc": "IBAN 格式和校验和正确。",
+      "invalidDesc": "IBAN 与校验和算法不匹配。"
+    },
+    "ImageBase64": {
+      "upload": "上传",
+      "convert": "转变",
+      "copy": "复制",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "上传图片",
+      "convertToBase64": "转换为 Base64",
+      "convertToImage": "转换为图像",
+      "base64String": "Base64 字符串",
+      "download": "下载"
+    },
+    "ImageConverter": {
+      "selectImage": "选择图像",
+      "format": "格式",
+      "convert": "转变",
+      "download": "下载",
+      "quality": "质量"
+    },
+    "InterestCalculator": {
+      "principal": "主要的",
+      "rate": "利率",
+      "time": "时间段（年）",
+      "calculate": "计算",
+      "simpleInterest": "简单的",
+      "compoundInterest": "化合物",
+      "totalAmount": "总价值",
+      "type": "类型",
+      "frequency": "复合频率",
+      "annually": "每年",
+      "monthly": "每月",
+      "daily": "日常的",
+      "year": "年"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "输入 JSON...",
+      "convert": "转变",
+      "format": "格式",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON 到 CSV",
+      "csvToJson": "CSV 到 JSON",
+      "jsonInput": "JSON 输入",
+      "csvInput": "CSV 输入",
+      "jsonOutput": "JSON 输出",
+      "csvOutput": "CSV 输出"
+    },
+    "JsonDiff": {
+      "original": "原始 JSON",
+      "modified": "修改后的 JSON",
+      "compare": "比较",
+      "differences": "差异"
+    },
+    "KeycodeInfo": {
+      "pressKey": "按任意键",
+      "key": "钥匙",
+      "code": "代码",
+      "keyCode": "键码",
+      "which": "哪个",
+      "location": "地点",
+      "modifiers": "修饰符",
+      "standard": "标准",
+      "left": "左边",
+      "right": "正确的",
+      "numpad": "数字键盘",
+      "space": "（空间）",
+      "info": "显示 JavaScript 事件 KeyCode、Code 等。"
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "将您的文本粘贴到此处以分析关键字频率...",
+      "analyze": "分析",
+      "keyword": "关键词",
+      "count": "数数",
+      "density": "密度"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "在此输入您的列表...",
+      "sort": "种类",
+      "reverse": "撤销",
+      "shuffle": "随机播放",
+      "deduplicate": "重复数据删除",
+      "ascending": "升序",
+      "descending": "降序",
+      "length": "长度",
+      "trim": "修剪空",
+      "lines": "线路：",
+      "chars": "人物："
+    },
+    "LoanCalculator": {
+      "principal": "主要的",
+      "interestRate": "利率",
+      "term": "学期",
+      "calculate": "计算",
+      "monthlyPayment": "每月付款",
+      "totalInterest": "总利息",
+      "totalPayment": "付款总额",
+      "loanDetails": "贷款详情",
+      "loanAmount": "贷款金额",
+      "loanTerm": "贷款期限",
+      "years": "年",
+      "months": "几个月",
+      "interest": "兴趣"
+    },
+    "MacGenerator": {
+      "generate": "产生",
+      "copy": "复制",
+      "separator": "分离器",
+      "format": "格式",
+      "quantity": "数量",
+      "uppercase": "大写"
+    },
+    "MarginCalculator": {
+      "cost": "成本",
+      "price": "售价",
+      "calculate": "计算",
+      "margin": "利润",
+      "markup": "标记",
+      "profit": "利润",
+      "revenue": "收入",
+      "netProfit": "纯利",
+      "grossMargin": "毛利率"
+    },
+    "PasswordManager": {
+      "masterPassword": "主密码",
+      "unlock": "开锁",
+      "searchPlaceholder": "搜索帐户...",
+      "addNew": "添加新内容",
+      "siteName": "站点名称",
+      "username": "用户名",
+      "password": "密码",
+      "save": "节省",
+      "delete": "删除"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "在此输入...",
+      "strength": "力量",
+      "weak": "虚弱的",
+      "fair": "公平的",
+      "good": "好的",
+      "strong": "强的",
+      "requirements": "要求",
+      "length": "8 个以上字符",
+      "number": "包括数量",
+      "uppercase": "包括大写",
+      "symbol": "包括符号"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me 用户名",
+      "amount": "数量",
+      "currency": "货币",
+      "generate": "产生",
+      "itemName": "商品名称",
+      "link": "关联",
+      "yourLink": "您的贝宝链接",
+      "openPaypal": "打开贝宝"
+    },
+    "RobotsGenerator": {
+      "rules": "规则",
+      "addRule": "添加规则",
+      "allow": "允许",
+      "disallow": "不允许",
+      "sitemap": "站点地图 URL（可选）",
+      "output": "生成的robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "价值",
+      "percentage": "百分比",
+      "calculate": "计算",
+      "result": "结果",
+      "whatIs": "什么是",
+      "of": "％ 的",
+      "isWhatPercentOf": "是 % 的",
+      "percentChangeFrom": "% 变化自",
+      "to": "到"
+    },
+    "PomodoroTimer": {
+      "work": "专注时间",
+      "shortBreak": "短暂休息",
+      "longBreak": "长假",
+      "start": "开始",
+      "pause": "暂停",
+      "reset": "重置",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "数字",
+      "calculate": "计算",
+      "factors": "主要因素",
+      "inputLabel": "输入一个数字",
+      "placeholder": "例如120",
+      "isPrime": "这个数字是Prime！",
+      "isComposite": "这个数字是复合数"
+    },
+    "RoiCalculator": {
+      "investment": "投资",
+      "returns": "退货",
+      "calculate": "计算",
+      "roi": "ROI",
+      "profit": "利润",
+      "finalValue": "最终值",
+      "time": "时间（年）",
+      "totalGain": "总增益",
+      "annualizedRoi": "年化投资回报率"
+    },
+    "RomanNumerals": {
+      "decimal": "十进制",
+      "decimalPlaceholder": "2024",
+      "roman": "罗马",
+      "convert": "转变",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "开始录音",
+      "stopRecording": "停止录音",
+      "download": "下载",
+      "recording": "记录..."
+    },
+    "SignatureGenerator": {
+      "draw": "画",
+      "clear": "清除",
+      "download": "下载",
+      "penColor": "笔颜色",
+      "penSize": "笔尺寸"
+    },
+    "SpeechToText": {
+      "startListening": "开始聆听",
+      "stopListening": "停止聆听",
+      "transcript": "成绩单",
+      "placeholder": "文字记录将出现在这里..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO 用户（id、姓名、年龄）VALUES (1, 'John', 30);",
+      "convert": "转变",
+      "result": "结果"
+    },
+    "Stopwatch": {
+      "start": "开始",
+      "stop": "停止",
+      "reset": "重置",
+      "lap": "圈"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP地址",
+      "subnetMask": "子网掩码",
+      "calculate": "计算",
+      "networkAddress": "网络地址",
+      "broadcastAddress": "广播地址",
+      "usableHosts": "可用主机"
+    },
+    "SvgToPng": {
+      "pasteSvg": "粘贴 SVG",
+      "uploadSvg": "上传 SVG",
+      "convert": "转变",
+      "download": "下载"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "输入文字即可说话...",
+      "speak": "说话",
+      "stop": "停止",
+      "voice": "嗓音",
+      "rate": "速度",
+      "pitch": "沥青"
+    },
+    "TextTools": {
+      "inputPlaceholder": "输入一些东西...",
+      "reverse": "撤销",
+      "uppercase": "大写",
+      "lowercase": "小写",
+      "encode": "编码"
+    },
+    "TimezoneConverter": {
+      "from": "从",
+      "to": "到",
+      "convert": "转变",
+      "currentTime": "当前时间"
+    },
+    "TokenGenerator": {
+      "length": "长度",
+      "generate": "产生",
+      "copy": "复制",
+      "includeNumbers": "包括数字",
+      "includeSymbols": "包含符号"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "输入网址...",
+      "parse": "解析",
+      "protocol": "协议",
+      "host": "主持人",
+      "path": "小路",
+      "query": "询问"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "网站网址",
+      "source": "来源",
+      "medium": "中等的",
+      "campaign": "活动",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "VatCalculator": {
+      "amount": "数量",
+      "vatRate": "增值税税率",
+      "addVat": "添加增值税",
+      "removeVat": "取消增值税",
+      "calculate": "计算"
+    },
+    "VibrationTester": {
+      "vibrate": "颤动",
+      "pattern": "图案",
+      "duration": "期间",
+      "test": "测试"
+    },
+    "WeekNumber": {
+      "currentWeek": "当前周数",
+      "yearProgress": "年度进展",
+      "week": "星期"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "电话号码",
+      "message": "信息",
+      "generate": "产生",
+      "copy": "复制",
+      "placeholder": "你好，我有兴趣..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "粘贴 YouTube 视频网址...",
+      "getThumbnail": "获取缩略图",
+      "download": "下载"
+    },
+    "CrontabGenerator": {
+      "minute": "分钟",
+      "hour": "小时",
+      "day": "天",
+      "month": "月",
+      "weekday": "工作日",
+      "expression": "表达",
+      "description": "描述"
+    },
+    "ChmodCalculator": {
+      "owner": "所有者",
+      "group": "团体",
+      "others": "其他的",
+      "read": "读",
+      "write": "写",
+      "execute": "执行",
+      "numeric": "数字",
+      "symbolic": "象征性的"
+    },
+    "HtpasswdGenerator": {
+      "username": "用户名",
+      "password": "密码",
+      "algorithm": "算法",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "AspectRatio": {
+      "width": "宽度",
+      "height": "高度",
+      "ratio": "比率",
+      "calculate": "计算"
+    },
+    "CssClipPath": {
+      "shape": "形状",
+      "preview": "预览",
+      "copyCss": "复制CSS"
+    },
+    "CssCursor": {
+      "cursor": "光标",
+      "preview": "预览",
+      "copyCss": "复制CSS"
+    },
+    "CssTriangle": {
+      "direction": "方向",
+      "size": "尺寸",
+      "color": "颜色",
+      "preview": "预览",
+      "copyCss": "复制CSS"
+    },
+    "MetaGenerator": {
+      "title": "标题",
+      "description": "描述",
+      "keywords": "关键词",
+      "author": "作者",
+      "url": "URL",
+      "image": "图像",
+      "generate": "产生",
+      "copy": "复制",
+      "titlePlaceholder": "我很棒的网站",
+      "descriptionPlaceholder": "您网站的简短描述...",
+      "keywordsPlaceholder": "网络、工具、开发",
+      "authorPlaceholder": "你的名字",
+      "outputPlaceholder": "元标签将出现在这里..."
+    },
+    "OgGenerator": {
+      "title": "标题",
+      "description": "描述",
+      "url": "URL",
+      "image": "图像",
+      "type": "类型",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "TwitterCard": {
+      "cardType": "卡类型",
+      "title": "标题",
+      "description": "描述",
+      "image": "图像",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "MarkdownTable": {
+      "rows": "行数",
+      "columns": "专栏",
+      "header": "标头",
+      "addRow": "添加行",
+      "addColumn": "添加列",
+      "generate": "产生",
+      "copy": "复制"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "格式",
+      "copy": "复制"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON 格式：开发人员的最佳实践",
+      "excerpt": "了解为什么正确的 JSON 格式对于调试很重要，以及如何在工作流程中实现自动化。",
+      "category": "发展"
+    },
+    "mastering-regex": {
+      "title": "掌握正则表达式：视觉指南",
+      "excerpt": "正则表达式不一定很可怕。我们分解了电子邮件验证、URL 等的常见模式。",
+      "category": "教程"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron 作业揭秘：如何安排任务",
+      "excerpt": "了解 Cron 的 5 星级语法以及如何在 Linux 上安排备份、电子邮件和脚本。",
+      "category": "开发运营"
+    },
+    "secure-password-storage-local": {
+      "title": "为什么本地密码管理器更安全（KeyPass 替代方案）",
+      "excerpt": "云泄露很常见。了解为什么使用 AES-256 加密在本地存储密码是保障个人安全的最安全选择。",
+      "category": "安全"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "搜索工具...",
+    "noResults": "没有找到结果。",
+    "select": "选择",
+    "navigate": "导航"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "发送反馈",
+    "feedback": "反馈",
+    "thankYou": "谢谢你！",
+    "feedbackSent": "您的反馈已成功发送。",
+    "close": "关闭",
+    "name": "姓名（可选）",
+    "namePlaceholder": "你的名字",
+    "email": "电子邮件（可选）",
+    "emailPlaceholder": "你的@email.com",
+    "feedbackType": "反馈类型",
+    "typeSuggestion": "💡建议",
+    "typeBug": "🐛 错误报告",
+    "typeFeature": "✨ 功能请求",
+    "typeOther": "📝其他",
+    "message": "信息 *",
+    "messagePlaceholder": "告诉我们您的想法...",
+    "sending": "正在发送...",
+    "weReadEveryMessage": "我们阅读每一条消息。感谢您帮助我们改进！"
+  },
+  "ShareButton": {
+    "shareTool": "分享工具",
+    "copiedLink": "已复制链接！"
+  },
+  "TextDiff": {
+    "original": "原文",
+    "changed": "更改文本",
+    "update": "更新差异",
+    "old": "老的",
+    "new": "新的",
+    "content": "内容"
+  },
+  "CrontabGenerator": {
+    "minute": "分钟",
+    "hour": "小时",
+    "day": "天",
+    "month": "月",
+    "weekday": "工作日",
+    "min": "最小",
+    "mon": "周一",
+    "week": "星期",
+    "presets": "快速预设",
+    "everyMinute": "每分钟",
+    "every5Minutes": "每5分钟一班",
+    "everyHour": "每小时",
+    "everyDayMidnight": "每天半夜",
+    "everyWeek": "每周",
+    "everyMonth": "每个月"
+  },
+  "SpeechToText": {
+    "notSupported": "您的浏览器不支持 Web Speech API。请使用Chrome。",
+    "placeholder": "文字记录将出现在这里...",
+    "listening": "听...",
+    "start": "点击麦克风开始"
+  },
+  "OgGenerator": {
+    "title": "标题",
+    "description": "描述",
+    "image": "图片网址",
+    "url": "规范网址",
+    "type": "类型",
+    "website": "网站",
+    "article": "文章",
+    "profile": "轮廓",
+    "preview": "预览（Facebook/LinkedIn）",
+    "generatedHtml": "生成的 HTML",
+    "copy": "复制"
+  },
+  "WeekNumber": {
+    "checkLabel": "检查日期周数",
+    "yearProgress": "年度进展"
+  },
+  "RelatedTools": {
+    "title": "您可能还喜欢",
+    "subtitle": "探索其他流行的开发工具",
+    "openTool": "打开工具"
+  },
+  "Breadcrumb": {
+    "home": "家",
+    "tools": "工具"
+  },
+  "SvgToPng": {
+    "upload": "上传 SVG 文件",
+    "browse": "或点击浏览",
+    "paste": "...或粘贴 SVG 代码",
+    "preview": "PNG 预览（2 倍比例）",
+    "download": "下载PNG",
+    "errorType": "请上传有效的 SVG 文件。",
+    "errorRender": "无法渲染 SVG。确保它是有效的 XML。",
+    "errorProcess": "处理 SVG 时出错。"
+  },
+  "GradientGenerator": {
+    "config": "配置",
+    "colors": "颜色",
+    "type": "类型",
+    "angle": "角度",
+    "random": "随机的",
+    "copyCss": "复制CSS",
+    "copied": "已复制"
+  },
+  "TimezoneConverter": {
+    "date": "日期",
+    "time": "时间（当地时间）",
+    "invalid": "无效的",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "纽约（东部时间/东部时间）",
+      "losAngeles": "洛杉矶（太平洋标准时间/太平洋夏令时间）",
+      "london": "伦敦（格林威治标准时间/英国夏令时）",
+      "paris": "巴黎 (CET/CEST)",
+      "tokyo": "东京 (JST)",
+      "sydney": "悉尼 (AEST/AEDT)",
+      "dubai": "迪拜 (消费税)",
+      "india": "印度 (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "号码生成器",
+    "listGen": "列表生成器",
+    "coinGen": "硬币生成器",
+    "min": "最小",
+    "max": "最大限度",
+    "count": "数数",
+    "generate": "产生",
+    "listLabel": "列表项（每行一个）",
+    "pick": "选择随机项目",
+    "winner": "获胜者是...",
+    "flip": "翻转硬币",
+    "heads": "头",
+    "tails": "尾巴"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "正在录制屏幕...",
+    "titleFree": "免费在线屏幕录像机",
+    "desc": "捕获您的屏幕、应用程序窗口或浏览器选项卡。无水印，无时间限制。",
+    "start": "开始录音",
+    "stop": "停止录音",
+    "browserSupport": "在桌面版 Chrome、Edge 和 Firefox 中效果最佳。"
+  },
+  "CssCursor": {
+    "hoverTest": "将鼠标悬停在此处进行测试"
+  },
+  "VatCalculator": {
+    "amount": "数量",
+    "rate": "增值税税率（%）",
+    "addVat": "添加增值税",
+    "removeVat": "取消增值税",
+    "netAmount": "净额",
+    "vatAmount": "增值税金额",
+    "grossTotal": "总金额",
+    "netTotal": "净总额",
+    "grossAmount": "总额"
+  },
+  "MyIP": {
+    "ipLabel": "您的公共IP地址",
+    "loading": "加载中...",
+    "isp": "互联网提供商 (ISP)",
+    "location": "地点",
+    "asn": "ASN",
+    "timezone": "时区",
+    "note": "这是您访问的网站可见的 IP 地址。如果您使用 VPN 或代理，它可能与您的本地 IP 不同。"
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "输入网址",
+    "formatted": "格式化输出",
+    "copy": "复制",
+    "copied": "已复制",
+    "placeholder": "在上面粘贴 URL 以查看其格式。"
+  },
+  "WhatsAppLink": {
+    "phone": "电话号码（带国家/地区代码）",
+    "message": "预先填写的消息",
+    "hint": "请勿包含 +、- 或 ()。",
+    "yourLink": "您的 WhatsApp 链接",
+    "open": "打开聊天"
+  },
+  "UrlParser": {
+    "enterUrl": "输入网址",
+    "params": "查询参数",
+    "error": "无效网址"
+  },
+  "FaviconGenerator": {
+    "upload": "上传图片",
+    "browse": "推荐：512x512 PNG",
+    "original": "原来的",
+    "favicon": "网站图标 (32x32)",
+    "download": "下载网站图标.png",
+    "note": "* 目前生成 32x32 PNG 图标。如果需要旧版支持，请重命名为 .ico。"
+  },
+  "SubnetCalculator": {
+    "ip": "IP地址",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "计算",
+    "subnetMask": "子网掩码",
+    "networkAddress": "网络地址",
+    "firstHost": "第一主持人",
+    "lastHost": "最后一位主持人",
+    "broadcastAddress": "广播地址",
+    "totalHosts": "主机总数"
+  },
+  "SlugGenerator": {
+    "inputLabel": "输入文章标题/文字",
+    "generated": "生成的弹头",
+    "copy": "复制蛞蝓"
+  },
+  "SqlToJson": {
+    "inputLabel": "输入 SQL（仅限 INSERT 语句）",
+    "convert": "转换为 JSON",
+    "error": "无法解析 SQL。确保它是标准的 INSERT INTO 语句。"
+  },
+  "MarkdownTable": {
+    "addRow": "+ 添加行",
+    "addCol": "+ 添加栏目",
+    "headerPlaceholder": "标头",
+    "outputLabel": "降价输出",
+    "copy": "复制 Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "卡类型",
+    "siteHandle": "站点句柄（例如@twitter）",
+    "title": "标题",
+    "description": "描述",
+    "imageUrl": "图片网址",
+    "preview": "预览",
+    "generatedHtml": "生成的 HTML",
+    "copy": "复制",
+    "placeholderTitle": "卡牌名称",
+    "placeholderDesc": "描述在这里..."
+  },
+  "TextToSpeech": {
+    "placeholder": "输入文字即可说话...",
+    "voice": "嗓音",
+    "speed": "速度",
+    "pitch": "沥青",
+    "speak": "说话"
+  },
+  "TokenGenerator": {
+    "length": "长度",
+    "includeNumbers": "包括数字",
+    "includeSymbols": "包含符号",
+    "generate": "生成令牌"
+  },
+  "CssTriangle": {
+    "direction": "方向",
+    "color": "颜色",
+    "width": "宽度（像素）",
+    "height": "高度（像素）",
+    "copy": "复制"
+  },
+  "UnitConverter": {
+    "length": "长度",
+    "weight": "重量",
+    "temperature": "温度",
+    "meters": "米",
+    "kilometers": "公里",
+    "centimeters": "厘米",
+    "millimeters": "毫米",
+    "inches": "英寸",
+    "feet": "脚",
+    "yards": "码数",
+    "miles": "英里",
+    "kilograms": "公斤",
+    "grams": "克",
+    "pounds": "磅",
+    "ounces": "盎司",
+    "celsius": "摄氏度",
+    "fahrenheit": "华氏度",
+    "kelvin": "开尔文"
+  },
+  "CssClipPath": {
+    "shapes": "形状",
+    "preview": "预览",
+    "cssCode": "CSS代码",
+    "copy": "复制",
+    "copied": "已复制"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "上传图片",
+    "uploadDesc": "JPG、PNG 或 WebP。我们在本地压缩它。",
+    "selectImage": "选择图像",
+    "settings": "压缩设置",
+    "quality": "质量",
+    "originalSize": "原始尺寸",
+    "compressedSize": "压缩尺寸",
+    "saving": "保存",
+    "download": "下载"
+  },
+  "HtpasswdGenerator": {
+    "username": "用户名",
+    "password": "密码",
+    "algorithm": "算法",
+    "generate": "生成条目",
+    "result": "结果",
+    "sha1": "SHA-1（不安全但标准）",
+    "notSupported": "此客户端版本仅支持 SHA-1。"
+  },
+  "MetaTags": {
+    "pageTitle": "页面标题",
+    "description": "描述",
+    "author": "作者"
+  },
+  "AgeCalculator": {
+    "dob": "出生日期",
+    "age": "年龄",
+    "years": "年",
+    "months": "月",
+    "days": "天",
+    "nextBirthday": "下一个生日"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "网站网址（必填）",
+    "source": "活动来源（必填）",
+    "medium": "活动媒介（必填）",
+    "name": "活动名称（必填）",
+    "term": "活动期限（可选）",
+    "content": "活动内容（可选）",
+    "generatedUrl": "生成的网址",
+    "copy": "复制网址"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "当前 Unix 时间",
+    "timestampLabel": "时间戳（秒）",
+    "isoLabel": "ISO 日期格式",
+    "utcDate": "世界标准时间",
+    "localDate": "当地时间",
+    "relative": "相对的"
+  },
+  "SignatureGenerator": {
+    "color": "颜色",
+    "width": "宽度",
+    "clear": "清除",
+    "download": "下载PNG",
+    "signHere": "在此签名",
+    "note": "签名在您的浏览器中本地处理。我们不存储或上传它们。"
+  },
+  "MarkdownEditor": {
+    "previewLabel": "实时预览"
+  },
+  "CipherTools": {
+    "shiftAmount": "移动量（N）",
+    "inputText": "输入文字",
+    "outputText": "输出文本",
+    "rot13": "ROT13",
+    "caesar": "凯撒 (+3)",
+    "shift1": "移位+1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "屏幕分辨率",
+    "browser": "浏览器",
+    "cpuCores": "CPU核心",
+    "battery": "电池",
+    "detailedSpecs": "详细规格",
+    "userAgent": "用户代理",
+    "platform": "平台",
+    "windowSize": "窗口尺寸",
+    "pixelRatio": "像素比",
+    "colorDepth": "颜色深度",
+    "ram": "RAM",
+    "cookiesEnabled": "启用 Cookie",
+    "onlineStatus": "在线状态",
+    "unknown": "未知",
+    "yes": "是的",
+    "no": "不",
+    "enabled": "启用",
+    "disabled": "残疾人"
+  },
+  "ChmodCalculator": {
+    "owner": "所有者",
+    "group": "团体",
+    "public": "民众",
+    "read": "读",
+    "write": "写",
+    "execute": "执行",
+    "numeric": "数字",
+    "symbolic": "象征性的"
+  },
+  "PasswordManager": {
+    "title": "密码管理器",
+    "desc": "在本地安全地存储和管理您的密码。",
+    "unlock": "解锁金库",
+    "create": "创建新保管库",
+    "unlockDesc": "输入您的主密码以访问您的帐户。",
+    "createDesc": "设置一个强主密码。它在本地加密您的数据。",
+    "masterPassword": "主密码",
+    "unlockBtn": "开锁",
+    "createBtn": "创建保管库",
+    "note": "数据使用 AES-GCM 加密存储在您的浏览器中。如果您的密码丢失，我们将无法恢复。",
+    "myPasswords": "我的密码",
+    "addNew": "添加新内容",
+    "search": "搜索帐户...",
+    "noPasswords": "没有找到密码。",
+    "addAccount": "添加账户",
+    "accountTitle": "标题/网站",
+    "username": "用户名/电子邮件",
+    "password": "密码",
+    "url": "网址（可选）",
+    "save": "保存帐户",
+    "cancel": "取消",
+    "incorrectPassword": "密码不正确或数据损坏。",
+    "loading": "加载中..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "网站详情",
+    "pageTitle": "页面标题",
+    "description": "描述",
+    "keywords": "关键字（逗号分隔）",
+    "author": "作者",
+    "socialPreview": "社交预览（OG 和 Twitter）",
+    "websiteUrl": "网站网址",
+    "previewImage": "预览图片网址",
+    "generatedHtml": "生成的 HTML",
+    "copy": "复制 HTML",
+    "copied": "已复制"
+  },
+  "VibrationTester": {
+    "worksOnly": "仅适用于具有振动硬件的设备（例如手机）。",
+    "duration": "持续时间（毫秒）",
+    "vibrateOnce": "振动一次",
+    "pulsePattern": "脉冲模式",
+    "longPulse": "长脉冲",
+    "stop": "停止"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Why JSON Formatting Matters",
+      "block_2": "JSON (JavaScript Object Notation) is the language of the web. But raw JSON returned from APIs is often a minified mess. formatting it makes it readable, debuggable, and safe.",
+      "block_3": "1. Readability is King",
+      "block_4": "When you're debugging a 5000-line API response, indentation saves lives. Our <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> uses 2-space or 4-space indentation to make structure clear.",
+      "block_5": "2. Validation",
+      "block_6": "A single missing comma can break your app. Always validate your JSON before committing it to config files.",
+      "block_7": "Conclusion",
+      "block_8": "Don't waste time manually checking brackets. Use automated tools."
+    },
+    "mastering-regex": {
+      "block_1": "Regex Explained",
+      "block_2": "Regular expressions are powerful but confusing. let's visualize them.",
+      "block_3": "Common Patterns",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Test these patterns instantly with our <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "The 5 Stars of Cron",
+      "block_2": "Minute, Hour, Day of Month, Month, Day of Week. That's all it is.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Examples",
+      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
+    },
+    "secure-password-storage-local": {
+      "block_1": "The Problem with Cloud Vaults",
+      "block_2": "LastPass, Okta, and other giants have suffered breaches. When your vault is online, it's a target.",
+      "block_3": "The Solution: Local Encryption",
+      "block_4": "Our new <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Local Password Manager</a></strong> runs entirely in your browser. It uses <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bit encryption</strong> derived from your master password using PBKDF2.",
+      "block_5": "How it works",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero Knowledge:</strong> We never see your password. It never leaves your device.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline Storage:</strong> Your encrypted vault is stored in your browser's LocalStorage.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable:</strong> You can export/backup your raw encrypted data anytime.</li>",
+      "block_7": "Stop trusting the cloud with your master keys. <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Try the Local Password Manager</a> today."
+    }
+  }
+}

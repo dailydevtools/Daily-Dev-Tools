@@ -23,7 +23,7 @@ export default function WebsiteSchema() {
         "url": "https://dailydev.tools",
         "logo": "https://dailydev.tools/project_logo.png",
         "sameAs": [
-            "https://github.com/sohanpaliyal",
+            "https://github.com/sohanpaliyal/Daily-Dev-Tools",
             "https://linkedin.com/in/sohanpaliyal"
         ],
         "contactPoint": {
