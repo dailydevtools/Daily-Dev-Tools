@@ -1,12 +1,20 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Send, CheckCircle, MessageSquare } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function FeedbackForm() {
+    const t = useTranslations('FeedbackForm');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        const handleOpen = () => setIsOpen(true);
+        window.addEventListener("open-feedback-modal", handleOpen);
+        return () => window.removeEventListener("open-feedback-modal", handleOpen);
+    }, []);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
@@ -16,7 +24,7 @@ export default function FeedbackForm() {
         const formData = new FormData(form);
 
         try {
-            await fetch("https://formsubmit.co/ajax/officialsohanpaliyal+quickdevtools@gmail.com", {
+            await fetch("https://formsubmit.co/ajax/officialsohanpaliyal+dailydevtools@gmail.com", {
                 method: "POST",
                 body: formData,
                 headers: {
@@ -36,119 +44,116 @@ export default function FeedbackForm() {
         return (
             <button
                 onClick={() => setIsOpen(true)}
-                className="feedback-trigger"
-                title="Send Feedback"
+                className="fixed z-50 flex items-center gap-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-full text-[var(--title-color)] font-medium cursor-pointer transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-[var(--card-hover-bg)] hover:border-[#fb923c] hover:-translate-y-0.5 bottom-20 left-4 p-2.5 text-[13px] md:bottom-6 md:left-6 md:px-5 md:py-3 md:text-sm"
+                title={t('sendFeedback')}
             >
                 <MessageSquare size={20} />
-                <span>Feedback</span>
+                <span className="hidden md:inline">{t('feedback')}</span>
             </button>
         );
     }
 
     return (
-        <div className="feedback-modal-overlay" onClick={() => setIsOpen(false)}>
-            <div className="feedback-modal" onClick={(e) => e.stopPropagation()}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 20 }}>
-                    <h3 style={{ fontSize: 18, fontWeight: 600, color: 'var(--title-color)', display: 'flex', alignItems: 'center', gap: 8 }}>
-                        <MessageSquare size={20} style={{ color: '#fb923c' }} />
-                        Send Feedback
+        <div className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-[4px] flex items-center justify-center p-6" onClick={() => setIsOpen(false)}>
+            <div className="w-full max-w-[420px] bg-[var(--background)] border border-[var(--border-color)] rounded-2xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)] animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
+                <div className="flex justify-between items-center mb-5">
+                    <h3 className="text-lg font-semibold text-[var(--title-color)] flex items-center gap-2">
+                        <MessageSquare size={20} className="text-[#fb923c]" />
+                        {t('sendFeedback')}
                     </h3>
                     <button
                         onClick={() => setIsOpen(false)}
-                        style={{ background: 'transparent', border: 'none', color: 'var(--muted-text)', cursor: 'pointer', fontSize: 20 }}
+                        className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer text-xl"
                     >
                         ×
                     </button>
                 </div>
 
                 {isSubmitted ? (
-                    <div style={{ textAlign: 'center', padding: '40px 20px' }}>
-                        <CheckCircle size={48} style={{ color: '#22c55e', marginBottom: 16 }} />
-                        <h4 style={{ color: 'var(--title-color)', marginBottom: 8 }}>Thank you!</h4>
-                        <p style={{ color: 'var(--muted-text)', fontSize: 14 }}>Your feedback has been sent successfully.</p>
+                    <div className="text-center py-10 px-5">
+                        <CheckCircle size={48} className="text-[#22c55e] mb-4 mx-auto" />
+                        <h4 className="text-[var(--title-color)] mb-2 text-base font-semibold">{t('thankYou')}</h4>
+                        <p className="text-[var(--muted-text)] text-sm">{t('feedbackSent')}</p>
                         <button
                             onClick={() => { setIsSubmitted(false); setIsOpen(false); }}
-                            className="btn-primary"
-                            style={{ marginTop: 20 }}
+                            className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] mt-5"
                         >
-                            Close
+                            {t('close')}
                         </button>
                     </div>
                 ) : (
                     <form onSubmit={handleSubmit}>
                         {/* FormSubmit.co configuration */}
-                        <input type="hidden" name="_subject" value="New Feedback from QuickDevTools" />
+                        <input type="hidden" name="_subject" value="New Feedback from DailyDevTools" />
                         <input type="hidden" name="_captcha" value="false" />
                         <input type="hidden" name="_template" value="table" />
 
-                        <div style={{ marginBottom: 16 }}>
-                            <label style={{ display: 'block', marginBottom: 6, fontSize: 13, color: 'var(--muted-text)' }}>
-                                Name (optional)
+                        <div className="mb-4">
+                            <label className="block mb-1.5 text-[13px] text-[var(--muted-text)]">
+                                {t('name')}
                             </label>
                             <input
                                 type="text"
                                 name="name"
-                                placeholder="Your name"
-                                className="feedback-input"
+                                placeholder={t('namePlaceholder')}
+                                className="w-full px-3.5 py-3 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)]"
                             />
                         </div>
 
-                        <div style={{ marginBottom: 16 }}>
-                            <label style={{ display: 'block', marginBottom: 6, fontSize: 13, color: 'var(--muted-text)' }}>
-                                Email (optional)
+                        <div className="mb-4">
+                            <label className="block mb-1.5 text-[13px] text-[var(--muted-text)]">
+                                {t('email')}
                             </label>
                             <input
                                 type="email"
                                 name="email"
-                                placeholder="your@email.com"
-                                className="feedback-input"
+                                placeholder={t('emailPlaceholder')}
+                                className="w-full px-3.5 py-3 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)]"
                             />
                         </div>
 
-                        <div style={{ marginBottom: 16 }}>
-                            <label style={{ display: 'block', marginBottom: 6, fontSize: 13, color: 'var(--muted-text)' }}>
-                                Feedback Type
+                        <div className="mb-4">
+                            <label className="block mb-1.5 text-[13px] text-[var(--muted-text)]">
+                                {t('feedbackType')}
                             </label>
-                            <select name="type" className="feedback-input" required>
-                                <option value="suggestion">💡 Suggestion</option>
-                                <option value="bug">🐛 Bug Report</option>
-                                <option value="feature">✨ Feature Request</option>
-                                <option value="other">📝 Other</option>
+                            <select name="type" className="w-full px-3.5 py-3 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)]" required>
+                                <option value="suggestion">{t('typeSuggestion')}</option>
+                                <option value="bug">{t('typeBug')}</option>
+                                <option value="feature">{t('typeFeature')}</option>
+                                <option value="other">{t('typeOther')}</option>
                             </select>
                         </div>
 
-                        <div style={{ marginBottom: 20 }}>
-                            <label style={{ display: 'block', marginBottom: 6, fontSize: 13, color: 'var(--muted-text)' }}>
-                                Message *
+                        <div className="mb-5">
+                            <label className="block mb-1.5 text-[13px] text-[var(--muted-text)]">
+                                {t('message')}
                             </label>
                             <textarea
                                 name="message"
-                                placeholder="Tell us what you think..."
-                                className="feedback-input"
+                                placeholder={t('messagePlaceholder')}
+                                className="w-full px-3.5 py-3 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg text-[var(--title-color)] text-sm transition-colors duration-200 focus:outline-none focus:border-[#fb923c] placeholder:text-[var(--muted-text)] resize-y"
                                 rows={4}
                                 required
-                                style={{ resize: 'vertical' }}
                             />
                         </div>
 
                         <button
                             type="submit"
-                            className="btn-primary"
+                            className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full"
                             disabled={isSubmitting}
-                            style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}
                         >
                             {isSubmitting ? (
-                                "Sending..."
+                                t('sending')
                             ) : (
                                 <>
                                     <Send size={16} />
-                                    Send Feedback
+                                    {t('sendFeedback')}
                                 </>
                             )}
                         </button>
 
-                        <p style={{ fontSize: 11, color: 'var(--muted-text)', marginTop: 12, textAlign: 'center' }}>
-                            We read every message. Thank you for helping us improve!
+                        <p className="text-[11px] text-[var(--muted-text)] mt-3 text-center">
+                            {t('weReadEveryMessage')}
                         </p>
                     </form>
                 )}
