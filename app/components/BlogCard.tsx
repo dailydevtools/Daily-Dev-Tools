@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 interface BlogPost {
     slug: string;
@@ -11,49 +12,37 @@ interface BlogPost {
 }
 
 export default function BlogCard({ post }: { post: BlogPost }) {
+    const t = useTranslations('Blog');
+
     return (
         <Link
             href={`/blog/${post.slug}`}
-            className="glass-card"
-            style={{
-                textDecoration: 'none',
-                overflow: 'hidden',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column'
-            }}
+            className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex flex-col h-full no-underline overflow-hidden"
         >
-            <div style={{ padding: 24, flex: 1, display: 'flex', flexDirection: 'column' }}>
-                <div style={{ marginBottom: 16, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                    <span className="badge">{post.category}</span>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--muted-text)' }}>
+            <div className="p-6 flex-1 flex flex-col">
+                <div className="mb-4 flex items-center justify-between">
+                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#f973161a] border border-[#f9731633] rounded-full text-[13px] text-[#fb923c]">{post.category}</span>
+                    <div className="flex items-center gap-1.5 text-xs text-[var(--muted-text)]">
                         <Calendar size={14} />
                         {post.date}
                     </div>
                 </div>
 
-                <h3 style={{ fontSize: 20, fontWeight: 700, color: 'var(--title-color)', marginBottom: 12, lineHeight: 1.4 }}>
+                <h3 className="text-xl font-bold text-[var(--title-color)] mb-3 leading-snug">
                     {post.title}
                 </h3>
 
-                <p style={{ color: 'var(--muted-text)', fontSize: 15, lineHeight: 1.6, marginBottom: 24, flex: 1 }}>
+                <p className="text-[var(--muted-text)] text-[15px] leading-relaxed mb-6 flex-1">
                     {post.excerpt}
                 </p>
 
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    borderTop: '1px solid var(--border-color)',
-                    paddingTop: 16,
-                    marginTop: 'auto'
-                }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 13, color: 'var(--muted-text)' }}>
+                <div className="flex items-center justify-between border-t border-[var(--border-color)] pt-4 mt-auto">
+                    <div className="flex items-center gap-1.5 text-[13px] text-[var(--muted-text)]">
                         <Clock size={14} />
                         {post.readTime}
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, color: '#fb923c', fontSize: 14, fontWeight: 500 }}>
-                        Read Article
+                    <div className="flex items-center gap-2 text-[#fb923c] text-sm font-medium">
+                        {t('readMore')}
                         <ArrowRight size={16} />
                     </div>
                 </div>

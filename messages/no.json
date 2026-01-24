@@ -1,0 +1,1814 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Verktøy",
+    "blog": "Blogg",
+    "github": "GitHub",
+    "searchPlaceholder": "Søk..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Gratis Online Utviklerverktøy",
+    "description": "90+ gratis online verktøy for alle. Formaterere, konvertere, generatorer og hjelpeprogrammer. Raskt, privat og ingen registrering kreves."
+  },
+  "NotFound": {
+    "title": "Siden ble ikke funnet",
+    "description": "Beklager, vi kunne ikke finne siden du leter etter.",
+    "backHome": "Tilbake til Hjem",
+    "suggestions": "Prøv å søke etter et verktøy eller bla gjennom våre populære verktøy nedenfor."
+  },
+  "Homepage": {
+    "heroTag": "100+ Gratis Verktøy • Privat • Ingen Registrering",
+    "titleLine1": "Daglige Utviklerverktøy",
+    "titleLine2": "Som Bare Virker",
+    "subtitle": "Raske, vakre og personvernfokuserte verktøy for utviklere, designere og alle andre. Alt kjører i nettleseren din.",
+    "recentTools": "Nylig Brukt",
+    "noRecentText": "Begynn å bruke verktøy for å se dem her",
+    "searchResults": "Søkeresultater",
+    "popularTools": "Populære",
+    "toolsCount": "{count} verktøy tilgjengelig",
+    "features": {
+      "fast": {
+        "title": "Lynraskt",
+        "desc": "Alle verktøy kjører lokalt i nettleseren din"
+      },
+      "private": {
+        "title": "100% Privat",
+        "desc": "Dataene dine forlater aldri enheten din"
+      },
+      "simple": {
+        "title": "Laget for Alle",
+        "desc": "Enkelt nok for alle, kraftig for proffer"
+      },
+      "free": {
+        "title": "Alltid Gratis",
+        "desc": "Ingen kontoer, ingen grenser"
+      }
+    },
+    "categories": {
+      "All": "Alle",
+      "Favorites": "Favoritter",
+      "Developer": "Utvikler",
+      "Design": "Design",
+      "Content": "Innhold",
+      "Security": "Sikkerhet",
+      "Productivity": "Produktivitet",
+      "Math": "Matematikk",
+      "Utility": "Verktøy"
+    },
+    "cta": {
+      "title": "Klar til å øke produktiviteten din?",
+      "text": "Begynn å bruke våre utviklerverktøy gratis. Ingen registrering kreves, ingen datainnsamling.",
+      "button": "Start Gratis"
+    },
+    "openTool": "Åpne verktøy",
+    "noResults": "Ingen verktøy funnet som matcher",
+    "clearFilters": "Tøm filtre"
+  },
+  "Footer": {
+    "builtWith": "Laget med ❤️ av",
+    "allTools": "Alle Verktøy",
+    "blog": "Blogg",
+    "about": "Om",
+    "privacy": "Personvern",
+    "terms": "Vilkår"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON-formater",
+      "description": "Formater, valider og forskjønn JSON umiddelbart"
+    },
+    "base64-encoder": {
+      "name": "Base64-koder",
+      "description": "Kode og dekode Base64-strenger"
+    },
+    "url-encoder": {
+      "name": "URL-koder",
+      "description": "Kod og dekod URL-er trygt"
+    },
+    "jwt-decoder": {
+      "name": "JWT-dekoder",
+      "description": "Dekode og inspiser JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "Regex tester",
+      "description": "Test regulære uttrykk i sanntid"
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Generer MD5, SHA-1, SHA-256 hashes"
+    },
+    "uuid-generator": {
+      "name": "UUID-generator",
+      "description": "Generer tilfeldige UUID-er/GUID-er umiddelbart"
+    },
+    "css-minifier": {
+      "name": "CSS Minifier",
+      "description": "Reduser og optimaliser CSS-koden din"
+    },
+    "markdown-editor": {
+      "name": "Markdown forhåndsvisning",
+      "description": "Markdown-redigering og forhåndsvisning i sanntid"
+    },
+    "color-converter": {
+      "name": "Fargekonverter",
+      "description": "Konverter Hex, RGB, HSL og CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Tidsstempelverktøy",
+      "description": "Konverter Unix-tidsstempler til menneskelige datoer"
+    },
+    "sql-formatter": {
+      "name": "SQL-formater",
+      "description": "Formater og forskjønne SQL-spørringer"
+    },
+    "password-generator": {
+      "name": "Passordgenerator",
+      "description": "Lag sikre, tilfeldige passord"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generer plassholdertekst for design"
+    },
+    "image-base64": {
+      "name": "Bilde til Base64",
+      "description": "Konverter bilder til Base64-strenger"
+    },
+    "qr-generator": {
+      "name": "QR-kodegenerator",
+      "description": "Generer QR-koder for URL-er og tekst"
+    },
+    "word-counter": {
+      "name": "Ordteller",
+      "description": "Tell ord, tegn og lesetid"
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "description": "Kamel, slange, kebab og pascal etui"
+    },
+    "text-diff": {
+      "name": "Tekstdifferansekontroll",
+      "description": "Sammenlign to tekster og finn forskjeller"
+    },
+    "slug-generator": {
+      "name": "Sneglegenerator",
+      "description": "Generer SEO-vennlige URL-slugs"
+    },
+    "gradient-generator": {
+      "name": "Gradientgenerator",
+      "description": "Lag vakre CSS-gradienter"
+    },
+    "image-compressor": {
+      "name": "Bildekompressor",
+      "description": "Komprimer bilder lokalt og privat"
+    },
+    "device-info": {
+      "name": "Enhetsinformasjon",
+      "description": "Vis skjerm, nettleser og systeminformasjon"
+    },
+    "random-generator": {
+      "name": "Tilfeldig generator",
+      "description": "Velg tall, mynter og listeelementer"
+    },
+    "unit-converter": {
+      "name": "Enhetsomformer",
+      "description": "Konverter lengde, vekt og temperatur"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro timer",
+      "description": "Fokustimer for produktivitet"
+    },
+    "yt-thumbnail": {
+      "name": "Nedlaster miniatyrbilder",
+      "description": "Få YouTube-videominiatyrbilder"
+    },
+    "my-ip": {
+      "name": "Hva er min IP",
+      "description": "Se offentlig IP- og nettverksinformasjon"
+    },
+    "keycode-info": {
+      "name": "Nøkkelkode info",
+      "description": "JavaScript-tastaturhendelsesfeilsøker"
+    },
+    "signature-generator": {
+      "name": "Signaturgenerator",
+      "description": "Tegn og last ned digitale signaturer"
+    },
+    "screen-recorder": {
+      "name": "Skjermopptaker",
+      "description": "Ta opp skjerm og last ned video"
+    },
+    "credit-card-validator": {
+      "name": "Kortvalidator",
+      "description": "Bekreft kredittkortnumre"
+    },
+    "password-manager": {
+      "name": "Lokal passordbehandling",
+      "description": "Lagre passord sikkert lokalt med kryptering"
+    },
+    "deep-link-tester": {
+      "name": "Deep Link Tester",
+      "description": "Test, lanser og administrer mobile dyplinker"
+    },
+    "image-converter": {
+      "name": "Image Converter",
+      "description": "Konverter PNG/JPG til WebP lokalt for å optimalisere bilder"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Konverter JSON til CSV og omvendt"
+    },
+    "bmi-calculator": {
+      "name": "BMI kalkulator",
+      "description": "Beregn kroppsmasseindeks (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS-oppslag",
+      "description": "Søk etter DNS-poster (A, MX, NS) umiddelbart"
+    },
+    "age-calculator": {
+      "name": "Alderskalkulator",
+      "description": "Beregn nøyaktig alder og totalt antall dager"
+    },
+    "loan-calculator": {
+      "name": "Lånekalkulator",
+      "description": "Beregn månedlig EMI og total rente"
+    },
+    "discount-calculator": {
+      "name": "Rabattkalkulator",
+      "description": "Beregn salgspris og besparelser"
+    },
+    "interest-calculator": {
+      "name": "Rentekalkulator",
+      "description": "Enkel vs sammensatt rentekalkulator"
+    },
+    "html-encoder": {
+      "name": "HTML-koder/dekoder",
+      "description": "Escape spesialtegn eller dekod HTML"
+    },
+    "list-sorter": {
+      "name": "Liste sorterer",
+      "description": "Sorter, reverser, bland og dedupliser lister"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Generator",
+      "description": "Generer visuelt CSS-boksskygger"
+    },
+    "date-diff": {
+      "name": "Datoforskjell",
+      "description": "Beregn varighet mellom to datoer"
+    },
+    "sql-to-json": {
+      "name": "SQL til JSON",
+      "description": "Konverter SQL INSERT-er til JSON-objekter"
+    },
+    "keyword-density": {
+      "name": "Søkeordtetthet",
+      "description": "Analyser søkeordfrekvens for SEO"
+    },
+    "json-diff": {
+      "name": "JSON diff",
+      "description": "Sammenlign to JSON-objekter side ved side"
+    },
+    "cipher-tools": {
+      "name": "Chifferverktøy",
+      "description": "ROT13 og Caesar Cipher koder/dekoder"
+    },
+    "token-generator": {
+      "name": "Tilfeldig tokengenerator",
+      "description": "Generer sikre tilfeldige tokens"
+    },
+    "favicon-generator": {
+      "name": "Favicon Generator",
+      "description": "Lag .ico- og PNG-favikoner"
+    },
+    "robots-generator": {
+      "name": "Robots.txt Generator",
+      "description": "Lag robots.txt for SEO"
+    },
+    "grid-generator": {
+      "name": "CSS Grid Generator",
+      "description": "Visual CSS Grid layoutbygger"
+    },
+    "hmac-generator": {
+      "name": "HMAC Generator",
+      "description": "Generer autentiseringskoder for nøkkelhash-meldinger"
+    },
+    "http-status": {
+      "name": "HTTP-statuskoder",
+      "description": "Referanseliste over HTTP-statuskoder"
+    },
+    "week-number": {
+      "name": "Ukenummer",
+      "description": "Nåværende ukenummer og årsfremgang"
+    },
+    "text-tools": {
+      "name": "Teksttransformator",
+      "description": "Snu, snu og kode tekst"
+    },
+    "url-parser": {
+      "name": "URL Parser",
+      "description": "Del URL-er i protokoll, vert, bane, paramer"
+    },
+    "markdown-table": {
+      "name": "Markdown Table Generator",
+      "description": "Lag Markdown-tabeller visuelt"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp Link Generator",
+      "description": "Lag direkte WhatsApp chat-lenker"
+    },
+    "paypal-link": {
+      "name": "PayPal Link Generator",
+      "description": "Opprett PayPal.me-betalingslenker"
+    },
+    "svg-to-png": {
+      "name": "SVG til PNG",
+      "description": "Konverter SVG-kode/fil til PNG-bilde"
+    },
+    "prime-factors": {
+      "name": "Prime Factors",
+      "description": "Finn primfaktorer for et tall"
+    },
+    "iban-validator": {
+      "name": "IBAN-validator",
+      "description": "Valider internasjonale bankkontonumre"
+    },
+    "ascii-converter": {
+      "name": "ASCII-konverterer",
+      "description": "Konverter tekst til ASCII desimalkoder"
+    },
+    "utm-builder": {
+      "name": "UTM-bygger",
+      "description": "Bygg nettadresser for Google Analytics-kampanjer"
+    },
+    "meta-tags": {
+      "name": "Meta Tag Generator",
+      "description": "Generer SEO-metakoder for nettsteder"
+    },
+    "og-generator": {
+      "name": "Åpne Graph Generator",
+      "description": "Lag Open Graph-metakoder for sosial deling"
+    },
+    "twitter-card": {
+      "name": "Twitter-kortgenerator",
+      "description": "Lag metakoder for Twitter-kort"
+    },
+    "aspect-ratio": {
+      "name": "Sideforholdskalkulator",
+      "description": "Beregn sideforhold og dimensjoner"
+    },
+    "css-cursor": {
+      "name": "CSS-markør",
+      "description": "Visuell CSS-markøregenskapsreferanse"
+    },
+    "css-triangle": {
+      "name": "CSS Triangle Generator",
+      "description": "Generer rene CSS-trekanter"
+    },
+    "percentage-calculator": {
+      "name": "Prosentkalkulator",
+      "description": "Beregn prosenter og endringer"
+    },
+    "vat-calculator": {
+      "name": "moms kalkulator",
+      "description": "Beregn moms legge til/fjern beløp"
+    },
+    "stopwatch": {
+      "name": "Stoppeklokke",
+      "description": "Enkel nettleserbasert stoppeklokke"
+    },
+    "text-to-speech": {
+      "name": "Tekst til tale",
+      "description": "Konverter tekst til muntlig stemme"
+    },
+    "speech-to-text": {
+      "name": "Tale til tekst",
+      "description": "Konverter talestemme til tekst"
+    },
+    "vibration-tester": {
+      "name": "Vibrasjonstester",
+      "description": "Test enhetens vibrasjonsmotor"
+    },
+    "chmod-calculator": {
+      "name": "Chmod kalkulator",
+      "description": "Beregn Linux-filtillatelser"
+    },
+    "crontab-generator": {
+      "name": "Crontab Generator",
+      "description": "Generer cron-tidsplanuttrykk"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd Generator",
+      "description": "Generer grunnleggende autentiseringsoppføringer"
+    },
+    "subnet-calculator": {
+      "name": "Subnettkalkulator",
+      "description": "Beregn nettverksundernett og IP-områder"
+    },
+    "mac-generator": {
+      "name": "MAC-adressegenerator",
+      "description": "Generer tilfeldige MAC-adresser"
+    },
+    "timezone-converter": {
+      "name": "Tidssonekonverterer",
+      "description": "Konverter tid mellom flere soner"
+    },
+    "email-validator": {
+      "name": "E-postvalidator",
+      "description": "Valider e-postformat og oppdage skrivefeil"
+    },
+    "password-strength": {
+      "name": "Passordstyrke",
+      "description": "Sjekk passordstyrkepoeng"
+    },
+    "roman-numerals": {
+      "name": "Romertallkonvertering",
+      "description": "Konverter mellom romerske og desimaltall"
+    },
+    "margin-calculator": {
+      "name": "Marginkalkulator",
+      "description": "Beregn fortjenestemargin og påslag"
+    },
+    "roi-calculator": {
+      "name": "ROI kalkulator",
+      "description": "Beregn avkastning på investeringen"
+    },
+    "fuel-calculator": {
+      "name": "Kalkulator for drivstoffkostnader",
+      "description": "Beregn drivstoffkostnaden for turen"
+    },
+    "pretty-print-url": {
+      "name": "Pretty Print URL",
+      "description": "Formater og forskjønn nettadresser for lesbarhet"
+    }
+  },
+  "Terms": {
+    "title": "Vilkår for bruk",
+    "lastUpdated": "Sist oppdatert",
+    "sections": {
+      "acceptance": {
+        "title": "1. Aksept av vilkår",
+        "content": "Ved å få tilgang til og bruke DailyDevTools godtar du og godtar å være bundet av vilkårene og bestemmelsen i denne avtalen."
+      },
+      "useLicense": {
+        "title": "2. Bruk lisens",
+        "content": "DailyDevTools er gratis å bruke for personlige og kommersielle formål. Du kan ikke:",
+        "list": {
+          "0": "Forsøk å reversere eller skrape betydelige deler av nettstedet.",
+          "1": "Bruk nettstedet på noen måte som forårsaker, eller kan forårsake, skade på nettstedet eller svekkelse av tilgjengeligheten eller tilgjengeligheten til nettstedet."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Ansvarsfraskrivelse",
+        "content": "Verktøyene på DailyDevTools leveres \"som de er\". Vi gir ingen garantier, uttrykte eller underforståtte..."
+      },
+      "limitations": {
+        "title": "4. Begrensninger",
+        "content": "Under ingen omstendigheter skal DailyDevTools eller dets leverandører holdes ansvarlig for skader..."
+      },
+      "revisions": {
+        "title": "5. Revisjoner",
+        "content": "Materialet som vises på DailyDevTools kan omfatte tekniske, typografiske eller fotografiske feil..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Personvernerklæring",
+    "lastUpdated": "Sist oppdatert",
+    "intro": "Velkommen til DailyDevTools. Vi respekterer ditt privatliv og er forpliktet til å beskytte dine personlige data.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Hvordan verktøyene våre fungerer (lokal behandling)",
+        "content": "Viktigst av alt: Verktøyene kjører utelukkende i nettleseren din. Data forlater aldri enheten din."
+      },
+      "dataCollection": {
+        "title": "3. Data vi samler inn",
+        "content": "Vi samler ikke inn innhold. Vi bruker Google Analytics for bruksstatistikk."
+      },
+      "cookies": {
+        "title": "4. Informasjonskapsler",
+        "content": "Vi bruker informasjonskapsler for analyser og lokale preferanser."
+      },
+      "thirdParty": {
+        "title": "5. Tredjepartskoblinger",
+        "content": "Vår side kan inneholde lenker til tredjeparter."
+      },
+      "changes": {
+        "title": "6. Endringer i denne policyen",
+        "content": "Vi kan oppdatere denne policyen fra tid til annen."
+      },
+      "contact": {
+        "title": "7. Kontakt oss",
+        "content": "Kontakt oss via GitHub eller sosiale medier."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Utviklerressurser",
+    "subtitle": "Dypdykk i verktøyene vi bygger og konseptene bak dem.",
+    "readMore": "Les mer",
+    "backToBlog": "Tilbake til bloggen",
+    "enjoyedArticle": "Likte denne artikkelen?",
+    "checkTools": "Sjekk ut våre verktøy"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Inndata",
+      "output": "Utdata",
+      "format": "Format",
+      "minify": "Forminsk",
+      "download": "Last ned",
+      "copy": "Kopier",
+      "paste": "Lim inn",
+      "copied": "Kopiert!",
+      "upload": "Last opp",
+      "sample": "Prøve",
+      "clear": "Tømme",
+      "indent": "Innrykk:",
+      "chars": "tegn",
+      "error": "Feil",
+      "invalid": "Ugyldig inndata",
+      "result": "Resultat",
+      "generate": "Generere",
+      "calculate": "Kalkulere",
+      "convert": "Konvertere",
+      "validate": "Bekreft",
+      "resultPlaceholder": "Resultatet vises her..."
+    },
+    "Base64Encoder": {
+      "encode": "Kode",
+      "decode": "Dekode",
+      "textToEncode": "Tekst som skal kodes",
+      "base64ToDecode": "Base64 for å dekode",
+      "enterText": "Skriv inn tekst for å kode...",
+      "enterBase64": "Skriv inn Base64 for å dekode...",
+      "encodeAction": "Kode til Base64",
+      "decodeAction": "Dekode fra Base64",
+      "base64Output": "Base64-utgang",
+      "decodedText": "Dekodet tekst",
+      "resultPlaceholder": "Resultatet vises her...",
+      "invalidInput": "Ugyldig inndata for {modus}"
+    },
+    "QrGenerator": {
+      "content": "Innhold",
+      "placeholder": "https://example.com",
+      "customization": "Tilpasning",
+      "foreground": "Forgrunn",
+      "background": "Bakgrunn",
+      "download": "Last ned"
+    },
+    "HashGenerator": {
+      "inputText": "Skriv inn tekst",
+      "placeholder": "Skriv inn tekst til hash...",
+      "waiting": "Venter på innspill..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Generer ny",
+      "configuration": "Konfigurasjon",
+      "length": "Passordlengde",
+      "uppercase": "Store bokstaver (A–Å)",
+      "numbers": "Tall (0-9)",
+      "symbols": "Symboler (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Lim inn JSON-en din her...",
+      "outputPlaceholder": "Formatert JSON vises her...",
+      "spaces": "mellomrom"
+    },
+    "UrlEncoder": {
+      "encode": "Kode",
+      "decode": "Dekode",
+      "urlToEncode": "URL som skal kodes",
+      "encodedUrlToDecode": "Kodet URL for å dekode",
+      "enterUrlToEncode": "Skriv inn URL eller tekst for å kode...",
+      "enterUrlToDecode": "Skriv inn kodet URL for å dekode...",
+      "encodeAction": "Kode URL",
+      "decodeAction": "Dekod URL",
+      "encodedUrl": "Kodet URL",
+      "decodedUrl": "Dekodet URL",
+      "resultPlaceholder": "Resultatet vises her...",
+      "chars": "tegn",
+      "invalidInput": "Ugyldig inndata for {modus}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Lim inn JWT-tokenet ditt",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Dekode JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Utstedt",
+      "expires": "Utløper"
+    },
+    "RegexTester": {
+      "expression": "Uttrykk",
+      "expressionPlaceholder": "Ta opp gruppe (abc)...",
+      "testString": "Teststreng",
+      "testStringPlaceholder": "Lim inn teststrengen din her...",
+      "matchHighlights": "Kamphøydepunkter",
+      "matches": "kamper",
+      "matchInfo": "Kampinformasjon",
+      "match": "Kamp",
+      "index": "Indeks",
+      "group": "Gruppe",
+      "noMatches": "Ingen treff funnet",
+      "highlightPlaceholder": "Kamper vil bli uthevet her...",
+      "flagsHelp": "g: global, i: ignorer store og små bokstaver, m: flerlinjer"
+    },
+    "UuidGenerator": {
+      "generate": "Generere",
+      "generateCount": "Generere:",
+      "copyAll": "Kopier alle",
+      "copyUuid": "Kopier UUID",
+      "generatedAt": "Generert lokalt kl. {time} • Versjon 4 UUID-er"
+    },
+    "WordCounter": {
+      "words": "Ord",
+      "characters": "Karakterer",
+      "sentences": "Setninger",
+      "paragraphs": "Avsnitt",
+      "readingTime": "Lesetid",
+      "min": "min",
+      "textInput": "Tekstinntasting",
+      "inputPlaceholder": "Begynn å skrive eller lim inn teksten din her for å analysere...",
+      "clear": "Klar"
+    },
+    "TimestampConverter": {
+      "timestamp": "Tidsstempel",
+      "humanDate": "Human Date",
+      "convert": "Konvertere",
+      "currentTimestamp": "Gjeldende tidsstempel",
+      "inputPlaceholder": "Skriv inn Unix-tidsstempel..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Lim inn SQL-spørringen din her...",
+      "outputPlaceholder": "Formatert SQL vises her..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Lim inn CSS-koden din her...",
+      "outputPlaceholder": "Forminsket CSS vises her..."
+    },
+    "MarkdownEditor": {
+      "editor": "Redaktør",
+      "preview": "Forhåndsvisning",
+      "inputPlaceholder": "Skriv inn Markdown her..."
+    },
+    "TextDiff": {
+      "original": "Originaltekst",
+      "changed": "Endret tekst",
+      "compare": "Sammenligne",
+      "differences": "Forskjeller"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Skriv inn tekst for å konvertere...",
+      "generatedSlug": "Generert Slug"
+    },
+    "ImageCompressor": {
+      "selectImage": "Velg Bilde",
+      "quality": "Kvalitet",
+      "compress": "Komprimere",
+      "download": "Last ned",
+      "originalSize": "Original størrelse",
+      "compressedSize": "Komprimert størrelse"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Avsnitt",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "GradientGenerator": {
+      "angle": "Vinkel",
+      "colors": "Farger",
+      "addColor": "Legg til farge",
+      "copyCss": "Kopier CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Fødselsdato",
+      "calculate": "Kalkulere",
+      "years": "år",
+      "months": "Måneder",
+      "days": "Dager",
+      "totalDays": "Totalt antall dager",
+      "nextBirthday": "Neste bursdag i"
+    },
+    "AsciiConverter": {
+      "text": "Tekst",
+      "ascii": "ASCII",
+      "convert": "Konvertere",
+      "inputPlaceholder": "Skriv inn tekst..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horisontal (X)",
+      "vertical": "Vertikal (Y)",
+      "blur": "Uskarphet",
+      "spread": "Spre",
+      "colorOpacity": "Farge og opasitet",
+      "inset": "Innfelt"
+    },
+    "BmiCalculator": {
+      "metric": "Metrisk (kg/cm)",
+      "imperial": "Imperial (lbs/in)",
+      "weight": "Vekt",
+      "height": "Høyde",
+      "calculate": "Beregn BMI",
+      "bmiScore": "Din BMI-poengsum",
+      "underweight": "Undervektig",
+      "normal": "Normal vekt",
+      "overweight": "Overvektig",
+      "obese": "Overvektige"
+    },
+    "CaseConverter": {
+      "inputText": "Skriv inn tekst",
+      "inputPlaceholder": "Skriv inn teksten din her...",
+      "upper": "UPPERCASE",
+      "lower": "små bokstaver",
+      "title": "Tittelsak",
+      "sentence": "Setningssak",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Kopiere",
+      "conversions": "Konverteringer",
+      "clear": "Klar"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX farge",
+      "rgbLabels": "RGB farge",
+      "hslLabels": "HSL farge",
+      "cmykLabels": "CMYK farge",
+      "copy": "Kopiere",
+      "hexToRgbNote": "* Støtter for øyeblikket kun HEX til RGB/HSL-konvertering."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Kortnummer",
+      "validate": "Bekreft",
+      "valid": "Gyldig kredittkortnummer",
+      "invalid": "Ugyldig kredittkortnummer",
+      "placeholder": "Skriv inn kortnummer...",
+      "type": "Korttype",
+      "checkDigit": "Sjekk siffer",
+      "luhnValid": "Luhn Algorithm Gyldig"
+    },
+    "CipherTools": {
+      "encode": "Kode",
+      "decode": "Dekode",
+      "rot13": "ROT13",
+      "caesar": "Caesar Cipher",
+      "shift": "Skifte",
+      "inputPlaceholder": "Hei verden",
+      "outputPlaceholder": "Resultatet vises her..."
+    },
+    "CronGenerator": {
+      "minute": "Minutt",
+      "hour": "Time",
+      "dayMonth": "Dag (måned)",
+      "month": "Måned",
+      "dayWeek": "Dag (uke)",
+      "presets": "Vanlige forhåndsinnstillinger",
+      "everyMinute": "Hvert minutt",
+      "everyHour": "Hver time",
+      "everyDayMidnight": "Hver dag ved midnatt",
+      "everySunday": "Hver søndag",
+      "everyMonth": "Hver måned",
+      "everyYear": "Hvert år",
+      "formatInfo": "Format: * * * * * (Minutt Time DagI Måned Måned DagI Uke)",
+      "usageInfo": "Bruk * for 'hver', */n for 'hver n', 1,2,3 for spesifikk liste."
+    },
+    "DateDiff": {
+      "startDate": "Startdato",
+      "endDate": "Sluttdato",
+      "calculate": "Kalkulere",
+      "difference": "Forskjell",
+      "years": "år",
+      "months": "Måneder",
+      "days": "Dager",
+      "totalDays": "Totalt antall dager",
+      "totalWeeks": "Totale uker",
+      "totalHours": "Totalt antall timer"
+    },
+    "DeepLinkTester": {
+      "testLink": "Testlink",
+      "savedLinks": "Lagrede lenker",
+      "searchPlaceholder": "Søk i lagrede lenker...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Lansering",
+      "save": "Spare",
+      "delete": "Slett",
+      "opens": "åpnes",
+      "scanQr": "Skann med mobilenheten for å teste",
+      "noSavedLinks": "Ingen lagrede lenker funnet.",
+      "enterLabel": "Skriv inn en etikett for denne linken:",
+      "saved": "Lagret!",
+      "confirmDelete": "Vil du slette denne linken?"
+    },
+    "DeviceInfo": {
+      "screen": "Skjerm",
+      "browser": "Nettleser",
+      "system": "System",
+      "resolution": "Oppløsning",
+      "colorDepth": "Fargedybde",
+      "userAgent": "Brukeragent",
+      "platform": "Plattform",
+      "language": "Språk"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Opprinnelig pris",
+      "discountPercent": "Rabatt",
+      "additionalDiscount": "Ekstra rabatt",
+      "calculate": "Kalkulere",
+      "youSave": "Du sparer",
+      "finalPrice": "Endelig pris",
+      "salesTax": "Omsetningsavgift"
+    },
+    "DnsLookup": {
+      "domain": "Domene",
+      "lookup": "Oppslag",
+      "recordType": "Record Type",
+      "results": "Resultater",
+      "placeholder": "eksempel.com",
+      "status": "Status",
+      "time": "Tid",
+      "server": "Server",
+      "answerSection": "Svarseksjonen",
+      "name": "Navn",
+      "type": "Type",
+      "ttl": "TTL",
+      "data": "Data",
+      "noRecords": "Ingen poster funnet"
+    },
+    "EmailValidator": {
+      "email": "E-postadresse",
+      "validate": "Bekreft",
+      "valid": "Gyldig",
+      "invalid": "Ugyldig",
+      "suggestion": "Forslag",
+      "placeholder": "bruker@eksempel.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Last opp bilde",
+      "generate": "Generere",
+      "download": "Last ned",
+      "sizes": "Størrelser"
+    },
+    "FuelCalculator": {
+      "distance": "Avstand",
+      "fuelEfficiency": "Drivstoffeffektivitet",
+      "fuelPrice": "Drivstoffpris",
+      "calculate": "Kalkulere",
+      "result": "Resultat",
+      "totalCost": "Total kostnad",
+      "fuelNeeded": "Trenger drivstoff"
+    },
+    "GridGenerator": {
+      "columns": "Kolonner",
+      "rows": "Rader",
+      "gap": "Mellomrom",
+      "preview": "Forhåndsvisning",
+      "copyCss": "Kopier CSS",
+      "rowGap": "Radgap",
+      "colGap": "Kolonnegap",
+      "options": "Alternativer"
+    },
+    "HmacGenerator": {
+      "message": "Beskjed",
+      "secret": "Hemmelig",
+      "algorithm": "Algoritme",
+      "generate": "Generere",
+      "inputPlaceholder": "Skriv inn tekst...",
+      "secretPlaceholder": "Hemmelig..."
+    },
+    "HtmlEncoder": {
+      "encode": "Kode",
+      "decode": "Dekode",
+      "resultPlaceholder": "Resultatet vises her...",
+      "inputPlaceholder": "Lim inn HTML her..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Søk kode (f.eks. 404) eller navn...",
+      "code": "Kode",
+      "name": "Navn",
+      "description": "Beskrivelse"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Bekreft",
+      "valid": "Gyldig",
+      "invalid": "Ugyldig",
+      "placeholder": "Skriv inn IBAN...",
+      "inputLabel": "Skriv inn IBAN-nummer",
+      "validTitle": "Gyldig benchmark",
+      "invalidTitle": "Ugyldig kontrollsum",
+      "validDesc": "IBAN-formatet og kontrollsummen er korrekte.",
+      "invalidDesc": "IBAN samsvarer ikke med kontrollsumalgoritmen."
+    },
+    "ImageBase64": {
+      "upload": "Last opp",
+      "convert": "Konvertere",
+      "copy": "Kopiere",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Last opp bilde",
+      "convertToBase64": "Konverter til Base64",
+      "convertToImage": "Konverter til bilde",
+      "base64String": "Base64-streng",
+      "download": "Last ned"
+    },
+    "ImageConverter": {
+      "selectImage": "Velg Bilde",
+      "format": "Format",
+      "convert": "Konvertere",
+      "download": "Last ned",
+      "quality": "Kvalitet"
+    },
+    "InterestCalculator": {
+      "principal": "Rektor",
+      "rate": "Rente",
+      "time": "Tidsperiode (år)",
+      "calculate": "Kalkulere",
+      "simpleInterest": "Enkel",
+      "compoundInterest": "Sammensatt",
+      "totalAmount": "Total verdi",
+      "type": "Type",
+      "frequency": "Sammensatt frekvens",
+      "annually": "Årlig",
+      "monthly": "Månedlig",
+      "daily": "Daglig",
+      "year": "År"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Skriv inn JSON...",
+      "convert": "Konvertere",
+      "format": "Format",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON til CSV",
+      "csvToJson": "CSV til JSON",
+      "jsonInput": "JSON-inngang",
+      "csvInput": "CSV-inngang",
+      "jsonOutput": "JSON-utgang",
+      "csvOutput": "CSV-utgang"
+    },
+    "JsonDiff": {
+      "original": "Original JSON",
+      "modified": "Endret JSON",
+      "compare": "Sammenligne",
+      "differences": "Forskjeller"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Trykk på hvilken som helst tast",
+      "key": "Nøkkel",
+      "code": "Kode",
+      "keyCode": "Nøkkelkode",
+      "which": "hvilken",
+      "location": "Sted",
+      "modifiers": "Modifikatorer",
+      "standard": "Standard",
+      "left": "Igjen",
+      "right": "Høyre",
+      "numpad": "Talltastatur",
+      "space": "(Rom)",
+      "info": "Vis JavaScript-hendelsesnøkkelkode, kode og mer."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Lim inn teksten din her for å analysere søkeordfrekvensen...",
+      "analyze": "Analysere",
+      "keyword": "Nøkkelord",
+      "count": "Telle",
+      "density": "Tetthet"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Skriv inn listen din her...",
+      "sort": "Sortere",
+      "reverse": "Omvendt",
+      "shuffle": "Bland",
+      "deduplicate": "Deduplikat",
+      "ascending": "Stigende",
+      "descending": "Synkende",
+      "length": "Lengde",
+      "trim": "Trim tom",
+      "lines": "Linjer:",
+      "chars": "Karakterer:"
+    },
+    "LoanCalculator": {
+      "principal": "Rektor",
+      "interestRate": "Rente",
+      "term": "Periode",
+      "calculate": "Kalkulere",
+      "monthlyPayment": "Månedlig betaling",
+      "totalInterest": "Total rente",
+      "totalPayment": "Total betaling",
+      "loanDetails": "Lånedetaljer",
+      "loanAmount": "Lånebeløp",
+      "loanTerm": "Lånetid",
+      "years": "år",
+      "months": "Måneder",
+      "interest": "Interesse"
+    },
+    "MacGenerator": {
+      "generate": "Generere",
+      "copy": "Kopiere",
+      "separator": "Separator",
+      "format": "Format",
+      "quantity": "Mengde",
+      "uppercase": "Store bokstaver"
+    },
+    "MarginCalculator": {
+      "cost": "Koste",
+      "price": "Salgspris",
+      "calculate": "Kalkulere",
+      "margin": "Margin",
+      "markup": "Markup",
+      "profit": "Fortjeneste",
+      "revenue": "Inntekter",
+      "netProfit": "Netto fortjeneste",
+      "grossMargin": "Bruttomargin"
+    },
+    "PasswordManager": {
+      "masterPassword": "Hovedpassord",
+      "unlock": "Låse opp",
+      "searchPlaceholder": "Søk etter kontoer...",
+      "addNew": "Legg til ny",
+      "siteName": "Navn på nettsted",
+      "username": "Brukernavn",
+      "password": "Passord",
+      "save": "Spare",
+      "delete": "Slett"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Skriv her...",
+      "strength": "Styrke",
+      "weak": "Svak",
+      "fair": "Rettferdig",
+      "good": "God",
+      "strong": "Sterk",
+      "requirements": "Krav",
+      "length": "8+ tegn",
+      "number": "Inkluderer nummer",
+      "uppercase": "Inkluderer store bokstaver",
+      "symbol": "Inkluderer symbol"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me brukernavn",
+      "amount": "Beløp",
+      "currency": "Valuta",
+      "generate": "Generere",
+      "itemName": "Varenavn",
+      "link": "Link",
+      "yourLink": "Din PayPal-kobling",
+      "openPaypal": "Åpne PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Regler",
+      "addRule": "Legg til regel",
+      "allow": "Tillate",
+      "disallow": "Ikke tillat",
+      "sitemap": "Nettadressekart (valgfritt)",
+      "output": "Generert robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Verdi",
+      "percentage": "Prosentdel",
+      "calculate": "Kalkulere",
+      "result": "Resultat",
+      "whatIs": "Hva er",
+      "of": "% av",
+      "isWhatPercentOf": "er hva % av",
+      "percentChangeFrom": "% endring fra",
+      "to": "til"
+    },
+    "PomodoroTimer": {
+      "work": "Fokustid",
+      "shortBreak": "Kort pause",
+      "longBreak": "Lang pause",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Tilbakestill",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Tall",
+      "calculate": "Kalkulere",
+      "factors": "Prime Factors",
+      "inputLabel": "Skriv inn et tall",
+      "placeholder": "f.eks. 120",
+      "isPrime": "Dette tallet er Prime!",
+      "isComposite": "Dette nummeret er sammensatt"
+    },
+    "RoiCalculator": {
+      "investment": "Investering",
+      "returns": "Returnerer",
+      "calculate": "Kalkulere",
+      "roi": "ROI",
+      "profit": "Fortjeneste",
+      "finalValue": "Endelig verdi",
+      "time": "Tid (år)",
+      "totalGain": "Total gevinst",
+      "annualizedRoi": "Annualisert ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Desimal",
+      "decimalPlaceholder": "2024",
+      "roman": "Roman",
+      "convert": "Konvertere",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Start opptak",
+      "stopRecording": "Stopp opptak",
+      "download": "Last ned",
+      "recording": "Innspilling..."
+    },
+    "SignatureGenerator": {
+      "draw": "Tegne",
+      "clear": "Klar",
+      "download": "Last ned",
+      "penColor": "Pennefarge",
+      "penSize": "Pennestørrelse"
+    },
+    "SpeechToText": {
+      "startListening": "Begynn å lytte",
+      "stopListening": "Slutt å lytte",
+      "transcript": "Avskrift",
+      "placeholder": "Transkripsjon vil vises her..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO brukere (id, navn, alder) VERDIER (1, 'John', 30);",
+      "convert": "Konvertere",
+      "result": "Resultat"
+    },
+    "Stopwatch": {
+      "start": "Start",
+      "stop": "Stoppe",
+      "reset": "Tilbakestill",
+      "lap": "Fang"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-adresse",
+      "subnetMask": "Subnettmaske",
+      "calculate": "Kalkulere",
+      "networkAddress": "Nettverksadresse",
+      "broadcastAddress": "Kringkastingsadresse",
+      "usableHosts": "Brukbare verter"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Lim inn SVG",
+      "uploadSvg": "Last opp SVG",
+      "convert": "Konvertere",
+      "download": "Last ned"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Skriv inn tekst for å snakke...",
+      "speak": "Snakke",
+      "stop": "Stoppe",
+      "voice": "Stemme",
+      "rate": "Sats",
+      "pitch": "Pitch"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Skriv noe...",
+      "reverse": "Omvendt",
+      "uppercase": "Store bokstaver",
+      "lowercase": "Små bokstaver",
+      "encode": "Kode"
+    },
+    "TimezoneConverter": {
+      "from": "Fra",
+      "to": "Til",
+      "convert": "Konvertere",
+      "currentTime": "Gjeldende tid"
+    },
+    "TokenGenerator": {
+      "length": "Lengde",
+      "generate": "Generere",
+      "copy": "Kopiere",
+      "includeNumbers": "Ta med tall",
+      "includeSymbols": "Inkluder symboler"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Skriv inn URL...",
+      "parse": "Parse",
+      "protocol": "Protokoll",
+      "host": "Vert",
+      "path": "Sti",
+      "query": "Spørsmål"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Nettstedets URL",
+      "source": "Kilde",
+      "medium": "Medium",
+      "campaign": "Kampanje",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "VatCalculator": {
+      "amount": "Beløp",
+      "vatRate": "momssats",
+      "addVat": "Legg til mva",
+      "removeVat": "Fjern moms",
+      "calculate": "Kalkulere"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrere",
+      "pattern": "Mønster",
+      "duration": "Varighet",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Nåværende ukenummer",
+      "yearProgress": "Års fremgang",
+      "week": "Uke"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefonnummer",
+      "message": "Beskjed",
+      "generate": "Generere",
+      "copy": "Kopiere",
+      "placeholder": "Hei, jeg er interessert..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Lim inn YouTube-videoens URL...",
+      "getThumbnail": "Få miniatyrbilde",
+      "download": "Last ned"
+    },
+    "CrontabGenerator": {
+      "minute": "Minutt",
+      "hour": "Time",
+      "day": "Dag",
+      "month": "Måned",
+      "weekday": "Ukedag",
+      "expression": "Uttrykk",
+      "description": "Beskrivelse"
+    },
+    "ChmodCalculator": {
+      "owner": "Eier",
+      "group": "Gruppe",
+      "others": "Andre",
+      "read": "Lese",
+      "write": "Skrive",
+      "execute": "Henrette",
+      "numeric": "Numerisk",
+      "symbolic": "Symbolsk"
+    },
+    "HtpasswdGenerator": {
+      "username": "Brukernavn",
+      "password": "Passord",
+      "algorithm": "Algoritme",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "AspectRatio": {
+      "width": "Bredde",
+      "height": "Høyde",
+      "ratio": "Forhold",
+      "calculate": "Kalkulere"
+    },
+    "CssClipPath": {
+      "shape": "Form",
+      "preview": "Forhåndsvisning",
+      "copyCss": "Kopier CSS"
+    },
+    "CssCursor": {
+      "cursor": "Markør",
+      "preview": "Forhåndsvisning",
+      "copyCss": "Kopier CSS"
+    },
+    "CssTriangle": {
+      "direction": "Retning",
+      "size": "Størrelse",
+      "color": "Farge",
+      "preview": "Forhåndsvisning",
+      "copyCss": "Kopier CSS"
+    },
+    "MetaGenerator": {
+      "title": "Tittel",
+      "description": "Beskrivelse",
+      "keywords": "Nøkkelord",
+      "author": "Forfatter",
+      "url": "URL",
+      "image": "Bilde",
+      "generate": "Generere",
+      "copy": "Kopiere",
+      "titlePlaceholder": "Min fantastiske nettside",
+      "descriptionPlaceholder": "En kort beskrivelse av nettstedet ditt...",
+      "keywordsPlaceholder": "web, verktøy, dev",
+      "authorPlaceholder": "Ditt navn",
+      "outputPlaceholder": "Metakoder vises her..."
+    },
+    "OgGenerator": {
+      "title": "Tittel",
+      "description": "Beskrivelse",
+      "url": "URL",
+      "image": "Bilde",
+      "type": "Type",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "TwitterCard": {
+      "cardType": "Korttype",
+      "title": "Tittel",
+      "description": "Beskrivelse",
+      "image": "Bilde",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "MarkdownTable": {
+      "rows": "Rader",
+      "columns": "Kolonner",
+      "header": "Overskrift",
+      "addRow": "Legg til rad",
+      "addColumn": "Legg til kolonne",
+      "generate": "Generere",
+      "copy": "Kopiere"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Format",
+      "copy": "Kopiere"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON-formatering: Beste praksis for utviklere",
+      "excerpt": "Finn ut hvorfor riktig JSON-formatering er viktig for feilsøking og hvordan du automatiserer det i arbeidsflyten din.",
+      "category": "Utvikling"
+    },
+    "mastering-regex": {
+      "title": "Mestring av regulære uttrykk: En visuell guide",
+      "excerpt": "Regex trenger ikke være skummelt. Vi bryter ned vanlige mønstre for e-postvalidering, URL-er og mer.",
+      "category": "Opplæring"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: Hvordan planlegge oppgaver",
+      "excerpt": "Forstå 5-stjerners syntaksen til Cron og hvordan du planlegger sikkerhetskopier, e-poster og skript på Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Hvorfor lokale passordbehandlere er tryggere (KeyPass-alternativ)",
+      "excerpt": "Skybrudd er vanlige. Finn ut hvorfor lagring av passord lokalt med AES-256-kryptering er det sikreste alternativet for personlig sikkerhet.",
+      "category": "Sikkerhet"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Søkeverktøy...",
+    "noResults": "Ingen resultater funnet.",
+    "select": "Velge",
+    "navigate": "Navigere"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Send tilbakemelding",
+    "feedback": "Tilbakemelding",
+    "thankYou": "Takk!",
+    "feedbackSent": "Tilbakemeldingen din er sendt.",
+    "close": "Lukke",
+    "name": "Navn (valgfritt)",
+    "namePlaceholder": "Navnet ditt",
+    "email": "E-post (valgfritt)",
+    "emailPlaceholder": "din@email.com",
+    "feedbackType": "Tilbakemeldingstype",
+    "typeSuggestion": "💡 Forslag",
+    "typeBug": "🐛 Feilrapport",
+    "typeFeature": "✨ Funksjonsforespørsel",
+    "typeOther": "📝 Annet",
+    "message": "Melding *",
+    "messagePlaceholder": "Fortell oss hva du synes...",
+    "sending": "Sender...",
+    "weReadEveryMessage": "Vi leser hver melding. Takk for at du hjelper oss å forbedre oss!"
+  },
+  "ShareButton": {
+    "shareTool": "Delverktøy",
+    "copiedLink": "Kopiert lenke!"
+  },
+  "TextDiff": {
+    "original": "Originaltekst",
+    "changed": "Endret tekst",
+    "update": "Oppdater diff",
+    "old": "Gammel",
+    "new": "Ny",
+    "content": "Innhold"
+  },
+  "CrontabGenerator": {
+    "minute": "Minutt",
+    "hour": "Time",
+    "day": "Dag",
+    "month": "Måned",
+    "weekday": "Ukedag",
+    "min": "Min",
+    "mon": "man",
+    "week": "Uke",
+    "presets": "Raske forhåndsinnstillinger",
+    "everyMinute": "Hvert minutt",
+    "every5Minutes": "Hvert 5. minutt",
+    "everyHour": "Hver time",
+    "everyDayMidnight": "Hver dag ved midnatt",
+    "everyWeek": "Hver uke",
+    "everyMonth": "Hver måned"
+  },
+  "SpeechToText": {
+    "notSupported": "Nettleseren din støtter ikke Web Speech API. Vennligst bruk Chrome.",
+    "placeholder": "Transkripsjon vil vises her...",
+    "listening": "Lytter...",
+    "start": "Klikk på mikrofonen for å starte"
+  },
+  "OgGenerator": {
+    "title": "Tittel",
+    "description": "Beskrivelse",
+    "image": "Bilde-URL",
+    "url": "Kanonisk URL",
+    "type": "Type",
+    "website": "Nettsted",
+    "article": "Artikkel",
+    "profile": "Profil",
+    "preview": "Forhåndsvisning (Facebook/LinkedIn)",
+    "generatedHtml": "Generert HTML",
+    "copy": "Kopiere"
+  },
+  "WeekNumber": {
+    "checkLabel": "Sjekk ukenummer for dato",
+    "yearProgress": "Års fremgang"
+  },
+  "RelatedTools": {
+    "title": "Du vil kanskje også like",
+    "subtitle": "Utforsk andre populære utviklerverktøy",
+    "openTool": "Åpne Verktøy"
+  },
+  "Breadcrumb": {
+    "home": "Hjem",
+    "tools": "Verktøy"
+  },
+  "SvgToPng": {
+    "upload": "Last opp SVG-fil",
+    "browse": "eller klikk for å bla",
+    "paste": "...eller lim inn SVG-kode",
+    "preview": "PNG-forhåndsvisning (2x skala)",
+    "download": "Last ned PNG",
+    "errorType": "Last opp en gyldig SVG-fil.",
+    "errorRender": "Kunne ikke gjengi SVG. Sørg for at det er gyldig XML.",
+    "errorProcess": "Feil ved behandling av SVG."
+  },
+  "GradientGenerator": {
+    "config": "Konfigurasjon",
+    "colors": "Farger",
+    "type": "Type",
+    "angle": "Vinkel",
+    "random": "Tilfeldig",
+    "copyCss": "Kopier CSS",
+    "copied": "Kopiert"
+  },
+  "TimezoneConverter": {
+    "date": "Dato",
+    "time": "Tid (lokal)",
+    "invalid": "Ugyldig",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "London (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Nummergenerator",
+    "listGen": "Listegenerator",
+    "coinGen": "Myntgenerator",
+    "min": "Min",
+    "max": "Maks",
+    "count": "Telle",
+    "generate": "Generere",
+    "listLabel": "Listeelementer (én per linje)",
+    "pick": "Velg tilfeldig element",
+    "winner": "Vinneren er...",
+    "flip": "Flip Coin",
+    "heads": "Hoder",
+    "tails": "Haler"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Tar opp skjermen din ...",
+    "titleFree": "Gratis online skjermopptaker",
+    "desc": "Ta opp skjermen, appvinduet eller nettleserfanen. Ingen vannmerke, ingen tidsbegrensning.",
+    "start": "Start opptak",
+    "stop": "Stopp opptak",
+    "browserSupport": "Fungerer best i Chrome, Edge og Firefox på skrivebordet."
+  },
+  "CssCursor": {
+    "hoverTest": "Hold musepekeren her for å teste"
+  },
+  "VatCalculator": {
+    "amount": "Beløp",
+    "rate": "MVA-sats (%)",
+    "addVat": "Legg til mva",
+    "removeVat": "Fjern moms",
+    "netAmount": "Netto beløp",
+    "vatAmount": "MVA Beløp",
+    "grossTotal": "Totalt brutto",
+    "netTotal": "Netto totalt",
+    "grossAmount": "Bruttobeløp"
+  },
+  "MyIP": {
+    "ipLabel": "Din offentlige IP-adresse",
+    "loading": "Laster inn...",
+    "isp": "Internett-leverandør (ISP)",
+    "location": "Sted",
+    "asn": "ASN",
+    "timezone": "Tidssone",
+    "note": "Dette er IP-adressen som er synlig for nettsteder du besøker. Det kan være forskjellig fra din lokale IP hvis du bruker en VPN eller proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Skriv inn URL",
+    "formatted": "Formatert utgang",
+    "copy": "Kopiere",
+    "copied": "Kopiert",
+    "placeholder": "Lim inn en URL ovenfor for å se den formatert."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefonnummer (med landskode)",
+    "message": "Forhåndsutfylt melding",
+    "hint": "Ikke ta med +, - eller ().",
+    "yourLink": "Din WhatsApp-kobling",
+    "open": "Åpne Chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Skriv inn URL",
+    "params": "Spørringsparametere",
+    "error": "Ugyldig URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Last opp bilde",
+    "browse": "Anbefalt: 512x512 PNG",
+    "original": "Opprinnelig",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Last ned Favicon.png",
+    "note": "* Genererer for øyeblikket 32x32 PNG-favikoner. Gi nytt navn til .ico hvis nødvendig for eldre støtte."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-adresse",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Kalkulere",
+    "subnetMask": "Subnettmaske",
+    "networkAddress": "Nettverksadresse",
+    "firstHost": "Første vert",
+    "lastHost": "Siste vert",
+    "broadcastAddress": "Kringkastingsadresse",
+    "totalHosts": "Totalt verter"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Skriv inn artikkeltittel/tekst",
+    "generated": "Generert Slug",
+    "copy": "Kopier Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "Input SQL (kun INSERT-setninger)",
+    "convert": "Konverter til JSON",
+    "error": "Kunne ikke analysere SQL. Sørg for at det er standard INSERT INTO-setninger."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Legg til rad",
+    "addCol": "+ Legg til kolonne",
+    "headerPlaceholder": "Overskrift",
+    "outputLabel": "Markdown-utgang",
+    "copy": "Kopier Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Korttype",
+    "siteHandle": "Sidehåndtak (f.eks. @twitter)",
+    "title": "Tittel",
+    "description": "Beskrivelse",
+    "imageUrl": "Bilde-URL",
+    "preview": "Forhåndsvisning",
+    "generatedHtml": "Generert HTML",
+    "copy": "Kopiere",
+    "placeholderTitle": "Korttittel",
+    "placeholderDesc": "Beskrivelsen kommer her..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Skriv inn tekst for å snakke...",
+    "voice": "Stemme",
+    "speed": "Fart",
+    "pitch": "Pitch",
+    "speak": "Snakke"
+  },
+  "TokenGenerator": {
+    "length": "Lengde",
+    "includeNumbers": "Ta med tall",
+    "includeSymbols": "Inkluder symboler",
+    "generate": "Generer token"
+  },
+  "CssTriangle": {
+    "direction": "Retning",
+    "color": "Farge",
+    "width": "Bredde (px)",
+    "height": "Høyde (px)",
+    "copy": "Kopiere"
+  },
+  "UnitConverter": {
+    "length": "Lengde",
+    "weight": "Vekt",
+    "temperature": "Temperatur",
+    "meters": "Meter",
+    "kilometers": "Kilometer",
+    "centimeters": "Centimeter",
+    "millimeters": "Millimeter",
+    "inches": "Tommer",
+    "feet": "Føtter",
+    "yards": "Yards",
+    "miles": "Miles",
+    "kilograms": "Kilogram",
+    "grams": "gram",
+    "pounds": "Pounds",
+    "ounces": "Unser",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Former",
+    "preview": "Forhåndsvisning",
+    "cssCode": "CSS-kode",
+    "copy": "Kopiere",
+    "copied": "Kopiert"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Last opp et bilde",
+    "uploadDesc": "JPG, PNG eller WebP. Vi komprimerer det lokalt.",
+    "selectImage": "Velg Bilde",
+    "settings": "Komprimeringsinnstillinger",
+    "quality": "Kvalitet",
+    "originalSize": "Original størrelse",
+    "compressedSize": "Komprimert størrelse",
+    "saving": "Lagrer",
+    "download": "Last ned"
+  },
+  "HtpasswdGenerator": {
+    "username": "Brukernavn",
+    "password": "Passord",
+    "algorithm": "Algoritme",
+    "generate": "Generer oppføring",
+    "result": "Resultat",
+    "sha1": "SHA-1 (usikker, men standard)",
+    "notSupported": "Bare SHA-1 støttes i denne versjonen på klientsiden."
+  },
+  "MetaTags": {
+    "pageTitle": "Sidetittel",
+    "description": "Beskrivelse",
+    "author": "Forfatter"
+  },
+  "AgeCalculator": {
+    "dob": "Fødselsdato",
+    "age": "Alder",
+    "years": "år",
+    "months": "måneder",
+    "days": "dager",
+    "nextBirthday": "Neste bursdag"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Nettstedsadresse (obligatorisk)",
+    "source": "Kampanjekilde (obligatorisk)",
+    "medium": "Kampanjemedium (obligatorisk)",
+    "name": "Kampanjenavn (obligatorisk)",
+    "term": "Kampanjeperiode (valgfritt)",
+    "content": "Kampanjeinnhold (valgfritt)",
+    "generatedUrl": "Generert URL",
+    "copy": "Kopier URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Gjeldende Unix-tid",
+    "timestampLabel": "Tidsstempel (sekunder)",
+    "isoLabel": "ISO-datoformat",
+    "utcDate": "UTC-dato",
+    "localDate": "Lokal dato",
+    "relative": "Slektning"
+  },
+  "SignatureGenerator": {
+    "color": "Farge",
+    "width": "Bredde",
+    "clear": "Klar",
+    "download": "Last ned PNG",
+    "signHere": "Signer her",
+    "note": "Signaturer behandles lokalt i nettleseren din. Vi lagrer eller laster dem ikke opp."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Live forhåndsvisning"
+  },
+  "CipherTools": {
+    "shiftAmount": "Skiftbeløp (N)",
+    "inputText": "Skriv inn tekst",
+    "outputText": "Skriv ut tekst",
+    "rot13": "ROT13",
+    "caesar": "Cæsar (+3)",
+    "shift1": "Skift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Skjermoppløsning",
+    "browser": "Nettleser",
+    "cpuCores": "CPU-kjerner",
+    "battery": "Batteri",
+    "detailedSpecs": "Detaljerte spesifikasjoner",
+    "userAgent": "Brukeragent",
+    "platform": "Plattform",
+    "windowSize": "Vindustørrelse",
+    "pixelRatio": "Pikselforhold",
+    "colorDepth": "Fargedybde",
+    "ram": "RAM",
+    "cookiesEnabled": "Informasjonskapsler aktivert",
+    "onlineStatus": "Online status",
+    "unknown": "Ukjent",
+    "yes": "Ja",
+    "no": "Ingen",
+    "enabled": "Aktivert",
+    "disabled": "Funksjonshemmet"
+  },
+  "ChmodCalculator": {
+    "owner": "Eier",
+    "group": "Gruppe",
+    "public": "Offentlig",
+    "read": "Lese",
+    "write": "Skrive",
+    "execute": "Henrette",
+    "numeric": "Numerisk",
+    "symbolic": "Symbolsk"
+  },
+  "PasswordManager": {
+    "title": "Passordbehandling",
+    "desc": "Lagre og administrer passordene dine sikkert lokalt.",
+    "unlock": "Lås opp hvelv",
+    "create": "Opprett nytt hvelv",
+    "unlockDesc": "Skriv inn hovedpassordet ditt for å få tilgang til kontoene dine.",
+    "createDesc": "Angi et sterkt hovedpassord. Den krypterer dataene dine lokalt.",
+    "masterPassword": "Hovedpassord",
+    "unlockBtn": "Låse opp",
+    "createBtn": "Opprett hvelv",
+    "note": "Data lagres i nettleseren din ved hjelp av AES-GCM-kryptering. Vi kan ikke gjenopprette passordet ditt hvis det går tapt.",
+    "myPasswords": "Mine passord",
+    "addNew": "Legg til ny",
+    "search": "Søk etter kontoer...",
+    "noPasswords": "Ingen passord funnet.",
+    "addAccount": "Legg til konto",
+    "accountTitle": "Tittel / Nettsted",
+    "username": "Brukernavn / e-post",
+    "password": "Passord",
+    "url": "URL (valgfritt)",
+    "save": "Lagre konto",
+    "cancel": "Kansellere",
+    "incorrectPassword": "Feil passord eller ødelagte data.",
+    "loading": "Laster inn..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Nettsidedetaljer",
+    "pageTitle": "Sidetittel",
+    "description": "Beskrivelse",
+    "keywords": "Søkeord (kommaseparert)",
+    "author": "Forfatter",
+    "socialPreview": "Sosial forhåndsvisning (OG og Twitter)",
+    "websiteUrl": "Nettstedets URL",
+    "previewImage": "Forhåndsvis bilde-URL",
+    "generatedHtml": "Generert HTML",
+    "copy": "Kopier HTML",
+    "copied": "Kopiert"
+  },
+  "VibrationTester": {
+    "worksOnly": "Fungerer bare på enheter med vibrasjonsmaskinvare (f.eks. telefoner).",
+    "duration": "Varighet (ms)",
+    "vibrateOnce": "Vibrer én gang",
+    "pulsePattern": "Pulsmønster",
+    "longPulse": "Lang puls",
+    "stop": "Stoppe"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Hvorfor JSON-formatering betyr noe",
+      "block_2": "JSON (JavaScript Object Notation) er språket på nettet.Men rå JSON returnert fra APIer er ofte et mindre rot.formatering gjør den lesbar, feilsøkbar og sikker.",
+      "block_3": "1.Lesbarhet er konge",
+      "block_4": "Når du feilsøker et 5000-linjers API-svar, redder innrykk liv.Vår <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> bruker innrykk med 2 mellomrom eller 4 mellomrom for å gjøre strukturen tydelig.",
+      "block_5": "2.Validering",
+      "block_6": "Et enkelt manglende komma kan ødelegge appen din.Valider alltid JSON-en din før du overfører den til konfigurasjonsfiler.",
+      "block_7": "Konklusjon",
+      "block_8": "Ikke kast bort tid på å sjekke parentes manuelt.Bruk automatiserte verktøy."
+    },
+    "mastering-regex": {
+      "block_1": "Regeks forklart",
+      "block_2": "Regulære uttrykk er kraftige, men forvirrende.la oss visualisere dem.",
+      "block_3": "Vanlige mønstre",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-post:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Test disse mønstrene umiddelbart med vår <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex-tester</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "The 5 Stars of Cron",
+      "block_2": "Minutt, time, dag i måneden, måned, ukedag.Det er alt det er.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "Eksempler",
+      "block_5": "Trenger du hjelp?Bruk <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> for å bygge uttrykk visuelt."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Problemet med skyhvelv",
+      "block_2": "LastPass, Okta og andre giganter har blitt utsatt for brudd.Når hvelvet ditt er online, er det et mål.",
+      "block_3": "Løsningen: Lokal kryptering",
+      "block_4": "Vår nye <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea></strong>passordbehandling\" kjører i hele nettleseren din</a].Den bruker <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bits kryptering</strong> avledet fra hovedpassordet ditt ved å bruke PBKDF2.",
+      "block_5": "Slik fungerer det",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Null kunnskap:</strong> Vi ser aldri passordet ditt.Den forlater aldri enheten din.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Frakoblet lagring:</strong> Ditt krypterte hvelv er lagret i nettleserens LocalStorage.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Eksporterbar:</strong> Du kan eksportere/sikkerhetskopiere de råkrypterte dataene dine når som helst.</li>",
+      "block_7": "Slutt å stole på skyen med hovednøklene dine.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Prøv Local Password Manager</a> i dag."
+    }
+  }
+}

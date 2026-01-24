@@ -100,4 +100,5 @@ export const tools: Tool[] = [
     { id: "margin-calculator", name: "Margin Calculator", description: "Calculate profit margin and markup", icon: "DollarSign", category: "Math" },
     { id: "roi-calculator", name: "ROI Calculator", description: "Calculate Return on Investment", icon: "TrendingUp", category: "Math" },
     { id: "fuel-calculator", name: "Fuel Cost Calculator", description: "Calculate trip fuel cost", icon: "Fuel", category: "Math" },
+    { id: "pretty-print-url", name: "Pretty Print URL", description: "Format and beautify URLs for readability", icon: "Link", category: "Developer" },
 ];

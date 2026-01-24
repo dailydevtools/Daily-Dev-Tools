@@ -1,0 +1,1814 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "כלים",
+    "blog": "בלוג",
+    "github": "GitHub",
+    "searchPlaceholder": "חיפוש..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - כלי מפתחים מקוונים בחינם",
+    "description": "90+ כלי אונליין בחינם לכולם. מפרמטים, ממירים, מחוללים וכלי עזר. מהיר, פרטי וללא צורך בהרשמה."
+  },
+  "NotFound": {
+    "title": "הדף לא נמצא",
+    "description": "מצטערים, לא הצלחנו למצוא את הדף שאתה מחפש.",
+    "backHome": "חזרה לדף הבית",
+    "suggestions": "נסה לחפש כלי או עיין בכלים הפופולריים שלנו למטה."
+  },
+  "Homepage": {
+    "heroTag": "100+ כלים בחינם • פרטי • ללא הרשמה",
+    "titleLine1": "כלי מפתחים יומיים",
+    "titleLine2": "שפשוט עובדים",
+    "subtitle": "כלים מהירים, יפים וממוקדי פרטיות למפתחים, מעצבים ולכולם. הכל רץ בדפדפן שלך.",
+    "recentTools": "נצפה לאחרונה",
+    "noRecentText": "התחל להשתמש בכלים כדי לראות אותם כאן",
+    "searchResults": "תוצאות חיפוש",
+    "popularTools": "פופולרי",
+    "toolsCount": "{count} כלים זמינים",
+    "features": {
+      "fast": {
+        "title": "מהיר כברק",
+        "desc": "כל הכלים רצים מקומית בדפדפן שלך"
+      },
+      "private": {
+        "title": "100% פרטי",
+        "desc": "הנתונים שלך לעולם לא עוזבים את המכשיר שלך"
+      },
+      "simple": {
+        "title": "נבנה עבור כולם",
+        "desc": "פשוט מספיק לכולם, חזק למקצוענים"
+      },
+      "free": {
+        "title": "תמיד בחינם",
+        "desc": "ללא חשבונות, ללא הגבלות"
+      }
+    },
+    "categories": {
+      "All": "הכל",
+      "Favorites": "מועדפים",
+      "Developer": "מפתח",
+      "Design": "עיצוב",
+      "Content": "תוכן",
+      "Security": "אבטחה",
+      "Productivity": "פרודוקטיביות",
+      "Math": "מתמטיקה",
+      "Utility": "כלי עזר"
+    },
+    "cta": {
+      "title": "מוכן להגביר את הפרודוקטיביות שלך?",
+      "text": "התחל להשתמש בכלי המפתחים שלנו בחינם. אין צורך בהרשמה, אין איסוף נתונים.",
+      "button": "התחל בחינם"
+    },
+    "openTool": "פתח כלי",
+    "noResults": "לא נמצאו כלים התואמים ל-",
+    "clearFilters": "נקה מסננים"
+  },
+  "Footer": {
+    "builtWith": "נבנה ב-❤️ ע״י",
+    "allTools": "כל הכלים",
+    "blog": "בלוג",
+    "about": "אודות",
+    "privacy": "פרטיות",
+    "terms": "תנאים"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "מעצב JSON",
+      "description": "לעצב, לאמת ולייפות את JSON באופן מיידי"
+    },
+    "base64-encoder": {
+      "name": "מקודד Base64",
+      "description": "קידוד ופענח מחרוזות Base64"
+    },
+    "url-encoder": {
+      "name": "מקודד כתובת URL",
+      "description": "קידוד ופענח כתובות אתרים בצורה בטוחה"
+    },
+    "jwt-decoder": {
+      "name": "מפענח JWT",
+      "description": "פענוח ובדוק את אסימוני האינטרנט של JSON"
+    },
+    "regex-tester": {
+      "name": "בודק רגקס",
+      "description": "בדוק ביטויים רגולריים בזמן אמת"
+    },
+    "hash-generator": {
+      "name": "מחולל חשיש",
+      "description": "צור גיבוב MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "מחולל UUID",
+      "description": "צור UUIDs/GUIDs אקראיים באופן מיידי"
+    },
+    "css-minifier": {
+      "name": "CSS Miniifier",
+      "description": "צמצם ובצע אופטימיזציה של קוד ה-CSS שלך"
+    },
+    "markdown-editor": {
+      "name": "Markdown תצוגה מקדימה",
+      "description": "עורך Markdown בזמן אמת ותצוגה מקדימה"
+    },
+    "color-converter": {
+      "name": "ממיר צבע",
+      "description": "המר Hex, RGB, HSL ו-CMYK"
+    },
+    "timestamp-converter": {
+      "name": "כלי חותמת זמן",
+      "description": "המר חותמות זמן של יוניקס לתאריכים אנושיים"
+    },
+    "sql-formatter": {
+      "name": "מעצב SQL",
+      "description": "עיצוב ויפות שאילתות SQL"
+    },
+    "password-generator": {
+      "name": "מחולל סיסמאות",
+      "description": "צור סיסמאות מאובטחות ואקראיות"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "צור טקסט מציין מיקום עבור עיצובים"
+    },
+    "image-base64": {
+      "name": "תמונה ל-Base64",
+      "description": "המר תמונות למחרוזות Base64"
+    },
+    "qr-generator": {
+      "name": "מחולל קוד QR",
+      "description": "צור קודי QR עבור כתובות אתרים וטקסט"
+    },
+    "word-counter": {
+      "name": "מונה מילים",
+      "description": "ספירת מילים, תווים וזמן קריאה"
+    },
+    "case-converter": {
+      "name": "ממיר כיסויים",
+      "description": "מארז גמל, נחש, קבב ופסקל"
+    },
+    "text-diff": {
+      "name": "בודק הבדל טקסט",
+      "description": "השוו שני טקסטים ומצאו הבדלים"
+    },
+    "slug-generator": {
+      "name": "מחולל שבלולים",
+      "description": "צור שבלולים ידידותיים ל-SEO"
+    },
+    "gradient-generator": {
+      "name": "מחולל גרדיאנט",
+      "description": "צור מעברי CSS יפים"
+    },
+    "image-compressor": {
+      "name": "מדחס תמונה",
+      "description": "דחוס תמונות באופן מקומי ופרטי"
+    },
+    "device-info": {
+      "name": "מידע על המכשיר",
+      "description": "צפה בפרטי מסך, דפדפן ומערכת"
+    },
+    "random-generator": {
+      "name": "מחולל אקראי",
+      "description": "בחר מספרים, מטבעות ופריטי רשימה"
+    },
+    "unit-converter": {
+      "name": "ממיר יחידות",
+      "description": "המר אורך, משקל וטמפ'"
+    },
+    "pomodoro-timer": {
+      "name": "טיימר פומודורו",
+      "description": "טיימר פוקוס לפרודוקטיביות"
+    },
+    "yt-thumbnail": {
+      "name": "הורדת תמונות ממוזערות",
+      "description": "קבל תמונות ממוזערות של סרטוני YouTube"
+    },
+    "my-ip": {
+      "name": "מה ה-IP שלי",
+      "description": "הצג מידע IP ורשת ציבוריים"
+    },
+    "keycode-info": {
+      "name": "מידע על קוד מפתח",
+      "description": "מנפה באגים של מקלדת JavaScript"
+    },
+    "signature-generator": {
+      "name": "מחולל חתימות",
+      "description": "צייר והורד חתימות דיגיטליות"
+    },
+    "screen-recorder": {
+      "name": "מקליט מסך",
+      "description": "הקלט מסך והורד וידאו"
+    },
+    "credit-card-validator": {
+      "name": "מאמת כרטיסים",
+      "description": "אמת מספרי כרטיסי אשראי"
+    },
+    "password-manager": {
+      "name": "מנהל סיסמאות מקומי",
+      "description": "אחסן באופן מאובטח סיסמאות באופן מקומי עם הצפנה"
+    },
+    "deep-link-tester": {
+      "name": "בודק קישורים עמוקים",
+      "description": "בדוק, הפעל ונהל קישורים עמוקים לנייד"
+    },
+    "image-converter": {
+      "name": "ממיר תמונה",
+      "description": "המר PNG/JPG ל-WebP באופן מקומי כדי לייעל תמונות"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "המר JSON ל-CSV ולהיפך"
+    },
+    "bmi-calculator": {
+      "name": "מחשבון BMI",
+      "description": "חישוב מדד מסת הגוף (BMI)"
+    },
+    "dns-lookup": {
+      "name": "בדיקת DNS",
+      "description": "חפש רשומות DNS (A, MX, NS) באופן מיידי"
+    },
+    "age-calculator": {
+      "name": "מחשבון גיל",
+      "description": "חשב גיל מדויק וסך הימים"
+    },
+    "loan-calculator": {
+      "name": "מחשבון הלוואות",
+      "description": "חשב EMI חודשי וריבית כוללת"
+    },
+    "discount-calculator": {
+      "name": "מחשבון הנחות",
+      "description": "חשב מחיר מכירה וחיסכון"
+    },
+    "interest-calculator": {
+      "name": "מחשבון ריבית",
+      "description": "מחשבון ריבית פשוטה לעומת ריבית מורכבת"
+    },
+    "html-encoder": {
+      "name": "מקודד/מפענח HTML",
+      "description": "בריחה מתווים מיוחדים או פענוח HTML"
+    },
+    "list-sorter": {
+      "name": "סדרן רשימה",
+      "description": "מיין, הפוך, ערבב וביטול כפילות של רשימות"
+    },
+    "box-shadow": {
+      "name": "מחולל צללי קופסה",
+      "description": "יצירת צללים של תיבות CSS"
+    },
+    "date-diff": {
+      "name": "הפרש תאריך",
+      "description": "חשב את משך הזמן בין שני תאריכים"
+    },
+    "sql-to-json": {
+      "name": "SQL ל-JSON",
+      "description": "המרת SQL INSERT לאובייקטי JSON"
+    },
+    "keyword-density": {
+      "name": "צפיפות מילות מפתח",
+      "description": "נתח את תדירות מילות המפתח עבור SEO"
+    },
+    "json-diff": {
+      "name": "JSON הבדל",
+      "description": "השווה שני אובייקטי JSON זה לצד זה"
+    },
+    "cipher-tools": {
+      "name": "כלי צופן",
+      "description": "מקודד/מפענח ROT13 וקיסר צופן"
+    },
+    "token-generator": {
+      "name": "מחולל אסימונים אקראי",
+      "description": "צור אסימונים אקראיים מאובטחים"
+    },
+    "favicon-generator": {
+      "name": "מחולל Favicon",
+      "description": "צור קובצי .ico ו-PNG"
+    },
+    "robots-generator": {
+      "name": "Generator Robots.txt",
+      "description": "צור robots.txt עבור SEO"
+    },
+    "grid-generator": {
+      "name": "מחולל רשת CSS",
+      "description": "בונה פריסת רשת CSS Visual CSS"
+    },
+    "hmac-generator": {
+      "name": "מחולל HMAC",
+      "description": "צור קודי אימות של הודעות עם מפתח hash"
+    },
+    "http-status": {
+      "name": "קודי מצב HTTP",
+      "description": "רשימת עזר של קודי מצב HTTP"
+    },
+    "week-number": {
+      "name": "מספר שבוע",
+      "description": "מספר השבוע הנוכחי והתקדמות השנה"
+    },
+    "text-tools": {
+      "name": "טקסט שנאי",
+      "description": "הפוך, הפוך וקודד טקסט"
+    },
+    "url-parser": {
+      "name": "מנתח כתובת URL",
+      "description": "פיצול כתובות אתרים לפרוטוקול, מארח, נתיב, פרמטרים"
+    },
+    "markdown-table": {
+      "name": "מחולל טבלאות Markdown",
+      "description": "צור טבלאות Markdown בצורה ויזואלית"
+    },
+    "whatsapp-link": {
+      "name": "מחולל קישורים של WhatsApp",
+      "description": "צור קישורי צ'אט ישירים של WhatsApp"
+    },
+    "paypal-link": {
+      "name": "מחולל קישורים של PayPal",
+      "description": "צור קישורי תשלום PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG ל-PNG",
+      "description": "המרת קוד/קובץ SVG לתמונת PNG"
+    },
+    "prime-factors": {
+      "name": "פריים פקטורים",
+      "description": "מצא גורמים ראשוניים של מספר"
+    },
+    "iban-validator": {
+      "name": "מאמת IBAN",
+      "description": "אימות מספרי חשבון בנק בינלאומי"
+    },
+    "ascii-converter": {
+      "name": "ממיר ASCII",
+      "description": "המרת טקסט לקודי ASCII עשרוניים"
+    },
+    "utm-builder": {
+      "name": "בונה UTM",
+      "description": "בנה כתובות אתרים של מסעות פרסום של Google Analytics"
+    },
+    "meta-tags": {
+      "name": "מחולל מטא תגים",
+      "description": "צור מטא תגיות SEO עבור אתרי אינטרנט"
+    },
+    "og-generator": {
+      "name": "פתח את מחולל הגרפים",
+      "description": "צור מטא תגיות Open Graph לשיתוף חברתי"
+    },
+    "twitter-card": {
+      "name": "מחולל כרטיסי טוויטר",
+      "description": "צור מטא תגיות של כרטיס טוויטר"
+    },
+    "aspect-ratio": {
+      "name": "מחשבון יחס גובה-רוחב",
+      "description": "חשב יחסי גובה-רוחב וממדים"
+    },
+    "css-cursor": {
+      "name": "סמן CSS",
+      "description": "התייחסות למאפיין סמן CSS חזותי"
+    },
+    "css-triangle": {
+      "name": "מחולל משולש CSS",
+      "description": "צור משולשי CSS טהורים"
+    },
+    "percentage-calculator": {
+      "name": "מחשבון אחוזים",
+      "description": "חשב אחוזים ושינויים"
+    },
+    "vat-calculator": {
+      "name": "מחשבון מע\"מ",
+      "description": "חשב סכומי הוספה/הסרה של מע\"מ"
+    },
+    "stopwatch": {
+      "name": "סטוֹפֶּר",
+      "description": "שעון עצר פשוט מבוסס דפדפן"
+    },
+    "text-to-speech": {
+      "name": "טקסט לדיבור",
+      "description": "המר טקסט לקול מדובר"
+    },
+    "speech-to-text": {
+      "name": "דיבור לטקסט",
+      "description": "המרת קול מדובר לטקסט"
+    },
+    "vibration-tester": {
+      "name": "בודק רעידות",
+      "description": "בדיקת מנוע רטט של מכשיר"
+    },
+    "chmod-calculator": {
+      "name": "מחשבון Chmod",
+      "description": "חשב הרשאות קובץ לינוקס"
+    },
+    "crontab-generator": {
+      "name": "מחולל Crontab",
+      "description": "צור ביטויי לוח זמנים של קרון"
+    },
+    "htpasswd-generator": {
+      "name": "מחולל Htpasswd",
+      "description": "צור ערכי אישור בסיסיים"
+    },
+    "subnet-calculator": {
+      "name": "מחשבון רשת משנה",
+      "description": "חשב רשתות משנה וטווחי IP"
+    },
+    "mac-generator": {
+      "name": "מחולל כתובות MAC",
+      "description": "צור כתובות MAC אקראיות"
+    },
+    "timezone-converter": {
+      "name": "ממיר אזור זמן",
+      "description": "המרת זמן בין מספר אזורים"
+    },
+    "email-validator": {
+      "name": "מאמת אימייל",
+      "description": "אמת פורמט אימייל וזיהוי שגיאות הקלדה"
+    },
+    "password-strength": {
+      "name": "חוזק סיסמא",
+      "description": "בדוק את ציון חוזק הסיסמה"
+    },
+    "roman-numerals": {
+      "name": "ממיר ספרות רומיות",
+      "description": "המרה בין מספרים רומיים לעשרוניים"
+    },
+    "margin-calculator": {
+      "name": "מחשבון שוליים",
+      "description": "חישוב שולי רווח ותגיות"
+    },
+    "roi-calculator": {
+      "name": "מחשבון ROI",
+      "description": "חשב החזר על ההשקעה"
+    },
+    "fuel-calculator": {
+      "name": "מחשבון עלויות דלק",
+      "description": "חשב את עלות הדלק לנסיעה"
+    },
+    "pretty-print-url": {
+      "name": "כתובת אתר מודפסת יפה",
+      "description": "עיצוב ולייפות כתובות אתרים לקריאות"
+    }
+  },
+  "Terms": {
+    "title": "תנאים והגבלות",
+    "lastUpdated": "עודכן לאחרונה",
+    "sections": {
+      "acceptance": {
+        "title": "1. הסכמה לתנאים",
+        "content": "על ידי גישה ושימוש ב-DailyDevTools, אתה מסכים ומסכים להיות כפוף לתנאים ולתנאי הסכם זה."
+      },
+      "useLicense": {
+        "title": "2. השתמש ברישיון",
+        "content": "DailyDevTools חופשי לשימוש למטרות אישיות ומסחריות. ייתכן שלא:",
+        "list": {
+          "0": "נסה לבצע הנדסה לאחור או לגרד חלקים משמעותיים מהאתר.",
+          "1": "השתמש באתר בכל דרך הגורמת או עשויה לגרום לנזק לאתר או לפגיעה בזמינות או נגישות האתר."
+        }
+      },
+      "disclaimer": {
+        "title": "3. כתב ויתור",
+        "content": "הכלים ב-DailyDevTools מסופקים \"כמות שהם\". אנחנו לא נותנים אחריות, מפורשת או משתמעת..."
+      },
+      "limitations": {
+        "title": "4. מגבלות",
+        "content": "בשום מקרה לא יהיו DailyDevTools או הספקים שלה אחראים לכל נזק..."
+      },
+      "revisions": {
+        "title": "5. תיקונים",
+        "content": "החומרים המופיעים ב-DailyDevTools עשויים לכלול שגיאות טכניות, טיפוגרפיות או צילום..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "מדיניות פרטיות",
+    "lastUpdated": "עודכן לאחרונה",
+    "intro": "ברוכים הבאים ל-DailyDevTools. אנו מכבדים את פרטיותך ומחויבים להגן על הנתונים האישיים שלך.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. איך הכלים שלנו עובדים (עיבוד מקומי)",
+        "content": "והכי חשוב: הכלים פועלים לחלוטין בדפדפן שלך. נתונים לעולם לא עוזבים את המכשיר שלך."
+      },
+      "dataCollection": {
+        "title": "3. נתונים שאנו אוספים",
+        "content": "אנחנו לא אוספים תוכן. אנו משתמשים בגוגל אנליטיקס לסטטיסטיקות שימוש."
+      },
+      "cookies": {
+        "title": "4. עוגיות",
+        "content": "אנו משתמשים בקובצי Cookie לצורך ניתוח והעדפות מקומיות."
+      },
+      "thirdParty": {
+        "title": "5. קישורים של צד שלישי",
+        "content": "האתר שלנו עשוי להכיל קישורים לצדדים שלישיים."
+      },
+      "changes": {
+        "title": "6. שינויים במדיניות זו",
+        "content": "אנו עשויים לעדכן מדיניות זו מעת לעת."
+      },
+      "contact": {
+        "title": "7. צור קשר",
+        "content": "צור איתנו קשר דרך GitHub או מדיה חברתית."
+      }
+    }
+  },
+  "Blog": {
+    "title": "משאבי מפתחים",
+    "subtitle": "צלילות עמוקות לתוך הכלים שאנו בונים והמושגים מאחוריהם.",
+    "readMore": "קרא עוד",
+    "backToBlog": "חזרה לבלוג",
+    "enjoyedArticle": "נהנית מהמאמר הזה?",
+    "checkTools": "בדוק את הכלים שלנו"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "קלט",
+      "output": "פלט",
+      "format": "פוּרמָט",
+      "minify": "הקטנת",
+      "download": "הורד",
+      "copy": "העתק",
+      "paste": "לְהַדבִּיק",
+      "copied": "מוּעֲתָק!",
+      "upload": "העלה",
+      "sample": "לִטעוֹם",
+      "clear": "נקה",
+      "indent": "לְשַׁנֵן:",
+      "chars": "תווים",
+      "error": "שְׁגִיאָה",
+      "invalid": "קלט לא חוקי",
+      "result": "תוֹצָאָה",
+      "generate": "לִיצוֹר",
+      "calculate": "לְחַשֵׁב",
+      "convert": "לְהַמִיר",
+      "validate": "לְאַמֵת",
+      "resultPlaceholder": "התוצאה תופיע כאן..."
+    },
+    "Base64Encoder": {
+      "encode": "לְהַצְפִּין",
+      "decode": "לְפַעֲנֵחַ",
+      "textToEncode": "טקסט לקידוד",
+      "base64ToDecode": "Base64 לפענוח",
+      "enterText": "הזן טקסט לקידוד...",
+      "enterBase64": "הזן Base64 כדי לפענח...",
+      "encodeAction": "מקודד ל-Base64",
+      "decodeAction": "פענוח מ-Base64",
+      "base64Output": "פלט Base64",
+      "decodedText": "טקסט מפוענח",
+      "resultPlaceholder": "התוצאה תופיע כאן...",
+      "invalidInput": "קלט לא חוקי עבור {mode}"
+    },
+    "QrGenerator": {
+      "content": "תוֹכֶן",
+      "placeholder": "https://example.com",
+      "customization": "התאמה אישית",
+      "foreground": "חֲזִית",
+      "background": "רֶקַע",
+      "download": "הורד"
+    },
+    "HashGenerator": {
+      "inputText": "קלט טקסט",
+      "placeholder": "הזן טקסט ל-hash...",
+      "waiting": "ממתין לקלט..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "צור חדש",
+      "configuration": "תְצוּרָה",
+      "length": "אורך סיסמה",
+      "uppercase": "אותיות רישיות (A-Z)",
+      "numbers": "מספרים (0-9)",
+      "symbols": "סמלים (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "הדבק את ה-JSON שלך כאן...",
+      "outputPlaceholder": "JSON מעוצב יופיע כאן...",
+      "spaces": "רווחים"
+    },
+    "UrlEncoder": {
+      "encode": "לְהַצְפִּין",
+      "decode": "לְפַעֲנֵחַ",
+      "urlToEncode": "כתובת אתר לקידוד",
+      "encodedUrlToDecode": "כתובת אתר מקודדת לפענוח",
+      "enterUrlToEncode": "הזן כתובת אתר או טקסט לקידוד...",
+      "enterUrlToDecode": "הזן כתובת אתר מקודדת לפענוח...",
+      "encodeAction": "מקודד כתובת אתר",
+      "decodeAction": "פענוח כתובת אתר",
+      "encodedUrl": "כתובת אתר מקודדת",
+      "decodedUrl": "כתובת אתר מפוענחת",
+      "resultPlaceholder": "התוצאה תופיע כאן...",
+      "chars": "תווים",
+      "invalidInput": "קלט לא חוקי עבור {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "הדבק את אסימון ה-JWT שלך",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "פענוח JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "הונפק",
+      "expires": "פג תוקף"
+    },
+    "RegexTester": {
+      "expression": "הַבָּעָה",
+      "expressionPlaceholder": "קבוצת לכידה (abc)...",
+      "testString": "מחרוזת בדיקה",
+      "testStringPlaceholder": "הדבק את מחרוזת הבדיקה שלך כאן...",
+      "matchHighlights": "הדגשות של התאמה",
+      "matches": "התאמות",
+      "matchInfo": "מידע על התאמה",
+      "match": "לְהַתְאִים",
+      "index": "מַדָד",
+      "group": "קְבוּצָה",
+      "noMatches": "לא נמצאו התאמות",
+      "highlightPlaceholder": "התאמות יודגשו כאן...",
+      "flagsHelp": "g: גלובלי, i: התעלם ממקרה, m: multiline"
+    },
+    "UuidGenerator": {
+      "generate": "לִיצוֹר",
+      "generateCount": "לִיצוֹר:",
+      "copyAll": "העתק הכל",
+      "copyUuid": "העתק את UUID",
+      "generatedAt": "נוצר באופן מקומי בשעה {time} • גרסה 4 UUIDs"
+    },
+    "WordCounter": {
+      "words": "מילים",
+      "characters": "דמויות",
+      "sentences": "משפטים",
+      "paragraphs": "פסקאות",
+      "readingTime": "זמן קריאה",
+      "min": "min",
+      "textInput": "קלט טקסט",
+      "inputPlaceholder": "התחל להקליד או להדביק את הטקסט שלך כאן כדי לנתח...",
+      "clear": "בָּרוּר"
+    },
+    "TimestampConverter": {
+      "timestamp": "חותמת זמן",
+      "humanDate": "תאריך אנושי",
+      "convert": "לְהַמִיר",
+      "currentTimestamp": "חותמת זמן נוכחית",
+      "inputPlaceholder": "הזן חותמת זמן של יוניקס..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "הדבק את שאילתת ה-SQL שלך כאן...",
+      "outputPlaceholder": "SQL מעוצב יופיע כאן..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "הדבק את קוד ה-CSS שלך כאן...",
+      "outputPlaceholder": "CSS ממוזער יופיע כאן..."
+    },
+    "MarkdownEditor": {
+      "editor": "עוֹרֵך",
+      "preview": "תצוגה מקדימה",
+      "inputPlaceholder": "היכנסו ל-Markdown כאן..."
+    },
+    "TextDiff": {
+      "original": "טקסט מקורי",
+      "changed": "טקסט שונה",
+      "compare": "לְהַשְׁווֹת",
+      "differences": "הבדלים"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "הזן טקסט להמרה...",
+      "generatedSlug": "שבלול שנוצר"
+    },
+    "ImageCompressor": {
+      "selectImage": "בחר תמונה",
+      "quality": "אֵיכוּת",
+      "compress": "לִדחוֹס",
+      "download": "הורד",
+      "originalSize": "גודל מקורי",
+      "compressedSize": "גודל דחוס"
+    },
+    "LoremIpsum": {
+      "paragraphs": "פסקאות",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "GradientGenerator": {
+      "angle": "זָוִית",
+      "colors": "צבעים",
+      "addColor": "הוסף צבע",
+      "copyCss": "העתק CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "תאריך לידה",
+      "calculate": "לְחַשֵׁב",
+      "years": "שנים",
+      "months": "חודשים",
+      "days": "ימים",
+      "totalDays": "סך הימים",
+      "nextBirthday": "יום הולדת הבא ב"
+    },
+    "AsciiConverter": {
+      "text": "טֶקסט",
+      "ascii": "ASCII",
+      "convert": "לְהַמִיר",
+      "inputPlaceholder": "הזן טקסט..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "אופקי (X)",
+      "vertical": "אנכי (Y)",
+      "blur": "לְטַשׁטֵשׁ",
+      "spread": "התפשטות",
+      "colorOpacity": "צבע ואטימות",
+      "inset": "הַבלָעָה"
+    },
+    "BmiCalculator": {
+      "metric": "מטרי (ק\"ג/ס\"מ)",
+      "imperial": "אימפריאלי (lbs/in)",
+      "weight": "מִשׁקָל",
+      "height": "גוֹבַה",
+      "calculate": "חשב BMI",
+      "bmiScore": "ציון ה-BMI שלך",
+      "underweight": "תת משקל",
+      "normal": "משקל תקין",
+      "overweight": "עודף משקל",
+      "obese": "שָׁמֵן מְאֹד"
+    },
+    "CaseConverter": {
+      "inputText": "קלט טקסט",
+      "inputPlaceholder": "הקלד את הטקסט שלך כאן...",
+      "upper": "UPPERCASE",
+      "lower": "אותיות קטנות",
+      "title": "מקרה כותרת",
+      "sentence": "תיק גזר דין",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "לְהַעְתִיק",
+      "conversions": "המרות",
+      "clear": "בָּרוּר"
+    },
+    "ColorConverter": {
+      "hexLabels": "צבע HEX",
+      "rgbLabels": "צבע RGB",
+      "hslLabels": "צבע HSL",
+      "cmykLabels": "צבע CMYK",
+      "copy": "לְהַעְתִיק",
+      "hexToRgbNote": "* תומך כרגע בהמרת HEX ל-RGB/HSL בלבד."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "מספר כרטיס",
+      "validate": "לְאַמֵת",
+      "valid": "מספר כרטיס אשראי תקף",
+      "invalid": "מספר כרטיס אשראי לא חוקי",
+      "placeholder": "הזן מספר כרטיס...",
+      "type": "סוג כרטיס",
+      "checkDigit": "בדוק ספרה",
+      "luhnValid": "תקף אלגוריתם לוהן"
+    },
+    "CipherTools": {
+      "encode": "לְהַצְפִּין",
+      "decode": "לְפַעֲנֵחַ",
+      "rot13": "ROT13",
+      "caesar": "קיסר צופן",
+      "shift": "מִשׁמֶרֶת",
+      "inputPlaceholder": "שלום עולם",
+      "outputPlaceholder": "התוצאה תופיע כאן..."
+    },
+    "CronGenerator": {
+      "minute": "דַקָה",
+      "hour": "שָׁעָה",
+      "dayMonth": "יום (חודש)",
+      "month": "חוֹדֶשׁ",
+      "dayWeek": "יום (שבוע)",
+      "presets": "הגדרות קבועות מראש נפוצות",
+      "everyMinute": "כל דקה",
+      "everyHour": "כל שעה",
+      "everyDayMidnight": "כל יום בחצות",
+      "everySunday": "כל יום ראשון",
+      "everyMonth": "כל חודש",
+      "everyYear": "כל שנה",
+      "formatInfo": "פורמט: * * * * * (דקה שעה יום יום חודש חודש יום שבוע)",
+      "usageInfo": "השתמש ב-* עבור 'כל', */n עבור 'כל n', 1,2,3 עבור רשימה ספציפית."
+    },
+    "DateDiff": {
+      "startDate": "תאריך התחלה",
+      "endDate": "תאריך סיום",
+      "calculate": "לְחַשֵׁב",
+      "difference": "הֶבדֵל",
+      "years": "שנים",
+      "months": "חודשים",
+      "days": "ימים",
+      "totalDays": "סך הימים",
+      "totalWeeks": "סך הכל שבועות",
+      "totalHours": "סה\"כ שעות"
+    },
+    "DeepLinkTester": {
+      "testLink": "קישור לבדיקה",
+      "savedLinks": "קישורים שמורים",
+      "searchPlaceholder": "חפש קישורים שמורים...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "לְהַשִׁיק",
+      "save": "לְהַצִיל",
+      "delete": "לִמְחוֹק",
+      "opens": "נפתח",
+      "scanQr": "סרוק עם המכשיר הנייד שלך כדי לבדוק",
+      "noSavedLinks": "לא נמצאו קישורים שמורים.",
+      "enterLabel": "הזן תווית עבור הקישור הזה:",
+      "saved": "נשמר!",
+      "confirmDelete": "למחוק את הקישור הזה?"
+    },
+    "DeviceInfo": {
+      "screen": "מָסָך",
+      "browser": "דפדפן",
+      "system": "מַעֲרֶכֶת",
+      "resolution": "הַחְלָטָה",
+      "colorDepth": "עומק צבע",
+      "userAgent": "סוכן משתמש",
+      "platform": "פּלַטפוֹרמָה",
+      "language": "שָׂפָה"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "מחיר מקורי",
+      "discountPercent": "דִיסקוֹנט",
+      "additionalDiscount": "הנחה נוספת",
+      "calculate": "לְחַשֵׁב",
+      "youSave": "אתה שומר",
+      "finalPrice": "מחיר סופי",
+      "salesTax": "מס מכירה"
+    },
+    "DnsLookup": {
+      "domain": "תְחוּם",
+      "lookup": "חיפוש",
+      "recordType": "סוג רשומה",
+      "results": "תוצאות",
+      "placeholder": "example.com",
+      "status": "סטָטוּס",
+      "time": "זְמַן",
+      "server": "שרת",
+      "answerSection": "סעיף תשובות",
+      "name": "שֵׁם",
+      "type": "סוּג",
+      "ttl": "TTL",
+      "data": "נְתוּנִים",
+      "noRecords": "לא נמצאו רשומות"
+    },
+    "EmailValidator": {
+      "email": "כתובת אימייל",
+      "validate": "לְאַמֵת",
+      "valid": "תָקֵף",
+      "invalid": "לֹא בְּתוֹקֶף",
+      "suggestion": "הַצָעָה",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "העלה תמונה",
+      "generate": "לִיצוֹר",
+      "download": "הורד",
+      "sizes": "מידות"
+    },
+    "FuelCalculator": {
+      "distance": "מֶרְחָק",
+      "fuelEfficiency": "יעילות דלק",
+      "fuelPrice": "מחיר דלק",
+      "calculate": "לְחַשֵׁב",
+      "result": "תוֹצָאָה",
+      "totalCost": "עלות כוללת",
+      "fuelNeeded": "דרוש דלק"
+    },
+    "GridGenerator": {
+      "columns": "עמודות",
+      "rows": "שורות",
+      "gap": "פַּעַר",
+      "preview": "תצוגה מקדימה",
+      "copyCss": "העתק CSS",
+      "rowGap": "פער שורות",
+      "colGap": "פער עמודות",
+      "options": "אפשרויות"
+    },
+    "HmacGenerator": {
+      "message": "הוֹדָעָה",
+      "secret": "סוֹד",
+      "algorithm": "אַלגוֹרִיתְם",
+      "generate": "לִיצוֹר",
+      "inputPlaceholder": "קלט טקסט...",
+      "secretPlaceholder": "סוֹד..."
+    },
+    "HtmlEncoder": {
+      "encode": "לְהַצְפִּין",
+      "decode": "לְפַעֲנֵחַ",
+      "resultPlaceholder": "התוצאה תופיע כאן...",
+      "inputPlaceholder": "הדבק כאן HTML..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "חפש קוד (למשל 404) או שם...",
+      "code": "קוד",
+      "name": "שֵׁם",
+      "description": "תֵאוּר"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "לְאַמֵת",
+      "valid": "תָקֵף",
+      "invalid": "לֹא בְּתוֹקֶף",
+      "placeholder": "הזן IBAN...",
+      "inputLabel": "הזן מספר IBAN",
+      "validTitle": "Benchmark חוקי",
+      "invalidTitle": "סכום בדיקה לא חוקי",
+      "validDesc": "פורמט ה-IBAN וסכום הבדיקה נכונים.",
+      "invalidDesc": "ה-IBAN אינו תואם לאלגוריתם סכום הבדיקה."
+    },
+    "ImageBase64": {
+      "upload": "העלה",
+      "convert": "לְהַמִיר",
+      "copy": "לְהַעְתִיק",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "העלה תמונה",
+      "convertToBase64": "המר ל-Base64",
+      "convertToImage": "המר לתמונה",
+      "base64String": "מחרוזת Base64",
+      "download": "הורד"
+    },
+    "ImageConverter": {
+      "selectImage": "בחר תמונה",
+      "format": "פוּרמָט",
+      "convert": "לְהַמִיר",
+      "download": "הורד",
+      "quality": "אֵיכוּת"
+    },
+    "InterestCalculator": {
+      "principal": "קֶרֶן",
+      "rate": "שיעור ריבית",
+      "time": "פרק זמן (שנים)",
+      "calculate": "לְחַשֵׁב",
+      "simpleInterest": "פָּשׁוּט",
+      "compoundInterest": "תִרכּוֹבֶת",
+      "totalAmount": "ערך כולל",
+      "type": "סוּג",
+      "frequency": "תדר מורכב",
+      "annually": "מדי שנה",
+      "monthly": "יַרחוֹן",
+      "daily": "יוֹמִי",
+      "year": "שָׁנָה"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "הזן JSON...",
+      "convert": "לְהַמִיר",
+      "format": "פוּרמָט",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON ל-CSV",
+      "csvToJson": "CSV ל-JSON",
+      "jsonInput": "קלט JSON",
+      "csvInput": "קלט CSV",
+      "jsonOutput": "פלט JSON",
+      "csvOutput": "פלט CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON מקורי",
+      "modified": "JSON שונה",
+      "compare": "לְהַשְׁווֹת",
+      "differences": "הבדלים"
+    },
+    "KeycodeInfo": {
+      "pressKey": "הקש על מקש כלשהו",
+      "key": "מַפְתֵחַ",
+      "code": "קוד",
+      "keyCode": "KeyCode",
+      "which": "אֵיזֶה",
+      "location": "מִקוּם",
+      "modifiers": "משנה",
+      "standard": "תֶקֶן",
+      "left": "שְׁמֹאל",
+      "right": "יָמִינָה",
+      "numpad": "לוח מספרים",
+      "space": "(מֶרחָב)",
+      "info": "הצג אירוע JavaScript KeyCode, קוד ועוד."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "הדבק את הטקסט שלך כאן כדי לנתח את תדירות מילות המפתח...",
+      "analyze": "לְנַתֵחַ",
+      "keyword": "מילת מפתח",
+      "count": "לִסְפּוֹר",
+      "density": "צְפִיפוּת"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "הכנס לרשימה שלך כאן...",
+      "sort": "סוּג",
+      "reverse": "לַהֲפוֹך",
+      "shuffle": "לְעַרְבֵּב",
+      "deduplicate": "ביטול כפילות",
+      "ascending": "עוֹלֶה",
+      "descending": "יורד",
+      "length": "מֶשֶׁך",
+      "trim": "חתוך ריק",
+      "lines": "קווים:",
+      "chars": "דמויות:"
+    },
+    "LoanCalculator": {
+      "principal": "קֶרֶן",
+      "interestRate": "שיעור ריבית",
+      "term": "מוּנָח",
+      "calculate": "לְחַשֵׁב",
+      "monthlyPayment": "תשלום חודשי",
+      "totalInterest": "סך ריבית",
+      "totalPayment": "סך התשלום",
+      "loanDetails": "פרטי הלוואה",
+      "loanAmount": "סכום ההלוואה",
+      "loanTerm": "תקופת הלוואה",
+      "years": "שנים",
+      "months": "חודשים",
+      "interest": "אִינטֶרֶס"
+    },
+    "MacGenerator": {
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק",
+      "separator": "מפריד",
+      "format": "פוּרמָט",
+      "quantity": "כַּמוּת",
+      "uppercase": "אותיות רישיות"
+    },
+    "MarginCalculator": {
+      "cost": "עֲלוּת",
+      "price": "מחיר מכירה",
+      "calculate": "לְחַשֵׁב",
+      "margin": "מֶתַח",
+      "markup": "סימון",
+      "profit": "לְהַרְוִיחַ",
+      "revenue": "הַכנָסָה",
+      "netProfit": "רווח נקי",
+      "grossMargin": "רווח גולמי"
+    },
+    "PasswordManager": {
+      "masterPassword": "סיסמת מאסטר",
+      "unlock": "לִפְתוֹחַ",
+      "searchPlaceholder": "חפש חשבונות...",
+      "addNew": "הוסף חדש",
+      "siteName": "שם האתר",
+      "username": "שם משתמש",
+      "password": "סִיסמָה",
+      "save": "לְהַצִיל",
+      "delete": "לִמְחוֹק"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "הקלד כאן...",
+      "strength": "כּוֹחַ",
+      "weak": "חַלָשׁ",
+      "fair": "הוֹגֶן",
+      "good": "טוֹב",
+      "strong": "חָזָק",
+      "requirements": "דרישות",
+      "length": "8+ תווים",
+      "number": "כולל מספר",
+      "uppercase": "כולל אותיות רישיות",
+      "symbol": "כולל סמל"
+    },
+    "PayPalLink": {
+      "username": "שם משתמש PayPal.me",
+      "amount": "סְכוּם",
+      "currency": "מַטְבֵּעַ",
+      "generate": "לִיצוֹר",
+      "itemName": "שם פריט",
+      "link": "לְקַשֵׁר",
+      "yourLink": "הקישור שלך ל-PayPal",
+      "openPaypal": "פתח את PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "כללים",
+      "addRule": "הוסף כלל",
+      "allow": "לְהַתִיר",
+      "disallow": "אסור",
+      "sitemap": "כתובת אתר של מפת אתר (אופציונלי)",
+      "output": "נוצר robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "עֵרֶך",
+      "percentage": "אֲחוּזִים",
+      "calculate": "לְחַשֵׁב",
+      "result": "תוֹצָאָה",
+      "whatIs": "מה זה",
+      "of": "% של",
+      "isWhatPercentOf": "הוא מאיזה %",
+      "percentChangeFrom": "% שינוי מ",
+      "to": "אֶל"
+    },
+    "PomodoroTimer": {
+      "work": "זמן מיקוד",
+      "shortBreak": "הפסקה קצרה",
+      "longBreak": "הפסקה ארוכה",
+      "start": "הַתחָלָה",
+      "pause": "הַפסָקָה",
+      "reset": "אִתחוּל",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "מִספָּר",
+      "calculate": "לְחַשֵׁב",
+      "factors": "פריים פקטורים",
+      "inputLabel": "הזן מספר",
+      "placeholder": "לְמָשָׁל 120",
+      "isPrime": "המספר הזה הוא ראשי!",
+      "isComposite": "המספר הזה הוא מורכב"
+    },
+    "RoiCalculator": {
+      "investment": "הַשׁקָעָה",
+      "returns": "מחזיר",
+      "calculate": "לְחַשֵׁב",
+      "roi": "ROI",
+      "profit": "לְהַרְוִיחַ",
+      "finalValue": "ערך סופי",
+      "time": "זמן (שנים)",
+      "totalGain": "רווח כולל",
+      "annualizedRoi": "החזר ROI שנתי"
+    },
+    "RomanNumerals": {
+      "decimal": "עֶשׂרוֹנִי",
+      "decimalPlaceholder": "2024",
+      "roman": "רוֹמִי",
+      "convert": "לְהַמִיר",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "התחל להקליט",
+      "stopRecording": "עצור את ההקלטה",
+      "download": "הורד",
+      "recording": "הַקלָטָה..."
+    },
+    "SignatureGenerator": {
+      "draw": "לִמְשׁוֹך",
+      "clear": "בָּרוּר",
+      "download": "הורד",
+      "penColor": "צבע עט",
+      "penSize": "גודל עט"
+    },
+    "SpeechToText": {
+      "startListening": "התחל להקשיב",
+      "stopListening": "תפסיק להקשיב",
+      "transcript": "תמלול",
+      "placeholder": "תמלול יופיע כאן..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO משתמשים (מזהה, שם, גיל) VALUES (1, 'ג'ון', 30);",
+      "convert": "לְהַמִיר",
+      "result": "תוֹצָאָה"
+    },
+    "Stopwatch": {
+      "start": "הַתחָלָה",
+      "stop": "לְהַפְסִיק",
+      "reset": "אִתחוּל",
+      "lap": "חֵיק"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "כתובת IP",
+      "subnetMask": "מסכת רשת משנה",
+      "calculate": "לְחַשֵׁב",
+      "networkAddress": "כתובת רשת",
+      "broadcastAddress": "כתובת לשידור",
+      "usableHosts": "מארחים שימושיים"
+    },
+    "SvgToPng": {
+      "pasteSvg": "הדבק SVG",
+      "uploadSvg": "העלה SVG",
+      "convert": "לְהַמִיר",
+      "download": "הורד"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "הזן טקסט לדבר...",
+      "speak": "לְדַבֵּר",
+      "stop": "לְהַפְסִיק",
+      "voice": "קוֹל",
+      "rate": "קֶצֶב",
+      "pitch": "פְּסִיעָה"
+    },
+    "TextTools": {
+      "inputPlaceholder": "הקלידו משהו...",
+      "reverse": "לַהֲפוֹך",
+      "uppercase": "אותיות רישיות",
+      "lowercase": "אותיות קטנות",
+      "encode": "לְהַצְפִּין"
+    },
+    "TimezoneConverter": {
+      "from": "מִן",
+      "to": "אֶל",
+      "convert": "לְהַמִיר",
+      "currentTime": "זמן נוכחי"
+    },
+    "TokenGenerator": {
+      "length": "מֶשֶׁך",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק",
+      "includeNumbers": "כלול מספרים",
+      "includeSymbols": "כלול סמלים"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "הזן כתובת אתר...",
+      "parse": "לְנַתֵחַ",
+      "protocol": "פּרוֹטוֹקוֹל",
+      "host": "מְאָרֵחַ",
+      "path": "נָתִיב",
+      "query": "שְׁאֵלָה"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "כתובת האתר",
+      "source": "מָקוֹר",
+      "medium": "בֵּינוֹנִי",
+      "campaign": "מַסָע",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "VatCalculator": {
+      "amount": "סְכוּם",
+      "vatRate": "שיעור מע\"מ",
+      "addVat": "הוסף מע\"מ",
+      "removeVat": "להסיר מע\"מ",
+      "calculate": "לְחַשֵׁב"
+    },
+    "VibrationTester": {
+      "vibrate": "לְנַדְנֵד",
+      "pattern": "תַבְנִית",
+      "duration": "מֶשֶׁך",
+      "test": "מִבְחָן"
+    },
+    "WeekNumber": {
+      "currentWeek": "מספר שבוע נוכחי",
+      "yearProgress": "התקדמות שנה",
+      "week": "שָׁבוּעַ"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "מספר טלפון",
+      "message": "הוֹדָעָה",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק",
+      "placeholder": "שלום, אני מעוניין..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "הדבק כתובת אתר של סרטון YouTube...",
+      "getThumbnail": "קבל תמונה ממוזערת",
+      "download": "הורד"
+    },
+    "CrontabGenerator": {
+      "minute": "דַקָה",
+      "hour": "שָׁעָה",
+      "day": "יְוֹם",
+      "month": "חוֹדֶשׁ",
+      "weekday": "יוֹם חוֹל",
+      "expression": "הַבָּעָה",
+      "description": "תֵאוּר"
+    },
+    "ChmodCalculator": {
+      "owner": "בַּעַל",
+      "group": "קְבוּצָה",
+      "others": "אחרים",
+      "read": "לִקְרוֹא",
+      "write": "לִכתוֹב",
+      "execute": "לְבַצֵעַ",
+      "numeric": "מספרי",
+      "symbolic": "סִמלִי"
+    },
+    "HtpasswdGenerator": {
+      "username": "שם משתמש",
+      "password": "סִיסמָה",
+      "algorithm": "אַלגוֹרִיתְם",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "AspectRatio": {
+      "width": "רוֹחַב",
+      "height": "גוֹבַה",
+      "ratio": "יַחַס",
+      "calculate": "לְחַשֵׁב"
+    },
+    "CssClipPath": {
+      "shape": "צוּרָה",
+      "preview": "תצוגה מקדימה",
+      "copyCss": "העתק CSS"
+    },
+    "CssCursor": {
+      "cursor": "סַמָן",
+      "preview": "תצוגה מקדימה",
+      "copyCss": "העתק CSS"
+    },
+    "CssTriangle": {
+      "direction": "כיוון",
+      "size": "גוֹדֶל",
+      "color": "צֶבַע",
+      "preview": "תצוגה מקדימה",
+      "copyCss": "העתק CSS"
+    },
+    "MetaGenerator": {
+      "title": "כּוֹתֶרֶת",
+      "description": "תֵאוּר",
+      "keywords": "מילות מפתח",
+      "author": "מְחַבֵּר",
+      "url": "URL",
+      "image": "תְמוּנָה",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק",
+      "titlePlaceholder": "האתר המדהים שלי",
+      "descriptionPlaceholder": "תיאור קצר של האתר שלך...",
+      "keywordsPlaceholder": "אינטרנט, כלים, פיתוח",
+      "authorPlaceholder": "שמך",
+      "outputPlaceholder": "מטא תגים יופיעו כאן..."
+    },
+    "OgGenerator": {
+      "title": "כּוֹתֶרֶת",
+      "description": "תֵאוּר",
+      "url": "URL",
+      "image": "תְמוּנָה",
+      "type": "סוּג",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "TwitterCard": {
+      "cardType": "סוג כרטיס",
+      "title": "כּוֹתֶרֶת",
+      "description": "תֵאוּר",
+      "image": "תְמוּנָה",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "MarkdownTable": {
+      "rows": "שורות",
+      "columns": "עמודות",
+      "header": "כּוֹתֶרֶת",
+      "addRow": "הוסף שורה",
+      "addColumn": "הוסף עמודה",
+      "generate": "לִיצוֹר",
+      "copy": "לְהַעְתִיק"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "פוּרמָט",
+      "copy": "לְהַעְתִיק"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "עיצוב JSON: שיטות עבודה מומלצות למפתחים",
+      "excerpt": "למד מדוע עיצוב נכון של JSON חשוב לניפוי באגים וכיצד להפוך אותו לאוטומטי בזרימת העבודה שלך.",
+      "category": "הִתפַּתְחוּת"
+    },
+    "mastering-regex": {
+      "title": "שליטה בביטויים רגולריים: מדריך ויזואלי",
+      "excerpt": "Regex לא חייב להיות מפחיד. אנו מפרקים דפוסים נפוצים עבור אימות דוא\"ל, כתובות URL ועוד.",
+      "category": "שֶׁל מוֹרֶה"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: כיצד לתזמן משימות",
+      "excerpt": "הבן את תחביר 5 הכוכבים של Cron וכיצד לתזמן גיבויים, מיילים ותסריטים בלינוקס.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "מדוע מנהלי סיסמאות מקומיים בטוחים יותר (חלופת KeyPass)",
+      "excerpt": "פריצות בענן הן נפוצות. למד מדוע אחסון סיסמאות מקומי עם הצפנת AES-256 הוא ההימור הבטוח ביותר לאבטחה אישית.",
+      "category": "בִּטָחוֹן"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "כלי חיפוש...",
+    "noResults": "לא נמצאו תוצאות.",
+    "select": "לִבחוֹר",
+    "navigate": "נווט"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "שלח משוב",
+    "feedback": "מָשׁוֹב",
+    "thankYou": "תודה לך!",
+    "feedbackSent": "המשוב שלך נשלח בהצלחה.",
+    "close": "לִסְגוֹר",
+    "name": "שם (אופציונלי)",
+    "namePlaceholder": "השם שלך",
+    "email": "אימייל (אופציונלי)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "סוג משוב",
+    "typeSuggestion": "💡 הצעה",
+    "typeBug": "🐛 דוח באגים",
+    "typeFeature": "✨ בקשת תכונה",
+    "typeOther": "📝 אחר",
+    "message": "הודעה *",
+    "messagePlaceholder": "ספר לנו מה אתה חושב...",
+    "sending": "שְׁלִיחָה...",
+    "weReadEveryMessage": "אנחנו קוראים כל הודעה. תודה שעזרת לנו להשתפר!"
+  },
+  "ShareButton": {
+    "shareTool": "כלי שיתוף",
+    "copiedLink": "הקישור הועתק!"
+  },
+  "TextDiff": {
+    "original": "טקסט מקורי",
+    "changed": "טקסט שונה",
+    "update": "עדכון Diff",
+    "old": "יָשָׁן",
+    "new": "חָדָשׁ",
+    "content": "תוֹכֶן"
+  },
+  "CrontabGenerator": {
+    "minute": "דַקָה",
+    "hour": "שָׁעָה",
+    "day": "יְוֹם",
+    "month": "חוֹדֶשׁ",
+    "weekday": "יוֹם חוֹל",
+    "min": "מינימום",
+    "mon": "יום שני",
+    "week": "שָׁבוּעַ",
+    "presets": "הגדרות מהירות מראש",
+    "everyMinute": "כל דקה",
+    "every5Minutes": "כל 5 דקות",
+    "everyHour": "כל שעה",
+    "everyDayMidnight": "כל יום בחצות",
+    "everyWeek": "כל שבוע",
+    "everyMonth": "כל חודש"
+  },
+  "SpeechToText": {
+    "notSupported": "הדפדפן שלך אינו תומך ב-Web Speech API. אנא השתמש בכרום.",
+    "placeholder": "תמלול יופיע כאן...",
+    "listening": "הַקשָׁבָה...",
+    "start": "לחץ על המיקרופון כדי להתחיל"
+  },
+  "OgGenerator": {
+    "title": "כּוֹתֶרֶת",
+    "description": "תֵאוּר",
+    "image": "כתובת האתר של התמונה",
+    "url": "כתובת אתר קנונית",
+    "type": "סוּג",
+    "website": "אֲתַר אִינטֶרנֶט",
+    "article": "סָעִיף",
+    "profile": "פּרוֹפִיל",
+    "preview": "תצוגה מקדימה (פייסבוק/לינקדאין)",
+    "generatedHtml": "נוצר HTML",
+    "copy": "לְהַעְתִיק"
+  },
+  "WeekNumber": {
+    "checkLabel": "בדוק את מספר השבוע לתאריך",
+    "yearProgress": "התקדמות שנה"
+  },
+  "RelatedTools": {
+    "title": "אולי גם תאהב",
+    "subtitle": "חקור כלים פופולריים אחרים למפתחים",
+    "openTool": "פתח את הכלי"
+  },
+  "Breadcrumb": {
+    "home": "בַּיִת",
+    "tools": "כְּלֵי עֲבוֹדָה"
+  },
+  "SvgToPng": {
+    "upload": "העלה קובץ SVG",
+    "browse": "או לחץ כדי לדפדף",
+    "paste": "...או הדבק קוד SVG",
+    "preview": "תצוגה מקדימה של PNG (קנה מידה 2x)",
+    "download": "הורד PNG",
+    "errorType": "נא להעלות קובץ SVG חוקי.",
+    "errorRender": "עיבוד SVG נכשל. ודא שהוא XML חוקי.",
+    "errorProcess": "שגיאה בעיבוד SVG."
+  },
+  "GradientGenerator": {
+    "config": "תְצוּרָה",
+    "colors": "צבעים",
+    "type": "סוּג",
+    "angle": "זָוִית",
+    "random": "אַקרַאִי",
+    "copyCss": "העתק CSS",
+    "copied": "מוּעֲתָק"
+  },
+  "TimezoneConverter": {
+    "date": "תַאֲרִיך",
+    "time": "זמן (מקומי)",
+    "invalid": "לֹא בְּתוֹקֶף",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "ניו יורק (EST/EDT)",
+      "losAngeles": "לוס אנג'לס (PST/PDT)",
+      "london": "לונדון (GMT/BST)",
+      "paris": "פריז (CET/CEST)",
+      "tokyo": "טוקיו (JST)",
+      "sydney": "סידני (AEST/AEDT)",
+      "dubai": "דובאי (GST)",
+      "india": "הודו (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "מחולל מספרים",
+    "listGen": "מחולל רשימות",
+    "coinGen": "מחולל מטבעות",
+    "min": "מינימום",
+    "max": "מקסימום",
+    "count": "לִסְפּוֹר",
+    "generate": "לִיצוֹר",
+    "listLabel": "רשימת פריטים (אחד בכל שורה)",
+    "pick": "בחר פריט אקראי",
+    "winner": "המנצח הוא...",
+    "flip": "Flip Coin",
+    "heads": "ראשים",
+    "tails": "פרָאק"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "מקליט את המסך שלך...",
+    "titleFree": "מקליט מסך מקוון בחינם",
+    "desc": "צלם את המסך, חלון האפליקציה או כרטיסיית הדפדפן שלך. ללא סימן מים, ללא הגבלת זמן.",
+    "start": "התחל להקליט",
+    "stop": "עצור את ההקלטה",
+    "browserSupport": "עובד הכי טוב ב-Chrome, Edge ו-Firefox בשולחן העבודה."
+  },
+  "CssCursor": {
+    "hoverTest": "רחף לכאן כדי לבדוק"
+  },
+  "VatCalculator": {
+    "amount": "סְכוּם",
+    "rate": "שיעור מע\"מ (%)",
+    "addVat": "הוסף מע\"מ",
+    "removeVat": "להסיר מע\"מ",
+    "netAmount": "סכום נטו",
+    "vatAmount": "סכום מע\"מ",
+    "grossTotal": "סך הכל",
+    "netTotal": "סך הכל",
+    "grossAmount": "סכום ברוטו"
+  },
+  "MyIP": {
+    "ipLabel": "כתובת ה-IP הציבורית שלך",
+    "loading": "טְעִינָה...",
+    "isp": "ספק אינטרנט (ISP)",
+    "location": "מִקוּם",
+    "asn": "ASN",
+    "timezone": "אזור זמן",
+    "note": "זוהי כתובת ה-IP הגלויה לאתרים שבהם אתה מבקר. זה עשוי להיות שונה מה-IP המקומי שלך אם אתה משתמש ב-VPN או פרוקסי."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "הזן כתובת אתר",
+    "formatted": "פלט מעוצב",
+    "copy": "לְהַעְתִיק",
+    "copied": "מוּעֲתָק",
+    "placeholder": "הדבק כתובת אתר למעלה כדי לראות אותה בפורמט."
+  },
+  "WhatsAppLink": {
+    "phone": "מספר טלפון (עם קוד מדינה)",
+    "message": "הודעה מלאה מראש",
+    "hint": "אל תכלול +, - או ().",
+    "yourLink": "קישור הוואטסאפ שלך",
+    "open": "פתח את צ'אט"
+  },
+  "UrlParser": {
+    "enterUrl": "הזן כתובת אתר",
+    "params": "פרמטרי שאילתה",
+    "error": "כתובת אתר לא חוקית"
+  },
+  "FaviconGenerator": {
+    "upload": "העלה תמונה",
+    "browse": "מומלץ: 512x512 PNG",
+    "original": "מְקוֹרִי",
+    "favicon": "favicon.ico (32x32)",
+    "download": "הורד את Favicon.png",
+    "note": "* כרגע מייצר פייביקוני PNG בגודל 32x32. שנה את השם ל-.ico במידת הצורך לתמיכה מדור קודם."
+  },
+  "SubnetCalculator": {
+    "ip": "כתובת IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "לְחַשֵׁב",
+    "subnetMask": "מסכת רשת משנה",
+    "networkAddress": "כתובת רשת",
+    "firstHost": "מארח ראשון",
+    "lastHost": "מארח אחרון",
+    "broadcastAddress": "כתובת לשידור",
+    "totalHosts": "סך הכל מארחים"
+  },
+  "SlugGenerator": {
+    "inputLabel": "הזן את כותרת המאמר/טקסט",
+    "generated": "שבלול שנוצר",
+    "copy": "העתק Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "קלט SQL (הצהרות INSERT בלבד)",
+    "convert": "המר ל-JSON",
+    "error": "לא ניתן לנתח את SQL. ודא שמדובר בהצהרות INSERT INTO סטנדרטיות."
+  },
+  "MarkdownTable": {
+    "addRow": "+ הוסף שורה",
+    "addCol": "+ הוסף עמודה",
+    "headerPlaceholder": "כּוֹתֶרֶת",
+    "outputLabel": "פלט סימון",
+    "copy": "העתק Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "סוג כרטיס",
+    "siteHandle": "ידית אתר (למשל @twitter)",
+    "title": "כּוֹתֶרֶת",
+    "description": "תֵאוּר",
+    "imageUrl": "כתובת האתר של התמונה",
+    "preview": "תצוגה מקדימה",
+    "generatedHtml": "נוצר HTML",
+    "copy": "לְהַעְתִיק",
+    "placeholderTitle": "כותרת הכרטיס",
+    "placeholderDesc": "התיאור מגיע לכאן..."
+  },
+  "TextToSpeech": {
+    "placeholder": "הזן טקסט לדבר...",
+    "voice": "קוֹל",
+    "speed": "מְהִירוּת",
+    "pitch": "פְּסִיעָה",
+    "speak": "לְדַבֵּר"
+  },
+  "TokenGenerator": {
+    "length": "מֶשֶׁך",
+    "includeNumbers": "כלול מספרים",
+    "includeSymbols": "כלול סמלים",
+    "generate": "צור אסימון"
+  },
+  "CssTriangle": {
+    "direction": "כיוון",
+    "color": "צֶבַע",
+    "width": "רוחב (פיקסלים)",
+    "height": "גובה (px)",
+    "copy": "לְהַעְתִיק"
+  },
+  "UnitConverter": {
+    "length": "מֶשֶׁך",
+    "weight": "מִשׁקָל",
+    "temperature": "טֶמפֶּרָטוּרָה",
+    "meters": "מטרים",
+    "kilometers": "קילומטרים",
+    "centimeters": "סנטימטרים",
+    "millimeters": "מילימטרים",
+    "inches": "אינצ'ים",
+    "feet": "רגליים",
+    "yards": "יארדים",
+    "miles": "מיילים",
+    "kilograms": "קילוגרמים",
+    "grams": "גרם",
+    "pounds": "פאונד",
+    "ounces": "אונקיות",
+    "celsius": "צֶלסִיוּס",
+    "fahrenheit": "פרנהייט",
+    "kelvin": "קלווין"
+  },
+  "CssClipPath": {
+    "shapes": "צורות",
+    "preview": "תצוגה מקדימה",
+    "cssCode": "קוד CSS",
+    "copy": "לְהַעְתִיק",
+    "copied": "מוּעֲתָק"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "העלה תמונה",
+    "uploadDesc": "JPG, PNG או WebP. אנחנו דוחסים אותו באופן מקומי.",
+    "selectImage": "בחר תמונה",
+    "settings": "הגדרות דחיסה",
+    "quality": "אֵיכוּת",
+    "originalSize": "גודל מקורי",
+    "compressedSize": "גודל דחוס",
+    "saving": "חִסָכוֹן",
+    "download": "הורד"
+  },
+  "HtpasswdGenerator": {
+    "username": "שם משתמש",
+    "password": "סִיסמָה",
+    "algorithm": "אַלגוֹרִיתְם",
+    "generate": "צור כניסה",
+    "result": "תוֹצָאָה",
+    "sha1": "SHA-1 (לא מאובטח אבל סטנדרטי)",
+    "notSupported": "רק SHA-1 נתמך בגרסה זו בצד הלקוח."
+  },
+  "MetaTags": {
+    "pageTitle": "כותרת העמוד",
+    "description": "תֵאוּר",
+    "author": "מְחַבֵּר"
+  },
+  "AgeCalculator": {
+    "dob": "תַאֲרִיך לֵידָה",
+    "age": "גִיל",
+    "years": "שנים",
+    "months": "חודשים",
+    "days": "ימים",
+    "nextBirthday": "יום הולדת הבא"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "כתובת אתר (חובה)",
+    "source": "מקור מסע פרסום (חובה)",
+    "medium": "בינוני מסע פרסום (חובה)",
+    "name": "שם מסע הפרסום (חובה)",
+    "term": "טווח מסע פרסום (אופציונלי)",
+    "content": "תוכן מסע פרסום (אופציונלי)",
+    "generatedUrl": "כתובת אתר שנוצרה",
+    "copy": "העתק כתובת URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "זמן יוניקס נוכחי",
+    "timestampLabel": "חותמת זמן (שניות)",
+    "isoLabel": "פורמט תאריך ISO",
+    "utcDate": "תאריך UTC",
+    "localDate": "תאריך מקומי",
+    "relative": "יַחֲסִי"
+  },
+  "SignatureGenerator": {
+    "color": "צֶבַע",
+    "width": "רוֹחַב",
+    "clear": "בָּרוּר",
+    "download": "הורד PNG",
+    "signHere": "תחתום כאן",
+    "note": "החתימות מעובדות באופן מקומי בדפדפן שלך. אנחנו לא מאחסנים או מעלים אותם."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "תצוגה מקדימה חיה"
+  },
+  "CipherTools": {
+    "shiftAmount": "כמות משמרת (N)",
+    "inputText": "קלט טקסט",
+    "outputText": "פלט טקסט",
+    "rot13": "ROT13",
+    "caesar": "קיסר (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "רזולוציית מסך",
+    "browser": "דפדפן",
+    "cpuCores": "ליבות מעבד",
+    "battery": "סוֹלְלָה",
+    "detailedSpecs": "מפרט מפורט",
+    "userAgent": "סוכן משתמש",
+    "platform": "פּלַטפוֹרמָה",
+    "windowSize": "גודל חלון",
+    "pixelRatio": "יחס פיקסלים",
+    "colorDepth": "עומק צבע",
+    "ram": "RAM",
+    "cookiesEnabled": "קובצי Cookie מופעלים",
+    "onlineStatus": "סטטוס מקוון",
+    "unknown": "לֹא יְדוּעַ",
+    "yes": "כֵּן",
+    "no": "לֹא",
+    "enabled": "מופעל",
+    "disabled": "נָכֶה"
+  },
+  "ChmodCalculator": {
+    "owner": "בַּעַל",
+    "group": "קְבוּצָה",
+    "public": "פּוּמְבֵּי",
+    "read": "לִקְרוֹא",
+    "write": "לִכתוֹב",
+    "execute": "לְבַצֵעַ",
+    "numeric": "מספרי",
+    "symbolic": "סִמלִי"
+  },
+  "PasswordManager": {
+    "title": "מנהל סיסמאות",
+    "desc": "אחסן ונהל את הסיסמאות שלך באופן מאובטח באופן מקומי.",
+    "unlock": "פתח את נעילת הכספת",
+    "create": "צור כספת חדשה",
+    "unlockDesc": "הזן את סיסמת האב שלך כדי לגשת לחשבונות שלך.",
+    "createDesc": "הגדר סיסמת אב חזקה. זה מצפין את הנתונים שלך באופן מקומי.",
+    "masterPassword": "סיסמת מאסטר",
+    "unlockBtn": "לִפְתוֹחַ",
+    "createBtn": "צור כספת",
+    "note": "הנתונים מאוחסנים בדפדפן שלך באמצעות הצפנת AES-GCM. לא נוכל לשחזר את הסיסמה שלך אם תאבד.",
+    "myPasswords": "הסיסמאות שלי",
+    "addNew": "הוסף חדש",
+    "search": "חפש חשבונות...",
+    "noPasswords": "לא נמצאו סיסמאות.",
+    "addAccount": "הוסף חשבון",
+    "accountTitle": "כותרת / אתר אינטרנט",
+    "username": "שם משתמש / אימייל",
+    "password": "סִיסמָה",
+    "url": "כתובת אתר (אופציונלי)",
+    "save": "שמור חשבון",
+    "cancel": "לְבַטֵל",
+    "incorrectPassword": "סיסמה שגויה או נתונים פגומים.",
+    "loading": "טְעִינָה..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "פרטי אתר",
+    "pageTitle": "כותרת העמוד",
+    "description": "תֵאוּר",
+    "keywords": "מילות מפתח (מופרדות בפסיק)",
+    "author": "מְחַבֵּר",
+    "socialPreview": "תצוגה מקדימה חברתית (OG וטוויטר)",
+    "websiteUrl": "כתובת האתר",
+    "previewImage": "תצוגה מקדימה של כתובת האתר של תמונה",
+    "generatedHtml": "נוצר HTML",
+    "copy": "העתק HTML",
+    "copied": "מוּעֲתָק"
+  },
+  "VibrationTester": {
+    "worksOnly": "עובד רק על מכשירים עם חומרת רטט (למשל טלפונים).",
+    "duration": "משך זמן (מילישניות)",
+    "vibrateOnce": "רטט פעם אחת",
+    "pulsePattern": "דפוס דופק",
+    "longPulse": "דופק ארוך",
+    "stop": "לְהַפְסִיק"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "למה עיצוב JSON חשוב",
+      "block_2": "JSON (סימון אובייקט JavaScript) היא שפת האינטרנט.אבל JSON גולמי שמוחזר ממשקי API הוא לעתים קרובות בלגן מצומצם.העיצוב שלו הופך אותו לקריאה, לניפוי באגים ובטוח.",
+      "block_3": "1.הקריאה היא המלך",
+      "block_4": "כשאתה מנקה באגים בתגובת API של 5000 שורות, הזחה מצילה חיים.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">פורמט JSON</a> שלנו משתמש בהזחה של 2 רווחים או 4 רווחים כדי להבהיר את המבנה.",
+      "block_5": "2.אימות",
+      "block_6": "פסיק אחד חסר יכול לשבור את האפליקציה שלך.אמת תמיד את ה-JSON שלך לפני שתעביר אותו לקובצי תצורה.",
+      "block_7": "מסקנה",
+      "block_8": "אל תבזבז זמן בבדיקה ידנית של סוגריים.השתמש בכלים אוטומטיים."
+    },
+    "mastering-regex": {
+      "block_1": "הסבר רגיל",
+      "block_2": "ביטויים רגולריים הם חזקים אך מבלבלים.בואו נראה אותם.",
+      "block_3": "דפוסים נפוצים",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">דוא\"ל:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">טלפון:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "בדוק את התבניות הללו באופן מיידי עם <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">בודק הרקס</a> שלנו."
+    },
+    "cron-job-scheduling": {
+      "block_1": "חמשת הכוכבים של Cron",
+      "block_2": "דקה, שעה, יום בחודש, חודש, יום בשבוע.זה כל מה שזה.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "דוגמאות",
+      "block_5": "זקוק לעזרה?השתמש ב<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> שלנו כדי לבנות ביטויים בצורה ויזואלית."
+    },
+    "secure-password-storage-local": {
+      "block_1": "הבעיה עם כספות בענן",
+      "block_2": "LastPass, Okta וענקיות אחרות סבלו מהפרות.כשהכספת שלך מקוונת, היא יעד.",
+      "block_3": "הפתרון: הצפנה מקומית",
+      "block_4": "<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea></strong>מנהל הסיסמאות שלך</a]\">בכל הדפדפן שלך פועל.הוא משתמש ב<strong class=\"text-[var(--title-color)] font-semibold\">הצפנה AES-GCM 256-bit</strong> הנגזרת מסיסמת האב שלך באמצעות PBKDF2.",
+      "block_5": "איך זה עובד",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">אפס ידע:</strong> לעולם איננו רואים את הסיסמה שלך.זה אף פעם לא עוזב את המכשיר שלך.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">אחסון לא מקוון:</strong> הכספת המוצפנת שלך מאוחסנת ב-LocalStorage של הדפדפן שלך.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ניתן לייצוא:</strong> תוכל לייצא/לגבות את הנתונים המוצפנים הגולמיים שלך בכל עת.</li>",
+      "block_7": "הפסק לסמוך על המפתחות הראשיים שלך בענן.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">נסה את מנהל הסיסמאות המקומי</a> היום."
+    }
+  }
+}

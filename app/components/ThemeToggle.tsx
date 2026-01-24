@@ -9,19 +9,8 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={toggleTheme}
-            style={{
-                background: "transparent",
-                border: "1px solid var(--card-border)",
-                borderRadius: 8,
-                width: 36,
-                height: 36,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-                color: theme === "dark" ? "#fb923c" : "#f97316",
-                transition: "all 0.2s"
-            }}
+            className={`bg-transparent border border-[var(--card-border)] rounded-lg w-9 h-9 flex items-center justify-center cursor-pointer transition-all duration-200 ${theme === "dark" ? "text-[#fb923c]" : "text-[#f97316]"
+                } hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)]`}
             aria-label="Toggle Theme"
         >
             {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}

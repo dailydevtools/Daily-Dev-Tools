@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Araçlar",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Ara..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Ücretsiz Çevrimiçi Geliştirici Araçları",
+    "description": "Herkes için 90'dan fazla ücretsiz çevrimiçi araç. Biçimlendiriciler, dönüştürücüler, oluşturucular ve yardımcı programlar. Hızlı, gizli ve kayıt gerektirmez."
+  },
+  "NotFound": {
+    "title": "Sayfa Bulunamadı",
+    "description": "Üzgünüz, aradığınız sayfayı bulamadık.",
+    "backHome": "Ana Sayfaya Dön",
+    "suggestions": "Bir araç aramayı veya aşağıdaki popüler araçlarımıza göz atmayı deneyin."
+  },
+  "Homepage": {
+    "heroTag": "100+ Ücretsiz Araç • Gizli • Kayıt Yok",
+    "titleLine1": "Günlük Geliştirici Araçları",
+    "titleLine2": "Sadece Çalışır",
+    "subtitle": "Geliştiriciler, tasarımcılar ve herkes için hızlı, güzel ve gizlilik odaklı araçlar. Her şey tarayıcınızda çalışır.",
+    "recentTools": "Son Kullanılanlar",
+    "noRecentText": "Burada görmek için araçları kullanmaya başlayın",
+    "searchResults": "Arama Sonuçları",
+    "popularTools": "Popüler",
+    "toolsCount": "{count} araç mevcut",
+    "features": {
+      "fast": {
+        "title": "Şimşek Hızında",
+        "desc": "Tüm araçlar tarayıcınızda yerel olarak çalışır"
+      },
+      "private": {
+        "title": "%100 Gizli",
+        "desc": "Verileriniz asla cihazınızdan ayrılmaz"
+      },
+      "simple": {
+        "title": "Herkes İçin Yapıldı",
+        "desc": "Herkes için yeterince basit, profesyoneller için güçlü"
+      },
+      "free": {
+        "title": "Her Zaman Ücretsiz",
+        "desc": "Hesap yok, sınır yok"
+      }
+    },
+    "categories": {
+      "All": "Tümü",
+      "Favorites": "Favoriler",
+      "Developer": "Geliştirici",
+      "Design": "Tasarım",
+      "Content": "İçerik",
+      "Security": "Güvenlik",
+      "Productivity": "Üretkenlik",
+      "Math": "Matematik",
+      "Utility": "Yardımcı Program"
+    },
+    "cta": {
+      "title": "Üretkenliğinizi artırmaya hazır mısınız?",
+      "text": "Geliştirici araçlarımızı ücretsiz kullanmaya başlayın. Kayıt gerekmez, veri toplanmaz.",
+      "button": "Ücretsiz Başlayın"
+    },
+    "openTool": "Aracı aç",
+    "noResults": "Eşleşen araç bulunamadı",
+    "clearFilters": "Filtreleri temizle"
+  },
+  "Footer": {
+    "builtWith": "❤️ ile yapıldı",
+    "allTools": "Tüm Araçlar",
+    "blog": "Blog",
+    "about": "Hakkında",
+    "privacy": "Gizlilik",
+    "terms": "Şartlar"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON Biçimlendirici",
+      "description": "JSON'u anında biçimlendirin, doğrulayın ve güzelleştirin"
+    },
+    "base64-encoder": {
+      "name": "Base64 Kodlayıcı",
+      "description": "Base64 dizelerini kodlayın ve çözün"
+    },
+    "url-encoder": {
+      "name": "URL Kodlayıcı",
+      "description": "URL'leri güvenli şekilde kodlayın ve çözün"
+    },
+    "jwt-decoder": {
+      "name": "JWT Çözücü",
+      "description": "JSON Web Token'larını çözün ve inceleyin"
+    },
+    "regex-tester": {
+      "name": "Regex Test Aracı",
+      "description": "Düzenli ifadeleri gerçek zamanlı test edin"
+    },
+    "hash-generator": {
+      "name": "Hash Oluşturucu",
+      "description": "MD5, SHA-1, SHA-256 karmalarını oluşturun"
+    },
+    "uuid-generator": {
+      "name": "UUID Oluşturucu",
+      "description": "Anında rastgele UUID/GUID oluşturun"
+    },
+    "css-minifier": {
+      "name": "CSS Küçültücü",
+      "description": "CSS kodunuzu küçültün ve optimize edin"
+    },
+    "markdown-editor": {
+      "name": "Markdown Önizleme",
+      "description": "Gerçek zamanlı Markdown editörü ve önizleme"
+    },
+    "color-converter": {
+      "name": "Renk Dönüştürücü",
+      "description": "Hex, RGB, HSL ve CMYK dönüştürün"
+    },
+    "timestamp-converter": {
+      "name": "Zaman Damgası Aracı",
+      "description": "Unix zaman damgalarını okunabilir tarihlere dönüştürün"
+    },
+    "sql-formatter": {
+      "name": "SQL Biçimlendirici",
+      "description": "SQL sorgularını biçimlendirin ve güzelleştirin"
+    },
+    "password-generator": {
+      "name": "Şifre Oluşturucu",
+      "description": "Güvenli, rastgele şifreler oluşturun"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Tasarımlar için yer tutucu metin oluşturun"
+    },
+    "image-base64": {
+      "name": "Görsel - Base64",
+      "description": "Görselleri Base64 dizelerine dönüştürün"
+    },
+    "qr-generator": {
+      "name": "QR Kod Oluşturucu",
+      "description": "URL'ler ve metinler için QR kod oluşturun"
+    },
+    "word-counter": {
+      "name": "Kelime Sayacı",
+      "description": "Kelime, karakter ve okuma süresi sayın"
+    },
+    "case-converter": {
+      "name": "Harf Dönüştürücü",
+      "description": "Deve, yılan, kebap ve pascal kutusu"
+    },
+    "text-diff": {
+      "name": "Metin Karşılaştırma",
+      "description": "İki metni karşılaştırın ve farklılıkları bulun"
+    },
+    "slug-generator": {
+      "name": "Slug Oluşturucu",
+      "description": "SEO dostu URL slug'ları oluşturun"
+    },
+    "gradient-generator": {
+      "name": "Gradyan Oluşturucu",
+      "description": "Güzel CSS gradyanları oluşturun"
+    },
+    "image-compressor": {
+      "name": "Görsel Sıkıştırıcı",
+      "description": "Görselleri yerel ve gizli olarak sıkıştırın"
+    },
+    "device-info": {
+      "name": "Cihaz Bilgisi",
+      "description": "Ekran, tarayıcı ve sistem bilgisi görüntüleyin"
+    },
+    "random-generator": {
+      "name": "Rastgele Oluşturucu",
+      "description": "Sayı, yazı-tura ve liste öğesi seçin"
+    },
+    "unit-converter": {
+      "name": "Birim Dönüştürücü",
+      "description": "Uzunluk, Ağırlık ve Sıcaklık dönüştürün"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Zamanlayıcı",
+      "description": "Verimlilik için odak zamanlayıcısı"
+    },
+    "yt-thumbnail": {
+      "name": "Küçük Resim İndirici",
+      "description": "YouTube video küçük resimlerini alın"
+    },
+    "my-ip": {
+      "name": "IP Adresim Nedir",
+      "description": "Genel IP ve ağ bilgisini görüntüleyin"
+    },
+    "keycode-info": {
+      "name": "Tuş Kodu Bilgisi",
+      "description": "JavaScript klavye olay hata ayıklayıcı"
+    },
+    "signature-generator": {
+      "name": "İmza Oluşturucu",
+      "description": "Dijital imza çizin ve indirin"
+    },
+    "screen-recorder": {
+      "name": "Ekran Kaydedici",
+      "description": "Ekran kaydedin ve video indirin"
+    },
+    "credit-card-validator": {
+      "name": "Kart Doğrulayıcı",
+      "description": "Kredi kartı numaralarını doğrulayın"
+    },
+    "password-manager": {
+      "name": "Yerel Şifre Yöneticisi",
+      "description": "Şifreleri şifrelenmiş olarak yerel depolayın"
+    },
+    "deep-link-tester": {
+      "name": "Deep Link Test Aracı",
+      "description": "Mobil deep link'leri test edin, başlatın ve yönetin"
+    },
+    "image-converter": {
+      "name": "Görsel Dönüştürücü",
+      "description": "PNG/JPG'yi yerel olarak WebP'ye dönüştürün"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "JSON'u CSV'ye ve tersine dönüştürün"
+    },
+    "bmi-calculator": {
+      "name": "VKİ Hesaplayıcı",
+      "description": "Vücut Kitle İndeksi (VKİ) hesaplayın"
+    },
+    "dns-lookup": {
+      "name": "DNS Sorgusu",
+      "description": "DNS kayıtlarını (A, MX, NS) anında sorgulayın"
+    },
+    "age-calculator": {
+      "name": "Yaş Hesaplayıcı",
+      "description": "Kesin yaş ve toplam gün hesaplayın"
+    },
+    "loan-calculator": {
+      "name": "Kredi Hesaplayıcı",
+      "description": "Aylık taksit ve toplam faiz hesaplayın"
+    },
+    "discount-calculator": {
+      "name": "İndirim Hesaplayıcı",
+      "description": "İndirimli fiyat ve tasarrufu hesaplayın"
+    },
+    "interest-calculator": {
+      "name": "Faiz Hesaplayıcı",
+      "description": "Basit ve bileşik faiz hesaplayıcı"
+    },
+    "html-encoder": {
+      "name": "HTML Kodlayıcı/Çözücü",
+      "description": "Özel karakterleri kodlayın veya HTML'i çözün"
+    },
+    "list-sorter": {
+      "name": "Liste Sıralayıcı",
+      "description": "Listeleri sıralayın, tersine çevirin, karıştırın ve tekilleştirin"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Oluşturucu",
+      "description": "Görsel olarak CSS box-shadow oluşturun"
+    },
+    "date-diff": {
+      "name": "Tarih Farkı",
+      "description": "İki tarih arasındaki süreyi hesaplayın"
+    },
+    "sql-to-json": {
+      "name": "SQL'den JSON'a",
+      "description": "SQL INSERT'leri JSON nesnelerine dönüştürün"
+    },
+    "keyword-density": {
+      "name": "Anahtar Kelime Yoğunluğu",
+      "description": "SEO için anahtar kelime sıklığını analiz edin"
+    },
+    "json-diff": {
+      "name": "JSON Karşılaştırma",
+      "description": "İki JSON nesnesini yan yana karşılaştırın"
+    },
+    "cipher-tools": {
+      "name": "Şifreleme Araçları",
+      "description": "ROT13 ve Caesar Şifre kodlayıcı/çözücü"
+    },
+    "token-generator": {
+      "name": "Rastgele Token Oluşturucu",
+      "description": "Güvenli rastgele token'lar oluşturun"
+    },
+    "favicon-generator": {
+      "name": "Favicon Oluşturucu",
+      "description": ".ico ve PNG favicon oluşturun"
+    },
+    "robots-generator": {
+      "name": "Robots.txt Oluşturucu",
+      "description": "SEO için robots.txt oluşturun"
+    },
+    "grid-generator": {
+      "name": "CSS Grid Oluşturucu",
+      "description": "Görsel CSS Grid düzen oluşturucu"
+    },
+    "hmac-generator": {
+      "name": "HMAC Oluşturucu",
+      "description": "Anahtarlı hash mesaj doğrulama kodları oluşturun"
+    },
+    "http-status": {
+      "name": "HTTP Durum Kodları",
+      "description": "HTTP durum kodları referans listesi"
+    },
+    "week-number": {
+      "name": "Hafta Numarası",
+      "description": "Güncel hafta numarası ve yıl ilerlemesi"
+    },
+    "text-tools": {
+      "name": "Metin Dönüştürücü",
+      "description": "Metni tersine çevirin, döndürün ve kodlayın"
+    },
+    "url-parser": {
+      "name": "URL Ayrıştırıcı",
+      "description": "URL'leri protokol, host, yol ve parametrelere ayırın"
+    },
+    "markdown-table": {
+      "name": "Markdown Tablo Oluşturucu",
+      "description": "Görsel olarak Markdown tabloları oluşturun"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp Bağlantı Oluşturucu",
+      "description": "Doğrudan WhatsApp sohbet linkleri oluşturun"
+    },
+    "paypal-link": {
+      "name": "PayPal Link Oluşturucu",
+      "description": "PayPal.me ödeme linkleri oluşturun"
+    },
+    "svg-to-png": {
+      "name": "SVG'den PNG'ye",
+      "description": "SVG kodu/dosyasını PNG görüntüsüne dönüştürün"
+    },
+    "prime-factors": {
+      "name": "Asal Çarpanlar",
+      "description": "Bir sayının asal çarpanlarını bulun"
+    },
+    "iban-validator": {
+      "name": "IBAN Doğrulayıcı",
+      "description": "Uluslararası Banka Hesap Numaralarını doğrulayın"
+    },
+    "ascii-converter": {
+      "name": "ASCII Dönüştürücü",
+      "description": "Metni ASCII ondalık kodlarına dönüştürün"
+    },
+    "utm-builder": {
+      "name": "UTM Oluşturucu",
+      "description": "Google Analytics kampanya URL'leri oluşturun"
+    },
+    "meta-tags": {
+      "name": "Meta Etiket Oluşturucu",
+      "description": "Web siteleri için SEO meta etiketleri oluşturun"
+    },
+    "og-generator": {
+      "name": "Open Graph Oluşturucu",
+      "description": "Sosyal paylaşım için Open Graph meta etiketleri oluşturun"
+    },
+    "twitter-card": {
+      "name": "Twitter Kart Oluşturucu",
+      "description": "Twitter Kartı meta etiketleri oluşturun"
+    },
+    "aspect-ratio": {
+      "name": "En-Boy Oranı Hesaplayıcı",
+      "description": "En-boy oranlarını ve boyutları hesaplayın"
+    },
+    "css-cursor": {
+      "name": "CSS İmleç",
+      "description": "Görsel CSS imleç özelliği referansı"
+    },
+    "css-triangle": {
+      "name": "CSS Üçgen Oluşturucu",
+      "description": "Saf CSS üçgenleri oluşturun"
+    },
+    "percentage-calculator": {
+      "name": "Yüzde Hesaplayıcı",
+      "description": "Yüzdeleri ve değişimleri hesaplayın"
+    },
+    "vat-calculator": {
+      "name": "KDV Hesaplayıcı",
+      "description": "KDV ekleme/çıkarma tutarlarını hesaplayın"
+    },
+    "stopwatch": {
+      "name": "Kronometre",
+      "description": "Basit tarayıcı tabanlı kronometre"
+    },
+    "text-to-speech": {
+      "name": "Metni Sese Dönüştür",
+      "description": "Metni sesli konuşmaya dönüştürün"
+    },
+    "speech-to-text": {
+      "name": "Sesi Metne Dönüştür",
+      "description": "Sesli konuşmayı metne dönüştürün"
+    },
+    "vibration-tester": {
+      "name": "Titreşim Test Aracı",
+      "description": "Cihaz titreşim motorunu test edin"
+    },
+    "chmod-calculator": {
+      "name": "Chmod Hesaplayıcı",
+      "description": "Linux dosya izinlerini hesaplayın"
+    },
+    "crontab-generator": {
+      "name": "Crontab Oluşturucu",
+      "description": "Cron zamanlama ifadeleri oluşturun"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd Oluşturucu",
+      "description": "Temel kimlik doğrulama girişleri oluşturun"
+    },
+    "subnet-calculator": {
+      "name": "Alt Ağ Hesaplayıcı",
+      "description": "Ağ alt ağlarını ve IP aralıklarını hesaplayın"
+    },
+    "mac-generator": {
+      "name": "MAC Adresi Oluşturucu",
+      "description": "Rastgele MAC adresleri oluşturun"
+    },
+    "timezone-converter": {
+      "name": "Saat Dilimi Dönüştürücü",
+      "description": "Birden fazla saat dilimi arasında dönüştürün"
+    },
+    "email-validator": {
+      "name": "E-posta Doğrulayıcı",
+      "description": "E-posta formatını doğrulayın ve yazım hatalarını tespit edin"
+    },
+    "password-strength": {
+      "name": "Şifre Gücü",
+      "description": "Şifre güç puanını kontrol edin"
+    },
+    "roman-numerals": {
+      "name": "Roma Rakamı Dönüştürücü",
+      "description": "Roma ve ondalık sayılar arasında dönüştürün"
+    },
+    "margin-calculator": {
+      "name": "Kar Marjı Hesaplayıcı",
+      "description": "Kar marjı ve kar oranını hesaplayın"
+    },
+    "roi-calculator": {
+      "name": "Yatırım Getirisi Hesaplayıcı",
+      "description": "Yatırım Getirisini (ROI) hesaplayın"
+    },
+    "fuel-calculator": {
+      "name": "Yakıt Maliyeti Hesaplayıcı",
+      "description": "Seyahat yakıt maliyetini hesaplayın"
+    },
+    "pretty-print-url": {
+      "name": "URL Güzelleştirici",
+      "description": "URL'leri okunabilirlik için biçimlendirin ve güzelleştirin"
+    }
+  },
+  "Terms": {
+    "title": "Kullanım Şartları",
+    "lastUpdated": "Son güncelleme",
+    "sections": {
+      "acceptance": {
+        "title": "1. Şartların Kabulü",
+        "content": "DailyDevTools'a erişerek ve kullanarak, bu sözleşmenin şartlarını kabul etmiş olursunuz."
+      },
+      "useLicense": {
+        "title": "2. Kullanım Lisansı",
+        "content": "DailyDevTools kişisel ve ticari amaçlarla ücretsiz kullanılabilir. Yapamayacaklarınız:",
+        "list": {
+          "0": "Sitenin önemli bölümlerini tersine mühendislik yapmaya veya kazımaya çalışmak.",
+          "1": "Web sitesini, siteye zarar verebilecek veya erişilebilirliğini bozabilecek herhangi bir şekilde kullanmak."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Sorumluluk Reddi",
+        "content": "DailyDevTools'daki araçlar \"olduğu gibi\" sunulmaktadır. Açık veya zımni hiçbir garanti vermiyoruz..."
+      },
+      "limitations": {
+        "title": "4. Sınırlamalar",
+        "content": "Hiçbir durumda DailyDevTools veya tedarikçileri herhangi bir zarardan sorumlu tutulamaz..."
+      },
+      "revisions": {
+        "title": "5. Revizyonlar",
+        "content": "DailyDevTools'da görünen materyaller teknik, yazım veya fotoğrafik hatalar içerebilir..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Gizlilik Politikası",
+    "lastUpdated": "Son güncelleme",
+    "intro": "DailyDevTools'a hoş geldiniz. Gizliliğinize saygı duyuyor ve kişisel verilerinizi korumaya kararlıyız.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Araçlarımız Nasıl Çalışır (Yerel İşleme)",
+        "content": "En önemlisi: Araçlar tamamen tarayıcınızda çalışır. Verileriniz asla cihazınızdan ayrılmaz."
+      },
+      "dataCollection": {
+        "title": "3. Topladığımız Veriler",
+        "content": "İçerik toplamıyoruz. Kullanım istatistikleri için Google Analytics kullanıyoruz."
+      },
+      "cookies": {
+        "title": "4. Çerezler",
+        "content": "Analitik ve yerel tercihler için çerezler kullanıyoruz."
+      },
+      "thirdParty": {
+        "title": "5. Üçüncü Taraf Bağlantıları",
+        "content": "Sitemiz üçüncü taraflara bağlantılar içerebilir."
+      },
+      "changes": {
+        "title": "6. Bu Politikadaki Değişiklikler",
+        "content": "Bu politikayı zaman zaman güncelleyebiliriz."
+      },
+      "contact": {
+        "title": "7. Bize Ulaşın",
+        "content": "GitHub veya sosyal medya aracılığıyla bize ulaşın."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Geliştirici Kaynakları",
+    "subtitle": "Oluşturduğumuz araçlar ve arkasındaki kavramlar hakkında derinlemesine incelemeler.",
+    "readMore": "Devamını oku",
+    "backToBlog": "Blog'a Dön",
+    "enjoyedArticle": "Bu makaleyi beğendiniz mi?",
+    "checkTools": "Araçlarımıza göz atın"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Giriş",
+      "output": "Çıkış",
+      "format": "Biçimlendir",
+      "minify": "Küçült",
+      "download": "İndir",
+      "copy": "Kopyala",
+      "paste": "Yapıştır",
+      "copied": "Kopyalandı!",
+      "upload": "Yükle",
+      "sample": "Örnek",
+      "clear": "Temizle",
+      "indent": "Girinti:",
+      "chars": "karakter",
+      "error": "Hata",
+      "invalid": "Geçersiz Giriş",
+      "result": "Sonuç",
+      "generate": "Oluştur",
+      "calculate": "Hesapla",
+      "convert": "Dönüştür",
+      "validate": "Doğrula",
+      "resultPlaceholder": "Sonuç burada görünecek..."
+    },
+    "Base64Encoder": {
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "textToEncode": "Kodlanacak Metin",
+      "base64ToDecode": "Çözülecek Base64",
+      "enterText": "Kodlanacak metni girin...",
+      "enterBase64": "Çözülecek Base64 girin...",
+      "encodeAction": "Base64'e Kodla",
+      "decodeAction": "Base64'ten Çöz",
+      "base64Output": "Base64 Çıktısı",
+      "decodedText": "Çözülmüş Metin",
+      "resultPlaceholder": "Sonuç burada görünecek...",
+      "invalidInput": "{mode} için geçersiz giriş"
+    },
+    "QrGenerator": {
+      "content": "İçerik",
+      "placeholder": "https://example.com",
+      "customization": "Özelleştirme",
+      "foreground": "Ön Plan",
+      "background": "Arka Plan",
+      "download": "İndir"
+    },
+    "HashGenerator": {
+      "inputText": "Giriş Metni",
+      "placeholder": "Hash'lenecek metni girin...",
+      "waiting": "Giriş bekleniyor..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Yeni Oluştur",
+      "configuration": "Yapılandırma",
+      "length": "Şifre Uzunluğu",
+      "uppercase": "Büyük Harf (A-Z)",
+      "numbers": "Rakamlar (0-9)",
+      "symbols": "Semboller (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "JSON'unuzu buraya yapıştırın...",
+      "outputPlaceholder": "Biçimlendirilmiş JSON burada görünecek...",
+      "spaces": "boşluk"
+    },
+    "UrlEncoder": {
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "urlToEncode": "Kodlanacak URL",
+      "encodedUrlToDecode": "Çözülecek Kodlanmış URL",
+      "enterUrlToEncode": "Kodlanacak URL veya metin girin...",
+      "enterUrlToDecode": "Çözülecek kodlanmış URL girin...",
+      "encodeAction": "URL Kodla",
+      "decodeAction": "URL Çöz",
+      "encodedUrl": "Kodlanmış URL",
+      "decodedUrl": "Çözülmüş URL",
+      "resultPlaceholder": "Sonuç burada görünecek...",
+      "chars": "karakter",
+      "invalidInput": "{mode} için geçersiz giriş"
+    },
+    "JwtDecoder": {
+      "pasteToken": "JWT token'ınızı yapıştırın",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "JWT Çöz",
+      "header": "BAŞLIK",
+      "payload": "İÇERİK",
+      "issued": "Verilme",
+      "expires": "Bitiş"
+    },
+    "RegexTester": {
+      "expression": "İfade",
+      "expressionPlaceholder": "Yakalama grubu (abc)...",
+      "testString": "Test Metni",
+      "testStringPlaceholder": "Test metninizi buraya yapıştırın...",
+      "matchHighlights": "Eşleşme Vurguları",
+      "matches": "eşleşme",
+      "matchInfo": "Eşleşme Bilgisi",
+      "match": "Eşleşme",
+      "index": "İndeks",
+      "group": "Grup",
+      "noMatches": "Eşleşme bulunamadı",
+      "highlightPlaceholder": "Eşleşmeler burada vurgulanacak...",
+      "flagsHelp": "g: global, i: büyük/küçük harf yoksay, m: çok satırlı"
+    },
+    "UuidGenerator": {
+      "generate": "Oluştur",
+      "generateCount": "Oluştur:",
+      "copyAll": "Tümünü Kopyala",
+      "copyUuid": "UUID Kopyala",
+      "generatedAt": "{time} tarihinde yerel olarak oluşturuldu • Sürüm 4 UUID'ler"
+    },
+    "WordCounter": {
+      "words": "Kelimeler",
+      "characters": "Karakterler",
+      "sentences": "Cümleler",
+      "paragraphs": "Paragraflar",
+      "readingTime": "Okuma Süresi",
+      "min": "dk",
+      "textInput": "Metin Girişi",
+      "inputPlaceholder": "Analiz etmek için yazmaya başlayın veya metninizi yapıştırın...",
+      "clear": "Temizle"
+    },
+    "TimestampConverter": {
+      "timestamp": "Zaman Damgası",
+      "humanDate": "Okunabilir Tarih",
+      "convert": "Dönüştür",
+      "currentTimestamp": "Güncel Zaman Damgası",
+      "inputPlaceholder": "Unix zaman damgası girin..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "SQL sorgunuzu buraya yapıştırın...",
+      "outputPlaceholder": "Biçimlendirilmiş SQL burada görünecek..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "CSS kodunuzu buraya yapıştırın...",
+      "outputPlaceholder": "Küçültülmüş CSS burada görünecek..."
+    },
+    "MarkdownEditor": {
+      "editor": "Editör",
+      "preview": "Önizleme",
+      "inputPlaceholder": "Markdown girin..."
+    },
+    "TextDiff": {
+      "original": "Orijinal Metin",
+      "changed": "Değiştirilmiş Metin",
+      "compare": "Karşılaştır",
+      "differences": "Farklılıklar"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Dönüştürülecek metni girin...",
+      "generatedSlug": "Oluşturulan Slug"
+    },
+    "ImageCompressor": {
+      "selectImage": "Görsel Seç",
+      "quality": "Kalite",
+      "compress": "Sıkıştır",
+      "download": "İndir",
+      "originalSize": "Orijinal Boyut",
+      "compressedSize": "Sıkıştırılmış Boyut"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragraflar",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "GradientGenerator": {
+      "angle": "Açı",
+      "colors": "Renkler",
+      "addColor": "Renk Ekle",
+      "copyCss": "CSS Kopyala"
+    },
+    "AgeCalculator": {
+      "birthDate": "Doğum Tarihi",
+      "calculate": "Hesapla",
+      "years": "Yıl",
+      "months": "Ay",
+      "days": "Gün",
+      "totalDays": "Toplam Gün",
+      "nextBirthday": "Sonraki Doğum Günü"
+    },
+    "AsciiConverter": {
+      "text": "Metin",
+      "ascii": "ASCII",
+      "convert": "Dönüştür",
+      "inputPlaceholder": "Metin girin..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Yatay (X)",
+      "vertical": "Dikey (Y)",
+      "blur": "Bulanıklık",
+      "spread": "Yayılma",
+      "colorOpacity": "Renk ve Opaklık",
+      "inset": "İç Gölge"
+    },
+    "BmiCalculator": {
+      "metric": "Metrik (kg/cm)",
+      "imperial": "İmparatorluk (lbs/in)",
+      "weight": "Ağırlık",
+      "height": "Boy",
+      "calculate": "VKİ Hesapla",
+      "bmiScore": "VKİ Puanınız",
+      "underweight": "Zayıf",
+      "normal": "Normal Kilolu",
+      "overweight": "Fazla Kilolu",
+      "obese": "Obez"
+    },
+    "CaseConverter": {
+      "inputText": "Giriş Metni",
+      "inputPlaceholder": "Metninizi buraya yazın...",
+      "upper": "BÜYÜK HARF",
+      "lower": "küçük harf",
+      "title": "Başlık Stili",
+      "sentence": "Cümle stili",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Kopyala",
+      "conversions": "Dönüşümler",
+      "clear": "Temizle"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX Renk",
+      "rgbLabels": "RGB Renk",
+      "hslLabels": "HSL Renk",
+      "cmykLabels": "CMYK Renk",
+      "copy": "Kopyala",
+      "hexToRgbNote": "* Şu anda yalnızca HEX'ten RGB/HSL dönüşümü desteklenmektedir."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Kart Numarası",
+      "validate": "Doğrula",
+      "valid": "Geçerli Kredi Kartı Numarası",
+      "invalid": "Geçersiz Kredi Kartı Numarası",
+      "placeholder": "Kart numarası girin...",
+      "type": "Kart Türü",
+      "checkDigit": "Kontrol Hanesi",
+      "luhnValid": "Luhn Algoritması Geçerli"
+    },
+    "CipherTools": {
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "rot13": "ROT13",
+      "caesar": "Caesar Şifresi",
+      "shift": "Kaydırma",
+      "inputPlaceholder": "Merhaba Dünya",
+      "outputPlaceholder": "Sonuç burada görünecek..."
+    },
+    "CronGenerator": {
+      "minute": "Dakika",
+      "hour": "Saat",
+      "dayMonth": "Gün (Ay)",
+      "month": "Ay",
+      "dayWeek": "Gün (Hafta)",
+      "presets": "Yaygın Ön Ayarlar",
+      "everyMinute": "Her dakika",
+      "everyHour": "Her saat",
+      "everyDayMidnight": "Her gün gece yarısı",
+      "everySunday": "Her Pazar",
+      "everyMonth": "Her ay",
+      "everyYear": "Her yıl",
+      "formatInfo": "Format: * * * * * (Dakika Saat AyınGünü Ay HaftanınGünü)",
+      "usageInfo": "'Her' için * kullanın, 'her n' için */n kullanın, belirli liste için 1,2,3 kullanın."
+    },
+    "DateDiff": {
+      "startDate": "Başlangıç Tarihi",
+      "endDate": "Bitiş Tarihi",
+      "calculate": "Hesapla",
+      "difference": "Fark",
+      "years": "Yıl",
+      "months": "Ay",
+      "days": "Gün",
+      "totalDays": "Toplam Gün",
+      "totalWeeks": "Toplam Hafta",
+      "totalHours": "Toplam Saat"
+    },
+    "DeepLinkTester": {
+      "testLink": "Test Bağlantısı",
+      "savedLinks": "Kayıtlı Linkler",
+      "searchPlaceholder": "Kayıtlı linkleri ara...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Başlat",
+      "save": "Kaydet",
+      "delete": "Sil",
+      "opens": "açar",
+      "scanQr": "Test etmek için mobil cihazınızla tarayın",
+      "noSavedLinks": "Kayıtlı link bulunamadı.",
+      "enterLabel": "Bu link için bir etiket girin:",
+      "saved": "Kaydedildi!",
+      "confirmDelete": "Bu linki silmek istiyor musunuz?"
+    },
+    "DeviceInfo": {
+      "screen": "Ekran",
+      "browser": "Tarayıcı",
+      "system": "Sistem",
+      "resolution": "Çözünürlük",
+      "colorDepth": "Renk Derinliği",
+      "userAgent": "Kullanıcı Aracı",
+      "platform": "platformu",
+      "language": "Dil"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Orijinal Fiyat",
+      "discountPercent": "İndirim",
+      "additionalDiscount": "Ek İndirim",
+      "calculate": "Hesapla",
+      "youSave": "Tasarruf",
+      "finalPrice": "Son Fiyat",
+      "salesTax": "Satış Vergisi"
+    },
+    "DnsLookup": {
+      "domain": "Alan Adı",
+      "lookup": "Sorgula",
+      "recordType": "Kayıt Türü",
+      "results": "Sonuçlar",
+      "placeholder": "example.com",
+      "status": "Durum",
+      "time": "Zaman",
+      "server": "Sunucu",
+      "answerSection": "Yanıt Bölümü",
+      "name": "İsim",
+      "type": "Tür",
+      "ttl": "TTL",
+      "data": "Veri",
+      "noRecords": "Kayıt bulunamadı"
+    },
+    "EmailValidator": {
+      "email": "E-posta Adresi",
+      "validate": "Doğrula",
+      "valid": "Geçerli",
+      "invalid": "Geçersiz",
+      "suggestion": "Öneri",
+      "placeholder": "kullanici@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Görsel Yükle",
+      "generate": "Oluştur",
+      "download": "İndir",
+      "sizes": "Boyutlar"
+    },
+    "FuelCalculator": {
+      "distance": "Mesafe",
+      "fuelEfficiency": "Yakıt Verimliliği",
+      "fuelPrice": "Yakıt Fiyatı",
+      "calculate": "Hesapla",
+      "result": "Sonuç",
+      "totalCost": "Toplam Maliyet",
+      "fuelNeeded": "Gereken Yakıt"
+    },
+    "GridGenerator": {
+      "columns": "Sütunlar",
+      "rows": "Satırlar",
+      "gap": "Boşluk",
+      "preview": "Önizleme",
+      "copyCss": "CSS Kopyala",
+      "rowGap": "Satır Boşluğu",
+      "colGap": "Sütun Boşluğu",
+      "options": "Seçenekler"
+    },
+    "HmacGenerator": {
+      "message": "Mesaj",
+      "secret": "Gizli Anahtar",
+      "algorithm": "Algoritma",
+      "generate": "Oluştur",
+      "inputPlaceholder": "Giriş metni...",
+      "secretPlaceholder": "Gizli anahtar..."
+    },
+    "HtmlEncoder": {
+      "encode": "Kodla",
+      "decode": "Çöz",
+      "resultPlaceholder": "Sonuç burada görünecek...",
+      "inputPlaceholder": "HTML'yi buraya yapıştırın..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Kod (örn. 404) veya isim ara...",
+      "code": "Kod",
+      "name": "İsim",
+      "description": "Açıklama"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Doğrula",
+      "valid": "Geçerli",
+      "invalid": "Geçersiz",
+      "placeholder": "IBAN girin...",
+      "inputLabel": "IBAN Numarası Girin",
+      "validTitle": "Geçerli Referans",
+      "invalidTitle": "Geçersiz Kontrol Toplamı",
+      "validDesc": "IBAN formatı ve kontrol toplamı doğru.",
+      "invalidDesc": "IBAN kontrol toplamı algoritmasıyla eşleşmiyor."
+    },
+    "ImageBase64": {
+      "upload": "Yükle",
+      "convert": "Dönüştür",
+      "copy": "Kopyala",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Görsel Yükle",
+      "convertToBase64": "Base64'e Dönüştür",
+      "convertToImage": "Görsele Dönüştür",
+      "base64String": "Base64 Dizesi",
+      "download": "İndir"
+    },
+    "ImageConverter": {
+      "selectImage": "Görsel Seç",
+      "format": "Biçim",
+      "convert": "Dönüştür",
+      "download": "İndir",
+      "quality": "Kalite"
+    },
+    "InterestCalculator": {
+      "principal": "Anapara",
+      "rate": "Faiz Oranı",
+      "time": "Süre (Yıl)",
+      "calculate": "Hesapla",
+      "simpleInterest": "Basit",
+      "compoundInterest": "Bileşik",
+      "totalAmount": "Toplam Değer",
+      "type": "Tür",
+      "frequency": "Bileşik Sıklığı",
+      "annually": "Yıllık",
+      "monthly": "Aylık",
+      "daily": "Günlük",
+      "year": "Yıl"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "JSON girin...",
+      "convert": "Dönüştür",
+      "format": "Biçim",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON'dan CSV'ye",
+      "csvToJson": "CSV'den JSON'a",
+      "jsonInput": "JSON Girişi",
+      "csvInput": "CSV Girişi",
+      "jsonOutput": "JSON Çıktısı",
+      "csvOutput": "CSV Çıktısı"
+    },
+    "JsonDiff": {
+      "original": "Orijinal JSON",
+      "modified": "Değiştirilmiş JSON",
+      "compare": "Karşılaştır",
+      "differences": "Farklılıklar"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Herhangi bir tuşa basın",
+      "key": "Tuş",
+      "code": "Kod",
+      "keyCode": "TuşKodu",
+      "which": "Hangi",
+      "location": "Konum",
+      "modifiers": "Değiştiriciler",
+      "standard": "Standart",
+      "left": "Sol",
+      "right": "Sağ",
+      "numpad": "Sayısal Tuş Takımı",
+      "space": "(Boşluk)",
+      "info": "JavaScript olay TuşKodu, Kod ve daha fazlasını görüntüleyin."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Anahtar kelime sıklığını analiz etmek için metninizi buraya yapıştırın...",
+      "analyze": "Analiz Et",
+      "keyword": "Anahtar Kelime",
+      "count": "Sayı",
+      "density": "Yoğunluk"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Listenizi buraya girin...",
+      "sort": "Sırala",
+      "reverse": "Tersine Çevir",
+      "shuffle": "Karıştır",
+      "deduplicate": "Tekrarları Kaldır",
+      "ascending": "Artan",
+      "descending": "Azalan",
+      "length": "Uzunluk",
+      "trim": "Boşları Kaldır",
+      "lines": "Satır:",
+      "chars": "Karakter:"
+    },
+    "LoanCalculator": {
+      "principal": "Anapara",
+      "interestRate": "Faiz Oranı",
+      "term": "Vade",
+      "calculate": "Hesapla",
+      "monthlyPayment": "Aylık Ödeme",
+      "totalInterest": "Toplam Faiz",
+      "totalPayment": "Toplam Ödeme",
+      "loanDetails": "Kredi Detayları",
+      "loanAmount": "Kredi Tutarı",
+      "loanTerm": "Kredi Vadesi",
+      "years": "Yıl",
+      "months": "Ay",
+      "interest": "Faiz"
+    },
+    "MacGenerator": {
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "separator": "Ayırıcı",
+      "format": "Biçim",
+      "quantity": "Miktar",
+      "uppercase": "Büyük Harf"
+    },
+    "MarginCalculator": {
+      "cost": "Maliyet",
+      "price": "Satış Fiyatı",
+      "calculate": "Hesapla",
+      "margin": "Marj",
+      "markup": "Kar Oranı",
+      "profit": "Kar",
+      "revenue": "Gelir",
+      "netProfit": "Net Kar",
+      "grossMargin": "Brüt Marj"
+    },
+    "PasswordManager": {
+      "masterPassword": "Ana Şifre",
+      "unlock": "Kilidi Aç",
+      "searchPlaceholder": "Hesap ara...",
+      "addNew": "Yeni Ekle",
+      "siteName": "Site Adı",
+      "username": "Kullanıcı Adı",
+      "password": "Şifre",
+      "save": "Kaydet",
+      "delete": "Sil"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Buraya yazın...",
+      "strength": "Güç",
+      "weak": "Zayıf",
+      "fair": "Orta",
+      "good": "İyi",
+      "strong": "Güçlü",
+      "requirements": "Gereksinimler",
+      "length": "8+ karakter",
+      "number": "Rakam içerir",
+      "uppercase": "Büyük harf içerir",
+      "symbol": "Sembol içerir"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me Kullanıcı Adı",
+      "amount": "Tutar",
+      "currency": "Para Birimi",
+      "generate": "Oluştur",
+      "itemName": "Ürün Adı",
+      "link": "Bağlantı",
+      "yourLink": "PayPal Linkiniz",
+      "openPaypal": "PayPal'ı Aç"
+    },
+    "RobotsGenerator": {
+      "rules": "Kurallar",
+      "addRule": "Kural Ekle",
+      "allow": "İzin Ver",
+      "disallow": "Reddet",
+      "sitemap": "Site Haritası URL'si (Opsiyonel)",
+      "output": "Oluşturulan robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Değer",
+      "percentage": "Yüzde",
+      "calculate": "Hesapla",
+      "result": "Sonuç",
+      "whatIs": "Ne kadar",
+      "of": "'ın %'si",
+      "isWhatPercentOf": "şunun yüzde kaçıdır",
+      "percentChangeFrom": "% değişim",
+      "to": "ile"
+    },
+    "PomodoroTimer": {
+      "work": "Odak Süresi",
+      "shortBreak": "Kısa Mola",
+      "longBreak": "Uzun Mola",
+      "start": "Başlat",
+      "pause": "Duraklat",
+      "reset": "Sıfırla",
+      "minutes": "dk"
+    },
+    "PrimeFactors": {
+      "number": "Sayı",
+      "calculate": "Hesapla",
+      "factors": "Asal Çarpanlar",
+      "inputLabel": "Bir sayı girin",
+      "placeholder": "örn. 120",
+      "isPrime": "Bu sayı Asal!",
+      "isComposite": "Bu sayı Bileşik"
+    },
+    "RoiCalculator": {
+      "investment": "Yatırım",
+      "returns": "Getiri",
+      "calculate": "Hesapla",
+      "roi": "ROI",
+      "profit": "Kar",
+      "finalValue": "Son Değer",
+      "time": "Süre (Yıl)",
+      "totalGain": "Toplam Kazanç",
+      "annualizedRoi": "Yıllık ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Ondalık",
+      "decimalPlaceholder": "2024",
+      "roman": "Roma",
+      "convert": "Dönüştür",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Kaydı Başlat",
+      "stopRecording": "Kaydı Durdur",
+      "download": "İndir",
+      "recording": "Kaydediliyor..."
+    },
+    "SignatureGenerator": {
+      "draw": "Çiz",
+      "clear": "Temizle",
+      "download": "İndir",
+      "penColor": "Kalem Rengi",
+      "penSize": "Kalem Boyutu"
+    },
+    "SpeechToText": {
+      "startListening": "Dinlemeyi Başlat",
+      "stopListening": "Dinlemeyi Durdur",
+      "transcript": "Transkript",
+      "placeholder": "Transkript burada görünecek..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO kullanıcılara (kimlik, ad, yaş) DEĞERLER (1, 'John', 30);",
+      "convert": "Dönüştür",
+      "result": "Sonuç"
+    },
+    "Stopwatch": {
+      "start": "Başlat",
+      "stop": "Durdur",
+      "reset": "Sıfırla",
+      "lap": "Tur"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP Adresi",
+      "subnetMask": "Alt Ağ Maskesi",
+      "calculate": "Hesapla",
+      "networkAddress": "Ağ Adresi",
+      "broadcastAddress": "Yayın Adresi",
+      "usableHosts": "Kullanılabilir Hostlar"
+    },
+    "SvgToPng": {
+      "pasteSvg": "SVG Yapıştır",
+      "uploadSvg": "SVG Yükle",
+      "convert": "Dönüştür",
+      "download": "İndir"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Okunacak metni girin...",
+      "speak": "Oku",
+      "stop": "Durdur",
+      "voice": "Ses",
+      "rate": "Hız",
+      "pitch": "Perde"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Bir şeyler yazın...",
+      "reverse": "Tersine Çevir",
+      "uppercase": "Büyük Harf",
+      "lowercase": "Küçük Harf",
+      "encode": "Kodla"
+    },
+    "TimezoneConverter": {
+      "from": "Kaynak",
+      "to": "Hedef",
+      "convert": "Dönüştür",
+      "currentTime": "Güncel Saat"
+    },
+    "TokenGenerator": {
+      "length": "Uzunluk",
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "includeNumbers": "Rakam Ekle",
+      "includeSymbols": "Sembol Ekle"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "URL girin...",
+      "parse": "Ayrıştır",
+      "protocol": "Protokol",
+      "host": "Ev sahibi",
+      "path": "Yol",
+      "query": "Sorgu"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Web Sitesi URL'si",
+      "source": "Kaynak",
+      "medium": "Ortam",
+      "campaign": "Kampanya",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "VatCalculator": {
+      "amount": "Tutar",
+      "vatRate": "KDV Oranı",
+      "addVat": "KDV Ekle",
+      "removeVat": "KDV Çıkar",
+      "calculate": "Hesapla"
+    },
+    "VibrationTester": {
+      "vibrate": "Titret",
+      "pattern": "Desen",
+      "duration": "Süre",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Güncel Hafta Numarası",
+      "yearProgress": "Yıl İlerlemesi",
+      "week": "Hafta"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Telefon Numarası",
+      "message": "Mesaj",
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "placeholder": "Merhaba, ilgileniyorum..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "YouTube Video URL'sini yapıştırın...",
+      "getThumbnail": "Küçük Resmi Al",
+      "download": "İndir"
+    },
+    "CrontabGenerator": {
+      "minute": "Dakika",
+      "hour": "Saat",
+      "day": "Gün",
+      "month": "Ay",
+      "weekday": "Hafta Günü",
+      "expression": "İfade",
+      "description": "Açıklama"
+    },
+    "ChmodCalculator": {
+      "owner": "Sahip",
+      "group": "Grup",
+      "others": "Diğerleri",
+      "read": "Okuma",
+      "write": "Yazma",
+      "execute": "Çalıştırma",
+      "numeric": "Sayısal",
+      "symbolic": "Sembolik"
+    },
+    "HtpasswdGenerator": {
+      "username": "Kullanıcı Adı",
+      "password": "Şifre",
+      "algorithm": "Algoritma",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "AspectRatio": {
+      "width": "Genişlik",
+      "height": "Yükseklik",
+      "ratio": "Oran",
+      "calculate": "Hesapla"
+    },
+    "CssClipPath": {
+      "shape": "Şekil",
+      "preview": "Önizleme",
+      "copyCss": "CSS Kopyala"
+    },
+    "CssCursor": {
+      "cursor": "İmleç",
+      "preview": "Önizleme",
+      "copyCss": "CSS Kopyala"
+    },
+    "CssTriangle": {
+      "direction": "Yön",
+      "size": "Boyut",
+      "color": "Renk",
+      "preview": "Önizleme",
+      "copyCss": "CSS Kopyala"
+    },
+    "MetaGenerator": {
+      "title": "Başlık",
+      "description": "Açıklama",
+      "keywords": "Anahtar Kelimeler",
+      "author": "Yazar",
+      "url": "URL",
+      "image": "Görsel",
+      "generate": "Oluştur",
+      "copy": "Kopyala",
+      "titlePlaceholder": "Harika Web Sitem",
+      "descriptionPlaceholder": "Sitenizin kısa bir açıklaması...",
+      "keywordsPlaceholder": "web, araçlar, geliştirici",
+      "authorPlaceholder": "Adınız",
+      "outputPlaceholder": "Meta etiketleri burada görünecek..."
+    },
+    "OgGenerator": {
+      "title": "Başlık",
+      "description": "Açıklama",
+      "url": "URL",
+      "image": "Görsel",
+      "type": "Tür",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "TwitterCard": {
+      "cardType": "Kart Türü",
+      "title": "Başlık",
+      "description": "Açıklama",
+      "image": "Görsel",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "MarkdownTable": {
+      "rows": "Satırlar",
+      "columns": "Sütunlar",
+      "header": "Başlık",
+      "addRow": "Satır Ekle",
+      "addColumn": "Sütun Ekle",
+      "generate": "Oluştur",
+      "copy": "Kopyala"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Biçimlendir",
+      "copy": "Kopyala"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON Biçimlendirme: Geliştiriciler İçin En İyi Uygulamalar",
+      "excerpt": "Doğru JSON biçimlendirmesinin hata ayıklama için neden önemli olduğunu ve iş akışınızda nasıl otomatikleştireceğinizi öğrenin.",
+      "category": "Geliştirme"
+    },
+    "mastering-regex": {
+      "title": "Düzenli İfadelerde Uzmanlaşma: Görsel Bir Kılavuz",
+      "excerpt": "Regex korkutucu olmak zorunda değil. E-posta doğrulama, URL'ler ve daha fazlası için yaygın kalıpları açıklıyoruz.",
+      "category": "Eğitim"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron İşleri: Görevleri Nasıl Zamanlarınız",
+      "excerpt": "Cron'un 5 yıldızlı sözdizimini ve Linux'ta yedekleme, e-posta ve betikleri nasıl zamanlayacağınızı anlayın.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Yerel Şifre Yöneticileri Neden Daha Güvenli (KeyPass Alternatifi)",
+      "excerpt": "Bulut ihlalleri yaygın. AES-256 şifreleme ile şifreleri yerel olarak saklamanın kişisel güvenlik için neden en güvenli seçenek olduğunu öğrenin.",
+      "category": "Güvenlik"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Araç ara...",
+    "noResults": "Sonuç bulunamadı.",
+    "select": "Seç",
+    "navigate": "Gezin"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Geri Bildirim Gönder",
+    "feedback": "Geri Bildirim",
+    "thankYou": "Teşekkürler!",
+    "feedbackSent": "Geri bildiriminiz başarıyla gönderildi.",
+    "close": "Kapat",
+    "name": "İsim (opsiyonel)",
+    "namePlaceholder": "Adınız",
+    "email": "E-posta (opsiyonel)",
+    "emailPlaceholder": "email@adresiniz.com",
+    "feedbackType": "Geri Bildirim Türü",
+    "typeSuggestion": "💡 Öneri",
+    "typeBug": "🐛 Hata Raporu",
+    "typeFeature": "✨ Özellik İsteği",
+    "typeOther": "📝 Diğer",
+    "message": "Mesaj *",
+    "messagePlaceholder": "Bize düşüncelerinizi söyleyin...",
+    "sending": "Gönderiliyor...",
+    "weReadEveryMessage": "Her mesajı okuyoruz. Bizi geliştirmemize yardımcı olduğunuz için teşekkürler!"
+  },
+  "ShareButton": {
+    "shareTool": "Aracı Paylaş",
+    "copiedLink": "Link Kopyalandı!"
+  },
+  "TextDiff": {
+    "original": "Orijinal Metin",
+    "changed": "Değiştirilmiş Metin",
+    "update": "Farkı Güncelle",
+    "old": "Eski",
+    "new": "Yeni",
+    "content": "İçerik"
+  },
+  "CrontabGenerator": {
+    "minute": "Dakika",
+    "hour": "Saat",
+    "day": "Gün",
+    "month": "Ay",
+    "weekday": "Hafta Günü",
+    "min": "Dk",
+    "mon": "Ay",
+    "week": "Hafta",
+    "presets": "Hızlı Ön Ayarlar",
+    "everyMinute": "Her dakika",
+    "every5Minutes": "Her 5 dakika",
+    "everyHour": "Her saat",
+    "everyDayMidnight": "Her gün gece yarısı",
+    "everyWeek": "Her hafta",
+    "everyMonth": "Her ay"
+  },
+  "SpeechToText": {
+    "notSupported": "Tarayıcınız Web Speech API'yi desteklemiyor. Lütfen Chrome kullanın.",
+    "placeholder": "Transkript burada görünecek...",
+    "listening": "Dinleniyor...",
+    "start": "Başlatmak için mikrofona tıklayın"
+  },
+  "OgGenerator": {
+    "title": "Başlık",
+    "description": "Açıklama",
+    "image": "Görsel URL'si",
+    "url": "Kanonik URL",
+    "type": "Tür",
+    "website": "Web Sitesi",
+    "article": "Makale",
+    "profile": "Profil",
+    "preview": "Önizleme (Facebook/LinkedIn)",
+    "generatedHtml": "Oluşturulan HTML",
+    "copy": "Kopyala"
+  },
+  "WeekNumber": {
+    "checkLabel": "Tarih İçin Hafta Numarasını Kontrol Et",
+    "yearProgress": "Yıl İlerlemesi"
+  },
+  "RelatedTools": {
+    "title": "Bunları da beğenebilirsiniz",
+    "subtitle": "Diğer popüler geliştirici araçlarını keşfedin",
+    "openTool": "Aracı Aç"
+  },
+  "Breadcrumb": {
+    "home": "Ana Sayfa",
+    "tools": "Araçlar"
+  },
+  "SvgToPng": {
+    "upload": "SVG Dosyası Yükle",
+    "browse": "veya gözatmak için tıklayın",
+    "paste": "...veya SVG Kodu yapıştırın",
+    "preview": "PNG Önizleme (2x Ölçek)",
+    "download": "PNG İndir",
+    "errorType": "Lütfen geçerli bir SVG dosyası yükleyin.",
+    "errorRender": "SVG işlenemedi. Geçerli XML olduğundan emin olun.",
+    "errorProcess": "SVG işlenirken hata oluştu."
+  },
+  "GradientGenerator": {
+    "config": "Yapılandırma",
+    "colors": "Renkler",
+    "type": "Tür",
+    "angle": "Açı",
+    "random": "Rastgele",
+    "copyCss": "CSS Kopyala",
+    "copied": "Kopyalandı"
+  },
+  "TimezoneConverter": {
+    "date": "Tarih",
+    "time": "Saat (Yerel)",
+    "invalid": "Geçersiz",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Londra (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sidney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "Hindistan (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Sayı Oluşturucu",
+    "listGen": "Liste Oluşturucu",
+    "coinGen": "Yazı Tura",
+    "min": "Min.",
+    "max": "Maks",
+    "count": "Sayı",
+    "generate": "Oluştur",
+    "listLabel": "Liste Öğeleri (satır başına bir)",
+    "pick": "Rastgele Öğe Seç",
+    "winner": "Kazanan...",
+    "flip": "Yazı Tura At",
+    "heads": "Yazı",
+    "tails": "Tura"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Ekranınız kaydediliyor...",
+    "titleFree": "Ücretsiz Çevrimiçi Ekran Kaydedici",
+    "desc": "Ekranınızı, uygulama penceresini veya tarayıcı sekmesini yakalayın. Filigran yok, süre sınırı yok.",
+    "start": "Kaydı Başlat",
+    "stop": "Kaydı Durdur",
+    "browserSupport": "Masaüstünde Chrome, Edge ve Firefox'ta en iyi şekilde çalışır."
+  },
+  "CssCursor": {
+    "hoverTest": "Test etmek için üzerine gelin"
+  },
+  "VatCalculator": {
+    "amount": "Tutar",
+    "rate": "KDV Oranı (%)",
+    "addVat": "KDV Ekle",
+    "removeVat": "KDV Çıkar",
+    "netAmount": "Net Tutar",
+    "vatAmount": "KDV Tutarı",
+    "grossTotal": "Brüt Toplam",
+    "netTotal": "Net Toplam",
+    "grossAmount": "Brüt Tutar"
+  },
+  "MyIP": {
+    "ipLabel": "Genel IP Adresiniz",
+    "loading": "Yükleniyor...",
+    "isp": "İnternet Sağlayıcısı (ISS)",
+    "location": "Konum",
+    "asn": "ASN",
+    "timezone": "Saat Dilimi",
+    "note": "Bu, ziyaret ettiğiniz web sitelerinin gördüğü IP adresidir. VPN veya proxy kullanıyorsanız yerel IP'nizden farklı olabilir."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "URL Girin",
+    "formatted": "Biçimlendirilmiş Çıktı",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı",
+    "placeholder": "Biçimlendirilmiş halini görmek için yukarıya bir URL yapıştırın."
+  },
+  "WhatsAppLink": {
+    "phone": "Telefon Numarası (Ülke Koduyla)",
+    "message": "Önceden Doldurulmuş Mesaj",
+    "hint": "+, - veya () eklemeyin.",
+    "yourLink": "WhatsApp Linkiniz",
+    "open": "Sohbeti Aç"
+  },
+  "UrlParser": {
+    "enterUrl": "URL Girin",
+    "params": "Sorgu Parametreleri",
+    "error": "Geçersiz URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Görsel Yükle",
+    "browse": "Önerilen: 512x512 PNG",
+    "original": "Orijinal",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Favicon.png İndir",
+    "note": "* Şu anda 32x32 PNG favicon oluşturur. Eski tarayıcı desteği için .ico olarak yeniden adlandırın."
+  },
+  "SubnetCalculator": {
+    "ip": "IP Adresi",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Hesapla",
+    "subnetMask": "Alt Ağ Maskesi",
+    "networkAddress": "Ağ Adresi",
+    "firstHost": "İlk Host",
+    "lastHost": "Son Host",
+    "broadcastAddress": "Yayın Adresi",
+    "totalHosts": "Toplam Host"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Makale Başlığı / Metin Girin",
+    "generated": "Oluşturulan Slug",
+    "copy": "Slug Kopyala"
+  },
+  "SqlToJson": {
+    "inputLabel": "SQL Girişi (yalnızca INSERT ifadeleri)",
+    "convert": "JSON'a Dönüştür",
+    "error": "SQL ayrıştırılamadı. Standart INSERT INTO ifadeleri olduğundan emin olun."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Satır Ekle",
+    "addCol": "+ Sütun Ekle",
+    "headerPlaceholder": "Başlık",
+    "outputLabel": "Markdown Çıktısı",
+    "copy": "Markdown Kopyala"
+  },
+  "TwitterCard": {
+    "cardType": "Kart Türü",
+    "siteHandle": "Site Kullanıcı Adı (örn. @twitter)",
+    "title": "Başlık",
+    "description": "Açıklama",
+    "imageUrl": "Görsel URL'si",
+    "preview": "Önizleme",
+    "generatedHtml": "Oluşturulan HTML",
+    "copy": "Kopyala",
+    "placeholderTitle": "Kart Başlığı",
+    "placeholderDesc": "Açıklama buraya gelecek..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Okunacak metni girin...",
+    "voice": "Ses",
+    "speed": "Hız",
+    "pitch": "Perde",
+    "speak": "Oku"
+  },
+  "TokenGenerator": {
+    "length": "Uzunluk",
+    "includeNumbers": "Rakam Ekle",
+    "includeSymbols": "Sembol Ekle",
+    "generate": "Token Oluştur"
+  },
+  "CssTriangle": {
+    "direction": "Yön",
+    "color": "Renk",
+    "width": "Genişlik (px)",
+    "height": "Yükseklik (px)",
+    "copy": "Kopyala"
+  },
+  "UnitConverter": {
+    "length": "Uzunluk",
+    "weight": "Ağırlık",
+    "temperature": "Sıcaklık",
+    "meters": "Metre",
+    "kilometers": "Kilometre",
+    "centimeters": "Santimetre",
+    "millimeters": "Milimetre",
+    "inches": "İnç",
+    "feet": "Ayak",
+    "yards": "Yard",
+    "miles": "Mil",
+    "kilograms": "Kilogram",
+    "grams": "Gram",
+    "pounds": "Pound",
+    "ounces": "Ons",
+    "celsius": "santigrat",
+    "fahrenheit": "Fahrenhayt",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Şekiller",
+    "preview": "Önizleme",
+    "cssCode": "CSS Kodu",
+    "copy": "Kopyala",
+    "copied": "Kopyalandı"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Görsel Yükle",
+    "uploadDesc": "JPG, PNG veya WebP. Yerel olarak sıkıştırıyoruz.",
+    "selectImage": "Görsel Seç",
+    "settings": "Sıkıştırma Ayarları",
+    "quality": "Kalite",
+    "originalSize": "Orijinal Boyut",
+    "compressedSize": "Sıkıştırılmış Boyut",
+    "saving": "Tasarruf",
+    "download": "İndir"
+  },
+  "HtpasswdGenerator": {
+    "username": "Kullanıcı Adı",
+    "password": "Şifre",
+    "algorithm": "Algoritma",
+    "generate": "Giriş Oluştur",
+    "result": "Sonuç",
+    "sha1": "SHA-1 (Güvensiz ama standart)",
+    "notSupported": "Bu istemci tarafı sürümünde yalnızca SHA-1 desteklenmektedir."
+  },
+  "MetaTags": {
+    "pageTitle": "Sayfa Başlığı",
+    "description": "Açıklama",
+    "author": "Yazar"
+  },
+  "AgeCalculator": {
+    "dob": "Doğum Tarihi",
+    "age": "Yaş",
+    "years": "yıl",
+    "months": "ay",
+    "days": "gün",
+    "nextBirthday": "Sonraki Doğum Günü"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Web Sitesi URL'si (Zorunlu)",
+    "source": "Kampanya Kaynağı (Zorunlu)",
+    "medium": "Kampanya Ortamı (Zorunlu)",
+    "name": "Kampanya Adı (Zorunlu)",
+    "term": "Kampanya Terimi (Opsiyonel)",
+    "content": "Kampanya İçeriği (Opsiyonel)",
+    "generatedUrl": "Oluşturulan URL",
+    "copy": "URL Kopyala"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Güncel Unix Zamanı",
+    "timestampLabel": "Zaman Damgası (Saniye)",
+    "isoLabel": "ISO Tarih Formatı",
+    "utcDate": "UTC Tarih",
+    "localDate": "Yerel Tarih",
+    "relative": "Göreceli"
+  },
+  "SignatureGenerator": {
+    "color": "Renk",
+    "width": "Genişlik",
+    "clear": "Temizle",
+    "download": "PNG İndir",
+    "signHere": "Buraya imzalayın",
+    "note": "İmzalar tarayıcınızda yerel olarak işlenir. Saklamıyoruz veya yüklemiyoruz."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Canlı Önizleme"
+  },
+  "CipherTools": {
+    "shiftAmount": "Kaydırma Miktarı (N)",
+    "inputText": "Giriş Metni",
+    "outputText": "Çıkış Metni",
+    "rot13": "ROT13",
+    "caesar": "Sezar (+3)",
+    "shift1": "Kaydırma +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Ekran Çözünürlüğü",
+    "browser": "Tarayıcı",
+    "cpuCores": "CPU Çekirdekleri",
+    "battery": "Pil",
+    "detailedSpecs": "Detaylı Özellikler",
+    "userAgent": "Kullanıcı Aracı",
+    "platform": "platformu",
+    "windowSize": "Pencere Boyutu",
+    "pixelRatio": "Piksel Oranı",
+    "colorDepth": "Renk Derinliği",
+    "ram": "RAM",
+    "cookiesEnabled": "Çerezler Etkin",
+    "onlineStatus": "Çevrimiçi Durumu",
+    "unknown": "Bilinmiyor",
+    "yes": "Evet",
+    "no": "Hayır",
+    "enabled": "Etkin",
+    "disabled": "Devre Dışı"
+  },
+  "ChmodCalculator": {
+    "owner": "Sahip",
+    "group": "Grup",
+    "public": "Herkes",
+    "read": "Okuma",
+    "write": "Yazma",
+    "execute": "Çalıştırma",
+    "numeric": "Sayısal",
+    "symbolic": "Sembolik"
+  },
+  "PasswordManager": {
+    "title": "Şifre Yöneticisi",
+    "desc": "Şifrelerinizi güvenli bir şekilde yerel olarak saklayın ve yönetin.",
+    "unlock": "Kasayı Aç",
+    "create": "Yeni Kasa Oluştur",
+    "unlockDesc": "Hesaplarınıza erişmek için ana şifrenizi girin.",
+    "createDesc": "Güçlü bir ana şifre belirleyin. Verilerinizi yerel olarak şifreler.",
+    "masterPassword": "Ana Şifre",
+    "unlockBtn": "Kilidi Aç",
+    "createBtn": "Kasa Oluştur",
+    "note": "Veriler tarayıcınızda AES-GCM şifreleme kullanılarak saklanır. Kaybederseniz şifrenizi kurtaramayız.",
+    "myPasswords": "Şifrelerim",
+    "addNew": "Yeni Ekle",
+    "search": "Hesap ara...",
+    "noPasswords": "Şifre bulunamadı.",
+    "addAccount": "Hesap Ekle",
+    "accountTitle": "Başlık / Web Sitesi",
+    "username": "Kullanıcı Adı / E-posta",
+    "password": "Şifre",
+    "url": "URL (Opsiyonel)",
+    "save": "Hesabı Kaydet",
+    "cancel": "İptal",
+    "incorrectPassword": "Yanlış şifre veya bozuk veri.",
+    "loading": "Yükleniyor..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Web Sitesi Detayları",
+    "pageTitle": "Sayfa Başlığı",
+    "description": "Açıklama",
+    "keywords": "Anahtar Kelimeler (virgülle ayrılmış)",
+    "author": "Yazar",
+    "socialPreview": "Sosyal Önizleme (OG ve Twitter)",
+    "websiteUrl": "Web Sitesi URL'si",
+    "previewImage": "Önizleme Görseli URL'si",
+    "generatedHtml": "Oluşturulan HTML",
+    "copy": "HTML Kopyala",
+    "copied": "Kopyalandı"
+  },
+  "VibrationTester": {
+    "worksOnly": "Yalnızca titreşim donanımı olan cihazlarda çalışır (örn. telefonlar).",
+    "duration": "Süre (ms)",
+    "vibrateOnce": "Bir Kez Titret",
+    "pulsePattern": "Nabız Deseni",
+    "longPulse": "Uzun Nabız",
+    "stop": "Durdur"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "JSON Biçimlendirmesi Neden Önemlidir",
+      "block_2": "JSON (JavaScript Object Notation), web dilidir.Ancak API'lerden döndürülen ham JSON genellikle küçültülmüş bir karmaşadır.Biçimlendirme onu okunabilir, hata ayıklanabilir ve güvenli hale getirir.",
+      "block_3": "1.Okunabilirlik Önemlidir",
+      "block_4": "5000 satırlık bir API yanıtında hata ayıklama yaparken girintileme hayat kurtarır.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 vurgulu:text-[#ea580c]\">JSON Biçimlendiricimiz</a>, yapıyı netleştirmek için 2 boşluklu veya 4 boşluklu girinti kullanır.",
+      "block_5": "2.Doğrulama",
+      "block_6": "Tek bir eksik virgül bile uygulamanızı bozabilir.JSON'unuzu yapılandırma dosyalarına kaydetmeden önce daima doğrulayın.",
+      "block_7": "Sonuç",
+      "block_8": "Parantezleri manuel olarak kontrol ederek zaman kaybetmeyin.Otomatik araçları kullanın."
+    },
+    "mastering-regex": {
+      "block_1": "Regex Açıklaması",
+      "block_2": "Normal ifadeler güçlü ancak kafa karıştırıcıdır.hadi bunları görselleştirelim.",
+      "block_3": "Ortak Desenler",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-posta:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Bu kalıpları <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 vurgulu:text-[#ea580c]\">Regex Test Aracımız</a> ile anında test edin."
+    },
+    "cron-job-scheduling": {
+      "block_1": "Cron'un 5 Yıldızı",
+      "block_2": "Dakika, Saat, Ayın Günü, Ay, Haftanın Günü.Hepsi bu kadar.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Örnekler</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Her gün gece yarısında çalıştır: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Örnekler",
+      "block_6": "Her 15 dakikada bir çalıştır: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Yardıma mı ihtiyacınız var?İfadeleri görsel olarak oluşturmak için <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Oluşturucumuzu</a> kullanın."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Bulut Kasalarıyla İlgili Sorun",
+      "block_2": "LastPass, Okta ve diğer devler ihlallere maruz kaldı.Kasanız çevrimiçi olduğunda bir hedeftir.",
+      "block_3": "Çözüm: Yerel Şifreleme",
+      "block_4": "Yeni <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Yerel Şifre Yöneticimiz</a></strong> tamamen tarayıcınızda çalışır.PBKDF2 kullanarak ana şifrenizden türetilen <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256 bit şifreleme</strong>'yi kullanır.",
+      "block_5": "Nasıl çalışır",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Sıfır Bilgi:</strong> Şifrenizi asla görmeyiz.Cihazınızdan asla ayrılmaz.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Çevrimdışı Depolama:</strong> Şifrelenmiş kasanız tarayıcınızın LocalStorage'ında depolanır.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Dışa aktarılabilir:</strong> Ham şifrelenmiş verilerinizi istediğiniz zaman dışa aktarabilir/yedekleyebilirsiniz.</li>",
+      "block_7": "Ana anahtarlarınız konusunda buluta güvenmeyi bırakın.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 vurgulu:text-[#ea580c]\">Yerel Şifre Yöneticisini</a> bugün deneyin."
+    }
+  }
+}

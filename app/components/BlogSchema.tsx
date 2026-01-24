@@ -22,11 +22,11 @@ export default function BlogSchema({ title, description, url, datePublished, aut
         },
         "publisher": {
             "@type": "Organization",
-            "name": "QuickDevTools",
-            "url": "https://quickdevtools.com",
+            "name": "DailyDevTools",
+            "url": "https://dailydev.tools",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://quickdevtools.com/icon-512.png"
+                "url": "https://dailydev.tools/icon-512.png"
             }
         },
         "mainEntityOfPage": {

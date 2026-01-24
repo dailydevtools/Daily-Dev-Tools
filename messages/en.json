@@ -1,0 +1,1818 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Tools",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Search..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Free Online Developer Tools",
+    "description": "90+ free online tools for everyone. Formatters, converters, generators, and utilities. Fast, private, and no registration required."
+  },
+  "NotFound": {
+    "title": "404: Void Exception",
+    "description": "The page you requested seems to have been garbage collected or never existed in this runtime.",
+    "backHome": "Return to Base",
+    "suggestions": "Try searching for a tool or browse our popular tools below."
+  },
+  "Homepage": {
+    "heroTag": "100+ Free Tools • Private • No Signup",
+    "titleLine1": "Daily Developer Tools",
+    "titleLine2": "That Just Work",
+    "subtitle": "Fast, beautiful, and privacy-focused tools for developers, designers, and everyone. Everything runs in your browser.",
+    "recentTools": "Recently Used",
+    "noRecentText": "Start using tools to see them here",
+    "searchResults": "Search Results",
+    "popularTools": "Popular",
+    "toolsCount": "{count} tools available",
+    "features": {
+      "fast": {
+        "title": "Lightning Fast",
+        "desc": "All tools run locally in your browser"
+      },
+      "private": {
+        "title": "100% Private",
+        "desc": "Your data never leaves your device"
+      },
+      "simple": {
+        "title": "Built for Everyone",
+        "desc": "Simple enough for anyone, powerful for pros"
+      },
+      "free": {
+        "title": "Always Free",
+        "desc": "No accounts, no limits"
+      }
+    },
+    "categories": {
+      "All": "All",
+      "Favorites": "Favorites",
+      "Developer": "Developer",
+      "Design": "Design",
+      "Content": "Content",
+      "Security": "Security",
+      "Productivity": "Productivity",
+      "Math": "Math",
+      "Utility": "Utility"
+    },
+    "cta": {
+      "title": "Ready to boost your productivity?",
+      "text": "Start using our developer tools for free. No signup required, no data collected, just pure productivity.",
+      "button": "Get Started Free",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
+    },
+    "openTool": "Open tool",
+    "noResults": "No tools found matching",
+    "clearFilters": "Clear filters"
+  },
+  "Footer": {
+    "builtWith": "Built with ❤️ by",
+    "allTools": "All Tools",
+    "blog": "Blog",
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON Formatter",
+      "description": "Format, validate & beautify JSON instantly"
+    },
+    "base64-encoder": {
+      "name": "Base64 Encoder",
+      "description": "Encode and decode Base64 strings"
+    },
+    "url-encoder": {
+      "name": "URL Encoder",
+      "description": "Encode and decode URLs safely"
+    },
+    "jwt-decoder": {
+      "name": "JWT Decoder",
+      "description": "Decode and inspect JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "description": "Test regular expressions in real-time"
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Generate MD5, SHA-1, SHA-256 hashes"
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate random UUIDs/GUIDs instantly"
+    },
+    "css-minifier": {
+      "name": "CSS Minifier",
+      "description": "Minify and optimize your CSS code"
+    },
+    "markdown-editor": {
+      "name": "Markdown Preview",
+      "description": "Real-time Markdown editor and preview"
+    },
+    "color-converter": {
+      "name": "Color Converter",
+      "description": "Convert Hex, RGB, HSL and CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Timestamp Tool",
+      "description": "Convert Unix timestamps to human dates"
+    },
+    "sql-formatter": {
+      "name": "SQL Formatter",
+      "description": "Format and beautify SQL queries"
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "description": "Create secure, random passwords"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Generate placeholder text for designs"
+    },
+    "image-base64": {
+      "name": "Image to Base64",
+      "description": "Convert images to Base64 strings"
+    },
+    "qr-generator": {
+      "name": "QR Code Generator",
+      "description": "Generate QR codes for URLs and text"
+    },
+    "word-counter": {
+      "name": "Word Counter",
+      "description": "Count words, characters & reading time"
+    },
+    "case-converter": {
+      "name": "Case Converter",
+      "description": "Camel, snake, kebab & pascal case"
+    },
+    "text-diff": {
+      "name": "Text Diff Checker",
+      "description": "Compare two texts and find differences"
+    },
+    "slug-generator": {
+      "name": "Slug Generator",
+      "description": "Generate SEO-friendly URL slugs"
+    },
+    "gradient-generator": {
+      "name": "Gradient Generator",
+      "description": "Create beautiful CSS gradients"
+    },
+    "image-compressor": {
+      "name": "Image Compressor",
+      "description": "Compress images locally & privately"
+    },
+    "device-info": {
+      "name": "Device Information",
+      "description": "View screen, browser & system info"
+    },
+    "random-generator": {
+      "name": "Random Generator",
+      "description": "Pick numbers, coins & list items"
+    },
+    "unit-converter": {
+      "name": "Unit Converter",
+      "description": "Convert Length, Weight & Temp"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Timer",
+      "description": "Focus timer for productivity"
+    },
+    "yt-thumbnail": {
+      "name": "Thumbnail Downloader",
+      "description": "Get YouTube video thumbnails"
+    },
+    "my-ip": {
+      "name": "What Is My IP",
+      "description": "View public IP & network info"
+    },
+    "keycode-info": {
+      "name": "Keycode Info",
+      "description": "JavaScript keyboard event debugger"
+    },
+    "signature-generator": {
+      "name": "Signature Generator",
+      "description": "Draw & download digital signatures"
+    },
+    "screen-recorder": {
+      "name": "Screen Recorder",
+      "description": "Record screen & download video"
+    },
+    "credit-card-validator": {
+      "name": "Card Validator",
+      "description": "Validate credit card numbers"
+    },
+    "password-manager": {
+      "name": "Local Password Manager",
+      "description": "Securely store passwords locally with encryption"
+    },
+    "deep-link-tester": {
+      "name": "Deep Link Tester",
+      "description": "Test, launch & manage mobile deep links"
+    },
+    "image-converter": {
+      "name": "Image Converter",
+      "description": "Convert PNG/JPG to WebP locally to optimize images"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Convert JSON to CSV and vice versa"
+    },
+    "bmi-calculator": {
+      "name": "BMI Calculator",
+      "description": "Calculate Body Mass Index (BMI)"
+    },
+    "dns-lookup": {
+      "name": "DNS Lookup",
+      "description": "Query DNS records (A, MX, NS) instantly"
+    },
+    "age-calculator": {
+      "name": "Age Calculator",
+      "description": "Calculate precise age and total days"
+    },
+    "loan-calculator": {
+      "name": "Loan Calculator",
+      "description": "Calculate monthly EMI and total interest"
+    },
+    "discount-calculator": {
+      "name": "Discount Calculator",
+      "description": "Calculate sale price and savings"
+    },
+    "interest-calculator": {
+      "name": "Interest Calculator",
+      "description": "Simple vs Compound interest calculator"
+    },
+    "html-encoder": {
+      "name": "HTML Encoder/Decoder",
+      "description": "Escape special characters or decode HTML"
+    },
+    "list-sorter": {
+      "name": "List Sorter",
+      "description": "Sort, reverse, shuffle, and deduplicate lists"
+    },
+    "box-shadow": {
+      "name": "Box Shadow Generator",
+      "description": "Visually generate CSS box-shadows"
+    },
+    "date-diff": {
+      "name": "Date Difference",
+      "description": "Calculate duration between two dates"
+    },
+    "sql-to-json": {
+      "name": "SQL to JSON",
+      "description": "Convert SQL INSERTs to JSON objects"
+    },
+    "keyword-density": {
+      "name": "Keyword Density",
+      "description": "Analyze keyword frequency for SEO"
+    },
+    "json-diff": {
+      "name": "JSON Diff",
+      "description": "Compare two JSON objects side-by-side"
+    },
+    "cipher-tools": {
+      "name": "Cipher Tools",
+      "description": "ROT13 and Caesar Cipher encoder/decoder"
+    },
+    "token-generator": {
+      "name": "Random Token Generator",
+      "description": "Generate secure random tokens"
+    },
+    "favicon-generator": {
+      "name": "Favicon Generator",
+      "description": "Create .ico and PNG favicons"
+    },
+    "robots-generator": {
+      "name": "Robots.txt Generator",
+      "description": "Create robots.txt for SEO"
+    },
+    "grid-generator": {
+      "name": "CSS Grid Generator",
+      "description": "Visual CSS Grid layout builder"
+    },
+    "hmac-generator": {
+      "name": "HMAC Generator",
+      "description": "Generate keyed-hash message authentication codes"
+    },
+    "http-status": {
+      "name": "HTTP Status Codes",
+      "description": "Reference list of HTTP status codes"
+    },
+    "week-number": {
+      "name": "Week Number",
+      "description": "Current week number and year progress"
+    },
+    "text-tools": {
+      "name": "Text Transformer",
+      "description": "Reverse, flip, and encode text"
+    },
+    "url-parser": {
+      "name": "URL Parser",
+      "description": "Split URLs into protocol, host, path, params"
+    },
+    "markdown-table": {
+      "name": "Markdown Table Generator",
+      "description": "Create Markdown tables visually"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp Link Generator",
+      "description": "Create direct WhatsApp chat links"
+    },
+    "paypal-link": {
+      "name": "PayPal Link Generator",
+      "description": "Create PayPal.me payment links"
+    },
+    "svg-to-png": {
+      "name": "SVG to PNG",
+      "description": "Convert SVG code/file to PNG image"
+    },
+    "prime-factors": {
+      "name": "Prime Factors",
+      "description": "Find prime factors of a number"
+    },
+    "iban-validator": {
+      "name": "IBAN Validator",
+      "description": "Validate International Bank Account Numbers"
+    },
+    "ascii-converter": {
+      "name": "ASCII Converter",
+      "description": "Convert text to ASCII decimal codes"
+    },
+    "utm-builder": {
+      "name": "UTM Builder",
+      "description": "Build Google Analytics campaign URLs"
+    },
+    "meta-tags": {
+      "name": "Meta Tag Generator",
+      "description": "Generate SEO meta tags for websites"
+    },
+    "og-generator": {
+      "name": "Open Graph Generator",
+      "description": "Create Open Graph meta tags for social sharing"
+    },
+    "twitter-card": {
+      "name": "Twitter Card Generator",
+      "description": "Create Twitter Card meta tags"
+    },
+    "aspect-ratio": {
+      "name": "Aspect Ratio Calculator",
+      "description": "Calculate aspect ratios and dimensions"
+    },
+    "css-cursor": {
+      "name": "CSS Cursor",
+      "description": "Visual CSS cursor property reference"
+    },
+    "css-triangle": {
+      "name": "CSS Triangle Generator",
+      "description": "Generate pure CSS triangles"
+    },
+    "percentage-calculator": {
+      "name": "Percentage Calculator",
+      "description": "Calculate percentages and changes"
+    },
+    "vat-calculator": {
+      "name": "VAT Calculator",
+      "description": "Calculate VAT add/remove amounts"
+    },
+    "stopwatch": {
+      "name": "Stopwatch",
+      "description": "Simple browser-based stopwatch"
+    },
+    "text-to-speech": {
+      "name": "Text to Speech",
+      "description": "Convert text into spoken voice"
+    },
+    "speech-to-text": {
+      "name": "Speech to Text",
+      "description": "Convert spoken voice into text"
+    },
+    "vibration-tester": {
+      "name": "Vibration Tester",
+      "description": "Test device vibration motor"
+    },
+    "chmod-calculator": {
+      "name": "Chmod Calculator",
+      "description": "Calculate Linux file permissions"
+    },
+    "crontab-generator": {
+      "name": "Crontab Generator",
+      "description": "Generate cron schedule expressions"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd Generator",
+      "description": "Generate basic auth entries"
+    },
+    "subnet-calculator": {
+      "name": "Subnet Calculator",
+      "description": "Calculate network subnets and IP ranges"
+    },
+    "mac-generator": {
+      "name": "MAC Address Generator",
+      "description": "Generate random MAC addresses"
+    },
+    "timezone-converter": {
+      "name": "Time Zone Converter",
+      "description": "Convert time between multiple zones"
+    },
+    "email-validator": {
+      "name": "Email Validator",
+      "description": "Validate email format and detect typos"
+    },
+    "password-strength": {
+      "name": "Password Strength",
+      "description": "Check password strength score"
+    },
+    "roman-numerals": {
+      "name": "Roman Numeral Converter",
+      "description": "Convert between Roman and decimal numbers"
+    },
+    "margin-calculator": {
+      "name": "Margin Calculator",
+      "description": "Calculate profit margin and markup"
+    },
+    "roi-calculator": {
+      "name": "ROI Calculator",
+      "description": "Calculate Return on Investment"
+    },
+    "fuel-calculator": {
+      "name": "Fuel Cost Calculator",
+      "description": "Calculate trip fuel cost"
+    },
+    "pretty-print-url": {
+      "name": "Pretty Print URL",
+      "description": "Format and beautify URLs for readability"
+    }
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using DailyDevTools, you accept and agree to be bound by the terms and provision of this agreement."
+      },
+      "useLicense": {
+        "title": "2. Use License",
+        "content": "DailyDevTools is free to use for personal and commercial purposes. You may not:",
+        "list": [
+          "Attempt to reverse engineer or scrape significant portions of the site.",
+          "Use the website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website."
+        ]
+      },
+      "disclaimer": {
+        "title": "3. Disclaimer",
+        "content": "The tools on DailyDevTools are provided \"as is\". We make no warranties, expressed or implied..."
+      },
+      "limitations": {
+        "title": "4. Limitations",
+        "content": "In no event shall DailyDevTools or its suppliers be liable for any damages..."
+      },
+      "revisions": {
+        "title": "5. Revisions",
+        "content": "The materials appearing on DailyDevTools could include technical, typographical, or photographic errors..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "intro": "Welcome to DailyDevTools. We respect your privacy and are committed to protecting your personal data.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. How Our Tools Work (Local Processing)",
+        "content": "Most importantly: The tools run entirely in your browser. Data never leaves your device."
+      },
+      "dataCollection": {
+        "title": "3. Data We Collect",
+        "content": "We do not collect content. We use Google Analytics for usage stats."
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "We use cookies for analytics and local preferences."
+      },
+      "thirdParty": {
+        "title": "5. Third-Party Links",
+        "content": "Our site may contain links to third parties."
+      },
+      "changes": {
+        "title": "6. Changes to This Policy",
+        "content": "We may update this policy from time to time."
+      },
+      "contact": {
+        "title": "7. Contact Us",
+        "content": "Contact us via GitHub or social media."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Developer Resources",
+    "subtitle": "Deep dives into the tools we build and the concepts behind them.",
+    "readMore": "Read more",
+    "backToBlog": "Back to Blog",
+    "enjoyedArticle": "Enjoyed this article?",
+    "checkTools": "Check out our Tools"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Input",
+      "output": "Output",
+      "format": "Format",
+      "minify": "Minify",
+      "download": "Download",
+      "copy": "Copy",
+      "paste": "Paste",
+      "copied": "Copied!",
+      "upload": "Upload",
+      "sample": "Sample",
+      "clear": "Clear",
+      "indent": "Indent:",
+      "chars": "chars",
+      "error": "Error",
+      "invalid": "Invalid Input",
+      "result": "Result",
+      "generate": "Generate",
+      "calculate": "Calculate",
+      "convert": "Convert",
+      "validate": "Validate",
+      "resultPlaceholder": "Result will appear here..."
+    },
+    "Base64Encoder": {
+      "encode": "Encode",
+      "decode": "Decode",
+      "textToEncode": "Text to Encode",
+      "base64ToDecode": "Base64 to Decode",
+      "enterText": "Enter text to encode...",
+      "enterBase64": "Enter Base64 to decode...",
+      "encodeAction": "Encode to Base64",
+      "decodeAction": "Decode from Base64",
+      "base64Output": "Base64 Output",
+      "decodedText": "Decoded Text",
+      "resultPlaceholder": "Result will appear here...",
+      "invalidInput": "Invalid input for {mode}"
+    },
+    "QrGenerator": {
+      "content": "Content",
+      "placeholder": "https://example.com",
+      "customization": "Customization",
+      "foreground": "Foreground",
+      "background": "Background",
+      "download": "Download"
+    },
+    "HashGenerator": {
+      "inputText": "Input Text",
+      "placeholder": "Enter text to hash...",
+      "waiting": "Waiting for input..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Generate New",
+      "configuration": "Configuration",
+      "length": "Password Length",
+      "uppercase": "Uppercase (A-Z)",
+      "numbers": "Numbers (0-9)",
+      "symbols": "Symbols (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Paste your JSON here...",
+      "outputPlaceholder": "Formatted JSON will appear here...",
+      "spaces": "spaces"
+    },
+    "UrlEncoder": {
+      "encode": "Encode",
+      "decode": "Decode",
+      "urlToEncode": "URL to Encode",
+      "encodedUrlToDecode": "Encoded URL to Decode",
+      "enterUrlToEncode": "Enter URL or text to encode...",
+      "enterUrlToDecode": "Enter encoded URL to decode...",
+      "encodeAction": "Encode URL",
+      "decodeAction": "Decode URL",
+      "encodedUrl": "Encoded URL",
+      "decodedUrl": "Decoded URL",
+      "resultPlaceholder": "Result will appear here...",
+      "chars": "chars",
+      "invalidInput": "Invalid input for {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Paste your JWT token",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Decode JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Issued",
+      "expires": "Expires"
+    },
+    "RegexTester": {
+      "expression": "Expression",
+      "expressionPlaceholder": "Capture group (abc)...",
+      "testString": "Test String",
+      "testStringPlaceholder": "Paste your test string here...",
+      "matchHighlights": "Match Highlights",
+      "matches": "matches",
+      "matchInfo": "Match Information",
+      "match": "Match",
+      "index": "Index",
+      "group": "Group",
+      "noMatches": "No matches found",
+      "highlightPlaceholder": "Matches will be highlighted here...",
+      "flagsHelp": "g: global, i: ignore case, m: multiline"
+    },
+    "UuidGenerator": {
+      "generate": "Generate",
+      "generateCount": "Generate:",
+      "copyAll": "Copy All",
+      "copyUuid": "Copy UUID",
+      "generatedAt": "Generated locally at {time} • Version 4 UUIDs"
+    },
+    "WordCounter": {
+      "words": "Words",
+      "characters": "Characters",
+      "sentences": "Sentences",
+      "paragraphs": "Paragraphs",
+      "readingTime": "Reading Time",
+      "min": "min",
+      "textInput": "Text Input",
+      "inputPlaceholder": "Start typing or paste your text here to analyze...",
+      "clear": "Clear"
+    },
+    "TimestampConverter": {
+      "timestamp": "Timestamp",
+      "humanDate": "Human Date",
+      "convert": "Convert",
+      "currentTimestamp": "Current Timestamp",
+      "inputPlaceholder": "Enter Unix timestamp..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Paste your SQL query here...",
+      "outputPlaceholder": "Formatted SQL will appear here..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Paste your CSS code here...",
+      "outputPlaceholder": "Minified CSS will appear here..."
+    },
+    "MarkdownEditor": {
+      "editor": "Editor",
+      "preview": "Preview",
+      "inputPlaceholder": "Enter Markdown here..."
+    },
+    "TextDiff": {
+      "original": "Original Text",
+      "changed": "Changed Text",
+      "compare": "Compare",
+      "differences": "Differences"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Enter text to convert...",
+      "generatedSlug": "Generated Slug"
+    },
+    "ImageCompressor": {
+      "selectImage": "Select Image",
+      "quality": "Quality",
+      "compress": "Compress",
+      "download": "Download",
+      "originalSize": "Original Size",
+      "compressedSize": "Compressed Size"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragraphs",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "GradientGenerator": {
+      "angle": "Angle",
+      "colors": "Colors",
+      "addColor": "Add Color",
+      "copyCss": "Copy CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Birth Date",
+      "calculate": "Calculate",
+      "years": "Years",
+      "months": "Months",
+      "days": "Days",
+      "totalDays": "Total Days",
+      "nextBirthday": "Next Birthday In"
+    },
+    "AsciiConverter": {
+      "text": "Text",
+      "ascii": "ASCII",
+      "convert": "Convert",
+      "inputPlaceholder": "Enter text..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horizontal (X)",
+      "vertical": "Vertical (Y)",
+      "blur": "Blur",
+      "spread": "Spread",
+      "colorOpacity": "Color & Opacity",
+      "inset": "Inset"
+    },
+    "BmiCalculator": {
+      "metric": "Metric (kg/cm)",
+      "imperial": "Imperial (lbs/in)",
+      "weight": "Weight",
+      "height": "Height",
+      "calculate": "Calculate BMI",
+      "bmiScore": "Your BMI Score",
+      "underweight": "Underweight",
+      "normal": "Normal Weight",
+      "overweight": "Overweight",
+      "obese": "Obese"
+    },
+    "CaseConverter": {
+      "inputText": "Input Text",
+      "inputPlaceholder": "Type your text here...",
+      "upper": "UPPERCASE",
+      "lower": "lowercase",
+      "title": "Title Case",
+      "sentence": "Sentence case",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Copy",
+      "conversions": "Conversions",
+      "clear": "Clear"
+    },
+    "ColorConverter": {
+      "hexLabels": "HEX Color",
+      "rgbLabels": "RGB Color",
+      "hslLabels": "HSL Color",
+      "cmykLabels": "CMYK Color",
+      "copy": "Copy",
+      "hexToRgbNote": "* Currently supports HEX to RGB/HSL conversion only."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Card Number",
+      "validate": "Validate",
+      "valid": "Valid Credit Card Number",
+      "invalid": "Invalid Credit Card Number",
+      "placeholder": "Enter card number...",
+      "type": "Card Type",
+      "checkDigit": "Check Digit",
+      "luhnValid": "Luhn Algorithm Valid"
+    },
+    "CipherTools": {
+      "encode": "Encode",
+      "decode": "Decode",
+      "rot13": "ROT13",
+      "caesar": "Caesar Cipher",
+      "shift": "Shift",
+      "inputPlaceholder": "Hello World",
+      "outputPlaceholder": "Result will appear here..."
+    },
+    "CronGenerator": {
+      "minute": "Minute",
+      "hour": "Hour",
+      "dayMonth": "Day (Month)",
+      "month": "Month",
+      "dayWeek": "Day (Week)",
+      "presets": "Common Presets",
+      "everyMinute": "Every minute",
+      "everyHour": "Every hour",
+      "everyDayMidnight": "Every day at midnight",
+      "everySunday": "Every Sunday",
+      "everyMonth": "Every month",
+      "everyYear": "Every year",
+      "formatInfo": "Format: * * * * * (Minute Hour DayOfMonth Month DayOfWeek)",
+      "usageInfo": "Use * for 'every', */n for 'every n', 1,2,3 for specific list."
+    },
+    "DateDiff": {
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "calculate": "Calculate",
+      "difference": "Difference",
+      "years": "Years",
+      "months": "Months",
+      "days": "Days",
+      "totalDays": "Total Days",
+      "totalWeeks": "Total Weeks",
+      "totalHours": "Total Hours"
+    },
+    "DeepLinkTester": {
+      "testLink": "Test Link",
+      "savedLinks": "Saved Links",
+      "searchPlaceholder": "Search saved links...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Launch",
+      "save": "Save",
+      "delete": "Delete",
+      "opens": "opens",
+      "scanQr": "Scan with your mobile device to test",
+      "noSavedLinks": "No saved links found.",
+      "enterLabel": "Enter a label for this link:",
+      "saved": "Saved!",
+      "confirmDelete": "Delete this link?"
+    },
+    "DeviceInfo": {
+      "screen": "Screen",
+      "browser": "Browser",
+      "system": "System",
+      "resolution": "Resolution",
+      "colorDepth": "Color Depth",
+      "userAgent": "User Agent",
+      "platform": "Platform",
+      "language": "Language"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Original Price",
+      "discountPercent": "Discount",
+      "additionalDiscount": "Additional Discount",
+      "calculate": "Calculate",
+      "youSave": "You Save",
+      "finalPrice": "Final Price",
+      "salesTax": "Sales Tax"
+    },
+    "DnsLookup": {
+      "domain": "Domain",
+      "lookup": "Lookup",
+      "recordType": "Record Type",
+      "results": "Results",
+      "placeholder": "example.com",
+      "status": "Status",
+      "time": "Time",
+      "server": "Server",
+      "answerSection": "Answer Section",
+      "name": "Name",
+      "type": "Type",
+      "ttl": "TTL",
+      "data": "Data",
+      "noRecords": "No records found"
+    },
+    "EmailValidator": {
+      "email": "Email Address",
+      "validate": "Validate",
+      "valid": "Valid",
+      "invalid": "Invalid",
+      "suggestion": "Suggestion",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Upload Image",
+      "generate": "Generate",
+      "download": "Download",
+      "sizes": "Sizes"
+    },
+    "FuelCalculator": {
+      "distance": "Distance",
+      "fuelEfficiency": "Fuel Efficiency",
+      "fuelPrice": "Fuel Price",
+      "calculate": "Calculate",
+      "result": "Result",
+      "totalCost": "Total Cost",
+      "fuelNeeded": "Fuel Needed"
+    },
+    "GridGenerator": {
+      "columns": "Columns",
+      "rows": "Rows",
+      "gap": "Gap",
+      "preview": "Preview",
+      "copyCss": "Copy CSS",
+      "rowGap": "Row Gap",
+      "colGap": "Column Gap",
+      "options": "Options"
+    },
+    "HmacGenerator": {
+      "message": "Message",
+      "secret": "Secret",
+      "algorithm": "Algorithm",
+      "generate": "Generate",
+      "inputPlaceholder": "Input text...",
+      "secretPlaceholder": "Secret..."
+    },
+    "HtmlEncoder": {
+      "encode": "Encode",
+      "decode": "Decode",
+      "resultPlaceholder": "Result will appear here...",
+      "inputPlaceholder": "Paste HTML here..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Search code (e.g. 404) or name...",
+      "code": "Code",
+      "name": "Name",
+      "description": "Description"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Validate",
+      "valid": "Valid",
+      "invalid": "Invalid",
+      "placeholder": "Enter IBAN...",
+      "inputLabel": "Enter IBAN Number",
+      "validTitle": "Valid Benchmark",
+      "invalidTitle": "Invalid Checksum",
+      "validDesc": "The IBAN format and checksum are correct.",
+      "invalidDesc": "The IBAN does not match the checksum algorithm."
+    },
+    "ImageBase64": {
+      "upload": "Upload",
+      "convert": "Convert",
+      "copy": "Copy",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Upload Image",
+      "convertToBase64": "Convert to Base64",
+      "convertToImage": "Convert to Image",
+      "base64String": "Base64 String",
+      "download": "Download"
+    },
+    "ImageConverter": {
+      "selectImage": "Select Image",
+      "format": "Format",
+      "convert": "Convert",
+      "download": "Download",
+      "quality": "Quality"
+    },
+    "InterestCalculator": {
+      "principal": "Principal",
+      "rate": "Interest Rate",
+      "time": "Time Period (Years)",
+      "calculate": "Calculate",
+      "simpleInterest": "Simple",
+      "compoundInterest": "Compound",
+      "totalAmount": "Total Value",
+      "type": "Type",
+      "frequency": "Compound Frequency",
+      "annually": "Annually",
+      "monthly": "Monthly",
+      "daily": "Daily",
+      "year": "Year"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Enter JSON...",
+      "convert": "Convert",
+      "format": "Format",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON to CSV",
+      "csvToJson": "CSV to JSON",
+      "jsonInput": "JSON Input",
+      "csvInput": "CSV Input",
+      "jsonOutput": "JSON Output",
+      "csvOutput": "CSV Output"
+    },
+    "JsonDiff": {
+      "original": "Original JSON",
+      "modified": "Modified JSON",
+      "compare": "Compare",
+      "differences": "Differences"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Press any key",
+      "key": "Key",
+      "code": "Code",
+      "keyCode": "KeyCode",
+      "which": "which",
+      "location": "Location",
+      "modifiers": "Modifiers",
+      "standard": "Standard",
+      "left": "Left",
+      "right": "Right",
+      "numpad": "Numpad",
+      "space": "(Space)",
+      "info": "Display JavaScript event KeyCode, Code, and more."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Paste your text here to analyze keyword frequency...",
+      "analyze": "Analyze",
+      "keyword": "Keyword",
+      "count": "Count",
+      "density": "Density"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Enter your list here...",
+      "sort": "Sort",
+      "reverse": "Reverse",
+      "shuffle": "Shuffle",
+      "deduplicate": "Deduplicate",
+      "ascending": "Ascending",
+      "descending": "Descending",
+      "length": "Length",
+      "trim": "Trim Empty",
+      "lines": "Lines:",
+      "chars": "Characters:"
+    },
+    "LoanCalculator": {
+      "principal": "Principal",
+      "interestRate": "Interest Rate",
+      "term": "Term",
+      "calculate": "Calculate",
+      "monthlyPayment": "Monthly Payment",
+      "totalInterest": "Total Interest",
+      "totalPayment": "Total Payment",
+      "loanDetails": "Loan Details",
+      "loanAmount": "Loan Amount",
+      "loanTerm": "Loan Term",
+      "years": "Years",
+      "months": "Months",
+      "interest": "Interest"
+    },
+    "MacGenerator": {
+      "generate": "Generate",
+      "copy": "Copy",
+      "separator": "Separator",
+      "format": "Format",
+      "quantity": "Quantity",
+      "uppercase": "Uppercase"
+    },
+    "MarginCalculator": {
+      "cost": "Cost",
+      "price": "Selling Price",
+      "calculate": "Calculate",
+      "margin": "Margin",
+      "markup": "Markup",
+      "profit": "Profit",
+      "revenue": "Revenue",
+      "netProfit": "Net Profit",
+      "grossMargin": "Gross Margin"
+    },
+    "PasswordManager": {
+      "masterPassword": "Master Password",
+      "unlock": "Unlock",
+      "searchPlaceholder": "Search accounts...",
+      "addNew": "Add New",
+      "siteName": "Site Name",
+      "username": "Username",
+      "password": "Password",
+      "save": "Save",
+      "delete": "Delete"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Type here...",
+      "strength": "Strength",
+      "weak": "Weak",
+      "fair": "Fair",
+      "good": "Good",
+      "strong": "Strong",
+      "requirements": "Requirements",
+      "length": "8+ characters",
+      "number": "Includes number",
+      "uppercase": "Includes uppercase",
+      "symbol": "Includes symbol"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me Username",
+      "amount": "Amount",
+      "currency": "Currency",
+      "generate": "Generate",
+      "itemName": "Item Name",
+      "link": "Link",
+      "yourLink": "Your PayPal Link",
+      "openPaypal": "Open PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Rules",
+      "addRule": "Add Rule",
+      "allow": "Allow",
+      "disallow": "Disallow",
+      "sitemap": "Sitemap URL (Optional)",
+      "output": "Generated robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Value",
+      "percentage": "Percentage",
+      "calculate": "Calculate",
+      "result": "Result",
+      "whatIs": "What is",
+      "of": "% of",
+      "isWhatPercentOf": "is what % of",
+      "percentChangeFrom": "% change from",
+      "to": "to"
+    },
+    "PomodoroTimer": {
+      "work": "Focus Time",
+      "shortBreak": "Short Break",
+      "longBreak": "Long Break",
+      "start": "Start",
+      "pause": "Pause",
+      "reset": "Reset",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Number",
+      "calculate": "Calculate",
+      "factors": "Prime Factors",
+      "inputLabel": "Enter a number",
+      "placeholder": "e.g. 120",
+      "isPrime": "This number is Prime!",
+      "isComposite": "This number is Composite"
+    },
+    "RoiCalculator": {
+      "investment": "Investment",
+      "returns": "Returns",
+      "calculate": "Calculate",
+      "roi": "ROI",
+      "profit": "Profit",
+      "finalValue": "Final Value",
+      "time": "Time (Years)",
+      "totalGain": "Total Gain",
+      "annualizedRoi": "Annualized ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "Decimal",
+      "decimalPlaceholder": "2024",
+      "roman": "Roman",
+      "convert": "Convert",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Start Recording",
+      "stopRecording": "Stop Recording",
+      "download": "Download",
+      "recording": "Recording..."
+    },
+    "SignatureGenerator": {
+      "draw": "Draw",
+      "clear": "Clear",
+      "download": "Download",
+      "penColor": "Pen Color",
+      "penSize": "Pen Size"
+    },
+    "SpeechToText": {
+      "startListening": "Start Listening",
+      "stopListening": "Stop Listening",
+      "transcript": "Transcript",
+      "placeholder": "Transcript will appear here..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO users (id, name, age) VALUES (1, 'John', 30);",
+      "convert": "Convert",
+      "result": "Result"
+    },
+    "Stopwatch": {
+      "start": "Start",
+      "stop": "Stop",
+      "reset": "Reset",
+      "lap": "Lap"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP Address",
+      "subnetMask": "Subnet Mask",
+      "calculate": "Calculate",
+      "networkAddress": "Network Address",
+      "broadcastAddress": "Broadcast Address",
+      "usableHosts": "Usable Hosts"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Paste SVG",
+      "uploadSvg": "Upload SVG",
+      "convert": "Convert",
+      "download": "Download"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Enter text to speak...",
+      "speak": "Speak",
+      "stop": "Stop",
+      "voice": "Voice",
+      "rate": "Rate",
+      "pitch": "Pitch"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Type something...",
+      "reverse": "Reverse",
+      "uppercase": "Uppercase",
+      "lowercase": "Lowercase",
+      "encode": "Encode"
+    },
+    "TimezoneConverter": {
+      "from": "From",
+      "to": "To",
+      "convert": "Convert",
+      "currentTime": "Current Time"
+    },
+    "TokenGenerator": {
+      "length": "Length",
+      "generate": "Generate",
+      "copy": "Copy",
+      "includeNumbers": "Include Numbers",
+      "includeSymbols": "Include Symbols"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Enter URL...",
+      "parse": "Parse",
+      "protocol": "Protocol",
+      "host": "Host",
+      "path": "Path",
+      "query": "Query"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "Website URL",
+      "source": "Source",
+      "medium": "Medium",
+      "campaign": "Campaign",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "VatCalculator": {
+      "amount": "Amount",
+      "vatRate": "VAT Rate",
+      "addVat": "Add VAT",
+      "removeVat": "Remove VAT",
+      "calculate": "Calculate"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrate",
+      "pattern": "Pattern",
+      "duration": "Duration",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Current Week Number",
+      "yearProgress": "Year Progress",
+      "week": "Week"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Phone Number",
+      "message": "Message",
+      "generate": "Generate",
+      "copy": "Copy",
+      "placeholder": "Hello, I'm interested..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Paste YouTube Video URL...",
+      "getThumbnail": "Get Thumbnail",
+      "download": "Download"
+    },
+    "CrontabGenerator": {
+      "minute": "Minute",
+      "hour": "Hour",
+      "day": "Day",
+      "month": "Month",
+      "weekday": "Weekday",
+      "expression": "Expression",
+      "description": "Description"
+    },
+    "ChmodCalculator": {
+      "owner": "Owner",
+      "group": "Group",
+      "others": "Others",
+      "read": "Read",
+      "write": "Write",
+      "execute": "Execute",
+      "numeric": "Numeric",
+      "symbolic": "Symbolic"
+    },
+    "HtpasswdGenerator": {
+      "username": "Username",
+      "password": "Password",
+      "algorithm": "Algorithm",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "AspectRatio": {
+      "width": "Width",
+      "height": "Height",
+      "ratio": "Ratio",
+      "calculate": "Calculate"
+    },
+    "CssClipPath": {
+      "shape": "Shape",
+      "preview": "Preview",
+      "copyCss": "Copy CSS"
+    },
+    "CssCursor": {
+      "cursor": "Cursor",
+      "preview": "Preview",
+      "copyCss": "Copy CSS"
+    },
+    "CssTriangle": {
+      "direction": "Direction",
+      "size": "Size",
+      "color": "Color",
+      "preview": "Preview",
+      "copyCss": "Copy CSS"
+    },
+    "MetaGenerator": {
+      "title": "Title",
+      "description": "Description",
+      "keywords": "Keywords",
+      "author": "Author",
+      "url": "URL",
+      "image": "Image",
+      "generate": "Generate",
+      "copy": "Copy",
+      "titlePlaceholder": "My Awesome Website",
+      "descriptionPlaceholder": "A brief description of your site...",
+      "keywordsPlaceholder": "web, tools, dev",
+      "authorPlaceholder": "Your Name",
+      "outputPlaceholder": "Meta tags will appear here..."
+    },
+    "OgGenerator": {
+      "title": "Title",
+      "description": "Description",
+      "url": "URL",
+      "image": "Image",
+      "type": "Type",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "TwitterCard": {
+      "cardType": "Card Type",
+      "title": "Title",
+      "description": "Description",
+      "image": "Image",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "MarkdownTable": {
+      "rows": "Rows",
+      "columns": "Columns",
+      "header": "Header",
+      "addRow": "Add Row",
+      "addColumn": "Add Column",
+      "generate": "Generate",
+      "copy": "Copy"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Format",
+      "copy": "Copy"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON Formatting: Best Practices for Developers",
+      "excerpt": "Learn why proper JSON formatting matters for debugging and how to automate it in your workflow.",
+      "category": "Development"
+    },
+    "mastering-regex": {
+      "title": "Mastering Regular Expressions: A visual guide",
+      "excerpt": "Regex doesn't have to be scary. We break down common patterns for email validation, URLs, and more.",
+      "category": "Tutorial"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: How to Schedule Tasks",
+      "excerpt": "Understand the 5-star syntax of Cron and how to schedule backups, emails, and scripts on Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Why Local Password Managers Are Safer (KeyPass Alternative)",
+      "excerpt": "Cloud breaches are common. Learn why storing passwords locally with AES-256 encryption is the safest bet for personal security.",
+      "category": "Security"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Search tools...",
+    "noResults": "No results found.",
+    "select": "Select",
+    "navigate": "Navigate"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Send Feedback",
+    "feedback": "Feedback",
+    "thankYou": "Thank you!",
+    "feedbackSent": "Your feedback has been sent successfully.",
+    "close": "Close",
+    "name": "Name (optional)",
+    "namePlaceholder": "Your name",
+    "email": "Email (optional)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Feedback Type",
+    "typeSuggestion": "💡 Suggestion",
+    "typeBug": "🐛 Bug Report",
+    "typeFeature": "✨ Feature Request",
+    "typeOther": "📝 Other",
+    "message": "Message *",
+    "messagePlaceholder": "Tell us what you think...",
+    "sending": "Sending...",
+    "weReadEveryMessage": "We read every message. Thank you for helping us improve!"
+  },
+  "ShareButton": {
+    "shareTool": "Share Tool",
+    "copiedLink": "Copied Link!"
+  },
+  "TextDiff": {
+    "original": "Original Text",
+    "changed": "Changed Text",
+    "update": "Update Diff",
+    "old": "Old",
+    "new": "New",
+    "content": "Content"
+  },
+  "CrontabGenerator": {
+    "minute": "Minute",
+    "hour": "Hour",
+    "day": "Day",
+    "month": "Month",
+    "weekday": "Weekday",
+    "min": "Min",
+    "mon": "Mon",
+    "week": "Week",
+    "presets": "Quick Presets",
+    "everyMinute": "Every minute",
+    "every5Minutes": "Every 5 minutes",
+    "everyHour": "Every hour",
+    "everyDayMidnight": "Every day at midnight",
+    "everyWeek": "Every week",
+    "everyMonth": "Every month"
+  },
+  "SpeechToText": {
+    "notSupported": "Your browser does not support the Web Speech API. Please use Chrome.",
+    "placeholder": "Transcript will appear here...",
+    "listening": "Listening...",
+    "start": "Click microphone to start"
+  },
+  "OgGenerator": {
+    "title": "Title",
+    "description": "Description",
+    "image": "Image URL",
+    "url": "Canonical URL",
+    "type": "Type",
+    "website": "Website",
+    "article": "Article",
+    "profile": "Profile",
+    "preview": "Preview (Facebook/LinkedIn)",
+    "generatedHtml": "Generated HTML",
+    "copy": "Copy"
+  },
+  "WeekNumber": {
+    "checkLabel": "Check Week Number for Date",
+    "yearProgress": "Year Progress"
+  },
+  "RelatedTools": {
+    "title": "You might also like",
+    "subtitle": "Explore other popular developer tools",
+    "openTool": "Open Tool"
+  },
+  "Breadcrumb": {
+    "home": "Home",
+    "tools": "Tools"
+  },
+  "SvgToPng": {
+    "upload": "Upload SVG File",
+    "browse": "or click to browse",
+    "paste": "...or paste SVG Code",
+    "preview": "PNG Preview (2x Scale)",
+    "download": "Download PNG",
+    "errorType": "Please upload a valid SVG file.",
+    "errorRender": "Failed to render SVG. Ensure it is valid XML.",
+    "errorProcess": "Error processing SVG."
+  },
+  "GradientGenerator": {
+    "config": "Configuration",
+    "colors": "Colors",
+    "type": "Type",
+    "angle": "Angle",
+    "random": "Random",
+    "copyCss": "Copy CSS",
+    "copied": "Copied"
+  },
+  "TimezoneConverter": {
+    "date": "Date",
+    "time": "Time (Local)",
+    "invalid": "Invalid",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "London (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "India (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Number Generator",
+    "listGen": "List Generator",
+    "coinGen": "Coin Generator",
+    "min": "Min",
+    "max": "Max",
+    "count": "Count",
+    "generate": "Generate",
+    "listLabel": "List Items (one per line)",
+    "pick": "Pick Random Item",
+    "winner": "The winner is...",
+    "flip": "Flip Coin",
+    "heads": "Heads",
+    "tails": "Tails"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Recording your screen...",
+    "titleFree": "Free Online Screen Recorder",
+    "desc": "Capture your screen, app window, or browser tab. No watermark, no time limit.",
+    "start": "Start Recording",
+    "stop": "Stop Recording",
+    "browserSupport": "Works best in Chrome, Edge, and Firefox on Desktop."
+  },
+  "CssCursor": {
+    "hoverTest": "Hover here to test"
+  },
+  "VatCalculator": {
+    "amount": "Amount",
+    "rate": "VAT Rate (%)",
+    "addVat": "Add VAT",
+    "removeVat": "Remove VAT",
+    "netAmount": "Net Amount",
+    "vatAmount": "VAT Amount",
+    "grossTotal": "Gross Total",
+    "netTotal": "Net Total",
+    "grossAmount": "Gross Amount"
+  },
+  "MyIP": {
+    "ipLabel": "Your Public IP Address",
+    "loading": "Loading...",
+    "isp": "Internet Provider (ISP)",
+    "location": "Location",
+    "asn": "ASN",
+    "timezone": "Timezone",
+    "note": "This is the IP address visible to websites you visit. It may be different from your local IP if you use a VPN or proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Enter URL",
+    "formatted": "Formatted Output",
+    "copy": "Copy",
+    "copied": "Copied",
+    "placeholder": "Paste a URL above to see it formatted."
+  },
+  "WhatsAppLink": {
+    "phone": "Phone Number (with Country Code)",
+    "message": "Pre-filled Message",
+    "hint": "Do not include +, -, or ().",
+    "yourLink": "Your WhatsApp Link",
+    "open": "Open Chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Enter URL",
+    "params": "Query Parameters",
+    "error": "Invalid URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Upload Image",
+    "browse": "Recommended: 512x512 PNG",
+    "original": "Original",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Download Favicon.png",
+    "note": "* Currently generates 32x32 PNG favicons. Rename to .ico if needed for legacy support."
+  },
+  "SubnetCalculator": {
+    "ip": "IP Address",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Calculate",
+    "subnetMask": "Subnet Mask",
+    "networkAddress": "Network Address",
+    "firstHost": "First Host",
+    "lastHost": "Last Host",
+    "broadcastAddress": "Broadcast Address",
+    "totalHosts": "Total Hosts"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Enter Article Title / Text",
+    "generated": "Generated Slug",
+    "copy": "Copy Slug"
+  },
+  "SqlToJson": {
+    "inputLabel": "Input SQL (INSERT statements only)",
+    "convert": "Convert to JSON",
+    "error": "Could not parse SQL. Ensure it is standard INSERT INTO statements."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Add Row",
+    "addCol": "+ Add Column",
+    "headerPlaceholder": "Header",
+    "outputLabel": "Markdown Output",
+    "copy": "Copy Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Card Type",
+    "siteHandle": "Site Handle (e.g. @twitter)",
+    "title": "Title",
+    "description": "Description",
+    "imageUrl": "Image URL",
+    "preview": "Preview",
+    "generatedHtml": "Generated HTML",
+    "copy": "Copy",
+    "placeholderTitle": "Card Title",
+    "placeholderDesc": "Description goes here..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Enter text to speak...",
+    "voice": "Voice",
+    "speed": "Speed",
+    "pitch": "Pitch",
+    "speak": "Speak"
+  },
+  "TokenGenerator": {
+    "length": "Length",
+    "includeNumbers": "Include Numbers",
+    "includeSymbols": "Include Symbols",
+    "generate": "Generate Token"
+  },
+  "CssTriangle": {
+    "direction": "Direction",
+    "color": "Color",
+    "width": "Width (px)",
+    "height": "Height (px)",
+    "copy": "Copy"
+  },
+  "UnitConverter": {
+    "length": "Length",
+    "weight": "Weight",
+    "temperature": "Temperature",
+    "meters": "Meters",
+    "kilometers": "Kilometers",
+    "centimeters": "Centimeters",
+    "millimeters": "Millimeters",
+    "inches": "Inches",
+    "feet": "Feet",
+    "yards": "Yards",
+    "miles": "Miles",
+    "kilograms": "Kilograms",
+    "grams": "Grams",
+    "pounds": "Pounds",
+    "ounces": "Ounces",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Shapes",
+    "preview": "Preview",
+    "cssCode": "CSS Code",
+    "copy": "Copy",
+    "copied": "Copied"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Upload an Image",
+    "uploadDesc": "JPG, PNG or WebP. We compress it locally.",
+    "selectImage": "Select Image",
+    "settings": "Compression Settings",
+    "quality": "Quality",
+    "originalSize": "Original Size",
+    "compressedSize": "Compressed Size",
+    "saving": "Saving",
+    "download": "Download"
+  },
+  "HtpasswdGenerator": {
+    "username": "Username",
+    "password": "Password",
+    "algorithm": "Algorithm",
+    "generate": "Generate Entry",
+    "result": "Result",
+    "sha1": "SHA-1 (Insecure but standard)",
+    "notSupported": "Only SHA-1 is supported in this client-side version."
+  },
+  "MetaTags": {
+    "pageTitle": "Page Title",
+    "description": "Description",
+    "author": "Author"
+  },
+  "AgeCalculator": {
+    "dob": "Date of Birth",
+    "age": "Age",
+    "years": "years",
+    "months": "months",
+    "days": "days",
+    "nextBirthday": "Next Birthday"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "Website URL (Required)",
+    "source": "Campaign Source (Required)",
+    "medium": "Campaign Medium (Required)",
+    "name": "Campaign Name (Required)",
+    "term": "Campaign Term (Optional)",
+    "content": "Campaign Content (Optional)",
+    "generatedUrl": "Generated URL",
+    "copy": "Copy URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Current Unix Time",
+    "timestampLabel": "Timestamp (Seconds)",
+    "isoLabel": "ISO Date Format",
+    "utcDate": "UTC Date",
+    "localDate": "Local Date",
+    "relative": "Relative"
+  },
+  "SignatureGenerator": {
+    "color": "Color",
+    "width": "Width",
+    "clear": "Clear",
+    "download": "Download PNG",
+    "signHere": "Sign here",
+    "note": "Signatures are processed locally in your browser. We do not store or upload them."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Live Preview"
+  },
+  "CipherTools": {
+    "shiftAmount": "Shift Amount (N)",
+    "inputText": "Input Text",
+    "outputText": "Output Text",
+    "rot13": "ROT13",
+    "caesar": "Caesar (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Screen Resolution",
+    "browser": "Browser",
+    "cpuCores": "CPU Cores",
+    "battery": "Battery",
+    "detailedSpecs": "Detailed Specs",
+    "userAgent": "User Agent",
+    "platform": "Platform",
+    "windowSize": "Window Size",
+    "pixelRatio": "Pixel Ratio",
+    "colorDepth": "Color Depth",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookies Enabled",
+    "onlineStatus": "Online Status",
+    "unknown": "Unknown",
+    "yes": "Yes",
+    "no": "No",
+    "enabled": "Enabled",
+    "disabled": "Disabled"
+  },
+  "ChmodCalculator": {
+    "owner": "Owner",
+    "group": "Group",
+    "public": "Public",
+    "read": "Read",
+    "write": "Write",
+    "execute": "Execute",
+    "numeric": "Numeric",
+    "symbolic": "Symbolic"
+  },
+  "PasswordManager": {
+    "title": "Password Manager",
+    "desc": "Securely store and manage your passwords locally.",
+    "unlock": "Unlock Vault",
+    "create": "Create New Vault",
+    "unlockDesc": "Enter your master password to access your accounts.",
+    "createDesc": "Set a strong master password. It encrypts your data locally.",
+    "masterPassword": "Master Password",
+    "unlockBtn": "Unlock",
+    "createBtn": "Create Vault",
+    "note": "Data is stored in your browser using AES-GCM encryption. We cannot recover your password if lost.",
+    "myPasswords": "My Passwords",
+    "addNew": "Add New",
+    "search": "Search accounts...",
+    "noPasswords": "No passwords found.",
+    "addAccount": "Add Account",
+    "accountTitle": "Title / Website",
+    "username": "Username / Email",
+    "password": "Password",
+    "url": "URL (Optional)",
+    "save": "Save Account",
+    "cancel": "Cancel",
+    "incorrectPassword": "Incorrect password or corrupted data.",
+    "loading": "Loading..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Website Details",
+    "pageTitle": "Page Title",
+    "description": "Description",
+    "keywords": "Keywords (comma separated)",
+    "author": "Author",
+    "socialPreview": "Social Preview (OG & Twitter)",
+    "websiteUrl": "Website URL",
+    "previewImage": "Preview Image URL",
+    "generatedHtml": "Generated HTML",
+    "copy": "Copy HTML",
+    "copied": "Copied"
+  },
+  "VibrationTester": {
+    "worksOnly": "Works only on devices with vibration hardware (e.g. phones).",
+    "duration": "Duration (ms)",
+    "vibrateOnce": "Vibrate Once",
+    "pulsePattern": "Pulse Pattern",
+    "longPulse": "Long Pulse",
+    "stop": "Stop"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Why JSON Formatting Matters",
+      "block_2": "JSON (JavaScript Object Notation) is the language of the web. But raw JSON returned from APIs is often a minified mess. formatting it makes it readable, debuggable, and safe.",
+      "block_3": "1. Readability is King",
+      "block_4": "When you're debugging a 5000-line API response, indentation saves lives. Our <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> uses 2-space or 4-space indentation to make structure clear.",
+      "block_5": "2. Validation",
+      "block_6": "A single missing comma can break your app. Always validate your JSON before committing it to config files.",
+      "block_7": "Conclusion",
+      "block_8": "Don't waste time manually checking brackets. Use automated tools."
+    },
+    "mastering-regex": {
+      "block_1": "Regex Explained",
+      "block_2": "Regular expressions are powerful but confusing. let's visualize them.",
+      "block_3": "Common Patterns",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Test these patterns instantly with our <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "The 5 Stars of Cron",
+      "block_2": "Minute, Hour, Day of Month, Month, Day of Week. That's all it is.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Examples",
+      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
+    },
+    "secure-password-storage-local": {
+      "block_1": "The Problem with Cloud Vaults",
+      "block_2": "LastPass, Okta, and other giants have suffered breaches. When your vault is online, it's a target.",
+      "block_3": "The Solution: Local Encryption",
+      "block_4": "Our new <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Local Password Manager</a></strong> runs entirely in your browser. It uses <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bit encryption</strong> derived from your master password using PBKDF2.",
+      "block_5": "How it works",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero Knowledge:</strong> We never see your password. It never leaves your device.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline Storage:</strong> Your encrypted vault is stored in your browser's LocalStorage.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable:</strong> You can export/backup your raw encrypted data anytime.</li>",
+      "block_7": "Stop trusting the cloud with your master keys. <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Try the Local Password Manager</a> today."
+    }
+  }
+}

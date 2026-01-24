@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "เครื่องมือ",
+    "blog": "บล็อก",
+    "github": "GitHub",
+    "searchPlaceholder": "ค้นหา..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - เครื่องมือนักพัฒนาออนไลน์ฟรี",
+    "description": "เครื่องมือออนไลน์ฟรีมากกว่า 90 รายการสำหรับทุกคน ตัวจัดรูปแบบ ตัวแปลง ตัวสร้าง และยูทิลิตี้ รวดเร็ว เป็นส่วนตัว และไม่ต้องลงทะเบียน"
+  },
+  "NotFound": {
+    "title": "ไม่พบหน้า",
+    "description": "ขออภัย เราไม่พบหน้าที่คุณกำลังค้นหา",
+    "backHome": "กลับสู่หน้าหลัก",
+    "suggestions": "ลองค้นหาเครื่องมือหรือเรียกดูเครื่องมือยอดนิยมของเราด้านล่าง"
+  },
+  "Homepage": {
+    "heroTag": "100+ เครื่องมือฟรี • ส่วนตัว • ไม่ต้องสมัคร",
+    "titleLine1": "เครื่องมือนักพัฒนาประจำวัน",
+    "titleLine2": "ที่ใช้งานได้จริง",
+    "subtitle": "เครื่องมือที่รวดเร็ว สวยงาม และเน้นความเป็นส่วนตัวสำหรับนักพัฒนา นักออกแบบ และทุกคน ทุกอย่างทำงานในเบราว์เซอร์ของคุณ",
+    "recentTools": "ใช้ล่าสุด",
+    "noRecentText": "เริ่มใช้เครื่องมือเพื่อดูที่นี่",
+    "searchResults": "ผลการค้นหา",
+    "popularTools": "ยอดนิยม",
+    "toolsCount": "มี {count} เครื่องมือ",
+    "features": {
+      "fast": {
+        "title": "เร็วปานสายฟ้า",
+        "desc": "เครื่องมือทั้งหมดทำงานในเบราว์เซอร์ของคุณ"
+      },
+      "private": {
+        "title": "ส่วนตัว 100%",
+        "desc": "ข้อมูลของคุณจะไม่ออกจากอุปกรณ์ของคุณ"
+      },
+      "simple": {
+        "title": "สร้างเพื่อทุกคน",
+        "desc": "ง่ายพอสำหรับทุกคน ทรงพลังสำหรับมืออาชีพ"
+      },
+      "free": {
+        "title": "ฟรีเสมอ",
+        "desc": "ไม่มีบัญชี ไม่มีขีดจำกัด"
+      }
+    },
+    "categories": {
+      "All": "ทั้งหมด",
+      "Favorites": "รายการโปรด",
+      "Developer": "นักพัฒนา",
+      "Design": "การออกแบบ",
+      "Content": "เนื้อหา",
+      "Security": "ความปลอดภัย",
+      "Productivity": "ผลผลิต",
+      "Math": "คณิตศาสตร์",
+      "Utility": "ยูทิลิตี้"
+    },
+    "cta": {
+      "title": "พร้อมที่จะเพิ่มผลผลิตของคุณหรือยัง?",
+      "text": "เริ่มใช้เครื่องมือนักพัฒนาของเราฟรี ไม่ต้องสมัคร ไม่มีการรวบรวมข้อมูล",
+      "button": "เริ่มฟรี"
+    },
+    "openTool": "เปิดเครื่องมือ",
+    "noResults": "ไม่พบเครื่องมือที่ตรงกับ",
+    "clearFilters": "ล้างตัวกรอง"
+  },
+  "Footer": {
+    "builtWith": "สร้างด้วย ❤️ โดย",
+    "allTools": "เครื่องมือทั้งหมด",
+    "blog": "บล็อก",
+    "about": "เกี่ยวกับ",
+    "privacy": "ความเป็นส่วนตัว",
+    "terms": "เงื่อนไข"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "ตัวจัดรูปแบบ JSON",
+      "description": "จัดรูปแบบ ตรวจสอบ และทำให้ JSON สวยงามทันที"
+    },
+    "base64-encoder": {
+      "name": "ตัวเข้ารหัส Base64",
+      "description": "เข้ารหัสและถอดรหัสสตริง Base64"
+    },
+    "url-encoder": {
+      "name": "ตัวเข้ารหัส URL",
+      "description": "เข้ารหัสและถอดรหัส URL อย่างปลอดภัย"
+    },
+    "jwt-decoder": {
+      "name": "ตัวถอดรหัส JWT",
+      "description": "ถอดรหัสและตรวจสอบ JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "ตัวทดสอบ Regex",
+      "description": "ทดสอบนิพจน์ปกติแบบเรียลไทม์"
+    },
+    "hash-generator": {
+      "name": "ตัวสร้างแฮช",
+      "description": "สร้างแฮช MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "ตัวสร้าง UUID",
+      "description": "สร้าง UUIDs/GUIDs แบบสุ่มทันที"
+    },
+    "css-minifier": {
+      "name": "ตัวย่อ CSS",
+      "description": "ย่อและปรับแต่งโค้ด CSS ของคุณ"
+    },
+    "markdown-editor": {
+      "name": "ดูตัวอย่าง Markdown",
+      "description": "แก้ไขและดูตัวอย่าง Markdown แบบเรียลไทม์"
+    },
+    "color-converter": {
+      "name": "ตัวแปลงสี",
+      "description": "แปลง Hex, RGB, HSL และ CMYK"
+    },
+    "timestamp-converter": {
+      "name": "เครื่องมือ Timestamp",
+      "description": "แปลง Unix timestamps เป็นวันที่มนุษย์อ่านได้"
+    },
+    "sql-formatter": {
+      "name": "ตัวจัดรูปแบบ SQL",
+      "description": "จัดรูปแบบและทำให้คำสั่ง SQL สวยงาม"
+    },
+    "password-generator": {
+      "name": "ตัวสร้างรหัสผ่าน",
+      "description": "สร้างรหัสผ่านที่ปลอดภัยและสุ่ม"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "สร้างข้อความตัวอย่างสำหรับการออกแบบ"
+    },
+    "image-base64": {
+      "name": "รูปภาพเป็น Base64",
+      "description": "แปลงรูปภาพเป็นสตริง Base64"
+    },
+    "qr-generator": {
+      "name": "ตัวสร้าง QR Code",
+      "description": "สร้าง QR codes สำหรับ URL และข้อความ"
+    },
+    "word-counter": {
+      "name": "ตัวนับคำ",
+      "description": "นับคำ ตัวอักษร และเวลาอ่าน"
+    },
+    "case-converter": {
+      "name": "ตัวแปลงตัวพิมพ์",
+      "description": "Camel, snake, kebab และ pascal case"
+    },
+    "text-diff": {
+      "name": "ตัวตรวจสอบความแตกต่าง",
+      "description": "เปรียบเทียบข้อความสองข้อความและค้นหาความแตกต่าง"
+    },
+    "slug-generator": {
+      "name": "ตัวสร้าง Slug",
+      "description": "สร้าง URL slugs ที่เป็นมิตรกับ SEO"
+    },
+    "gradient-generator": {
+      "name": "ตัวสร้าง Gradient",
+      "description": "สร้าง CSS gradients ที่สวยงาม"
+    },
+    "image-compressor": {
+      "name": "ตัวบีบอัดรูปภาพ",
+      "description": "บีบอัดรูปภาพในเครื่องอย่างเป็นส่วนตัว"
+    },
+    "device-info": {
+      "name": "ข้อมูลอุปกรณ์",
+      "description": "ดูข้อมูลหน้าจอ เบราว์เซอร์ และระบบ"
+    },
+    "random-generator": {
+      "name": "ตัวสร้างแบบสุ่ม",
+      "description": "สุ่มตัวเลข เหรียญ และรายการ"
+    },
+    "unit-converter": {
+      "name": "ตัวแปลงหน่วย",
+      "description": "แปลงความยาว น้ำหนัก และอุณหภูมิ"
+    },
+    "pomodoro-timer": {
+      "name": "ตัวจับเวลา Pomodoro",
+      "description": "ตัวจับเวลาโฟกัสเพื่อเพิ่มผลผลิต"
+    },
+    "yt-thumbnail": {
+      "name": "ตัวดาวน์โหลดภาพขนาดย่อ",
+      "description": "รับภาพขนาดย่อวิดีโอ YouTube"
+    },
+    "my-ip": {
+      "name": "IP ของฉันคืออะไร",
+      "description": "ดู IP สาธารณะและข้อมูลเครือข่าย"
+    },
+    "keycode-info": {
+      "name": "ข้อมูล Keycode",
+      "description": "ตัวแก้จุดบกพร่องเหตุการณ์แป้นพิมพ์ JavaScript"
+    },
+    "signature-generator": {
+      "name": "ตัวสร้างลายเซ็น",
+      "description": "วาดและดาวน์โหลดลายเซ็นดิจิทัล"
+    },
+    "screen-recorder": {
+      "name": "ตัวบันทึกหน้าจอ",
+      "description": "บันทึกหน้าจอและดาวน์โหลดวิดีโอ"
+    },
+    "credit-card-validator": {
+      "name": "ตัวตรวจสอบบัตร",
+      "description": "ตรวจสอบหมายเลขบัตรเครดิต"
+    },
+    "password-manager": {
+      "name": "ตัวจัดการรหัสผ่านในเครื่อง",
+      "description": "จัดเก็บรหัสผ่านในเครื่องอย่างปลอดภัยด้วยการเข้ารหัส"
+    },
+    "deep-link-tester": {
+      "name": "ตัวทดสอบ Deep Link",
+      "description": "ทดสอบ เปิดใช้งาน และจัดการ deep links มือถือ"
+    },
+    "image-converter": {
+      "name": "ตัวแปลงรูปภาพ",
+      "description": "แปลง PNG/JPG เป็น WebP ในเครื่องเพื่อปรับแต่งรูปภาพ"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "แปลง JSON เป็น CSV และในทางกลับกัน"
+    },
+    "bmi-calculator": {
+      "name": "เครื่องคิดเลข BMI",
+      "description": "คำนวณดัชนีมวลกาย (BMI)"
+    },
+    "dns-lookup": {
+      "name": "ค้นหา DNS",
+      "description": "ค้นหาเรคคอร์ด DNS (A, MX, NS) ทันที"
+    },
+    "age-calculator": {
+      "name": "เครื่องคิดเลขอายุ",
+      "description": "คำนวณอายุที่แม่นยำและจำนวนวันทั้งหมด"
+    },
+    "loan-calculator": {
+      "name": "เครื่องคิดเลขสินเชื่อ",
+      "description": "คำนวณค่างวดรายเดือนและดอกเบี้ยรวม"
+    },
+    "discount-calculator": {
+      "name": "เครื่องคิดเลขส่วนลด",
+      "description": "คำนวณราคาลดและเงินที่ประหยัดได้"
+    },
+    "interest-calculator": {
+      "name": "เครื่องคิดเลขดอกเบี้ย",
+      "description": "เครื่องคิดเลขดอกเบี้ยเดี่ยว vs ดอกเบี้ยทบต้น"
+    },
+    "html-encoder": {
+      "name": "ตัวเข้ารหัส/ถอดรหัส HTML",
+      "description": "หลีกเลี่ยงอักขระพิเศษหรือถอดรหัส HTML"
+    },
+    "list-sorter": {
+      "name": "ตัวจัดเรียงรายการ",
+      "description": "จัดเรียง กลับด้าน สลับ และลบรายการซ้ำ"
+    },
+    "box-shadow": {
+      "name": "ตัวสร้าง Box Shadow",
+      "description": "สร้าง CSS box-shadows ด้วยภาพ"
+    },
+    "date-diff": {
+      "name": "ความแตกต่างของวันที่",
+      "description": "คำนวณระยะเวลาระหว่างสองวันที่"
+    },
+    "sql-to-json": {
+      "name": "SQL เป็น JSON",
+      "description": "แปลง SQL INSERTs เป็น JSON objects"
+    },
+    "keyword-density": {
+      "name": "ความหนาแน่นคีย์เวิร์ด",
+      "description": "วิเคราะห์ความถี่คีย์เวิร์ดสำหรับ SEO"
+    },
+    "json-diff": {
+      "name": "เปรียบเทียบ JSON",
+      "description": "เปรียบเทียบ JSON objects สองตัวเคียงข้างกัน"
+    },
+    "cipher-tools": {
+      "name": "เครื่องมือรหัสลับ",
+      "description": "ตัวเข้ารหัส/ถอดรหัส ROT13 และ Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "ตัวสร้างโทเค็นแบบสุ่ม",
+      "description": "สร้างโทเค็นแบบสุ่มที่ปลอดภัย"
+    },
+    "favicon-generator": {
+      "name": "ตัวสร้าง Favicon",
+      "description": "สร้างไฟล์ .ico และ PNG favicons"
+    },
+    "robots-generator": {
+      "name": "ตัวสร้าง Robots.txt",
+      "description": "สร้าง robots.txt สำหรับ SEO"
+    },
+    "grid-generator": {
+      "name": "ตัวสร้าง CSS Grid",
+      "description": "เครื่องมือสร้างเลย์เอาต์ CSS Grid ด้วยภาพ"
+    },
+    "hmac-generator": {
+      "name": "ตัวสร้าง HMAC",
+      "description": "สร้างรหัสยืนยันข้อความแบบแฮชด้วยคีย์"
+    },
+    "http-status": {
+      "name": "รหัสสถานะ HTTP",
+      "description": "รายการอ้างอิงรหัสสถานะ HTTP"
+    },
+    "week-number": {
+      "name": "หมายเลขสัปดาห์",
+      "description": "หมายเลขสัปดาห์ปัจจุบันและความคืบหน้าของปี"
+    },
+    "text-tools": {
+      "name": "ตัวแปลงข้อความ",
+      "description": "กลับด้าน พลิก และเข้ารหัสข้อความ"
+    },
+    "url-parser": {
+      "name": "ตัวแยกวิเคราะห์ URL",
+      "description": "แยก URL เป็น protocol, host, path, params"
+    },
+    "markdown-table": {
+      "name": "ตัวสร้างตาราง Markdown",
+      "description": "สร้างตาราง Markdown ด้วยภาพ"
+    },
+    "whatsapp-link": {
+      "name": "ตัวสร้างลิงก์ WhatsApp",
+      "description": "สร้างลิงก์แชท WhatsApp โดยตรง"
+    },
+    "paypal-link": {
+      "name": "ตัวสร้างลิงก์ PayPal",
+      "description": "สร้างลิงก์ชำระเงิน PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG เป็น PNG",
+      "description": "แปลงโค้ด/ไฟล์ SVG เป็นรูปภาพ PNG"
+    },
+    "prime-factors": {
+      "name": "ตัวประกอบเฉพาะ",
+      "description": "ค้นหาตัวประกอบเฉพาะของตัวเลข"
+    },
+    "iban-validator": {
+      "name": "ตัวตรวจสอบ IBAN",
+      "description": "ตรวจสอบหมายเลขบัญชีธนาคารระหว่างประเทศ"
+    },
+    "ascii-converter": {
+      "name": "ตัวแปลง ASCII",
+      "description": "แปลงข้อความเป็นรหัสทศนิยม ASCII"
+    },
+    "utm-builder": {
+      "name": "ตัวสร้าง UTM",
+      "description": "สร้าง URL แคมเปญ Google Analytics"
+    },
+    "meta-tags": {
+      "name": "ตัวสร้าง Meta Tag",
+      "description": "สร้าง SEO meta tags สำหรับเว็บไซต์"
+    },
+    "og-generator": {
+      "name": "ตัวสร้าง Open Graph",
+      "description": "สร้าง Open Graph meta tags สำหรับการแชร์โซเชียล"
+    },
+    "twitter-card": {
+      "name": "ตัวสร้าง Twitter Card",
+      "description": "สร้าง Twitter Card meta tags"
+    },
+    "aspect-ratio": {
+      "name": "เครื่องคิดเลขอัตราส่วนภาพ",
+      "description": "คำนวณอัตราส่วนภาพและขนาด"
+    },
+    "css-cursor": {
+      "name": "เคอร์เซอร์ CSS",
+      "description": "คู่มืออ้างอิงคุณสมบัติ CSS cursor แบบภาพ"
+    },
+    "css-triangle": {
+      "name": "ตัวสร้างสามเหลี่ยม CSS",
+      "description": "สร้างสามเหลี่ยม CSS บริสุทธิ์"
+    },
+    "percentage-calculator": {
+      "name": "เครื่องคิดเลขเปอร์เซ็นต์",
+      "description": "คำนวณเปอร์เซ็นต์และการเปลี่ยนแปลง"
+    },
+    "vat-calculator": {
+      "name": "เครื่องคิดเลข VAT",
+      "description": "คำนวณจำนวนเงิน VAT เพิ่ม/ลบ"
+    },
+    "stopwatch": {
+      "name": "นาฬิกาจับเวลา",
+      "description": "นาฬิกาจับเวลาง่ายๆ ในเบราว์เซอร์"
+    },
+    "text-to-speech": {
+      "name": "ข้อความเป็นเสียง",
+      "description": "แปลงข้อความเป็นเสียงพูด"
+    },
+    "speech-to-text": {
+      "name": "เสียงเป็นข้อความ",
+      "description": "แปลงเสียงพูดเป็นข้อความ"
+    },
+    "vibration-tester": {
+      "name": "ตัวทดสอบการสั่น",
+      "description": "ทดสอบมอเตอร์สั่นของอุปกรณ์"
+    },
+    "chmod-calculator": {
+      "name": "เครื่องคิดเลข Chmod",
+      "description": "คำนวณสิทธิ์ไฟล์ Linux"
+    },
+    "crontab-generator": {
+      "name": "ตัวสร้าง Crontab",
+      "description": "สร้างนิพจน์กำหนดเวลา cron"
+    },
+    "htpasswd-generator": {
+      "name": "ตัวสร้าง Htpasswd",
+      "description": "สร้างรายการ basic auth"
+    },
+    "subnet-calculator": {
+      "name": "เครื่องคิดเลขซับเน็ต",
+      "description": "คำนวณซับเน็ตเครือข่ายและช่วง IP"
+    },
+    "mac-generator": {
+      "name": "ตัวสร้าง MAC Address",
+      "description": "สร้าง MAC addresses แบบสุ่ม"
+    },
+    "timezone-converter": {
+      "name": "ตัวแปลงเขตเวลา",
+      "description": "แปลงเวลาระหว่างหลายเขตเวลา"
+    },
+    "email-validator": {
+      "name": "ตัวตรวจสอบอีเมล",
+      "description": "ตรวจสอบรูปแบบอีเมลและตรวจจับการพิมพ์ผิด"
+    },
+    "password-strength": {
+      "name": "ความแข็งแกร่งรหัสผ่าน",
+      "description": "ตรวจสอบคะแนนความแข็งแกร่งรหัสผ่าน"
+    },
+    "roman-numerals": {
+      "name": "ตัวแปลงเลขโรมัน",
+      "description": "แปลงระหว่างเลขโรมันและเลขทศนิยม"
+    },
+    "margin-calculator": {
+      "name": "เครื่องคิดเลขอัตรากำไร",
+      "description": "คำนวณอัตรากำไรและมาร์กอัป"
+    },
+    "roi-calculator": {
+      "name": "เครื่องคิดเลข ROI",
+      "description": "คำนวณผลตอบแทนจากการลงทุน"
+    },
+    "fuel-calculator": {
+      "name": "เครื่องคิดเลขค่าน้ำมัน",
+      "description": "คำนวณค่าน้ำมันสำหรับการเดินทาง"
+    },
+    "pretty-print-url": {
+      "name": "จัดรูปแบบ URL",
+      "description": "จัดรูปแบบและทำให้ URL อ่านง่าย"
+    }
+  },
+  "Terms": {
+    "title": "ข้อกำหนดในการให้บริการ",
+    "lastUpdated": "อัปเดตล่าสุด",
+    "sections": {
+      "acceptance": {
+        "title": "1. การยอมรับข้อกำหนด",
+        "content": "โดยการเข้าถึงและใช้งาน DailyDevTools คุณยอมรับและตกลงที่จะผูกพันตามข้อกำหนดและเงื่อนไขของข้อตกลงนี้"
+      },
+      "useLicense": {
+        "title": "2. สิทธิ์การใช้งาน",
+        "content": "DailyDevTools ใช้งานได้ฟรีสำหรับวัตถุประสงค์ส่วนตัวและเชิงพาณิชย์ คุณไม่สามารถ:",
+        "list": {
+          "0": "พยายามวิศวกรรมย้อนกลับหรือดึงข้อมูลส่วนสำคัญของเว็บไซต์",
+          "1": "ใช้เว็บไซต์ในทางใดก็ตามที่ทำให้เกิดความเสียหายหรือกระทบต่อความพร้อมใช้งานหรือการเข้าถึงเว็บไซต์"
+        }
+      },
+      "disclaimer": {
+        "title": "3. ข้อจำกัดความรับผิดชอบ",
+        "content": "เครื่องมือบน DailyDevTools มีให้บริการ \"ตามสภาพ\" เราไม่รับประกันใดๆ ทั้งโดยชัดแจ้งหรือโดยนัย..."
+      },
+      "limitations": {
+        "title": "4. ข้อจำกัด",
+        "content": "ไม่ว่าในกรณีใดก็ตาม DailyDevTools หรือซัพพลายเออร์จะไม่รับผิดชอบต่อความเสียหายใดๆ..."
+      },
+      "revisions": {
+        "title": "5. การแก้ไข",
+        "content": "เนื้อหาที่ปรากฏบน DailyDevTools อาจมีข้อผิดพลาดทางเทคนิค การพิมพ์ หรือภาพถ่าย..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "นโยบายความเป็นส่วนตัว",
+    "lastUpdated": "อัปเดตล่าสุด",
+    "intro": "ยินดีต้อนรับสู่ DailyDevTools เราเคารพความเป็นส่วนตัวของคุณและมุ่งมั่นที่จะปกป้องข้อมูลส่วนบุคคลของคุณ",
+    "sections": {
+      "localProcessing": {
+        "title": "2. วิธีที่เครื่องมือของเราทำงาน (ประมวลผลในเครื่อง)",
+        "content": "ที่สำคัญที่สุด: เครื่องมือทำงานในเบราว์เซอร์ของคุณทั้งหมด ข้อมูลจะไม่ออกจากอุปกรณ์ของคุณ"
+      },
+      "dataCollection": {
+        "title": "3. ข้อมูลที่เราเก็บรวบรวม",
+        "content": "เราไม่เก็บรวบรวมเนื้อหา เราใช้ Google Analytics สำหรับสถิติการใช้งาน"
+      },
+      "cookies": {
+        "title": "4. คุกกี้",
+        "content": "เราใช้คุกกี้สำหรับการวิเคราะห์และการตั้งค่าในเครื่อง"
+      },
+      "thirdParty": {
+        "title": "5. ลิงก์บุคคลที่สาม",
+        "content": "เว็บไซต์ของเราอาจมีลิงก์ไปยังบุคคลที่สาม"
+      },
+      "changes": {
+        "title": "6. การเปลี่ยนแปลงนโยบายนี้",
+        "content": "เราอาจอัปเดตนโยบายนี้เป็นครั้งคราว"
+      },
+      "contact": {
+        "title": "7. ติดต่อเรา",
+        "content": "ติดต่อเราผ่าน GitHub หรือโซเชียลมีเดีย"
+      }
+    }
+  },
+  "Blog": {
+    "title": "แหล่งข้อมูลสำหรับนักพัฒนา",
+    "subtitle": "เจาะลึกเกี่ยวกับเครื่องมือที่เราสร้างและแนวคิดเบื้องหลัง",
+    "readMore": "อ่านเพิ่มเติม",
+    "backToBlog": "กลับไปบล็อก",
+    "enjoyedArticle": "ชอบบทความนี้ไหม?",
+    "checkTools": "ตรวจดูเครื่องมือของเรา"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "อินพุต",
+      "output": "เอาท์พุต",
+      "format": "จัดรูปแบบ",
+      "minify": "ย่อ",
+      "download": "ดาวน์โหลด",
+      "copy": "คัดลอก",
+      "paste": "วาง",
+      "copied": "คัดลอกแล้ว!",
+      "upload": "อัปโหลด",
+      "sample": "ตัวอย่าง",
+      "clear": "ล้าง",
+      "indent": "ย่อหน้า:",
+      "chars": "ตัวอักษร",
+      "error": "ข้อผิดพลาด",
+      "invalid": "อินพุตไม่ถูกต้อง",
+      "result": "ผลลัพธ์",
+      "generate": "สร้าง",
+      "calculate": "คำนวณ",
+      "convert": "แปลง",
+      "validate": "ตรวจสอบ",
+      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่..."
+    },
+    "Base64Encoder": {
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส",
+      "textToEncode": "ข้อความที่จะเข้ารหัส",
+      "base64ToDecode": "Base64 ที่จะถอดรหัส",
+      "enterText": "ป้อนข้อความที่จะเข้ารหัส...",
+      "enterBase64": "ป้อน Base64 ที่จะถอดรหัส...",
+      "encodeAction": "เข้ารหัสเป็น Base64",
+      "decodeAction": "ถอดรหัสจาก Base64",
+      "base64Output": "ผลลัพธ์ Base64",
+      "decodedText": "ข้อความที่ถอดรหัสแล้ว",
+      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่...",
+      "invalidInput": "อินพุตไม่ถูกต้องสำหรับ {mode}"
+    },
+    "QrGenerator": {
+      "content": "เนื้อหา",
+      "placeholder": "https://example.com",
+      "customization": "การปรับแต่ง",
+      "foreground": "สีพื้นหน้า",
+      "background": "สีพื้นหลัง",
+      "download": "ดาวน์โหลด"
+    },
+    "HashGenerator": {
+      "inputText": "ข้อความอินพุต",
+      "placeholder": "ป้อนข้อความที่จะแฮช...",
+      "waiting": "กำลังรออินพุต..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "สร้างใหม่",
+      "configuration": "การกำหนดค่า",
+      "length": "ความยาวรหัสผ่าน",
+      "uppercase": "ตัวพิมพ์ใหญ่ (A-Z)",
+      "numbers": "ตัวเลข (0-9)",
+      "symbols": "สัญลักษณ์ (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "วาง JSON ของคุณที่นี่...",
+      "outputPlaceholder": "JSON ที่จัดรูปแบบแล้วจะปรากฏที่นี่...",
+      "spaces": "ช่องว่าง"
+    },
+    "UrlEncoder": {
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส",
+      "urlToEncode": "URL ที่จะเข้ารหัส",
+      "encodedUrlToDecode": "URL ที่เข้ารหัสแล้วที่จะถอดรหัส",
+      "enterUrlToEncode": "ป้อน URL หรือข้อความที่จะเข้ารหัส...",
+      "enterUrlToDecode": "ป้อน URL ที่เข้ารหัสแล้วที่จะถอดรหัส...",
+      "encodeAction": "เข้ารหัส URL",
+      "decodeAction": "ถอดรหัส URL",
+      "encodedUrl": "URL ที่เข้ารหัสแล้ว",
+      "decodedUrl": "URL ที่ถอดรหัสแล้ว",
+      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่...",
+      "chars": "ตัวอักษร",
+      "invalidInput": "อินพุตไม่ถูกต้องสำหรับ {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "วางโทเค็น JWT ของคุณ",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "ถอดรหัส JWT",
+      "header": "เฮดเดอร์",
+      "payload": "เพย์โหลด",
+      "issued": "ออกให้เมื่อ",
+      "expires": "หมดอายุ"
+    },
+    "RegexTester": {
+      "expression": "นิพจน์",
+      "expressionPlaceholder": "กลุ่มจับคู่ (abc)...",
+      "testString": "สตริงทดสอบ",
+      "testStringPlaceholder": "วางสตริงทดสอบของคุณที่นี่...",
+      "matchHighlights": "ไฮไลท์ที่ตรงกัน",
+      "matches": "ตรงกัน",
+      "matchInfo": "ข้อมูลการจับคู่",
+      "match": "ตรงกัน",
+      "index": "ดัชนี",
+      "group": "กลุ่ม",
+      "noMatches": "ไม่พบที่ตรงกัน",
+      "highlightPlaceholder": "ที่ตรงกันจะถูกไฮไลท์ที่นี่...",
+      "flagsHelp": "g: ทั่วโลก, i: ไม่สนใจตัวพิมพ์, m: หลายบรรทัด"
+    },
+    "UuidGenerator": {
+      "generate": "สร้าง",
+      "generateCount": "สร้าง:",
+      "copyAll": "คัดลอกทั้งหมด",
+      "copyUuid": "คัดลอก UUID",
+      "generatedAt": "สร้างในเครื่องเมื่อ {time} • UUID เวอร์ชัน 4"
+    },
+    "WordCounter": {
+      "words": "คำ",
+      "characters": "ตัวอักษร",
+      "sentences": "ประโยค",
+      "paragraphs": "ย่อหน้า",
+      "readingTime": "เวลาอ่าน",
+      "min": "นาที",
+      "textInput": "ข้อความอินพุต",
+      "inputPlaceholder": "เริ่มพิมพ์หรือวางข้อความของคุณที่นี่เพื่อวิเคราะห์...",
+      "clear": "ล้าง"
+    },
+    "TimestampConverter": {
+      "timestamp": "สแตมป์เวลา",
+      "humanDate": "วันที่ที่อ่านได้",
+      "convert": "แปลง",
+      "currentTimestamp": "สแตมป์เวลาปัจจุบัน",
+      "inputPlaceholder": "ป้อน Unix timestamp..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "วางคำสั่ง SQL ของคุณที่นี่...",
+      "outputPlaceholder": "SQL ที่จัดรูปแบบแล้วจะปรากฏที่นี่..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "วางโค้ด CSS ของคุณที่นี่...",
+      "outputPlaceholder": "CSS ที่ย่อแล้วจะปรากฏที่นี่..."
+    },
+    "MarkdownEditor": {
+      "editor": "ตัวแก้ไข",
+      "preview": "ดูตัวอย่าง",
+      "inputPlaceholder": "ป้อน Markdown ที่นี่..."
+    },
+    "TextDiff": {
+      "original": "ข้อความต้นฉบับ",
+      "changed": "ข้อความที่เปลี่ยนแปลง",
+      "compare": "เปรียบเทียบ",
+      "differences": "ความแตกต่าง"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "ป้อนข้อความที่จะแปลง...",
+      "generatedSlug": "Slug ที่สร้างแล้ว"
+    },
+    "ImageCompressor": {
+      "selectImage": "เลือกรูปภาพ",
+      "quality": "คุณภาพ",
+      "compress": "บีบอัด",
+      "download": "ดาวน์โหลด",
+      "originalSize": "ขนาดต้นฉบับ",
+      "compressedSize": "ขนาดหลังบีบอัด"
+    },
+    "LoremIpsum": {
+      "paragraphs": "ย่อหน้า",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "GradientGenerator": {
+      "angle": "มุม",
+      "colors": "สี",
+      "addColor": "เพิ่มสี",
+      "copyCss": "คัดลอก CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "วันเกิด",
+      "calculate": "คำนวณ",
+      "years": "ปี",
+      "months": "เดือน",
+      "days": "วัน",
+      "totalDays": "จำนวนวันทั้งหมด",
+      "nextBirthday": "วันเกิดถัดไปใน"
+    },
+    "AsciiConverter": {
+      "text": "ข้อความ",
+      "ascii": "ASCII",
+      "convert": "แปลง",
+      "inputPlaceholder": "ป้อนข้อความ..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "แนวนอน (X)",
+      "vertical": "แนวตั้ง (Y)",
+      "blur": "เบลอ",
+      "spread": "กระจาย",
+      "colorOpacity": "สีและความทึบแสง",
+      "inset": "ด้านใน"
+    },
+    "BmiCalculator": {
+      "metric": "เมตริก (kg/cm)",
+      "imperial": "อิมพีเรียล (lbs/in)",
+      "weight": "น้ำหนัก",
+      "height": "ส่วนสูง",
+      "calculate": "คำนวณ BMI",
+      "bmiScore": "คะแนน BMI ของคุณ",
+      "underweight": "น้ำหนักต่ำกว่าเกณฑ์",
+      "normal": "น้ำหนักปกติ",
+      "overweight": "น้ำหนักเกิน",
+      "obese": "อ้วน"
+    },
+    "CaseConverter": {
+      "inputText": "ข้อความอินพุต",
+      "inputPlaceholder": "พิมพ์ข้อความของคุณที่นี่...",
+      "upper": "ตัวพิมพ์ใหญ่",
+      "lower": "ตัวพิมพ์เล็ก",
+      "title": "ตัวพิมพ์หัวเรื่อง",
+      "sentence": "ตัวพิมพ์ประโยค",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "คัดลอก",
+      "conversions": "การแปลง",
+      "clear": "ล้าง"
+    },
+    "ColorConverter": {
+      "hexLabels": "สี HEX",
+      "rgbLabels": "สี RGB",
+      "hslLabels": "สี HSL",
+      "cmykLabels": "สี CMYK",
+      "copy": "คัดลอก",
+      "hexToRgbNote": "* ปัจจุบันรองรับการแปลง HEX เป็น RGB/HSL เท่านั้น"
+    },
+    "CreditCardValidator": {
+      "cardNumber": "หมายเลขบัตร",
+      "validate": "ตรวจสอบ",
+      "valid": "หมายเลขบัตรเครดิตถูกต้อง",
+      "invalid": "หมายเลขบัตรเครดิตไม่ถูกต้อง",
+      "placeholder": "ป้อนหมายเลขบัตร...",
+      "type": "ประเภทบัตร",
+      "checkDigit": "ตัวเลขตรวจสอบ",
+      "luhnValid": "อัลกอริทึม Luhn ถูกต้อง"
+    },
+    "CipherTools": {
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส",
+      "rot13": "ROT13",
+      "caesar": "ซีซาร์ ไซเฟอร์",
+      "shift": "เลื่อน",
+      "inputPlaceholder": "สวัสดีชาวโลก",
+      "outputPlaceholder": "ผลลัพธ์จะปรากฏที่นี่..."
+    },
+    "CronGenerator": {
+      "minute": "นาที",
+      "hour": "ชั่วโมง",
+      "dayMonth": "วัน (เดือน)",
+      "month": "เดือน",
+      "dayWeek": "วัน (สัปดาห์)",
+      "presets": "พรีเซ็ตทั่วไป",
+      "everyMinute": "ทุกนาที",
+      "everyHour": "ทุกชั่วโมง",
+      "everyDayMidnight": "ทุกวันตอนเที่ยงคืน",
+      "everySunday": "ทุกวันอาทิตย์",
+      "everyMonth": "ทุกเดือน",
+      "everyYear": "ทุกปี",
+      "formatInfo": "รูปแบบ: * * * * * (นาที ชั่วโมง วันของเดือน เดือน วันของสัปดาห์)",
+      "usageInfo": "ใช้ * สำหรับ 'ทุก', */n สำหรับ 'ทุก n', 1,2,3 สำหรับรายการเฉพาะ"
+    },
+    "DateDiff": {
+      "startDate": "วันที่เริ่มต้น",
+      "endDate": "วันที่สิ้นสุด",
+      "calculate": "คำนวณ",
+      "difference": "ความแตกต่าง",
+      "years": "ปี",
+      "months": "เดือน",
+      "days": "วัน",
+      "totalDays": "จำนวนวันทั้งหมด",
+      "totalWeeks": "จำนวนสัปดาห์ทั้งหมด",
+      "totalHours": "จำนวนชั่วโมงทั้งหมด"
+    },
+    "DeepLinkTester": {
+      "testLink": "ทดสอบลิงก์",
+      "savedLinks": "ลิงก์ที่บันทึกไว้",
+      "searchPlaceholder": "ค้นหาลิงก์ที่บันทึกไว้...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "เปิดใช้งาน",
+      "save": "บันทึก",
+      "delete": "ลบ",
+      "opens": "เปิด",
+      "scanQr": "สแกนด้วยอุปกรณ์มือถือเพื่อทดสอบ",
+      "noSavedLinks": "ไม่พบลิงก์ที่บันทึกไว้",
+      "enterLabel": "ป้อนชื่อสำหรับลิงก์นี้:",
+      "saved": "บันทึกแล้ว!",
+      "confirmDelete": "ลบลิงก์นี้หรือไม่?"
+    },
+    "DeviceInfo": {
+      "screen": "หน้าจอ",
+      "browser": "เบราว์เซอร์",
+      "system": "ระบบ",
+      "resolution": "ความละเอียด",
+      "colorDepth": "ความลึกสี",
+      "userAgent": "ตัวแทนผู้ใช้",
+      "platform": "แพลตฟอร์ม",
+      "language": "ภาษา"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "ราคาเดิม",
+      "discountPercent": "ส่วนลด",
+      "additionalDiscount": "ส่วนลดเพิ่มเติม",
+      "calculate": "คำนวณ",
+      "youSave": "คุณประหยัด",
+      "finalPrice": "ราคาสุดท้าย",
+      "salesTax": "ภาษีการขาย"
+    },
+    "DnsLookup": {
+      "domain": "โดเมน",
+      "lookup": "ค้นหา",
+      "recordType": "ประเภทเรคคอร์ด",
+      "results": "ผลลัพธ์",
+      "placeholder": "ตัวอย่าง.com",
+      "status": "สถานะ",
+      "time": "เวลา",
+      "server": "เซิร์ฟเวอร์",
+      "answerSection": "ส่วนคำตอบ",
+      "name": "ชื่อ",
+      "type": "ประเภท",
+      "ttl": "TTL",
+      "data": "ข้อมูล",
+      "noRecords": "ไม่พบเรคคอร์ด"
+    },
+    "EmailValidator": {
+      "email": "ที่อยู่อีเมล",
+      "validate": "ตรวจสอบ",
+      "valid": "ถูกต้อง",
+      "invalid": "ไม่ถูกต้อง",
+      "suggestion": "ข้อเสนอแนะ",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "อัปโหลดรูปภาพ",
+      "generate": "สร้าง",
+      "download": "ดาวน์โหลด",
+      "sizes": "ขนาด"
+    },
+    "FuelCalculator": {
+      "distance": "ระยะทาง",
+      "fuelEfficiency": "ประสิทธิภาพน้ำมัน",
+      "fuelPrice": "ราคาน้ำมัน",
+      "calculate": "คำนวณ",
+      "result": "ผลลัพธ์",
+      "totalCost": "ค่าใช้จ่ายรวม",
+      "fuelNeeded": "น้ำมันที่ต้องการ"
+    },
+    "GridGenerator": {
+      "columns": "คอลัมน์",
+      "rows": "แถว",
+      "gap": "ช่องว่าง",
+      "preview": "ดูตัวอย่าง",
+      "copyCss": "คัดลอก CSS",
+      "rowGap": "ช่องว่างแถว",
+      "colGap": "ช่องว่างคอลัมน์",
+      "options": "ตัวเลือก"
+    },
+    "HmacGenerator": {
+      "message": "ข้อความ",
+      "secret": "คีย์ลับ",
+      "algorithm": "อัลกอริทึม",
+      "generate": "สร้าง",
+      "inputPlaceholder": "ป้อนข้อความ...",
+      "secretPlaceholder": "คีย์ลับ..."
+    },
+    "HtmlEncoder": {
+      "encode": "เข้ารหัส",
+      "decode": "ถอดรหัส",
+      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่...",
+      "inputPlaceholder": "วาง HTML ที่นี่..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "ค้นหารหัส (เช่น 404) หรือชื่อ...",
+      "code": "รหัส",
+      "name": "ชื่อ",
+      "description": "คำอธิบาย"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "ตรวจสอบ",
+      "valid": "ถูกต้อง",
+      "invalid": "ไม่ถูกต้อง",
+      "placeholder": "ป้อน IBAN...",
+      "inputLabel": "ป้อนหมายเลข IBAN",
+      "validTitle": "รูปแบบถูกต้อง",
+      "invalidTitle": "Checksum ไม่ถูกต้อง",
+      "validDesc": "รูปแบบและ checksum ของ IBAN ถูกต้อง",
+      "invalidDesc": "IBAN ไม่ตรงกับอัลกอริทึม checksum"
+    },
+    "ImageBase64": {
+      "upload": "อัปโหลด",
+      "convert": "แปลง",
+      "copy": "คัดลอก",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "อัปโหลดรูปภาพ",
+      "convertToBase64": "แปลงเป็น Base64",
+      "convertToImage": "แปลงเป็นรูปภาพ",
+      "base64String": "สตริง Base64",
+      "download": "ดาวน์โหลด"
+    },
+    "ImageConverter": {
+      "selectImage": "เลือกรูปภาพ",
+      "format": "รูปแบบ",
+      "convert": "แปลง",
+      "download": "ดาวน์โหลด",
+      "quality": "คุณภาพ"
+    },
+    "InterestCalculator": {
+      "principal": "เงินต้น",
+      "rate": "อัตราดอกเบี้ย",
+      "time": "ระยะเวลา (ปี)",
+      "calculate": "คำนวณ",
+      "simpleInterest": "ดอกเบี้ยเดี่ยว",
+      "compoundInterest": "ดอกเบี้ยทบต้น",
+      "totalAmount": "มูลค่ารวม",
+      "type": "ประเภท",
+      "frequency": "ความถี่ทบต้น",
+      "annually": "รายปี",
+      "monthly": "รายเดือน",
+      "daily": "รายวัน",
+      "year": "ปี"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "ป้อน JSON...",
+      "convert": "แปลง",
+      "format": "รูปแบบ",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON เป็น CSV",
+      "csvToJson": "CSV เป็น JSON",
+      "jsonInput": "อินพุต JSON",
+      "csvInput": "อินพุต CSV",
+      "jsonOutput": "เอาท์พุต JSON",
+      "csvOutput": "เอาท์พุต CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON ต้นฉบับ",
+      "modified": "JSON ที่แก้ไข",
+      "compare": "เปรียบเทียบ",
+      "differences": "ความแตกต่าง"
+    },
+    "KeycodeInfo": {
+      "pressKey": "กดปุ่มใดก็ได้",
+      "key": "คีย์",
+      "code": "รหัส",
+      "keyCode": "คีย์โค้ด",
+      "which": "ที่",
+      "location": "ตำแหน่ง",
+      "modifiers": "ตัวปรับแต่ง",
+      "standard": "มาตรฐาน",
+      "left": "ซ้าย",
+      "right": "ขวา",
+      "numpad": "แป้นตัวเลข",
+      "space": "(เว้นวรรค)",
+      "info": "แสดง KeyCode, Code และอื่นๆ ของเหตุการณ์ JavaScript"
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "วางข้อความที่นี่เพื่อวิเคราะห์ความถี่คีย์เวิร์ด...",
+      "analyze": "วิเคราะห์",
+      "keyword": "คีย์เวิร์ด",
+      "count": "จำนวน",
+      "density": "ความหนาแน่น"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "ป้อนรายการของคุณที่นี่...",
+      "sort": "จัดเรียง",
+      "reverse": "กลับด้าน",
+      "shuffle": "สลับ",
+      "deduplicate": "ลบรายการซ้ำ",
+      "ascending": "น้อยไปมาก",
+      "descending": "มากไปน้อย",
+      "length": "ความยาว",
+      "trim": "ตัดรายการว่าง",
+      "lines": "บรรทัด:",
+      "chars": "ตัวอักษร:"
+    },
+    "LoanCalculator": {
+      "principal": "เงินต้น",
+      "interestRate": "อัตราดอกเบี้ย",
+      "term": "ระยะเวลา",
+      "calculate": "คำนวณ",
+      "monthlyPayment": "ค่างวดรายเดือน",
+      "totalInterest": "ดอกเบี้ยรวม",
+      "totalPayment": "ยอดชำระรวม",
+      "loanDetails": "รายละเอียดสินเชื่อ",
+      "loanAmount": "จำนวนเงินกู้",
+      "loanTerm": "ระยะเวลากู้",
+      "years": "ปี",
+      "months": "เดือน",
+      "interest": "ดอกเบี้ย"
+    },
+    "MacGenerator": {
+      "generate": "สร้าง",
+      "copy": "คัดลอก",
+      "separator": "ตัวคั่น",
+      "format": "รูปแบบ",
+      "quantity": "จำนวน",
+      "uppercase": "ตัวพิมพ์ใหญ่"
+    },
+    "MarginCalculator": {
+      "cost": "ต้นทุน",
+      "price": "ราคาขาย",
+      "calculate": "คำนวณ",
+      "margin": "อัตรากำไร",
+      "markup": "มาร์กอัป",
+      "profit": "กำไร",
+      "revenue": "รายได้",
+      "netProfit": "กำไรสุทธิ",
+      "grossMargin": "อัตรากำไรรวม"
+    },
+    "PasswordManager": {
+      "masterPassword": "รหัสผ่านหลัก",
+      "unlock": "ปลดล็อก",
+      "searchPlaceholder": "ค้นหาบัญชี...",
+      "addNew": "เพิ่มใหม่",
+      "siteName": "ชื่อเว็บไซต์",
+      "username": "ชื่อผู้ใช้",
+      "password": "รหัสผ่าน",
+      "save": "บันทึก",
+      "delete": "ลบ"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "พิมพ์ที่นี่...",
+      "strength": "ความแข็งแกร่ง",
+      "weak": "อ่อน",
+      "fair": "พอใช้",
+      "good": "ดี",
+      "strong": "แข็งแกร่ง",
+      "requirements": "ข้อกำหนด",
+      "length": "8+ ตัวอักษร",
+      "number": "มีตัวเลข",
+      "uppercase": "มีตัวพิมพ์ใหญ่",
+      "symbol": "มีสัญลักษณ์"
+    },
+    "PayPalLink": {
+      "username": "ชื่อผู้ใช้ PayPal.me",
+      "amount": "จำนวนเงิน",
+      "currency": "สกุลเงิน",
+      "generate": "สร้าง",
+      "itemName": "ชื่อรายการ",
+      "link": "ลิงก์",
+      "yourLink": "ลิงก์ PayPal ของคุณ",
+      "openPaypal": "เปิด PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "กฎ",
+      "addRule": "เพิ่มกฎ",
+      "allow": "อนุญาต",
+      "disallow": "ไม่อนุญาต",
+      "sitemap": "URL แผนที่เว็บไซต์ (ตัวเลือก)",
+      "output": "robots.txt ที่สร้างแล้ว"
+    },
+    "PercentageCalculator": {
+      "value": "ค่า",
+      "percentage": "เปอร์เซ็นต์",
+      "calculate": "คำนวณ",
+      "result": "ผลลัพธ์",
+      "whatIs": "อะไรคือ",
+      "of": "% ของ",
+      "isWhatPercentOf": "คือกี่ % ของ",
+      "percentChangeFrom": "% เปลี่ยนแปลงจาก",
+      "to": "เป็น"
+    },
+    "PomodoroTimer": {
+      "work": "เวลาโฟกัส",
+      "shortBreak": "พักสั้น",
+      "longBreak": "พักยาว",
+      "start": "เริ่ม",
+      "pause": "หยุด",
+      "reset": "รีเซ็ต",
+      "minutes": "นาที"
+    },
+    "PrimeFactors": {
+      "number": "ตัวเลข",
+      "calculate": "คำนวณ",
+      "factors": "ตัวประกอบเฉพาะ",
+      "inputLabel": "ป้อนตัวเลข",
+      "placeholder": "เช่น 120",
+      "isPrime": "ตัวเลขนี้เป็นจำนวนเฉพาะ!",
+      "isComposite": "ตัวเลขนี้เป็นจำนวนประกอบ"
+    },
+    "RoiCalculator": {
+      "investment": "การลงทุน",
+      "returns": "ผลตอบแทน",
+      "calculate": "คำนวณ",
+      "roi": "ROI",
+      "profit": "กำไร",
+      "finalValue": "มูลค่าสุดท้าย",
+      "time": "เวลา (ปี)",
+      "totalGain": "กำไรรวม",
+      "annualizedRoi": "ROI รายปี"
+    },
+    "RomanNumerals": {
+      "decimal": "ทศนิยม",
+      "decimalPlaceholder": "2024",
+      "roman": "โรมัน",
+      "convert": "แปลง",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "เริ่มบันทึก",
+      "stopRecording": "หยุดบันทึก",
+      "download": "ดาวน์โหลด",
+      "recording": "กำลังบันทึก..."
+    },
+    "SignatureGenerator": {
+      "draw": "วาด",
+      "clear": "ล้าง",
+      "download": "ดาวน์โหลด",
+      "penColor": "สีปากกา",
+      "penSize": "ขนาดปากกา"
+    },
+    "SpeechToText": {
+      "startListening": "เริ่มฟัง",
+      "stopListening": "หยุดฟัง",
+      "transcript": "ข้อความถอดเสียง",
+      "placeholder": "ข้อความถอดเสียงจะปรากฏที่นี่..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "ใส่ลงในผู้ใช้ (id, ชื่อ, อายุ) ค่า (1, 'John', 30);",
+      "convert": "แปลง",
+      "result": "ผลลัพธ์"
+    },
+    "Stopwatch": {
+      "start": "เริ่ม",
+      "stop": "หยุด",
+      "reset": "รีเซ็ต",
+      "lap": "รอบ"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "ที่อยู่ IP",
+      "subnetMask": "ซับเน็ตมาสก์",
+      "calculate": "คำนวณ",
+      "networkAddress": "ที่อยู่เครือข่าย",
+      "broadcastAddress": "ที่อยู่ Broadcast",
+      "usableHosts": "โฮสต์ที่ใช้งานได้"
+    },
+    "SvgToPng": {
+      "pasteSvg": "วาง SVG",
+      "uploadSvg": "อัปโหลด SVG",
+      "convert": "แปลง",
+      "download": "ดาวน์โหลด"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "ป้อนข้อความที่จะพูด...",
+      "speak": "พูด",
+      "stop": "หยุด",
+      "voice": "เสียง",
+      "rate": "อัตรา",
+      "pitch": "ระดับเสียง"
+    },
+    "TextTools": {
+      "inputPlaceholder": "พิมพ์อะไรสักอย่าง...",
+      "reverse": "กลับด้าน",
+      "uppercase": "ตัวพิมพ์ใหญ่",
+      "lowercase": "ตัวพิมพ์เล็ก",
+      "encode": "เข้ารหัส"
+    },
+    "TimezoneConverter": {
+      "from": "จาก",
+      "to": "เป็น",
+      "convert": "แปลง",
+      "currentTime": "เวลาปัจจุบัน"
+    },
+    "TokenGenerator": {
+      "length": "ความยาว",
+      "generate": "สร้าง",
+      "copy": "คัดลอก",
+      "includeNumbers": "รวมตัวเลข",
+      "includeSymbols": "รวมสัญลักษณ์"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "ป้อน URL...",
+      "parse": "แยกวิเคราะห์",
+      "protocol": "โปรโตคอล",
+      "host": "โฮสต์",
+      "path": "พาธ",
+      "query": "ควีรี"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL เว็บไซต์",
+      "source": "แหล่งที่มา",
+      "medium": "สื่อกลาง",
+      "campaign": "แคมเปญ",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "VatCalculator": {
+      "amount": "จำนวนเงิน",
+      "vatRate": "อัตรา VAT",
+      "addVat": "เพิ่ม VAT",
+      "removeVat": "ลบ VAT",
+      "calculate": "คำนวณ"
+    },
+    "VibrationTester": {
+      "vibrate": "สั่น",
+      "pattern": "รูปแบบ",
+      "duration": "ระยะเวลา",
+      "test": "ทดสอบ"
+    },
+    "WeekNumber": {
+      "currentWeek": "หมายเลขสัปดาห์ปัจจุบัน",
+      "yearProgress": "ความคืบหน้าของปี",
+      "week": "สัปดาห์"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "หมายเลขโทรศัพท์",
+      "message": "ข้อความ",
+      "generate": "สร้าง",
+      "copy": "คัดลอก",
+      "placeholder": "สวัสดี ฉันสนใจ..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "วาง URL วิดีโอ YouTube...",
+      "getThumbnail": "รับภาพขนาดย่อ",
+      "download": "ดาวน์โหลด"
+    },
+    "CrontabGenerator": {
+      "minute": "นาที",
+      "hour": "ชั่วโมง",
+      "day": "วัน",
+      "month": "เดือน",
+      "weekday": "วันในสัปดาห์",
+      "expression": "นิพจน์",
+      "description": "คำอธิบาย"
+    },
+    "ChmodCalculator": {
+      "owner": "เจ้าของ",
+      "group": "กลุ่ม",
+      "others": "อื่นๆ",
+      "read": "อ่าน",
+      "write": "เขียน",
+      "execute": "รัน",
+      "numeric": "ตัวเลข",
+      "symbolic": "สัญลักษณ์"
+    },
+    "HtpasswdGenerator": {
+      "username": "ชื่อผู้ใช้",
+      "password": "รหัสผ่าน",
+      "algorithm": "อัลกอริทึม",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "AspectRatio": {
+      "width": "ความกว้าง",
+      "height": "ความสูง",
+      "ratio": "อัตราส่วน",
+      "calculate": "คำนวณ"
+    },
+    "CssClipPath": {
+      "shape": "รูปร่าง",
+      "preview": "ดูตัวอย่าง",
+      "copyCss": "คัดลอก CSS"
+    },
+    "CssCursor": {
+      "cursor": "เคอร์เซอร์",
+      "preview": "ดูตัวอย่าง",
+      "copyCss": "คัดลอก CSS"
+    },
+    "CssTriangle": {
+      "direction": "ทิศทาง",
+      "size": "ขนาด",
+      "color": "สี",
+      "preview": "ดูตัวอย่าง",
+      "copyCss": "คัดลอก CSS"
+    },
+    "MetaGenerator": {
+      "title": "ชื่อเรื่อง",
+      "description": "คำอธิบาย",
+      "keywords": "คีย์เวิร์ด",
+      "author": "ผู้เขียน",
+      "url": "URL",
+      "image": "รูปภาพ",
+      "generate": "สร้าง",
+      "copy": "คัดลอก",
+      "titlePlaceholder": "เว็บไซต์สุดเจ๋งของฉัน",
+      "descriptionPlaceholder": "คำอธิบายสั้นๆ เกี่ยวกับเว็บไซต์ของคุณ...",
+      "keywordsPlaceholder": "เว็บ, เครื่องมือ, dev",
+      "authorPlaceholder": "ชื่อของคุณ",
+      "outputPlaceholder": "Meta tags จะปรากฏที่นี่..."
+    },
+    "OgGenerator": {
+      "title": "ชื่อเรื่อง",
+      "description": "คำอธิบาย",
+      "url": "URL",
+      "image": "รูปภาพ",
+      "type": "ประเภท",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "TwitterCard": {
+      "cardType": "ประเภทการ์ด",
+      "title": "ชื่อเรื่อง",
+      "description": "คำอธิบาย",
+      "image": "รูปภาพ",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "MarkdownTable": {
+      "rows": "แถว",
+      "columns": "คอลัมน์",
+      "header": "หัวเรื่อง",
+      "addRow": "เพิ่มแถว",
+      "addColumn": "เพิ่มคอลัมน์",
+      "generate": "สร้าง",
+      "copy": "คัดลอก"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "จัดรูปแบบ",
+      "copy": "คัดลอก"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "การจัดรูปแบบ JSON: แนวทางปฏิบัติที่ดีที่สุดสำหรับนักพัฒนา",
+      "excerpt": "เรียนรู้ว่าเหตุใดการจัดรูปแบบ JSON ที่เหมาะสมจึงมีความสำคัญต่อการแก้ไขจุดบกพร่อง และวิธีทำให้การจัดรูปแบบเป็นแบบอัตโนมัติในเวิร์กโฟลว์ของคุณ",
+      "category": "การพัฒนา"
+    },
+    "mastering-regex": {
+      "title": "การเรียนรู้นิพจน์ทั่วไป: คู่มือแบบภาพ",
+      "excerpt": "Regex ไม่จำเป็นต้องน่ากลัว เราแจกแจงรูปแบบทั่วไปสำหรับการตรวจสอบอีเมล, URL และอื่นๆ",
+      "category": "บทช่วยสอน"
+    },
+    "cron-job-scheduling": {
+      "title": "งาน Cron ไม่ชัดเจน: วิธีกำหนดเวลางาน",
+      "excerpt": "ทำความเข้าใจไวยากรณ์ระดับ 5 ดาวของ Cron และวิธีกำหนดเวลาการสำรองข้อมูล อีเมล และสคริปต์บน Linux",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "เหตุใดผู้จัดการรหัสผ่านท้องถิ่นจึงปลอดภัยกว่า (ทางเลือก KeyPass)",
+      "excerpt": "การละเมิดระบบคลาวด์เป็นเรื่องปกติ เรียนรู้ว่าเหตุใดการเก็บรหัสผ่านไว้ในเครื่องด้วยการเข้ารหัส AES-256 จึงเป็นทางเลือกที่ปลอดภัยที่สุดสำหรับความปลอดภัยส่วนบุคคล",
+      "category": "ความปลอดภัย"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "เครื่องมือค้นหา...",
+    "noResults": "ไม่พบผลลัพธ์",
+    "select": "เลือก",
+    "navigate": "นำทาง"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "ส่งคำติชม",
+    "feedback": "ข้อเสนอแนะ",
+    "thankYou": "ขอบคุณ!",
+    "feedbackSent": "ความคิดเห็นของคุณถูกส่งเรียบร้อยแล้ว",
+    "close": "ปิด",
+    "name": "ชื่อ (ไม่บังคับ)",
+    "namePlaceholder": "ชื่อของคุณ",
+    "email": "อีเมล (ไม่บังคับ)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "ประเภทคำติชม",
+    "typeSuggestion": "💡 คำแนะนำ",
+    "typeBug": "🐛 รายงานข้อผิดพลาด",
+    "typeFeature": "✨ คำขอคุณสมบัติ",
+    "typeOther": "⏩ อื่นๆ",
+    "message": "ข้อความ *",
+    "messagePlaceholder": "บอกเราว่าคุณคิดอย่างไร...",
+    "sending": "กำลังส่ง...",
+    "weReadEveryMessage": "เราอ่านทุกข้อความ ขอบคุณที่ช่วยเราปรับปรุง!"
+  },
+  "ShareButton": {
+    "shareTool": "แบ่งปันเครื่องมือ",
+    "copiedLink": "คัดลอกลิงค์แล้ว!"
+  },
+  "TextDiff": {
+    "original": "ข้อความต้นฉบับ",
+    "changed": "ข้อความที่เปลี่ยนแปลง",
+    "update": "อัปเดตส่วนต่าง",
+    "old": "เก่า",
+    "new": "ใหม่",
+    "content": "เนื้อหา"
+  },
+  "CrontabGenerator": {
+    "minute": "นาที",
+    "hour": "ชั่วโมง",
+    "day": "วัน",
+    "month": "เดือน",
+    "weekday": "วันธรรมดา",
+    "min": "นาที",
+    "mon": "จันทร์",
+    "week": "สัปดาห์",
+    "presets": "ค่าที่ตั้งล่วงหน้าด่วน",
+    "everyMinute": "ทุกนาที",
+    "every5Minutes": "ทุก 5 นาที",
+    "everyHour": "ทุกชั่วโมง",
+    "everyDayMidnight": "ทุกวันเวลาเที่ยงคืน",
+    "everyWeek": "ทุกสัปดาห์",
+    "everyMonth": "ทุกเดือน"
+  },
+  "SpeechToText": {
+    "notSupported": "เบราว์เซอร์ของคุณไม่รองรับ Web Speech API กรุณาใช้โครม",
+    "placeholder": "ข้อความถอดเสียงจะปรากฏที่นี่...",
+    "listening": "การฟัง...",
+    "start": "คลิกไมโครโฟนเพื่อเริ่ม"
+  },
+  "OgGenerator": {
+    "title": "ชื่อ",
+    "description": "คำอธิบาย",
+    "image": "URL รูปภาพ",
+    "url": "URL ตามรูปแบบบัญญัติ",
+    "type": "พิมพ์",
+    "website": "เว็บไซต์",
+    "article": "บทความ",
+    "profile": "ประวัติโดยย่อ",
+    "preview": "ดูตัวอย่าง (Facebook/LinkedIn)",
+    "generatedHtml": "HTML ที่สร้างขึ้น",
+    "copy": "สำเนา"
+  },
+  "WeekNumber": {
+    "checkLabel": "ตรวจสอบหมายเลขสัปดาห์สำหรับวันที่",
+    "yearProgress": "ความก้าวหน้าประจำปี"
+  },
+  "RelatedTools": {
+    "title": "คุณอาจจะชอบ",
+    "subtitle": "สำรวจเครื่องมือสำหรับนักพัฒนายอดนิยมอื่นๆ",
+    "openTool": "เปิดเครื่องมือ"
+  },
+  "Breadcrumb": {
+    "home": "บ้าน",
+    "tools": "เครื่องมือ"
+  },
+  "SvgToPng": {
+    "upload": "อัปโหลดไฟล์ SVG",
+    "browse": "หรือคลิกเพื่อเรียกดู",
+    "paste": "...หรือวางโค้ด SVG",
+    "preview": "ภาพตัวอย่าง PNG (มาตราส่วน 2x)",
+    "download": "ดาวน์โหลด PNG",
+    "errorType": "โปรดอัปโหลดไฟล์ SVG ที่ถูกต้อง",
+    "errorRender": "ไม่สามารถแสดงผล SVG. ตรวจสอบให้แน่ใจว่าเป็น XML ที่ถูกต้อง",
+    "errorProcess": "เกิดข้อผิดพลาดในการประมวลผล SVG"
+  },
+  "GradientGenerator": {
+    "config": "การกำหนดค่า",
+    "colors": "สี",
+    "type": "พิมพ์",
+    "angle": "มุม",
+    "random": "สุ่ม",
+    "copyCss": "คัดลอก CSS",
+    "copied": "คัดลอกแล้ว"
+  },
+  "TimezoneConverter": {
+    "date": "วันที่",
+    "time": "เวลา (ท้องถิ่น)",
+    "invalid": "ไม่ถูกต้อง",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "นิวยอร์ก (EST/EDT)",
+      "losAngeles": "ลอสแอนเจลิส (PST/PDT)",
+      "london": "ลอนดอน (GMT/BST)",
+      "paris": "ปารีส (CET/CEST)",
+      "tokyo": "โตเกียว (JST)",
+      "sydney": "ซิดนีย์ (AEST/AEDT)",
+      "dubai": "ดูไบ (GST)",
+      "india": "อินเดีย (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "เครื่องกำเนิดตัวเลข",
+    "listGen": "เครื่องกำเนิดรายการ",
+    "coinGen": "เครื่องกำเนิดเหรียญ",
+    "min": "นาที",
+    "max": "สูงสุด",
+    "count": "นับ",
+    "generate": "สร้าง",
+    "listLabel": "รายการ (หนึ่งรายการต่อบรรทัด)",
+    "pick": "เลือกรายการสุ่ม",
+    "winner": "ผู้ชนะคือ...",
+    "flip": "พลิกเหรียญ",
+    "heads": "หัว",
+    "tails": "ก้อย"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "กำลังบันทึกหน้าจอของคุณ...",
+    "titleFree": "เครื่องบันทึกหน้าจอออนไลน์ฟรี",
+    "desc": "จับภาพหน้าจอ หน้าต่างแอป หรือแท็บเบราว์เซอร์ของคุณ ไม่มีลายน้ำ ไม่จำกัดเวลา",
+    "start": "เริ่มการบันทึก",
+    "stop": "หยุดการบันทึก",
+    "browserSupport": "ทำงานได้ดีที่สุดใน Chrome, Edge และ Firefox บนเดสก์ท็อป"
+  },
+  "CssCursor": {
+    "hoverTest": "วางเมาส์ที่นี่เพื่อทดสอบ"
+  },
+  "VatCalculator": {
+    "amount": "จำนวน",
+    "rate": "อัตราภาษีมูลค่าเพิ่ม (%)",
+    "addVat": "เพิ่มภาษีมูลค่าเพิ่ม",
+    "removeVat": "ลบภาษีมูลค่าเพิ่ม",
+    "netAmount": "จำนวนเงินสุทธิ",
+    "vatAmount": "จำนวนภาษีมูลค่าเพิ่ม",
+    "grossTotal": "ยอดรวมทั้งหมด",
+    "netTotal": "ยอดรวมสุทธิ",
+    "grossAmount": "จำนวนเงินรวม"
+  },
+  "MyIP": {
+    "ipLabel": "ที่อยู่ IP สาธารณะของคุณ",
+    "loading": "กำลังโหลด...",
+    "isp": "ผู้ให้บริการอินเทอร์เน็ต (ISP)",
+    "location": "ที่ตั้ง",
+    "asn": "ASN",
+    "timezone": "เขตเวลา",
+    "note": "นี่คือที่อยู่ IP ที่เว็บไซต์ที่คุณเยี่ยมชมมองเห็นได้ อาจแตกต่างจาก IP ในเครื่องของคุณหากคุณใช้ VPN หรือพร็อกซี"
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "ป้อน URL",
+    "formatted": "เอาต์พุตที่จัดรูปแบบแล้ว",
+    "copy": "สำเนา",
+    "copied": "คัดลอกแล้ว",
+    "placeholder": "วาง URL ด้านบนเพื่อดูการจัดรูปแบบ"
+  },
+  "WhatsAppLink": {
+    "phone": "หมายเลขโทรศัพท์ (พร้อมรหัสประเทศ)",
+    "message": "ข้อความที่กรอกไว้ล่วงหน้า",
+    "hint": "ไม่ต้องใส่ +, - หรือ ()",
+    "yourLink": "ลิงก์ WhatsApp ของคุณ",
+    "open": "เปิดแชท"
+  },
+  "UrlParser": {
+    "enterUrl": "ป้อน URL",
+    "params": "พารามิเตอร์แบบสอบถาม",
+    "error": "URL ไม่ถูกต้อง"
+  },
+  "FaviconGenerator": {
+    "upload": "อัพโหลดรูปภาพ",
+    "browse": "แนะนำ: 512x512 PNG",
+    "original": "ต้นฉบับ",
+    "favicon": "favicon.ico (32x32)",
+    "download": "ดาวน์โหลด Favicon.png",
+    "note": "* ปัจจุบันสร้าง favicons PNG ขนาด 32x32 เปลี่ยนชื่อเป็น .ico หากจำเป็นสำหรับการสนับสนุนแบบเดิม"
+  },
+  "SubnetCalculator": {
+    "ip": "ที่อยู่ IP",
+    "cidr": "ซีไอดีอาร์ (/{ซิดีร์})",
+    "calculate": "คำนวณ",
+    "subnetMask": "ซับเน็ตมาสก์",
+    "networkAddress": "ที่อยู่เครือข่าย",
+    "firstHost": "โฮสต์แรก",
+    "lastHost": "โฮสต์สุดท้าย",
+    "broadcastAddress": "ที่อยู่ออกอากาศ",
+    "totalHosts": "โฮสต์ทั้งหมด"
+  },
+  "SlugGenerator": {
+    "inputLabel": "กรอกชื่อบทความ / ข้อความ",
+    "generated": "กระสุนที่สร้างขึ้น",
+    "copy": "คัดลอกกระสุน"
+  },
+  "SqlToJson": {
+    "inputLabel": "อินพุต SQL (คำสั่ง INSERT เท่านั้น)",
+    "convert": "แปลงเป็น JSON",
+    "error": "ไม่สามารถแยกวิเคราะห์ SQL ตรวจสอบให้แน่ใจว่าเป็นคำสั่ง INSERT INTO มาตรฐาน"
+  },
+  "MarkdownTable": {
+    "addRow": "+ เพิ่มแถว",
+    "addCol": "+ เพิ่มคอลัมน์",
+    "headerPlaceholder": "ส่วนหัว",
+    "outputLabel": "เอาท์พุตมาร์กดาวน์",
+    "copy": "คัดลอกมาร์กดาวน์"
+  },
+  "TwitterCard": {
+    "cardType": "ประเภทบัตร",
+    "siteHandle": "การจัดการไซต์ (เช่น @twitter)",
+    "title": "ชื่อ",
+    "description": "คำอธิบาย",
+    "imageUrl": "URL รูปภาพ",
+    "preview": "ดูตัวอย่าง",
+    "generatedHtml": "HTML ที่สร้างขึ้น",
+    "copy": "สำเนา",
+    "placeholderTitle": "ชื่อการ์ด",
+    "placeholderDesc": "คำอธิบายไปที่นี่..."
+  },
+  "TextToSpeech": {
+    "placeholder": "ป้อนข้อความที่จะพูด...",
+    "voice": "เสียง",
+    "speed": "ความเร็ว",
+    "pitch": "ขว้าง",
+    "speak": "พูด"
+  },
+  "TokenGenerator": {
+    "length": "ความยาว",
+    "includeNumbers": "รวมตัวเลข",
+    "includeSymbols": "รวมสัญลักษณ์",
+    "generate": "สร้างโทเค็น"
+  },
+  "CssTriangle": {
+    "direction": "ทิศทาง",
+    "color": "สี",
+    "width": "ความกว้าง (พิกเซล)",
+    "height": "ความสูง (พิกเซล)",
+    "copy": "สำเนา"
+  },
+  "UnitConverter": {
+    "length": "ความยาว",
+    "weight": "น้ำหนัก",
+    "temperature": "อุณหภูมิ",
+    "meters": "เมตร",
+    "kilometers": "กิโลเมตร",
+    "centimeters": "เซนติเมตร",
+    "millimeters": "มิลลิเมตร",
+    "inches": "นิ้ว",
+    "feet": "เท้า",
+    "yards": "หลา",
+    "miles": "ไมล์",
+    "kilograms": "กิโลกรัม",
+    "grams": "กรัม",
+    "pounds": "ปอนด์",
+    "ounces": "ออนซ์",
+    "celsius": "เซลเซียส",
+    "fahrenheit": "ฟาเรนไฮต์",
+    "kelvin": "เคลวิน"
+  },
+  "CssClipPath": {
+    "shapes": "รูปร่าง",
+    "preview": "ดูตัวอย่าง",
+    "cssCode": "รหัสซีเอสเอส",
+    "copy": "สำเนา",
+    "copied": "คัดลอกแล้ว"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "อัปโหลดรูปภาพ",
+    "uploadDesc": "JPG, PNG หรือ WebP เราบีบอัดมันในเครื่อง",
+    "selectImage": "เลือกรูปภาพ",
+    "settings": "การตั้งค่าการบีบอัด",
+    "quality": "คุณภาพ",
+    "originalSize": "ขนาดดั้งเดิม",
+    "compressedSize": "ขนาดที่บีบอัด",
+    "saving": "ประหยัด",
+    "download": "ดาวน์โหลด"
+  },
+  "HtpasswdGenerator": {
+    "username": "ชื่อผู้ใช้",
+    "password": "รหัสผ่าน",
+    "algorithm": "อัลกอริทึม",
+    "generate": "สร้างรายการ",
+    "result": "ผลลัพธ์",
+    "sha1": "SHA-1 (ไม่ปลอดภัยแต่ได้มาตรฐาน)",
+    "notSupported": "รองรับเฉพาะ SHA-1 ในเวอร์ชันฝั่งไคลเอ็นต์นี้"
+  },
+  "MetaTags": {
+    "pageTitle": "ชื่อหน้า",
+    "description": "คำอธิบาย",
+    "author": "ผู้เขียน"
+  },
+  "AgeCalculator": {
+    "dob": "วันเกิด",
+    "age": "อายุ",
+    "years": "ปี",
+    "months": "เดือน",
+    "days": "วัน",
+    "nextBirthday": "วันเกิดครั้งต่อไป"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL ของเว็บไซต์ (จำเป็น)",
+    "source": "แหล่งที่มาของแคมเปญ (จำเป็น)",
+    "medium": "สื่อของแคมเปญ (จำเป็น)",
+    "name": "ชื่อแคมเปญ (จำเป็น)",
+    "term": "ระยะเวลาของแคมเปญ (ไม่บังคับ)",
+    "content": "เนื้อหาแคมเปญ (ไม่บังคับ)",
+    "generatedUrl": "URL ที่สร้างขึ้น",
+    "copy": "คัดลอก URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "เวลายูนิกซ์ปัจจุบัน",
+    "timestampLabel": "การประทับเวลา (วินาที)",
+    "isoLabel": "รูปแบบวันที่ ISO",
+    "utcDate": "วันที่ UTC",
+    "localDate": "วันที่ท้องถิ่น",
+    "relative": "ญาติ"
+  },
+  "SignatureGenerator": {
+    "color": "สี",
+    "width": "ความกว้าง",
+    "clear": "ชัดเจน",
+    "download": "ดาวน์โหลด PNG",
+    "signHere": "ลงชื่อที่นี่",
+    "note": "ลายเซ็นได้รับการประมวลผลภายในเบราว์เซอร์ของคุณ เราไม่จัดเก็บหรืออัปโหลด"
+  },
+  "MarkdownEditor": {
+    "previewLabel": "ดูตัวอย่างสด"
+  },
+  "CipherTools": {
+    "shiftAmount": "จำนวนกะ (N)",
+    "inputText": "ป้อนข้อความ",
+    "outputText": "ข้อความเอาท์พุต",
+    "rot13": "ROT13",
+    "caesar": "ซีซาร์ (+3)",
+    "shift1": "กะ +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "ความละเอียดหน้าจอ",
+    "browser": "เบราว์เซอร์",
+    "cpuCores": "แกนซีพียู",
+    "battery": "แบตเตอรี่",
+    "detailedSpecs": "ข้อมูลจำเพาะโดยละเอียด",
+    "userAgent": "ตัวแทนผู้ใช้",
+    "platform": "แพลตฟอร์ม",
+    "windowSize": "ขนาดหน้าต่าง",
+    "pixelRatio": "อัตราส่วนพิกเซล",
+    "colorDepth": "ความลึกของสี",
+    "ram": "RAM",
+    "cookiesEnabled": "เปิดใช้งานคุกกี้แล้ว",
+    "onlineStatus": "สถานะออนไลน์",
+    "unknown": "ไม่ทราบ",
+    "yes": "ใช่",
+    "no": "เลขที่",
+    "enabled": "เปิดใช้งานแล้ว",
+    "disabled": "พิการ"
+  },
+  "ChmodCalculator": {
+    "owner": "เจ้าของ",
+    "group": "กลุ่ม",
+    "public": "สาธารณะ",
+    "read": "อ่าน",
+    "write": "เขียน",
+    "execute": "ดำเนินการ",
+    "numeric": "ตัวเลข",
+    "symbolic": "สัญลักษณ์"
+  },
+  "PasswordManager": {
+    "title": "ผู้จัดการรหัสผ่าน",
+    "desc": "จัดเก็บและจัดการรหัสผ่านของคุณอย่างปลอดภัยในเครื่อง",
+    "unlock": "ปลดล็อคห้องนิรภัย",
+    "create": "สร้างห้องนิรภัยใหม่",
+    "unlockDesc": "ป้อนรหัสผ่านหลักของคุณเพื่อเข้าถึงบัญชีของคุณ",
+    "createDesc": "ตั้งรหัสผ่านหลักที่รัดกุม มันเข้ารหัสข้อมูลของคุณภายในเครื่อง",
+    "masterPassword": "รหัสผ่านหลัก",
+    "unlockBtn": "ปลดล็อค",
+    "createBtn": "สร้างห้องนิรภัย",
+    "note": "ข้อมูลถูกเก็บไว้ในเบราว์เซอร์ของคุณโดยใช้การเข้ารหัส AES-GCM เราไม่สามารถกู้คืนรหัสผ่านของคุณได้หากสูญหาย",
+    "myPasswords": "รหัสผ่านของฉัน",
+    "addNew": "เพิ่มใหม่",
+    "search": "ค้นหาบัญชี...",
+    "noPasswords": "ไม่พบรหัสผ่าน",
+    "addAccount": "เพิ่มบัญชี",
+    "accountTitle": "ชื่อเรื่อง / เว็บไซต์",
+    "username": "ชื่อผู้ใช้ / อีเมล์",
+    "password": "รหัสผ่าน",
+    "url": "URL (ไม่บังคับ)",
+    "save": "บันทึกบัญชี",
+    "cancel": "ยกเลิก",
+    "incorrectPassword": "รหัสผ่านไม่ถูกต้องหรือข้อมูลที่เสียหาย",
+    "loading": "กำลังโหลด..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "รายละเอียดเว็บไซต์",
+    "pageTitle": "ชื่อหน้า",
+    "description": "คำอธิบาย",
+    "keywords": "คำหลัก (คั่นด้วยเครื่องหมายจุลภาค)",
+    "author": "ผู้เขียน",
+    "socialPreview": "ตัวอย่างโซเชียล (OG & Twitter)",
+    "websiteUrl": "URL ของเว็บไซต์",
+    "previewImage": "ดูตัวอย่าง URL รูปภาพ",
+    "generatedHtml": "HTML ที่สร้างขึ้น",
+    "copy": "คัดลอก HTML",
+    "copied": "คัดลอกแล้ว"
+  },
+  "VibrationTester": {
+    "worksOnly": "ใช้งานได้เฉพาะกับอุปกรณ์ที่มีฮาร์ดแวร์ระบบสั่น (เช่น โทรศัพท์)",
+    "duration": "ระยะเวลา (มิลลิวินาที)",
+    "vibrateOnce": "สั่นหนึ่งครั้ง",
+    "pulsePattern": "รูปแบบชีพจร",
+    "longPulse": "ชีพจรยาว",
+    "stop": "หยุด"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "เหตุใดการจัดรูปแบบ JSON จึงมีความสำคัญ",
+      "block_2": "JSON (JavaScript Object Notation) คือภาษาของเว็บแต่ JSON แบบดิบที่ส่งคืนจาก API มักจะทำให้ไม่เป็นระเบียบการจัดรูปแบบทำให้สามารถอ่าน แก้ไขจุดบกพร่องได้ และปลอดภัย",
+      "block_3": "1.ความสามารถในการอ่านเป็นสิ่งสำคัญ",
+      "block_4": "เมื่อคุณแก้ไขจุดบกพร่องการตอบสนอง API 5,000 บรรทัด การเยื้องจะช่วยชีวิตคนได้<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> ของเราใช้การเยื้อง 2 ช่องว่างหรือ 4 ช่องว่างเพื่อทำให้โครงสร้างชัดเจน",
+      "block_5": "2.การตรวจสอบ",
+      "block_6": "การไม่มีเครื่องหมายจุลภาคเพียงตัวเดียวอาจทำให้แอปของคุณเสียหายได้ตรวจสอบ JSON ของคุณทุกครั้งก่อนส่งมอบให้กับไฟล์กำหนดค่า",
+      "block_7": "บทสรุป",
+      "block_8": "ไม่ต้องเสียเวลาตรวจสอบวงเล็บด้วยตนเองใช้เครื่องมืออัตโนมัติ"
+    },
+    "mastering-regex": {
+      "block_1": "อธิบาย Regex แล้ว",
+      "block_2": "นิพจน์ทั่วไปมีประสิทธิภาพแต่ทำให้เกิดความสับสนมาลองนึกภาพกันดู",
+      "block_3": "รูปแบบทั่วไป",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">อีเมล:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 แบบอักษรปัดเศษ-mono text-[0.9em] text-[#fb923c] borderเส้นขอบ-[var(--เส้นขอบสี)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">โทรศัพท์:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 แบบอักษรปัดเศษ-mono text-[0.9em] text-[#fb923c] borderเส้นขอบ-[var(--เส้นขอบสี)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "ทดสอบรูปแบบเหล่านี้ทันทีด้วย <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">ผู้ทดสอบ Regex</a> ของเรา"
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 ดาวแห่งครอน",
+      "block_2": "นาที ชั่วโมง วันของเดือน เดือน วันในสัปดาห์นั่นคือทั้งหมดที่มันเป็น",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">ตัวอย่าง</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">ทำงานทุกวันเวลาเที่ยงคืน: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 แบบอักษรโค้งมน-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "ตัวอย่าง",
+      "block_6": "ทำงานทุกๆ 15 นาที: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 แบบอักษรโค้งมน-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "ต้องการความช่วยเหลือหรือไม่?ใช้ <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> เพื่อสร้างการแสดงออกทางสายตา"
+    },
+    "secure-password-storage-local": {
+      "block_1": "ปัญหาเกี่ยวกับ Cloud Vaults",
+      "block_2": "LastPass, Okta และบริษัทยักษ์ใหญ่อื่นๆ ประสบปัญหาการละเมิดเมื่อห้องนิรภัยของคุณออนไลน์ มันเป็นเป้าหมาย",
+      "block_3": "วิธีแก้ปัญหา: การเข้ารหัสภายในเครื่อง",
+      "block_4": "<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Local Password Manager</a></strong> ใหม่ของเราทำงานทั้งหมดในเบราว์เซอร์ของคุณใช้ <strong class=\"text-[var(--title-color)] font-semibold\">การเข้ารหัส AES-GCM 256 บิต</strong> ที่ได้มาจากรหัสผ่านหลักของคุณโดยใช้ PBKDF2",
+      "block_5": "วิธีการทำงาน",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ความรู้เป็นศูนย์:</strong> เราไม่เคยเห็นรหัสผ่านของคุณมันไม่เคยออกจากอุปกรณ์ของคุณ</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">พื้นที่เก็บข้อมูลออฟไลน์:</strong> ห้องนิรภัยที่เข้ารหัสของคุณจะถูกจัดเก็บไว้ใน LocalStorage ของเบราว์เซอร์ของคุณ</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ส่งออกได้:</strong> คุณสามารถส่งออก/สำรองข้อมูลดิบที่เข้ารหัสของคุณได้ตลอดเวลา</li>",
+      "block_7": "หยุดเชื่อถือระบบคลาวด์ด้วยคีย์หลักของคุณ<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">ลองใช้ Local Password Manager</a> วันนี้เลย"
+    }
+  }
+}

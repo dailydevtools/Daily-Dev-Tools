@@ -14,27 +14,16 @@ export default function AdUnit({ slot, format = 'auto', className = '' }: { slot
     }, []);
 
     return (
-        <div className={`ad-container ${className}`} style={{ margin: '32px 0', textAlign: 'center' }}>
+        <div className={`ad-container my-8 text-center ${className}`}>
             <div
                 ref={adRef}
-                style={{
-                    background: 'var(--card-bg)',
-                    border: '1px dashed var(--border-color)',
-                    borderRadius: 12,
-                    padding: 24,
-                    minHeight: 120,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    overflow: 'hidden'
-                }}
+                className="bg-[var(--card-bg)] border border-dashed border-[var(--border-color)] rounded-xl p-6 min-h-[120px] flex flex-col items-center justify-center overflow-hidden"
             >
-                <span style={{ fontSize: 12, color: 'var(--muted-text)', marginBottom: 8, textTransform: 'uppercase', letterSpacing: 1 }}>Advertisement</span>
-                <div style={{ color: 'var(--muted-text)', fontSize: 14 }}>
+                <span className="text-xs text-[var(--muted-text)] mb-2 uppercase tracking-wide">Advertisement</span>
+                <div className="text-[var(--muted-text)] text-sm">
                     Ad Space (Slot: {slot || 'default'})
                 </div>
-                <div style={{ fontSize: 11, color: 'var(--muted-text)', marginTop: 4 }}>
+                <div className="text-[11px] text-[var(--muted-text)] mt-1">
                     Optimize for revenue here
                 </div>
             </div>

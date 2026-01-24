@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Công cụ",
+    "blog": "Blog",
+    "github": "GitHub",
+    "searchPlaceholder": "Tìm kiếm..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Công cụ phát triển trực tuyến miễn phí",
+    "description": "Hơn 90 công cụ trực tuyến miễn phí cho mọi người. Định dạng, chuyển đổi, tạo và tiện ích. Nhanh chóng, riêng tư và không cần đăng ký."
+  },
+  "NotFound": {
+    "title": "Không tìm thấy trang",
+    "description": "Xin lỗi, chúng tôi không thể tìm thấy trang bạn đang tìm kiếm.",
+    "backHome": "Về trang chủ",
+    "suggestions": "Thử tìm kiếm một công cụ hoặc duyệt các công cụ phổ biến của chúng tôi bên dưới."
+  },
+  "Homepage": {
+    "heroTag": "100+ Công cụ miễn phí • Riêng tư • Không cần đăng ký",
+    "titleLine1": "Công cụ phát triển hàng ngày",
+    "titleLine2": "Hoạt động đơn giản",
+    "subtitle": "Các công cụ nhanh, đẹp và tập trung vào quyền riêng tư cho các nhà phát triển, nhà thiết kế và mọi người. Mọi thứ chạy trong trình duyệt của bạn.",
+    "recentTools": "Sử dụng gần đây",
+    "noRecentText": "Bắt đầu sử dụng công cụ để xem chúng ở đây",
+    "searchResults": "Kết quả tìm kiếm",
+    "popularTools": "Phổ biến",
+    "toolsCount": "{count} công cụ có sẵn",
+    "features": {
+      "fast": {
+        "title": "Nhanh như chớp",
+        "desc": "Tất cả các công cụ chạy cục bộ trong trình duyệt của bạn"
+      },
+      "private": {
+        "title": "100% Riêng tư",
+        "desc": "Dữ liệu của bạn không bao giờ rời khỏi thiết bị của bạn"
+      },
+      "simple": {
+        "title": "Được xây dựng cho mọi người",
+        "desc": "Đủ đơn giản cho bất kỳ ai, mạnh mẽ cho các chuyên gia"
+      },
+      "free": {
+        "title": "Luôn miễn phí",
+        "desc": "Không có tài khoản, không giới hạn"
+      }
+    },
+    "categories": {
+      "All": "Tất cả",
+      "Favorites": "Yêu thích",
+      "Developer": "Nhà phát triển",
+      "Design": "Thiết kế",
+      "Content": "Nội dung",
+      "Security": "Bảo mật",
+      "Productivity": "Năng suất",
+      "Math": "Toán học",
+      "Utility": "Tiện ích"
+    },
+    "cta": {
+      "title": "Sẵn sàng tăng năng suất của bạn?",
+      "text": "Bắt đầu sử dụng các công cụ phát triển của chúng tôi miễn phí. Không cần đăng ký, không thu thập dữ liệu.",
+      "button": "Bắt đầu miễn phí"
+    },
+    "openTool": "Mở công cụ",
+    "noResults": "Không tìm thấy công cụ phù hợp với",
+    "clearFilters": "Xóa bộ lọc"
+  },
+  "Footer": {
+    "builtWith": "Được xây dựng bằng ❤️ bởi",
+    "allTools": "Tất cả công cụ",
+    "blog": "Blog",
+    "about": "Giới thiệu",
+    "privacy": "Quyền riêng tư",
+    "terms": "Điều khoản"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Trình định dạng JSON",
+      "description": "Định dạng, xác thực và làm đẹp JSON ngay lập tức"
+    },
+    "base64-encoder": {
+      "name": "Bộ mã hóa Base64",
+      "description": "Mã hóa và giải mã chuỗi Base64"
+    },
+    "url-encoder": {
+      "name": "Bộ mã hóa URL",
+      "description": "Mã hóa và giải mã URL an toàn"
+    },
+    "jwt-decoder": {
+      "name": "Bộ giải mã JWT",
+      "description": "Giải mã và kiểm tra Mã thông báo Web JSON"
+    },
+    "regex-tester": {
+      "name": "Trình kiểm tra Regex",
+      "description": "Kiểm tra biểu thức chính quy trong thời gian thực"
+    },
+    "hash-generator": {
+      "name": "Trình tạo hàm băm",
+      "description": "Tạo băm MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Trình tạo UUID",
+      "description": "Tạo UUID/GUID ngẫu nhiên ngay lập tức"
+    },
+    "css-minifier": {
+      "name": "Công cụ khai thác CSS",
+      "description": "Giảm thiểu và tối ưu hóa mã CSS của bạn"
+    },
+    "markdown-editor": {
+      "name": "Xem trước đánh dấu",
+      "description": "Trình chỉnh sửa và xem trước Markdown thời gian thực"
+    },
+    "color-converter": {
+      "name": "Chuyển đổi màu",
+      "description": "Chuyển đổi Hex, RGB, HSL và CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Công cụ dấu thời gian",
+      "description": "Chuyển đổi dấu thời gian Unix thành ngày của con người"
+    },
+    "sql-formatter": {
+      "name": "Trình định dạng SQL",
+      "description": "Định dạng và làm đẹp các truy vấn SQL"
+    },
+    "password-generator": {
+      "name": "Trình tạo mật khẩu",
+      "description": "Tạo mật khẩu an toàn, ngẫu nhiên"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Tạo văn bản giữ chỗ cho thiết kế"
+    },
+    "image-base64": {
+      "name": "Hình ảnh tới Base64",
+      "description": "Chuyển đổi hình ảnh thành chuỗi Base64"
+    },
+    "qr-generator": {
+      "name": "Trình tạo mã QR",
+      "description": "Tạo mã QR cho URL và văn bản"
+    },
+    "word-counter": {
+      "name": "Bộ đếm từ",
+      "description": "Đếm từ, ký tự và thời gian đọc"
+    },
+    "case-converter": {
+      "name": "Bộ chuyển đổi trường hợp",
+      "description": "Hộp lạc đà, rắn, kebab & pascal"
+    },
+    "text-diff": {
+      "name": "Trình kiểm tra khác biệt văn bản",
+      "description": "So sánh hai văn bản và tìm sự khác biệt"
+    },
+    "slug-generator": {
+      "name": "Máy phát điện sên",
+      "description": "Tạo sên URL thân thiện với SEO"
+    },
+    "gradient-generator": {
+      "name": "Trình tạo độ dốc",
+      "description": "Tạo độ dốc CSS đẹp mắt"
+    },
+    "image-compressor": {
+      "name": "Máy nén hình ảnh",
+      "description": "Nén hình ảnh cục bộ & riêng tư"
+    },
+    "device-info": {
+      "name": "Thông tin thiết bị",
+      "description": "Xem màn hình, trình duyệt và thông tin hệ thống"
+    },
+    "random-generator": {
+      "name": "Trình tạo ngẫu nhiên",
+      "description": "Chọn số, tiền xu và liệt kê các mục"
+    },
+    "unit-converter": {
+      "name": "Bộ chuyển đổi đơn vị",
+      "description": "Chuyển đổi chiều dài, trọng lượng và nhiệt độ"
+    },
+    "pomodoro-timer": {
+      "name": "Hẹn giờ Pomodoro",
+      "description": "Hẹn giờ tập trung cho năng suất"
+    },
+    "yt-thumbnail": {
+      "name": "Trình tải xuống hình thu nhỏ",
+      "description": "Nhận hình thu nhỏ của video YouTube"
+    },
+    "my-ip": {
+      "name": "IP của tôi là gì",
+      "description": "Xem thông tin mạng và IP công cộng"
+    },
+    "keycode-info": {
+      "name": "Thông tin mã khóa",
+      "description": "Trình gỡ lỗi sự kiện bàn phím JavaScript"
+    },
+    "signature-generator": {
+      "name": "Trình tạo chữ ký",
+      "description": "Vẽ và tải xuống chữ ký số"
+    },
+    "screen-recorder": {
+      "name": "Trình ghi màn hình",
+      "description": "Ghi lại màn hình và tải video"
+    },
+    "credit-card-validator": {
+      "name": "Trình xác thực thẻ",
+      "description": "Xác thực số thẻ tín dụng"
+    },
+    "password-manager": {
+      "name": "Trình quản lý mật khẩu cục bộ",
+      "description": "Lưu trữ mật khẩu cục bộ một cách an toàn bằng mã hóa"
+    },
+    "deep-link-tester": {
+      "name": "Trình kiểm tra liên kết sâu",
+      "description": "Kiểm tra, khởi chạy và quản lý liên kết sâu trên thiết bị di động"
+    },
+    "image-converter": {
+      "name": "Trình chuyển đổi hình ảnh",
+      "description": "Chuyển đổi cục bộ PNG/JPG sang WebP để tối ưu hóa hình ảnh"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Chuyển đổi JSON sang CSV và ngược lại"
+    },
+    "bmi-calculator": {
+      "name": "Máy tính BMI",
+      "description": "Tính chỉ số khối cơ thể (BMI)"
+    },
+    "dns-lookup": {
+      "name": "Tra cứu DNS",
+      "description": "Truy vấn bản ghi DNS (A, MX, NS) ngay lập tức"
+    },
+    "age-calculator": {
+      "name": "Máy tính tuổi",
+      "description": "Tính tuổi chính xác và tổng số ngày"
+    },
+    "loan-calculator": {
+      "name": "Máy tính khoản vay",
+      "description": "Tính toán EMI hàng tháng và tổng tiền lãi"
+    },
+    "discount-calculator": {
+      "name": "Máy tính giảm giá",
+      "description": "Tính giá bán và tiết kiệm"
+    },
+    "interest-calculator": {
+      "name": "Máy tính lãi",
+      "description": "Máy tính lãi đơn giản và lãi kép"
+    },
+    "html-encoder": {
+      "name": "Bộ mã hóa/giải mã HTML",
+      "description": "Thoát các ký tự đặc biệt hoặc giải mã HTML"
+    },
+    "list-sorter": {
+      "name": "Trình sắp xếp danh sách",
+      "description": "Sắp xếp, đảo ngược, xáo trộn và loại bỏ danh sách trùng lặp"
+    },
+    "box-shadow": {
+      "name": "Máy tạo bóng hộp",
+      "description": "Tạo bóng hộp CSS một cách trực quan"
+    },
+    "date-diff": {
+      "name": "Chênh lệch ngày",
+      "description": "Tính khoảng thời gian giữa hai ngày"
+    },
+    "sql-to-json": {
+      "name": "SQL sang JSON",
+      "description": "Chuyển đổi SQL INSERT thành đối tượng JSON"
+    },
+    "keyword-density": {
+      "name": "Mật độ từ khóa",
+      "description": "Phân tích tần suất từ ​​khóa cho SEO"
+    },
+    "json-diff": {
+      "name": "Sự khác biệt JSON",
+      "description": "So sánh hai đối tượng JSON cạnh nhau"
+    },
+    "cipher-tools": {
+      "name": "Công cụ mật mã",
+      "description": "Bộ mã hóa/giải mã ROT13 và Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Trình tạo mã thông báo ngẫu nhiên",
+      "description": "Tạo mã thông báo ngẫu nhiên an toàn"
+    },
+    "favicon-generator": {
+      "name": "Trình tạo biểu tượng yêu thích",
+      "description": "Tạo favicon .ico và PNG"
+    },
+    "robots-generator": {
+      "name": "Trình tạo Robots.txt",
+      "description": "Tạo robots.txt cho SEO"
+    },
+    "grid-generator": {
+      "name": "Trình tạo lưới CSS",
+      "description": "Trình tạo bố cục lưới CSS trực quan"
+    },
+    "hmac-generator": {
+      "name": "Máy phát điện HMAC",
+      "description": "Tạo mã xác thực tin nhắn có khóa băm"
+    },
+    "http-status": {
+      "name": "Mã trạng thái HTTP",
+      "description": "Danh sách tham khảo mã trạng thái HTTP"
+    },
+    "week-number": {
+      "name": "Số tuần",
+      "description": "Số tuần hiện tại và tiến độ năm"
+    },
+    "text-tools": {
+      "name": "Biến đổi văn bản",
+      "description": "Đảo ngược, lật và mã hóa văn bản"
+    },
+    "url-parser": {
+      "name": "Trình phân tích cú pháp URL",
+      "description": "Chia URL thành giao thức, máy chủ, đường dẫn, thông số"
+    },
+    "markdown-table": {
+      "name": "Trình tạo bảng đánh dấu",
+      "description": "Tạo bảng Markdown một cách trực quan"
+    },
+    "whatsapp-link": {
+      "name": "Trình tạo liên kết WhatsApp",
+      "description": "Tạo liên kết trò chuyện WhatsApp trực tiếp"
+    },
+    "paypal-link": {
+      "name": "Trình tạo liên kết PayPal",
+      "description": "Tạo liên kết thanh toán PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG sang PNG",
+      "description": "Chuyển đổi mã/tệp SVG thành hình ảnh PNG"
+    },
+    "prime-factors": {
+      "name": "các yếu tố chính",
+      "description": "Tìm thừa số nguyên tố của một số"
+    },
+    "iban-validator": {
+      "name": "Trình xác thực IBAN",
+      "description": "Xác thực số tài khoản ngân hàng quốc tế"
+    },
+    "ascii-converter": {
+      "name": "Bộ chuyển đổi ASCII",
+      "description": "Chuyển đổi văn bản sang mã thập phân ASCII"
+    },
+    "utm-builder": {
+      "name": "Trình tạo UTM",
+      "description": "Xây dựng URL chiến dịch Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Trình tạo thẻ meta",
+      "description": "Tạo thẻ meta SEO cho trang web"
+    },
+    "og-generator": {
+      "name": "Trình tạo đồ thị mở",
+      "description": "Tạo thẻ meta Open Graph để chia sẻ trên mạng xã hội"
+    },
+    "twitter-card": {
+      "name": "Trình tạo thẻ Twitter",
+      "description": "Tạo thẻ meta Thẻ Twitter"
+    },
+    "aspect-ratio": {
+      "name": "Máy tính tỷ lệ khung hình",
+      "description": "Tính tỷ lệ khung hình và kích thước"
+    },
+    "css-cursor": {
+      "name": "Con trỏ CSS",
+      "description": "Tham chiếu thuộc tính con trỏ CSS trực quan"
+    },
+    "css-triangle": {
+      "name": "Trình tạo tam giác CSS",
+      "description": "Tạo hình tam giác CSS thuần túy"
+    },
+    "percentage-calculator": {
+      "name": "Máy tính tỷ lệ phần trăm",
+      "description": "Tính tỷ lệ phần trăm và thay đổi"
+    },
+    "vat-calculator": {
+      "name": "Máy tính thuế VAT",
+      "description": "Tính số VAT thêm/bớt"
+    },
+    "stopwatch": {
+      "name": "Đồng hồ bấm giờ",
+      "description": "Đồng hồ bấm giờ dựa trên trình duyệt đơn giản"
+    },
+    "text-to-speech": {
+      "name": "Chuyển văn bản thành giọng nói",
+      "description": "Chuyển đổi văn bản thành giọng nói"
+    },
+    "speech-to-text": {
+      "name": "Lời nói thành văn bản",
+      "description": "Chuyển giọng nói thành văn bản"
+    },
+    "vibration-tester": {
+      "name": "Máy kiểm tra độ rung",
+      "description": "Kiểm tra động cơ rung của thiết bị"
+    },
+    "chmod-calculator": {
+      "name": "Máy tính Chmod",
+      "description": "Tính toán quyền truy cập tệp Linux"
+    },
+    "crontab-generator": {
+      "name": "Trình tạo Crontab",
+      "description": "Tạo biểu thức lịch trình cron"
+    },
+    "htpasswd-generator": {
+      "name": "Trình tạo Htpasswd",
+      "description": "Tạo các mục xác thực cơ bản"
+    },
+    "subnet-calculator": {
+      "name": "Máy tính mạng con",
+      "description": "Tính toán mạng con và dải IP"
+    },
+    "mac-generator": {
+      "name": "Trình tạo địa chỉ MAC",
+      "description": "Tạo địa chỉ MAC ngẫu nhiên"
+    },
+    "timezone-converter": {
+      "name": "Bộ chuyển đổi múi giờ",
+      "description": "Chuyển đổi thời gian giữa nhiều vùng"
+    },
+    "email-validator": {
+      "name": "Trình xác thực email",
+      "description": "Xác thực định dạng email và phát hiện lỗi chính tả"
+    },
+    "password-strength": {
+      "name": "Độ mạnh mật khẩu",
+      "description": "Kiểm tra điểm độ mạnh của mật khẩu"
+    },
+    "roman-numerals": {
+      "name": "Bộ chuyển đổi số La Mã",
+      "description": "Chuyển đổi giữa số La Mã và số thập phân"
+    },
+    "margin-calculator": {
+      "name": "Máy tính ký quỹ",
+      "description": "Tính tỷ suất lợi nhuận và chênh lệch"
+    },
+    "roi-calculator": {
+      "name": "Công cụ tính ROI",
+      "description": "Tính toán lợi tức đầu tư"
+    },
+    "fuel-calculator": {
+      "name": "Máy tính chi phí nhiên liệu",
+      "description": "Tính toán chi phí nhiên liệu chuyến đi"
+    },
+    "pretty-print-url": {
+      "name": "URL in đẹp",
+      "description": "Định dạng và làm đẹp URL để dễ đọc"
+    }
+  },
+  "Terms": {
+    "title": "Điều khoản dịch vụ",
+    "lastUpdated": "Cập nhật lần cuối",
+    "sections": {
+      "acceptance": {
+        "title": "1. Chấp nhận các điều khoản",
+        "content": "Bằng cách truy cập và sử dụng DailyDevTools, bạn chấp nhận và đồng ý bị ràng buộc bởi các điều khoản và quy định của thỏa thuận này."
+      },
+      "useLicense": {
+        "title": "2. Giấy phép sử dụng",
+        "content": "DailyDevTools được sử dụng miễn phí cho mục đích cá nhân và thương mại. Bạn có thể không:",
+        "list": {
+          "0": "Cố gắng đảo ngược kỹ thuật hoặc loại bỏ các phần quan trọng của trang web.",
+          "1": "Sử dụng trang web theo bất kỳ cách nào gây ra hoặc có thể gây ra thiệt hại cho trang web hoặc làm suy giảm tính khả dụng hoặc khả năng truy cập của trang web."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Tuyên bố từ chối trách nhiệm",
+        "content": "Các công cụ trên DailyDevTools được cung cấp \"nguyên trạng\". Chúng tôi không đưa ra bất kỳ bảo đảm nào, rõ ràng hay ngụ ý..."
+      },
+      "limitations": {
+        "title": "4. Hạn chế",
+        "content": "Trong mọi trường hợp, DailyDevTools hoặc nhà cung cấp của nó sẽ không chịu trách nhiệm về bất kỳ thiệt hại nào..."
+      },
+      "revisions": {
+        "title": "5. Sửa đổi",
+        "content": "Các tài liệu xuất hiện trên DailyDevTools có thể bao gồm các lỗi về kỹ thuật, lỗi đánh máy hoặc lỗi chụp ảnh..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Chính sách bảo mật",
+    "lastUpdated": "Cập nhật lần cuối",
+    "intro": "Chào mừng bạn đến với DailyDevTools. Chúng tôi tôn trọng quyền riêng tư của bạn và cam kết bảo vệ dữ liệu cá nhân của bạn.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Công cụ của chúng tôi hoạt động như thế nào (Xử lý cục bộ)",
+        "content": "Quan trọng nhất: Các công cụ chạy hoàn toàn trong trình duyệt của bạn. Dữ liệu không bao giờ rời khỏi thiết bị của bạn."
+      },
+      "dataCollection": {
+        "title": "3. Dữ liệu chúng tôi thu thập",
+        "content": "Chúng tôi không thu thập nội dung. Chúng tôi sử dụng Google Analytics để thống kê việc sử dụng."
+      },
+      "cookies": {
+        "title": "4. Cookie",
+        "content": "Chúng tôi sử dụng cookie để phân tích và tùy chọn cục bộ."
+      },
+      "thirdParty": {
+        "title": "5. Liên kết của bên thứ ba",
+        "content": "Trang web của chúng tôi có thể chứa các liên kết đến bên thứ ba."
+      },
+      "changes": {
+        "title": "6. Những thay đổi đối với Chính sách này",
+        "content": "Chúng tôi có thể cập nhật chính sách này theo thời gian."
+      },
+      "contact": {
+        "title": "7. Liên hệ với chúng tôi",
+        "content": "Liên hệ với chúng tôi qua GitHub hoặc phương tiện truyền thông xã hội."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Tài nguyên dành cho nhà phát triển",
+    "subtitle": "Đi sâu vào các công cụ chúng tôi xây dựng và các khái niệm đằng sau chúng.",
+    "readMore": "Đọc thêm",
+    "backToBlog": "Quay lại Blog",
+    "enjoyedArticle": "Bạn thích bài viết này?",
+    "checkTools": "Kiểm tra Công cụ của chúng tôi"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Đầu vào",
+      "output": "Đầu ra",
+      "format": "Định dạng",
+      "minify": "Giảm thiểu",
+      "download": "Tải xuống",
+      "copy": "Sao chép",
+      "paste": "Dán",
+      "copied": "Đã sao chép!",
+      "upload": "Tải lên",
+      "sample": "Vật mẫu",
+      "clear": "Xóa",
+      "indent": "Thụt lề:",
+      "chars": "ký tự",
+      "error": "Lỗi",
+      "invalid": "Đầu vào không hợp lệ",
+      "result": "Kết quả",
+      "generate": "Phát ra",
+      "calculate": "Tính toán",
+      "convert": "Chuyển thành",
+      "validate": "Xác thực",
+      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây..."
+    },
+    "Base64Encoder": {
+      "encode": "Mã hóa",
+      "decode": "Giải mã",
+      "textToEncode": "Văn bản cần mã hóa",
+      "base64ToDecode": "Base64 để giải mã",
+      "enterText": "Nhập văn bản để mã hóa...",
+      "enterBase64": "Nhập Base64 để giải mã...",
+      "encodeAction": "Mã hóa thành Base64",
+      "decodeAction": "Giải mã từ Base64",
+      "base64Output": "Đầu ra Base64",
+      "decodedText": "Văn bản được giải mã",
+      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây...",
+      "invalidInput": "Dữ liệu nhập không hợp lệ cho {mode}"
+    },
+    "QrGenerator": {
+      "content": "Nội dung",
+      "placeholder": "https://example.com",
+      "customization": "Tùy chỉnh",
+      "foreground": "Tiền cảnh",
+      "background": "Lý lịch",
+      "download": "Tải xuống"
+    },
+    "HashGenerator": {
+      "inputText": "Nhập văn bản",
+      "placeholder": "Nhập văn bản để băm...",
+      "waiting": "Đang chờ nhập liệu..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Tạo mới",
+      "configuration": "Cấu hình",
+      "length": "Độ dài mật khẩu",
+      "uppercase": "Chữ hoa (A-Z)",
+      "numbers": "Số (0-9)",
+      "symbols": "Ký hiệu (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Dán JSON của bạn vào đây...",
+      "outputPlaceholder": "JSON được định dạng sẽ xuất hiện ở đây...",
+      "spaces": "khoảng trống"
+    },
+    "UrlEncoder": {
+      "encode": "Mã hóa",
+      "decode": "Giải mã",
+      "urlToEncode": "URL để mã hóa",
+      "encodedUrlToDecode": "URL được mã hóa để giải mã",
+      "enterUrlToEncode": "Nhập URL hoặc văn bản để mã hóa...",
+      "enterUrlToDecode": "Nhập URL được mã hóa để giải mã...",
+      "encodeAction": "Mã hóa URL",
+      "decodeAction": "URL giải mã",
+      "encodedUrl": "URL được mã hóa",
+      "decodedUrl": "URL được giải mã",
+      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây...",
+      "chars": "ký tự",
+      "invalidInput": "Dữ liệu nhập không hợp lệ cho {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Dán mã thông báo JWT của bạn",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Giải mã JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Đã phát hành",
+      "expires": "Hết hạn"
+    },
+    "RegexTester": {
+      "expression": "Sự biểu lộ",
+      "expressionPlaceholder": "Nhóm chụp (abc)...",
+      "testString": "Chuỗi thử nghiệm",
+      "testStringPlaceholder": "Dán chuỗi thử nghiệm của bạn vào đây...",
+      "matchHighlights": "Trận đấu nổi bật",
+      "matches": "trận đấu",
+      "matchInfo": "Thông tin trận đấu",
+      "match": "Cuộc thi đấu",
+      "index": "chỉ mục",
+      "group": "Nhóm",
+      "noMatches": "Không tìm thấy kết quả phù hợp",
+      "highlightPlaceholder": "Các trận đấu sẽ được đánh dấu ở đây...",
+      "flagsHelp": "g: toàn cục, i: bỏ qua trường hợp, m: đa dòng"
+    },
+    "UuidGenerator": {
+      "generate": "Phát ra",
+      "generateCount": "Phát ra:",
+      "copyAll": "Sao chép tất cả",
+      "copyUuid": "Sao chép UUID",
+      "generatedAt": "Được tạo cục bộ vào lúc {time} • UUID phiên bản 4"
+    },
+    "WordCounter": {
+      "words": "Từ",
+      "characters": "nhân vật",
+      "sentences": "Câu",
+      "paragraphs": "Đoạn văn",
+      "readingTime": "Thời gian đọc",
+      "min": "min",
+      "textInput": "Nhập văn bản",
+      "inputPlaceholder": "Bắt đầu nhập hoặc dán văn bản của bạn vào đây để phân tích...",
+      "clear": "Thông thoáng"
+    },
+    "TimestampConverter": {
+      "timestamp": "Dấu thời gian",
+      "humanDate": "Ngày của con người",
+      "convert": "Chuyển thành",
+      "currentTimestamp": "Dấu thời gian hiện tại",
+      "inputPlaceholder": "Nhập dấu thời gian Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Dán truy vấn SQL của bạn vào đây...",
+      "outputPlaceholder": "SQL được định dạng sẽ xuất hiện ở đây..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Dán mã CSS của bạn vào đây...",
+      "outputPlaceholder": "CSS được rút gọn sẽ xuất hiện ở đây..."
+    },
+    "MarkdownEditor": {
+      "editor": "Biên tập viên",
+      "preview": "Xem trước",
+      "inputPlaceholder": "Nhập Markdown vào đây..."
+    },
+    "TextDiff": {
+      "original": "Văn bản gốc",
+      "changed": "Văn bản đã thay đổi",
+      "compare": "So sánh",
+      "differences": "Sự khác biệt"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Nhập văn bản để chuyển đổi...",
+      "generatedSlug": "Slug được tạo"
+    },
+    "ImageCompressor": {
+      "selectImage": "Chọn hình ảnh",
+      "quality": "Chất lượng",
+      "compress": "nén",
+      "download": "Tải xuống",
+      "originalSize": "Kích thước ban đầu",
+      "compressedSize": "Kích thước nén"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Đoạn văn",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "GradientGenerator": {
+      "angle": "Góc",
+      "colors": "Màu sắc",
+      "addColor": "Thêm màu",
+      "copyCss": "Sao chép CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Ngày sinh",
+      "calculate": "Tính toán",
+      "years": "Năm",
+      "months": "Tháng",
+      "days": "Ngày",
+      "totalDays": "Tổng số ngày",
+      "nextBirthday": "Sinh nhật tiếp theo vào"
+    },
+    "AsciiConverter": {
+      "text": "Chữ",
+      "ascii": "ASCII",
+      "convert": "Chuyển thành",
+      "inputPlaceholder": "Nhập văn bản..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Ngang (X)",
+      "vertical": "Dọc (Y)",
+      "blur": "Làm mờ",
+      "spread": "Lây lan",
+      "colorOpacity": "Màu sắc & Độ mờ",
+      "inset": "Hình nhỏ"
+    },
+    "BmiCalculator": {
+      "metric": "Hệ mét (kg/cm)",
+      "imperial": "Đế quốc (lbs/in)",
+      "weight": "Cân nặng",
+      "height": "Chiều cao",
+      "calculate": "Tính chỉ số BMI",
+      "bmiScore": "Điểm BMI của bạn",
+      "underweight": "Thiếu cân",
+      "normal": "Cân nặng bình thường",
+      "overweight": "Thừa cân",
+      "obese": "Béo phì"
+    },
+    "CaseConverter": {
+      "inputText": "Nhập văn bản",
+      "inputPlaceholder": "Nhập văn bản của bạn vào đây...",
+      "upper": "UPPERCASE",
+      "lower": "chữ thường",
+      "title": "Trường hợp tiêu đề",
+      "sentence": "Trường hợp câu",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Sao chép",
+      "conversions": "Chuyển đổi",
+      "clear": "Thông thoáng"
+    },
+    "ColorConverter": {
+      "hexLabels": "Màu lục giác",
+      "rgbLabels": "Màu RGB",
+      "hslLabels": "Màu HSL",
+      "cmykLabels": "Màu CMYK",
+      "copy": "Sao chép",
+      "hexToRgbNote": "* Hiện chỉ hỗ trợ chuyển đổi HEX sang RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Số thẻ",
+      "validate": "Xác thực",
+      "valid": "Số thẻ tín dụng hợp lệ",
+      "invalid": "Số thẻ tín dụng không hợp lệ",
+      "placeholder": "Nhập số thẻ...",
+      "type": "Loại thẻ",
+      "checkDigit": "Kiểm tra chữ số",
+      "luhnValid": "Thuật toán Luhn hợp lệ"
+    },
+    "CipherTools": {
+      "encode": "Mã hóa",
+      "decode": "Giải mã",
+      "rot13": "ROT13",
+      "caesar": "Mật mã Caesar",
+      "shift": "Sự thay đổi",
+      "inputPlaceholder": "Xin chào thế giới",
+      "outputPlaceholder": "Kết quả sẽ xuất hiện ở đây..."
+    },
+    "CronGenerator": {
+      "minute": "Phút",
+      "hour": "Giờ",
+      "dayMonth": "Ngày (Tháng)",
+      "month": "Tháng",
+      "dayWeek": "Ngày (Tuần)",
+      "presets": "Cài đặt trước chung",
+      "everyMinute": "Mỗi phút",
+      "everyHour": "Mỗi giờ",
+      "everyDayMidnight": "Mỗi ngày vào lúc nửa đêm",
+      "everySunday": "Chủ Nhật hàng tuần",
+      "everyMonth": "Hàng tháng",
+      "everyYear": "Hàng năm",
+      "formatInfo": "Định dạng: * * * * * (Phút Giờ DayOfMonth Tháng DayOfWeek)",
+      "usageInfo": "Sử dụng * cho 'mọi', */n cho 'mọi n', 1,2,3 cho danh sách cụ thể."
+    },
+    "DateDiff": {
+      "startDate": "Ngày bắt đầu",
+      "endDate": "Ngày kết thúc",
+      "calculate": "Tính toán",
+      "difference": "Sự khác biệt",
+      "years": "Năm",
+      "months": "Tháng",
+      "days": "Ngày",
+      "totalDays": "Tổng số ngày",
+      "totalWeeks": "Tổng số tuần",
+      "totalHours": "Tổng số giờ"
+    },
+    "DeepLinkTester": {
+      "testLink": "Liên kết thử nghiệm",
+      "savedLinks": "Liên kết đã lưu",
+      "searchPlaceholder": "Tìm kiếm các liên kết đã lưu...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Phóng",
+      "save": "Cứu",
+      "delete": "Xóa bỏ",
+      "opens": "mở ra",
+      "scanQr": "Quét bằng thiết bị di động của bạn để kiểm tra",
+      "noSavedLinks": "Không tìm thấy liên kết đã lưu.",
+      "enterLabel": "Nhập nhãn cho liên kết này:",
+      "saved": "Đã lưu!",
+      "confirmDelete": "Xóa liên kết này?"
+    },
+    "DeviceInfo": {
+      "screen": "Màn hình",
+      "browser": "Trình duyệt",
+      "system": "Hệ thống",
+      "resolution": "Nghị quyết",
+      "colorDepth": "Độ sâu màu",
+      "userAgent": "Tác nhân người dùng",
+      "platform": "Nền tảng",
+      "language": "Ngôn ngữ"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Giá gốc",
+      "discountPercent": "Giảm giá",
+      "additionalDiscount": "Giảm giá bổ sung",
+      "calculate": "Tính toán",
+      "youSave": "Bạn lưu",
+      "finalPrice": "Giá cuối cùng",
+      "salesTax": "Thuế bán hàng"
+    },
+    "DnsLookup": {
+      "domain": "Lãnh địa",
+      "lookup": "tra cứu",
+      "recordType": "Loại bản ghi",
+      "results": "Kết quả",
+      "placeholder": "ví dụ.com",
+      "status": "Trạng thái",
+      "time": "Thời gian",
+      "server": "Máy chủ",
+      "answerSection": "Phần trả lời",
+      "name": "Tên",
+      "type": "Kiểu",
+      "ttl": "TTL",
+      "data": "dữ liệu",
+      "noRecords": "Không tìm thấy bản ghi nào"
+    },
+    "EmailValidator": {
+      "email": "Địa chỉ email",
+      "validate": "Xác thực",
+      "valid": "Có hiệu lực",
+      "invalid": "Không hợp lệ",
+      "suggestion": "Gợi ý",
+      "placeholder": "người dùng@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Tải hình ảnh lên",
+      "generate": "Phát ra",
+      "download": "Tải xuống",
+      "sizes": "Kích cỡ"
+    },
+    "FuelCalculator": {
+      "distance": "Khoảng cách",
+      "fuelEfficiency": "Hiệu quả nhiên liệu",
+      "fuelPrice": "Giá nhiên liệu",
+      "calculate": "Tính toán",
+      "result": "Kết quả",
+      "totalCost": "Tổng chi phí",
+      "fuelNeeded": "Nhiên liệu cần thiết"
+    },
+    "GridGenerator": {
+      "columns": "Cột",
+      "rows": "Hàng",
+      "gap": "Khoảng cách",
+      "preview": "Xem trước",
+      "copyCss": "Sao chép CSS",
+      "rowGap": "Khoảng cách hàng",
+      "colGap": "Khoảng cách cột",
+      "options": "Tùy chọn"
+    },
+    "HmacGenerator": {
+      "message": "Tin nhắn",
+      "secret": "Bí mật",
+      "algorithm": "Thuật toán",
+      "generate": "Phát ra",
+      "inputPlaceholder": "Nhập văn bản...",
+      "secretPlaceholder": "Bí mật..."
+    },
+    "HtmlEncoder": {
+      "encode": "Mã hóa",
+      "decode": "Giải mã",
+      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây...",
+      "inputPlaceholder": "Dán HTML vào đây..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Mã tìm kiếm (ví dụ: 404) hoặc tên...",
+      "code": "Mã số",
+      "name": "Tên",
+      "description": "Sự miêu tả"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Xác thực",
+      "valid": "Có hiệu lực",
+      "invalid": "Không hợp lệ",
+      "placeholder": "Nhập IBAN...",
+      "inputLabel": "Nhập số IBAN",
+      "validTitle": "Điểm chuẩn hợp lệ",
+      "invalidTitle": "Tổng kiểm tra không hợp lệ",
+      "validDesc": "Định dạng IBAN và tổng kiểm tra là chính xác.",
+      "invalidDesc": "IBAN không khớp với thuật toán tổng kiểm tra."
+    },
+    "ImageBase64": {
+      "upload": "Tải lên",
+      "convert": "Chuyển thành",
+      "copy": "Sao chép",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Tải hình ảnh lên",
+      "convertToBase64": "Chuyển đổi sang Base64",
+      "convertToImage": "Chuyển đổi thành hình ảnh",
+      "base64String": "Chuỗi Base64",
+      "download": "Tải xuống"
+    },
+    "ImageConverter": {
+      "selectImage": "Chọn hình ảnh",
+      "format": "Định dạng",
+      "convert": "Chuyển thành",
+      "download": "Tải xuống",
+      "quality": "Chất lượng"
+    },
+    "InterestCalculator": {
+      "principal": "Hiệu trưởng",
+      "rate": "Lãi suất",
+      "time": "Khoảng thời gian (Năm)",
+      "calculate": "Tính toán",
+      "simpleInterest": "Đơn giản",
+      "compoundInterest": "hợp chất",
+      "totalAmount": "Tổng giá trị",
+      "type": "Kiểu",
+      "frequency": "Tần số gộp",
+      "annually": "Hàng năm",
+      "monthly": "hàng tháng",
+      "daily": "Hằng ngày",
+      "year": "Năm"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Nhập JSON...",
+      "convert": "Chuyển thành",
+      "format": "Định dạng",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON sang CSV",
+      "csvToJson": "CSV sang JSON",
+      "jsonInput": "Đầu vào JSON",
+      "csvInput": "Đầu vào CSV",
+      "jsonOutput": "Đầu ra JSON",
+      "csvOutput": "Đầu ra CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON gốc",
+      "modified": "JSON đã sửa đổi",
+      "compare": "So sánh",
+      "differences": "Sự khác biệt"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Nhấn phím bất kỳ",
+      "key": "Chìa khóa",
+      "code": "Mã số",
+      "keyCode": "Mã khóa",
+      "which": "cái mà",
+      "location": "Vị trí",
+      "modifiers": "sửa đổi",
+      "standard": "Tiêu chuẩn",
+      "left": "Bên trái",
+      "right": "Phải",
+      "numpad": "bàn phím số",
+      "space": "(Không gian)",
+      "info": "Hiển thị Mã khóa, Mã sự kiện JavaScript, v.v."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Dán văn bản của bạn vào đây để phân tích tần suất từ ​​khóa...",
+      "analyze": "Phân tích",
+      "keyword": "Từ khóa",
+      "count": "Đếm",
+      "density": "Tỉ trọng"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Nhập danh sách của bạn vào đây...",
+      "sort": "Loại",
+      "reverse": "Đảo ngược",
+      "shuffle": "Trộn bài",
+      "deduplicate": "Loại bỏ trùng lặp",
+      "ascending": "Tăng dần",
+      "descending": "Giảm dần",
+      "length": "Chiều dài",
+      "trim": "Cắt bớt chỗ trống",
+      "lines": "Dòng:",
+      "chars": "Nhân vật:"
+    },
+    "LoanCalculator": {
+      "principal": "Hiệu trưởng",
+      "interestRate": "Lãi suất",
+      "term": "Thuật ngữ",
+      "calculate": "Tính toán",
+      "monthlyPayment": "Thanh toán hàng tháng",
+      "totalInterest": "Tổng lãi",
+      "totalPayment": "Tổng số tiền thanh toán",
+      "loanDetails": "Chi tiết khoản vay",
+      "loanAmount": "Số tiền cho vay",
+      "loanTerm": "Thời hạn cho vay",
+      "years": "Năm",
+      "months": "Tháng",
+      "interest": "Quan tâm"
+    },
+    "MacGenerator": {
+      "generate": "Phát ra",
+      "copy": "Sao chép",
+      "separator": "Dấu phân cách",
+      "format": "Định dạng",
+      "quantity": "Số lượng",
+      "uppercase": "Chữ hoa"
+    },
+    "MarginCalculator": {
+      "cost": "Trị giá",
+      "price": "Giá bán",
+      "calculate": "Tính toán",
+      "margin": "Lề",
+      "markup": "Đánh dấu",
+      "profit": "Lợi nhuận",
+      "revenue": "Doanh thu",
+      "netProfit": "Lợi nhuận ròng",
+      "grossMargin": "Tỷ suất lợi nhuận gộp"
+    },
+    "PasswordManager": {
+      "masterPassword": "Mật khẩu chính",
+      "unlock": "Mở khóa",
+      "searchPlaceholder": "Tìm kiếm tài khoản...",
+      "addNew": "Thêm mới",
+      "siteName": "Tên trang web",
+      "username": "Tên người dùng",
+      "password": "Mật khẩu",
+      "save": "Cứu",
+      "delete": "Xóa bỏ"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Nhập vào đây...",
+      "strength": "Sức mạnh",
+      "weak": "Yếu đuối",
+      "fair": "Hội chợ",
+      "good": "Tốt",
+      "strong": "Mạnh",
+      "requirements": "Yêu cầu",
+      "length": "8+ ký tự",
+      "number": "Bao gồm số",
+      "uppercase": "Bao gồm chữ hoa",
+      "symbol": "Bao gồm biểu tượng"
+    },
+    "PayPalLink": {
+      "username": "Tên người dùng PayPal.me",
+      "amount": "Số lượng",
+      "currency": "Tiền tệ",
+      "generate": "Phát ra",
+      "itemName": "Tên mặt hàng",
+      "link": "liên kết",
+      "yourLink": "Liên kết PayPal của bạn",
+      "openPaypal": "Mở PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Quy tắc",
+      "addRule": "Thêm quy tắc",
+      "allow": "Cho phép",
+      "disallow": "Không cho phép",
+      "sitemap": "URL sơ đồ trang web (Tùy chọn)",
+      "output": "Đã tạo robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Giá trị",
+      "percentage": "Tỷ lệ phần trăm",
+      "calculate": "Tính toán",
+      "result": "Kết quả",
+      "whatIs": "Là gì",
+      "of": "% của",
+      "isWhatPercentOf": "là bao nhiêu % của",
+      "percentChangeFrom": "% thay đổi từ",
+      "to": "ĐẾN"
+    },
+    "PomodoroTimer": {
+      "work": "Thời gian tập trung",
+      "shortBreak": "Nghỉ ngắn",
+      "longBreak": "Kỳ nghỉ dài",
+      "start": "Bắt đầu",
+      "pause": "Tạm dừng",
+      "reset": "Cài lại",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Con số",
+      "calculate": "Tính toán",
+      "factors": "các yếu tố chính",
+      "inputLabel": "Nhập một số",
+      "placeholder": "ví dụ. 120",
+      "isPrime": "Con số này là Prime!",
+      "isComposite": "Số này là tổng hợp"
+    },
+    "RoiCalculator": {
+      "investment": "Sự đầu tư",
+      "returns": "Trả lại",
+      "calculate": "Tính toán",
+      "roi": "ROI",
+      "profit": "Lợi nhuận",
+      "finalValue": "Giá trị cuối cùng",
+      "time": "Thời gian (Năm)",
+      "totalGain": "Tổng lợi nhuận",
+      "annualizedRoi": "ROI hàng năm"
+    },
+    "RomanNumerals": {
+      "decimal": "Số thập phân",
+      "decimalPlaceholder": "2024",
+      "roman": "La Mã",
+      "convert": "Chuyển thành",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Bắt đầu ghi",
+      "stopRecording": "Dừng ghi",
+      "download": "Tải xuống",
+      "recording": "Đang ghi..."
+    },
+    "SignatureGenerator": {
+      "draw": "Vẽ tranh",
+      "clear": "Thông thoáng",
+      "download": "Tải xuống",
+      "penColor": "Màu bút",
+      "penSize": "Kích thước bút"
+    },
+    "SpeechToText": {
+      "startListening": "Bắt đầu nghe",
+      "stopListening": "Ngừng nghe",
+      "transcript": "bảng điểm",
+      "placeholder": "Bản ghi sẽ xuất hiện ở đây..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "CHÈN VÀO người dùng (id, tên, tuổi) GIÁ TRỊ (1, 'John', 30);",
+      "convert": "Chuyển thành",
+      "result": "Kết quả"
+    },
+    "Stopwatch": {
+      "start": "Bắt đầu",
+      "stop": "Dừng lại",
+      "reset": "Cài lại",
+      "lap": "vòng"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Địa chỉ IP",
+      "subnetMask": "Mặt nạ mạng con",
+      "calculate": "Tính toán",
+      "networkAddress": "Địa chỉ mạng",
+      "broadcastAddress": "Địa chỉ phát sóng",
+      "usableHosts": "Máy chủ có thể sử dụng"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Dán SVG",
+      "uploadSvg": "Tải lên SVG",
+      "convert": "Chuyển thành",
+      "download": "Tải xuống"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Nhập văn bản để nói...",
+      "speak": "Nói chuyện",
+      "stop": "Dừng lại",
+      "voice": "Tiếng nói",
+      "rate": "Tỷ lệ",
+      "pitch": "Sân bóng đá"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Nhập nội dung nào đó...",
+      "reverse": "Đảo ngược",
+      "uppercase": "Chữ hoa",
+      "lowercase": "Chữ thường",
+      "encode": "Mã hóa"
+    },
+    "TimezoneConverter": {
+      "from": "Từ",
+      "to": "ĐẾN",
+      "convert": "Chuyển thành",
+      "currentTime": "Thời gian hiện tại"
+    },
+    "TokenGenerator": {
+      "length": "Chiều dài",
+      "generate": "Phát ra",
+      "copy": "Sao chép",
+      "includeNumbers": "Bao gồm các số",
+      "includeSymbols": "Bao gồm các ký hiệu"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Nhập URL...",
+      "parse": "Phân tích cú pháp",
+      "protocol": "Giao thức",
+      "host": "Chủ nhà",
+      "path": "Con đường",
+      "query": "Truy vấn"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL trang web",
+      "source": "Nguồn",
+      "medium": "Trung bình",
+      "campaign": "Chiến dịch",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "VatCalculator": {
+      "amount": "Số lượng",
+      "vatRate": "Thuế suất VAT",
+      "addVat": "Thêm VAT",
+      "removeVat": "Xóa VAT",
+      "calculate": "Tính toán"
+    },
+    "VibrationTester": {
+      "vibrate": "Rung",
+      "pattern": "Mẫu",
+      "duration": "Khoảng thời gian",
+      "test": "Bài kiểm tra"
+    },
+    "WeekNumber": {
+      "currentWeek": "Số tuần hiện tại",
+      "yearProgress": "Tiến độ năm",
+      "week": "Tuần"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Số điện thoại",
+      "message": "Tin nhắn",
+      "generate": "Phát ra",
+      "copy": "Sao chép",
+      "placeholder": "Xin chào, tôi quan tâm..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Dán URL video YouTube...",
+      "getThumbnail": "Nhận hình thu nhỏ",
+      "download": "Tải xuống"
+    },
+    "CrontabGenerator": {
+      "minute": "Phút",
+      "hour": "Giờ",
+      "day": "Ngày",
+      "month": "Tháng",
+      "weekday": "Ngày trong tuần",
+      "expression": "Sự biểu lộ",
+      "description": "Sự miêu tả"
+    },
+    "ChmodCalculator": {
+      "owner": "Người sở hữu",
+      "group": "Nhóm",
+      "others": "Người khác",
+      "read": "Đọc",
+      "write": "Viết",
+      "execute": "Thực hiện",
+      "numeric": "số",
+      "symbolic": "tượng trưng"
+    },
+    "HtpasswdGenerator": {
+      "username": "Tên người dùng",
+      "password": "Mật khẩu",
+      "algorithm": "Thuật toán",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "AspectRatio": {
+      "width": "Chiều rộng",
+      "height": "Chiều cao",
+      "ratio": "Tỷ lệ",
+      "calculate": "Tính toán"
+    },
+    "CssClipPath": {
+      "shape": "Hình dạng",
+      "preview": "Xem trước",
+      "copyCss": "Sao chép CSS"
+    },
+    "CssCursor": {
+      "cursor": "Con trỏ",
+      "preview": "Xem trước",
+      "copyCss": "Sao chép CSS"
+    },
+    "CssTriangle": {
+      "direction": "Phương hướng",
+      "size": "Kích cỡ",
+      "color": "Màu sắc",
+      "preview": "Xem trước",
+      "copyCss": "Sao chép CSS"
+    },
+    "MetaGenerator": {
+      "title": "Tiêu đề",
+      "description": "Sự miêu tả",
+      "keywords": "Từ khóa",
+      "author": "Tác giả",
+      "url": "URL",
+      "image": "Hình ảnh",
+      "generate": "Phát ra",
+      "copy": "Sao chép",
+      "titlePlaceholder": "Trang web tuyệt vời của tôi",
+      "descriptionPlaceholder": "Mô tả ngắn gọn về trang web của bạn...",
+      "keywordsPlaceholder": "web, công cụ, nhà phát triển",
+      "authorPlaceholder": "Tên của bạn",
+      "outputPlaceholder": "Thẻ meta sẽ xuất hiện ở đây..."
+    },
+    "OgGenerator": {
+      "title": "Tiêu đề",
+      "description": "Sự miêu tả",
+      "url": "URL",
+      "image": "Hình ảnh",
+      "type": "Kiểu",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "TwitterCard": {
+      "cardType": "Loại thẻ",
+      "title": "Tiêu đề",
+      "description": "Sự miêu tả",
+      "image": "Hình ảnh",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "MarkdownTable": {
+      "rows": "Hàng",
+      "columns": "Cột",
+      "header": "tiêu đề",
+      "addRow": "Thêm hàng",
+      "addColumn": "Thêm cột",
+      "generate": "Phát ra",
+      "copy": "Sao chép"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Định dạng",
+      "copy": "Sao chép"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Định dạng JSON: Các phương pháp hay nhất dành cho nhà phát triển",
+      "excerpt": "Tìm hiểu lý do tại sao định dạng JSON thích hợp lại quan trọng đối với việc gỡ lỗi và cách tự động hóa nó trong quy trình làm việc của bạn.",
+      "category": "Phát triển"
+    },
+    "mastering-regex": {
+      "title": "Nắm vững biểu thức chính quy: Hướng dẫn trực quan",
+      "excerpt": "Regex không cần phải đáng sợ. Chúng tôi chia nhỏ các mẫu phổ biến để xác thực email, URL, v.v.",
+      "category": "Hướng dẫn"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs được làm sáng tỏ: Cách lên lịch tác vụ",
+      "excerpt": "Hiểu cú pháp 5 sao của Cron và cách lên lịch sao lưu, email và tập lệnh trên Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Tại sao Trình quản lý mật khẩu cục bộ lại an toàn hơn (Giải pháp thay thế KeyPass)",
+      "excerpt": "Vi phạm đám mây là phổ biến. Tìm hiểu lý do lưu trữ mật khẩu cục bộ bằng mã hóa AES-256 là cách an toàn nhất cho bảo mật cá nhân.",
+      "category": "Bảo vệ"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Công cụ tìm kiếm...",
+    "noResults": "Không tìm thấy kết quả nào.",
+    "select": "Lựa chọn",
+    "navigate": "Điều hướng"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Gửi phản hồi",
+    "feedback": "Nhận xét",
+    "thankYou": "Cảm ơn!",
+    "feedbackSent": "Phản hồi của bạn đã được gửi thành công.",
+    "close": "Đóng",
+    "name": "Tên (tùy chọn)",
+    "namePlaceholder": "Tên của bạn",
+    "email": "Email (tùy chọn)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Loại phản hồi",
+    "typeSuggestion": "💡 Đề xuất",
+    "typeBug": "🐛 Báo cáo lỗi",
+    "typeFeature": "✨ Yêu cầu tính năng",
+    "typeOther": "📝 Khác",
+    "message": "Tin nhắn *",
+    "messagePlaceholder": "Hãy cho chúng tôi biết bạn nghĩ gì...",
+    "sending": "Đang gửi...",
+    "weReadEveryMessage": "Chúng tôi đọc mọi tin nhắn. Cảm ơn bạn đã giúp chúng tôi cải thiện!"
+  },
+  "ShareButton": {
+    "shareTool": "Công cụ chia sẻ",
+    "copiedLink": "Đã sao chép liên kết!"
+  },
+  "TextDiff": {
+    "original": "Văn bản gốc",
+    "changed": "Văn bản đã thay đổi",
+    "update": "Cập nhật sự khác biệt",
+    "old": "Cũ",
+    "new": "Mới",
+    "content": "Nội dung"
+  },
+  "CrontabGenerator": {
+    "minute": "Phút",
+    "hour": "Giờ",
+    "day": "Ngày",
+    "month": "Tháng",
+    "weekday": "Ngày trong tuần",
+    "min": "tối thiểu",
+    "mon": "Thứ hai",
+    "week": "Tuần",
+    "presets": "Cài đặt trước nhanh",
+    "everyMinute": "Mỗi phút",
+    "every5Minutes": "Cứ sau 5 phút",
+    "everyHour": "Mỗi giờ",
+    "everyDayMidnight": "Mỗi ngày vào lúc nửa đêm",
+    "everyWeek": "Hàng tuần",
+    "everyMonth": "Hàng tháng"
+  },
+  "SpeechToText": {
+    "notSupported": "Trình duyệt của bạn không hỗ trợ API Web Speech. Vui lòng sử dụng Chrome.",
+    "placeholder": "Bản ghi sẽ xuất hiện ở đây...",
+    "listening": "Đang nghe...",
+    "start": "Nhấp vào micrô để bắt đầu"
+  },
+  "OgGenerator": {
+    "title": "Tiêu đề",
+    "description": "Sự miêu tả",
+    "image": "URL hình ảnh",
+    "url": "URL chuẩn",
+    "type": "Kiểu",
+    "website": "Trang web",
+    "article": "Bài báo",
+    "profile": "Hồ sơ",
+    "preview": "Xem trước (Facebook/LinkedIn)",
+    "generatedHtml": "HTML đã tạo",
+    "copy": "Sao chép"
+  },
+  "WeekNumber": {
+    "checkLabel": "Kiểm tra số tuần cho ngày",
+    "yearProgress": "Tiến độ năm"
+  },
+  "RelatedTools": {
+    "title": "Bạn cũng có thể thích",
+    "subtitle": "Khám phá các công cụ dành cho nhà phát triển phổ biến khác",
+    "openTool": "Mở công cụ"
+  },
+  "Breadcrumb": {
+    "home": "Trang chủ",
+    "tools": "Công cụ"
+  },
+  "SvgToPng": {
+    "upload": "Tải lên tệp SVG",
+    "browse": "hoặc bấm vào để duyệt",
+    "paste": "...hoặc dán Mã SVG",
+    "preview": "Xem trước PNG (Tỷ lệ 2x)",
+    "download": "Tải xuống PNG",
+    "errorType": "Vui lòng tải lên tệp SVG hợp lệ.",
+    "errorRender": "Không thể hiển thị SVG. Đảm bảo đó là XML hợp lệ.",
+    "errorProcess": "Lỗi xử lý SVG."
+  },
+  "GradientGenerator": {
+    "config": "Cấu hình",
+    "colors": "Màu sắc",
+    "type": "Kiểu",
+    "angle": "Góc",
+    "random": "Ngẫu nhiên",
+    "copyCss": "Sao chép CSS",
+    "copied": "Đã sao chép"
+  },
+  "TimezoneConverter": {
+    "date": "Ngày",
+    "time": "Thời gian (Địa phương)",
+    "invalid": "Không hợp lệ",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Luân Đôn (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubai (GST)",
+      "india": "Ấn Độ (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Trình tạo số",
+    "listGen": "Trình tạo danh sách",
+    "coinGen": "Máy tạo tiền xu",
+    "min": "tối thiểu",
+    "max": "Tối đa",
+    "count": "Đếm",
+    "generate": "Phát ra",
+    "listLabel": "Danh sách các mục (một mục trên mỗi dòng)",
+    "pick": "Chọn vật phẩm ngẫu nhiên",
+    "winner": "Người chiến thắng là...",
+    "flip": "Lật xu",
+    "heads": "đầu",
+    "tails": "Đuôi"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Đang ghi lại màn hình của bạn...",
+    "titleFree": "Trình ghi màn hình trực tuyến miễn phí",
+    "desc": "Chụp màn hình, cửa sổ ứng dụng hoặc tab trình duyệt của bạn. Không có hình mờ, không giới hạn thời gian.",
+    "start": "Bắt đầu ghi",
+    "stop": "Dừng ghi",
+    "browserSupport": "Hoạt động tốt nhất trong Chrome, Edge và Firefox trên Máy tính để bàn."
+  },
+  "CssCursor": {
+    "hoverTest": "Di chuột vào đây để kiểm tra"
+  },
+  "VatCalculator": {
+    "amount": "Số lượng",
+    "rate": "Thuế suất VAT (%)",
+    "addVat": "Thêm VAT",
+    "removeVat": "Xóa VAT",
+    "netAmount": "Số tiền ròng",
+    "vatAmount": "Số tiền thuế GTGT",
+    "grossTotal": "Tổng cộng",
+    "netTotal": "Tổng số ròng",
+    "grossAmount": "Tổng số tiền"
+  },
+  "MyIP": {
+    "ipLabel": "Địa chỉ IP công cộng của bạn",
+    "loading": "Đang tải...",
+    "isp": "Nhà cung cấp Internet (ISP)",
+    "location": "Vị trí",
+    "asn": "ASN",
+    "timezone": "Múi giờ",
+    "note": "Đây là địa chỉ IP hiển thị cho các trang web bạn truy cập. Nó có thể khác với IP cục bộ của bạn nếu bạn sử dụng VPN hoặc proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Nhập URL",
+    "formatted": "Đầu ra được định dạng",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép",
+    "placeholder": "Dán URL ở trên để xem nó được định dạng."
+  },
+  "WhatsAppLink": {
+    "phone": "Số điện thoại (có mã quốc gia)",
+    "message": "Tin nhắn điền sẵn",
+    "hint": "Không bao gồm +, - hoặc ().",
+    "yourLink": "Liên kết WhatsApp của bạn",
+    "open": "Mở trò chuyện"
+  },
+  "UrlParser": {
+    "enterUrl": "Nhập URL",
+    "params": "Tham số truy vấn",
+    "error": "URL không hợp lệ"
+  },
+  "FaviconGenerator": {
+    "upload": "Tải hình ảnh lên",
+    "browse": "Đề xuất: PNG 512x512",
+    "original": "Nguyên bản",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Tải xuống Favicon.png",
+    "note": "* Hiện đang tạo favicon PNG 32x32. Đổi tên thành .ico nếu cần để được hỗ trợ kế thừa."
+  },
+  "SubnetCalculator": {
+    "ip": "Địa chỉ IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Tính toán",
+    "subnetMask": "Mặt nạ mạng con",
+    "networkAddress": "Địa chỉ mạng",
+    "firstHost": "Máy chủ đầu tiên",
+    "lastHost": "Máy chủ cuối cùng",
+    "broadcastAddress": "Địa chỉ phát sóng",
+    "totalHosts": "Tổng số máy chủ"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Nhập Tiêu đề/Văn bản bài viết",
+    "generated": "Slug được tạo",
+    "copy": "Sao chép sên"
+  },
+  "SqlToJson": {
+    "inputLabel": "Nhập SQL (chỉ câu lệnh INSERT)",
+    "convert": "Chuyển đổi sang JSON",
+    "error": "Không thể phân tích cú pháp SQL. Đảm bảo đó là câu lệnh INSERT INTO tiêu chuẩn."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Thêm hàng",
+    "addCol": "+ Thêm cột",
+    "headerPlaceholder": "tiêu đề",
+    "outputLabel": "Đầu ra đánh dấu",
+    "copy": "Sao chép đánh dấu"
+  },
+  "TwitterCard": {
+    "cardType": "Loại thẻ",
+    "siteHandle": "Xử lý trang web (ví dụ: @twitter)",
+    "title": "Tiêu đề",
+    "description": "Sự miêu tả",
+    "imageUrl": "URL hình ảnh",
+    "preview": "Xem trước",
+    "generatedHtml": "HTML đã tạo",
+    "copy": "Sao chép",
+    "placeholderTitle": "Tiêu đề thẻ",
+    "placeholderDesc": "Mô tả ở đây..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Nhập văn bản để nói...",
+    "voice": "Tiếng nói",
+    "speed": "Tốc độ",
+    "pitch": "Sân bóng đá",
+    "speak": "Nói chuyện"
+  },
+  "TokenGenerator": {
+    "length": "Chiều dài",
+    "includeNumbers": "Bao gồm các số",
+    "includeSymbols": "Bao gồm các ký hiệu",
+    "generate": "Tạo mã thông báo"
+  },
+  "CssTriangle": {
+    "direction": "Phương hướng",
+    "color": "Màu sắc",
+    "width": "Chiều rộng (px)",
+    "height": "Chiều cao (px)",
+    "copy": "Sao chép"
+  },
+  "UnitConverter": {
+    "length": "Chiều dài",
+    "weight": "Cân nặng",
+    "temperature": "Nhiệt độ",
+    "meters": "mét",
+    "kilometers": "km",
+    "centimeters": "centimét",
+    "millimeters": "Milimet",
+    "inches": "Inch",
+    "feet": "Bàn chân",
+    "yards": "Bãi",
+    "miles": "Dặm",
+    "kilograms": "kilôgam",
+    "grams": "gram",
+    "pounds": "bảng Anh",
+    "ounces": "Ounce",
+    "celsius": "độ C",
+    "fahrenheit": "độ F",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Hình dạng",
+    "preview": "Xem trước",
+    "cssCode": "Mã CSS",
+    "copy": "Sao chép",
+    "copied": "Đã sao chép"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Tải lên một hình ảnh",
+    "uploadDesc": "JPG, PNG hoặc WebP. Chúng tôi nén nó cục bộ.",
+    "selectImage": "Chọn hình ảnh",
+    "settings": "Cài đặt nén",
+    "quality": "Chất lượng",
+    "originalSize": "Kích thước ban đầu",
+    "compressedSize": "Kích thước nén",
+    "saving": "Đang lưu",
+    "download": "Tải xuống"
+  },
+  "HtpasswdGenerator": {
+    "username": "Tên người dùng",
+    "password": "Mật khẩu",
+    "algorithm": "Thuật toán",
+    "generate": "Tạo mục nhập",
+    "result": "Kết quả",
+    "sha1": "SHA-1 (Không an toàn nhưng tiêu chuẩn)",
+    "notSupported": "Chỉ SHA-1 được hỗ trợ trong phiên bản phía máy khách này."
+  },
+  "MetaTags": {
+    "pageTitle": "Tiêu đề trang",
+    "description": "Sự miêu tả",
+    "author": "Tác giả"
+  },
+  "AgeCalculator": {
+    "dob": "Ngày sinh",
+    "age": "Tuổi",
+    "years": "năm",
+    "months": "tháng",
+    "days": "ngày",
+    "nextBirthday": "Sinh nhật tiếp theo"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL trang web (Bắt buộc)",
+    "source": "Nguồn chiến dịch (Bắt buộc)",
+    "medium": "Phương tiện chiến dịch (Bắt buộc)",
+    "name": "Tên chiến dịch (Bắt buộc)",
+    "term": "Thời hạn chiến dịch (Tùy chọn)",
+    "content": "Nội dung chiến dịch (Tùy chọn)",
+    "generatedUrl": "URL đã tạo",
+    "copy": "Sao chép URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Thời gian Unix hiện tại",
+    "timestampLabel": "Dấu thời gian (Giây)",
+    "isoLabel": "Định dạng ngày ISO",
+    "utcDate": "Ngày UTC",
+    "localDate": "Ngày địa phương",
+    "relative": "Liên quan đến"
+  },
+  "SignatureGenerator": {
+    "color": "Màu sắc",
+    "width": "Chiều rộng",
+    "clear": "Thông thoáng",
+    "download": "Tải xuống PNG",
+    "signHere": "Ký vào đây",
+    "note": "Chữ ký được xử lý cục bộ trong trình duyệt của bạn. Chúng tôi không lưu trữ hoặc tải chúng lên."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Xem trước trực tiếp"
+  },
+  "CipherTools": {
+    "shiftAmount": "Số ca làm việc (N)",
+    "inputText": "Nhập văn bản",
+    "outputText": "Văn bản đầu ra",
+    "rot13": "ROT13",
+    "caesar": "Sê-sa (+3)",
+    "shift1": "Dịch chuyển +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Độ phân giải màn hình",
+    "browser": "Trình duyệt",
+    "cpuCores": "lõi CPU",
+    "battery": "Ắc quy",
+    "detailedSpecs": "Thông số kỹ thuật chi tiết",
+    "userAgent": "Tác nhân người dùng",
+    "platform": "Nền tảng",
+    "windowSize": "Kích thước cửa sổ",
+    "pixelRatio": "Tỷ lệ pixel",
+    "colorDepth": "Độ sâu màu",
+    "ram": "RAM",
+    "cookiesEnabled": "Đã bật cookie",
+    "onlineStatus": "Trạng thái trực tuyến",
+    "unknown": "Không xác định",
+    "yes": "Đúng",
+    "no": "KHÔNG",
+    "enabled": "Đã bật",
+    "disabled": "Tàn tật"
+  },
+  "ChmodCalculator": {
+    "owner": "Người sở hữu",
+    "group": "Nhóm",
+    "public": "Công cộng",
+    "read": "Đọc",
+    "write": "Viết",
+    "execute": "Thực hiện",
+    "numeric": "số",
+    "symbolic": "tượng trưng"
+  },
+  "PasswordManager": {
+    "title": "Trình quản lý mật khẩu",
+    "desc": "Lưu trữ và quản lý mật khẩu của bạn một cách an toàn cục bộ.",
+    "unlock": "Mở khóa Vault",
+    "create": "Tạo Vault mới",
+    "unlockDesc": "Nhập mật khẩu chính của bạn để truy cập vào tài khoản của bạn.",
+    "createDesc": "Đặt mật khẩu chính mạnh. Nó mã hóa dữ liệu của bạn cục bộ.",
+    "masterPassword": "Mật khẩu chính",
+    "unlockBtn": "Mở khóa",
+    "createBtn": "Tạo Vault",
+    "note": "Dữ liệu được lưu trữ trong trình duyệt của bạn bằng mã hóa AES-GCM. Chúng tôi không thể khôi phục mật khẩu của bạn nếu bị mất.",
+    "myPasswords": "Mật khẩu của tôi",
+    "addNew": "Thêm mới",
+    "search": "Tìm kiếm tài khoản...",
+    "noPasswords": "Không tìm thấy mật khẩu.",
+    "addAccount": "Thêm tài khoản",
+    "accountTitle": "Tiêu đề / Trang web",
+    "username": "Tên người dùng / Email",
+    "password": "Mật khẩu",
+    "url": "URL (Tùy chọn)",
+    "save": "Lưu tài khoản",
+    "cancel": "Hủy bỏ",
+    "incorrectPassword": "Mật khẩu không chính xác hoặc dữ liệu bị hỏng.",
+    "loading": "Đang tải..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Chi tiết trang web",
+    "pageTitle": "Tiêu đề trang",
+    "description": "Sự miêu tả",
+    "keywords": "Từ khóa (được phân tách bằng dấu phẩy)",
+    "author": "Tác giả",
+    "socialPreview": "Xem trước xã hội (OG & Twitter)",
+    "websiteUrl": "URL trang web",
+    "previewImage": "Xem trước URL hình ảnh",
+    "generatedHtml": "HTML đã tạo",
+    "copy": "Sao chép HTML",
+    "copied": "Đã sao chép"
+  },
+  "VibrationTester": {
+    "worksOnly": "Chỉ hoạt động trên các thiết bị có phần cứng rung (ví dụ: điện thoại).",
+    "duration": "Thời lượng (ms)",
+    "vibrateOnce": "Rung một lần",
+    "pulsePattern": "Mẫu xung",
+    "longPulse": "Xung dài",
+    "stop": "Dừng lại"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Tại sao vấn đề định dạng JSON",
+      "block_2": "JSON (Ký hiệu đối tượng JavaScript) là ngôn ngữ của web.Nhưng JSON thô được trả về từ API thường là một mớ hỗn độn được rút gọn.định dạng này giúp nó dễ đọc, có thể sửa lỗi và an toàn.",
+      "block_3": "1.Khả năng đọc là Vua",
+      "block_4": "Khi bạn gỡ lỗi phản hồi API 5000 dòng, việc thụt lề sẽ cứu mạng bạn.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Trình định dạng JSON</a> của chúng tôi sử dụng thụt lề 2 dấu cách hoặc 4 dấu cách để làm rõ cấu trúc.",
+      "block_5": "2.Xác thực",
+      "block_6": "Một dấu phẩy bị thiếu có thể làm hỏng ứng dụng của bạn.Luôn xác thực JSON của bạn trước khi đưa nó vào tệp cấu hình.",
+      "block_7": "Kết luận",
+      "block_8": "Đừng lãng phí thời gian kiểm tra dấu ngoặc theo cách thủ công.Sử dụng các công cụ tự động."
+    },
+    "mastering-regex": {
+      "block_1": "Giải thích về Regex",
+      "block_2": "Các biểu thức chính quy rất mạnh mẽ nhưng khó hiểu.hãy hình dung chúng.",
+      "block_3": "Các mẫu phổ biến",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 phông chữ tròn-mono text-[0.9em] text-[#fb923c] viềnborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Điện thoại:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 phông chữ tròn-mono text-[0.9em] text-[#fb923c] viềnborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Kiểm tra các mẫu này ngay lập tức bằng <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Trình kiểm tra Regex</a> của chúng tôi."
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 ngôi sao của Cron",
+      "block_2": "Phút, Giờ, Ngày trong Tháng, Tháng, Ngày trong Tuần.Tất cả chỉ có vậy thôi.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Ví dụ</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Chạy hàng ngày vào lúc nửa đêm: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Ví dụ",
+      "block_6": "Chạy 15 phút một lần: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Bạn cần trợ giúp?Sử dụng <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Trình tạo Cron</a> của chúng tôi để tạo biểu thức một cách trực quan."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Sự cố với Cloud Vaults",
+      "block_2": "LastPass, Okta và những gã khổng lồ khác đã bị vi phạm.Khi vault của bạn trực tuyến, đó là mục tiêu.",
+      "block_3": "Giải pháp: Mã hóa cục bộ",
+      "block_4": "<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Trình quản lý mật khẩu cục bộ</a></strong> mới của chúng tôi chạy hoàn toàn trong trình duyệt của bạn.Nó sử dụng <strong class=\"text-[var(--title-color)] font-semibold\">Mã hóa AES-GCM 256-bit</strong> bắt nguồn từ mật khẩu chính của bạn bằng PBKDF2.",
+      "block_5": "Cách thức hoạt động",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Không có kiến thức:</strong> Chúng tôi không bao giờ nhìn thấy mật khẩu của bạn.Nó không bao giờ rời khỏi thiết bị của bạn.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Bộ nhớ ngoại tuyến:</strong> Kho tiền mã hóa của bạn được lưu trữ trong LocalStorage trên trình duyệt của bạn.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Có thể xuất:</strong> Bạn có thể xuất/sao lưu dữ liệu được mã hóa thô của mình bất kỳ lúc nào.</li>",
+      "block_7": "Hãy ngừng tin cậy vào đám mây bằng các khóa chính của bạn.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Hãy dùng thử Trình quản lý mật khẩu cục bộ</a> ngay hôm nay."
+    }
+  }
+}

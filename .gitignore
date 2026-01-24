@@ -49,3 +49,8 @@ next-env.d.ts
 *.swp
 *.swo
 *~
+scripts/
+ops.sh
+update_tools.sh
+temp_metadata.tsx
+__pycache__/

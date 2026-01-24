@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Outils",
+    "blog": "Blogue",
+    "github": "GitHub",
+    "searchPlaceholder": "Rechercher..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Outils de développement en ligne gratuits",
+    "description": "Plus de 90 outils en ligne gratuits pour tous. Formateurs, convertisseurs, générateurs et utilitaires. Rapide, privé et sans inscription."
+  },
+  "NotFound": {
+    "title": "Page non trouvée",
+    "description": "Désolé, nous n'avons pas pu trouver la page que vous recherchez.",
+    "backHome": "Retour à l'accueil",
+    "suggestions": "Essayez de rechercher un outil ou parcourez nos outils populaires ci-dessous."
+  },
+  "Homepage": {
+    "heroTag": "100+ Outils Gratuits • Privé • Sans Inscription",
+    "titleLine1": "Outils de développement quotidiens",
+    "titleLine2": "Qui fonctionnent, tout simplement",
+    "subtitle": "Des outils rapides, beaux et axés sur la confidentialité pour les développeurs, les designers et tout le monde. Tout fonctionne dans votre navigateur.",
+    "recentTools": "Récemment utilisé",
+    "noRecentText": "Commencez à utiliser des outils pour les voir ici",
+    "searchResults": "Résultats de recherche",
+    "popularTools": "Populaires",
+    "toolsCount": "{count} outils disponibles",
+    "features": {
+      "fast": {
+        "title": "Éclair Rapide",
+        "desc": "Tous les outils fonctionnent localement dans votre navigateur"
+      },
+      "private": {
+        "title": "100% Privé",
+        "desc": "Vos données ne quittent jamais votre appareil"
+      },
+      "simple": {
+        "title": "Construit pour tout le monde",
+        "desc": "Assez simple pour n'importe qui, puissant pour les pros"
+      },
+      "free": {
+        "title": "Toujours Gratuit",
+        "desc": "Pas de compte, pas de limites"
+      }
+    },
+    "categories": {
+      "All": "Tous",
+      "Favorites": "Favoris",
+      "Developer": "Développeur",
+      "Design": "Conception",
+      "Content": "Contenu",
+      "Security": "Sécurité",
+      "Productivity": "Productivité",
+      "Math": "Maths",
+      "Utility": "Utilitaire"
+    },
+    "cta": {
+      "title": "Prêt à booster votre productivité ?",
+      "text": "Commencez à utiliser nos outils de développement gratuitement. Pas d'inscription requise, pas de collecte de données, juste de la productivité pure.",
+      "button": "Commencer gratuitement"
+    },
+    "openTool": "Ouvrir l'outil",
+    "noResults": "Aucun outil trouvé correspondant à",
+    "clearFilters": "Effacer les filtres"
+  },
+  "Footer": {
+    "builtWith": "Construit avec ❤️ par",
+    "allTools": "Tous les outils",
+    "blog": "Blogue",
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Formateur JSON",
+      "description": "Formate, valide et embellit le JSON instantanément"
+    },
+    "base64-encoder": {
+      "name": "Encodeur Base64",
+      "description": "Encode et décode des chaînes Base64"
+    },
+    "url-encoder": {
+      "name": "Encodeur URL",
+      "description": "Encode et décode des URL en toute sécurité"
+    },
+    "jwt-decoder": {
+      "name": "Décodeur JWT",
+      "description": "Décode et inspecte des JSON Web Tokens"
+    },
+    "regex-tester": {
+      "name": "Testeur Regex",
+      "description": "Teste des expressions régulières en temps réel"
+    },
+    "hash-generator": {
+      "name": "Générateur de Hash",
+      "description": "Génère des hashs MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Générateur UUID",
+      "description": "Génère des UUIDs/GUIDs aléatoires instantanément"
+    },
+    "css-minifier": {
+      "name": "Minificateur CSS",
+      "description": "Minifie et optimise votre code CSS"
+    },
+    "markdown-editor": {
+      "name": "Aperçu Markdown",
+      "description": "Éditeur et aperçu Markdown en temps réel"
+    },
+    "color-converter": {
+      "name": "Convertisseur de Couleur",
+      "description": "Convertir Hex, RVB, HSL et CMJN"
+    },
+    "timestamp-converter": {
+      "name": "Outil Timestamp",
+      "description": "Convertit les timestamps Unix en dates lisibles"
+    },
+    "sql-formatter": {
+      "name": "Formateur SQL",
+      "description": "Formate et embellit les requêtes SQL"
+    },
+    "password-generator": {
+      "name": "Générateur de Mot de Passe",
+      "description": "Crée des mots de passe sécurisés et aléatoires"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Génère du faux texte pour les designs"
+    },
+    "image-base64": {
+      "name": "Image vers Base64",
+      "description": "Convertit des images en chaînes Base64"
+    },
+    "qr-generator": {
+      "name": "Générateur de QR Code",
+      "description": "Génère des codes QR pour URL et texte"
+    },
+    "word-counter": {
+      "name": "Compteur de Mots",
+      "description": "Compte les mots, caractères et temps de lecture"
+    },
+    "case-converter": {
+      "name": "Convertisseur de Casse",
+      "description": "Etui chameau, serpent, kebab & pascal"
+    },
+    "text-diff": {
+      "name": "Comparateur de Texte",
+      "description": "Compare deux textes et trouve les différences"
+    },
+    "slug-generator": {
+      "name": "Générateur de Slug",
+      "description": "Génère des slugs d'URL pour le SEO"
+    },
+    "gradient-generator": {
+      "name": "Générateur de Dégradé",
+      "description": "Crée de beaux dégradés CSS"
+    },
+    "image-compressor": {
+      "name": "Compresseur d'Image",
+      "description": "Compresse les images localement et en privé"
+    },
+    "device-info": {
+      "name": "Info Appareil",
+      "description": "Voir infos écran, navigateur et système"
+    },
+    "random-generator": {
+      "name": "Générateur Aléatoire",
+      "description": "Choisit nombres, pièces et éléments de liste"
+    },
+    "unit-converter": {
+      "name": "Convertisseur d'Unités",
+      "description": "Convertit Longueur, Poids et Température"
+    },
+    "pomodoro-timer": {
+      "name": "Minuteur Pomodoro",
+      "description": "Minuteur de concentration pour la productivité"
+    },
+    "yt-thumbnail": {
+      "name": "Téléchargeur de Vignette",
+      "description": "Récupère les vignettes de vidéos YouTube"
+    },
+    "my-ip": {
+      "name": "Quelle est mon IP",
+      "description": "Voir IP publique et infos réseau"
+    },
+    "keycode-info": {
+      "name": "Informations sur le code clé",
+      "description": "Débogueur d'événements clavier JavaScript"
+    },
+    "signature-generator": {
+      "name": "Générateur de Signature",
+      "description": "Dessine et télécharge des signatures numériques"
+    },
+    "screen-recorder": {
+      "name": "Enregistreur d'Écran",
+      "description": "Enregistre l'écran et télécharge la vidéo"
+    },
+    "credit-card-validator": {
+      "name": "Validateur de Carte",
+      "description": "Valide les numéros de carte de crédit"
+    },
+    "password-manager": {
+      "name": "Gestionnaire de Mots de Passe",
+      "description": "Stocke les mots de passe localement avec chiffrement"
+    },
+    "deep-link-tester": {
+      "name": "Testeur de liens profonds",
+      "description": "Teste, lance et gère les liens profonds mobiles"
+    },
+    "image-converter": {
+      "name": "Convertisseur d'Image",
+      "description": "Convertit PNG/JPG en WebP localement"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Convertir JSON en CSV et vice versa"
+    },
+    "bmi-calculator": {
+      "name": "Calculateur IMC",
+      "description": "Calcule l'Indice de Masse Corporelle (IMC)"
+    },
+    "dns-lookup": {
+      "name": "Recherche DNS",
+      "description": "Interrogez instantanément les enregistrements DNS (A, MX, NS)"
+    },
+    "age-calculator": {
+      "name": "Calculateur d'Âge",
+      "description": "Calcule l'âge précis et les jours totaux"
+    },
+    "loan-calculator": {
+      "name": "Calculateur de Prêt",
+      "description": "Calcule l'échéance mensuelle et l'intérêt total"
+    },
+    "discount-calculator": {
+      "name": "Calculateur de Remise",
+      "description": "Calcule le prix soldé et les économies"
+    },
+    "interest-calculator": {
+      "name": "Calculateur d'Intérêts",
+      "description": "Calculateur d'intérêts simples vs composés"
+    },
+    "html-encoder": {
+      "name": "Encodeur/Décodeur HTML",
+      "description": "Échappe les caractères spéciaux ou décode le HTML"
+    },
+    "list-sorter": {
+      "name": "Trieur de Liste",
+      "description": "Trie, inverse, mélange et dédoublonne les listes"
+    },
+    "box-shadow": {
+      "name": "Générateur d'Ombre Portée",
+      "description": "Génère visuellement des ombres CSS"
+    },
+    "date-diff": {
+      "name": "Différence de Date",
+      "description": "Calcule la durée entre deux dates"
+    },
+    "sql-to-json": {
+      "name": "SQL vers JSON",
+      "description": "Convertit les INSERTs SQL en objets JSON"
+    },
+    "keyword-density": {
+      "name": "Densité de Mots-clés",
+      "description": "Analyse la fréquence des mots-clés pour le SEO"
+    },
+    "json-diff": {
+      "name": "Différence JSON",
+      "description": "Compare deux objets JSON côte à côte"
+    },
+    "cipher-tools": {
+      "name": "Outils de Chiffrement",
+      "description": "Encodeur/décodeur ROT13 et César"
+    },
+    "token-generator": {
+      "name": "Générateur de Jeton",
+      "description": "Génère des jetons aléatoires sécurisés"
+    },
+    "favicon-generator": {
+      "name": "Générateur de Favicon",
+      "description": "Créer des favicons .ico et PNG"
+    },
+    "robots-generator": {
+      "name": "Générateur Robots.txt",
+      "description": "Crée des robots.txt pour le SEO"
+    },
+    "grid-generator": {
+      "name": "Générateur Grille CSS",
+      "description": "Constructeur visuel de mise en page Grille CSS"
+    },
+    "hmac-generator": {
+      "name": "Générateur HMAC",
+      "description": "Génère des codes d'authentification de message haché"
+    },
+    "http-status": {
+      "name": "Codes d'état HTTP",
+      "description": "Liste de référence des codes de statut HTTP"
+    },
+    "week-number": {
+      "name": "Numéro de Semaine",
+      "description": "Numéro de semaine actuelle et progression de l'année"
+    },
+    "text-tools": {
+      "name": "Transformateur de Texte",
+      "description": "Inverse, retourne et encode le texte"
+    },
+    "url-parser": {
+      "name": "Analyseur d'URL",
+      "description": "Divise les URL en protocole, hôte, chemin, paramètres"
+    },
+    "markdown-table": {
+      "name": "Générateur Tableau Markdown",
+      "description": "Crée des tableaux Markdown visuellement"
+    },
+    "whatsapp-link": {
+      "name": "Générateur Lien WhatsApp",
+      "description": "Crée des liens de chat WhatsApp directs"
+    },
+    "paypal-link": {
+      "name": "Générateur Lien PayPal",
+      "description": "Crée des liens de paiement PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG en PNG",
+      "description": "Convertit code/fichier SVG en image PNG"
+    },
+    "prime-factors": {
+      "name": "Facteurs Premiers",
+      "description": "Trouve les facteurs premiers d'un nombre"
+    },
+    "iban-validator": {
+      "name": "Validateur IBAN",
+      "description": "Valide les Numéros de Compte Bancaire International"
+    },
+    "ascii-converter": {
+      "name": "Convertisseur ASCII",
+      "description": "Convertit le texte en codes décimaux ASCII"
+    },
+    "utm-builder": {
+      "name": "Constructeur UTM",
+      "description": "Construit des URL de campagne Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Générateur Meta Tags",
+      "description": "Génère des balises méta SEO pour sites web"
+    },
+    "og-generator": {
+      "name": "Générateur Open Graph",
+      "description": "Crée des balises méta Open Graph pour partage social"
+    },
+    "twitter-card": {
+      "name": "Générateur Twitter Card",
+      "description": "Crée des balises méta Twitter Card"
+    },
+    "aspect-ratio": {
+      "name": "Calculateur Ratio d'Aspect",
+      "description": "Calcule ratios d'aspect et dimensions"
+    },
+    "css-cursor": {
+      "name": "Curseur CSS",
+      "description": "Référence visuelle des propriétés de curseur CSS"
+    },
+    "css-triangle": {
+      "name": "Générateur Triangle CSS",
+      "description": "Génère des triangles CSS purs"
+    },
+    "percentage-calculator": {
+      "name": "Calculateur Pourcentage",
+      "description": "Calcule pourcentages et changements"
+    },
+    "vat-calculator": {
+      "name": "Calculateur TVA",
+      "description": "Calcule les montants de TVA (ajout/retrait)"
+    },
+    "stopwatch": {
+      "name": "Chronomètre",
+      "description": "Chronomètre simple basé sur navigateur"
+    },
+    "text-to-speech": {
+      "name": "Texte vers Parole",
+      "description": "Convertit le texte en voix parlée"
+    },
+    "speech-to-text": {
+      "name": "Parole vers Texte",
+      "description": "Convertit la voix parlée en texte"
+    },
+    "vibration-tester": {
+      "name": "Testeur Vibration",
+      "description": "Teste le moteur de vibration de l'appareil"
+    },
+    "chmod-calculator": {
+      "name": "Calculateur Chmod",
+      "description": "Calcule les permissions de fichier Linux"
+    },
+    "crontab-generator": {
+      "name": "Générateur Crontab",
+      "description": "Génère des expressions de planification cron"
+    },
+    "htpasswd-generator": {
+      "name": "Générateur Htpasswd",
+      "description": "Génère des entrées d'authentification de base"
+    },
+    "subnet-calculator": {
+      "name": "Calculateur Sous-réseau",
+      "description": "Calcule sous-réseaux et plages IP"
+    },
+    "mac-generator": {
+      "name": "Générateur Adresse MAC",
+      "description": "Génère des adresses MAC aléatoires"
+    },
+    "timezone-converter": {
+      "name": "Convertisseur Fuseau Horaire",
+      "description": "Convertit l'heure entre plusieurs zones"
+    },
+    "email-validator": {
+      "name": "Validateur Email",
+      "description": "Valide le format email et détecte les coquilles"
+    },
+    "password-strength": {
+      "name": "Force du Mot de Passe",
+      "description": "Vérifie le score de force du mot de passe"
+    },
+    "roman-numerals": {
+      "name": "Convertisseur Chiffres Romains",
+      "description": "Convertit entre chiffres romains et décimaux"
+    },
+    "margin-calculator": {
+      "name": "Calculateur Marge",
+      "description": "Calcule marge bénéficiaire et taux de marque"
+    },
+    "roi-calculator": {
+      "name": "Calculateur ROI",
+      "description": "Calcule le Retour sur Investissement (ROI)"
+    },
+    "fuel-calculator": {
+      "name": "Calculateur Carburant",
+      "description": "Calcule le coût en carburant du trajet"
+    },
+    "pretty-print-url": {
+      "name": "Embellisseur d'URL",
+      "description": "Formate les URL pour la lisibilité"
+    }
+  },
+  "Terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptation des conditions",
+        "content": "En accédant et en utilisant DailyDevTools, vous acceptez d'être lié par les termes et dispositions de cet accord."
+      },
+      "useLicense": {
+        "title": "2. Licence d'utilisation",
+        "content": "DailyDevTools est gratuit pour un usage personnel et commercial. Vous ne pouvez pas :",
+        "list": {
+          "0": "Tenter de faire de l'ingénierie inverse ou de récupérer des parties importantes du site.",
+          "1": "Utiliser le site web de toute manière qui cause, ou pourrait causer, des dommages au site web ou une altération de la disponibilité ou de l'accessibilité du site web."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Clause de non-responsabilité",
+        "content": "Les outils sur DailyDevTools sont fournis \"tels quels\". Nous ne donnons aucune garantie, expresse ou implicite..."
+      },
+      "limitations": {
+        "title": "4. Limites",
+        "content": "En aucun cas, DailyDevTools ou ses fournisseurs ne seront responsables de tout dommage..."
+      },
+      "revisions": {
+        "title": "5. Révisions",
+        "content": "Le matériel apparaissant sur DailyDevTools pourrait inclure des erreurs techniques, typographiques ou photographiques..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour",
+    "intro": "Bienvenue sur DailyDevTools. Nous respectons votre vie privée et nous engageons à protéger vos données personnelles.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Comment fonctionnent nos outils (Traitement local)",
+        "content": "Plus important encore : Les outils fonctionnent entièrement dans votre navigateur. Les données ne quittent jamais votre appareil."
+      },
+      "dataCollection": {
+        "title": "3. Données que nous collectons",
+        "content": "Nous ne collectons aucun contenu. Nous utilisons Google Analytics pour les statistiques d'utilisation."
+      },
+      "cookies": {
+        "title": "4. Cookies",
+        "content": "Nous utilisons des cookies pour les analyses et les préférences locales."
+      },
+      "thirdParty": {
+        "title": "5. Liens tiers",
+        "content": "Notre site peut contenir des liens vers des tiers."
+      },
+      "changes": {
+        "title": "6. Modifications de cette politique",
+        "content": "Nous pouvons mettre à jour cette politique de temps à autre."
+      },
+      "contact": {
+        "title": "7. Nous contacter",
+        "content": "Contactez-nous via GitHub ou les réseaux sociaux."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Ressources pour développeurs",
+    "subtitle": "Plongées approfondies dans les outils que nous construisons et les concepts qui les sous-tendent.",
+    "readMore": "Lire la suite",
+    "backToBlog": "Retour au blog",
+    "enjoyedArticle": "Vous avez aimé cet article ?",
+    "checkTools": "Découvrez nos outils"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Entrée",
+      "output": "Sortie",
+      "format": "Format",
+      "minify": "Réduire",
+      "download": "Télécharger",
+      "copy": "Copier",
+      "paste": "Coller",
+      "copied": "Copié!",
+      "upload": "Télécharger",
+      "sample": "Échantillon",
+      "clear": "Effacer",
+      "indent": "Retrait :",
+      "chars": "caractères",
+      "error": "Erreur",
+      "invalid": "Entrée invalide",
+      "result": "Résultat",
+      "generate": "Générer",
+      "calculate": "Calculer",
+      "convert": "Convertir",
+      "validate": "Valider",
+      "resultPlaceholder": "Le résultat apparaîtra ici..."
+    },
+    "Base64Encoder": {
+      "encode": "Encoder",
+      "decode": "Décoder",
+      "textToEncode": "Texte à encoder",
+      "base64ToDecode": "Base64 à décoder",
+      "enterText": "Entrez le texte à encoder...",
+      "enterBase64": "Entrez le Base64 à décoder...",
+      "encodeAction": "Encoder en Base64",
+      "decodeAction": "Décoder depuis Base64",
+      "base64Output": "Sortie Base64",
+      "decodedText": "Texte décodé",
+      "resultPlaceholder": "Le résultat s'affichera ici...",
+      "invalidInput": "Entrée invalide pour {mode}"
+    },
+    "QrGenerator": {
+      "content": "Contenu",
+      "placeholder": "https://exemple.com",
+      "customization": "Personnalisation",
+      "foreground": "Premier plan",
+      "background": "Arrière-plan",
+      "download": "Télécharger"
+    },
+    "HashGenerator": {
+      "inputText": "Texte d'entrée",
+      "placeholder": "Entrez le texte à hacher...",
+      "waiting": "En attente d'entrée..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Générer un nouveau",
+      "configuration": "Configuration",
+      "length": "Longueur du mot de passe",
+      "uppercase": "Majuscules (A-Z)",
+      "numbers": "Chiffres (0-9)",
+      "symbols": "Symboles (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Collez votre JSON ici...",
+      "outputPlaceholder": "Le JSON formaté s'affichera ici...",
+      "spaces": "espaces"
+    },
+    "UrlEncoder": {
+      "encode": "Encoder",
+      "decode": "Décoder",
+      "urlToEncode": "URL à encoder",
+      "encodedUrlToDecode": "URL encodée à décoder",
+      "enterUrlToEncode": "Entrez l'URL ou le texte à encoder...",
+      "enterUrlToDecode": "Entrez l'URL encodée à décoder...",
+      "encodeAction": "Encoder l'URL",
+      "decodeAction": "Décoder l'URL",
+      "encodedUrl": "URL encodée",
+      "decodedUrl": "URL décodée",
+      "resultPlaceholder": "Le résultat s'affichera ici...",
+      "chars": "caractères",
+      "invalidInput": "Entrée invalide pour {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Collez votre jeton JWT",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Décoder JWT",
+      "header": "EN-TÊTE",
+      "payload": "CHARGE UTILE",
+      "issued": "Émis",
+      "expires": "Expire"
+    },
+    "RegexTester": {
+      "expression": "Expression",
+      "expressionPlaceholder": "Groupe de capture (abc)...",
+      "testString": "Chaîne de test",
+      "testStringPlaceholder": "Collez votre chaîne de test ici...",
+      "matchHighlights": "Points saillants des correspondances",
+      "matches": "correspondances",
+      "matchInfo": "Informations sur la correspondance",
+      "match": "Correspondance",
+      "index": "Indice",
+      "group": "Groupe",
+      "noMatches": "Aucune correspondance trouvée",
+      "highlightPlaceholder": "Les correspondances seront surlignées ici...",
+      "flagsHelp": "g : global, i : ignorer la casse, m : multiligne"
+    },
+    "UuidGenerator": {
+      "generate": "Générer",
+      "generateCount": "Générer :",
+      "copyAll": "Tout copier",
+      "copyUuid": "Copier UUID",
+      "generatedAt": "Généré localement à {time} • UUIDs Version 4"
+    },
+    "WordCounter": {
+      "words": "Mots",
+      "characters": "Caractères",
+      "sentences": "Phrases",
+      "paragraphs": "Paragraphes",
+      "readingTime": "Temps de lecture",
+      "min": "min",
+      "textInput": "Texte d'entrée",
+      "inputPlaceholder": "Commencez à taper ou collez votre texte ici pour l'analyser...",
+      "clear": "Effacer"
+    },
+    "TimestampConverter": {
+      "timestamp": "Horodatage",
+      "humanDate": "Date lisible",
+      "convert": "Convertir",
+      "currentTimestamp": "Timestamp actuel",
+      "inputPlaceholder": "Entrez le timestamp Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Collez votre requête SQL ici...",
+      "outputPlaceholder": "Le SQL formaté s'affichera ici..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Collez votre code CSS ici...",
+      "outputPlaceholder": "Le CSS minifié s'affichera ici..."
+    },
+    "MarkdownEditor": {
+      "editor": "Éditeur",
+      "preview": "Aperçu",
+      "inputPlaceholder": "Entrez du Markdown ici..."
+    },
+    "TextDiff": {
+      "original": "Texte original",
+      "changed": "Texte modifié",
+      "compare": "Comparer",
+      "differences": "Différences"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Entrez le texte à convertir...",
+      "generatedSlug": "Slug généré"
+    },
+    "ImageCompressor": {
+      "selectImage": "Sélectionner une image",
+      "quality": "Qualité",
+      "compress": "Compresser",
+      "download": "Télécharger",
+      "originalSize": "Taille originale",
+      "compressedSize": "Taille compressée"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Paragraphes",
+      "generate": "Générer",
+      "copy": "Copier"
+    },
+    "GradientGenerator": {
+      "angle": "Angle",
+      "colors": "Couleurs",
+      "addColor": "Ajouter une couleur",
+      "copyCss": "Copier CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Date de naissance",
+      "calculate": "Calculer",
+      "years": "Années",
+      "months": "Mois",
+      "days": "Jours",
+      "totalDays": "Jours totaux",
+      "nextBirthday": "Prochain anniversaire dans"
+    },
+    "AsciiConverter": {
+      "text": "Texte",
+      "ascii": "ASCII",
+      "convert": "Convertir",
+      "inputPlaceholder": "Entrez du texte..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Horizontale (X)",
+      "vertical": "Verticale (Y)",
+      "blur": "Flou",
+      "spread": "Étalement",
+      "colorOpacity": "Couleur & Opacité",
+      "inset": "Interne"
+    },
+    "BmiCalculator": {
+      "metric": "Métrique (kg/cm)",
+      "imperial": "Impérial (lbs/in)",
+      "weight": "Poids",
+      "height": "Taille",
+      "calculate": "Calculer IMC",
+      "bmiScore": "Votre score IMC",
+      "underweight": "Insuffisance pondérale",
+      "normal": "Poids normal",
+      "overweight": "Surpoids",
+      "obese": "Obésité"
+    },
+    "CaseConverter": {
+      "inputText": "Texte d'entrée",
+      "inputPlaceholder": "Tapez votre texte ici...",
+      "upper": "MAJUSCULES",
+      "lower": "minuscules",
+      "title": "Titre",
+      "sentence": "Phrase",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Copier",
+      "conversions": "Conversions",
+      "clear": "Effacer"
+    },
+    "ColorConverter": {
+      "hexLabels": "Couleur HEX",
+      "rgbLabels": "Couleur RGB",
+      "hslLabels": "Couleur HSL",
+      "cmykLabels": "Couleur CMYK",
+      "copy": "Copier",
+      "hexToRgbNote": "* Prend actuellement en charge la conversion HEX vers RGB/HSL uniquement."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Numéro de carte",
+      "validate": "Valider",
+      "valid": "Numéro de carte de crédit valide",
+      "invalid": "Numéro de carte de crédit invalide",
+      "placeholder": "Entrez le numéro de carte...",
+      "type": "Type de carte",
+      "checkDigit": "Chiffre de contrôle",
+      "luhnValid": "Algorithme de Luhn valide"
+    },
+    "CipherTools": {
+      "encode": "Encoder",
+      "decode": "Décoder",
+      "rot13": "ROT13",
+      "caesar": "Chiffre de César",
+      "shift": "Changement",
+      "inputPlaceholder": "Bonjour le monde",
+      "outputPlaceholder": "Le résultat apparaîtra ici..."
+    },
+    "CronGenerator": {
+      "minute": "Minute",
+      "hour": "Heure",
+      "dayMonth": "Jour (Mois)",
+      "month": "Mois",
+      "dayWeek": "Jour (Semaine)",
+      "presets": "Préréglages courants",
+      "everyMinute": "Chaque minute",
+      "everyHour": "Chaque heure",
+      "everyDayMidnight": "Chaque jour à minuit",
+      "everySunday": "Chaque dimanche",
+      "everyMonth": "Chaque mois",
+      "everyYear": "Chaque année",
+      "formatInfo": "Format : * * * * * (Minute Heure JourDuMois Mois JourDeLaSemaine)",
+      "usageInfo": "Utilisez * pour 'chaque', */n pour 'tous les n', 1,2,3 pour une liste spécifique."
+    },
+    "DateDiff": {
+      "startDate": "Date de début",
+      "endDate": "Date de fin",
+      "calculate": "Calculer",
+      "difference": "Différence",
+      "years": "Années",
+      "months": "Mois",
+      "days": "Jours",
+      "totalDays": "Jours totaux",
+      "totalWeeks": "Semaines totales",
+      "totalHours": "Heures totales"
+    },
+    "DeepLinkTester": {
+      "testLink": "Tester le lien",
+      "savedLinks": "Liens enregistrés",
+      "searchPlaceholder": "Rechercher des liens enregistrés...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Lancer",
+      "save": "Enregistrer",
+      "delete": "Supprimer",
+      "opens": "ouvre",
+      "scanQr": "Scannez avec votre appareil mobile pour tester",
+      "noSavedLinks": "Aucun lien enregistré trouvé.",
+      "enterLabel": "Entrez une étiquette pour ce lien :",
+      "saved": "Enregistré !",
+      "confirmDelete": "Supprimer ce lien ?"
+    },
+    "DeviceInfo": {
+      "screen": "Écran",
+      "browser": "Navigateur",
+      "system": "Système",
+      "resolution": "Résolution",
+      "colorDepth": "Profondeur de couleur",
+      "userAgent": "Agent utilisateur",
+      "platform": "Plateforme",
+      "language": "Langue"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Prix d'origine",
+      "discountPercent": "Remise",
+      "additionalDiscount": "Remise supplémentaire",
+      "calculate": "Calculer",
+      "youSave": "Vous économisez",
+      "finalPrice": "Prix final",
+      "salesTax": "Taxe de vente"
+    },
+    "DnsLookup": {
+      "domain": "Domaine",
+      "lookup": "Rechercher",
+      "recordType": "Type d'enregistrement",
+      "results": "Résultats",
+      "placeholder": "exemple.com",
+      "status": "Statut",
+      "time": "Temps",
+      "server": "Serveur",
+      "answerSection": "Section réponse",
+      "name": "Nom",
+      "type": "Taper",
+      "ttl": "TTL",
+      "data": "Données",
+      "noRecords": "Aucun enregistrement trouvé"
+    },
+    "EmailValidator": {
+      "email": "Adresse e-mail",
+      "validate": "Valider",
+      "valid": "Valide",
+      "invalid": "Invalide",
+      "suggestion": "Suggestion",
+      "placeholder": "utilisateur@exemple.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Télécharger une image",
+      "generate": "Générer",
+      "download": "Télécharger",
+      "sizes": "Tailles"
+    },
+    "FuelCalculator": {
+      "distance": "Distance",
+      "fuelEfficiency": "Consommation de carburant",
+      "fuelPrice": "Prix du carburant",
+      "calculate": "Calculer",
+      "result": "Résultat",
+      "totalCost": "Coût total",
+      "fuelNeeded": "Carburant nécessaire"
+    },
+    "GridGenerator": {
+      "columns": "Colonnes",
+      "rows": "Lignes",
+      "gap": "Écart",
+      "preview": "Aperçu",
+      "copyCss": "Copier CSS",
+      "rowGap": "Écart de ligne",
+      "colGap": "Écart de colonne",
+      "options": "Possibilités"
+    },
+    "HmacGenerator": {
+      "message": "Message",
+      "secret": "Secrète",
+      "algorithm": "Algorithme",
+      "generate": "Générer",
+      "inputPlaceholder": "Texte d'entrée...",
+      "secretPlaceholder": "Secrète..."
+    },
+    "HtmlEncoder": {
+      "encode": "Encoder",
+      "decode": "Décoder",
+      "resultPlaceholder": "Le résultat s'affichera ici...",
+      "inputPlaceholder": "Collez le HTML ici..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Rechercher un code (ex. 404) ou un nom...",
+      "code": "Code",
+      "name": "Nom",
+      "description": "Description"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Valider",
+      "valid": "Valide",
+      "invalid": "Invalide",
+      "placeholder": "Entrez l'IBAN...",
+      "inputLabel": "Entrez le numéro IBAN",
+      "validTitle": "Référence valide",
+      "invalidTitle": "Somme de contrôle invalide",
+      "validDesc": "Le format IBAN et la somme de contrôle sont corrects.",
+      "invalidDesc": "L'IBAN ne correspond pas à l'algorithme de somme de contrôle."
+    },
+    "ImageBase64": {
+      "upload": "Télécharger",
+      "convert": "Convertir",
+      "copy": "Copier",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Télécharger une image",
+      "convertToBase64": "Convertir en Base64",
+      "convertToImage": "Convertir en image",
+      "base64String": "Chaîne Base64",
+      "download": "Télécharger"
+    },
+    "ImageConverter": {
+      "selectImage": "Sélectionner une image",
+      "format": "Format",
+      "convert": "Convertir",
+      "download": "Télécharger",
+      "quality": "Qualité"
+    },
+    "InterestCalculator": {
+      "principal": "Principal",
+      "rate": "Taux d'intérêt",
+      "time": "Durée (Années)",
+      "calculate": "Calculer",
+      "simpleInterest": "Simple",
+      "compoundInterest": "Composé",
+      "totalAmount": "Valeur totale",
+      "type": "Taper",
+      "frequency": "Fréquence de capitalisation",
+      "annually": "Annuellement",
+      "monthly": "Mensuellement",
+      "daily": "Quotidiennement",
+      "year": "Année"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Entrez le JSON...",
+      "convert": "Convertir",
+      "format": "Format",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON en CSV",
+      "csvToJson": "CSV en JSON",
+      "jsonInput": "Entrée JSON",
+      "csvInput": "Entrée CSV",
+      "jsonOutput": "Sortie JSON",
+      "csvOutput": "Sortie CSV"
+    },
+    "JsonDiff": {
+      "original": "JSON d'origine",
+      "modified": "JSON Modifié",
+      "compare": "Comparer",
+      "differences": "Différences"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Appuyez sur une touche",
+      "key": "Touche",
+      "code": "Code",
+      "keyCode": "Code clé",
+      "which": "lequel",
+      "location": "Emplacement",
+      "modifiers": "Modificateurs",
+      "standard": "Standard",
+      "left": "Gauche",
+      "right": "Droite",
+      "numpad": "Pavé numérique",
+      "space": "(Espace)",
+      "info": "Affichez le KeyCode, le Code et plus encore de l'événement JavaScript."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Collez votre texte ici pour analyser la fréquence des mots-clés...",
+      "analyze": "Analyser",
+      "keyword": "Mot-clé",
+      "count": "Nombre",
+      "density": "Densité"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Entrez votre liste ici...",
+      "sort": "Trier",
+      "reverse": "Inverser",
+      "shuffle": "Mélanger",
+      "deduplicate": "Dédupliquer",
+      "ascending": "Croissant",
+      "descending": "Décroissant",
+      "length": "Longueur",
+      "trim": "Couper vides",
+      "lines": "Lignes :",
+      "chars": "Caractères :"
+    },
+    "LoanCalculator": {
+      "principal": "Principal",
+      "interestRate": "Taux d'intérêt",
+      "term": "Durée",
+      "calculate": "Calculer",
+      "monthlyPayment": "Paiement mensuel",
+      "totalInterest": "Intérêt total",
+      "totalPayment": "Paiement total",
+      "loanDetails": "Détails du prêt",
+      "loanAmount": "Montant du prêt",
+      "loanTerm": "Durée du prêt",
+      "years": "Années",
+      "months": "Mois",
+      "interest": "Intérêt"
+    },
+    "MacGenerator": {
+      "generate": "Générer",
+      "copy": "Copie",
+      "separator": "Séparateur",
+      "format": "Format",
+      "quantity": "Quantité",
+      "uppercase": "Majuscule"
+    },
+    "MarginCalculator": {
+      "cost": "Coût",
+      "price": "Prix ​​de vente",
+      "calculate": "Calculer",
+      "margin": "Marge",
+      "markup": "Balisage",
+      "profit": "Profit",
+      "revenue": "Revenu",
+      "netProfit": "Bénéfice net",
+      "grossMargin": "Marge brute"
+    },
+    "PasswordManager": {
+      "masterPassword": "Mot de passe principal",
+      "unlock": "Ouvrir",
+      "searchPlaceholder": "Rechercher des comptes...",
+      "addNew": "Ajouter un nouveau",
+      "siteName": "Nom du site",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "save": "Sauvegarder",
+      "delete": "Supprimer"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Tapez ici...",
+      "strength": "Force",
+      "weak": "Faible",
+      "fair": "Équitable",
+      "good": "Bien",
+      "strong": "Fort",
+      "requirements": "Exigences",
+      "length": "8+ personnages",
+      "number": "Comprend le numéro",
+      "uppercase": "Inclut les majuscules",
+      "symbol": "Comprend le symbole"
+    },
+    "PayPalLink": {
+      "username": "Nom d'utilisateur PayPal.me",
+      "amount": "Montant",
+      "currency": "Devise",
+      "generate": "Générer",
+      "itemName": "Nom de l'article",
+      "link": "Lien",
+      "yourLink": "Votre lien PayPal",
+      "openPaypal": "Ouvrir PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "Règles",
+      "addRule": "Ajouter une règle",
+      "allow": "Permettre",
+      "disallow": "Refuser",
+      "sitemap": "URL du plan du site (facultatif)",
+      "output": "Robots.txt généré"
+    },
+    "PercentageCalculator": {
+      "value": "Valeur",
+      "percentage": "Pourcentage",
+      "calculate": "Calculer",
+      "result": "Résultat",
+      "whatIs": "Qu'est-ce que",
+      "of": "% de",
+      "isWhatPercentOf": "est quel % de",
+      "percentChangeFrom": "% de changement par rapport à",
+      "to": "à"
+    },
+    "PomodoroTimer": {
+      "work": "Temps de mise au point",
+      "shortBreak": "Courte pause",
+      "longBreak": "Longue pause",
+      "start": "Commencer",
+      "pause": "Pause",
+      "reset": "Réinitialiser",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Nombre",
+      "calculate": "Calculer",
+      "factors": "Facteurs premiers",
+      "inputLabel": "Entrez un numéro",
+      "placeholder": "par ex. 120",
+      "isPrime": "Ce numéro est Prime !",
+      "isComposite": "Ce numéro est composé"
+    },
+    "RoiCalculator": {
+      "investment": "Investissement",
+      "returns": "Retours",
+      "calculate": "Calculer",
+      "roi": "ROI",
+      "profit": "Profit",
+      "finalValue": "Valeur finale",
+      "time": "Temps (années)",
+      "totalGain": "Gain total",
+      "annualizedRoi": "ROI annualisé"
+    },
+    "RomanNumerals": {
+      "decimal": "Décimal",
+      "decimalPlaceholder": "2024",
+      "roman": "romain",
+      "convert": "Convertir",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Commencer l'enregistrement",
+      "stopRecording": "Arrêter l'enregistrement",
+      "download": "Télécharger",
+      "recording": "Enregistrement..."
+    },
+    "SignatureGenerator": {
+      "draw": "Dessiner",
+      "clear": "Clair",
+      "download": "Télécharger",
+      "penColor": "Couleur du stylo",
+      "penSize": "Taille du stylo"
+    },
+    "SpeechToText": {
+      "startListening": "Commencez à écouter",
+      "stopListening": "Arrêter d'écouter",
+      "transcript": "Transcription",
+      "placeholder": "La transcription apparaîtra ici..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSÉRER DANS les utilisateurs (identifiant, nom, âge) VALUES (1, 'John', 30);",
+      "convert": "Convertir",
+      "result": "Résultat"
+    },
+    "Stopwatch": {
+      "start": "Commencer",
+      "stop": "Arrêt",
+      "reset": "Réinitialiser",
+      "lap": "Genoux"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Adresse IP",
+      "subnetMask": "Masque de sous-réseau",
+      "calculate": "Calculer",
+      "networkAddress": "Adresse réseau",
+      "broadcastAddress": "Adresse de diffusion",
+      "usableHosts": "Hôtes utilisables"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Coller SVG",
+      "uploadSvg": "Télécharger SVG",
+      "convert": "Convertir",
+      "download": "Télécharger"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Entrez le texte pour parler...",
+      "speak": "Parler",
+      "stop": "Arrêt",
+      "voice": "Voix",
+      "rate": "Taux",
+      "pitch": "Pas"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Tapez quelque chose...",
+      "reverse": "Inverse",
+      "uppercase": "Majuscule",
+      "lowercase": "Minuscule",
+      "encode": "Encoder"
+    },
+    "TimezoneConverter": {
+      "from": "Depuis",
+      "to": "À",
+      "convert": "Convertir",
+      "currentTime": "Heure actuelle"
+    },
+    "TokenGenerator": {
+      "length": "Longueur",
+      "generate": "Générer",
+      "copy": "Copie",
+      "includeNumbers": "Inclure des chiffres",
+      "includeSymbols": "Inclure des symboles"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Entrez l'URL...",
+      "parse": "Analyser",
+      "protocol": "Protocole",
+      "host": "Hôte",
+      "path": "Chemin",
+      "query": "Requête"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL du site Web",
+      "source": "Source",
+      "medium": "Moyen",
+      "campaign": "Campagne",
+      "generate": "Générer",
+      "copy": "Copie"
+    },
+    "VatCalculator": {
+      "amount": "Montant",
+      "vatRate": "Taux de TVA",
+      "addVat": "Ajouter la TVA",
+      "removeVat": "Supprimer la TVA",
+      "calculate": "Calculer"
+    },
+    "VibrationTester": {
+      "vibrate": "Vibrer",
+      "pattern": "Modèle",
+      "duration": "Durée",
+      "test": "Test"
+    },
+    "WeekNumber": {
+      "currentWeek": "Numéro de la semaine en cours",
+      "yearProgress": "Progression de l'année",
+      "week": "Semaine"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Numéro de téléphone",
+      "message": "Message",
+      "generate": "Générer",
+      "copy": "Copie",
+      "placeholder": "Bonjour, je suis intéressé..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Coller l'URL de la vidéo YouTube...",
+      "getThumbnail": "Obtenir une vignette",
+      "download": "Télécharger"
+    },
+    "CrontabGenerator": {
+      "minute": "Minute",
+      "hour": "Heure",
+      "day": "Jour",
+      "month": "Mois",
+      "weekday": "Jour de la semaine",
+      "expression": "Expression",
+      "description": "Description"
+    },
+    "ChmodCalculator": {
+      "owner": "Propriétaire",
+      "group": "Groupe",
+      "others": "Autres",
+      "read": "Lire",
+      "write": "Écrire",
+      "execute": "Exécuter",
+      "numeric": "Numérique",
+      "symbolic": "Symbolique"
+    },
+    "HtpasswdGenerator": {
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "algorithm": "Algorithme",
+      "generate": "Générer",
+      "copy": "Copie"
+    },
+    "AspectRatio": {
+      "width": "Largeur",
+      "height": "Hauteur",
+      "ratio": "Rapport",
+      "calculate": "Calculer"
+    },
+    "CssClipPath": {
+      "shape": "Forme",
+      "preview": "Aperçu",
+      "copyCss": "Copier CSS"
+    },
+    "CssCursor": {
+      "cursor": "Curseur",
+      "preview": "Aperçu",
+      "copyCss": "Copier CSS"
+    },
+    "CssTriangle": {
+      "direction": "Direction",
+      "size": "Taille",
+      "color": "Couleur",
+      "preview": "Aperçu",
+      "copyCss": "Copier CSS"
+    },
+    "MetaGenerator": {
+      "title": "Titre",
+      "description": "Description",
+      "keywords": "Mots-clés",
+      "author": "Auteur",
+      "url": "URL",
+      "image": "Image",
+      "generate": "Générer",
+      "copy": "Copie",
+      "titlePlaceholder": "Mon superbe site Web",
+      "descriptionPlaceholder": "Une brève description de votre site...",
+      "keywordsPlaceholder": "web, outils, développement",
+      "authorPlaceholder": "Votre nom",
+      "outputPlaceholder": "Les balises méta apparaîtront ici..."
+    },
+    "OgGenerator": {
+      "title": "Titre",
+      "description": "Description",
+      "url": "URL",
+      "image": "Image",
+      "type": "Taper",
+      "generate": "Générer",
+      "copy": "Copie"
+    },
+    "TwitterCard": {
+      "cardType": "Type de carte",
+      "title": "Titre",
+      "description": "Description",
+      "image": "Image",
+      "generate": "Générer",
+      "copy": "Copie"
+    },
+    "MarkdownTable": {
+      "rows": "Lignes",
+      "columns": "Colonnes",
+      "header": "En-tête",
+      "addRow": "Ajouter une ligne",
+      "addColumn": "Ajouter une colonne",
+      "generate": "Générer",
+      "copy": "Copie"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Format",
+      "copy": "Copie"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Formatage JSON : meilleures pratiques pour les développeurs",
+      "excerpt": "Découvrez pourquoi un formatage JSON approprié est important pour le débogage et comment l'automatiser dans votre flux de travail.",
+      "category": "Développement"
+    },
+    "mastering-regex": {
+      "title": "Maîtriser les expressions régulières : un guide visuel",
+      "excerpt": "Regex ne doit pas faire peur. Nous décomposons les modèles courants pour la validation des e-mails, les URL, etc.",
+      "category": "Tutoriel"
+    },
+    "cron-job-scheduling": {
+      "title": "Les tâches Cron démystifiées : comment planifier des tâches",
+      "excerpt": "Comprenez la syntaxe 5 étoiles de Cron et comment planifier des sauvegardes, des e-mails et des scripts sous Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Pourquoi les gestionnaires de mots de passe locaux sont plus sûrs (alternative KeyPass)",
+      "excerpt": "Les violations du cloud sont courantes. Découvrez pourquoi le stockage local des mots de passe avec le cryptage AES-256 est le pari le plus sûr pour la sécurité personnelle.",
+      "category": "Sécurité"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Outils de recherche...",
+    "noResults": "Aucun résultat trouvé.",
+    "select": "Sélectionner",
+    "navigate": "Naviguer"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Envoyer des commentaires",
+    "feedback": "Retour",
+    "thankYou": "Merci!",
+    "feedbackSent": "Votre commentaire a été envoyé avec succès.",
+    "close": "Fermer",
+    "name": "Nom (facultatif)",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail (facultatif)",
+    "emailPlaceholder": "votre@email.com",
+    "feedbackType": "Type de commentaires",
+    "typeSuggestion": "💡 Suggestions",
+    "typeBug": "🐛 Rapport de bug",
+    "typeFeature": "✨ Demande de fonctionnalité",
+    "typeOther": "📝 Autre",
+    "message": "Message *",
+    "messagePlaceholder": "Dites-nous ce que vous en pensez...",
+    "sending": "Envoi...",
+    "weReadEveryMessage": "Nous lisons chaque message. Merci de nous aider à nous améliorer !"
+  },
+  "ShareButton": {
+    "shareTool": "Outil de partage",
+    "copiedLink": "Lien copié !"
+  },
+  "TextDiff": {
+    "original": "Texte original",
+    "changed": "Texte modifié",
+    "update": "Mettre à jour la différence",
+    "old": "Vieux",
+    "new": "Nouveau",
+    "content": "Contenu"
+  },
+  "CrontabGenerator": {
+    "minute": "Minute",
+    "hour": "Heure",
+    "day": "Jour",
+    "month": "Mois",
+    "weekday": "Jour de la semaine",
+    "min": "Min.",
+    "mon": "Lun",
+    "week": "Semaine",
+    "presets": "Préréglages rapides",
+    "everyMinute": "Chaque minute",
+    "every5Minutes": "Toutes les 5 minutes",
+    "everyHour": "Toutes les heures",
+    "everyDayMidnight": "Tous les jours à minuit",
+    "everyWeek": "Chaque semaine",
+    "everyMonth": "Chaque mois"
+  },
+  "SpeechToText": {
+    "notSupported": "Votre navigateur ne prend pas en charge l'API Web Speech. Veuillez utiliser Chrome.",
+    "placeholder": "La transcription apparaîtra ici...",
+    "listening": "Écoute...",
+    "start": "Cliquez sur le microphone pour commencer"
+  },
+  "OgGenerator": {
+    "title": "Titre",
+    "description": "Description",
+    "image": "URL de l'image",
+    "url": "URL canonique",
+    "type": "Taper",
+    "website": "Site web",
+    "article": "Article",
+    "profile": "Profil",
+    "preview": "Aperçu (Facebook/LinkedIn)",
+    "generatedHtml": "HTML généré",
+    "copy": "Copie"
+  },
+  "WeekNumber": {
+    "checkLabel": "Vérifier le numéro de semaine pour la date",
+    "yearProgress": "Progression de l'année"
+  },
+  "RelatedTools": {
+    "title": "Vous aimerez peut-être aussi",
+    "subtitle": "Explorez d'autres outils de développement populaires",
+    "openTool": "Ouvrir l'outil"
+  },
+  "Breadcrumb": {
+    "home": "Maison",
+    "tools": "Outils"
+  },
+  "SvgToPng": {
+    "upload": "Télécharger un fichier SVG",
+    "browse": "ou cliquez pour parcourir",
+    "paste": "...ou collez le code SVG",
+    "preview": "Aperçu PNG (échelle 2x)",
+    "download": "Télécharger PNG",
+    "errorType": "Veuillez télécharger un fichier SVG valide.",
+    "errorRender": "Échec du rendu du SVG. Assurez-vous qu’il s’agit d’un XML valide.",
+    "errorProcess": "Erreur lors du traitement du SVG."
+  },
+  "GradientGenerator": {
+    "config": "Configuration",
+    "colors": "Couleurs",
+    "type": "Taper",
+    "angle": "Angle",
+    "random": "Aléatoire",
+    "copyCss": "Copier CSS",
+    "copied": "Copié"
+  },
+  "TimezoneConverter": {
+    "date": "Date",
+    "time": "Heure (locale)",
+    "invalid": "Invalide",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "New York (EST/EDT)",
+      "losAngeles": "Los Angeles (PST/PDT)",
+      "london": "Londres (GMT/BST)",
+      "paris": "Paris (CET/CEST)",
+      "tokyo": "Tokyo (JST)",
+      "sydney": "Sydney (AEST/AEDT)",
+      "dubai": "Dubaï (TPS)",
+      "india": "Inde (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Générateur de nombres",
+    "listGen": "Générateur de liste",
+    "coinGen": "Générateur de pièces",
+    "min": "Min.",
+    "max": "Max.",
+    "count": "Compter",
+    "generate": "Générer",
+    "listLabel": "Éléments de liste (un par ligne)",
+    "pick": "Choisir un article au hasard",
+    "winner": "Le gagnant est...",
+    "flip": "Lancer la pièce",
+    "heads": "Têtes",
+    "tails": "Queues"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Enregistrer votre écran...",
+    "titleFree": "Enregistreur d'écran en ligne gratuit",
+    "desc": "Capturez votre écran, la fenêtre de votre application ou l'onglet de votre navigateur. Pas de filigrane, pas de limite de temps.",
+    "start": "Commencer l'enregistrement",
+    "stop": "Arrêter l'enregistrement",
+    "browserSupport": "Fonctionne mieux dans Chrome, Edge et Firefox sur ordinateur."
+  },
+  "CssCursor": {
+    "hoverTest": "Passez ici pour tester"
+  },
+  "VatCalculator": {
+    "amount": "Montant",
+    "rate": "Taux de TVA (%)",
+    "addVat": "Ajouter la TVA",
+    "removeVat": "Supprimer la TVA",
+    "netAmount": "Montant net",
+    "vatAmount": "Montant de la TVA",
+    "grossTotal": "Total brut",
+    "netTotal": "Total net",
+    "grossAmount": "Montant brut"
+  },
+  "MyIP": {
+    "ipLabel": "Votre adresse IP publique",
+    "loading": "Chargement...",
+    "isp": "Fournisseur Internet (FAI)",
+    "location": "Emplacement",
+    "asn": "ASN",
+    "timezone": "Fuseau horaire",
+    "note": "Il s'agit de l'adresse IP visible des sites Web que vous visitez. Elle peut être différente de votre adresse IP locale si vous utilisez un VPN ou un proxy."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Entrez l'URL",
+    "formatted": "Sortie formatée",
+    "copy": "Copie",
+    "copied": "Copié",
+    "placeholder": "Collez une URL ci-dessus pour la voir formatée."
+  },
+  "WhatsAppLink": {
+    "phone": "Numéro de téléphone (avec indicatif du pays)",
+    "message": "Message pré-rempli",
+    "hint": "N'incluez pas +, - ou ().",
+    "yourLink": "Votre lien WhatsApp",
+    "open": "Ouvrir le chat"
+  },
+  "UrlParser": {
+    "enterUrl": "Entrez l'URL",
+    "params": "Paramètres de requête",
+    "error": "URL invalide"
+  },
+  "FaviconGenerator": {
+    "upload": "Télécharger une image",
+    "browse": "Recommandé : 512x512 PNG",
+    "original": "Original",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Télécharger Favicon.png",
+    "note": "* Génère actuellement des favicons PNG 32x32. Renommez-le en .ico si nécessaire pour la prise en charge héritée."
+  },
+  "SubnetCalculator": {
+    "ip": "Adresse IP",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Calculer",
+    "subnetMask": "Masque de sous-réseau",
+    "networkAddress": "Adresse réseau",
+    "firstHost": "Premier hôte",
+    "lastHost": "Dernier hôte",
+    "broadcastAddress": "Adresse de diffusion",
+    "totalHosts": "Nombre total d'hôtes"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Entrez le titre/le texte de l'article",
+    "generated": "Limace générée",
+    "copy": "Copier le limace"
+  },
+  "SqlToJson": {
+    "inputLabel": "Entrée SQL (instructions INSERT uniquement)",
+    "convert": "Convertir en JSON",
+    "error": "Impossible d'analyser SQL. Assurez-vous qu’il s’agit d’instructions INSERT INTO standard."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Ajouter une ligne",
+    "addCol": "+ Ajouter une colonne",
+    "headerPlaceholder": "En-tête",
+    "outputLabel": "Sortie de démarque",
+    "copy": "Copier la démarque"
+  },
+  "TwitterCard": {
+    "cardType": "Type de carte",
+    "siteHandle": "Identifiant du site (par exemple @twitter)",
+    "title": "Titre",
+    "description": "Description",
+    "imageUrl": "URL de l'image",
+    "preview": "Aperçu",
+    "generatedHtml": "HTML généré",
+    "copy": "Copie",
+    "placeholderTitle": "Titre de la carte",
+    "placeholderDesc": "La description va ici..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Entrez le texte pour parler...",
+    "voice": "Voix",
+    "speed": "Vitesse",
+    "pitch": "Pas",
+    "speak": "Parler"
+  },
+  "TokenGenerator": {
+    "length": "Longueur",
+    "includeNumbers": "Inclure des chiffres",
+    "includeSymbols": "Inclure des symboles",
+    "generate": "Générer un jeton"
+  },
+  "CssTriangle": {
+    "direction": "Direction",
+    "color": "Couleur",
+    "width": "Largeur (px)",
+    "height": "Hauteur (px)",
+    "copy": "Copie"
+  },
+  "UnitConverter": {
+    "length": "Longueur",
+    "weight": "Poids",
+    "temperature": "Température",
+    "meters": "Mètres",
+    "kilometers": "Kilomètres",
+    "centimeters": "Centimètres",
+    "millimeters": "Millimètres",
+    "inches": "Pouces",
+    "feet": "Pieds",
+    "yards": "Verges",
+    "miles": "Milles",
+    "kilograms": "Kilogrammes",
+    "grams": "Grammes",
+    "pounds": "Livres",
+    "ounces": "Onces",
+    "celsius": "Celsius",
+    "fahrenheit": "Fahrenheit",
+    "kelvin": "Kelvin"
+  },
+  "CssClipPath": {
+    "shapes": "Formes",
+    "preview": "Aperçu",
+    "cssCode": "Code CSS",
+    "copy": "Copie",
+    "copied": "Copié"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Télécharger une image",
+    "uploadDesc": "JPG, PNG ou WebP. Nous le compressons localement.",
+    "selectImage": "Sélectionnez une image",
+    "settings": "Paramètres de compression",
+    "quality": "Qualité",
+    "originalSize": "Taille originale",
+    "compressedSize": "Taille compressée",
+    "saving": "Économie",
+    "download": "Télécharger"
+  },
+  "HtpasswdGenerator": {
+    "username": "Nom d'utilisateur",
+    "password": "Mot de passe",
+    "algorithm": "Algorithme",
+    "generate": "Générer une entrée",
+    "result": "Résultat",
+    "sha1": "SHA-1 (non sécurisé mais standard)",
+    "notSupported": "Seul SHA-1 est pris en charge dans cette version côté client."
+  },
+  "MetaTags": {
+    "pageTitle": "Titre de la page",
+    "description": "Description",
+    "author": "Auteur"
+  },
+  "AgeCalculator": {
+    "dob": "Date de naissance",
+    "age": "Âge",
+    "years": "années",
+    "months": "mois",
+    "days": "jours",
+    "nextBirthday": "Prochain anniversaire"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL du site Web (obligatoire)",
+    "source": "Source de la campagne (obligatoire)",
+    "medium": "Support de campagne (obligatoire)",
+    "name": "Nom de la campagne (obligatoire)",
+    "term": "Durée de la campagne (facultatif)",
+    "content": "Contenu de la campagne (facultatif)",
+    "generatedUrl": "URL générée",
+    "copy": "Copier l'URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Heure Unix actuelle",
+    "timestampLabel": "Horodatage (secondes)",
+    "isoLabel": "Format de date ISO",
+    "utcDate": "Date UTC",
+    "localDate": "Date locale",
+    "relative": "Relatif"
+  },
+  "SignatureGenerator": {
+    "color": "Couleur",
+    "width": "Largeur",
+    "clear": "Clair",
+    "download": "Télécharger PNG",
+    "signHere": "Signez ici",
+    "note": "Les signatures sont traitées localement dans votre navigateur. Nous ne les stockons ni ne les téléchargeons."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Aperçu en direct"
+  },
+  "CipherTools": {
+    "shiftAmount": "Montant du décalage (N)",
+    "inputText": "Texte de saisie",
+    "outputText": "Texte de sortie",
+    "rot13": "ROT13",
+    "caesar": "César (+3)",
+    "shift1": "Maj +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Résolution d'écran",
+    "browser": "Navigateur",
+    "cpuCores": "Cœurs de processeur",
+    "battery": "Batterie",
+    "detailedSpecs": "Spécifications détaillées",
+    "userAgent": "Agent utilisateur",
+    "platform": "Plate-forme",
+    "windowSize": "Taille de la fenêtre",
+    "pixelRatio": "Rapport de pixels",
+    "colorDepth": "Profondeur de couleur",
+    "ram": "RAM",
+    "cookiesEnabled": "Cookies activés",
+    "onlineStatus": "Statut en ligne",
+    "unknown": "Inconnu",
+    "yes": "Oui",
+    "no": "Non",
+    "enabled": "Activé",
+    "disabled": "Désactivé"
+  },
+  "ChmodCalculator": {
+    "owner": "Propriétaire",
+    "group": "Groupe",
+    "public": "Publique",
+    "read": "Lire",
+    "write": "Écrire",
+    "execute": "Exécuter",
+    "numeric": "Numérique",
+    "symbolic": "Symbolique"
+  },
+  "PasswordManager": {
+    "title": "Gestionnaire de mots de passe",
+    "desc": "Stockez et gérez vos mots de passe localement en toute sécurité.",
+    "unlock": "Déverrouiller le coffre-fort",
+    "create": "Créer un nouveau coffre-fort",
+    "unlockDesc": "Entrez votre mot de passe principal pour accéder à vos comptes.",
+    "createDesc": "Définissez un mot de passe principal fort. Il crypte vos données localement.",
+    "masterPassword": "Mot de passe principal",
+    "unlockBtn": "Ouvrir",
+    "createBtn": "Créer un coffre-fort",
+    "note": "Les données sont stockées dans votre navigateur à l'aide du cryptage AES-GCM. Nous ne pouvons pas récupérer votre mot de passe en cas de perte.",
+    "myPasswords": "Mes mots de passe",
+    "addNew": "Ajouter un nouveau",
+    "search": "Rechercher des comptes...",
+    "noPasswords": "Aucun mot de passe trouvé.",
+    "addAccount": "Ajouter un compte",
+    "accountTitle": "Titre / Site Web",
+    "username": "Nom d'utilisateur / E-mail",
+    "password": "Mot de passe",
+    "url": "URL (facultatif)",
+    "save": "Enregistrer le compte",
+    "cancel": "Annuler",
+    "incorrectPassword": "Mot de passe incorrect ou données corrompues.",
+    "loading": "Chargement..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Détails du site Web",
+    "pageTitle": "Titre de la page",
+    "description": "Description",
+    "keywords": "Mots-clés (séparés par des virgules)",
+    "author": "Auteur",
+    "socialPreview": "Aperçu social (OG et Twitter)",
+    "websiteUrl": "URL du site Web",
+    "previewImage": "URL de l’image d’aperçu",
+    "generatedHtml": "HTML généré",
+    "copy": "Copier le HTML",
+    "copied": "Copié"
+  },
+  "VibrationTester": {
+    "worksOnly": "Fonctionne uniquement sur les appareils dotés d'un matériel de vibration (par exemple les téléphones).",
+    "duration": "Durée (ms)",
+    "vibrateOnce": "Vibrer une fois",
+    "pulsePattern": "Modèle d'impulsion",
+    "longPulse": "Impulsion longue",
+    "stop": "Arrêt"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Pourquoi le formatage JSON est important",
+      "block_2": "JSON (JavaScript Object Notation) est le langage du web.Mais le JSON brut renvoyé par les API est souvent un gâchis réduit.le formater le rend lisible, déboguable et sûr.",
+      "block_3": "1.La lisibilité est reine",
+      "block_4": "Lorsque vous déboguez une réponse API de 5 000 lignes, l'indentation sauve des vies.Notre <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> utilise une indentation de 2 ou 4 espaces pour rendre la structure claire.",
+      "block_5": "2.Validation",
+      "block_6": "Une seule virgule manquante peut interrompre votre application.Validez toujours votre JSON avant de le valider dans les fichiers de configuration.",
+      "block_7": "Conclusion",
+      "block_8": "Ne perdez pas de temps à vérifier manuellement les parenthèses.Utilisez des outils automatisés."
+    },
+    "mastering-regex": {
+      "block_1": "Regex expliqué",
+      "block_2": "Les expressions régulières sont puissantes mais déroutantes.visualisons-les.",
+      "block_3": "Modèles courants",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail :</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 police arrondie-mono texte-[0.9em] texte-[#fb923c] bordureborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Téléphone :</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 police arrondie-mono texte-[0.9em] texte-[#fb923c] bordureborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Testez ces modèles instantanément avec notre <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Testeur Regex</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "Les 5 étoiles de Cron",
+      "block_2": "Minute, Heure, Jour du mois, Mois, Jour de la semaine.C'est tout.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Exemples</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Exécuter tous les jours à minuit : <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 arrondi font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Exemples",
+      "block_6": "Exécuter toutes les 15 minutes : <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 arrondi font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Besoin d'aide ?Utilisez notre <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Générateur Cron</a> pour créer des expressions visuellement."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Le problème avec Cloud Vaults",
+      "block_2": "LastPass, Okta et d'autres géants ont subi des violations.Lorsque votre coffre-fort est en ligne, il constitue une cible.",
+      "block_3": "La solution : le cryptage local",
+      "block_4": "Notre nouveau <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Gestionnaire de mots de passe local</a></strong> s'exécute entièrement dans votre navigateur.Il utilise le <strong class=\"text-[var(--title-color)] font-semibold\">cryptage AES-GCM 256 bits</strong> dérivé de votre mot de passe principal à l'aide de PBKDF2.",
+      "block_5": "Comment ça marche",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zéro connaissance :</strong> Nous ne voyons jamais votre mot de passe.Il ne quitte jamais votre appareil.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Stockage hors ligne :</strong> Votre coffre-fort chiffré est stocké dans le stockage local de votre navigateur.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable :</strong> Vous pouvez exporter/sauvegarder vos données brutes cryptées à tout moment.</li>",
+      "block_7": "Arrêtez de faire confiance au cloud avec vos clés principales.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Essayez le gestionnaire de mots de passe local</a> aujourd'hui."
+    }
+  }
+}

@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "도구",
+    "blog": "블로그",
+    "github": "GitHub",
+    "searchPlaceholder": "검색..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - 무료 온라인 개발자 도구",
+    "description": "모두를 위한 90개 이상의 무료 온라인 도구. 포맷터, 변환기, 생성기 및 유틸리티. 빠르고 비공개이며 등록이 필요하지 않습니다."
+  },
+  "NotFound": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "죄송합니다. 요청하신 페이지를 찾을 수 없습니다.",
+    "backHome": "홈으로 돌아가기",
+    "suggestions": "도구를 검색하거나 아래의 인기 도구를 찾아보세요."
+  },
+  "Homepage": {
+    "heroTag": "100+ 무료 도구 • 비공개 • 가입 필요 없음",
+    "titleLine1": "매일 사용하는 개발자 도구",
+    "titleLine2": "그냥 잘 작동합니다",
+    "subtitle": "개발자, 디자이너 및 모두를 위한 빠르고 아름답고 개인 정보 보호에 중점을 둔 도구입니다. 모든 것이 브라우저에서 실행됩니다.",
+    "recentTools": "최근 사용",
+    "noRecentText": "도구를 사용하여 여기에 표시하세요",
+    "searchResults": "검색 결과",
+    "popularTools": "인기",
+    "toolsCount": "{count}개의 도구 사용 가능",
+    "features": {
+      "fast": {
+        "title": "번개처럼 빠름",
+        "desc": "모든 도구는 브라우저에서 로컬로 실행됩니다"
+      },
+      "private": {
+        "title": "100% 비공개",
+        "desc": "데이터는 기기를 떠나지 않습니다"
+      },
+      "simple": {
+        "title": "모두를 위해 제작됨",
+        "desc": "누구에게나 간단하고 전문가에게는 강력합니다"
+      },
+      "free": {
+        "title": "항상 무료",
+        "desc": "계정 없음, 제한 없음"
+      }
+    },
+    "categories": {
+      "All": "전체",
+      "Favorites": "즐겨찾기",
+      "Developer": "개발자",
+      "Design": "디자인",
+      "Content": "콘텐츠",
+      "Security": "보안",
+      "Productivity": "생산성",
+      "Math": "수학",
+      "Utility": "유틸리티"
+    },
+    "cta": {
+      "title": "생산성을 높일 준비가 되셨나요?",
+      "text": "무료로 개발자 도구를 사용해보세요. 가입 필요 없음, 데이터 수집 없음.",
+      "button": "무료로 시작하기"
+    },
+    "openTool": "도구 열기",
+    "noResults": "일치하는 도구가 없습니다",
+    "clearFilters": "필터 지우기"
+  },
+  "Footer": {
+    "builtWith": "만든 사람 ❤️",
+    "allTools": "모든 도구",
+    "blog": "블로그",
+    "about": "정보",
+    "privacy": "개인정보 보호",
+    "terms": "이용약관"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "JSON 포맷터",
+      "description": "즉시 JSON 형식 지정, 유효성 검사 및 정렬"
+    },
+    "base64-encoder": {
+      "name": "Base64 인코더",
+      "description": "Base64 문자열 인코딩 및 디코딩"
+    },
+    "url-encoder": {
+      "name": "URL 인코더",
+      "description": "URL을 안전하게 인코딩 및 디코딩"
+    },
+    "jwt-decoder": {
+      "name": "JWT 디코더",
+      "description": "JSON 웹 토큰(JWT) 디코딩 및 검사"
+    },
+    "regex-tester": {
+      "name": "정규식 테스터",
+      "description": "정규 표현식 실시간 테스트"
+    },
+    "hash-generator": {
+      "name": "해시 생성기",
+      "description": "MD5, SHA-1, SHA-256 해시 생성"
+    },
+    "uuid-generator": {
+      "name": "UUID 생성기",
+      "description": "랜덤 UUID/GUID 즉시 생성"
+    },
+    "css-minifier": {
+      "name": "CSS 미니파이어",
+      "description": "CSS 코드 축소 및 최적화"
+    },
+    "markdown-editor": {
+      "name": "마크다운 미리보기",
+      "description": "실시간 마크다운 에디터 및 미리보기"
+    },
+    "color-converter": {
+      "name": "색상 변환기",
+      "description": "Hex, RGB, HSL 및 CMYK 변환"
+    },
+    "timestamp-converter": {
+      "name": "타임스탬프 도구",
+      "description": "Unix 타임스탬프를 사람이 읽을 수 있는 날짜로 변환"
+    },
+    "sql-formatter": {
+      "name": "SQL 포맷터",
+      "description": "SQL 쿼리 포맷 및 정렬"
+    },
+    "password-generator": {
+      "name": "비밀번호 생성기",
+      "description": "안전한 무작위 비밀번호 생성"
+    },
+    "lorem-ipsum": {
+      "name": "로렘 입숨",
+      "description": "디자인용 더미 텍스트 생성"
+    },
+    "image-base64": {
+      "name": "이미지 Base64 변환",
+      "description": "이미지를 Base64 문자열로 변환"
+    },
+    "qr-generator": {
+      "name": "QR 코드 생성기",
+      "description": "URL 및 텍스트용 QR 코드 생성"
+    },
+    "word-counter": {
+      "name": "단어 수 계산기",
+      "description": "단어, 문자 및 읽기 시간 계산"
+    },
+    "case-converter": {
+      "name": "대소문자 변환기",
+      "description": "카멜, 스네이크, 케밥 및 파스칼 표기법 변환"
+    },
+    "text-diff": {
+      "name": "텍스트 비교기",
+      "description": "두 텍스트를 비교하고 차이점 찾기"
+    },
+    "slug-generator": {
+      "name": "슬러그 생성기",
+      "description": "SEO 친화적인 URL 슬러그 생성"
+    },
+    "gradient-generator": {
+      "name": "그라디언트 생성기",
+      "description": "아름다운 CSS 그라디언트 생성"
+    },
+    "image-compressor": {
+      "name": "이미지 압축기",
+      "description": "로컬에서 비공개로 이미지 압축"
+    },
+    "device-info": {
+      "name": "기기 정보",
+      "description": "화면, 브라우저 및 시스템 정보 확인"
+    },
+    "random-generator": {
+      "name": "무작위 생성기",
+      "description": "숫자, 동전 및 목록 항목 선택"
+    },
+    "unit-converter": {
+      "name": "단위 변환기",
+      "description": "길이, 무게 및 온도 변환"
+    },
+    "pomodoro-timer": {
+      "name": "포모도로 타이머",
+      "description": "생산성을 위한 집중 타이머"
+    },
+    "yt-thumbnail": {
+      "name": "썸네일 다운로더",
+      "description": "YouTube 동영상 썸네일 가져오기"
+    },
+    "my-ip": {
+      "name": "내 IP 확인",
+      "description": "공인 IP 및 네트워크 정보 확인"
+    },
+    "keycode-info": {
+      "name": "키코드 정보",
+      "description": "JavaScript 키보드 이벤트 디버거"
+    },
+    "signature-generator": {
+      "name": "서명 생성기",
+      "description": "디지털 서명 그리기 및 다운로드"
+    },
+    "screen-recorder": {
+      "name": "화면 녹화기",
+      "description": "화면 녹화 및 동영상 다운로드"
+    },
+    "credit-card-validator": {
+      "name": "카드 유효성 검사기",
+      "description": "신용카드 번호 유효성 검사"
+    },
+    "password-manager": {
+      "name": "로컬 암호 관리자",
+      "description": "암호화를 통해 비밀번호를 로컬에 안전하게 저장"
+    },
+    "deep-link-tester": {
+      "name": "딥링크 테스터",
+      "description": "모바일 딥링크 테스트, 실행 및 관리"
+    },
+    "image-converter": {
+      "name": "이미지 변환기",
+      "description": "이미지를 최적화하기 위해 PNG/JPG를 WebP로 로컬 변환"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "JSON을 CSV로, 또는 그 반대로 변환"
+    },
+    "bmi-calculator": {
+      "name": "BMI 계산기",
+      "description": "체질량 지수(BMI) 계산"
+    },
+    "dns-lookup": {
+      "name": "DNS 조회",
+      "description": "DNS 레코드(A, MX, NS) 즉시 조회"
+    },
+    "age-calculator": {
+      "name": "나이 계산기",
+      "description": "정확한 나이와 총 일수 계산"
+    },
+    "loan-calculator": {
+      "name": "대출 계산기",
+      "description": "월별 상환금 및 총 이자 계산"
+    },
+    "discount-calculator": {
+      "name": "할인 계산기",
+      "description": "할인 가격 및 절약 금액 계산"
+    },
+    "interest-calculator": {
+      "name": "이자 계산기",
+      "description": "단리 및 복리 이자 계산기"
+    },
+    "html-encoder": {
+      "name": "HTML 인코더/디코더",
+      "description": "특수 문자 이스케이프 및 HTML 디코딩"
+    },
+    "list-sorter": {
+      "name": "목록 정렬기",
+      "description": "목록 정렬, 반전, 셔플 및 중복 제거"
+    },
+    "box-shadow": {
+      "name": "박스 섀도우 생성기",
+      "description": "CSS 박스 섀도우 시각적 생성"
+    },
+    "date-diff": {
+      "name": "날짜 차이 계산기",
+      "description": "두 날짜 사이의 기간 계산"
+    },
+    "sql-to-json": {
+      "name": "SQL에서 JSON으로",
+      "description": "SQL INSERT문을 JSON 객체로 변환"
+    },
+    "keyword-density": {
+      "name": "키워드 밀도",
+      "description": "SEO를 위한 키워드 빈도 분석"
+    },
+    "json-diff": {
+      "name": "JSON 비교기",
+      "description": "두 JSON 객체를 나란히 비교"
+    },
+    "cipher-tools": {
+      "name": "암호 도구",
+      "description": "ROT13 및 카이사르 암호 인코더/디코더"
+    },
+    "token-generator": {
+      "name": "랜덤 토큰 생성기",
+      "description": "안전한 무작위 토큰 생성"
+    },
+    "favicon-generator": {
+      "name": "파비콘 생성기",
+      "description": ".ico 및 PNG 파비콘 생성"
+    },
+    "robots-generator": {
+      "name": "Robots.txt 생성기",
+      "description": "SEO를 위한 robots.txt 생성"
+    },
+    "grid-generator": {
+      "name": "CSS 그리드 생성기",
+      "description": "시각적 CSS 그리드 레이아웃 빌더"
+    },
+    "hmac-generator": {
+      "name": "HMAC 생성기",
+      "description": "키 해시 메시지 인증 코드 생성"
+    },
+    "http-status": {
+      "name": "HTTP 상태 코드",
+      "description": "HTTP 상태 코드 참조 목록"
+    },
+    "week-number": {
+      "name": "주차 번호",
+      "description": "현재 주차 번호 및 연도 진행률"
+    },
+    "text-tools": {
+      "name": "텍스트 변환기",
+      "description": "텍스트 반전, 뒤집기 및 인코딩"
+    },
+    "url-parser": {
+      "name": "URL 파서",
+      "description": "URL을 프로토콜, 호스트, 경로, 파라미터로 분리"
+    },
+    "markdown-table": {
+      "name": "마크다운 테이블 생성기",
+      "description": "마크다운 테이블 시각적 생성"
+    },
+    "whatsapp-link": {
+      "name": "WhatsApp 링크 생성기",
+      "description": "직접 WhatsApp 채팅 링크 생성"
+    },
+    "paypal-link": {
+      "name": "PayPal 링크 생성기",
+      "description": "PayPal.me 결제 링크 생성"
+    },
+    "svg-to-png": {
+      "name": "SVG에서 PNG로",
+      "description": "SVG 코드/파일을 PNG 이미지로 변환"
+    },
+    "prime-factors": {
+      "name": "소인수분해",
+      "description": "숫자의 소인수 찾기"
+    },
+    "iban-validator": {
+      "name": "IBAN 유효성 검사기",
+      "description": "국제 은행 계좌 번호 검증"
+    },
+    "ascii-converter": {
+      "name": "ASCII 변환기",
+      "description": "텍스트를 ASCII 십진수 코드로 변환"
+    },
+    "utm-builder": {
+      "name": "UTM 빌더",
+      "description": "Google Analytics 캠페인 URL 생성"
+    },
+    "meta-tags": {
+      "name": "메타 태그 생성기",
+      "description": "웹사이트용 SEO 메타 태그 생성"
+    },
+    "og-generator": {
+      "name": "오픈 그래프 생성기",
+      "description": "소셜 공유를 위한 오픈 그래프 메타 태그 생성"
+    },
+    "twitter-card": {
+      "name": "트위터 카드 생성기",
+      "description": "트위터 카드 메타 태그 생성"
+    },
+    "aspect-ratio": {
+      "name": "종횡비 계산기",
+      "description": "종횡비 및 치수 계산"
+    },
+    "css-cursor": {
+      "name": "CSS 커서",
+      "description": "시각적 CSS 커서 속성 참조"
+    },
+    "css-triangle": {
+      "name": "CSS 삼각형 생성기",
+      "description": "순수 CSS 삼각형 생성"
+    },
+    "percentage-calculator": {
+      "name": "백분율 계산기",
+      "description": "백분율 및 변화 계산"
+    },
+    "vat-calculator": {
+      "name": "부가세 계산기",
+      "description": "부가세 추가/제거 금액 계산"
+    },
+    "stopwatch": {
+      "name": "스톱워치",
+      "description": "간단한 브라우저 기반 스톱워치"
+    },
+    "text-to-speech": {
+      "name": "텍스트 음성 변환",
+      "description": "텍스트를 음성으로 변환"
+    },
+    "speech-to-text": {
+      "name": "음성 텍스트 변환",
+      "description": "음성을 텍스트로 변환"
+    },
+    "vibration-tester": {
+      "name": "진동 테스터",
+      "description": "기기 진동 모터 테스트"
+    },
+    "chmod-calculator": {
+      "name": "Chmod 계산기",
+      "description": "리눅스 파일 권한 계산"
+    },
+    "crontab-generator": {
+      "name": "Crontab 생성기",
+      "description": "크론 일정 표현식 생성"
+    },
+    "htpasswd-generator": {
+      "name": "Htpasswd 생성기",
+      "description": "기본 인증 항목 생성"
+    },
+    "subnet-calculator": {
+      "name": "서브넷 계산기",
+      "description": "네트워크 서브넷 및 IP 범위 계산"
+    },
+    "mac-generator": {
+      "name": "MAC 주소 생성기",
+      "description": "무작위 MAC 주소 생성"
+    },
+    "timezone-converter": {
+      "name": "시간대 변환기",
+      "description": "여러 시간대 간의 시간 변환"
+    },
+    "email-validator": {
+      "name": "이메일 유효성 검사기",
+      "description": "이메일 형식 검증 및 오타 감지"
+    },
+    "password-strength": {
+      "name": "비밀번호 강도",
+      "description": "비밀번호 강도 점수 확인"
+    },
+    "roman-numerals": {
+      "name": "로마 숫자 변환기",
+      "description": "로마 숫자와 십진수 간 변환"
+    },
+    "margin-calculator": {
+      "name": "마진 계산기",
+      "description": "이익 마진 및 마크업 계산"
+    },
+    "roi-calculator": {
+      "name": "ROI 계산기",
+      "description": "투자 수익률 계산"
+    },
+    "fuel-calculator": {
+      "name": "연료비 계산기",
+      "description": "여행 연료비 계산"
+    },
+    "pretty-print-url": {
+      "name": "URL 예쁘게 꾸미기",
+      "description": "가독성을 위해 URL을 포맷하고 정리"
+    }
+  },
+  "Terms": {
+    "title": "서비스 약관",
+    "lastUpdated": "마지막 업데이트",
+    "sections": {
+      "acceptance": {
+        "title": "1. 약관 동의",
+        "content": "DailyDevTools에 액세스하고 사용함으로써 귀하는 본 계약의 조건과 조항을 준수할 것을 수락하고 동의하게 됩니다."
+      },
+      "useLicense": {
+        "title": "2. 라이센스 사용",
+        "content": "DailyDevTools는 개인 및 상업적 목적으로 무료로 사용할 수 있습니다. 귀하는 다음을 수행할 수 없습니다:",
+        "list": {
+          "0": "사이트의 상당 부분을 리버스 엔지니어링하거나 긁어내려고 시도합니다.",
+          "1": "웹사이트에 손상을 입히거나 웹사이트의 가용성이나 접근성을 저하시키는 방식으로 웹사이트를 사용하십시오."
+        }
+      },
+      "disclaimer": {
+        "title": "3. 면책조항",
+        "content": "DailyDevTools의 도구는 \"있는 그대로\" 제공됩니다. 우리는 명시적이든 묵시적이든 어떠한 보증도 하지 않습니다..."
+      },
+      "limitations": {
+        "title": "4. 제한 사항",
+        "content": "어떠한 경우에도 DailyDevTools 또는 그 공급업체는 손해에 대해 책임을 지지 않습니다..."
+      },
+      "revisions": {
+        "title": "5. 개정",
+        "content": "DailyDevTools에 나타나는 자료에는 기술적, 인쇄상 또는 사진상의 오류가 포함될 수 있습니다..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "개인 정보 보호 정책",
+    "lastUpdated": "마지막 업데이트",
+    "intro": "DailyDevTools에 오신 것을 환영합니다. 우리는 귀하의 개인 정보를 존중하며 귀하의 개인 데이터를 보호하기 위해 최선을 다하고 있습니다.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. 도구 작동 방식(로컬 처리)",
+        "content": "가장 중요한 점은 도구가 브라우저에서 완전히 실행된다는 것입니다. 데이터는 절대 장치를 떠나지 않습니다."
+      },
+      "dataCollection": {
+        "title": "3. 당사가 수집하는 데이터",
+        "content": "우리는 콘텐츠를 수집하지 않습니다. 우리는 사용 통계를 위해 Google Analytics를 사용합니다."
+      },
+      "cookies": {
+        "title": "4. 쿠키",
+        "content": "당사는 분석 및 현지 선호도를 위해 쿠키를 사용합니다."
+      },
+      "thirdParty": {
+        "title": "5. 제3자 링크",
+        "content": "당사 사이트에는 제3자에 대한 링크가 포함될 수 있습니다."
+      },
+      "changes": {
+        "title": "6. 본 정책의 변경 사항",
+        "content": "당사는 수시로 본 정책을 업데이트할 수 있습니다."
+      },
+      "contact": {
+        "title": "7. 문의하기",
+        "content": "GitHub나 소셜 미디어를 통해 문의하세요."
+      }
+    }
+  },
+  "Blog": {
+    "title": "개발자 리소스",
+    "subtitle": "우리가 구축하는 도구와 그 뒤에 숨겨진 개념에 대해 자세히 알아보세요.",
+    "readMore": "더 읽어보세요",
+    "backToBlog": "블로그로 돌아가기",
+    "enjoyedArticle": "이 기사가 마음에 드셨나요?",
+    "checkTools": "우리의 도구를 확인하세요"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "입력",
+      "output": "출력",
+      "format": "체재",
+      "minify": "작게 하다",
+      "download": "다운로드",
+      "copy": "복사",
+      "paste": "반죽",
+      "copied": "복사되었습니다!",
+      "upload": "업로드",
+      "sample": "견본",
+      "clear": "지우기",
+      "indent": "톱니 모양:",
+      "chars": "문자",
+      "error": "오류",
+      "invalid": "잘못된 입력",
+      "result": "결과",
+      "generate": "생성하다",
+      "calculate": "믿다",
+      "convert": "전환하다",
+      "validate": "검증",
+      "resultPlaceholder": "결과가 여기에 표시됩니다..."
+    },
+    "Base64Encoder": {
+      "encode": "인코딩",
+      "decode": "풀다",
+      "textToEncode": "인코딩할 텍스트",
+      "base64ToDecode": "Base64로 디코딩",
+      "enterText": "인코딩할 텍스트를 입력하세요...",
+      "enterBase64": "디코딩하려면 Base64를 입력하세요...",
+      "encodeAction": "Base64로 인코딩",
+      "decodeAction": "Base64에서 디코딩",
+      "base64Output": "Base64 출력",
+      "decodedText": "디코딩된 텍스트",
+      "resultPlaceholder": "결과가 여기에 표시됩니다...",
+      "invalidInput": "{mode}에 대한 입력이 잘못되었습니다."
+    },
+    "QrGenerator": {
+      "content": "콘텐츠",
+      "placeholder": "https://example.com",
+      "customization": "맞춤화",
+      "foreground": "전경",
+      "background": "배경",
+      "download": "다운로드"
+    },
+    "HashGenerator": {
+      "inputText": "텍스트 입력",
+      "placeholder": "해시할 텍스트를 입력하세요...",
+      "waiting": "입력을 기다리는 중..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "새로 생성",
+      "configuration": "구성",
+      "length": "비밀번호 길이",
+      "uppercase": "대문자(A~Z)",
+      "numbers": "숫자(0-9)",
+      "symbols": "기호(!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "여기에 JSON을 붙여넣으세요...",
+      "outputPlaceholder": "형식화된 JSON이 여기에 표시됩니다...",
+      "spaces": "공백"
+    },
+    "UrlEncoder": {
+      "encode": "인코딩",
+      "decode": "풀다",
+      "urlToEncode": "인코딩할 URL",
+      "encodedUrlToDecode": "디코딩할 인코딩된 URL",
+      "enterUrlToEncode": "인코딩할 URL이나 텍스트를 입력하세요...",
+      "enterUrlToDecode": "디코딩할 인코딩된 URL을 입력하세요...",
+      "encodeAction": "인코딩 URL",
+      "decodeAction": "URL 디코딩",
+      "encodedUrl": "인코딩된 URL",
+      "decodedUrl": "디코딩된 URL",
+      "resultPlaceholder": "결과가 여기에 표시됩니다...",
+      "chars": "문자",
+      "invalidInput": "{mode}에 대한 입력이 잘못되었습니다."
+    },
+    "JwtDecoder": {
+      "pasteToken": "JWT 토큰 붙여넣기",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "JWT 디코딩",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "발급됨",
+      "expires": "만료"
+    },
+    "RegexTester": {
+      "expression": "표현",
+      "expressionPlaceholder": "캡처 그룹(abc)...",
+      "testString": "테스트 문자열",
+      "testStringPlaceholder": "여기에 테스트 문자열을 붙여넣으세요...",
+      "matchHighlights": "경기 하이라이트",
+      "matches": "성냥",
+      "matchInfo": "경기 정보",
+      "match": "성냥",
+      "index": "색인",
+      "group": "그룹",
+      "noMatches": "일치하는 항목이 없습니다.",
+      "highlightPlaceholder": "여기서 경기가 강조표시됩니다...",
+      "flagsHelp": "g: 전역, i: 대소문자 무시, m: 여러 줄"
+    },
+    "UuidGenerator": {
+      "generate": "생성하다",
+      "generateCount": "생성하다:",
+      "copyAll": "모두 복사",
+      "copyUuid": "UUID 복사",
+      "generatedAt": "{시간}에 로컬에서 생성됨 • 버전 4 UUID"
+    },
+    "WordCounter": {
+      "words": "단어",
+      "characters": "캐릭터",
+      "sentences": "문장",
+      "paragraphs": "단락",
+      "readingTime": "독서 시간",
+      "min": "min",
+      "textInput": "텍스트 입력",
+      "inputPlaceholder": "여기에 텍스트를 입력하거나 붙여넣어 분석하세요...",
+      "clear": "분명한"
+    },
+    "TimestampConverter": {
+      "timestamp": "타임스탬프",
+      "humanDate": "휴먼데이트",
+      "convert": "전환하다",
+      "currentTimestamp": "현재 타임스탬프",
+      "inputPlaceholder": "Unix 타임스탬프를 입력하세요..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "여기에 SQL 쿼리를 붙여넣으세요...",
+      "outputPlaceholder": "형식화된 SQL이 여기에 표시됩니다..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "여기에 CSS 코드를 붙여넣으세요...",
+      "outputPlaceholder": "축소된 CSS가 여기에 표시됩니다..."
+    },
+    "MarkdownEditor": {
+      "editor": "편집자",
+      "preview": "시사",
+      "inputPlaceholder": "여기에 마크다운을 입력하세요..."
+    },
+    "TextDiff": {
+      "original": "원본 텍스트",
+      "changed": "변경된 텍스트",
+      "compare": "비교하다",
+      "differences": "차이점"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "변환할 텍스트를 입력하세요...",
+      "generatedSlug": "생성된 슬러그"
+    },
+    "ImageCompressor": {
+      "selectImage": "이미지 선택",
+      "quality": "품질",
+      "compress": "압박 붕대",
+      "download": "다운로드",
+      "originalSize": "원본 크기",
+      "compressedSize": "압축 크기"
+    },
+    "LoremIpsum": {
+      "paragraphs": "단락",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "GradientGenerator": {
+      "angle": "각도",
+      "colors": "그림 물감",
+      "addColor": "색상 추가",
+      "copyCss": "CSS 복사"
+    },
+    "AgeCalculator": {
+      "birthDate": "생년월일",
+      "calculate": "믿다",
+      "years": "연령",
+      "months": "개월",
+      "days": "날",
+      "totalDays": "총 일수",
+      "nextBirthday": "다음 생일"
+    },
+    "AsciiConverter": {
+      "text": "텍스트",
+      "ascii": "ASCII",
+      "convert": "전환하다",
+      "inputPlaceholder": "텍스트를 입력하세요..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "가로(X)",
+      "vertical": "세로(Y)",
+      "blur": "흐림",
+      "spread": "확산",
+      "colorOpacity": "색상 및 불투명도",
+      "inset": "삽입"
+    },
+    "BmiCalculator": {
+      "metric": "미터법(kg/cm)",
+      "imperial": "영국식(파운드/인치)",
+      "weight": "무게",
+      "height": "키",
+      "calculate": "BMI 계산",
+      "bmiScore": "귀하의 BMI 점수",
+      "underweight": "저체중",
+      "normal": "정상 체중",
+      "overweight": "초과 중량",
+      "obese": "뚱뚱한"
+    },
+    "CaseConverter": {
+      "inputText": "텍스트 입력",
+      "inputPlaceholder": "여기에 텍스트를 입력하세요...",
+      "upper": "UPPERCASE",
+      "lower": "소문자",
+      "title": "제목 케이스",
+      "sentence": "문장 사례",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "복사",
+      "conversions": "전환",
+      "clear": "분명한"
+    },
+    "ColorConverter": {
+      "hexLabels": "16진수 색상",
+      "rgbLabels": "RGB 색상",
+      "hslLabels": "HSL 색상",
+      "cmykLabels": "CMYK 색상",
+      "copy": "복사",
+      "hexToRgbNote": "* 현재 HEX에서 RGB/HSL로의 변환만 지원됩니다."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "카드번호",
+      "validate": "검증",
+      "valid": "유효한 신용카드 번호",
+      "invalid": "잘못된 신용카드 번호",
+      "placeholder": "카드번호를 입력하세요...",
+      "type": "카드 종류",
+      "checkDigit": "숫자 확인",
+      "luhnValid": "Luhn 알고리즘 유효"
+    },
+    "CipherTools": {
+      "encode": "인코딩",
+      "decode": "풀다",
+      "rot13": "ROT13",
+      "caesar": "카이사르 암호",
+      "shift": "옮기다",
+      "inputPlaceholder": "안녕하세요 세계",
+      "outputPlaceholder": "결과가 여기에 표시됩니다..."
+    },
+    "CronGenerator": {
+      "minute": "분",
+      "hour": "시간",
+      "dayMonth": "일(월)",
+      "month": "월",
+      "dayWeek": "일(주)",
+      "presets": "공통 사전 설정",
+      "everyMinute": "매분",
+      "everyHour": "매시간",
+      "everyDayMidnight": "매일 자정",
+      "everySunday": "매주 일요일",
+      "everyMonth": "매달",
+      "everyYear": "매년",
+      "formatInfo": "형식: * * * * * (분 시간 DayOfMonth 월 DayOfWeek)",
+      "usageInfo": "'모든'에는 *를 사용하고, '모든 n'에는 */n을, 특정 목록에는 1,2,3을 사용합니다."
+    },
+    "DateDiff": {
+      "startDate": "시작일",
+      "endDate": "종료일",
+      "calculate": "믿다",
+      "difference": "차이점",
+      "years": "연령",
+      "months": "개월",
+      "days": "날",
+      "totalDays": "총 일수",
+      "totalWeeks": "총 주",
+      "totalHours": "총 시간"
+    },
+    "DeepLinkTester": {
+      "testLink": "테스트 링크",
+      "savedLinks": "저장된 링크",
+      "searchPlaceholder": "저장된 링크 검색...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "시작하다",
+      "save": "구하다",
+      "delete": "삭제",
+      "opens": "열립니다",
+      "scanQr": "테스트하려면 모바일 장치로 스캔하세요.",
+      "noSavedLinks": "저장된 링크가 없습니다.",
+      "enterLabel": "이 링크에 대한 라벨을 입력하세요:",
+      "saved": "저장되었습니다!",
+      "confirmDelete": "이 링크를 삭제하시겠습니까?"
+    },
+    "DeviceInfo": {
+      "screen": "화면",
+      "browser": "브라우저",
+      "system": "체계",
+      "resolution": "해결",
+      "colorDepth": "색상 심도",
+      "userAgent": "사용자 에이전트",
+      "platform": "플랫폼",
+      "language": "언어"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "원래 가격",
+      "discountPercent": "할인",
+      "additionalDiscount": "추가 할인",
+      "calculate": "믿다",
+      "youSave": "당신은 저장",
+      "finalPrice": "최종 가격",
+      "salesTax": "판매세"
+    },
+    "DnsLookup": {
+      "domain": "도메인",
+      "lookup": "조회",
+      "recordType": "레코드 유형",
+      "results": "결과",
+      "placeholder": "example.com",
+      "status": "상태",
+      "time": "시간",
+      "server": "섬기는 사람",
+      "answerSection": "답변 섹션",
+      "name": "이름",
+      "type": "유형",
+      "ttl": "TTL",
+      "data": "데이터",
+      "noRecords": "기록을 찾을 수 없습니다"
+    },
+    "EmailValidator": {
+      "email": "이메일 주소",
+      "validate": "검증",
+      "valid": "유효한",
+      "invalid": "유효하지 않은",
+      "suggestion": "제안",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "이미지 업로드",
+      "generate": "생성하다",
+      "download": "다운로드",
+      "sizes": "크기"
+    },
+    "FuelCalculator": {
+      "distance": "거리",
+      "fuelEfficiency": "연료 효율",
+      "fuelPrice": "연료 가격",
+      "calculate": "믿다",
+      "result": "결과",
+      "totalCost": "총 비용",
+      "fuelNeeded": "연료 필요"
+    },
+    "GridGenerator": {
+      "columns": "열",
+      "rows": "행",
+      "gap": "갭",
+      "preview": "시사",
+      "copyCss": "CSS 복사",
+      "rowGap": "행 간격",
+      "colGap": "기둥 간격",
+      "options": "옵션"
+    },
+    "HmacGenerator": {
+      "message": "메시지",
+      "secret": "비밀",
+      "algorithm": "연산",
+      "generate": "생성하다",
+      "inputPlaceholder": "텍스트 입력...",
+      "secretPlaceholder": "비밀..."
+    },
+    "HtmlEncoder": {
+      "encode": "인코딩",
+      "decode": "풀다",
+      "resultPlaceholder": "결과가 여기에 표시됩니다...",
+      "inputPlaceholder": "여기에 HTML을 붙여넣으세요..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "검색 코드(예: 404) 또는 이름...",
+      "code": "암호",
+      "name": "이름",
+      "description": "설명"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "검증",
+      "valid": "유효한",
+      "invalid": "유효하지 않은",
+      "placeholder": "IBAN을 입력하세요...",
+      "inputLabel": "IBAN 번호 입력",
+      "validTitle": "유효한 벤치마크",
+      "invalidTitle": "잘못된 체크섬",
+      "validDesc": "IBAN 형식과 체크섬이 정확합니다.",
+      "invalidDesc": "IBAN이 체크섬 알고리즘과 일치하지 않습니다."
+    },
+    "ImageBase64": {
+      "upload": "업로드",
+      "convert": "전환하다",
+      "copy": "복사",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "이미지 업로드",
+      "convertToBase64": "Base64로 변환",
+      "convertToImage": "이미지로 변환",
+      "base64String": "Base64 문자열",
+      "download": "다운로드"
+    },
+    "ImageConverter": {
+      "selectImage": "이미지 선택",
+      "format": "체재",
+      "convert": "전환하다",
+      "download": "다운로드",
+      "quality": "품질"
+    },
+    "InterestCalculator": {
+      "principal": "주요한",
+      "rate": "이자율",
+      "time": "기간(년)",
+      "calculate": "믿다",
+      "simpleInterest": "단순한",
+      "compoundInterest": "화합물",
+      "totalAmount": "총 가치",
+      "type": "유형",
+      "frequency": "복합 주파수",
+      "annually": "매년",
+      "monthly": "월간 간행물",
+      "daily": "일일",
+      "year": "년도"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "JSON을 입력하세요...",
+      "convert": "전환하다",
+      "format": "체재",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON을 CSV로",
+      "csvToJson": "CSV를 JSON으로",
+      "jsonInput": "JSON 입력",
+      "csvInput": "CSV 입력",
+      "jsonOutput": "JSON 출력",
+      "csvOutput": "CSV 출력"
+    },
+    "JsonDiff": {
+      "original": "원본 JSON",
+      "modified": "수정된 JSON",
+      "compare": "비교하다",
+      "differences": "차이점"
+    },
+    "KeycodeInfo": {
+      "pressKey": "아무 키나 누르세요",
+      "key": "열쇠",
+      "code": "암호",
+      "keyCode": "키코드",
+      "which": "어느",
+      "location": "위치",
+      "modifiers": "수정자",
+      "standard": "기준",
+      "left": "왼쪽",
+      "right": "오른쪽",
+      "numpad": "숫자패드",
+      "space": "(공간)",
+      "info": "JavaScript 이벤트 KeyCode, 코드 등을 표시합니다."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "키워드 빈도를 분석하려면 여기에 텍스트를 붙여넣으세요...",
+      "analyze": "분석하다",
+      "keyword": "예어",
+      "count": "세다",
+      "density": "밀도"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "여기에 목록을 입력하세요...",
+      "sort": "종류",
+      "reverse": "뒤집다",
+      "shuffle": "혼합",
+      "deduplicate": "중복 제거",
+      "ascending": "오름차순",
+      "descending": "내림차순",
+      "length": "길이",
+      "trim": "비우기",
+      "lines": "윤곽:",
+      "chars": "캐릭터:"
+    },
+    "LoanCalculator": {
+      "principal": "주요한",
+      "interestRate": "이자율",
+      "term": "용어",
+      "calculate": "믿다",
+      "monthlyPayment": "월별 결제",
+      "totalInterest": "총 이자",
+      "totalPayment": "총 결제금액",
+      "loanDetails": "대출내역",
+      "loanAmount": "대출금액",
+      "loanTerm": "대출기간",
+      "years": "연령",
+      "months": "개월",
+      "interest": "관심"
+    },
+    "MacGenerator": {
+      "generate": "생성하다",
+      "copy": "복사",
+      "separator": "분리 기호",
+      "format": "체재",
+      "quantity": "수량",
+      "uppercase": "대문자"
+    },
+    "MarginCalculator": {
+      "cost": "비용",
+      "price": "판매가격",
+      "calculate": "믿다",
+      "margin": "여유",
+      "markup": "마크업",
+      "profit": "이익",
+      "revenue": "수익",
+      "netProfit": "순이익",
+      "grossMargin": "총이익"
+    },
+    "PasswordManager": {
+      "masterPassword": "마스터 비밀번호",
+      "unlock": "터놓다",
+      "searchPlaceholder": "계정 검색...",
+      "addNew": "새로 추가",
+      "siteName": "사이트 이름",
+      "username": "사용자 이름",
+      "password": "비밀번호",
+      "save": "구하다",
+      "delete": "삭제"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "여기에 입력하세요...",
+      "strength": "힘",
+      "weak": "약한",
+      "fair": "공정한",
+      "good": "좋은",
+      "strong": "강한",
+      "requirements": "요구사항",
+      "length": "8자 이상",
+      "number": "숫자 포함",
+      "uppercase": "대문자 포함",
+      "symbol": "기호 포함"
+    },
+    "PayPalLink": {
+      "username": "PayPal.me 사용자 이름",
+      "amount": "양",
+      "currency": "통화",
+      "generate": "생성하다",
+      "itemName": "품목 이름",
+      "link": "링크",
+      "yourLink": "귀하의 PayPal 링크",
+      "openPaypal": "페이팔 열기"
+    },
+    "RobotsGenerator": {
+      "rules": "규칙",
+      "addRule": "규칙 추가",
+      "allow": "허용하다",
+      "disallow": "허용하지 않음",
+      "sitemap": "사이트맵 URL(선택사항)",
+      "output": "생성된 robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "값",
+      "percentage": "백분율",
+      "calculate": "믿다",
+      "result": "결과",
+      "whatIs": "무엇인가요",
+      "of": "% 의",
+      "isWhatPercentOf": "%는 무엇입니까?",
+      "percentChangeFrom": "% 변화",
+      "to": "에게"
+    },
+    "PomodoroTimer": {
+      "work": "집중 시간",
+      "shortBreak": "짧은 휴식",
+      "longBreak": "긴 휴식",
+      "start": "시작",
+      "pause": "정지시키다",
+      "reset": "다시 놓기",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "숫자",
+      "calculate": "믿다",
+      "factors": "소인수",
+      "inputLabel": "숫자를 입력하세요",
+      "placeholder": "예를 들어 120",
+      "isPrime": "이 번호는 프라임입니다!",
+      "isComposite": "이 숫자는 합성입니다"
+    },
+    "RoiCalculator": {
+      "investment": "투자",
+      "returns": "보고",
+      "calculate": "믿다",
+      "roi": "ROI",
+      "profit": "이익",
+      "finalValue": "최종 값",
+      "time": "시간(년)",
+      "totalGain": "총 이득",
+      "annualizedRoi": "연간 ROI"
+    },
+    "RomanNumerals": {
+      "decimal": "소수",
+      "decimalPlaceholder": "2024",
+      "roman": "로마 인",
+      "convert": "전환하다",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "녹음 시작",
+      "stopRecording": "녹음 중지",
+      "download": "다운로드",
+      "recording": "녹음..."
+    },
+    "SignatureGenerator": {
+      "draw": "그리다",
+      "clear": "분명한",
+      "download": "다운로드",
+      "penColor": "펜 색상",
+      "penSize": "펜 크기"
+    },
+    "SpeechToText": {
+      "startListening": "듣기 시작",
+      "stopListening": "듣기 중지",
+      "transcript": "성적 증명서",
+      "placeholder": "성적표가 여기에 표시됩니다..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO 사용자(ID, 이름, 나이) VALUES (1, 'John', 30);",
+      "convert": "전환하다",
+      "result": "결과"
+    },
+    "Stopwatch": {
+      "start": "시작",
+      "stop": "멈추다",
+      "reset": "다시 놓기",
+      "lap": "무릎"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP 주소",
+      "subnetMask": "서브넷 마스크",
+      "calculate": "믿다",
+      "networkAddress": "네트워크 주소",
+      "broadcastAddress": "방송 주소",
+      "usableHosts": "사용 가능한 호스트"
+    },
+    "SvgToPng": {
+      "pasteSvg": "SVG 붙여넣기",
+      "uploadSvg": "SVG 업로드",
+      "convert": "전환하다",
+      "download": "다운로드"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "말하려면 텍스트를 입력하세요...",
+      "speak": "말하다",
+      "stop": "멈추다",
+      "voice": "목소리",
+      "rate": "비율",
+      "pitch": "정점"
+    },
+    "TextTools": {
+      "inputPlaceholder": "뭔가를 입력하세요...",
+      "reverse": "뒤집다",
+      "uppercase": "대문자",
+      "lowercase": "소문자",
+      "encode": "인코딩"
+    },
+    "TimezoneConverter": {
+      "from": "에서",
+      "to": "에게",
+      "convert": "전환하다",
+      "currentTime": "현재 시간"
+    },
+    "TokenGenerator": {
+      "length": "길이",
+      "generate": "생성하다",
+      "copy": "복사",
+      "includeNumbers": "숫자 포함",
+      "includeSymbols": "기호 포함"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "URL을 입력하세요...",
+      "parse": "구문 분석",
+      "protocol": "규약",
+      "host": "주인",
+      "path": "길",
+      "query": "질문"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "웹사이트 URL",
+      "source": "원천",
+      "medium": "중간",
+      "campaign": "운동",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "VatCalculator": {
+      "amount": "양",
+      "vatRate": "부가가치세율",
+      "addVat": "부가가치세 추가",
+      "removeVat": "부가가치세 제거",
+      "calculate": "믿다"
+    },
+    "VibrationTester": {
+      "vibrate": "떨리다",
+      "pattern": "무늬",
+      "duration": "지속",
+      "test": "시험"
+    },
+    "WeekNumber": {
+      "currentWeek": "현재 주 번호",
+      "yearProgress": "연도 진행",
+      "week": "주"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "전화 번호",
+      "message": "메시지",
+      "generate": "생성하다",
+      "copy": "복사",
+      "placeholder": "안녕하세요, 관심이 있습니다..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "YouTube 동영상 URL 붙여넣기...",
+      "getThumbnail": "썸네일 가져오기",
+      "download": "다운로드"
+    },
+    "CrontabGenerator": {
+      "minute": "분",
+      "hour": "시간",
+      "day": "낮",
+      "month": "월",
+      "weekday": "주일",
+      "expression": "표현",
+      "description": "설명"
+    },
+    "ChmodCalculator": {
+      "owner": "소유자",
+      "group": "그룹",
+      "others": "기타",
+      "read": "읽다",
+      "write": "쓰다",
+      "execute": "실행하다",
+      "numeric": "숫자",
+      "symbolic": "상징적"
+    },
+    "HtpasswdGenerator": {
+      "username": "사용자 이름",
+      "password": "비밀번호",
+      "algorithm": "연산",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "AspectRatio": {
+      "width": "너비",
+      "height": "키",
+      "ratio": "비율",
+      "calculate": "믿다"
+    },
+    "CssClipPath": {
+      "shape": "모양",
+      "preview": "시사",
+      "copyCss": "CSS 복사"
+    },
+    "CssCursor": {
+      "cursor": "커서",
+      "preview": "시사",
+      "copyCss": "CSS 복사"
+    },
+    "CssTriangle": {
+      "direction": "방향",
+      "size": "크기",
+      "color": "색상",
+      "preview": "시사",
+      "copyCss": "CSS 복사"
+    },
+    "MetaGenerator": {
+      "title": "제목",
+      "description": "설명",
+      "keywords": "키워드",
+      "author": "작가",
+      "url": "URL",
+      "image": "영상",
+      "generate": "생성하다",
+      "copy": "복사",
+      "titlePlaceholder": "내 멋진 웹사이트",
+      "descriptionPlaceholder": "사이트에 대한 간략한 설명...",
+      "keywordsPlaceholder": "웹, 도구, 개발자",
+      "authorPlaceholder": "당신의 이름",
+      "outputPlaceholder": "메타태그가 여기에 표시됩니다..."
+    },
+    "OgGenerator": {
+      "title": "제목",
+      "description": "설명",
+      "url": "URL",
+      "image": "영상",
+      "type": "유형",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "TwitterCard": {
+      "cardType": "카드 종류",
+      "title": "제목",
+      "description": "설명",
+      "image": "영상",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "MarkdownTable": {
+      "rows": "행",
+      "columns": "열",
+      "header": "헤더",
+      "addRow": "행 추가",
+      "addColumn": "열 추가",
+      "generate": "생성하다",
+      "copy": "복사"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "체재",
+      "copy": "복사"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "JSON 형식 지정: 개발자를 위한 모범 사례",
+      "excerpt": "디버깅에 적절한 JSON 형식이 중요한 이유와 워크플로에서 이를 자동화하는 방법을 알아보세요.",
+      "category": "개발"
+    },
+    "mastering-regex": {
+      "title": "정규식 익히기: 시각적 가이드",
+      "excerpt": "정규식은 무서울 필요가 없습니다. 이메일 검증, URL 등에 대한 일반적인 패턴을 분석합니다.",
+      "category": "지도 시간"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron 작업에 대한 이해: 작업 예약 방법",
+      "excerpt": "Cron의 5성급 구문과 Linux에서 백업, 이메일, 스크립트를 예약하는 방법을 이해하세요.",
+      "category": "데브옵스"
+    },
+    "secure-password-storage-local": {
+      "title": "로컬 비밀번호 관리자가 더 안전한 이유(KeyPass 대안)",
+      "excerpt": "클라우드 침해는 흔히 발생합니다. AES-256 암호화를 사용하여 로컬에 비밀번호를 저장하는 것이 개인 보안을 위한 가장 안전한 방법인 이유를 알아보세요.",
+      "category": "보안"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "검색 도구...",
+    "noResults": "검색된 결과가 없습니다.",
+    "select": "선택하다",
+    "navigate": "탐색"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "피드백 보내기",
+    "feedback": "피드백",
+    "thankYou": "감사합니다!",
+    "feedbackSent": "귀하의 의견이 성공적으로 전송되었습니다.",
+    "close": "닫다",
+    "name": "이름(선택사항)",
+    "namePlaceholder": "당신의 이름",
+    "email": "이메일(선택사항)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "피드백 유형",
+    "typeSuggestion": "💡 제안",
+    "typeBug": "🐛 버그 신고",
+    "typeFeature": "✨ 기능 요청",
+    "typeOther": "📝 기타",
+    "message": "메시지 *",
+    "messagePlaceholder": "당신의 생각을 말해주세요...",
+    "sending": "배상...",
+    "weReadEveryMessage": "우리는 모든 메시지를 읽습니다. 개선하는 데 도움을 주셔서 감사합니다!"
+  },
+  "ShareButton": {
+    "shareTool": "공유 도구",
+    "copiedLink": "링크 복사했습니다!"
+  },
+  "TextDiff": {
+    "original": "원본 텍스트",
+    "changed": "변경된 텍스트",
+    "update": "차이점 업데이트",
+    "old": "오래된",
+    "new": "새로운",
+    "content": "콘텐츠"
+  },
+  "CrontabGenerator": {
+    "minute": "분",
+    "hour": "시간",
+    "day": "낮",
+    "month": "월",
+    "weekday": "주일",
+    "min": "최소",
+    "mon": "월",
+    "week": "주",
+    "presets": "빠른 사전 설정",
+    "everyMinute": "매분",
+    "every5Minutes": "5분마다",
+    "everyHour": "매시간",
+    "everyDayMidnight": "매일 자정",
+    "everyWeek": "매주",
+    "everyMonth": "매달"
+  },
+  "SpeechToText": {
+    "notSupported": "귀하의 브라우저는 Web Speech API를 지원하지 않습니다. 크롬을 이용해 주세요.",
+    "placeholder": "성적표가 여기에 표시됩니다...",
+    "listening": "청취...",
+    "start": "시작하려면 마이크를 클릭하세요."
+  },
+  "OgGenerator": {
+    "title": "제목",
+    "description": "설명",
+    "image": "이미지 URL",
+    "url": "표준 URL",
+    "type": "유형",
+    "website": "웹사이트",
+    "article": "기사",
+    "profile": "윤곽",
+    "preview": "미리보기(페이스북/링크드인)",
+    "generatedHtml": "생성된 HTML",
+    "copy": "복사"
+  },
+  "WeekNumber": {
+    "checkLabel": "날짜의 주 번호 확인",
+    "yearProgress": "연도 진행"
+  },
+  "RelatedTools": {
+    "title": "당신은 또한 좋아할 수도 있습니다",
+    "subtitle": "다른 인기 있는 개발자 도구 살펴보기",
+    "openTool": "도구 열기"
+  },
+  "Breadcrumb": {
+    "home": "집",
+    "tools": "도구"
+  },
+  "SvgToPng": {
+    "upload": "SVG 파일 업로드",
+    "browse": "또는 클릭하여 찾아보세요.",
+    "paste": "...또는 SVG 코드 붙여넣기",
+    "preview": "PNG 미리보기(2배율)",
+    "download": "PNG 다운로드",
+    "errorType": "유효한 SVG 파일을 업로드하세요.",
+    "errorRender": "SVG를 렌더링하지 못했습니다. 유효한 XML인지 확인하세요.",
+    "errorProcess": "SVG 처리 중 오류가 발생했습니다."
+  },
+  "GradientGenerator": {
+    "config": "구성",
+    "colors": "그림 물감",
+    "type": "유형",
+    "angle": "각도",
+    "random": "무작위의",
+    "copyCss": "CSS 복사",
+    "copied": "복사됨"
+  },
+  "TimezoneConverter": {
+    "date": "날짜",
+    "time": "시간(현지)",
+    "invalid": "유효하지 않은",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "뉴욕(EST/EDT)",
+      "losAngeles": "로스앤젤레스(PST/PDT)",
+      "london": "런던(GMT/BST)",
+      "paris": "파리(CET/CEST)",
+      "tokyo": "도쿄(JST)",
+      "sydney": "시드니(AEST/AEDT)",
+      "dubai": "두바이(GST)",
+      "india": "인도(IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "숫자 생성기",
+    "listGen": "목록 생성기",
+    "coinGen": "코인 생성기",
+    "min": "최소",
+    "max": "맥스",
+    "count": "세다",
+    "generate": "생성하다",
+    "listLabel": "목록 항목(한 줄에 하나씩)",
+    "pick": "무작위 항목 선택",
+    "winner": "승자는...",
+    "flip": "동전 뒤집기",
+    "heads": "머리",
+    "tails": "꼬리"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "화면을 녹화하는 중...",
+    "titleFree": "무료 온라인 스크린 레코더",
+    "desc": "화면, 앱 창 또는 브라우저 탭을 캡처하세요. 워터마크도 없고 시간 제한도 없습니다.",
+    "start": "녹음 시작",
+    "stop": "녹음 중지",
+    "browserSupport": "데스크톱의 Chrome, Edge 및 Firefox에서 가장 잘 작동합니다."
+  },
+  "CssCursor": {
+    "hoverTest": "테스트하려면 여기로 마우스를 가져가세요."
+  },
+  "VatCalculator": {
+    "amount": "양",
+    "rate": "부가가치세율(%)",
+    "addVat": "부가가치세 추가",
+    "removeVat": "부가가치세 제거",
+    "netAmount": "정",
+    "vatAmount": "부가가치세 금액",
+    "grossTotal": "총계",
+    "netTotal": "순총액",
+    "grossAmount": "총액"
+  },
+  "MyIP": {
+    "ipLabel": "귀하의 공개 IP 주소",
+    "loading": "로드 중...",
+    "isp": "인터넷 제공업체(ISP)",
+    "location": "위치",
+    "asn": "ASN",
+    "timezone": "시간대",
+    "note": "이는 귀하가 방문하는 웹사이트에 표시되는 IP 주소입니다. VPN이나 ​​프록시를 사용하는 경우 로컬 IP와 다를 수 있습니다."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "URL을 입력하세요",
+    "formatted": "형식화된 출력",
+    "copy": "복사",
+    "copied": "복사됨",
+    "placeholder": "형식이 지정되었는지 확인하려면 위에 URL을 붙여넣으세요."
+  },
+  "WhatsAppLink": {
+    "phone": "전화번호(국가 코드 포함)",
+    "message": "미리 채워진 메시지",
+    "hint": "+, - 또는 ()를 포함하지 마십시오.",
+    "yourLink": "귀하의 WhatsApp 링크",
+    "open": "오픈채팅"
+  },
+  "UrlParser": {
+    "enterUrl": "URL을 입력하세요",
+    "params": "쿼리 매개변수",
+    "error": "잘못된 URL"
+  },
+  "FaviconGenerator": {
+    "upload": "이미지 업로드",
+    "browse": "권장: 512x512 PNG",
+    "original": "원래의",
+    "favicon": "favicon.ico(32x32)",
+    "download": "Favicon.png 다운로드",
+    "note": "* 현재 32x32 PNG 파비콘을 생성합니다. 레거시 지원이 필요한 경우 이름을 .ico로 바꿉니다."
+  },
+  "SubnetCalculator": {
+    "ip": "IP 주소",
+    "cidr": "CIDR(/{cidr})",
+    "calculate": "믿다",
+    "subnetMask": "서브넷 마스크",
+    "networkAddress": "네트워크 주소",
+    "firstHost": "첫 번째 호스트",
+    "lastHost": "마지막 호스트",
+    "broadcastAddress": "방송 주소",
+    "totalHosts": "총 호스트"
+  },
+  "SlugGenerator": {
+    "inputLabel": "기사 제목/텍스트 입력",
+    "generated": "생성된 슬러그",
+    "copy": "슬러그 복사"
+  },
+  "SqlToJson": {
+    "inputLabel": "입력 SQL(INSERT 문만 해당)",
+    "convert": "JSON으로 변환",
+    "error": "SQL을 구문 분석할 수 없습니다. 표준 INSERT INTO 문인지 확인하세요."
+  },
+  "MarkdownTable": {
+    "addRow": "+ 행 추가",
+    "addCol": "+ 열 추가",
+    "headerPlaceholder": "헤더",
+    "outputLabel": "마크다운 출력",
+    "copy": "마크다운 복사"
+  },
+  "TwitterCard": {
+    "cardType": "카드 종류",
+    "siteHandle": "사이트 핸들(예: @twitter)",
+    "title": "제목",
+    "description": "설명",
+    "imageUrl": "이미지 URL",
+    "preview": "시사",
+    "generatedHtml": "생성된 HTML",
+    "copy": "복사",
+    "placeholderTitle": "카드 제목",
+    "placeholderDesc": "설명은 여기에 있습니다..."
+  },
+  "TextToSpeech": {
+    "placeholder": "말하려면 텍스트를 입력하세요...",
+    "voice": "목소리",
+    "speed": "속도",
+    "pitch": "정점",
+    "speak": "말하다"
+  },
+  "TokenGenerator": {
+    "length": "길이",
+    "includeNumbers": "숫자 포함",
+    "includeSymbols": "기호 포함",
+    "generate": "토큰 생성"
+  },
+  "CssTriangle": {
+    "direction": "방향",
+    "color": "색상",
+    "width": "너비(픽셀)",
+    "height": "높이(px)",
+    "copy": "복사"
+  },
+  "UnitConverter": {
+    "length": "길이",
+    "weight": "무게",
+    "temperature": "온도",
+    "meters": "미터",
+    "kilometers": "킬로미터",
+    "centimeters": "센티미터",
+    "millimeters": "밀리미터",
+    "inches": "신장",
+    "feet": "피트",
+    "yards": "야드",
+    "miles": "마일리지",
+    "kilograms": "킬로그램",
+    "grams": "그램",
+    "pounds": "파운드",
+    "ounces": "온스",
+    "celsius": "섭씨",
+    "fahrenheit": "화씨",
+    "kelvin": "켈빈"
+  },
+  "CssClipPath": {
+    "shapes": "모양",
+    "preview": "시사",
+    "cssCode": "CSS 코드",
+    "copy": "복사",
+    "copied": "복사됨"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "이미지 업로드",
+    "uploadDesc": "JPG, PNG 또는 WebP. 우리는 그것을 로컬로 압축합니다.",
+    "selectImage": "이미지 선택",
+    "settings": "압축 설정",
+    "quality": "품질",
+    "originalSize": "원본 크기",
+    "compressedSize": "압축 크기",
+    "saving": "절약",
+    "download": "다운로드"
+  },
+  "HtpasswdGenerator": {
+    "username": "사용자 이름",
+    "password": "비밀번호",
+    "algorithm": "연산",
+    "generate": "항목 생성",
+    "result": "결과",
+    "sha1": "SHA-1(안전하지 않지만 표준)",
+    "notSupported": "이 클라이언트측 버전에서는 SHA-1만 지원됩니다."
+  },
+  "MetaTags": {
+    "pageTitle": "페이지 제목",
+    "description": "설명",
+    "author": "작가"
+  },
+  "AgeCalculator": {
+    "dob": "생일",
+    "age": "나이",
+    "years": "연령",
+    "months": "개월",
+    "days": "날",
+    "nextBirthday": "다음 생일"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "웹사이트 URL (필수)",
+    "source": "캠페인 소스(필수)",
+    "medium": "캠페인 매체(필수)",
+    "name": "캠페인 이름(필수)",
+    "term": "캠페인 기간(선택사항)",
+    "content": "캠페인 내용(선택사항)",
+    "generatedUrl": "생성된 URL",
+    "copy": "URL 복사"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "현재 유닉스 시간",
+    "timestampLabel": "타임스탬프(초)",
+    "isoLabel": "ISO 날짜 형식",
+    "utcDate": "UTC 날짜",
+    "localDate": "현지 날짜",
+    "relative": "상대적인"
+  },
+  "SignatureGenerator": {
+    "color": "색상",
+    "width": "너비",
+    "clear": "분명한",
+    "download": "PNG 다운로드",
+    "signHere": "여기에 서명하세요",
+    "note": "서명은 브라우저에서 로컬로 처리됩니다. 우리는 이를 저장하거나 업로드하지 않습니다."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "실시간 미리보기"
+  },
+  "CipherTools": {
+    "shiftAmount": "교대량(N)",
+    "inputText": "텍스트 입력",
+    "outputText": "출력 텍스트",
+    "rot13": "ROT13",
+    "caesar": "카이사르 (+3)",
+    "shift1": "시프트 +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "화면 해상도",
+    "browser": "브라우저",
+    "cpuCores": "CPU 코어",
+    "battery": "배터리",
+    "detailedSpecs": "상세사양",
+    "userAgent": "사용자 에이전트",
+    "platform": "플랫폼",
+    "windowSize": "창 크기",
+    "pixelRatio": "픽셀 비율",
+    "colorDepth": "색상 심도",
+    "ram": "RAM",
+    "cookiesEnabled": "쿠키 활성화",
+    "onlineStatus": "온라인 상태",
+    "unknown": "알려지지 않은",
+    "yes": "예",
+    "no": "아니요",
+    "enabled": "활성화됨",
+    "disabled": "장애가 있는"
+  },
+  "ChmodCalculator": {
+    "owner": "소유자",
+    "group": "그룹",
+    "public": "공공의",
+    "read": "읽다",
+    "write": "쓰다",
+    "execute": "실행하다",
+    "numeric": "숫자",
+    "symbolic": "상징적"
+  },
+  "PasswordManager": {
+    "title": "비밀번호 관리자",
+    "desc": "비밀번호를 로컬에 안전하게 저장하고 관리하세요.",
+    "unlock": "금고 잠금 해제",
+    "create": "새 볼트 생성",
+    "unlockDesc": "계정에 액세스하려면 마스터 비밀번호를 입력하세요.",
+    "createDesc": "강력한 마스터 비밀번호를 설정하세요. 데이터를 로컬로 암호화합니다.",
+    "masterPassword": "마스터 비밀번호",
+    "unlockBtn": "터놓다",
+    "createBtn": "볼트 생성",
+    "note": "데이터는 AES-GCM 암호화를 사용하여 브라우저에 저장됩니다. 비밀번호를 분실한 경우 복구할 수 없습니다.",
+    "myPasswords": "내 비밀번호",
+    "addNew": "새로 추가",
+    "search": "계정 검색...",
+    "noPasswords": "비밀번호를 찾을 수 없습니다.",
+    "addAccount": "계정 추가",
+    "accountTitle": "제목 / 웹사이트",
+    "username": "사용자 이름 / 이메일",
+    "password": "비밀번호",
+    "url": "URL(선택사항)",
+    "save": "계정 저장",
+    "cancel": "취소",
+    "incorrectPassword": "비밀번호가 잘못되었거나 데이터가 손상되었습니다.",
+    "loading": "로드 중..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "웹사이트 세부정보",
+    "pageTitle": "페이지 제목",
+    "description": "설명",
+    "keywords": "키워드(쉼표로 구분)",
+    "author": "작가",
+    "socialPreview": "소셜 미리보기(OG 및 Twitter)",
+    "websiteUrl": "웹사이트 URL",
+    "previewImage": "미리보기 이미지 URL",
+    "generatedHtml": "생성된 HTML",
+    "copy": "HTML 복사",
+    "copied": "복사됨"
+  },
+  "VibrationTester": {
+    "worksOnly": "진동 하드웨어가 있는 장치(예: 휴대폰)에서만 작동합니다.",
+    "duration": "기간(밀리초)",
+    "vibrateOnce": "한 번 진동",
+    "pulsePattern": "펄스 패턴",
+    "longPulse": "긴 펄스",
+    "stop": "멈추다"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "JSON 형식 지정이 중요한 이유",
+      "block_2": "JSON(JavaScript Object Notation)은 웹 언어입니다.그러나 API에서 반환된 원시 JSON은 축소된 엉망인 경우가 많습니다.형식을 지정하면 읽기 쉽고 디버깅이 가능하며 안전합니다.",
+      "block_3": "1.가독성이 가장 중요합니다",
+      "block_4": "5000줄 API 응답을 디버깅할 때 들여쓰기를 사용하면 생명을 구할 수 있습니다.<a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON 포맷터</a>는 2칸 또는 4칸 들여쓰기를 사용하여 구조를 명확하게 합니다.",
+      "block_5": "2.검증",
+      "block_6": "쉼표 하나가 누락되면 앱이 중단될 수 있습니다.JSON을 구성 파일에 커밋하기 전에 항상 유효성을 검사하세요.",
+      "block_7": "결론",
+      "block_8": "대괄호를 수동으로 확인하느라 시간을 낭비하지 마세요.자동화된 도구를 사용하세요."
+    },
+    "mastering-regex": {
+      "block_1": "정규식 설명",
+      "block_2": "정규식은 강력하지만 혼란스럽습니다.시각화해 보겠습니다.",
+      "block_3": "공통 패턴",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">이메일:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 둥근 글꼴-모노 텍스트-[0.9em] 텍스트-[#fb923c] 테두리border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">전화:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 둥근 글꼴-모노 텍스트-[0.9em] 텍스트-[#fb923c] 테두리border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "<a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">정규식 테스터</a>를 사용하여 이러한 패턴을 즉시 테스트하세요."
+    },
+    "cron-job-scheduling": {
+      "block_1": "크론의 5개 별",
+      "block_2": "분, 시, 일, 월, 요일.그게 전부입니다.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px]font-semibold text-[var(--title-color)] mt-8 mb-4\">예</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">매일 자정에 실행: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 roundedfont-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "예",
+      "block_6": "15분마다 실행: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 roundedfont-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "도움이 필요하신가요?<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron 생성기</a>를 사용하여 표현식을 시각적으로 작성하세요."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Cloud Vault 문제",
+      "block_2": "LastPass, Okta 및 기타 거대 기업이 침해를 겪었습니다.Vault가 온라인 상태이면 대상이 됩니다.",
+      "block_3": "해결책: 로컬 암호화",
+      "block_4": "새 <strong class=\"text-[var(--title-color)]font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">로컬 비밀번호 관리자</a></strong>는 전적으로 브라우저에서 실행됩니다.PBKDF2를 사용하여 마스터 비밀번호에서 파생된 <strong class=\"text-[var(--title-color)]font-semibold\">AES-GCM 256비트 암호화</strong>를 사용합니다.",
+      "block_5": "작동 방식",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">Zero Knowledge:</strong> 우리는 귀하의 비밀번호를 결코 볼 수 없습니다.기기를 떠나지 않습니다.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">오프라인 저장소:</strong> 암호화된 저장소는 브라우저의 LocalStorage에 저장됩니다.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">내보내기 가능:</strong> 암호화된 원시 데이터를 언제든지 내보내거나 백업할 수 있습니다.</li>",
+      "block_7": "마스터 키로 클라우드를 신뢰하지 마세요.지금 <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">로컬 비밀번호 관리자를 사용해 보세요</a>."
+    }
+  }
+}

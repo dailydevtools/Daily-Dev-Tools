@@ -1,0 +1,1816 @@
+{
+  "Header": {
+    "title": "DailyDevTools",
+    "tools": "Інструменти",
+    "blog": "Блог",
+    "github": "GitHub",
+    "searchPlaceholder": "Пошук..."
+  },
+  "Metadata": {
+    "title": "DailyDevTools - Безкоштовні онлайн-інструменти для розробників",
+    "description": "90+ безкоштовних онлайн-інструментів для всіх. Форматери, конвертери, генератори та утиліти. Швидко, приватно та без реєстрації."
+  },
+  "NotFound": {
+    "title": "Сторінку не знайдено",
+    "description": "Вибачте, ми не змогли знайти сторінку, яку ви шукаєте.",
+    "backHome": "Повернутися назад",
+    "suggestions": "Спробуйте знайти інструмент або перегляньте наші популярні інструменти нижче."
+  },
+  "Homepage": {
+    "heroTag": "100+ Безкоштовних інструментів • Приватно • Без реєстрації",
+    "titleLine1": "Щоденні інструменти розробника",
+    "titleLine2": "Які просто працюють",
+    "subtitle": "Швидкі, красиві та орієнтовані на конфіденційність інструменти для розробників, дизайнерів та всіх інших. Все працює у вашому браузері.",
+    "recentTools": "Нещодавно використані",
+    "noRecentText": "Почніть використовувати інструменти, щоб побачити їх тут",
+    "searchResults": "Результати пошуку",
+    "popularTools": "Популярні",
+    "toolsCount": "{count} інструментів доступно",
+    "features": {
+      "fast": {
+        "title": "Блискавично швидко",
+        "desc": "Всі інструменти працюють локально у вашому браузері"
+      },
+      "private": {
+        "title": "100% Приватно",
+        "desc": "Ваші дані ніколи не залишають пристрій"
+      },
+      "simple": {
+        "title": "Створено для всіх",
+        "desc": "Просто для новачка, потужно для профі"
+      },
+      "free": {
+        "title": "Завжди безкоштовно",
+        "desc": "Без акаунтів, без обмежень"
+      }
+    },
+    "categories": {
+      "All": "Всі",
+      "Favorites": "Вибране",
+      "Developer": "Розробник",
+      "Design": "Дизайн",
+      "Content": "Контент",
+      "Security": "Безпека",
+      "Productivity": "Продуктивність",
+      "Math": "Математика",
+      "Utility": "Утиліта"
+    },
+    "cta": {
+      "title": "Готові підвищити свою продуктивність?",
+      "text": "Почніть використовувати наші інструменти для розробників безкоштовно. Без реєстрації, без збору даних.",
+      "button": "Почати безкоштовно"
+    },
+    "openTool": "Відкрити інструмент",
+    "noResults": "Інструментів не знайдено за запитом",
+    "clearFilters": "Очистити фільтри"
+  },
+  "Footer": {
+    "builtWith": "Зроблено з ❤️",
+    "allTools": "Всі інструменти",
+    "blog": "Блог",
+    "about": "Про нас",
+    "privacy": "Конфіденційність",
+    "terms": "Умови"
+  },
+  "Tools": {
+    "json-formatter": {
+      "name": "Форматувальник JSON",
+      "description": "Миттєво форматуйте, перевіряйте та покращуйте JSON"
+    },
+    "base64-encoder": {
+      "name": "Кодер Base64",
+      "description": "Кодування та декодування рядків Base64"
+    },
+    "url-encoder": {
+      "name": "Кодер URL-адрес",
+      "description": "Безпечно кодуйте та декодуйте URL-адреси"
+    },
+    "jwt-decoder": {
+      "name": "Декодер JWT",
+      "description": "Декодуйте та перевіряйте веб-токени JSON"
+    },
+    "regex-tester": {
+      "name": "Тестер регулярних виразів",
+      "description": "Тестуйте регулярні вирази в реальному часі"
+    },
+    "hash-generator": {
+      "name": "Хеш-генератор",
+      "description": "Генеруйте хеші MD5, SHA-1, SHA-256"
+    },
+    "uuid-generator": {
+      "name": "Генератор UUID",
+      "description": "Миттєво генеруйте випадкові UUID/GUID"
+    },
+    "css-minifier": {
+      "name": "Мініфікатор CSS",
+      "description": "Зменште й оптимізуйте свій код CSS"
+    },
+    "markdown-editor": {
+      "name": "Попередній перегляд уцінки",
+      "description": "Редактор Markdown у реальному часі та попередній перегляд"
+    },
+    "color-converter": {
+      "name": "Перетворювач кольорів",
+      "description": "Перетворення Hex, RGB, HSL і CMYK"
+    },
+    "timestamp-converter": {
+      "name": "Інструмент часової позначки",
+      "description": "Перетворюйте мітки часу Unix на людські дати"
+    },
+    "sql-formatter": {
+      "name": "Форматувальник SQL",
+      "description": "Форматуйте та покращуйте запити SQL"
+    },
+    "password-generator": {
+      "name": "Генератор паролів",
+      "description": "Створюйте безпечні випадкові паролі"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum",
+      "description": "Створення тексту-заповнювача для дизайнів"
+    },
+    "image-base64": {
+      "name": "Зображення до Base64",
+      "description": "Перетворення зображень у рядки Base64"
+    },
+    "qr-generator": {
+      "name": "Генератор QR-коду",
+      "description": "Створення QR-кодів для URL-адрес і тексту"
+    },
+    "word-counter": {
+      "name": "Лічильник слів",
+      "description": "Підрахуйте слова, символи та час читання"
+    },
+    "case-converter": {
+      "name": "Перетворювач регістру",
+      "description": "Верблюд, змія, кебаб і паскаль"
+    },
+    "text-diff": {
+      "name": "Перевірка відмінностей тексту",
+      "description": "Порівняйте два тексти та знайдіть відмінності"
+    },
+    "slug-generator": {
+      "name": "Генератор кулі",
+      "description": "Створюйте зручні для SEO URL-слаги"
+    },
+    "gradient-generator": {
+      "name": "Генератор градієнтів",
+      "description": "Створюйте красиві градієнти CSS"
+    },
+    "image-compressor": {
+      "name": "Компресор зображень",
+      "description": "Стискайте зображення локально та конфіденційно"
+    },
+    "device-info": {
+      "name": "Інформація про пристрій",
+      "description": "Перегляд інформації про екран, браузер і систему"
+    },
+    "random-generator": {
+      "name": "Випадковий генератор",
+      "description": "Виберіть числа, монети та елементи списку"
+    },
+    "unit-converter": {
+      "name": "Перетворювач одиниць",
+      "description": "Перетворення довжини, ваги та температури"
+    },
+    "pomodoro-timer": {
+      "name": "Таймер Pomodoro",
+      "description": "Сфокусуйте таймер для продуктивності"
+    },
+    "yt-thumbnail": {
+      "name": "Завантажувач мініатюр",
+      "description": "Отримайте мініатюри відео YouTube"
+    },
+    "my-ip": {
+      "name": "Що таке мій IP",
+      "description": "Перегляд публічної IP-адреси та інформації про мережу"
+    },
+    "keycode-info": {
+      "name": "Інформація про код ключа",
+      "description": "Налагоджувач подій клавіатури JavaScript"
+    },
+    "signature-generator": {
+      "name": "Генератор підписів",
+      "description": "Намалюйте та завантажте цифрові підписи"
+    },
+    "screen-recorder": {
+      "name": "Запис екрану",
+      "description": "Записати екран і завантажити відео"
+    },
+    "credit-card-validator": {
+      "name": "Валідатор карток",
+      "description": "Перевірте номери кредитних карток"
+    },
+    "password-manager": {
+      "name": "Локальний менеджер паролів",
+      "description": "Надійно зберігайте паролі локально за допомогою шифрування"
+    },
+    "deep-link-tester": {
+      "name": "Тестер глибоких посилань",
+      "description": "Тестуйте, запускайте та керуйте мобільними глибокими посиланнями"
+    },
+    "image-converter": {
+      "name": "Конвертер зображень",
+      "description": "Конвертуйте PNG/JPG у WebP локально, щоб оптимізувати зображення"
+    },
+    "json-converter": {
+      "name": "JSON <> CSV",
+      "description": "Перетворення JSON на CSV і навпаки"
+    },
+    "bmi-calculator": {
+      "name": "Калькулятор ІМТ",
+      "description": "Розрахувати індекс маси тіла (ІМТ)"
+    },
+    "dns-lookup": {
+      "name": "Пошук DNS",
+      "description": "Миттєво запитуйте записи DNS (A, MX, NS)."
+    },
+    "age-calculator": {
+      "name": "Калькулятор віку",
+      "description": "Обчисліть точний вік і загальну кількість днів"
+    },
+    "loan-calculator": {
+      "name": "Кредитний калькулятор",
+      "description": "Розрахуйте щомісячний EMI та загальний відсоток"
+    },
+    "discount-calculator": {
+      "name": "Калькулятор знижок",
+      "description": "Розрахуйте ціну продажу та економію"
+    },
+    "interest-calculator": {
+      "name": "Калькулятор відсотків",
+      "description": "Простий і складний калькулятор відсотків"
+    },
+    "html-encoder": {
+      "name": "Кодер/декодер HTML",
+      "description": "Екранування спеціальних символів або декодування HTML"
+    },
+    "list-sorter": {
+      "name": "Сортувальник списків",
+      "description": "Сортування, перевертання, перемішування та видалення дублікатів списків"
+    },
+    "box-shadow": {
+      "name": "Генератор тіні коробки",
+      "description": "Візуально генеруйте CSS box-shadows"
+    },
+    "date-diff": {
+      "name": "Різниця в даті",
+      "description": "Обчисліть тривалість між двома датами"
+    },
+    "sql-to-json": {
+      "name": "SQL в JSON",
+      "description": "Перетворення SQL INSERT на об’єкти JSON"
+    },
+    "keyword-density": {
+      "name": "Щільність ключових слів",
+      "description": "Проаналізуйте частоту ключових слів для SEO"
+    },
+    "json-diff": {
+      "name": "Різниця JSON",
+      "description": "Порівняйте два об’єкти JSON поруч"
+    },
+    "cipher-tools": {
+      "name": "Інструменти шифрування",
+      "description": "Кодувальник/декодер ROT13 і Caesar Cipher"
+    },
+    "token-generator": {
+      "name": "Генератор випадкових маркерів",
+      "description": "Генеруйте безпечні випадкові маркери"
+    },
+    "favicon-generator": {
+      "name": "Генератор піктограм",
+      "description": "Створюйте піктограми .ico та PNG"
+    },
+    "robots-generator": {
+      "name": "Генератор файлів robots.txt",
+      "description": "Створіть robots.txt для SEO"
+    },
+    "grid-generator": {
+      "name": "Генератор CSS Grid",
+      "description": "Конструктор макетів Visual CSS Grid"
+    },
+    "hmac-generator": {
+      "name": "Генератор HMAC",
+      "description": "Генеруйте хеш-коди автентифікації повідомлень"
+    },
+    "http-status": {
+      "name": "Коди стану HTTP",
+      "description": "Довідковий список кодів стану HTTP"
+    },
+    "week-number": {
+      "name": "Номер тижня",
+      "description": "Номер поточного тижня та прогрес за рік"
+    },
+    "text-tools": {
+      "name": "Текстовий трансформатор",
+      "description": "Перевертайте, перевертайте та кодуйте текст"
+    },
+    "url-parser": {
+      "name": "Парсер URL-адрес",
+      "description": "Розділіть URL-адреси на протокол, хост, шлях, параметри"
+    },
+    "markdown-table": {
+      "name": "Генератор таблиці уцінки",
+      "description": "Візуально створюйте таблиці Markdown"
+    },
+    "whatsapp-link": {
+      "name": "Генератор посилань WhatsApp",
+      "description": "Створюйте прямі посилання на чат WhatsApp"
+    },
+    "paypal-link": {
+      "name": "Генератор посилань PayPal",
+      "description": "Створіть платіжні посилання PayPal.me"
+    },
+    "svg-to-png": {
+      "name": "SVG в PNG",
+      "description": "Перетворення коду/файлу SVG на зображення PNG"
+    },
+    "prime-factors": {
+      "name": "Прості множники",
+      "description": "Знайдіть прості множники числа"
+    },
+    "iban-validator": {
+      "name": "Валідатор IBAN",
+      "description": "Перевірте номери міжнародних банківських рахунків"
+    },
+    "ascii-converter": {
+      "name": "Конвертер ASCII",
+      "description": "Перетворення тексту в десяткові коди ASCII"
+    },
+    "utm-builder": {
+      "name": "Конструктор UTM",
+      "description": "Створення URL-адрес кампаній Google Analytics"
+    },
+    "meta-tags": {
+      "name": "Генератор метатегів",
+      "description": "Створення метатегів SEO для веб-сайтів"
+    },
+    "og-generator": {
+      "name": "Відкрийте генератор графіків",
+      "description": "Створіть мета-теги Open Graph для спільного використання в соціальних мережах"
+    },
+    "twitter-card": {
+      "name": "Генератор карт Twitter",
+      "description": "Створіть мета-теги Twitter Card"
+    },
+    "aspect-ratio": {
+      "name": "Калькулятор співвідношення сторін",
+      "description": "Розрахувати співвідношення сторін і розміри"
+    },
+    "css-cursor": {
+      "name": "Курсор CSS",
+      "description": "Довідка про властивість курсору Visual CSS"
+    },
+    "css-triangle": {
+      "name": "Генератор трикутників CSS",
+      "description": "Створення чистих трикутників CSS"
+    },
+    "percentage-calculator": {
+      "name": "Калькулятор відсотків",
+      "description": "Обчисліть відсотки та зміни"
+    },
+    "vat-calculator": {
+      "name": "Калькулятор ПДВ",
+      "description": "Розрахуйте суми додавання/вилучення ПДВ"
+    },
+    "stopwatch": {
+      "name": "Секундомір",
+      "description": "Простий браузерний секундомір"
+    },
+    "text-to-speech": {
+      "name": "Перетворення тексту в мовлення",
+      "description": "Перетворення тексту на розмову"
+    },
+    "speech-to-text": {
+      "name": "Перетворення мови в текст",
+      "description": "Перетворення голосу в текст"
+    },
+    "vibration-tester": {
+      "name": "Тестер вібрації",
+      "description": "Випробувальний пристрій вібраційного двигуна"
+    },
+    "chmod-calculator": {
+      "name": "Калькулятор Chmod",
+      "description": "Розрахувати дозволи на файли Linux"
+    },
+    "crontab-generator": {
+      "name": "Генератор Crontab",
+      "description": "Створення виразів розкладу cron"
+    },
+    "htpasswd-generator": {
+      "name": "Генератор Htpasswd",
+      "description": "Створення базових записів авторизації"
+    },
+    "subnet-calculator": {
+      "name": "Калькулятор підмережі",
+      "description": "Розрахувати мережеві підмережі та діапазони IP-адрес"
+    },
+    "mac-generator": {
+      "name": "Генератор MAC-адрес",
+      "description": "Генерувати випадкові MAC-адреси"
+    },
+    "timezone-converter": {
+      "name": "Конвертер часових поясів",
+      "description": "Перетворення часу між кількома зонами"
+    },
+    "email-validator": {
+      "name": "Перевірка електронної пошти",
+      "description": "Перевірка формату електронної пошти та виявлення помилок"
+    },
+    "password-strength": {
+      "name": "Надійність пароля",
+      "description": "Перевірте показник надійності пароля"
+    },
+    "roman-numerals": {
+      "name": "Перетворювач римських чисел",
+      "description": "Перетворення між римськими та десятковими числами"
+    },
+    "margin-calculator": {
+      "name": "Калькулятор маржі",
+      "description": "Розрахувати маржу прибутку та націнку"
+    },
+    "roi-calculator": {
+      "name": "Калькулятор ROI",
+      "description": "Розрахувати рентабельність інвестицій"
+    },
+    "fuel-calculator": {
+      "name": "Калькулятор вартості палива",
+      "description": "Розрахувати вартість палива в дорозі"
+    },
+    "pretty-print-url": {
+      "name": "Pretty Print URL",
+      "description": "Форматуйте та прикрашайте URL-адреси для читабельності"
+    }
+  },
+  "Terms": {
+    "title": "Умови обслуговування",
+    "lastUpdated": "Останнє оновлення",
+    "sections": {
+      "acceptance": {
+        "title": "1. Прийняття Умов",
+        "content": "Отримавши доступ до DailyDevTools і використовуючи його, ви приймаєте та погоджуєтеся дотримуватися умов і положень цієї угоди."
+      },
+      "useLicense": {
+        "title": "2. Використовуйте Ліцензію",
+        "content": "DailyDevTools можна безкоштовно використовувати в особистих і комерційних цілях. Ви не можете:",
+        "list": {
+          "0": "Спроба зворотного проектування або очищення значних частин сайту.",
+          "1": "Використовувати веб-сайт будь-яким способом, який спричиняє або може спричинити пошкодження веб-сайту або погіршення доступності чи доступності веб-сайту."
+        }
+      },
+      "disclaimer": {
+        "title": "3. Відмова від відповідальності",
+        "content": "Інструменти DailyDevTools надаються «як є». Ми не надаємо жодних гарантій, явних чи неявних..."
+      },
+      "limitations": {
+        "title": "4. Обмеження",
+        "content": "У жодному випадку DailyDevTools або його постачальники не несуть відповідальності за будь-які збитки..."
+      },
+      "revisions": {
+        "title": "5. Ревізії",
+        "content": "Матеріали, які з’являються на DailyDevTools, можуть містити технічні, друкарські чи фотографічні помилки..."
+      }
+    }
+  },
+  "Privacy": {
+    "title": "Політика конфіденційності",
+    "lastUpdated": "Останнє оновлення",
+    "intro": "Ласкаво просимо до DailyDevTools. Ми поважаємо вашу конфіденційність і прагнемо захищати ваші особисті дані.",
+    "sections": {
+      "localProcessing": {
+        "title": "2. Як працюють наші інструменти (локальна обробка)",
+        "content": "Найголовніше: інструменти повністю працюють у вашому браузері. Дані ніколи не залишають ваш пристрій."
+      },
+      "dataCollection": {
+        "title": "3. Дані, які ми збираємо",
+        "content": "Ми не збираємо контент. Ми використовуємо Google Analytics для статистики використання."
+      },
+      "cookies": {
+        "title": "4. Печиво",
+        "content": "Ми використовуємо файли cookie для аналітики та локальних налаштувань."
+      },
+      "thirdParty": {
+        "title": "5. Посилання третіх сторін",
+        "content": "Наш сайт може містити посилання на треті сторони."
+      },
+      "changes": {
+        "title": "6. Зміни до цієї Політики",
+        "content": "Ми можемо час від часу оновлювати цю політику."
+      },
+      "contact": {
+        "title": "7. Зв'яжіться з нами",
+        "content": "Зв’яжіться з нами через GitHub або соціальні мережі."
+      }
+    }
+  },
+  "Blog": {
+    "title": "Ресурси для розробників",
+    "subtitle": "Глибоко занурюється в інструменти, які ми створюємо, і концепції, що за ними лежать.",
+    "readMore": "Читати далі",
+    "backToBlog": "Назад до блогу",
+    "enjoyedArticle": "Вам сподобалася ця стаття?",
+    "checkTools": "Перегляньте наші інструменти"
+  },
+  "ToolPage": {
+    "common": {
+      "input": "Вхід",
+      "output": "Вихід",
+      "format": "Формат",
+      "minify": "Зменшити",
+      "download": "Завантажити",
+      "copy": "Копіювати",
+      "paste": "Вставити",
+      "copied": "Скопійовано!",
+      "upload": "Завантажити",
+      "sample": "Зразок",
+      "clear": "Очистити",
+      "indent": "Відступ:",
+      "chars": "символи",
+      "error": "Помилка",
+      "invalid": "Недійсний вхід",
+      "result": "Результат",
+      "generate": "Генерувати",
+      "calculate": "Обчислити",
+      "convert": "конвертувати",
+      "validate": "Підтвердити",
+      "resultPlaceholder": "Результат з'явиться тут..."
+    },
+    "Base64Encoder": {
+      "encode": "Закодувати",
+      "decode": "Декодувати",
+      "textToEncode": "Текст для кодування",
+      "base64ToDecode": "Base64 для декодування",
+      "enterText": "Введіть текст для кодування...",
+      "enterBase64": "Введіть Base64 для декодування...",
+      "encodeAction": "Кодувати до Base64",
+      "decodeAction": "Декодувати з Base64",
+      "base64Output": "Вихід Base64",
+      "decodedText": "Декодований текст",
+      "resultPlaceholder": "Результат з'явиться тут...",
+      "invalidInput": "Недійсний вхід для {mode}"
+    },
+    "QrGenerator": {
+      "content": "Зміст",
+      "placeholder": "https://example.com",
+      "customization": "Налаштування",
+      "foreground": "Передній план",
+      "background": "Фон",
+      "download": "Завантажити"
+    },
+    "HashGenerator": {
+      "inputText": "Введення тексту",
+      "placeholder": "Введіть текст для хешу...",
+      "waiting": "Очікування введення..."
+    },
+    "PasswordGenerator": {
+      "generateNew": "Створити новий",
+      "configuration": "Конфігурація",
+      "length": "Довжина пароля",
+      "uppercase": "Великі літери (A-Z)",
+      "numbers": "Цифри (0-9)",
+      "symbols": "Символи (!@#$)"
+    },
+    "JsonFormatter": {
+      "inputPlaceholder": "Вставте сюди свій JSON...",
+      "outputPlaceholder": "Тут з’явиться відформатований JSON...",
+      "spaces": "простори"
+    },
+    "UrlEncoder": {
+      "encode": "Закодувати",
+      "decode": "Декодувати",
+      "urlToEncode": "URL для кодування",
+      "encodedUrlToDecode": "Закодована URL-адреса для декодування",
+      "enterUrlToEncode": "Введіть URL-адресу або текст для кодування...",
+      "enterUrlToDecode": "Введіть закодовану URL-адресу для декодування...",
+      "encodeAction": "Закодувати URL",
+      "decodeAction": "Розшифруйте URL",
+      "encodedUrl": "Закодована URL-адреса",
+      "decodedUrl": "Розшифрована URL-адреса",
+      "resultPlaceholder": "Результат з'явиться тут...",
+      "chars": "символи",
+      "invalidInput": "Недійсний вхід для {mode}"
+    },
+    "JwtDecoder": {
+      "pasteToken": "Вставте свій маркер JWT",
+      "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+      "decodeAction": "Декодуйте JWT",
+      "header": "HEADER",
+      "payload": "PAYLOAD",
+      "issued": "Видано",
+      "expires": "Термін дії закінчується"
+    },
+    "RegexTester": {
+      "expression": "експресія",
+      "expressionPlaceholder": "Група захоплення (abc)...",
+      "testString": "Тестовий рядок",
+      "testStringPlaceholder": "Вставте тестовий рядок сюди...",
+      "matchHighlights": "Основні моменти матчу",
+      "matches": "сірники",
+      "matchInfo": "Інформація про відповідність",
+      "match": "Матч",
+      "index": "Індекс",
+      "group": "Група",
+      "noMatches": "Збігів не знайдено",
+      "highlightPlaceholder": "Збіги будуть виділені тут...",
+      "flagsHelp": "g: глобальний, i: ігнорувати регістр, m: багаторядковий"
+    },
+    "UuidGenerator": {
+      "generate": "Генерувати",
+      "generateCount": "Згенерувати:",
+      "copyAll": "Копіювати все",
+      "copyUuid": "Скопіюйте UUID",
+      "generatedAt": "Згенеровано локально о {time} • UUID версії 4"
+    },
+    "WordCounter": {
+      "words": "Слова",
+      "characters": "Персонажі",
+      "sentences": "Речення",
+      "paragraphs": "Абзаци",
+      "readingTime": "Час читання",
+      "min": "min",
+      "textInput": "Введення тексту",
+      "inputPlaceholder": "Почніть вводити або вставити текст тут, щоб проаналізувати...",
+      "clear": "ясно"
+    },
+    "TimestampConverter": {
+      "timestamp": "Мітка часу",
+      "humanDate": "Дата людини",
+      "convert": "конвертувати",
+      "currentTimestamp": "Поточна позначка часу",
+      "inputPlaceholder": "Введіть позначку часу Unix..."
+    },
+    "SqlFormatter": {
+      "inputPlaceholder": "Вставте сюди свій SQL-запит...",
+      "outputPlaceholder": "Тут з’явиться відформатований SQL..."
+    },
+    "CssMinifier": {
+      "inputPlaceholder": "Вставте сюди свій код CSS...",
+      "outputPlaceholder": "Minified CSS will appear here..."
+    },
+    "MarkdownEditor": {
+      "editor": "редактор",
+      "preview": "Попередній перегляд",
+      "inputPlaceholder": "Введіть Markdown тут..."
+    },
+    "TextDiff": {
+      "original": "Оригінальний текст",
+      "changed": "Змінений текст",
+      "compare": "Порівняйте",
+      "differences": "відмінності"
+    },
+    "SlugGenerator": {
+      "inputPlaceholder": "Введіть текст для конвертації...",
+      "generatedSlug": "Згенерований слимак"
+    },
+    "ImageCompressor": {
+      "selectImage": "Виберіть Зображення",
+      "quality": "якість",
+      "compress": "Компрес",
+      "download": "Завантажити",
+      "originalSize": "Оригінальний розмір",
+      "compressedSize": "Стиснутий розмір"
+    },
+    "LoremIpsum": {
+      "paragraphs": "Абзаци",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "GradientGenerator": {
+      "angle": "Кут",
+      "colors": "Кольори",
+      "addColor": "Додайте колір",
+      "copyCss": "Копіювати CSS"
+    },
+    "AgeCalculator": {
+      "birthDate": "Дата народження",
+      "calculate": "Обчислити",
+      "years": "років",
+      "months": "Місяці",
+      "days": "днів",
+      "totalDays": "Загальна кількість днів",
+      "nextBirthday": "Наступний день народження в"
+    },
+    "AsciiConverter": {
+      "text": "текст",
+      "ascii": "ASCII",
+      "convert": "конвертувати",
+      "inputPlaceholder": "Введіть текст..."
+    },
+    "BoxShadowGenerator": {
+      "horizontal": "Горизонтальний (X)",
+      "vertical": "Вертикальний (Y)",
+      "blur": "Розмиття",
+      "spread": "Поширення",
+      "colorOpacity": "Колір і непрозорість",
+      "inset": "Врізка"
+    },
+    "BmiCalculator": {
+      "metric": "Метричний (кг/см)",
+      "imperial": "Імперська система (фунтів/дюйм)",
+      "weight": "вага",
+      "height": "Висота",
+      "calculate": "Обчисліть ІМТ",
+      "bmiScore": "Ваш ІМТ",
+      "underweight": "Недостатня вага",
+      "normal": "Нормальна вага",
+      "overweight": "Надмірна вага",
+      "obese": "Ожиріння"
+    },
+    "CaseConverter": {
+      "inputText": "Введення тексту",
+      "inputPlaceholder": "Введіть текст тут...",
+      "upper": "UPPERCASE",
+      "lower": "нижній регістр",
+      "title": "Регістр назви",
+      "sentence": "Відмінок речення",
+      "camel": "camelCase",
+      "pascal": "PascalCase",
+      "snake": "snake_case",
+      "kebab": "kebab-case",
+      "copy": "Копіювати",
+      "conversions": "Перетворення",
+      "clear": "ясно"
+    },
+    "ColorConverter": {
+      "hexLabels": "Колір HEX",
+      "rgbLabels": "Колір RGB",
+      "hslLabels": "Колір HSL",
+      "cmykLabels": "Колір CMYK",
+      "copy": "Копіювати",
+      "hexToRgbNote": "* Наразі підтримується лише перетворення HEX у RGB/HSL."
+    },
+    "CreditCardValidator": {
+      "cardNumber": "Номер картки",
+      "validate": "Підтвердити",
+      "valid": "Дійсний номер кредитної картки",
+      "invalid": "Недійсний номер кредитної картки",
+      "placeholder": "Введіть номер картки...",
+      "type": "Тип картки",
+      "checkDigit": "Контрольна цифра",
+      "luhnValid": "Дійсний алгоритм Луна"
+    },
+    "CipherTools": {
+      "encode": "Закодувати",
+      "decode": "Декодувати",
+      "rot13": "ROT13",
+      "caesar": "Шифр Цезаря",
+      "shift": "Shift",
+      "inputPlaceholder": "Привіт, світ",
+      "outputPlaceholder": "Результат з'явиться тут..."
+    },
+    "CronGenerator": {
+      "minute": "хвилина",
+      "hour": "годину",
+      "dayMonth": "день (місяць)",
+      "month": "місяць",
+      "dayWeek": "день (тиждень)",
+      "presets": "Загальні пресети",
+      "everyMinute": "Кожну хвилину",
+      "everyHour": "Щогодини",
+      "everyDayMidnight": "Щодня опівночі",
+      "everySunday": "Щонеділі",
+      "everyMonth": "Кожен місяць",
+      "everyYear": "Щороку",
+      "formatInfo": "Формат: * * * * * (хвилина Година DayOfMonth Month DayOfWeek)",
+      "usageInfo": "Використовуйте * для «кожного», */n для «кожного n», 1,2,3 для певного списку."
+    },
+    "DateDiff": {
+      "startDate": "Дата початку",
+      "endDate": "Дата закінчення",
+      "calculate": "Обчислити",
+      "difference": "Різниця",
+      "years": "років",
+      "months": "Місяці",
+      "days": "днів",
+      "totalDays": "Загальна кількість днів",
+      "totalWeeks": "Загальна кількість тижнів",
+      "totalHours": "Загальна кількість годин"
+    },
+    "DeepLinkTester": {
+      "testLink": "Тестове посилання",
+      "savedLinks": "Збережені посилання",
+      "searchPlaceholder": "Пошук збережених посилань...",
+      "linkPlaceholder": "myapp://handle?id=123",
+      "launch": "Запуск",
+      "save": "зберегти",
+      "delete": "Видалити",
+      "opens": "відкривається",
+      "scanQr": "Скануйте за допомогою мобільного пристрою, щоб перевірити",
+      "noSavedLinks": "Немає збережених посилань.",
+      "enterLabel": "Введіть мітку для цього посилання:",
+      "saved": "Збережено!",
+      "confirmDelete": "Видалити це посилання?"
+    },
+    "DeviceInfo": {
+      "screen": "Екран",
+      "browser": "Браузер",
+      "system": "система",
+      "resolution": "резолюція",
+      "colorDepth": "Глибина кольору",
+      "userAgent": "Агент користувача",
+      "platform": "Платформа",
+      "language": "Мова"
+    },
+    "DiscountCalculator": {
+      "originalPrice": "Оригінальна ціна",
+      "discountPercent": "Знижка",
+      "additionalDiscount": "Додаткова знижка",
+      "calculate": "Обчислити",
+      "youSave": "Ви економите",
+      "finalPrice": "Остаточна ціна",
+      "salesTax": "Податок з продажу"
+    },
+    "DnsLookup": {
+      "domain": "Домен",
+      "lookup": "Пошук",
+      "recordType": "Тип запису",
+      "results": "Результати",
+      "placeholder": "example.com",
+      "status": "Статус",
+      "time": "час",
+      "server": "Сервер",
+      "answerSection": "Розділ відповідей",
+      "name": "Ім'я",
+      "type": "Тип",
+      "ttl": "TTL",
+      "data": "дані",
+      "noRecords": "Записів не знайдено"
+    },
+    "EmailValidator": {
+      "email": "Адреса електронної пошти",
+      "validate": "Підтвердити",
+      "valid": "Дійсний",
+      "invalid": "Недійсний",
+      "suggestion": "Пропозиція",
+      "placeholder": "user@example.com"
+    },
+    "FaviconGenerator": {
+      "uploadImage": "Завантажити зображення",
+      "generate": "Генерувати",
+      "download": "Завантажити",
+      "sizes": "Розміри"
+    },
+    "FuelCalculator": {
+      "distance": "Відстань",
+      "fuelEfficiency": "Ефективність палива",
+      "fuelPrice": "Ціна палива",
+      "calculate": "Обчислити",
+      "result": "Результат",
+      "totalCost": "Загальна вартість",
+      "fuelNeeded": "Потрібне паливо"
+    },
+    "GridGenerator": {
+      "columns": "Стовпці",
+      "rows": "рядки",
+      "gap": "Розрив",
+      "preview": "Попередній перегляд",
+      "copyCss": "Копіювати CSS",
+      "rowGap": "Розрив рядків",
+      "colGap": "Розрив стовпця",
+      "options": "Опції"
+    },
+    "HmacGenerator": {
+      "message": "повідомлення",
+      "secret": "Секрет",
+      "algorithm": "Алгоритм",
+      "generate": "Генерувати",
+      "inputPlaceholder": "Введіть текст...",
+      "secretPlaceholder": "секрет..."
+    },
+    "HtmlEncoder": {
+      "encode": "Закодувати",
+      "decode": "Декодувати",
+      "resultPlaceholder": "Результат з'явиться тут...",
+      "inputPlaceholder": "Вставте HTML тут..."
+    },
+    "HttpStatus": {
+      "searchPlaceholder": "Код пошуку (наприклад, 404) або ім'я...",
+      "code": "Код",
+      "name": "Ім'я",
+      "description": "опис"
+    },
+    "IbanValidator": {
+      "iban": "IBAN",
+      "validate": "Підтвердити",
+      "valid": "Дійсний",
+      "invalid": "Недійсний",
+      "placeholder": "Введіть IBAN...",
+      "inputLabel": "Введіть номер IBAN",
+      "validTitle": "Дійсний орієнтир",
+      "invalidTitle": "Недійсна контрольна сума",
+      "validDesc": "Формат IBAN і контрольна сума правильні.",
+      "invalidDesc": "IBAN не відповідає алгоритму контрольної суми."
+    },
+    "ImageBase64": {
+      "upload": "Завантажити",
+      "convert": "конвертувати",
+      "copy": "Копіювати",
+      "placeholder": "data:image/png;base64...",
+      "uploadImage": "Завантажити зображення",
+      "convertToBase64": "Перетворити на Base64",
+      "convertToImage": "Перетворити на зображення",
+      "base64String": "Рядок Base64",
+      "download": "Завантажити"
+    },
+    "ImageConverter": {
+      "selectImage": "Виберіть Зображення",
+      "format": "Формат",
+      "convert": "конвертувати",
+      "download": "Завантажити",
+      "quality": "якість"
+    },
+    "InterestCalculator": {
+      "principal": "Директор",
+      "rate": "Процентна ставка",
+      "time": "Період часу (роки)",
+      "calculate": "Обчислити",
+      "simpleInterest": "просто",
+      "compoundInterest": "З'єднання",
+      "totalAmount": "Загальна вартість",
+      "type": "Тип",
+      "frequency": "Складена частота",
+      "annually": "Щорічно",
+      "monthly": "Щомісяця",
+      "daily": "Щодня",
+      "year": "рік"
+    },
+    "JsonConverter": {
+      "inputPlaceholder": "Введіть JSON...",
+      "convert": "конвертувати",
+      "format": "Формат",
+      "csv": "CSV",
+      "xml": "XML",
+      "yaml": "YAML",
+      "jsonToCsv": "JSON у CSV",
+      "csvToJson": "CSV в JSON",
+      "jsonInput": "Введення JSON",
+      "csvInput": "Введення CSV",
+      "jsonOutput": "Вихід JSON",
+      "csvOutput": "Вихід CSV"
+    },
+    "JsonDiff": {
+      "original": "Оригінальний JSON",
+      "modified": "Модифікований JSON",
+      "compare": "Порівняйте",
+      "differences": "відмінності"
+    },
+    "KeycodeInfo": {
+      "pressKey": "Натисніть будь-яку клавішу",
+      "key": "ключ",
+      "code": "Код",
+      "keyCode": "KeyCode",
+      "which": "який",
+      "location": "Розташування",
+      "modifiers": "Модифікатори",
+      "standard": "Стандартний",
+      "left": "Ліворуч",
+      "right": "правильно",
+      "numpad": "цифрова клавіатура",
+      "space": "(пробіл)",
+      "info": "Відображення подій JavaScript KeyCode, Code тощо."
+    },
+    "KeywordDensity": {
+      "inputPlaceholder": "Вставте сюди свій текст, щоб проаналізувати частоту ключових слів...",
+      "analyze": "Аналізуйте",
+      "keyword": "Ключове слово",
+      "count": "Граф",
+      "density": "Щільність"
+    },
+    "ListSorter": {
+      "inputPlaceholder": "Введіть свій список тут...",
+      "sort": "Сортувати",
+      "reverse": "Зворотний",
+      "shuffle": "Перетасувати",
+      "deduplicate": "Дедуплікат",
+      "ascending": "Висхідний",
+      "descending": "Спускається",
+      "length": "Довжина",
+      "trim": "Обрізати порожньо",
+      "lines": "рядки:",
+      "chars": "Персонажі:"
+    },
+    "LoanCalculator": {
+      "principal": "Директор",
+      "interestRate": "Процентна ставка",
+      "term": "термін",
+      "calculate": "Обчислити",
+      "monthlyPayment": "Щомісячна оплата",
+      "totalInterest": "Загальний інтерес",
+      "totalPayment": "Загальна оплата",
+      "loanDetails": "Деталі позики",
+      "loanAmount": "Сума кредиту",
+      "loanTerm": "Термін позики",
+      "years": "років",
+      "months": "Місяці",
+      "interest": "інтерес"
+    },
+    "MacGenerator": {
+      "generate": "Генерувати",
+      "copy": "Копіювати",
+      "separator": "Роздільник",
+      "format": "Формат",
+      "quantity": "Кількість",
+      "uppercase": "Великі літери"
+    },
+    "MarginCalculator": {
+      "cost": "Вартість",
+      "price": "Ціна продажу",
+      "calculate": "Обчислити",
+      "margin": "Маржа",
+      "markup": "Розмітка",
+      "profit": "Прибуток",
+      "revenue": "Дохід",
+      "netProfit": "Чистий прибуток",
+      "grossMargin": "Валовий прибуток"
+    },
+    "PasswordManager": {
+      "masterPassword": "Головний пароль",
+      "unlock": "Розблокувати",
+      "searchPlaceholder": "Пошук облікових записів...",
+      "addNew": "Додати новий",
+      "siteName": "Назва сайту",
+      "username": "Ім'я користувача",
+      "password": "Пароль",
+      "save": "зберегти",
+      "delete": "Видалити"
+    },
+    "PasswordStrength": {
+      "inputPlaceholder": "Введіть тут...",
+      "strength": "Сила",
+      "weak": "Слабкий",
+      "fair": "ярмарок",
+      "good": "добре",
+      "strong": "Сильний",
+      "requirements": "Вимоги",
+      "length": "8+ персонажів",
+      "number": "Включає номер",
+      "uppercase": "Включає великі літери",
+      "symbol": "Включає символ"
+    },
+    "PayPalLink": {
+      "username": "Ім'я користувача PayPal.me",
+      "amount": "Сума",
+      "currency": "Валюта",
+      "generate": "Генерувати",
+      "itemName": "Назва предмета",
+      "link": "Посилання",
+      "yourLink": "Ваше посилання на PayPal",
+      "openPaypal": "Відкрийте PayPal"
+    },
+    "RobotsGenerator": {
+      "rules": "правила",
+      "addRule": "Додати правило",
+      "allow": "Дозволити",
+      "disallow": "Заборонити",
+      "sitemap": "URL-адреса карти сайту (необов’язково)",
+      "output": "Згенеровано robots.txt"
+    },
+    "PercentageCalculator": {
+      "value": "Значення",
+      "percentage": "Відсоток",
+      "calculate": "Обчислити",
+      "result": "Результат",
+      "whatIs": "Що є",
+      "of": "% від",
+      "isWhatPercentOf": "який % від",
+      "percentChangeFrom": "% зміни від",
+      "to": "до"
+    },
+    "PomodoroTimer": {
+      "work": "Час фокусування",
+      "shortBreak": "Коротка перерва",
+      "longBreak": "Тривала перерва",
+      "start": "старт",
+      "pause": "Пауза",
+      "reset": "Скинути",
+      "minutes": "min"
+    },
+    "PrimeFactors": {
+      "number": "Номер",
+      "calculate": "Обчислити",
+      "factors": "Прості множники",
+      "inputLabel": "Введіть число",
+      "placeholder": "напр. 120",
+      "isPrime": "Це число є простим!",
+      "isComposite": "Це число є складним"
+    },
+    "RoiCalculator": {
+      "investment": "Інвестиції",
+      "returns": "Повернення",
+      "calculate": "Обчислити",
+      "roi": "ROI",
+      "profit": "Прибуток",
+      "finalValue": "Кінцева вартість",
+      "time": "Час (роки)",
+      "totalGain": "Загальний приріст",
+      "annualizedRoi": "Річна рентабельність інвестицій"
+    },
+    "RomanNumerals": {
+      "decimal": "Десятковий",
+      "decimalPlaceholder": "2024",
+      "roman": "Роман",
+      "convert": "конвертувати",
+      "placeholder": "MMXXIV"
+    },
+    "ScreenRecorder": {
+      "startRecording": "Почніть запис",
+      "stopRecording": "Зупинити запис",
+      "download": "Завантажити",
+      "recording": "Запис..."
+    },
+    "SignatureGenerator": {
+      "draw": "малювати",
+      "clear": "ясно",
+      "download": "Завантажити",
+      "penColor": "Колір пера",
+      "penSize": "Розмір пера"
+    },
+    "SpeechToText": {
+      "startListening": "Почніть слухати",
+      "stopListening": "Припиніть слухати",
+      "transcript": "Стенограма",
+      "placeholder": "Стенограма з’явиться тут..."
+    },
+    "SqlToJson": {
+      "inputPlaceholder": "INSERT INTO користувачі (id, ім'я, вік) VALUES (1, 'John', 30);",
+      "convert": "конвертувати",
+      "result": "Результат"
+    },
+    "Stopwatch": {
+      "start": "старт",
+      "stop": "СТІЙ",
+      "reset": "Скинути",
+      "lap": "коліна"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-адреса",
+      "subnetMask": "Маска підмережі",
+      "calculate": "Обчислити",
+      "networkAddress": "Адреса мережі",
+      "broadcastAddress": "Трансляційна адреса",
+      "usableHosts": "Корисні хости"
+    },
+    "SvgToPng": {
+      "pasteSvg": "Вставте SVG",
+      "uploadSvg": "Завантажте SVG",
+      "convert": "конвертувати",
+      "download": "Завантажити"
+    },
+    "TextToSpeech": {
+      "inputPlaceholder": "Введіть текст для голосування...",
+      "speak": "говорити",
+      "stop": "СТІЙ",
+      "voice": "Голос",
+      "rate": "Оцінка",
+      "pitch": "крок"
+    },
+    "TextTools": {
+      "inputPlaceholder": "Введіть щось...",
+      "reverse": "Зворотний",
+      "uppercase": "Великі літери",
+      "lowercase": "Малі літери",
+      "encode": "Закодувати"
+    },
+    "TimezoneConverter": {
+      "from": "Від",
+      "to": "до",
+      "convert": "конвертувати",
+      "currentTime": "Поточний час"
+    },
+    "TokenGenerator": {
+      "length": "Довжина",
+      "generate": "Генерувати",
+      "copy": "Копіювати",
+      "includeNumbers": "Додайте числа",
+      "includeSymbols": "Додайте символи"
+    },
+    "UrlParser": {
+      "inputPlaceholder": "Введіть URL...",
+      "parse": "Розібрати",
+      "protocol": "Протокол",
+      "host": "Хост",
+      "path": "шлях",
+      "query": "Запит"
+    },
+    "UtmBuilder": {
+      "websiteUrl": "URL веб-сайту",
+      "source": "Джерело",
+      "medium": "Середній",
+      "campaign": "Кампанія",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "VatCalculator": {
+      "amount": "Сума",
+      "vatRate": "Ставка ПДВ",
+      "addVat": "Додати ПДВ",
+      "removeVat": "Зняти ПДВ",
+      "calculate": "Обчислити"
+    },
+    "VibrationTester": {
+      "vibrate": "Вібрувати",
+      "pattern": "Візерунок",
+      "duration": "Тривалість",
+      "test": "Тест"
+    },
+    "WeekNumber": {
+      "currentWeek": "Номер поточного тижня",
+      "yearProgress": "Прогрес року",
+      "week": "тиждень"
+    },
+    "WhatsappLink": {
+      "phoneNumber": "Номер телефону",
+      "message": "повідомлення",
+      "generate": "Генерувати",
+      "copy": "Копіювати",
+      "placeholder": "Привіт, мене цікавить..."
+    },
+    "YtThumbnail": {
+      "inputPlaceholder": "Вставити URL-адресу відео YouTube...",
+      "getThumbnail": "Отримати мініатюру",
+      "download": "Завантажити"
+    },
+    "CrontabGenerator": {
+      "minute": "хвилина",
+      "hour": "годину",
+      "day": "День",
+      "month": "місяць",
+      "weekday": "будній день",
+      "expression": "експресія",
+      "description": "опис"
+    },
+    "ChmodCalculator": {
+      "owner": "Власник",
+      "group": "Група",
+      "others": "інші",
+      "read": "Прочитайте",
+      "write": "Напишіть",
+      "execute": "Виконати",
+      "numeric": "Числовий",
+      "symbolic": "Символічний"
+    },
+    "HtpasswdGenerator": {
+      "username": "Ім'я користувача",
+      "password": "Пароль",
+      "algorithm": "Алгоритм",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "AspectRatio": {
+      "width": "Ширина",
+      "height": "Висота",
+      "ratio": "співвідношення",
+      "calculate": "Обчислити"
+    },
+    "CssClipPath": {
+      "shape": "Форма",
+      "preview": "Попередній перегляд",
+      "copyCss": "Копіювати CSS"
+    },
+    "CssCursor": {
+      "cursor": "Курсор",
+      "preview": "Попередній перегляд",
+      "copyCss": "Копіювати CSS"
+    },
+    "CssTriangle": {
+      "direction": "Напрямок",
+      "size": "Розмір",
+      "color": "Колір",
+      "preview": "Попередній перегляд",
+      "copyCss": "Копіювати CSS"
+    },
+    "MetaGenerator": {
+      "title": "Назва",
+      "description": "опис",
+      "keywords": "Ключові слова",
+      "author": "автор",
+      "url": "URL",
+      "image": "Зображення",
+      "generate": "Генерувати",
+      "copy": "Копіювати",
+      "titlePlaceholder": "Мій чудовий веб-сайт",
+      "descriptionPlaceholder": "Короткий опис вашого сайту...",
+      "keywordsPlaceholder": "веб, інструменти, розроб",
+      "authorPlaceholder": "Ваше Ім'я",
+      "outputPlaceholder": "Тут з’являться мета-теги..."
+    },
+    "OgGenerator": {
+      "title": "Назва",
+      "description": "опис",
+      "url": "URL",
+      "image": "Зображення",
+      "type": "Тип",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "TwitterCard": {
+      "cardType": "Тип картки",
+      "title": "Назва",
+      "description": "опис",
+      "image": "Зображення",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "MarkdownTable": {
+      "rows": "рядки",
+      "columns": "Стовпці",
+      "header": "Заголовок",
+      "addRow": "Додати рядок",
+      "addColumn": "Додати стовпець",
+      "generate": "Генерувати",
+      "copy": "Копіювати"
+    },
+    "PrettyPrintUrl": {
+      "inputPlaceholder": "https://example.com/path?param=value&other=123",
+      "format": "Формат",
+      "copy": "Копіювати"
+    }
+  },
+  "BlogPosts": {
+    "json-formatting-best-practices": {
+      "title": "Форматування JSON: практичні поради для розробників",
+      "excerpt": "Дізнайтеся, чому правильне форматування JSON має значення для налагодження та як автоматизувати його у своєму робочому процесі.",
+      "category": "розвиток"
+    },
+    "mastering-regex": {
+      "title": "Освоєння регулярних виразів: візуальний посібник",
+      "excerpt": "Regex не повинно бути страшним. Ми розбираємо загальні шаблони перевірки електронної пошти, URL-адрес тощо.",
+      "category": "Підручник"
+    },
+    "cron-job-scheduling": {
+      "title": "Cron Jobs Demystified: Як планувати завдання",
+      "excerpt": "Зрозумійте 5-зірковий синтаксис Cron і як планувати резервне копіювання, електронні листи та сценарії в Linux.",
+      "category": "DevOps"
+    },
+    "secure-password-storage-local": {
+      "title": "Чому локальні менеджери паролів безпечніші (альтернатива KeyPass)",
+      "excerpt": "Порушення хмар є звичайним явищем. Дізнайтеся, чому локальне зберігання паролів із шифруванням AES-256 є найнадійнішим вибором для особистої безпеки.",
+      "category": "Безпека"
+    }
+  },
+  "CommandPalette": {
+    "searchPlaceholder": "Інструменти пошуку...",
+    "noResults": "Результатів не знайдено.",
+    "select": "Виберіть",
+    "navigate": "Навігація"
+  },
+  "FeedbackForm": {
+    "sendFeedback": "Надіслати відгук",
+    "feedback": "Зворотній зв'язок",
+    "thankYou": "дякую!",
+    "feedbackSent": "Ваш відгук успішно надіслано.",
+    "close": "Закрити",
+    "name": "Ім'я (необов'язково)",
+    "namePlaceholder": "Ваше ім'я",
+    "email": "Електронна адреса (необов'язково)",
+    "emailPlaceholder": "your@email.com",
+    "feedbackType": "Тип зворотного зв'язку",
+    "typeSuggestion": "💡 Пропозиція",
+    "typeBug": "🐛 Звіт про помилку",
+    "typeFeature": "✨ Запит функції",
+    "typeOther": "📝 Інше",
+    "message": "повідомлення *",
+    "messagePlaceholder": "Розкажіть нам, що ви думаєте...",
+    "sending": "Надсилання...",
+    "weReadEveryMessage": "Ми читаємо кожне повідомлення. Дякуємо, що допомагаєте нам покращуватися!"
+  },
+  "ShareButton": {
+    "shareTool": "Інструмент для спільного доступу",
+    "copiedLink": "Скопійоване посилання!"
+  },
+  "TextDiff": {
+    "original": "Оригінальний текст",
+    "changed": "Змінений текст",
+    "update": "Оновити різницю",
+    "old": "Старий",
+    "new": "новий",
+    "content": "Зміст"
+  },
+  "CrontabGenerator": {
+    "minute": "хвилина",
+    "hour": "годину",
+    "day": "День",
+    "month": "місяць",
+    "weekday": "будній день",
+    "min": "Хв",
+    "mon": "Пн",
+    "week": "тиждень",
+    "presets": "Швидкі пресети",
+    "everyMinute": "Кожну хвилину",
+    "every5Minutes": "Кожні 5 хвилин",
+    "everyHour": "Щогодини",
+    "everyDayMidnight": "Щодня опівночі",
+    "everyWeek": "Щотижня",
+    "everyMonth": "Кожен місяць"
+  },
+  "SpeechToText": {
+    "notSupported": "Ваш браузер не підтримує API Web Speech. Будь ласка, використовуйте Chrome.",
+    "placeholder": "Стенограма з’явиться тут...",
+    "listening": "Слухання...",
+    "start": "Натисніть мікрофон, щоб почати"
+  },
+  "OgGenerator": {
+    "title": "Назва",
+    "description": "опис",
+    "image": "URL зображення",
+    "url": "Канонічна URL-адреса",
+    "type": "Тип",
+    "website": "Веб-сайт",
+    "article": "ст",
+    "profile": "Профіль",
+    "preview": "Попередній перегляд (Facebook/LinkedIn)",
+    "generatedHtml": "Згенерований HTML",
+    "copy": "Копіювати"
+  },
+  "WeekNumber": {
+    "checkLabel": "Перевірте номер тижня на дату",
+    "yearProgress": "Прогрес року"
+  },
+  "RelatedTools": {
+    "title": "Вам також може сподобатися",
+    "subtitle": "Дізнайтеся про інші популярні інструменти розробника",
+    "openTool": "Відкрити інструмент"
+  },
+  "Breadcrumb": {
+    "home": "додому",
+    "tools": "Інструменти"
+  },
+  "SvgToPng": {
+    "upload": "Завантажте файл SVG",
+    "browse": "або натисніть, щоб переглянути",
+    "paste": "...або вставте код SVG",
+    "preview": "Попередній перегляд PNG (масштаб 2x)",
+    "download": "Завантажити PNG",
+    "errorType": "Завантажте дійсний файл SVG.",
+    "errorRender": "Не вдалося відобразити SVG. Переконайтеся, що це дійсний XML.",
+    "errorProcess": "Помилка обробки SVG."
+  },
+  "GradientGenerator": {
+    "config": "Конфігурація",
+    "colors": "Кольори",
+    "type": "Тип",
+    "angle": "Кут",
+    "random": "Випадковий",
+    "copyCss": "Копіювати CSS",
+    "copied": "Скопійовано"
+  },
+  "TimezoneConverter": {
+    "date": "Дата",
+    "time": "Час (місцевий)",
+    "invalid": "Недійсний",
+    "zones": {
+      "utc": "UTC",
+      "newYork": "Нью-Йорк (EST/EDT)",
+      "losAngeles": "Лос-Анджелес (PST/PDT)",
+      "london": "Лондон (GMT/BST)",
+      "paris": "Париж (CET/CEST)",
+      "tokyo": "Токіо (JST)",
+      "sydney": "Сідней (AEST/AEDT)",
+      "dubai": "Дубай (GST)",
+      "india": "Індія (IST)"
+    }
+  },
+  "RandomGenerator": {
+    "numberGen": "Генератор чисел",
+    "listGen": "Генератор списків",
+    "coinGen": "Генератор монет",
+    "min": "Хв",
+    "max": "Макс",
+    "count": "Граф",
+    "generate": "Генерувати",
+    "listLabel": "Елементи списку (по одному на рядок)",
+    "pick": "Виберіть випадковий предмет",
+    "winner": "Переможець...",
+    "flip": "Підкинути монету",
+    "heads": "Голови",
+    "tails": "Хвости"
+  },
+  "ScreenRecorder": {
+    "titleRecording": "Запис екрана...",
+    "titleFree": "Безкоштовний онлайн-запис екрану",
+    "desc": "Зробіть знімок екрана, вікна програми або вкладки веб-переглядача. Без водяного знака, без обмеження часу.",
+    "start": "Почніть запис",
+    "stop": "Зупинити запис",
+    "browserSupport": "Найкраще працює в Chrome, Edge та Firefox на робочому столі."
+  },
+  "CssCursor": {
+    "hoverTest": "Наведіть курсор сюди, щоб перевірити"
+  },
+  "VatCalculator": {
+    "amount": "Сума",
+    "rate": "Ставка ПДВ (%)",
+    "addVat": "Додати ПДВ",
+    "removeVat": "Зняти ПДВ",
+    "netAmount": "Чиста сума",
+    "vatAmount": "Сума ПДВ",
+    "grossTotal": "Загальна сума",
+    "netTotal": "Чистий підсумок",
+    "grossAmount": "Валова сума"
+  },
+  "MyIP": {
+    "ipLabel": "Ваша публічна IP-адреса",
+    "loading": "Завантаження...",
+    "isp": "Інтернет-провайдер (ISP)",
+    "location": "Розташування",
+    "asn": "ASN",
+    "timezone": "Часовий пояс",
+    "note": "Це IP-адреса, яку бачать веб-сайти, які ви відвідуєте. Він може відрізнятися від вашого локального IP, якщо ви використовуєте VPN або проксі."
+  },
+  "PrettyPrintUrl": {
+    "enterUrl": "Введіть URL",
+    "formatted": "Відформатований вихід",
+    "copy": "Копіювати",
+    "copied": "Скопійовано",
+    "placeholder": "Вставте URL вище, щоб переглянути його формат."
+  },
+  "WhatsAppLink": {
+    "phone": "Номер телефону (з кодом країни)",
+    "message": "Попередньо заповнене повідомлення",
+    "hint": "Не включайте +, - або ().",
+    "yourLink": "Ваше посилання на WhatsApp",
+    "open": "Відкрийте чат"
+  },
+  "UrlParser": {
+    "enterUrl": "Введіть URL",
+    "params": "Параметри запиту",
+    "error": "Недійсний URL"
+  },
+  "FaviconGenerator": {
+    "upload": "Завантажити зображення",
+    "browse": "Рекомендовано: 512x512 PNG",
+    "original": "Оригінал",
+    "favicon": "favicon.ico (32x32)",
+    "download": "Завантажте Favicon.png",
+    "note": "* Наразі генерує фавіконки 32x32 PNG. Перейменуйте на .ico, якщо потрібно для підтримки застарілих версій."
+  },
+  "SubnetCalculator": {
+    "ip": "IP-адреса",
+    "cidr": "CIDR (/{cidr})",
+    "calculate": "Обчислити",
+    "subnetMask": "Маска підмережі",
+    "networkAddress": "Адреса мережі",
+    "firstHost": "Перший ведучий",
+    "lastHost": "Останній господар",
+    "broadcastAddress": "Трансляційна адреса",
+    "totalHosts": "Загальна кількість хостів"
+  },
+  "SlugGenerator": {
+    "inputLabel": "Введіть назву статті / текст",
+    "generated": "Згенерований слимак",
+    "copy": "Копіювати слимака"
+  },
+  "SqlToJson": {
+    "inputLabel": "Введення SQL (лише оператори INSERT)",
+    "convert": "Перетворити в JSON",
+    "error": "Could not parse SQL. Переконайтеся, що це стандартні оператори INSERT INTO."
+  },
+  "MarkdownTable": {
+    "addRow": "+ Додати рядок",
+    "addCol": "+ Додати стовпець",
+    "headerPlaceholder": "Заголовок",
+    "outputLabel": "Вихід уцінки",
+    "copy": "Копіювати Markdown"
+  },
+  "TwitterCard": {
+    "cardType": "Тип картки",
+    "siteHandle": "Ідентифікатор сайту (наприклад, @twitter)",
+    "title": "Назва",
+    "description": "опис",
+    "imageUrl": "URL зображення",
+    "preview": "Попередній перегляд",
+    "generatedHtml": "Згенерований HTML",
+    "copy": "Копіювати",
+    "placeholderTitle": "Назва картки",
+    "placeholderDesc": "Опис тут..."
+  },
+  "TextToSpeech": {
+    "placeholder": "Введіть текст для голосування...",
+    "voice": "Голос",
+    "speed": "швидкість",
+    "pitch": "крок",
+    "speak": "говорити"
+  },
+  "TokenGenerator": {
+    "length": "Довжина",
+    "includeNumbers": "Додайте числа",
+    "includeSymbols": "Додайте символи",
+    "generate": "Згенерувати маркер"
+  },
+  "CssTriangle": {
+    "direction": "Напрямок",
+    "color": "Колір",
+    "width": "Ширина (px)",
+    "height": "Висота (px)",
+    "copy": "Копіювати"
+  },
+  "UnitConverter": {
+    "length": "Довжина",
+    "weight": "вага",
+    "temperature": "температура",
+    "meters": "Метри",
+    "kilometers": "кілометрів",
+    "centimeters": "Сантиметри",
+    "millimeters": "міліметрів",
+    "inches": "Дюйми",
+    "feet": "Ноги",
+    "yards": "Двори",
+    "miles": "Майлз",
+    "kilograms": "кілограмів",
+    "grams": "Грами",
+    "pounds": "Фунтів",
+    "ounces": "унції",
+    "celsius": "за Цельсієм",
+    "fahrenheit": "Фаренгейт",
+    "kelvin": "Кельвін"
+  },
+  "CssClipPath": {
+    "shapes": "форми",
+    "preview": "Попередній перегляд",
+    "cssCode": "Код CSS",
+    "copy": "Копіювати",
+    "copied": "Скопійовано"
+  },
+  "ImageCompressor": {
+    "uploadTitle": "Завантажте зображення",
+    "uploadDesc": "JPG, PNG або WebP. Ми стискаємо його локально.",
+    "selectImage": "Виберіть Зображення",
+    "settings": "Параметри стиснення",
+    "quality": "якість",
+    "originalSize": "Оригінальний розмір",
+    "compressedSize": "Стиснутий розмір",
+    "saving": "Збереження",
+    "download": "Завантажити"
+  },
+  "HtpasswdGenerator": {
+    "username": "Ім'я користувача",
+    "password": "Пароль",
+    "algorithm": "Алгоритм",
+    "generate": "Створити запис",
+    "result": "Результат",
+    "sha1": "SHA-1 (незахищений, але стандартний)",
+    "notSupported": "У цій клієнтській версії підтримується лише SHA-1."
+  },
+  "MetaTags": {
+    "pageTitle": "Назва сторінки",
+    "description": "опис",
+    "author": "автор"
+  },
+  "AgeCalculator": {
+    "dob": "Дата народження",
+    "age": "Вік",
+    "years": "років",
+    "months": "місяців",
+    "days": "днів",
+    "nextBirthday": "Наступний день народження"
+  },
+  "UtmBuilder": {
+    "websiteUrl": "URL-адреса веб-сайту (обов’язково)",
+    "source": "Джерело кампанії (обов’язково)",
+    "medium": "Засіб кампанії (обов’язково)",
+    "name": "Назва кампанії (обов'язково)",
+    "term": "Термін кампанії (необов’язково)",
+    "content": "Вміст кампанії (необов’язково)",
+    "generatedUrl": "Згенерована URL-адреса",
+    "copy": "Копіювати URL"
+  },
+  "TimestampConverter": {
+    "currentUnixTime": "Поточний час в Unix",
+    "timestampLabel": "Мітка часу (секунди)",
+    "isoLabel": "Формат дати ISO",
+    "utcDate": "Дата UTC",
+    "localDate": "Місцева дата",
+    "relative": "Відносна"
+  },
+  "SignatureGenerator": {
+    "color": "Колір",
+    "width": "Ширина",
+    "clear": "ясно",
+    "download": "Завантажити PNG",
+    "signHere": "Підпишіть тут",
+    "note": "Підписи обробляються локально у вашому браузері. Ми не зберігаємо і не завантажуємо їх."
+  },
+  "MarkdownEditor": {
+    "previewLabel": "Попередній перегляд"
+  },
+  "CipherTools": {
+    "shiftAmount": "Сума зсуву (N)",
+    "inputText": "Введення тексту",
+    "outputText": "Вихідний текст",
+    "rot13": "ROT13",
+    "caesar": "Цезар (+3)",
+    "shift1": "Shift +1"
+  },
+  "DeviceInfo": {
+    "screenResolution": "Роздільна здатність екрана",
+    "browser": "Браузер",
+    "cpuCores": "Ядра ЦП",
+    "battery": "Акумулятор",
+    "detailedSpecs": "Детальні характеристики",
+    "userAgent": "Агент користувача",
+    "platform": "Платформа",
+    "windowSize": "Розмір вікна",
+    "pixelRatio": "Співвідношення пікселів",
+    "colorDepth": "Глибина кольору",
+    "ram": "RAM",
+    "cookiesEnabled": "Файли cookie ввімкнено",
+    "onlineStatus": "Статус онлайн",
+    "unknown": "Невідомий",
+    "yes": "так",
+    "no": "немає",
+    "enabled": "Увімкнено",
+    "disabled": "Вимкнено"
+  },
+  "ChmodCalculator": {
+    "owner": "Власник",
+    "group": "Група",
+    "public": "Громадський",
+    "read": "Прочитайте",
+    "write": "Напишіть",
+    "execute": "Виконати",
+    "numeric": "Числовий",
+    "symbolic": "Символічний"
+  },
+  "PasswordManager": {
+    "title": "Менеджер паролів",
+    "desc": "Безпечно зберігайте та керуйте своїми паролями локально.",
+    "unlock": "Розблокувати сховище",
+    "create": "Створити нове сховище",
+    "unlockDesc": "Введіть головний пароль для доступу до своїх облікових записів.",
+    "createDesc": "Встановіть надійний головний пароль. Він шифрує ваші дані локально.",
+    "masterPassword": "Головний пароль",
+    "unlockBtn": "Розблокувати",
+    "createBtn": "Створити сховище",
+    "note": "Дані зберігаються у вашому браузері за допомогою шифрування AES-GCM. Ми не можемо відновити ваш пароль, якщо ви його загубили.",
+    "myPasswords": "Мої паролі",
+    "addNew": "Додати новий",
+    "search": "Пошук облікових записів...",
+    "noPasswords": "Паролі не знайдено.",
+    "addAccount": "Додати обліковий запис",
+    "accountTitle": "Назва / Веб-сайт",
+    "username": "Ім'я користувача/Електронна пошта",
+    "password": "Пароль",
+    "url": "URL (необов'язково)",
+    "save": "Зберегти обліковий запис",
+    "cancel": "Скасувати",
+    "incorrectPassword": "Неправильний пароль або пошкоджені дані.",
+    "loading": "Завантаження..."
+  },
+  "MetaGenerator": {
+    "websiteDetails": "Деталі веб-сайту",
+    "pageTitle": "Назва сторінки",
+    "description": "опис",
+    "keywords": "Ключові слова (розділені комами)",
+    "author": "автор",
+    "socialPreview": "Соціальний попередній перегляд (OG і Twitter)",
+    "websiteUrl": "URL веб-сайту",
+    "previewImage": "URL попереднього перегляду зображення",
+    "generatedHtml": "Згенерований HTML",
+    "copy": "Копіювати HTML",
+    "copied": "Скопійовано"
+  },
+  "VibrationTester": {
+    "worksOnly": "Працює лише на пристроях з вібраційним обладнанням (наприклад, телефони).",
+    "duration": "Тривалість (мс)",
+    "vibrateOnce": "Вібрувати один раз",
+    "pulsePattern": "Патерн пульсу",
+    "longPulse": "Довгий пульс",
+    "stop": "СТІЙ"
+  },
+  "BlogContent": {
+    "json-formatting-best-practices": {
+      "block_1": "Чому форматування JSON має значення",
+      "block_2": "JSON (JavaScript Object Notation) — це мова Інтернету.Але необроблений JSON, що повертається з API, часто є мінімізованою кашею.форматування робить його читабельним, налагоджуваним і безпечним.",
+      "block_3": "1.Читабельність – головне",
+      "block_4": "Коли ви налагоджуєте відповідь API із 5000 рядків, відступи рятують життя.Наш <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> використовує 2- або 4-пробільні відступи, щоб зробити структуру зрозумілою.",
+      "block_5": "2.Перевірка",
+      "block_6": "Одна пропущена кома може зламати вашу програму.Завжди перевіряйте свій JSON перед тим, як додати його до файлів конфігурації.",
+      "block_7": "Висновок",
+      "block_8": "Не витрачайте час на ручну перевірку дужок.Використовуйте автоматизовані інструменти."
+    },
+    "mastering-regex": {
+      "block_1": "Пояснення регулярного виразу",
+      "block_2": "Регулярні вирази потужні, але заплутані.візуалізуємо їх.",
+      "block_3": "Загальні шаблони",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Електронна адреса:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Телефон:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "Миттєво перевірте ці шаблони за допомогою нашого <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">тестера регулярних виразів</a>."
+    },
+    "cron-job-scheduling": {
+      "block_1": "5 зірок Крона",
+      "block_2": "Хвилина, година, день місяця, місяць, день тижня.Ось і все.",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Приклади</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Запускати щодня опівночі: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * command_to_run",
+      "block_5": "Приклади",
+      "block_6": "Виконувати кожні 15 хвилин: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Потрібна допомога?Використовуйте наш <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a>, щоб візуально створювати вирази."
+    },
+    "secure-password-storage-local": {
+      "block_1": "Проблема з хмарними сховищами",
+      "block_2": "LastPass, Okta та інші гіганти зазнали зламу.Коли ваше сховище онлайн, воно є ціллю.",
+      "block_3": "Рішення: локальне шифрування",
+      "block_4": "Наш новий <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">локальний менеджер паролів</a></strong> працює повністюу вашому браузері.Він використовує <strong class=\"text-[var(--title-color)] font-semibold\">256-бітне шифрування AES-GCM</strong>, отримане з вашого головного пароля за допомогою PBKDF2.",
+      "block_5": "Як це працює",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Нуль знань:</strong> ми ніколи не бачимо ваш пароль.Він ніколи не покидає ваш пристрій.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Офлайн-сховище:</strong> Ваше зашифроване сховище зберігається в LocalStorage вашого браузера.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Можливість експорту:</strong> Ви можете будь-коли експортувати/зробити резервну копію своїх необроблених зашифрованих даних.</li>",
+      "block_7": "Припиніть довіряти хмарі свої головні ключі.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Спробуйте локальний менеджер паролів</a> сьогодні."
+    }
+  }
+}
