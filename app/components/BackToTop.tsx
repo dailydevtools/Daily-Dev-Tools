@@ -31,7 +31,7 @@ export default function BackToTop() {
     return (
         <button
             onClick={scrollToTop}
-            className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] fixed bottom-8 right-8 w-12 h-12 rounded-full flex items-center justify-center p-0 shadow-[0_4px_12px_rgba(249,115,22,0.4)] z-[100] cursor-pointer"
+            className="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-12 h-12 p-0 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white rounded-full shadow-[0_4px_12px_rgba(249,115,22,0.4)] border-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]"
             aria-label="Back to top"
         >
             <ArrowUp size={24} />
