@@ -2,7 +2,7 @@
 
 > Fast, free, and privacy-focused developer tools. Built with Next.js 15 and modern web technologies.
 
-![DailyDevTools](public/opengraph-image.png)
+![DailyDevTools](public/readme-banner.png)
 
 ## 🚀 Live Demo
 
