@@ -8,6 +8,7 @@ import WebsiteSchema from "../components/WebsiteSchema";
 import ToolsCarousel from "../components/ToolsCarousel";
 import ToolIcon from "../components/ToolIcon";
 import ToolMarquee from "../components/ToolMarquee";
+import HeroAnimation from "../components/HeroAnimation";
 import { useTranslations } from "next-intl";
 
 type CategoryFilter = "All" | "Favorites" | ToolCategory;
@@ -75,12 +76,10 @@ export default function Home() {
   return (
     <div className="relative min-h-screen">
       <WebsiteSchema />
-      <div className="absolute rounded-full blur-[100px] z-0 opacity-50 pointer-events-none top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(249,115,22,0.15)_0%,rgba(255,255,255,0)_70%)]" />
-      <div className="absolute rounded-full blur-[100px] z-0 opacity-50 pointer-events-none top-[20%] right-[-5%] w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(234,179,8,0.1)_0%,rgba(255,255,255,0)_70%)]" />
-
       {/* Hero Section */}
-      <section className="relative z-10 py-20 mt-20 px-6 flex flex-col items-center">
-        <div className="w-full max-w-[1200px] mx-auto text-center flex flex-col items-center">
+      <section className="relative z-10 py-20 mt-20 px-6 flex flex-col items-center overflow-hidden">
+        <HeroAnimation />
+        <div className="relative z-10 w-full max-w-[1200px] mx-auto text-center flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#f973161a] border border-[#f9731633] rounded-full text-[13px] text-[#fb923c] mb-8">
             <Sparkles size={16} />
             <span>{t('heroTag')}</span>
