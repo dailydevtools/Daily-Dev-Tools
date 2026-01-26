@@ -1874,7 +1874,7 @@
     "placeholder": "Zadejte text, který chcete vyslovit...",
     "voice": "Hlas",
     "speed": "Rychlost",
-    "pitch": "Pitch",
+    "pitch": "Rozteč",
     "speak": "Mluvit"
   },
   "TokenGenerator": {
@@ -1998,7 +1998,7 @@
     "windowSize": "Velikost okna",
     "pixelRatio": "Poměr pixelů",
     "colorDepth": "Barevná hloubka",
-    "ram": "RAM",
+    "ram": "BERAN",
     "cookiesEnabled": "Soubory cookie povoleny",
     "onlineStatus": "Stav online",
     "unknown": "Neznámý",

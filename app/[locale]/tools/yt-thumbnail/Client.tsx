@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Download, Search, Image as ImageIcon } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function YTThumbnailClient() {
@@ -56,7 +57,7 @@ export default function YTThumbnailClient() {
                     <ToolPageHeader
                         title={tTools('yt-thumbnail.name')}
                         description={tTools('yt-thumbnail.description')}
-                        icon={<ImageIcon size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Youtube" size={32} />}
                     />
 
                     <div className="flex gap-3 mb-10">

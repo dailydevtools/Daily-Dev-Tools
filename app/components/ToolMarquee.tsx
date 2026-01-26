@@ -1,13 +1,12 @@
 "use client";
 
-import { useState } from "react";
+
 import Link from "next/link";
 import { tools } from "../data/tools";
 import ToolIcon from "./ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function ToolMarquee() {
-    const [isPaused, setIsPaused] = useState(false);
     const tTools = useTranslations('Tools');
 
     // Duplicate tools for seamless loop
@@ -15,12 +14,10 @@ export default function ToolMarquee() {
 
     return (
         <div
-            className="w-full overflow-x-hidden overflow-y-visible py-2 relative before:content-[''] before:absolute before:top-0 before:bottom-0 before:w-20 before:z-[2] before:pointer-events-none before:left-0 before:bg-gradient-to-r before:from-[var(--background)] before:to-transparent after:content-[''] after:absolute after:top-0 after:bottom-0 after:w-20 after:z-[2] after:pointer-events-none after:right-0 after:bg-gradient-to-l after:from-[var(--background)] after:to-transparent"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
+            className="group w-full overflow-x-hidden overflow-y-visible py-2 relative before:content-[''] before:absolute before:top-0 before:bottom-0 before:w-20 before:z-[2] before:pointer-events-none before:left-0 before:bg-gradient-to-r before:from-[var(--background)] before:to-transparent after:content-[''] after:absolute after:top-0 after:bottom-0 after:w-20 after:z-[2] after:pointer-events-none after:right-0 after:bg-gradient-to-l after:from-[var(--background)] after:to-transparent"
         >
             <div
-                className={`flex gap-3 w-fit animate-marquee ${isPaused ? '[animation-play-state:paused]' : ''}`}
+                className="flex gap-3 w-fit animate-marquee group-hover:[animation-play-state:paused]"
             >
                 {allTools.map((tool, index) => (
                     <Link

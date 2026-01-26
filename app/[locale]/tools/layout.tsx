@@ -3,6 +3,7 @@ import RelatedTools from "../../components/RelatedTools";
 import ShareButton from "../../components/ShareButton";
 import Breadcrumb from "../../components/Breadcrumb";
 import ScrollToTop from "../../components/ScrollToTop";
+import RecentToolsTracker from "../../components/RecentToolsTracker";
 
 export default function ToolsLayout({
     children,
@@ -11,6 +12,7 @@ export default function ToolsLayout({
 }) {
     return (
         <div className="min-h-screen flex flex-col">
+            <RecentToolsTracker />
             <ScrollToTop />
             {/* Main Grid Layout: Left Ad | Content | Right Ad */}
             <div className="flex-1 flex pt-16"> {/* Add padding for fixed header */}

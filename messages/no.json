@@ -594,8 +594,8 @@
       "pasteToken": "Lim inn JWT-tokenet ditt",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Dekode JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "OVERSKRIFT",
+      "payload": "NYTTELAST",
       "issued": "Utstedt",
       "expires": "Utløper"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Skriv inn tekst",
       "inputPlaceholder": "Skriv inn teksten din her...",
-      "upper": "UPPERCASE",
+      "upper": "STORE BOKSTAVER",
       "lower": "små bokstaver",
       "title": "Tittelsak",
       "sentence": "Setningssak",
@@ -1711,7 +1711,7 @@
     "windowSize": "Vindustørrelse",
     "pixelRatio": "Pikselforhold",
     "colorDepth": "Fargedybde",
-    "ram": "RAM",
+    "ram": "VÆR",
     "cookiesEnabled": "Informasjonskapsler aktivert",
     "onlineStatus": "Online status",
     "unknown": "Ukjent",
@@ -1795,9 +1795,9 @@
       "block_5": "Test disse mønstrene umiddelbart med vår <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex-tester</a>."
     },
     "cron-job-scheduling": {
-      "block_1": "The 5 Stars of Cron",
+      "block_1": "De 5 stjernene til Cron",
       "block_2": "Minutt, time, dag i måneden, måned, ukedag.Det er alt det er.",
-      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Eksempler</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Kjør hver dag ved midnatt: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] *border border-</0.923c] *border border-</0()-code",
       "block_4": "Eksempler",
       "block_5": "Trenger du hjelp?Bruk <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> for å bygge uttrykk visuelt."
     },

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Check } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 interface JWTHeader {
@@ -65,7 +66,7 @@ export default function JWTDecoderClient() {
                     <ToolPageHeader
                         title={tTools('jwt-decoder.name')}
                         description={tTools('jwt-decoder.description')}
-                        icon={<span className="text-2xl">🎫</span>}
+                        icon={<ToolIcon name="Ticket" size={32} />}
                     />
 
                     {/* Input */}

@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "テキスト",
-      "ascii": "ASCII",
+      "ascii": "アスキー",
       "convert": "変換",
       "inputPlaceholder": "テキストを入力..."
     },
@@ -1717,7 +1717,7 @@
     "windowSize": "ウィンドウサイズ",
     "pixelRatio": "ピクセル比",
     "colorDepth": "色深度",
-    "ram": "RAM",
+    "ram": "ラム",
     "cookiesEnabled": "クッキー有効",
     "onlineStatus": "オンライン状態",
     "unknown": "不明",
@@ -1804,7 +1804,7 @@
       "block_1": "Cronの5つの星",
       "block_2": "分、時、日、月、曜日。それだけです。",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">例</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">毎日深夜0時に実行: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * 実行するコマンド",
       "block_5": "例",
       "block_6": "15分ごとに実行: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "助けが必要ですか？ <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cronジェネレーター</a>を使用して、視覚的に式を作成してください。"

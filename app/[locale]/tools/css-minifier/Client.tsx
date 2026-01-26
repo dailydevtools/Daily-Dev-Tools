@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Check, Trash2 } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function CssMinifierClient() {
@@ -55,7 +56,7 @@ export default function CssMinifierClient() {
                     <ToolPageHeader
                         title={tTools('css-minifier.name')}
                         description={tTools('css-minifier.description')}
-                        icon={<span className="text-2xl">🎨</span>}
+                        icon={<ToolIcon name="FileCode" size={32} />}
                     />
 
                     <div className="flex items-center gap-3 mb-6">

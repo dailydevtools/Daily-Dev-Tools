@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Eye, Code } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import DOMPurify from "isomorphic-dompurify";
 
@@ -11,6 +12,7 @@ import DOMPurify from "isomorphic-dompurify";
 
 export default function MarkdownEditorClient() {
     const t = useTranslations('MarkdownEditor');
+    const tTools = useTranslations('Tools');
     const [input, setInput] = useState("# Hello World\n\nThis is a **bold** statement.\n\n- Item 1\n- Item 2\n\n```\nconsole.log('code');\n```");
 
     // Simple Markdown Parser (Client-side, validation-free)
@@ -34,9 +36,9 @@ export default function MarkdownEditorClient() {
             <div className="relative z-10 pb-[60px] px-6 pt-6">
                 <div className="max-w-[1200px] mx-auto">
                     <ToolPageHeader
-                        title="Markdown Editor"
-                        description="Write and preview Markdown in real-time. Simple and fast."
-                        icon={<span className="text-2xl">📝</span>}
+                        title={tTools('markdown-editor.name')}
+                        description={tTools('markdown-editor.description')}
+                        icon={<ToolIcon name="FileText" size={32} />} // Using consistent icon from tools.ts
                     />
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 h-[calc(100vh-250px)] min-h-[500px]">

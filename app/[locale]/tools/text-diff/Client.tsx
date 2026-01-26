@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { RefreshCw } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function TextDiffClient() {
@@ -61,7 +62,7 @@ export default function TextDiffClient() {
                     <ToolPageHeader
                         title="Text Diff Checker"
                         description="Compare text and code to find differences (additions/removals) instantly."
-                        icon={<span className="text-2xl font-bold">↔️</span>}
+                        icon={<ToolIcon name="GitCompare" size={32} />}
                     />
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">

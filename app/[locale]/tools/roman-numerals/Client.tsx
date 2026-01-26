@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { RefreshCw } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function RomanNumeralsClient() {
@@ -51,7 +52,7 @@ export default function RomanNumeralsClient() {
                     <ToolPageHeader
                         title={tTools('roman-numerals.name')}
                         description={tTools('roman-numerals.description')}
-                        icon={<span className="text-2xl font-bold">IV</span>}
+                        icon={<ToolIcon name="Hash" size={32} />}
                     />
 
                     <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 grid grid-cols-1 md:grid-cols-2 gap-10">

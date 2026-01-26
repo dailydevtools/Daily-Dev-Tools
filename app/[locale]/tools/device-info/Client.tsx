@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Monitor, Cpu, Globe, Battery } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function DeviceInfoClient() {
@@ -62,7 +63,7 @@ export default function DeviceInfoClient() {
                     <ToolPageHeader
                         title="Device Information"
                         description="View detailed information about your device, browser, and network."
-                        icon={<Monitor size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Smartphone" size={32} />}
                     />
 
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5 mb-10">

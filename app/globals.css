@@ -34,6 +34,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -57,6 +58,12 @@ body {
     }
   }
 
+  .animate-marquee {
+    animation: marquee 360s linear infinite;
+  }
+
+
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -69,9 +76,7 @@ body {
     }
   }
 
-  .animate-marquee {
-    animation: marquee 120s linear infinite;
-  }
+
 
   @keyframes float {
 

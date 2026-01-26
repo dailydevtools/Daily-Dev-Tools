@@ -594,8 +594,8 @@
       "pasteToken": "Вставте свій маркер JWT",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Декодуйте JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "ЗАГОЛОВОК",
+      "payload": "КОРИСНЕ НАВАНТАЖЕННЯ",
       "issued": "Видано",
       "expires": "Термін дії закінчується"
     },
@@ -627,7 +627,7 @@
       "sentences": "Речення",
       "paragraphs": "Абзаци",
       "readingTime": "Час читання",
-      "min": "min",
+      "min": "хв",
       "textInput": "Введення тексту",
       "inputPlaceholder": "Почніть вводити або вставити текст тут, щоб проаналізувати...",
       "clear": "ясно"
@@ -645,7 +645,7 @@
     },
     "CssMinifier": {
       "inputPlaceholder": "Вставте сюди свій код CSS...",
-      "outputPlaceholder": "Minified CSS will appear here..."
+      "outputPlaceholder": "Тут з’явиться мінімізований CSS..."
     },
     "MarkdownEditor": {
       "editor": "редактор",
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Введення тексту",
       "inputPlaceholder": "Введіть текст тут...",
-      "upper": "UPPERCASE",
+      "upper": "ВЕРХНИЙ РЕГІСТ",
       "lower": "нижній регістр",
       "title": "Регістр назви",
       "sentence": "Відмінок речення",
@@ -905,7 +905,7 @@
       "upload": "Завантажити",
       "convert": "конвертувати",
       "copy": "Копіювати",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "дані:зображення/png;база64...",
       "uploadImage": "Завантажити зображення",
       "convertToBase64": "Перетворити на Base64",
       "convertToImage": "Перетворити на зображення",
@@ -1083,7 +1083,7 @@
       "start": "старт",
       "pause": "Пауза",
       "reset": "Скинути",
-      "minutes": "min"
+      "minutes": "хв"
     },
     "PrimeFactors": {
       "number": "Номер",
@@ -1711,7 +1711,7 @@
     "windowSize": "Розмір вікна",
     "pixelRatio": "Співвідношення пікселів",
     "colorDepth": "Глибина кольору",
-    "ram": "RAM",
+    "ram": "ОЗУ",
     "cookiesEnabled": "Файли cookie ввімкнено",
     "onlineStatus": "Статус онлайн",
     "unknown": "Невідомий",

@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Play, Pause, RotateCcw, Volume2, VolumeX, Clock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function PomodoroTimerClient() {
@@ -79,7 +80,7 @@ export default function PomodoroTimerClient() {
                     <ToolPageHeader
                         title={tTools('pomodoro-timer.name')}
                         description={tTools('pomodoro-timer.description')}
-                        icon={<Clock size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Timer" size={32} />}
                     />
 
                     <div className="flex justify-center gap-3 mb-10">

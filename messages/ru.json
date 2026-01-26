@@ -594,8 +594,8 @@
       "pasteToken": "Вставьте свой токен JWT",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Декодировать JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "ЗАГОЛОВОК",
+      "payload": "ПОЛЕЗНАЯ НАГРУЗКА",
       "issued": "Изданный",
       "expires": "Срок действия истекает"
     },
@@ -627,7 +627,7 @@
       "sentences": "Предложения",
       "paragraphs": "Абзацы",
       "readingTime": "Время чтения",
-      "min": "min",
+      "min": "мин",
       "textInput": "Ввод текста",
       "inputPlaceholder": "Начните вводить или вставьте сюда свой текст, чтобы проанализировать...",
       "clear": "Прозрачный"
@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "Текст",
-      "ascii": "ASCII",
+      "ascii": "ASCII-код",
       "convert": "Конвертировать",
       "inputPlaceholder": "Введите текст..."
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Введите текст",
       "inputPlaceholder": "Введите текст здесь...",
-      "upper": "UPPERCASE",
+      "upper": "ПРОПИСНЫЕ РЕГИСТРЫ",
       "lower": "строчные буквы",
       "title": "Название регистра",
       "sentence": "Случай предложения",
@@ -832,7 +832,7 @@
       "answerSection": "Раздел ответов",
       "name": "Имя",
       "type": "Тип",
-      "ttl": "TTL",
+      "ttl": "ТТЛ",
       "data": "Данные",
       "noRecords": "Записи не найдены"
     },
@@ -905,7 +905,7 @@
       "upload": "Загрузить",
       "convert": "Конвертировать",
       "copy": "Копировать",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "данные:изображение/png;base64...",
       "uploadImage": "Загрузить изображение",
       "convertToBase64": "Преобразовать в Base64",
       "convertToImage": "Преобразовать в изображение",
@@ -940,7 +940,7 @@
       "format": "Формат",
       "csv": "CSV",
       "xml": "XML",
-      "yaml": "YAML",
+      "yaml": "ЯМЛ",
       "jsonToCsv": "JSON в CSV",
       "csvToJson": "CSV в JSON",
       "jsonInput": "JSON-ввод",
@@ -1083,7 +1083,7 @@
       "start": "Начинать",
       "pause": "Пауза",
       "reset": "Перезагрузить",
-      "minutes": "min"
+      "minutes": "мин"
     },
     "PrimeFactors": {
       "number": "Число",
@@ -1098,7 +1098,7 @@
       "investment": "Инвестиции",
       "returns": "Возврат",
       "calculate": "Рассчитать",
-      "roi": "ROI",
+      "roi": "рентабельность инвестиций",
       "profit": "Выгода",
       "finalValue": "Окончательное значение",
       "time": "Время (лет)",
@@ -1110,7 +1110,7 @@
       "decimalPlaceholder": "2024",
       "roman": "Роман",
       "convert": "Конвертировать",
-      "placeholder": "MMXXIV"
+      "placeholder": "ММХХIV"
     },
     "ScreenRecorder": {
       "startRecording": "Начать запись",
@@ -1459,7 +1459,7 @@
     "time": "Время (местное)",
     "invalid": "Неверный",
     "zones": {
-      "utc": "UTC",
+      "utc": "универсальное глобальное время",
       "newYork": "Нью-Йорк (EST/EDT)",
       "losAngeles": "Лос-Анджелес (PST/PDT)",
       "london": "Лондон (GMT/BST)",
@@ -1512,7 +1512,7 @@
     "loading": "Загрузка...",
     "isp": "Интернет-провайдер (ISP)",
     "location": "Расположение",
-    "asn": "ASN",
+    "asn": "АСН",
     "timezone": "Часовой пояс",
     "note": "Это IP-адрес, видимый веб-сайтам, которые вы посещаете. Он может отличаться от вашего локального IP-адреса, если вы используете VPN или прокси."
   },
@@ -1711,7 +1711,7 @@
     "windowSize": "Размер окна",
     "pixelRatio": "Соотношение пикселей",
     "colorDepth": "Глубина цвета",
-    "ram": "RAM",
+    "ram": "БАРАН",
     "cookiesEnabled": "Файлы cookie включены",
     "onlineStatus": "Онлайн-статус",
     "unknown": "Неизвестный",
@@ -1798,7 +1798,7 @@
       "block_1": "5 звезд Крона",
       "block_2": "Минута, Час, День месяца, Месяц, День недели.Вот и все.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Примеры</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Запускать каждый день в полночь: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * команда_запуска",
       "block_5": "Примеры",
       "block_6": "Выполнять каждые 15 минут: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 округленный шрифт-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "Нужна помощь?Используйте наш <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">генератор Cron</a> для визуального создания выражений."

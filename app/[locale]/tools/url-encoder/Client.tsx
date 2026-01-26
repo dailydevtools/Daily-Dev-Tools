@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Check, ArrowRightLeft } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function URLEncoderClient() {
@@ -48,7 +49,7 @@ export default function URLEncoderClient() {
                     <ToolPageHeader
                         title={tTools('url-encoder.name')}
                         description={tTools('url-encoder.description')}
-                        icon={<span className="text-2xl font-bold">🔗</span>}
+                        icon={<ToolIcon name="Link" size={32} />}
                     />
 
                     <div className="flex items-center gap-3 mb-6">

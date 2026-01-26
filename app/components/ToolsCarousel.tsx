@@ -45,7 +45,7 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
     };
 
     return (
-        <div className="relative group/carousel-group">
+        <div className="relative group/carousel-group w-full">
             {/* Scroll Container */}
             <div
                 ref={scrollRef}

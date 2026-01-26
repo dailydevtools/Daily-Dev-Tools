@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Image as ImageIcon, FileText } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function ImageBase64Client() {
@@ -44,7 +45,7 @@ export default function ImageBase64Client() {
                     <ToolPageHeader
                         title={tTools('image-base64.name')}
                         description={tTools('image-base64.description')}
-                        icon={<FileText size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Image" size={32} />}
                     />
 
                     <div className="flex justify-center mb-8">

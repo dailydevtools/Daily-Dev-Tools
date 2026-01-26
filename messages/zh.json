@@ -594,8 +594,8 @@
       "pasteToken": "粘贴您的 JWT 令牌",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "解码智威汤逊",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "标头",
+      "payload": "有效载荷",
       "issued": "发布",
       "expires": "过期"
     },
@@ -627,7 +627,7 @@
       "sentences": "句子",
       "paragraphs": "段落",
       "readingTime": "阅读时间",
-      "min": "min",
+      "min": "分钟",
       "textInput": "文字输入",
       "inputPlaceholder": "开始在此处输入或粘贴您的文本以进行分析...",
       "clear": "清除"
@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "文本",
-      "ascii": "ASCII",
+      "ascii": "ASCII码",
       "convert": "转变",
       "inputPlaceholder": "输入文字..."
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "输入文字",
       "inputPlaceholder": "在此输入您的文字...",
-      "upper": "UPPERCASE",
+      "upper": "大写",
       "lower": "小写",
       "title": "标题案例",
       "sentence": "句格",
@@ -890,7 +890,7 @@
       "description": "描述"
     },
     "IbanValidator": {
-      "iban": "IBAN",
+      "iban": "国际银行账号",
       "validate": "证实",
       "valid": "有效的",
       "invalid": "无效的",
@@ -905,7 +905,7 @@
       "upload": "上传",
       "convert": "转变",
       "copy": "复制",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "数据：图像/png;base64...",
       "uploadImage": "上传图片",
       "convertToBase64": "转换为 Base64",
       "convertToImage": "转换为图像",
@@ -1083,7 +1083,7 @@
       "start": "开始",
       "pause": "暂停",
       "reset": "重置",
-      "minutes": "min"
+      "minutes": "分钟"
     },
     "PrimeFactors": {
       "number": "数字",
@@ -1098,7 +1098,7 @@
       "investment": "投资",
       "returns": "退货",
       "calculate": "计算",
-      "roi": "ROI",
+      "roi": "投资回报率",
       "profit": "利润",
       "finalValue": "最终值",
       "time": "时间（年）",
@@ -1459,7 +1459,7 @@
     "time": "时间（当地时间）",
     "invalid": "无效的",
     "zones": {
-      "utc": "UTC",
+      "utc": "世界标准时间",
       "newYork": "纽约（东部时间/东部时间）",
       "losAngeles": "洛杉矶（太平洋标准时间/太平洋夏令时间）",
       "london": "伦敦（格林威治标准时间/英国夏令时）",
@@ -1711,7 +1711,7 @@
     "windowSize": "窗口尺寸",
     "pixelRatio": "像素比",
     "colorDepth": "颜色深度",
-    "ram": "RAM",
+    "ram": "内存",
     "cookiesEnabled": "启用 Cookie",
     "onlineStatus": "在线状态",
     "unknown": "未知",
@@ -1778,39 +1778,39 @@
   },
   "BlogContent": {
     "json-formatting-best-practices": {
-      "block_1": "Why JSON Formatting Matters",
-      "block_2": "JSON (JavaScript Object Notation) is the language of the web. But raw JSON returned from APIs is often a minified mess. formatting it makes it readable, debuggable, and safe.",
-      "block_3": "1. Readability is King",
-      "block_4": "When you're debugging a 5000-line API response, indentation saves lives. Our <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">JSON Formatter</a> uses 2-space or 4-space indentation to make structure clear.",
-      "block_5": "2. Validation",
-      "block_6": "A single missing comma can break your app. Always validate your JSON before committing it to config files.",
-      "block_7": "Conclusion",
-      "block_8": "Don't waste time manually checking brackets. Use automated tools."
+      "block_1": "为什么 JSON 格式很重要",
+      "block_2": "JSON（JavaScript 对象表示法）是网络语言。但从 API 返回的原始 JSON 通常是一团糟。对其进行格式化使其可读、可调试且安全。",
+      "block_3": "1.可读性为王",
+      "block_4": "当您调试 5000 行 API 响应时，缩进可以挽救生命。我们的 <a href=\"/tools/json-formatter\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">JSON Formatter</a> 使用 2 个空格或 4 个空格缩进来使结构清晰。",
+      "block_5": "2. 验证",
+      "block_6": "缺少一个逗号可能会破坏您的应用程序。在将 JSON 提交到配置文件之前，请始终验证它。",
+      "block_7": "结论",
+      "block_8": "不要浪费时间手动检查括号。使用自动化工具。"
     },
     "mastering-regex": {
-      "block_1": "Regex Explained",
-      "block_2": "Regular expressions are powerful but confusing. let's visualize them.",
-      "block_3": "Common Patterns",
-      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
-      "block_5": "Test these patterns instantly with our <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
+      "block_1": "正则表达式解释",
+      "block_2": "正则表达式很强大，但也很混乱。让我们想象一下它们。",
+      "block_3": "常见模式",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">电子邮件：</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 圆形字体-单色文本-[0.9em] 文本-[#fb923c] 边框border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">电话：</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 圆形字体-单色文本-[0.9em] 文本-[#fb923c] 边框border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_5": "使用我们的<a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">正则表达式测试器</a>立即测试这些模式。"
     },
     "cron-job-scheduling": {
-      "block_1": "The 5 Stars of Cron",
-      "block_2": "Minute, Hour, Day of Month, Month, Day of Week. That's all it is.",
-      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
-      "block_5": "Examples",
-      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
-      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
+      "block_1": "Cron 的 5 颗星",
+      "block_2": "分钟、小时、某月某日、某月、某周某日。仅此而已。",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">示例</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">每天午夜运行： <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_4": "* * * * * 运行命令",
+      "block_5": "示例",
+      "block_6": "每 15 分钟运行一次： <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "需要帮助吗？使用我们的 <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">Cron Generator</a> 直观地构建表达式。"
     },
     "secure-password-storage-local": {
-      "block_1": "The Problem with Cloud Vaults",
-      "block_2": "LastPass, Okta, and other giants have suffered breaches. When your vault is online, it's a target.",
-      "block_3": "The Solution: Local Encryption",
-      "block_4": "Our new <strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Local Password Manager</a></strong> runs entirely in your browser. It uses <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256-bit encryption</strong> derived from your master password using PBKDF2.",
-      "block_5": "How it works",
-      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero Knowledge:</strong> We never see your password. It never leaves your device.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline Storage:</strong> Your encrypted vault is stored in your browser's LocalStorage.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable:</strong> You can export/backup your raw encrypted data anytime.</li>",
-      "block_7": "Stop trusting the cloud with your master keys. <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Try the Local Password Manager</a> today."
+      "block_1": "云保管库的问题",
+      "block_2": "LastPass、Okta 和其他巨头都遭受过违规。当您的保管库在线时，它就是一个目标。",
+      "block_3": "解决方案：本地加密",
+      "block_4": "我们新的<strong class=\"text-[var(--title-color)] font-semibold\"><a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">本地密码管理器</a></strong>完全在您的浏览器中运行。它使用从使用 PBKDF2 的主密码派生的 <strong class=\"text-[var(--title-color)] font-semibold\">AES-GCM 256 位加密</strong>。",
+      "block_5": "它是如何运作的",
+      "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">零知识</strong>：我们永远不会看到您的密码。它永远不会离开您的设备。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">离线存储</strong>：您的加密保管库存储在浏览器的本地存储中。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">可导出：</strong>您可以随时导出/备份原始加密数据。</li>",
+      "block_7": "停止信任云与您的主密钥。 <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">立即尝试本地密码管理器</a>。"
     }
   }
 }

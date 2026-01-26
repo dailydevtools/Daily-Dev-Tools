@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { Flag } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function RegexTesterClient() {
@@ -81,7 +82,7 @@ export default function RegexTesterClient() {
                     <ToolPageHeader
                         title={tTools('regex-tester.name')}
                         description={tTools('regex-tester.description')}
-                        icon={<span className="text-2xl font-bold">.*</span>}
+                        icon={<ToolIcon name="Code2" size={32} />}
                     />
 
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6">

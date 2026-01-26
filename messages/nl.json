@@ -594,8 +594,8 @@
       "pasteToken": "Plak uw JWT-token",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "JWT decoderen",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "KOP",
+      "payload": "LAADVERMOGEN",
       "issued": "Uitgegeven",
       "expires": "Verloopt"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Invoertekst",
       "inputPlaceholder": "Typ hier uw tekst...",
-      "upper": "UPPERCASE",
+      "upper": "HOOFDLETTERS",
       "lower": "kleine letters",
       "title": "Titel zaak",
       "sentence": "Zin geval",
