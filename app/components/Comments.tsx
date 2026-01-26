@@ -20,7 +20,7 @@ export default function Comments() {
                 reactionsEnabled="1"
                 emitMetadata="0"
                 inputPosition="bottom"
-                theme={theme === 'dark' ? 'https://raw.githubusercontent.com/dailydevtools/Daily-Dev-Tools/feat/giscus-integration/public/giscus.css' : 'light'}
+                theme={theme === 'dark' ? 'https://cdn.jsdelivr.net/gh/dailydevtools/Daily-Dev-Tools@feat/giscus-integration/public/giscus.css' : 'light'}
                 lang="en"
                 loading="lazy"
             />
