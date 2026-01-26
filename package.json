@@ -22,6 +22,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@monaco-editor/react": "^4.7.0",
     "isomorphic-dompurify": "^2.30.0",
     "lucide-react": "^0.468.0",

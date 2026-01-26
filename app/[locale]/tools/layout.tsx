@@ -4,6 +4,7 @@ import ShareButton from "../../components/ShareButton";
 import Breadcrumb from "../../components/Breadcrumb";
 import ScrollToTop from "../../components/ScrollToTop";
 import RecentToolsTracker from "../../components/RecentToolsTracker";
+import Comments from "../../components/Comments";
 
 export default function ToolsLayout({
     children,
@@ -35,6 +36,7 @@ export default function ToolsLayout({
                         <div className="flex justify-center mt-[60px] mb-5">
                             <ShareButton />
                         </div>
+                        <Comments />
                         <RelatedTools />
                     </section>
                 </main>
