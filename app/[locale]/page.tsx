@@ -81,10 +81,13 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-screen overflow-x-hidden">
       <WebsiteSchema />
-      <div className="absolute rounded-full blur-[100px] z-0 opacity-50 pointer-events-none top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(249,115,22,0.15)_0%,rgba(255,255,255,0)_70%)]" />
-      <div className="absolute rounded-full blur-[100px] z-0 opacity-50 pointer-events-none top-[20%] right-[-5%] w-[500px] h-[500px] bg-[radial-gradient(circle,rgba(234,179,8,0.1)_0%,rgba(255,255,255,0)_70%)]" />
+      {/* Background glows - contained within viewport */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+        <div className="absolute rounded-full blur-[100px] opacity-50 top-[-10%] left-[-10%] w-[min(600px,80vw)] h-[min(600px,80vw)] bg-[radial-gradient(circle,rgba(249,115,22,0.15)_0%,rgba(255,255,255,0)_70%)]" />
+        <div className="absolute rounded-full blur-[100px] opacity-50 top-[20%] right-[-5%] w-[min(500px,70vw)] h-[min(500px,70vw)] bg-[radial-gradient(circle,rgba(234,179,8,0.1)_0%,rgba(255,255,255,0)_70%)]" />
+      </div>
 
       {/* Hero Section */}
       <section className="relative z-10 py-20 mt-20 px-6 flex flex-col items-center">
@@ -220,9 +223,9 @@ export default function Home() {
                     <div className="flex items-center justify-center rounded-xl bg-[#f973161a] text-[#fb923c] border border-[#f9731633] transition-transform duration-300 group-hover:scale-110 w-12 h-12 mb-4">
                       <ToolIcon name={tool.icon} size={24} className="text-[#fb923c]" />
                     </div>
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-lg font-semibold text-[var(--title-color)] mb-2 pr-6">{tTools(`${tool.id}.name`, { fallback: tool.name })}</h3>
-                      <span className="text-[10px] bg-[var(--card-hover-bg)] px-2 py-0.5 rounded-full text-[var(--muted-text)] border border-[var(--border-color)]">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="text-lg font-semibold text-[var(--title-color)]">{tTools(`${tool.id}.name`, { fallback: tool.name })}</h3>
+                      <span className="text-[10px] bg-[var(--card-hover-bg)] px-2 py-0.5 rounded-full text-[var(--muted-text)] border border-[var(--border-color)] ml-4 shrink-0 mt-1">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
                     </div>
                     <p className="text-[var(--muted-text)] text-sm mb-4">{tTools(`${tool.id}.description`, { fallback: tool.description })}</p>
                     <div className="flex items-center text-[#fb923c] text-sm font-medium">
