@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import VatCalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'VAT Calculator | DailyDevTools',
-    description: 'Calculate VAT easily. Add or remove tax from amounts instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'vat-calculator' });
+}
 
 export default function VatCalculatorPage() {
     return <VatCalculatorClient />;

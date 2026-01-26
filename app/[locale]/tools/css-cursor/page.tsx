@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CssCursorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Cursor Tester | DailyDevTools',
-    description: 'Test all available CSS values for the cursor property. Helper for UI design.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'css-cursor' });
+}
 
 export default function CssCursorPage() {
     return <CssCursorClient />;

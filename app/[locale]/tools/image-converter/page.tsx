@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ImageConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Image Converter | DailyDevTools',
-    description: 'Convert images to different formats (WebP, JPG, PNG) directly in your browser.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'image-converter' });
+}
 
 export default function ImageConverterPage() {
     return <ImageConverterClient />;

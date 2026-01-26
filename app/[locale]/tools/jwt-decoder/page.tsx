@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import JWTDecoderClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'JWT Decoder | DailyDevTools',
-    description: 'Decode and debug JWT (JSON Web Tokens) online. View header and payload securely.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'jwt-decoder' });
+}
 
 export default function JWTDecoderPage() {
     return <JWTDecoderClient />;

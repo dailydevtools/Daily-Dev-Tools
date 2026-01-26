@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import DeepLinkTesterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Deep Link Tester | DailyDevTools',
-    description: 'Test and debug deep links (URL schemes) for your mobile apps. Launch directly or generate QR codes.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'deep-link-tester' });
+}
 
 export default function DeepLinkTesterPage() {
     return <DeepLinkTesterClient />;

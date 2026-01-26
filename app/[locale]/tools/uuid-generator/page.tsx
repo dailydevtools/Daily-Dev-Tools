@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import UuidGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'UUID Generator | DailyDevTools',
-    description: 'Generate version 4 UUIDs instantly. Copy one or all keys to clipboard.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'uuid-generator' });
+}
 
 export default function UuidGeneratorPage() {
     return <UuidGeneratorClient />;

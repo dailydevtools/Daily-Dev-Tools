@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PaypalLinkClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'PayPal Link Generator | DailyDevTools',
-    description: 'Create custom PayPal payment links with specific amounts and currencies.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'paypal-link' });
+}
 
 export default function PaypalLinkPage() {
     return <PaypalLinkClient />;

@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import UnitConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Unit Converter | DailyDevTools',
-    description: 'Convert common units like Length, Weight, and Temperature instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'unit-converter' });
+}
 
 export default function UnitConverterPage() {
     return <UnitConverterClient />;

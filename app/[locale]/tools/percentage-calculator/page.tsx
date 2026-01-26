@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PercentageCalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Percentage Calculator | DailyDevTools',
-    description: 'Free online percentage calculator. Calculate increase, decrease, and percentage of numbers.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'percentage-calculator' });
+}
 
 export default function PercentageCalculatorPage() {
     return <PercentageCalculatorClient />;

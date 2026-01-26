@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import JsonDiffClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'JSON Diff Tool | DailyDevTools',
-    description: 'Compare JSON objects online. Visualize differences between two JSON files.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'json-diff' });
+}
 
 export default function JsonDiffPage() {
     return <JsonDiffClient />;

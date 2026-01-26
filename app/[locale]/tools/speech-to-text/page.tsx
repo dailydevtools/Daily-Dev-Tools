@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import SpeechToTextClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Speech to Text Converter | DailyDevTools',
-    description: 'Dictate notes easily using Speech to Text using browser APIs.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'speech-to-text' });
+}
 
 export default function SpeechToTextPage() {
     return <SpeechToTextClient />;

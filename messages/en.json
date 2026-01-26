@@ -1238,7 +1238,8 @@
     "WeekNumber": {
       "currentWeek": "Current Week Number",
       "yearProgress": "Year Progress",
-      "week": "Week"
+      "week": "Week",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Phone Number",

@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ImageBase64Client from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Image to Base64 Converter | DailyDevTools',
-    description: 'Convert images to Base64 strings for embedding in HTML/CSS, or decode Base64 back to images.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'image-base64' });
+}
 
 export default function ImageBase64Page() {
     return <ImageBase64Client />;

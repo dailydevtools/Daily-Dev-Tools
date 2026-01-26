@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PrimeFactorsClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Prime Factors Calculator | DailyDevTools',
-    description: 'Find prime factors of any number. Check if a number is prime or composite instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'prime-factors' });
+}
 
 export default function PrimeFactorsPage() {
     return <PrimeFactorsClient />;

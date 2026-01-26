@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import RomanNumeralsClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Roman Numeral Converter | DailyDevTools',
-    description: 'Bidirectional converter for Roman Numerals (I, V, X...) and decimals.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'roman-numerals' });
+}
 
 export default function RomanNumeralsPage() {
     return <RomanNumeralsClient />;

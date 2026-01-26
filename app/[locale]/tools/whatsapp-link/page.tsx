@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import WhatsAppLinkClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'WhatsApp Link Generator | DailyDevTools',
-    description: 'WhatsApp Direct Link Generator - Create links to chat without saving numbers.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'whatsapp-link' });
+}
 
 export default function WhatsAppLinkPage() {
     return <WhatsAppLinkClient />;

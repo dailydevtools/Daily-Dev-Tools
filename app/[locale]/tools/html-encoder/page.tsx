@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import HtmlEncoderClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'HTML Encoder / Decoder | DailyDevTools',
-    description: 'Encode and decode HTML characters to HTML entities. Prevent XSS by escaping special characters.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'html-encoder' });
+}
 
 export default function HtmlEncoderPage() {
     return <HtmlEncoderClient />;

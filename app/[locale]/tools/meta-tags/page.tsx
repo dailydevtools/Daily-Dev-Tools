@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import MetaTagsClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Simple Meta Tags | DailyDevTools',
-    description: 'Basic HTML Header generator. Title, description and viewport tag generation.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'meta-tags' });
+}
 
 export default function MetaTagsPage() {
     return <MetaTagsClient />;

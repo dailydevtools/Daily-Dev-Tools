@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ImageCompressorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Image Compressor | DailyDevTools',
-    description: 'Compress JPG, PNG, and WebP images locally in your browser. Reduce file size without losing quality.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'image-compressor' });
+}
 
 export default function ImageCompressorPage() {
     return <ImageCompressorClient />;

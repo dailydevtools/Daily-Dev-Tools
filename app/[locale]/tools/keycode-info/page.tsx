@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import KeyCodeInfoClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Key Code Info | DailyDevTools',
-    description: 'Find Javascript KeyCode, event.code, and event.key for any key press.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'keycode-info' });
+}
 
 export default function KeyCodeInfoPage() {
     return <KeyCodeInfoClient />;

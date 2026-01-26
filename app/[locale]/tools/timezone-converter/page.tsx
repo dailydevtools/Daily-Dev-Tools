@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TimezoneConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Timezone Converter | DailyDevTools',
-    description: 'Convert local time to multiple time zones around the world.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'timezone-converter' });
+}
 
 export default function TimezoneConverterPage() {
     return <TimezoneConverterClient />;

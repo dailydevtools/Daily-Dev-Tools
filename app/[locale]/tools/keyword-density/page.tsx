@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import KeywordDensityClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Keyword Density Checker | DailyDevTools',
-    description: 'Check keyword frequency and density in your text content for SEO analysis.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'keyword-density' });
+}
 
 export default function KeywordDensityPage() {
     return <KeywordDensityClient />;

@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import FaviconGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Favicon Generator | DailyDevTools',
-    description: 'Convert any image into a favicon for your website. Generates standard 32x32 PNG favicons.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'favicon-generator' });
+}
 
 export default function FaviconGeneratorPage() {
     return <FaviconGeneratorClient />;

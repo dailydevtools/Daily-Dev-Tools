@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ColorConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Color Converter | DailyDevTools',
-    description: 'Convert colors between HEX, RGB, and HSL formats.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'color-converter' });
+}
 
 export default function ColorConverterPage() {
     return <ColorConverterClient />;

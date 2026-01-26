@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import MarginCalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Profile Margin Calculator | DailyDevTools',
-    description: 'Calculate gross margin, markup, and profit from cost and revenue instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'margin-calculator' });
+}
 
 export default function MarginCalculatorPage() {
     return <MarginCalculatorClient />;

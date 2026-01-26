@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import DateDiffClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Date Difference Calculator | DailyDevTools',
-    description: 'Calculate the duration between two dates in years, months, days, and more.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'date-diff' });
+}
 
 export default function DateDiffPage() {
     return <DateDiffClient />;

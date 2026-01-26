@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import DNSLookupClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'DNS Lookup | DailyDevTools',
-    description: 'Check DNS records (A, MX, NS, CNAME, TXT, etc.) for any domain name using Cloudflare DoH.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'dns-lookup' });
+}
 
 export default function DNSLookupPage() {
     return <DNSLookupClient />;

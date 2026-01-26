@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import FuelCalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Fuel Cost Calculator | DailyDevTools',
-    description: 'Calculate trip fuel costs instantly. Enter distance, fuel efficiency (MPG), and gas price.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'fuel-calculator' });
+}
 
 export default function FuelCalculatorPage() {
     return <FuelCalculatorClient />;

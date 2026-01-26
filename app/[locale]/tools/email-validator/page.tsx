@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import EmailValidatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Email Validator | DailyDevTools',
-    description: 'Verify email address format and check for common typos like @gnail.com.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'email-validator' });
+}
 
 export default function EmailValidatorPage() {
     return <EmailValidatorClient />;

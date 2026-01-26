@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import BoxShadowGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Box Shadow Generator | DailyDevTools',
-    description: 'Generate CSS box-shadows visually. Adjust position, blur, spread, color, and opacity.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'box-shadow' });
+}
 
 export default function BoxShadowGeneratorPage() {
     return <BoxShadowGeneratorClient />;

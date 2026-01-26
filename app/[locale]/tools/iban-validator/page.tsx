@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import IbanValidatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'IBAN Validator | DailyDevTools',
-    description: 'Validate IBAN (International Bank Account Number) for correctness. Offline processing.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'iban-validator' });
+}
 
 export default function IbanValidatorPage() {
     return <IbanValidatorClient />;

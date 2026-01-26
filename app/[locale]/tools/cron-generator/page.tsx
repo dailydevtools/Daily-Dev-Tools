@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CronGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Cron Generator | DailyDevTools',
-    description: 'Create and test cron schedule expressions. Common presets included.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'cron-generator' });
+}
 
 export default function CronGeneratorPage() {
     return <CronGeneratorClient />;

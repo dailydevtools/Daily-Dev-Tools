@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import StopwatchClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Stopwatch | DailyDevTools',
-    description: 'Precision stopwatch with lap tracking. Millisecond accuracy.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'stopwatch' });
+}
 
 export default function StopwatchPage() {
     return <StopwatchClient />;

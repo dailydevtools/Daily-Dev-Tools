@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import MetaGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Meta Tag Generator | DailyDevTools',
-    description: 'Create SEO meta tags, Open Graph tags, and Twitter Cards code for your website.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'meta-generator' });
+}
 
 export default function MetaGeneratorPage() {
     return <MetaGeneratorClient />;

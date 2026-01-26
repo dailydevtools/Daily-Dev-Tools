@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TextToSpeechClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Text to Speech | DailyDevTools',
-    description: 'Online text to speech converter (TTS). Choose from various voices and languages.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'text-to-speech' });
+}
 
 export default function TextToSpeechPage() {
     return <TextToSpeechClient />;

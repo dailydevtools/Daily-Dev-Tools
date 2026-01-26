@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import GradientGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Gradient Generator | DailyDevTools',
-    description: 'Create and customize linear and radial CSS gradients visually. Copy CSS code instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'gradient-generator' });
+}
 
 export default function GradientGeneratorPage() {
     return <GradientGeneratorClient />;

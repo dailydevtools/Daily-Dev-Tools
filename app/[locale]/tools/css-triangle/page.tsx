@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CssTriangleClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Triangle Generator | DailyDevTools',
-    description: 'Create CSS triangles easily. Adjust direction, size, and color.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'css-triangle' });
+}
 
 export default function CssTrianglePage() {
     return <CssTriangleClient />;

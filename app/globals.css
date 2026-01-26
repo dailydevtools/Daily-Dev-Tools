@@ -35,6 +35,8 @@
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -44,6 +46,8 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
