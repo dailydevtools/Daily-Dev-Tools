@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "ข้อความ",
-      "ascii": "ASCII",
+      "ascii": "แอสกี",
       "convert": "แปลง",
       "inputPlaceholder": "ป้อนข้อความ..."
     },
@@ -832,7 +832,7 @@
       "answerSection": "ส่วนคำตอบ",
       "name": "ชื่อ",
       "type": "ประเภท",
-      "ttl": "TTL",
+      "ttl": "ทีทีแอล",
       "data": "ข้อมูล",
       "noRecords": "ไม่พบเรคคอร์ด"
     },
@@ -890,7 +890,7 @@
       "description": "คำอธิบาย"
     },
     "IbanValidator": {
-      "iban": "IBAN",
+      "iban": "ไอแบน",
       "validate": "ตรวจสอบ",
       "valid": "ถูกต้อง",
       "invalid": "ไม่ถูกต้อง",
@@ -905,7 +905,7 @@
       "upload": "อัปโหลด",
       "convert": "แปลง",
       "copy": "คัดลอก",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "ข้อมูล:รูปภาพ/png;base64...",
       "uploadImage": "อัปโหลดรูปภาพ",
       "convertToBase64": "แปลงเป็น Base64",
       "convertToImage": "แปลงเป็นรูปภาพ",
@@ -1098,7 +1098,7 @@
       "investment": "การลงทุน",
       "returns": "ผลตอบแทน",
       "calculate": "คำนวณ",
-      "roi": "ROI",
+      "roi": "ผลตอบแทนการลงทุน",
       "profit": "กำไร",
       "finalValue": "มูลค่าสุดท้าย",
       "time": "เวลา (ปี)",
@@ -1110,7 +1110,7 @@
       "decimalPlaceholder": "2024",
       "roman": "โรมัน",
       "convert": "แปลง",
-      "placeholder": "MMXXIV"
+      "placeholder": "มมXXIV"
     },
     "ScreenRecorder": {
       "startRecording": "เริ่มบันทึก",
@@ -1459,7 +1459,7 @@
     "time": "เวลา (ท้องถิ่น)",
     "invalid": "ไม่ถูกต้อง",
     "zones": {
-      "utc": "UTC",
+      "utc": "เวลาสากลเชิงพิกัด",
       "newYork": "นิวยอร์ก (EST/EDT)",
       "losAngeles": "ลอสแอนเจลิส (PST/PDT)",
       "london": "ลอนดอน (GMT/BST)",
@@ -1711,7 +1711,7 @@
     "windowSize": "ขนาดหน้าต่าง",
     "pixelRatio": "อัตราส่วนพิกเซล",
     "colorDepth": "ความลึกของสี",
-    "ram": "RAM",
+    "ram": "แรม",
     "cookiesEnabled": "เปิดใช้งานคุกกี้แล้ว",
     "onlineStatus": "สถานะออนไลน์",
     "unknown": "ไม่ทราบ",

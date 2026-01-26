@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { RefreshCw } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function WordCounterClient() {
@@ -49,7 +50,7 @@ export default function WordCounterClient() {
                     <ToolPageHeader
                         title={tTools('word-counter.name')}
                         description={tTools('word-counter.description')}
-                        icon={<span className="text-2xl font-bold">📊</span>}
+                        icon={<ToolIcon name="AlignJustify" size={32} />}
                     />
 
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">

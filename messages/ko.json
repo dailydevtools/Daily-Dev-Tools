@@ -594,8 +594,8 @@
       "pasteToken": "JWT 토큰 붙여넣기",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "JWT 디코딩",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "헤더",
+      "payload": "유효 탑재량",
       "issued": "발급됨",
       "expires": "만료"
     },
@@ -627,7 +627,7 @@
       "sentences": "문장",
       "paragraphs": "단락",
       "readingTime": "독서 시간",
-      "min": "min",
+      "min": "분",
       "textInput": "텍스트 입력",
       "inputPlaceholder": "여기에 텍스트를 입력하거나 붙여넣어 분석하세요...",
       "clear": "분명한"
@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "텍스트",
-      "ascii": "ASCII",
+      "ascii": "아스키",
       "convert": "전환하다",
       "inputPlaceholder": "텍스트를 입력하세요..."
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "텍스트 입력",
       "inputPlaceholder": "여기에 텍스트를 입력하세요...",
-      "upper": "UPPERCASE",
+      "upper": "대문자",
       "lower": "소문자",
       "title": "제목 케이스",
       "sentence": "문장 사례",
@@ -890,7 +890,7 @@
       "description": "설명"
     },
     "IbanValidator": {
-      "iban": "IBAN",
+      "iban": "이반",
       "validate": "검증",
       "valid": "유효한",
       "invalid": "유효하지 않은",
@@ -905,7 +905,7 @@
       "upload": "업로드",
       "convert": "전환하다",
       "copy": "복사",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "데이터:이미지/png;base64...",
       "uploadImage": "이미지 업로드",
       "convertToBase64": "Base64로 변환",
       "convertToImage": "이미지로 변환",
@@ -1083,7 +1083,7 @@
       "start": "시작",
       "pause": "정지시키다",
       "reset": "다시 놓기",
-      "minutes": "min"
+      "minutes": "분"
     },
     "PrimeFactors": {
       "number": "숫자",
@@ -1711,7 +1711,7 @@
     "windowSize": "창 크기",
     "pixelRatio": "픽셀 비율",
     "colorDepth": "색상 심도",
-    "ram": "RAM",
+    "ram": "숫양",
     "cookiesEnabled": "쿠키 활성화",
     "onlineStatus": "온라인 상태",
     "unknown": "알려지지 않은",

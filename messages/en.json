@@ -10,6 +10,10 @@
     "title": "DailyDevTools - Free Online Developer Tools",
     "description": "90+ free online tools for everyone. Formatters, converters, generators, and utilities. Fast, private, and no registration required."
   },
+  "Breadcrumb": {
+    "home": "Home",
+    "tools": "Tools"
+  },
   "NotFound": {
     "title": "404: Void Exception",
     "description": "The page you requested seems to have been garbage collected or never existed in this runtime.",
@@ -442,6 +446,10 @@
     "pretty-print-url": {
       "name": "Pretty Print URL",
       "description": "Format and beautify URLs for readability"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -536,6 +544,16 @@
       "convert": "Convert",
       "validate": "Validate",
       "resultPlaceholder": "Result will appear here..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "Encode",
@@ -652,7 +670,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Preview",
-      "inputPlaceholder": "Enter Markdown here..."
+      "inputPlaceholder": "Enter Markdown here...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "Original Text",

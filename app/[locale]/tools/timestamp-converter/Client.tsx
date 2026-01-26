@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Copy, Check, RefreshCw, Calendar, Clock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function TimestampConverterClient() {
@@ -72,7 +73,7 @@ export default function TimestampConverterClient() {
                     <ToolPageHeader
                         title="Unix Timestamp Converter"
                         description="Convert between Unix timestamps and human-readable dates."
-                        icon={<span className="text-2xl font-bold">⏰</span>}
+                        icon={<ToolIcon name="Clock" size={32} />}
                     />
 
                     {/* Current Time Banner */}

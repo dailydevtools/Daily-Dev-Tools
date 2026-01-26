@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Check, RefreshCw, Palette } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function GradientGeneratorClient() {
@@ -43,7 +44,7 @@ export default function GradientGeneratorClient() {
                     <ToolPageHeader
                         title="CSS Gradient Generator"
                         description="Create beautiful linear and radial CSS gradients visually."
-                        icon={<Palette size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Layers" size={32} />}
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10">

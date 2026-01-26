@@ -594,8 +594,8 @@
       "pasteToken": "Indsæt dit JWT-token",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Afkode JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "OVERSKRIFT",
+      "payload": "NYTTE",
       "issued": "Udstedt",
       "expires": "Udløber"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Indtast tekst",
       "inputPlaceholder": "Skriv din tekst her...",
-      "upper": "UPPERCASE",
+      "upper": "STORE BOGSTAVER",
       "lower": "små bogstaver",
       "title": "Titel Case",
       "sentence": "Sætningssag",
@@ -1711,7 +1711,7 @@
     "windowSize": "Vindues størrelse",
     "pixelRatio": "Pixelforhold",
     "colorDepth": "Farvedybde",
-    "ram": "RAM",
+    "ram": "VÆDDER",
     "cookiesEnabled": "Cookies aktiveret",
     "onlineStatus": "Online status",
     "unknown": "Ukendt",
@@ -1788,16 +1788,16 @@
       "block_8": "Spild ikke tid på manuelt at tjekke parenteser.Brug automatiserede værktøjer."
     },
     "mastering-regex": {
-      "block_1": "Regex Explained",
+      "block_1": "Regex Forklaret",
       "block_2": "Regulære udtryk er kraftfulde, men forvirrende.lad os visualisere dem.",
       "block_3": "Almindelige mønstre",
       "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">E-mail:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Telefon:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] borderborder-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
       "block_5": "Test disse mønstre med det samme med vores <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Regex Tester</a>."
     },
     "cron-job-scheduling": {
-      "block_1": "The 5 Stars of Cron",
+      "block_1": "De 5 stjerner af Cron",
       "block_2": "Minut, time, dag i måneden, måned, ugedag.Det er alt, hvad det er.",
-      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Eksempler</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Løb hver dag ved midnat: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] *border border-</0(-)-> border border-</0(-)->",
       "block_4": "Eksempler",
       "block_5": "Har du brug for hjælp?Brug vores <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> til at bygge udtryk visuelt."
     },

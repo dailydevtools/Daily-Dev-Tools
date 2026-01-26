@@ -627,7 +627,7 @@
       "sentences": "Oraciones",
       "paragraphs": "Párrafos",
       "readingTime": "Tiempo de Lectura",
-      "min": "min",
+      "min": "mín.",
       "textInput": "Entrada de Texto",
       "inputPlaceholder": "Empieza a escribir o pega tu texto aquí para analizar...",
       "clear": "Limpiar"
@@ -905,7 +905,7 @@
       "upload": "Subir",
       "convert": "Convertir",
       "copy": "Copiar",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "datos:imagen/png;base64...",
       "uploadImage": "Subir Imagen",
       "convertToBase64": "Convertir a Base64",
       "convertToImage": "Convertir a Imagen",
@@ -1083,7 +1083,7 @@
       "start": "Iniciar",
       "pause": "Pausar",
       "reset": "Reiniciar",
-      "minutes": "min"
+      "minutes": "mín."
     },
     "PrimeFactors": {
       "number": "Número",
@@ -1098,7 +1098,7 @@
       "investment": "Inversión",
       "returns": "Retornos",
       "calculate": "Calcular",
-      "roi": "ROI",
+      "roi": "retorno de la inversión",
       "profit": "Beneficio",
       "finalValue": "Valor Final",
       "time": "Tiempo (Años)",
@@ -1798,7 +1798,7 @@
       "block_1": "Las 5 estrellas de Cron",
       "block_2": "Minuto, Hora, Día del Mes, Mes, Día de la Semana.Eso es todo.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Ejemplos</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Ejecutar todos los días a medianoche: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 fuente redondeada-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * comando_para_ejecutar",
       "block_5": "Ejemplos",
       "block_6": "Ejecutar cada 15 minutos: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 fuente redondeada-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "¿Necesitas ayuda?Utilice nuestro <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Generador Cron</a> para crear expresiones visualmente."

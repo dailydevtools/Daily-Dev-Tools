@@ -595,7 +595,7 @@
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "JWT dekódolása",
       "header": "HEADER",
-      "payload": "PAYLOAD",
+      "payload": "HASZNOS TEHER",
       "issued": "Kiadva",
       "expires": "Lejár"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Szöveg bevitele",
       "inputPlaceholder": "Írja be ide a szövegét...",
-      "upper": "UPPERCASE",
+      "upper": "NAGYBETŰ",
       "lower": "kisbetűvel",
       "title": "Cím Case",
       "sentence": "Mondat eset",

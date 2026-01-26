@@ -594,8 +594,8 @@
       "pasteToken": "अपना JWT टोकन चिपकाएँ",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "जेडब्ल्यूटी को डिकोड करें",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "हैडर",
+      "payload": "पेलोड",
       "issued": "जारी किए गए",
       "expires": "समय-सीमा समाप्त"
     },
@@ -627,7 +627,7 @@
       "sentences": "वाक्य",
       "paragraphs": "पैराग्राफ",
       "readingTime": "पढ़ने का समय",
-      "min": "min",
+      "min": "मिन",
       "textInput": "पाठ इनपुट",
       "inputPlaceholder": "विश्लेषण करने के लिए यहां टाइप करना प्रारंभ करें या अपना टेक्स्ट पेस्ट करें...",
       "clear": "स्पष्ट"
@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "मूलपाठ",
-      "ascii": "ASCII",
+      "ascii": "एएससीआईआई",
       "convert": "बदलना",
       "inputPlaceholder": "पाठ दर्ज करें..."
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "इनपुट पाठ",
       "inputPlaceholder": "यहां अपना पाठ लिखें...",
-      "upper": "UPPERCASE",
+      "upper": "अपरकेस",
       "lower": "छोटे",
       "title": "शीर्षक खाना",
       "sentence": "वाक्य मामले",
@@ -832,7 +832,7 @@
       "answerSection": "उत्तर अनुभाग",
       "name": "नाम",
       "type": "प्रकार",
-      "ttl": "TTL",
+      "ttl": "टीटीएल",
       "data": "डेटा",
       "noRecords": "कोई रिकॉर्ड नहीं मिला"
     },
@@ -890,7 +890,7 @@
       "description": "विवरण"
     },
     "IbanValidator": {
-      "iban": "IBAN",
+      "iban": "आईबीएएन",
       "validate": "मान्य",
       "valid": "वैध",
       "invalid": "अमान्य",
@@ -905,7 +905,7 @@
       "upload": "अपलोड करें",
       "convert": "बदलना",
       "copy": "प्रतिलिपि",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "डेटा:छवि/पीएनजी;बेस64...",
       "uploadImage": "तस्विर अपलोड करना",
       "convertToBase64": "बेस64 में कनवर्ट करें",
       "convertToImage": "छवि में कनवर्ट करें",
@@ -939,8 +939,8 @@
       "convert": "बदलना",
       "format": "प्रारूप",
       "csv": "CSV",
-      "xml": "XML",
-      "yaml": "YAML",
+      "xml": "एक्सएमएल",
+      "yaml": "वाईएएमएल",
       "jsonToCsv": "JSON से CSV",
       "csvToJson": "सीएसवी से जेएसओएन",
       "jsonInput": "JSON इनपुट",
@@ -1083,7 +1083,7 @@
       "start": "शुरू",
       "pause": "विराम",
       "reset": "रीसेट करें",
-      "minutes": "min"
+      "minutes": "मिन"
     },
     "PrimeFactors": {
       "number": "संख्या",
@@ -1098,7 +1098,7 @@
       "investment": "निवेश",
       "returns": "रिटर्न",
       "calculate": "गणना",
-      "roi": "ROI",
+      "roi": "लागत पर लाभ",
       "profit": "लाभ",
       "finalValue": "अंतिम मूल्य",
       "time": "समय (वर्ष)",
@@ -1512,7 +1512,7 @@
     "loading": "लोड हो रहा है...",
     "isp": "इंटरनेट प्रदाता (आईएसपी)",
     "location": "जगह",
-    "asn": "ASN",
+    "asn": "एएसएन",
     "timezone": "समयक्षेत्र",
     "note": "यह वह आईपी पता है जो आपके द्वारा देखी जाने वाली वेबसाइटों पर दिखाई देता है। यदि आप वीपीएन या प्रॉक्सी का उपयोग करते हैं तो यह आपके स्थानीय आईपी से भिन्न हो सकता है।"
   },
@@ -1711,7 +1711,7 @@
     "windowSize": "खिड़की का आकार",
     "pixelRatio": "पिक्सेल अनुपात",
     "colorDepth": "रंग की गहराई",
-    "ram": "RAM",
+    "ram": "टक्कर मारना",
     "cookiesEnabled": "कुकीज़ सक्षम",
     "onlineStatus": "ऑनलाइन स्थिति",
     "unknown": "अज्ञात",

@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Teks Input",
       "inputPlaceholder": "Taip teks anda di sini...",
-      "upper": "UPPERCASE",
+      "upper": "HURUF BESAR",
       "lower": "huruf kecil",
       "title": "Kes Tajuk",
       "sentence": "Kes hukuman",
@@ -1797,7 +1797,7 @@
     "cron-job-scheduling": {
       "block_1": "5 Bintang Cron",
       "block_2": "Minit, Jam, Hari Bulan, Bulan, Hari Minggu.Itu sahaja.",
-      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Contoh</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Jalankan setiap hari pada tengah malam: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-code) *>0.0 color",
       "block_4": "* * * * * command_to_run",
       "block_5": "Contoh"
     },

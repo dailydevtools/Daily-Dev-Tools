@@ -594,8 +594,8 @@
       "pasteToken": "Dán mã thông báo JWT của bạn",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Giải mã JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "TIÊU ĐỀ",
+      "payload": "TẢI TRỌNG",
       "issued": "Đã phát hành",
       "expires": "Hết hạn"
     },
@@ -627,7 +627,7 @@
       "sentences": "Câu",
       "paragraphs": "Đoạn văn",
       "readingTime": "Thời gian đọc",
-      "min": "min",
+      "min": "phút",
       "textInput": "Nhập văn bản",
       "inputPlaceholder": "Bắt đầu nhập hoặc dán văn bản của bạn vào đây để phân tích...",
       "clear": "Thông thoáng"
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Nhập văn bản",
       "inputPlaceholder": "Nhập văn bản của bạn vào đây...",
-      "upper": "UPPERCASE",
+      "upper": "CHỮ HOA",
       "lower": "chữ thường",
       "title": "Trường hợp tiêu đề",
       "sentence": "Trường hợp câu",
@@ -905,7 +905,7 @@
       "upload": "Tải lên",
       "convert": "Chuyển thành",
       "copy": "Sao chép",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "dữ liệu:hình ảnh/png;base64...",
       "uploadImage": "Tải hình ảnh lên",
       "convertToBase64": "Chuyển đổi sang Base64",
       "convertToImage": "Chuyển đổi thành hình ảnh",
@@ -1083,7 +1083,7 @@
       "start": "Bắt đầu",
       "pause": "Tạm dừng",
       "reset": "Cài lại",
-      "minutes": "min"
+      "minutes": "phút"
     },
     "PrimeFactors": {
       "number": "Con số",
@@ -1711,7 +1711,7 @@
     "windowSize": "Kích thước cửa sổ",
     "pixelRatio": "Tỷ lệ pixel",
     "colorDepth": "Độ sâu màu",
-    "ram": "RAM",
+    "ram": "ĐẬP",
     "cookiesEnabled": "Đã bật cookie",
     "onlineStatus": "Trạng thái trực tuyến",
     "unknown": "Không xác định",
@@ -1798,7 +1798,7 @@
       "block_1": "5 ngôi sao của Cron",
       "block_2": "Phút, Giờ, Ngày trong Tháng, Tháng, Ngày trong Tuần.Tất cả chỉ có vậy thôi.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Ví dụ</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Chạy hàng ngày vào lúc nửa đêm: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * lệnh_to_run",
       "block_5": "Ví dụ",
       "block_6": "Chạy 15 phút một lần: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "Bạn cần trợ giúp?Sử dụng <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Trình tạo Cron</a> của chúng tôi để tạo biểu thức một cách trực quan."

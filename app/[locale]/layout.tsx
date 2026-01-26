@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import "../globals-new.css";
+import "../globals.css";
 import CommandPalette from "../components/CommandPalette";
 import BackToTop from "../components/BackToTop";
 import RecentToolsTracker from "../components/RecentToolsTracker";

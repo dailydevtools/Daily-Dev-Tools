@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Copy, Check, RefreshCw, Lock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function PasswordGeneratorClient() {
@@ -53,7 +54,7 @@ export default function PasswordGeneratorClient() {
                     <ToolPageHeader
                         title={tTools('password-generator.name')}
                         description={tTools('password-generator.description')}
-                        icon={<Lock size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Key" size={32} />}
                     />
 
                     <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 rounded-3xl mb-6 text-center">

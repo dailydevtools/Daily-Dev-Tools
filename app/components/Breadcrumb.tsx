@@ -1,18 +1,18 @@
 "use client";
 
-import Link from "next/link";
 import { ChevronRight, Home } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/routing";
 import { tools } from "../data/tools";
 import { useTranslations } from "next-intl";
 
 export default function Breadcrumb() {
     const t = useTranslations('Breadcrumb');
     const pathname = usePathname();
+    // pathname from next-intl already excludes locale, e.g. "/tools/age-calculator"
     const parts = pathname.split('/').filter(Boolean);
 
-    // If we're on a tool page (/tools/slug)
-    const isToolPage = parts[0] === 'tools' && parts[1];
+    // If we're on a tool page ie. parts=['tools', 'slug']
+    const isToolPage = parts[0] === 'tools' && parts.length === 2;
 
     // Find tool name if on a tool page
     const toolName = isToolPage

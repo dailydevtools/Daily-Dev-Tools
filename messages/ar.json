@@ -692,7 +692,7 @@
     },
     "AsciiConverter": {
       "text": "نص",
-      "ascii": "ASCII",
+      "ascii": "أسكي",
       "convert": "تحويل",
       "inputPlaceholder": "أدخل النص..."
     },
@@ -890,7 +890,7 @@
       "description": "الوصف"
     },
     "IbanValidator": {
-      "iban": "IBAN",
+      "iban": "رقم الحساب المصرفي الدولي",
       "validate": "تحقق",
       "valid": "صالح",
       "invalid": "غير صالح",
@@ -905,7 +905,7 @@
       "upload": "رفع",
       "convert": "تحويل",
       "copy": "نسخ",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "البيانات:صورة/png;base64...",
       "uploadImage": "رفع صورة",
       "convertToBase64": "تحويل لـ Base64",
       "convertToImage": "تحويل لصورة",
@@ -940,7 +940,7 @@
       "format": "تنسيق",
       "csv": "CSV",
       "xml": "XML",
-      "yaml": "YAML",
+      "yaml": "يامل",
       "jsonToCsv": "JSON إلى CSV",
       "csvToJson": "CSV إلى JSON",
       "jsonInput": "إدخال JSON",
@@ -1098,7 +1098,7 @@
       "investment": "الاستثمار",
       "returns": "العوائد",
       "calculate": "حساب",
-      "roi": "ROI",
+      "roi": "عائد الاستثمار",
       "profit": "الربح",
       "finalValue": "القيمة النهائية",
       "time": "الوقت (سنوات)",
@@ -1110,7 +1110,7 @@
       "decimalPlaceholder": "2024",
       "roman": "روماني",
       "convert": "تحويل",
-      "placeholder": "MMXXIV"
+      "placeholder": "الرابع والثلاثون"
     },
     "ScreenRecorder": {
       "startRecording": "بدء التسجيل",
@@ -1459,7 +1459,7 @@
     "time": "الوقت (المحلي)",
     "invalid": "غير صالح",
     "zones": {
-      "utc": "UTC",
+      "utc": "التوقيت العالمي",
       "newYork": "نيويورك (EST/EDT)",
       "losAngeles": "لوس أنجلوس (PST/PDT)",
       "london": "لندن (GMT/BST)",
@@ -1711,7 +1711,7 @@
     "windowSize": "حجم النافذة",
     "pixelRatio": "نسبة البكسل",
     "colorDepth": "عمق اللون",
-    "ram": "RAM",
+    "ram": "كبش",
     "cookiesEnabled": "الكوكيز مفعلة",
     "onlineStatus": "حالة الاتصال",
     "unknown": "غير معروف",
@@ -1791,7 +1791,7 @@
       "block_1": "شرح التعبير العادي",
       "block_2": "التعبيرات العادية قوية ولكنها مربكة.دعونا نتصورها.",
       "block_3": "الأنماط الشائعة",
-      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] الخط-semibold\">البريد الإلكتروني:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 الخط المدور-نص أحادي-[0.9em] نص-[#fb923c] حد border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] الخط-semibold\">الهاتف:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 خط مدور-نص أحادي-[0.9em] نص-[#fb923c] حد border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
       "block_5": "اختبر هذه الأنماط على الفور باستخدام <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] underline-offset-4 hover:text-[#ea580c]\">اختبار Regex</a>."
     },
     "cron-job-scheduling": {

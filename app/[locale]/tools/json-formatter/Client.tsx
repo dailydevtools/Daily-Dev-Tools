@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Copy, Check, Download, Upload, Trash2, FileJson } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function JSONFormatterClient() {
@@ -111,7 +112,7 @@ export default function JSONFormatterClient() {
                     <ToolPageHeader
                         title={tTools('json-formatter.name')}
                         description={tTools('json-formatter.description')}
-                        icon={<FileJson size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Braces" size={32} />}
                     />
 
                     {/* Controls */}

@@ -594,8 +594,8 @@
       "pasteToken": "Tempelkan token JWT Anda",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Dekode JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "KEPALA",
+      "payload": "BAYARAN",
       "issued": "Diterbitkan",
       "expires": "Kedaluwarsa"
     },
@@ -627,7 +627,7 @@
       "sentences": "Kalimat",
       "paragraphs": "Paragraf",
       "readingTime": "Waktu Membaca",
-      "min": "min",
+      "min": "menit",
       "textInput": "Masukan Teks",
       "inputPlaceholder": "Mulai ketik atau tempel teks Anda di sini untuk menganalisis...",
       "clear": "Jernih"
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Masukkan Teks",
       "inputPlaceholder": "Ketik teks Anda di sini...",
-      "upper": "UPPERCASE",
+      "upper": "HURUF BESAR",
       "lower": "huruf kecil",
       "title": "Judul Kasus",
       "sentence": "Kasus kalimat",
@@ -905,7 +905,7 @@
       "upload": "Mengunggah",
       "convert": "Mengubah",
       "copy": "Menyalin",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "data:gambar/png;base64...",
       "uploadImage": "Unggah Gambar",
       "convertToBase64": "Konversikan ke Base64",
       "convertToImage": "Konversikan ke Gambar",
@@ -1083,7 +1083,7 @@
       "start": "Awal",
       "pause": "Berhenti sebentar",
       "reset": "Mengatur ulang",
-      "minutes": "min"
+      "minutes": "menit"
     },
     "PrimeFactors": {
       "number": "Nomor",
@@ -1798,7 +1798,7 @@
       "block_1": "5 Bintang Cron",
       "block_2": "Menit, Jam, Hari dalam Bulan, Bulan, Hari dalam Seminggu.Itu saja.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Contoh</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Jalankan setiap hari pada tengah malam: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * perintah_untuk_dijalankan",
       "block_5": "Contoh",
       "block_6": "Jalankan setiap 15 menit: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "Butuh bantuan?Gunakan <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> kami untuk membuat ekspresi secara visual."

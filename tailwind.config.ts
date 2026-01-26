@@ -10,7 +10,6 @@ export default {
     theme: {
         extend: {
             colors: {
-                // Modern 2026 color palette inspired by VectorShift
                 primary: {
                     50: '#f0f9ff',
                     100: '#e0f2fe',
@@ -42,7 +41,7 @@ export default {
             animation: {
                 'float': 'float 6s ease-in-out infinite',
                 'glow': 'glow 2s ease-in-out infinite alternate',
-                'marquee': 'marquee 120s linear infinite',
+
             },
             keyframes: {
                 float: {
@@ -53,10 +52,7 @@ export default {
                     'from': { boxShadow: '0 0 20px rgba(14, 165, 233, 0.3)' },
                     'to': { boxShadow: '0 0 30px rgba(14, 165, 233, 0.6)' },
                 },
-                marquee: {
-                    '0%': { transform: 'translateX(0)' },
-                    '100%': { transform: 'translateX(-50%)' },
-                },
+
             },
         },
     },

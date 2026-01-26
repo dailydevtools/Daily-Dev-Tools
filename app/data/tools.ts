@@ -9,6 +9,7 @@ export interface Tool {
 }
 
 export const tools: Tool[] = [
+    { id: "code-editor", name: "Code Editor", description: "View, edit, and format code in any language", icon: "Code2", category: "Developer" },
     { id: "json-formatter", name: "JSON Formatter", description: "Format, validate & beautify JSON instantly", icon: "Braces", category: "Developer" },
     { id: "base64-encoder", name: "Base64 Encoder", description: "Encode and decode Base64 strings", icon: "Lock", category: "Developer" },
     { id: "url-encoder", name: "URL Encoder", description: "Encode and decode URLs safely", icon: "Link", category: "Developer" },

@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Link as LinkIcon } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function SlugGeneratorClient() {
@@ -31,7 +31,7 @@ export default function SlugGeneratorClient() {
                     <ToolPageHeader
                         title="Slug Generator"
                         description="Convert titles to URL-friendly slugs case-insensitively."
-                        icon={<LinkIcon size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Link2" size={32} />}
                     />
 
                     <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">

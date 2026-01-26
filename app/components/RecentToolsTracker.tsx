@@ -8,8 +8,15 @@ export default function RecentToolsTracker() {
     const pathname = usePathname();
 
     useEffect(() => {
-        if (pathname.startsWith("/tools/")) {
-            const toolId = pathname.replace("/tools/", "");
+        // Handle routes like /en/tools/tool-id or /tools/tool-id
+        if (pathname.includes("/tools/")) {
+            // Split by '/tools/' and take the last part
+            // Example: "/en/tools/uuid-generator" -> ["/en", "uuid-generator"]
+            // Example: "/tools/uuid-generator" -> ["", "uuid-generator"]
+            const parts = pathname.split("/tools/");
+            if (parts.length < 2) return;
+
+            const toolId = parts[1]; // Get the part after /tools/
 
             // Validate tool exists
             if (!tools.find(t => t.id === toolId)) return;
@@ -27,6 +34,9 @@ export default function RecentToolsTracker() {
             if (recents.length > 10) recents.pop();
 
             localStorage.setItem("recent_tools", JSON.stringify(recents));
+
+            // Dispatch strict event to ensure immediate UI update across tabs/components
+            window.dispatchEvent(new Event("storage"));
         }
     }, [pathname]);
 

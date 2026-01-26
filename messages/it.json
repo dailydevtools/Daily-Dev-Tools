@@ -266,7 +266,7 @@
       "description": "Analizza densità parole chiave per SEO"
     },
     "json-diff": {
-      "name": "JSON Diff",
+      "name": "Diff.JSON",
       "description": "Confronta due oggetti JSON fianco a fianco"
     },
     "cipher-tools": {
@@ -594,8 +594,8 @@
       "pasteToken": "Incolla il tuo token JWT",
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Decodifica JWT",
-      "header": "HEADER",
-      "payload": "PAYLOAD",
+      "header": "INTESTAZIONE",
+      "payload": "CARICO UTILE",
       "issued": "Rilasciato",
       "expires": "Scade"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Inserisci testo",
       "inputPlaceholder": "Scrivi il tuo testo qui...",
-      "upper": "UPPERCASE",
+      "upper": "MAIUSCOLO",
       "lower": "minuscolo",
       "title": "Caso del titolo",
       "sentence": "Caso di frase",
@@ -905,7 +905,7 @@
       "upload": "Caricamento",
       "convert": "Convertire",
       "copy": "Copia",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "dati:immagine/png;base64...",
       "uploadImage": "Carica immagine",
       "convertToBase64": "Converti in Base64",
       "convertToImage": "Converti in immagine",
@@ -1798,7 +1798,7 @@
       "block_1": "Le 5 stelle di Cron",
       "block_2": "Minuto, Ora, Giorno del mese, Mese, Giorno della settimana.Questo è tutto.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Esempi</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Esegui ogni giorno a mezzanotte: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
-      "block_4": "* * * * * command_to_run",
+      "block_4": "* * * * * comando_da_eseguire",
       "block_5": "Esempi",
       "block_6": "Esegui ogni 15 minuti: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 round font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
       "block_7": "Hai bisogno di aiuto?Utilizza il nostro <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> per creare espressioni visive."

@@ -832,7 +832,7 @@
       "answerSection": "উত্তর বিভাগ",
       "name": "নাম",
       "type": "টাইপ",
-      "ttl": "TTL",
+      "ttl": "টিটিএল",
       "data": "ডেটা",
       "noRecords": "কোনো রেকর্ড পাওয়া যায়নি"
     },
@@ -905,7 +905,7 @@
       "upload": "আপলোড",
       "convert": "রূপান্তর করুন",
       "copy": "কপি করুন",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "ডেটা:ইমেজ/পিএনজি;বেস64...",
       "uploadImage": "ছবি আপলোড করুন",
       "convertToBase64": "Base64-এ রূপান্তর করুন",
       "convertToImage": "ছবিতে রূপান্তর করুন",
@@ -939,7 +939,7 @@
       "convert": "রূপান্তর করুন",
       "format": "ফরম্যাট",
       "csv": "CSV",
-      "xml": "XML",
+      "xml": "এক্সএমএল",
       "yaml": "YAML",
       "jsonToCsv": "JSON থেকে CSV",
       "csvToJson": "CSV থেকে JSON",
@@ -1459,7 +1459,7 @@
     "time": "সময় (স্থানীয়)",
     "invalid": "অবৈধ",
     "zones": {
-      "utc": "UTC",
+      "utc": "ইউটিসি",
       "newYork": "নিউ ইয়র্ক (EST/EDT)",
       "losAngeles": "লস অ্যাঞ্জেলেস (PST/PDT)",
       "london": "লন্ডন (GMT/BST)",
@@ -1512,7 +1512,7 @@
     "loading": "লোড হচ্ছে...",
     "isp": "ইন্টারনেট প্রদানকারী (ISP)",
     "location": "অবস্থান",
-    "asn": "ASN",
+    "asn": "এএসএন",
     "timezone": "টাইমজোন",
     "note": "এটি আপনার পরিদর্শন করা ওয়েবসাইটগুলিতে দৃশ্যমান IP ঠিকানা। আপনি যদি VPN বা প্রক্সি ব্যবহার করেন তবে এটি আপনার স্থানীয় IP থেকে আলাদা হতে পারে।"
   },
@@ -1791,15 +1791,15 @@
       "block_1": "রেজেক্স ব্যাখ্যা করা হয়েছে",
       "block_2": "নিয়মিত অভিব্যক্তি শক্তিশালী কিন্তু বিভ্রান্তিকর৷আসুন তাদের কল্পনা করি।",
       "block_3": "সাধারণ প্যাটার্নস",
-      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Email:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Phone:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
+      "block_4": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ইমেল:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 বৃত্তাকার font-mono text-[0.9em] text-[#c]3fb9 বর্ডার বর্ডার-[var(--border-color)]\">^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$</code></li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ফোন:</strong> <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 বৃত্তাকার font-mono text-[0.9em] text-[#fb923 বর্ডার-[var(--border-color)]\">^\\+?[1-9]\\d{1,14}$</code></li>",
       "block_5": "আমাদের <a href=\"/tools/regex-tester\" class=\"text-[#fb923c] আন্ডারলাইন underline-offset-4 hover:text-[#ea580c]\">Regex পরীক্ষক</a> দিয়ে অবিলম্বে এই প্যাটার্নগুলি পরীক্ষা করুন৷"
     },
     "cron-job-scheduling": {
-      "block_1": "The 5 Stars of Cron",
+      "block_1": "ক্রোনের 5 তারা",
       "block_2": "মিনিট, ঘন্টা, মাসের দিন, মাস, সপ্তাহের দিন৷এটাই সব।",
-      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
+      "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">উদাহরণ</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">প্রতিদিন মাঝরাতে চালান: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 বৃত্তাকার font-mono text-[0.9em] text-[#fb923c] বর্ডার *-বর্ডার *[var->0</code>",
       "block_4": "উদাহরণ",
-      "block_5": "Examples",
+      "block_5": "উদাহরণ",
       "block_6": "সহায়তা দরকার?দৃশ্যত অভিব্যক্তি তৈরি করতে আমাদের <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron জেনারেটর</a> ব্যবহার করুন৷"
     },
     "secure-password-storage-local": {

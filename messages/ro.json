@@ -595,7 +595,7 @@
       "tokenPlaceholder": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
       "decodeAction": "Decodați JWT",
       "header": "HEADER",
-      "payload": "PAYLOAD",
+      "payload": "ÎNCĂRCĂTURĂ UTILĂ",
       "issued": "Emis",
       "expires": "Expiră"
     },
@@ -719,7 +719,7 @@
     "CaseConverter": {
       "inputText": "Introduceți text",
       "inputPlaceholder": "Introdu textul aici...",
-      "upper": "UPPERCASE",
+      "upper": "MAJUSCULE",
       "lower": "litere mici",
       "title": "Cazul de titlu",
       "sentence": "Cazul sentinței",
@@ -905,7 +905,7 @@
       "upload": "Încărcați",
       "convert": "Convertit",
       "copy": "Copie",
-      "placeholder": "data:image/png;base64...",
+      "placeholder": "date:image/png;base64...",
       "uploadImage": "Încărcați imaginea",
       "convertToBase64": "Convertiți în Base64",
       "convertToImage": "Convertiți în imagine",

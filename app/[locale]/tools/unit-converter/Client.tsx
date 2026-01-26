@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { ArrowRightLeft } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 type Category = 'length' | 'weight' | 'temperature';
@@ -81,7 +82,7 @@ export default function UnitConverterClient() {
                     <ToolPageHeader
                         title="Unit Converter"
                         description="Convert between different units of measurement universally."
-                        icon={<ArrowRightLeft size={28} className="text-[#fb923c]" />}
+                        icon={<ToolIcon name="Scale" size={32} />}
                     />
 
                     {/* Category Tabs */}
