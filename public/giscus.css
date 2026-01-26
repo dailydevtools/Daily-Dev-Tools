@@ -1,0 +1,51 @@
+/*!
+ * Custom Giscus Theme for DailyDevTools
+ * Matches site theme (Orange)
+ */
+
+main {
+    /* Base text colors */
+    --color-fg-default: #e5e7eb;
+    --color-fg-muted: #9ca3af;
+    --color-fg-subtle: #6b7280;
+
+    /* Backgrounds */
+    --color-canvas-default: transparent;
+    --color-canvas-overlay: #1e1e1e;
+    --color-canvas-inset: transparent;
+    --color-canvas-subtle: transparent;
+
+    /* Borders */
+    --color-border-default: rgba(255, 255, 255, 0.1);
+    --color-border-muted: rgba(255, 255, 255, 0.05);
+
+    /* Links */
+    --color-accent-fg: #f97316;
+    --color-accent-emphasis: #ea580c;
+    --color-accent-muted: rgba(249, 115, 22, 0.4);
+
+    /* Buttons (Primary - Sign in) */
+    --color-btn-primary-bg: #f97316;
+    --color-btn-primary-text: #ffffff;
+    --color-btn-primary-border: transparent;
+    --color-btn-primary-hover-bg: #ea580c;
+    --color-btn-primary-hover-border: transparent;
+    --color-btn-primary-selected-bg: #ea580c;
+    --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.5);
+    --color-btn-primary-disabled-bg: rgba(249, 115, 22, 0.5);
+    --color-btn-primary-disabled-border: transparent;
+
+    /* Buttons (Standard) */
+    --color-btn-text: #e5e7eb;
+    --color-btn-bg: rgba(255, 255, 255, 0.05);
+    --color-btn-border: rgba(255, 255, 255, 0.1);
+    --color-btn-hover-bg: rgba(255, 255, 255, 0.1);
+    --color-btn-hover-border: rgba(255, 255, 255, 0.2);
+    --color-btn-active-bg: rgba(255, 255, 255, 0.15);
+    --color-btn-active-border: rgba(255, 255, 255, 0.2);
+    
+    /* Inputs */
+    --color-input-bg: rgba(0, 0, 0, 0.2);
+    --color-input-contrast-bg: rgba(0, 0, 0, 0.2);
+    --color-input-border: rgba(255, 255, 255, 0.1);
+}

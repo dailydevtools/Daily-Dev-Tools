@@ -24,10 +24,10 @@ export default function RelatedTools() {
     if (randomTools.length === 0) return null;
 
     return (
-        <div className="mt-20 border-t border-[rgba(255,255,255,0.05)] py-10">
+        <div className="mt-20 border-t border-[var(--border-color)] py-10">
             <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-white mb-2">{t('title')}</h3>
-                <p className="text-[#9ca3af]">{t('subtitle')}</p>
+                <h3 className="text-2xl font-bold text-[var(--title-color)] mb-2">{t('title')}</h3>
+                <p className="text-[var(--muted-text)]">{t('subtitle')}</p>
             </div>
 
             <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
@@ -37,9 +37,9 @@ export default function RelatedTools() {
                             <div className="text-[#fb923c]">
                                 <ToolIcon name={tool.icon} size={24} />
                             </div>
-                            <h4 className="text-base font-semibold text-white">{tool.name}</h4>
+                            <h4 className="text-base font-semibold text-[var(--title-color)]">{tool.name}</h4>
                         </div>
-                        <p className="text-[13px] text-[#9ca3af] mb-4 leading-relaxed">{tool.description}</p>
+                        <p className="text-[13px] text-[var(--muted-text)] mb-4 leading-relaxed">{tool.description}</p>
                         <div className="flex items-center text-[#fb923c] text-[13px] font-medium">
                             <span>{t('openTool')}</span>
                             <ArrowRight size={14} className="ml-1.5" />
