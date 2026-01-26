@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CreditCardValidatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Credit Card Validator | DailyDevTools',
-    description: 'Validate credit card numbers safely using the Luhn algorithm. Identify card issuers like Visa, Mastercard, and Amex.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'credit-card-validator' });
+}
 
 export default function CreditCardValidatorPage() {
     return <CreditCardValidatorClient />;

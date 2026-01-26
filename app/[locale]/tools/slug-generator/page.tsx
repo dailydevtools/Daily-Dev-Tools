@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import SlugGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'URL Slug Generator | DailyDevTools',
-    description: 'Convert text to clean URL slugs. SEO friendly URL generator.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'slug-generator' });
+}
 
 export default function SlugGeneratorPage() {
     return <SlugGeneratorClient />;

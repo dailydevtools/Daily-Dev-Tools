@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import DeviceInfoClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Device Information | DailyDevTools',
-    description: 'View detailed information about your device, browser, screen resolution, and more.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'device-info' });
+}
 
 export default function DeviceInfoPage() {
     return <DeviceInfoClient />;

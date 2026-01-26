@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TextDiffClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Text Diff Checker | DailyDevTools',
-    description: 'Compare two text files or code snippets to find differences.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'text-diff' });
+}
 
 export default function TextDiffPage() {
     return <TextDiffClient />;

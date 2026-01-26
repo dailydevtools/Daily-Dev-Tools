@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PasswordManagerClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Password Manager (Local) | DailyDevTools',
-    description: 'Secure, offline password manager. Encrypts your data locally in your browser.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'password-manager' });
+}
 
 export default function PasswordManagerPage() {
     return <PasswordManagerClient />;

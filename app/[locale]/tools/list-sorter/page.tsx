@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ListSorterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'List Sorter | DailyDevTools',
-    description: 'Sort lists alphabetically, by length, or randomize order. Remove duplicates and trim lines.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'list-sorter' });
+}
 
 export default function ListSorterPage() {
     return <ListSorterClient />;

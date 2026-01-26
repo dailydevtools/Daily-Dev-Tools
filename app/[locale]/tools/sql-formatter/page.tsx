@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import SqlFormatterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'SQL Formatter | DailyDevTools',
-    description: 'Format, beautify and simplify SQL queries.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'sql-formatter' });
+}
 
 export default function SqlFormatterPage() {
     return <SqlFormatterClient />;

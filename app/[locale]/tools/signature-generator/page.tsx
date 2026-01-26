@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import SignatureGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Signature Generator | DailyDevTools',
-    description: 'Draw your signature online and download as a transparent PNG.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'signature-generator' });
+}
 
 export default function SignatureGeneratorPage() {
     return <SignatureGeneratorClient />;

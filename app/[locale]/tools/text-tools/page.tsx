@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TextToolsClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Text Tools | DailyDevTools',
-    description: 'A suite of text manipulation tools: reverse, flip upside down, binary converter, and more.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'text-tools' });
+}
 
 export default function TextToolsPage() {
     return <TextToolsClient />;

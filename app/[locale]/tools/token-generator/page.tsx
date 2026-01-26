@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TokenGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Random Token Generator | DailyDevTools',
-    description: 'Generate secure random tokens, API keys, and passwords with custom length.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'token-generator' });
+}
 
 export default function TokenGeneratorPage() {
     return <TokenGeneratorClient />;

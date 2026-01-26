@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import BMICalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'BMI Calculator | DailyDevTools',
-    description: 'Calculate your Body Mass Index (BMI). Supports metric and imperial units with health status categories.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'bmi-calculator' });
+}
 
 export default function BMICalculatorPage() {
     return <BMICalculatorClient />;

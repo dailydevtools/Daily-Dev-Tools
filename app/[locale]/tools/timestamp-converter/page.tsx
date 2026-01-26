@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TimestampConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Unix Timestamp Converter | DailyDevTools',
-    description: 'Convert Unix timestamps to human readable dates and vice-versa.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'timestamp-converter' });
+}
 
 export default function TimestampConverterPage() {
     return <TimestampConverterClient />;

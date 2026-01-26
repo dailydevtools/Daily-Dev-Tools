@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CodeEditorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Code Editor & Formatter | DailyDevTools',
-    description: 'View, edit, and format code in various programming languages. Free online code editor with syntax highlighting.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'code-editor' });
+}
 
 export default function CodeEditorPage() {
     return <CodeEditorClient />;

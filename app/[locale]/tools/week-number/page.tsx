@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import WeekNumberClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Week Number Calculator | DailyDevTools',
-    description: 'Find the current week number. Calculate week number from date.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'week-number' });
+}
 
 export default function WeekNumberPage() {
     return <WeekNumberClient />;

@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import ScreenRecorderClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Online Screen Recorder | DailyDevTools',
-    description: 'Record your screen, windows, or chome tabs online for free. No watermark.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'screen-recorder' });
+}
 
 export default function ScreenRecorderPage() {
     return <ScreenRecorderClient />;

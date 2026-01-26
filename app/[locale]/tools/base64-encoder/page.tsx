@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import Base64EncoderClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Base64 Encoder/Decoder | DailyDevTools',
-    description: 'Encode to Base64 or decode from Base64 instantly. Simple and secure text conversion.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'base64-encoder' });
+}
 
 export default function Base64EncoderPage() {
     return <Base64EncoderClient />;

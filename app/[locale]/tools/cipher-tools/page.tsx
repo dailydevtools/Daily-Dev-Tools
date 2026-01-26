@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CipherToolsClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Cipher Tools | DailyDevTools',
-    description: 'Encrypt and decrypt text using Caesar Cipher, ROT13, and shift ciphers.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'cipher-tools' });
+}
 
 export default function CipherToolsPage() {
     return <CipherToolsClient />;

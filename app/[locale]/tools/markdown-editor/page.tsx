@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import MarkdownEditorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Markdown Editor | DailyDevTools',
-    description: 'Online Markdown Editor with live preview. Write and edit markdown files effortlessly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'markdown-editor' });
+}
 
 export default function MarkdownEditorPage() {
     return <MarkdownEditorClient />;

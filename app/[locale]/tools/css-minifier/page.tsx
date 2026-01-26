@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CssMinifierClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Minifier | DailyDevTools',
-    description: 'Compress and optimize CSS code to reduce file size. Free online CSS mnifier tool.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'css-minifier' });
+}
 
 export default function CssMinifierPage() {
     return <CssMinifierClient />;

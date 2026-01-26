@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import TwitterCardClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Twitter Card Generator | DailyDevTools',
-    description: 'Create preview-ready Twitter Card meta tags for better social sharing.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'twitter-card' });
+}
 
 export default function TwitterCardPage() {
     return <TwitterCardClient />;

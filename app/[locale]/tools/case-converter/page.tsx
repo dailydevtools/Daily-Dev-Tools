@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CaseConverterClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Case Converter | DailyDevTools',
-    description: 'Convert text between camelCase, snake_case, PascalCase, kebab-case and more.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'case-converter' });
+}
 
 export default function CaseConverterPage() {
     return <CaseConverterClient />;

@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import URLEncoderClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'URL Encoder / Decoder | DailyDevTools',
-    description: 'Online URL Encoder and Decoder. Percent-encode or decode URL strings.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'url-encoder' });
+}
 
 export default function URLEncoderPage() {
     return <URLEncoderClient />;

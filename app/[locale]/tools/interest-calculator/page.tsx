@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import InterestCalculatorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Interest Calculator | DailyDevTools',
-    description: 'Calculate simple and compound interest. Visualise growth of your investments over time.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'interest-calculator' });
+}
 
 export default function InterestCalculatorPage() {
     return <InterestCalculatorClient />;

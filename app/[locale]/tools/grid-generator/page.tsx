@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import GridGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Grid Generator | DailyDevTools',
-    description: 'Visual CSS Grid generator. Create responsive grid layouts and copy code instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'grid-generator' });
+}
 
 export default function GridGeneratorPage() {
     return <GridGeneratorClient />;

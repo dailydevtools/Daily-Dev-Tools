@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import HttpStatusClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'HTTP Status Codes | DailyDevTools',
-    description: 'List of HTTP status codes (200, 404, 500, etc.) with descriptions and meanings.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'http-status' });
+}
 
 export default function HttpStatusPage() {
     return <HttpStatusClient />;

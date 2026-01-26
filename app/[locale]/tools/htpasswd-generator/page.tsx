@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import HtpasswdGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Htpasswd Generator | DailyDevTools',
-    description: 'Create entries for .htpasswd files to password protect websites using Basic Auth.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'htpasswd-generator' });
+}
 
 export default function HtpasswdGeneratorPage() {
     return <HtpasswdGeneratorClient />;

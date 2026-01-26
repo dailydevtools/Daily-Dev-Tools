@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import MyIPClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'My IP Address | DailyDevTools',
-    description: 'What is my IP? Check your public IP address, ISP, and location.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'my-ip' });
+}
 
 export default function MyIPPage() {
     return <MyIPClient />;

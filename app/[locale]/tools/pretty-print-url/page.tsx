@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PrettyPrintUrlClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Pretty Print URL | DailyDevTools',
-    description: 'Format complex URLs into a readable, structured format with separated query parameters.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'pretty-print-url' });
+}
 
 export default function PrettyPrintUrlPage() {
     return <PrettyPrintUrlClient />;

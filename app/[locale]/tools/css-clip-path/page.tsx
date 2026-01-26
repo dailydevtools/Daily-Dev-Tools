@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import CssClipPathClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'CSS Clip-Path Generator | DailyDevTools',
-    description: 'Create custom shapes with CSS clip-path. Triangle, circle, polygon, and more. Copy CSS instantly.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'css-clip-path' });
+}
 
 export default function CssClipPathPage() {
     return <CssClipPathClient />;

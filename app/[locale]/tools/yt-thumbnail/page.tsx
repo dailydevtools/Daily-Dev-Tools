@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import YTThumbnailClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'YouTube Thumbnail Downloader | DailyDevTools',
-    description: 'Download YouTube video thumbnails in HD, SD and HQ quality.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'yt-thumbnail' });
+}
 
 export default function YTThumbnailPage() {
     return <YTThumbnailClient />;

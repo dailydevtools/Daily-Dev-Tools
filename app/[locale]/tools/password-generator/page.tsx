@@ -1,10 +1,9 @@
-import { Metadata } from 'next';
+import { constructToolMetadata } from '@/app/lib/seo';
 import PasswordGeneratorClient from "./Client";
 
-export const metadata: Metadata = {
-    title: 'Password Generator | DailyDevTools',
-    description: 'Create secure, random passwords instantly. customizable length and character sets.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    return constructToolMetadata({ params, toolId: 'password-generator' });
+}
 
 export default function PasswordGeneratorPage() {
     return <PasswordGeneratorClient />;
