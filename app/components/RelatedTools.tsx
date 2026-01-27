@@ -26,7 +26,7 @@ export default function RelatedTools() {
     return (
         <div className="mt-20 border-t border-[var(--border-color)] py-10">
             <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-[var(--title-color)] mb-2">{t('title')}</h3>
+                <h3 className="text-2xl font-bold font-heading text-[var(--title-color)] mb-2">{t('title')}</h3>
                 <p className="text-[var(--muted-text)]">{t('subtitle')}</p>
             </div>
 
@@ -37,7 +37,7 @@ export default function RelatedTools() {
                             <div className="text-[#fb923c]">
                                 <ToolIcon name={tool.icon} size={24} />
                             </div>
-                            <h4 className="text-base font-semibold text-[var(--title-color)]">{tool.name}</h4>
+                            <h4 className="text-base font-semibold font-heading text-[var(--title-color)]">{tool.name}</h4>
                         </div>
                         <p className="text-[13px] text-[var(--muted-text)] mb-4 leading-relaxed">{tool.description}</p>
                         <div className="flex items-center text-[#fb923c] text-[13px] font-medium">

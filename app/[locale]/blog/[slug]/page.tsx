@@ -78,7 +78,7 @@ export default async function BlogPost({ params }: Props) {
                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#f973161a] border border-[#f9731633] rounded-full text-[13px] text-[#fb923c]">{localizedCategory}</span>
                 </div>
 
-                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold text-[var(--title-color)] mb-6 leading-[1.2]">
+                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold font-heading text-[var(--title-color)] mb-6 leading-[1.2]">
                     {localizedTitle}
                 </h1>
 

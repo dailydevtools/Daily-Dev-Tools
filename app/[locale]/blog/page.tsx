@@ -22,7 +22,7 @@ export default function BlogIndex() {
     return (
         <div className="py-10 px-6 max-w-[1000px] mx-auto w-full">
             <div className="mb-[60px] text-center">
-                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold text-[var(--title-color)] mb-4 leading-[1.1]">
+                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold font-heading text-[var(--title-color)] mb-4 leading-[1.1]">
                     {t('title').split(' ')[0]} <span className="bg-gradient-to-br from-[#fb923c] via-[#facc15] to-[#fde047] bg-clip-text text-transparent">{t('title').split(' ').slice(1).join(' ')}</span>
                 </h1>
                 <p className="text-[var(--muted-text)] text-lg max-w-[600px] mx-auto">

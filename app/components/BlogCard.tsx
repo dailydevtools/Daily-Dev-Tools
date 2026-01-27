@@ -28,9 +28,9 @@ export default function BlogCard({ post }: { post: BlogPost }) {
                     </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-[var(--title-color)] mb-3 leading-snug">
+                <h2 className="text-xl font-bold text-[var(--title-color)] mb-3 leading-snug">
                     {post.title}
-                </h3>
+                </h2>
 
                 <p className="text-[var(--muted-text)] text-[15px] leading-relaxed mb-6 flex-1">
                     {post.excerpt}
