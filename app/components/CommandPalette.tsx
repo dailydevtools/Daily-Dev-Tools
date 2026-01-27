@@ -97,8 +97,12 @@ export default function CommandPalette() {
                         placeholder={t('searchPlaceholder')}
                         className="flex-1 bg-transparent border-none outline-none text-lg text-[var(--title-color)] font-inherit"
                     />
-                    <button onClick={() => setIsOpen(false)} className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer">
-                        <span className="text-xs border border-[var(--border-color)] px-1.5 py-0.5 rounded">ESC</span>
+                    <button
+                        onClick={() => setIsOpen(false)}
+                        className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer flex items-center justify-center min-w-[44px] min-h-[44px] hover:text-[var(--title-color)]"
+                        aria-label="Close"
+                    >
+                        <span className="text-[10px] border border-[var(--border-color)] px-1.5 py-0.5 rounded bg-[var(--card-hover-bg)] font-mono">ESC</span>
                     </button>
                 </div>
 

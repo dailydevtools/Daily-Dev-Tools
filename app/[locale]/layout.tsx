@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 import CommandPalette from "../components/CommandPalette";
 import BackToTop from "../components/BackToTop";
@@ -8,6 +8,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import FeedbackForm from "../components/FeedbackForm";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Toaster } from "../components/Toaster";
 import Script from "next/script";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -16,8 +17,16 @@ import { routing } from '../../i18n/routing';
 
 const inter = Inter({
     subsets: ["latin"],
-    weight: ["300", "400", "500", "600", "700"],
+    weight: ["400", "500", "600", "700"],
     variable: "--font-inter",
+    display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+    subsets: ["latin"],
+    weight: ["400", "500", "600", "700"],
+    variable: "--font-space",
+    display: "swap",
 });
 
 const siteUrl = "https://dailydev.tools";
@@ -71,7 +80,7 @@ export async function generateMetadata({
             description: description,
             images: [
                 {
-                    url: "/og-image.png",
+                    url: "/og-image.webp",
                     width: 1200,
                     height: 630,
                     alt: title,
@@ -82,7 +91,7 @@ export async function generateMetadata({
             card: "summary_large_image",
             title: title,
             description: description,
-            images: ["/og-image.png"],
+            images: ["/og-image.webp"],
             creator: "@sohanpaliyal",
         },
         robots: {
@@ -105,9 +114,9 @@ export async function generateMetadata({
         },
         category: "technology",
         icons: {
-            icon: '/project_logo.png',
-            shortcut: '/project_logo.png',
-            apple: '/project_logo.png',
+            icon: '/project_logo.webp',
+            shortcut: '/project_logo.webp',
+            apple: '/project_logo.webp',
         },
     };
 }
@@ -145,32 +154,40 @@ export default async function LocaleLayout({
         <html lang={locale} suppressHydrationWarning>
             <head>
                 <link rel="manifest" href="/manifest.json" />
+                {gaId && <link rel="preconnect" href="https://www.googletagmanager.com" />}
+                {gaId && <link rel="preconnect" href="https://www.google-analytics.com" />}
             </head>
-            <body className={`${inter.variable} font-sans`} suppressHydrationWarning>
+            <body className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
                 {gaId && (
                     <>
                         <Script
                             src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-                            strategy="afterInteractive"
+                            strategy="lazyOnload"
                         />
-                        <Script id="google-analytics" strategy="afterInteractive">
+                        <Script id="google-analytics" strategy="lazyOnload">
                             {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', '${gaId}');
+                gtag('config', '${gaId}', { 'anonymize_ip': true });
               `}
                         </Script>
                     </>
                 )}
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider>
+                        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[1000] focus:bg-[#fb923c] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold">
+                            Skip to main content
+                        </a>
                         <CommandPalette />
                         <BackToTop />
                         <FeedbackForm />
+                        <Toaster />
                         <RecentToolsTracker />
                         <Header />
-                        {children}
+                        <main id="main-content">
+                            {children}
+                        </main>
                         <Footer />
                     </ThemeProvider>
                 </NextIntlClientProvider>

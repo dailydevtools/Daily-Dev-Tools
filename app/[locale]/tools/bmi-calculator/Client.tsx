@@ -84,7 +84,7 @@ export default function BMICalculatorClient() {
                     {bmi !== null && (
                         <div className="mt-6 p-8 rounded-3xl bg-white/5 border border-white/5 text-center animate-[fadeIn_0.5s_ease-out]">
                             <div className="text-sm text-[#9ca3af] mb-2">{t('BmiCalculator.bmiScore')}</div>
-                            <div className="text-5xl font-bold text-white mb-2">{bmi.toFixed(1)}</div>
+                            <div className="text-5xl font-bold text-[var(--foreground)] mb-2">{bmi.toFixed(1)}</div>
                             <div className="text-xl font-semibold mb-6" style={{ color: getStatus(bmi).color }}>
                                 {getStatus(bmi).text}
                             </div>

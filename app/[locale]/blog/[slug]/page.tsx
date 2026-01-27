@@ -78,11 +78,11 @@ export default async function BlogPost({ params }: Props) {
                     <span className="inline-flex items-center gap-2 px-4 py-2 bg-[#f973161a] border border-[#f9731633] rounded-full text-[13px] text-[#fb923c]">{localizedCategory}</span>
                 </div>
 
-                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold text-[var(--title-color)] mb-6 leading-[1.2]">
+                <h1 className="text-[clamp(32px,5vw,48px)] font-extrabold font-heading text-[var(--title-color)] mb-6 leading-[1.2]">
                     {localizedTitle}
                 </h1>
 
-                <div className="flex flex-wrap gap-6 text-[var(--muted-text)] text-sm">
+                <div className="flex flex-wrap gap-6 text-[var(--muted-text)] text-sm mb-6">
                     <div className="flex items-center gap-2">
                         <Calendar size={16} />
                         {post.date}
@@ -91,6 +91,15 @@ export default async function BlogPost({ params }: Props) {
                         <Clock size={16} />
                         {post.readTime}
                     </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2">
+                    {post.tags?.map((tag) => (
+                        <div key={tag} className="flex items-center gap-1.5 px-3 py-1 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-md text-[12px] text-[var(--muted-text)]">
+                            <Tag size={12} />
+                            {tag}
+                        </div>
+                    ))}
                 </div>
             </header>
 

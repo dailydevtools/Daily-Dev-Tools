@@ -5,6 +5,8 @@ import { Copy, Check, RefreshCw, Lock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
+import MotionCard from "../../../components/ui/MotionCard";
+import { toast } from "sonner";
 
 export default function PasswordGeneratorClient() {
     const [password, setPassword] = useState("");
@@ -12,7 +14,6 @@ export default function PasswordGeneratorClient() {
     const [useUppercase, setUseUppercase] = useState(true);
     const [useNumbers, setUseNumbers] = useState(true);
     const [useSymbols, setUseSymbols] = useState(true);
-    const [copied, setCopied] = useState(false);
     const t = useTranslations('ToolPage.PasswordGenerator');
     const tCommon = useTranslations('ToolPage.common');
     const tTools = useTranslations('Tools');
@@ -42,8 +43,7 @@ export default function PasswordGeneratorClient() {
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText(password);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
+        toast.success(tCommon('copied'));
     };
 
     return (
@@ -57,7 +57,7 @@ export default function PasswordGeneratorClient() {
                         icon={<ToolIcon name="Key" size={32} />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 rounded-3xl mb-6 text-center">
+                    <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] p-10 mb-6 text-center">
                         <div className="text-[32px] font-bold text-[#4ade80] font-mono mb-6 break-all min-h-[48px]">
                             {password}
                         </div>
@@ -67,13 +67,13 @@ export default function PasswordGeneratorClient() {
                                 <RefreshCw size={18} /> {t('generateNew')}
                             </button>
                             <button onClick={copyToClipboard} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-3 px-8 flex items-center gap-2">
-                                {copied ? <Check size={18} className="text-[#22c55e]" /> : <Copy size={18} />}
-                                {copied ? tCommon('copied') : tCommon('copy')}
+                                <Copy size={18} />
+                                {tCommon('copy')}
                             </button>
                         </div>
-                    </div>
+                    </MotionCard>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 rounded-3xl">
+                    <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] p-8">
                         <h3 className="text-base font-semibold text-white mb-5">{t('configuration')}</h3>
 
                         <div className="mb-6">
@@ -105,7 +105,7 @@ export default function PasswordGeneratorClient() {
                                 <span className="text-white">{t('symbols')}</span>
                             </label>
                         </div>
-                    </div>
+                    </MotionCard>
 
                 </div>
             </div>

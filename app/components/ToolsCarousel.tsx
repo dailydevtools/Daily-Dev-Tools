@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tool } from "../data/tools";
 import ToolIcon from "./ToolIcon";
 import { useTranslations } from "next-intl";
+import MotionCard from "./ui/MotionCard";
 
 interface ToolsCarouselProps {
     tools: Tool[];
@@ -56,17 +57,19 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
                     <Link
                         key={tool.id}
                         href={`/tools/${tool.id}`}
-                        className="group flex-shrink-0 snap-start min-w-[85%] md:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)] p-5 flex items-center gap-4 no-underline border border-[var(--card-border)] bg-[var(--card-bg)] shadow-[0_4px_16px_rgba(0,0,0,0.15)] backdrop-blur-xl rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1"
+                        className="flex-shrink-0 snap-start min-w-[85%] md:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)] block no-underline"
                     >
-                        <div className="w-12 h-12 flex items-center justify-center bg-[#f973161a] text-[#fb923c] rounded-xl border border-[#f9731633] transition-transform duration-300 group-hover:scale-110">
-                            <ToolIcon name={tool.icon} size={24} className="text-[#fb923c]" />
-                        </div>
-                        <div className="text-start">
-                            <span className="text-[var(--muted-text)] text-[11px] uppercase tracking-[0.5px] font-semibold block mb-0.5">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
-                            <span className="text-[var(--title-color)] text-base font-semibold block">
-                                {tTools(`${tool.id}.name`, { fallback: tool.name })}
-                            </span>
-                        </div>
+                        <MotionCard className="p-5 flex items-center gap-4 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] h-full">
+                            <div className="w-12 h-12 flex items-center justify-center bg-[#f973161a] text-[#fb923c] rounded-xl border border-[#f9731633] transition-transform duration-300 group-hover:scale-110">
+                                <ToolIcon name={tool.icon} size={24} className="text-[#fb923c]" />
+                            </div>
+                            <div className="text-start">
+                                <span className="text-[var(--muted-text)] text-[11px] uppercase tracking-[0.5px] font-semibold block mb-0.5">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
+                                <span className="text-[var(--title-color)] font-heading text-base font-semibold block truncate">
+                                    {tTools(`${tool.id}.name`, { fallback: tool.name })}
+                                </span>
+                            </div>
+                        </MotionCard>
                     </Link>
                 ))}
             </div>

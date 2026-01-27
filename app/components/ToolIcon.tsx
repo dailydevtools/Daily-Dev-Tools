@@ -23,5 +23,5 @@ export default function ToolIcon({ name, size = 24, className, style }: ToolIcon
         return <DefaultIcon size={size} className={className} style={style} />;
     }
 
-    return <LucideIcon size={size} className={className} style={style} />;
+    return <LucideIcon size={size} className={className} style={style} aria-hidden="true" />;
 }

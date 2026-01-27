@@ -14,7 +14,7 @@ export default function ToolPageHeader({ title, description, icon }: ToolPageHea
                     {icon}
                 </div>
             )}
-            <h1 className="text-4xl font-extrabold text-[var(--title-color)] mb-3">{title}</h1>
+            <h1 className="text-4xl font-extrabold font-heading text-[var(--title-color)] mb-3">{title}</h1>
             <p className="text-[var(--muted-text)] text-base">{description}</p>
         </div>
     );

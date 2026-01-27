@@ -5,6 +5,7 @@ import Breadcrumb from "../../components/Breadcrumb";
 import ScrollToTop from "../../components/ScrollToTop";
 import RecentToolsTracker from "../../components/RecentToolsTracker";
 import Comments from "../../components/Comments";
+import ToolSchemaWrapper from "../../components/ToolSchemaWrapper";
 
 export default function ToolsLayout({
     children,
@@ -13,6 +14,7 @@ export default function ToolsLayout({
 }) {
     return (
         <div className="min-h-screen flex flex-col">
+            <ToolSchemaWrapper />
             <RecentToolsTracker />
             <ScrollToTop />
             {/* Main Grid Layout: Left Ad | Content | Right Ad */}

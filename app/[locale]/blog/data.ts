@@ -5,6 +5,7 @@ export interface BlogPost {
   date: string;
   readTime: string;
   category: string;
+  tags: string[];
   blocks: { type: 'h2' | 'h3' | 'p' | 'ul' | 'pre'; key: string }[];
 }
 
@@ -16,7 +17,8 @@ export const blogPosts: BlogPost[] = [
     category: "Development",
     date: "Jan 15, 2026",
     readTime: "5 min read",
-    blocks: [{"type": "h2", "key": "block_1"}, {"type": "p", "key": "block_2"}, {"type": "h3", "key": "block_3"}, {"type": "p", "key": "block_4"}, {"type": "h3", "key": "block_5"}, {"type": "p", "key": "block_6"}, {"type": "h3", "key": "block_7"}, {"type": "p", "key": "block_8"}],
+    tags: ["JSON", "Web Development", "Best Practices", "Debugging"],
+    blocks: [{ "type": "h2", "key": "block_1" }, { "type": "p", "key": "block_2" }, { "type": "h3", "key": "block_3" }, { "type": "p", "key": "block_4" }, { "type": "h3", "key": "block_5" }, { "type": "p", "key": "block_6" }, { "type": "h3", "key": "block_7" }, { "type": "p", "key": "block_8" }],
   },
   {
     slug: "mastering-regex",
@@ -25,7 +27,8 @@ export const blogPosts: BlogPost[] = [
     category: "Tutorial",
     date: "Jan 12, 2026",
     readTime: "8 min read",
-    blocks: [{"type": "h2", "key": "block_1"}, {"type": "p", "key": "block_2"}, {"type": "h3", "key": "block_3"}, {"type": "ul", "key": "block_4"}, {"type": "p", "key": "block_5"}],
+    tags: ["Regex", "JavaScript", "Validation", "Programming"],
+    blocks: [{ "type": "h2", "key": "block_1" }, { "type": "p", "key": "block_2" }, { "type": "h3", "key": "block_3" }, { "type": "ul", "key": "block_4" }, { "type": "p", "key": "block_5" }],
   },
   {
     slug: "cron-job-scheduling",
@@ -34,7 +37,8 @@ export const blogPosts: BlogPost[] = [
     category: "DevOps",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    blocks: [{"type": "h2", "key": "block_1"}, {"type": "p", "key": "block_2"}, {"type": "p", "key": "block_3"}, {"type": "pre", "key": "block_4"}, {"type": "h3", "key": "block_5"}, {"type": "p", "key": "block_6"}, {"type": "p", "key": "block_7"}],
+    tags: ["Cron", "Linux", "DevOps", "Automation"],
+    blocks: [{ "type": "h2", "key": "block_1" }, { "type": "p", "key": "block_2" }, { "type": "p", "key": "block_3" }, { "type": "pre", "key": "block_4" }, { "type": "h3", "key": "block_5" }, { "type": "p", "key": "block_6" }, { "type": "p", "key": "block_7" }],
   },
   {
     slug: "secure-password-storage-local",
@@ -43,6 +47,7 @@ export const blogPosts: BlogPost[] = [
     category: "Security",
     date: "Jan 18, 2026",
     readTime: "7 min read",
-    blocks: [{"type": "h2", "key": "block_1"}, {"type": "p", "key": "block_2"}, {"type": "h2", "key": "block_3"}, {"type": "p", "key": "block_4"}, {"type": "h3", "key": "block_5"}, {"type": "ul", "key": "block_6"}, {"type": "p", "key": "block_7"}],
+    tags: ["Security", "Privacy", "Encryption", "Password Manager"],
+    blocks: [{ "type": "h2", "key": "block_1" }, { "type": "p", "key": "block_2" }, { "type": "h2", "key": "block_3" }, { "type": "p", "key": "block_4" }, { "type": "h3", "key": "block_5" }, { "type": "ul", "key": "block_6" }, { "type": "p", "key": "block_7" }],
   },
 ];

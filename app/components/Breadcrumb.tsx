@@ -42,7 +42,7 @@ export default function Breadcrumb() {
 
             <ChevronRight size={14} className="opacity-50" />
 
-            <span className="text-[var(--title-color)] font-medium">
+            <span className="text-[var(--title-color)] font-medium font-heading">
                 {toolName}
             </span>
         </div>
