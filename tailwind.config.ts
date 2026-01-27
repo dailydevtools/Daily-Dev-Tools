@@ -9,6 +9,10 @@ export default {
     darkMode: "class",
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['var(--font-space)', 'sans-serif'],
+                heading: ['var(--font-space)', 'sans-serif'],
+            },
             colors: {
                 primary: {
                     50: '#f0f9ff',

@@ -8,8 +8,8 @@
   --card-hover-bg: rgba(0, 0, 0, 0.03);
   --header-bg: rgba(255, 255, 255, 0.9);
   --border-color: rgba(0, 0, 0, 0.1);
-  --muted-text: #4b5563;
-  /* Gray 600 */
+  --muted-text: #374151;
+  /* Gray 700 - Better accessibility contrast */
   --title-color: #111827;
   --orange-400: #fb923c;
   --orange-500: #f97316;
@@ -42,13 +42,23 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: var(--font-space), "Space Grotesk", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Global Link Accessibility */
+a:not(.no-underline) {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+main:focus {
+  outline: none;
 }
 
 @layer utilities {
