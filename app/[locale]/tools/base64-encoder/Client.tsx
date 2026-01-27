@@ -1,15 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check, ArrowRightLeft, Lock } from "lucide-react";
+import { ArrowRightLeft, Lock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import CopyButton from "../../../components/ui/CopyButton";
 
 export default function Base64EncoderClient() {
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"encode" | "decode">("encode");
-    const [copied, setCopied] = useState(false);
     const [error, setError] = useState("");
     const t = useTranslations('ToolPage.Base64Encoder');
     const tCommon = useTranslations('ToolPage.common');
@@ -29,11 +29,7 @@ export default function Base64EncoderClient() {
         }
     };
 
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText(output);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    };
+
 
     const swapMode = () => {
         setMode(mode === "encode" ? "decode" : "encode");
@@ -98,9 +94,7 @@ export default function Base64EncoderClient() {
                         <div className="px-5 py-4 border-b border-white/5 flex items-center justify-between">
                             <span className="text-sm font-medium text-[#9ca3af]">{mode === "encode" ? t('base64Output') : t('decodedText')}</span>
                             {output && (
-                                <button onClick={copyToClipboard} className={`p-2 bg-transparent border-none cursor-pointer ${copied ? 'text-[#22c55e]' : 'text-[#9ca3af]'}`}>
-                                    {copied ? <Check size={16} /> : <Copy size={16} />}
-                                </button>
+                                <CopyButton text={output} className="text-[#9ca3af] hover:text-[#fb923c]" />
                             )}
                         </div>
                         <textarea

@@ -5,6 +5,8 @@ import { Copy, Check, Download, Upload, Trash2, FileJson } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
+import CopyButton from "../../../components/ui/CopyButton";
+import MotionCard from "../../../components/ui/MotionCard";
 
 export default function JSONFormatterClient() {
     const t = useTranslations('ToolPage');
@@ -12,7 +14,6 @@ export default function JSONFormatterClient() {
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [error, setError] = useState("");
-    const [copied, setCopied] = useState(false);
     const [indentSize, setIndentSize] = useState(2);
     const [validationSuccess, setValidationSuccess] = useState(false);
 
@@ -58,11 +59,7 @@ export default function JSONFormatterClient() {
         }
     };
 
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText(output);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000);
-    };
+
 
     const downloadJSON = () => {
         const blob = new Blob([output], { type: "application/json" });
@@ -164,7 +161,7 @@ export default function JSONFormatterClient() {
                     {/* Editor Grid */}
                     <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
                         {/* Input */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden">
+                        <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] overflow-hidden">
                             <div className="px-5 py-4 border-b border-[var(--border-color)] flex items-center justify-between">
                                 <div className="flex items-center gap-3">
                                     <div className="flex gap-1.5">
@@ -183,10 +180,10 @@ export default function JSONFormatterClient() {
                                 className="w-full h-[450px] bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)]"
                                 spellCheck={false}
                             />
-                        </div>
+                        </MotionCard>
 
                         {/* Output */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden">
+                        <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] overflow-hidden">
                             <div className="px-5 py-4 border-b border-[var(--border-color)] flex items-center justify-between">
                                 <div className="flex items-center gap-3">
                                     <div className="flex gap-1.5">
@@ -206,13 +203,10 @@ export default function JSONFormatterClient() {
                                             >
                                                 <Download width={16} height={16} />
                                             </button>
-                                            <button
-                                                onClick={copyToClipboard}
-                                                className={`p-2 bg-transparent border-none cursor-pointer rounded-lg hover:text-[var(--foreground)] ${copied ? 'text-[#22c55e]' : 'text-[var(--muted-text)]'}`}
-                                                title={t('common.copy')}
-                                            >
-                                                {copied ? <Check width={16} height={16} /> : <Copy width={16} height={16} />}
-                                            </button>
+                                            <CopyButton
+                                                text={output}
+                                                className="text-[var(--muted-text)] hover:text-[var(--foreground)]"
+                                            />
                                         </>
                                     )}
                                 </div>
@@ -245,7 +239,7 @@ export default function JSONFormatterClient() {
                                     </div>
                                 )}
                             </div>
-                        </div>
+                        </MotionCard>
                     </div>
                 </div>
             </div>

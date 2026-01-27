@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, RefreshCw, CopyCheck, Fingerprint } from "lucide-react";
+import { Check, RefreshCw, CopyCheck, Fingerprint } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import CopyButton from "../../../components/ui/CopyButton";
 
 export default function UuidGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -82,13 +83,10 @@ export default function UuidGeneratorClient() {
                         {uuids.map((uuid, i) => (
                             <div key={i} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex items-center justify-between p-4 px-6 rounded-xl">
                                 <code className="text-base text-[#4ade80] font-mono">{uuid}</code>
-                                <button
-                                    onClick={() => copyToClipboard(uuid)}
-                                    className="p-2 rounded-lg bg-transparent border-none cursor-pointer text-[#9ca3af] hover:bg-white/10 transition-all"
-                                    title={t('UuidGenerator.copyUuid')}
-                                >
-                                    <Copy size={16} />
-                                </button>
+                                <CopyButton
+                                    text={uuid}
+                                    className="text-[#9ca3af] hover:bg-white/10"
+                                />
                             </div>
                         ))}
                     </div>
