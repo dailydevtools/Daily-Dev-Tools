@@ -44,8 +44,9 @@ export default function FeedbackForm() {
         return (
             <button
                 onClick={() => setIsOpen(true)}
-                className="fixed z-50 flex items-center gap-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-full text-[var(--title-color)] font-medium cursor-pointer transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-[var(--card-hover-bg)] hover:border-[#fb923c] hover:-translate-y-0.5 bottom-20 left-4 p-2.5 text-[13px] md:bottom-6 md:left-6 md:px-5 md:py-3 md:text-sm"
+                className="fixed z-50 flex items-center gap-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-full text-[var(--title-color)] font-medium cursor-pointer transition-all duration-200 shadow-[0_4px_12px_rgba(0,0,0,0.1)] hover:bg-[var(--card-hover-bg)] hover:border-[#fb923c] hover:-translate-y-0.5 bottom-20 left-4 p-3 min-w-[44px] min-h-[44px] text-[13px] md:bottom-6 md:left-6 md:px-6 md:py-3.5 md:text-sm"
                 title={t('sendFeedback')}
+                aria-label={t('sendFeedback')}
             >
                 <MessageSquare size={20} />
                 <span className="hidden md:inline">{t('feedback')}</span>
@@ -63,7 +64,8 @@ export default function FeedbackForm() {
                     </h3>
                     <button
                         onClick={() => setIsOpen(false)}
-                        className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer text-xl"
+                        className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer text-2xl w-10 h-10 flex items-center justify-center hover:text-[var(--title-color)]"
+                        aria-label="Close"
                     >
                         ×
                     </button>
