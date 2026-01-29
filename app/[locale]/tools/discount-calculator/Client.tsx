@@ -5,6 +5,10 @@ import { Tag } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function DiscountCalculatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -40,67 +44,75 @@ export default function DiscountCalculatorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
+                        <LiquidCard className="p-8">
 
                             <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('DiscountCalculator.originalPrice')} ($)</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DiscountCalculator.originalPrice')} ($)</label>
+                                <LiquidInput
                                     type="number"
                                     value={price} onChange={e => setPrice(e.target.value)}
                                     placeholder="100.00"
-                                    className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white text-lg"
+                                    className="text-lg"
                                 />
                             </div>
 
                             <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('DiscountCalculator.discountPercent')} (% off)</label>
-                                <div className="flex gap-3 flex-wrap">
-                                    <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DiscountCalculator.discountPercent')} (% off)</label>
+                                <div className="flex flex-col gap-3">
+                                    <LiquidInput
                                         type="number"
                                         value={discount} onChange={e => setDiscount(e.target.value)}
                                         placeholder="20"
-                                        className="input-field flex-1 p-3 rounded-lg bg-black/30 border border-white/10 text-white text-lg min-w-[80px]"
+                                        className="text-lg"
                                     />
-                                    {[10, 20, 30, 50].map(d => (
-                                        <button key={d} onClick={() => setDiscount(String(d))} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4">{d}%</button>
-                                    ))}
+                                    <div className="flex gap-2 flex-wrap">
+                                        {[10, 20, 30, 50].map(d => (
+                                            <button
+                                                key={d}
+                                                onClick={() => setDiscount(String(d))}
+                                                className="px-3 py-1.5 rounded-lg text-xs font-medium bg-neutral-100 dark:bg-white/5 border border-transparent hover:border-orange-500/30 hover:text-orange-500 transition-colors text-[var(--muted-text)]"
+                                            >
+                                                {d}%
+                                            </button>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
 
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('DiscountCalculator.salesTax')} (%) (Optional)</label>
-                                <input
+                            <div className="mb-2">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DiscountCalculator.salesTax')} (%) (Optional)</label>
+                                <LiquidInput
                                     type="number"
                                     value={tax} onChange={e => setTax(e.target.value)}
                                     placeholder="0"
-                                    className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white text-lg"
+                                    className="text-lg"
                                 />
                             </div>
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 text-center bg-gradient-to-br from-green-500/10 to-emerald-500/5">
-                            <div className="mb-6">
-                                <div className="text-sm text-[#9ca3af] mb-2">{t('DiscountCalculator.finalPrice')}</div>
-                                <div className="text-[56px] font-bold text-white leading-none">{format(final)}</div>
+                        <LiquidCard className="p-8 text-center bg-gradient-to-br from-green-500/5 to-emerald-500/5 border-green-500/20">
+                            <div className="mb-8">
+                                <div className="text-sm text-green-600 dark:text-green-400 mb-2 font-medium uppercase tracking-wider">{t('DiscountCalculator.finalPrice')}</div>
+                                <div className="text-[48px] font-bold text-[var(--foreground)] leading-none tracking-tight">{format(final)}</div>
                             </div>
 
-                            <div className="border-t border-white/10 pt-6 flex flex-col gap-3">
-                                <div className="flex justify-between text-[#9ca3af] text-sm">
+                            <div className="border-t border-[var(--border-color)] pt-6 flex flex-col gap-3">
+                                <div className="flex justify-between text-[var(--muted-text)] text-sm">
                                     <span>{t('DiscountCalculator.originalPrice')}</span>
-                                    <span className="line-through">{format(parseFloat(price) || 0)}</span>
+                                    <span className="line-through decoration-red-500/50">{format(parseFloat(price) || 0)}</span>
                                 </div>
-                                <div className="flex justify-between text-[#22c55e] text-base font-medium">
+                                <div className="flex justify-between text-green-600 dark:text-green-500 text-base font-medium">
                                     <span>{t('DiscountCalculator.youSave')}</span>
                                     <span>-{format(savings)}</span>
                                 </div>
                                 {parseFloat(tax) > 0 && (
-                                    <div className="flex justify-between text-[#f97316] text-sm">
+                                    <div className="flex justify-between text-orange-500 text-sm">
                                         <span>{t('DiscountCalculator.salesTax')} ({tax}%)</span>
                                         <span>+{format(taxAmount)}</span>
                                     </div>
                                 )}
                             </div>
-                        </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

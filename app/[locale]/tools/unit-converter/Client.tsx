@@ -5,6 +5,7 @@ import { ArrowRightLeft } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 type Category = 'length' | 'weight' | 'temperature';
 
@@ -102,20 +103,19 @@ export default function UnitConverterClient() {
                         <div className="flex flex-col gap-8">
 
                             {/* From */}
-                            <div className="flex gap-4">
+                            <div className="relative z-20 flex gap-4">
                                 <input
                                     type="number"
                                     value={value}
                                     onChange={(e) => setValue(Number(e.target.value))}
                                     className="flex-1 p-4 text-2xl rounded-xl bg-white/5 border border-white/10 text-white font-bold"
                                 />
-                                <select
+                                <LiquidSelect
                                     value={fromUnit}
-                                    onChange={(e) => setFromUnit(e.target.value)}
-                                    className="w-[150px] px-4 rounded-xl bg-white/5 border border-white/10 text-white text-base cursor-pointer"
-                                >
-                                    {UNITS[category].map(u => <option key={u.id} value={u.id} className="text-black">{u.name}</option>)}
-                                </select>
+                                    onChange={setFromUnit}
+                                    options={UNITS[category].map(u => ({ value: u.id, label: u.name }))}
+                                    className="min-w-[160px]"
+                                />
                             </div>
 
                             <div className="flex justify-center text-[#fb923c]">
@@ -127,13 +127,12 @@ export default function UnitConverterClient() {
                                 <div className="flex-1 p-4 text-2xl rounded-xl bg-black/20 border border-white/5 text-[#fb923c] font-bold flex items-center">
                                     {result}
                                 </div>
-                                <select
+                                <LiquidSelect
                                     value={toUnit}
-                                    onChange={(e) => setToUnit(e.target.value)}
-                                    className="w-[150px] px-4 rounded-xl bg-white/5 border border-white/10 text-white text-base cursor-pointer"
-                                >
-                                    {UNITS[category].map(u => <option key={u.id} value={u.id} className="text-black">{u.name}</option>)}
-                                </select>
+                                    onChange={setToUnit}
+                                    options={UNITS[category].map(u => ({ value: u.id, label: u.name }))}
+                                    className="min-w-[160px]"
+                                />
                             </div>
 
                         </div>

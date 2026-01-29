@@ -5,6 +5,11 @@ import { RefreshCw, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+
 export default function MacGeneratorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -45,48 +50,63 @@ export default function MacGeneratorClient() {
                     <ToolPageHeader
                         title={tTools('mac-generator.name')}
                         description={tTools('mac-generator.description')}
-                        icon={<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-400 flex items-center justify-center text-xl font-bold text-black">M</div>}
+                        icon={<div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-400 flex items-center justify-center text-xl font-bold text-black shadow-lg shadow-orange-500/20">M</div>}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-8">
                         <div className="grid grid-cols-2 gap-6 mb-8">
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('MacGenerator.format')}</label>
-                                <select value={format} onChange={e => setFormat(e.target.value)} className="w-full p-3 rounded-xl bg-[#111] border border-[#333] text-white">
-                                    <option value="Colon">MM:MM:MM:SS:SS:SS</option>
-                                    <option value="Dash">MM-MM-MM-SS-SS-SS</option>
-                                    <option value="Dot">MMMM.MMSS.SSSS</option>
-                                    <option value="None">MMMMMMSSSSSS</option>
-                                </select>
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('MacGenerator.format')}</label>
+                                <LiquidSelect
+                                    value={format}
+                                    onChange={setFormat}
+                                    options={[
+                                        { value: "Colon", label: "MM:MM:MM:SS:SS:SS" },
+                                        { value: "Dash", label: "MM-MM-MM-SS-SS-SS" },
+                                        { value: "Dot", label: "MMMM.MMSS.SSSS" },
+                                        { value: "None", label: "MMMMMMSSSSSS" }
+                                    ]}
+                                />
                             </div>
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('MacGenerator.quantity')}</label>
-                                <input type="number" min="1" max="50" value={count} onChange={e => setCount(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('MacGenerator.quantity')}</label>
+                                <LiquidInput type="number" min="1" max="50" value={count} onChange={e => setCount(Number(e.target.value))} />
                             </div>
                         </div>
 
                         <div className="mb-8">
-                            <label className="flex items-center gap-3 text-white cursor-pointer">
-                                <input type="checkbox" checked={uppercase} onChange={e => setUppercase(e.target.checked)} className="accent-[#fb923c]" />
-                                {t('MacGenerator.uppercase')}
+                            <label className="flex items-center gap-3 text-[var(--foreground)] cursor-pointer group">
+                                <input
+                                    type="checkbox"
+                                    checked={uppercase}
+                                    onChange={e => setUppercase(e.target.checked)}
+                                    className="w-5 h-5 rounded border-gray-300 text-orange-500 focus:ring-orange-500 transition-colors bg-white/10 border-white/10"
+                                />
+                                <span className="group-hover:text-orange-500 transition-colors">{t('MacGenerator.uppercase')}</span>
                             </label>
                         </div>
 
-                        <button onClick={generate} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full p-4 mb-8 flex items-center justify-center gap-2">
-                            <RefreshCw size={20} /> {t('MacGenerator.generate')}
-                        </button>
+                        <LiquidButton onClick={generate} className="w-full mb-8 py-4 text-base shadow-orange-500/20 shadow-lg">
+                            <RefreshCw size={20} className="mr-2" /> {t('MacGenerator.generate')}
+                        </LiquidButton>
 
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-3">
                             {macs.map((mac, i) => (
-                                <div key={i} className="flex justify-between p-4 bg-white/5 rounded-lg">
-                                    <span className="font-mono text-[#fb923c] text-base">{mac}</span>
-                                    <button onClick={() => navigator.clipboard.writeText(mac)} className="bg-transparent border-none text-[#9ca3af] cursor-pointer hover:text-white transition-colors">
+                                <div key={i} className="flex justify-between items-center p-4 bg-neutral-100/50 dark:bg-white/5 rounded-xl border border-[var(--border-color)] group hover:border-orange-500/30 transition-all">
+                                    <span className="font-mono text-[var(--foreground)] text-base group-hover:text-orange-500 transition-colors">{mac}</span>
+                                    <button
+                                        onClick={() => {
+                                            navigator.clipboard.writeText(mac);
+                                            // Optional: Show toast
+                                        }}
+                                        className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer hover:text-[var(--foreground)] transition-colors p-2 rounded-lg hover:bg-neutral-200 dark:hover:bg-white/10"
+                                    >
                                         <Copy size={16} />
                                     </button>
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </LiquidCard>
                 </div>
             </div>
         </main>

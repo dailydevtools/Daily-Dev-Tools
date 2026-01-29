@@ -6,6 +6,9 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function RegexTesterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -57,7 +60,7 @@ export default function RegexTesterClient() {
                 }
                 // Add matched text
                 parts.push(
-                    <span key={i} className="bg-orange-500/30 rounded-[2px]">
+                    <span key={i} className="bg-orange-500/30 text-orange-200 rounded-[2px] outline outline-1 outline-orange-500/50">
                         {match[0]}
                     </span>
                 );
@@ -85,87 +88,89 @@ export default function RegexTesterClient() {
                         icon={<ToolIcon name="Code2" size={32} />}
                     />
 
-                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                         {/* Left Column: Inputs */}
-                        <div>
+                        <div className="flex flex-col gap-8">
                             {/* Regex Input */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 rounded-2xl mb-5">
-                                <label className="block text-sm font-medium text-[#fb923c] mb-3">{t('RegexTester.expression')}</label>
-                                <div className="flex items-center bg-black/30 rounded-lg px-3">
-                                    <span className="text-[#6b7280] text-base">/</span>
+                            <LiquidCard className="p-6">
+                                <label className="block text-sm font-medium text-orange-500 mb-3">{t('RegexTester.expression')}</label>
+                                <div className="flex items-center bg-neutral-100/50 dark:bg-black/30 border border-black/5 dark:border-white/10 rounded-xl px-3 transition-colors focus-within:border-orange-500/50">
+                                    <span className="text-[var(--muted-text)] text-base select-none">/</span>
                                     <input
                                         type="text"
                                         value={regex}
                                         onChange={(e) => setRegex(e.target.value)}
                                         placeholder={t('RegexTester.expressionPlaceholder')}
-                                        className="flex-1 bg-transparent border-none py-3 px-1 text-white text-base outline-none font-mono"
+                                        className="flex-1 bg-transparent border-none py-3 px-1 text-[var(--foreground)] text-base outline-none font-mono placeholder:text-[var(--muted-text)]/50"
                                     />
-                                    <span className="text-[#6b7280] text-base">/{flags}</span>
+                                    <span className="text-[var(--muted-text)] text-base select-none">/{flags}</span>
                                 </div>
 
                                 {/* Flags */}
                                 <div className="flex flex-wrap gap-2 mt-4">
                                     {['g', 'i', 'm', 's', 'u', 'y'].map(flag => (
-                                        <button
+                                        <LiquidButton
                                             key={flag}
                                             onClick={() => toggleFlag(flag)}
-                                            className={`px-3 py-1 text-xs rounded-full transition-colors ${flags.includes(flag) ? "inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]" : "inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]"}`}
+                                            variant={flags.includes(flag) ? "primary" : "ghost"}
+                                            className={`h-8 px-3 text-xs font-mono rounded-lg ${flags.includes(flag) ? '' : 'border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                                         >
                                             {flag}
-                                        </button>
+                                        </LiquidButton>
                                     ))}
                                 </div>
-                                <div className="mt-3 text-[#9ca3af] text-xs">
+                                <div className="mt-3 text-[var(--muted-text)] text-xs">
                                     <p>{t('RegexTester.flagsHelp')}</p>
                                 </div>
-                            </div>
+                            </LiquidCard>
 
                             {/* Test String Input */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden h-[400px] flex flex-col">
-                                <div className="p-3 px-5 border-b border-white/5 bg-white/[0.02]">
-                                    <span className="text-sm font-medium text-[#9ca3af]">{t('RegexTester.testString')}</span>
+                            <LiquidCard className="p-0 h-[400px] flex flex-col overflow-hidden">
+                                <div className="p-4 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5">
+                                    <span className="text-sm font-medium text-[var(--muted-text)]">{t('RegexTester.testString')}</span>
                                 </div>
                                 <textarea
                                     value={text}
                                     onChange={(e) => setText(e.target.value)}
                                     placeholder={t('RegexTester.testStringPlaceholder')}
-                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-sm text-[#e5e7eb] resize-none outline-none"
+                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-sm text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)]/50"
                                 />
-                            </div>
+                            </LiquidCard>
                         </div>
 
                         {/* Right Column: Output */}
-                        <div>
+                        <div className="flex flex-col gap-8">
                             {/* Match Highlight View */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden mb-5 h-[300px] flex flex-col">
-                                <div className="p-3 px-5 border-b border-white/5 bg-white/[0.02] flex justify-between">
-                                    <span className="text-sm font-medium text-[#fb923c]">{t('RegexTester.matchHighlights')}</span>
-                                    <span className="text-xs text-[#9ca3af]">{matches.length} {t('RegexTester.matches')}</span>
+                            <LiquidCard className="p-0 h-[300px] flex flex-col overflow-hidden">
+                                <div className="p-4 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 flex justify-between items-center">
+                                    <span className="text-sm font-medium text-orange-500">{t('RegexTester.matchHighlights')}</span>
+                                    <span className="text-xs text-[var(--muted-text)] font-mono bg-neutral-200 dark:bg-white/10 px-2 py-1 rounded-md">{matches.length} {t('RegexTester.matches')}</span>
                                 </div>
-                                <div className="p-5 font-mono text-sm text-[#e5e7eb] whitespace-pre-wrap overflow-y-auto flex-1">
-                                    {text ? highlightedText : <span className="text-[#6b7280]">{t('RegexTester.highlightPlaceholder')}</span>}
+                                <div className="p-5 font-mono text-sm text-[var(--foreground)] whitespace-pre-wrap overflow-y-auto flex-1 leading-relaxed">
+                                    {text ? highlightedText : <span className="text-[var(--muted-text)] opacity-50">{t('RegexTester.highlightPlaceholder')}</span>}
                                 </div>
-                            </div>
+                            </LiquidCard>
 
                             {/* Match Details */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden h-[320px] flex flex-col">
-                                <div className="p-3 px-5 border-b border-white/5 bg-white/[0.02]">
-                                    <span className="text-sm font-medium text-[#9ca3af]">{t('RegexTester.matchInfo')}</span>
+                            <LiquidCard className="p-0 h-[320px] flex flex-col overflow-hidden">
+                                <div className="p-4 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5">
+                                    <span className="text-sm font-medium text-[var(--muted-text)]">{t('RegexTester.matchInfo')}</span>
                                 </div>
-                                <div className="p-5 overflow-y-auto flex-1">
+                                <div className="p-0 overflow-y-auto flex-1 scrollbar-thin">
                                     {matches.length > 0 ? (
                                         matches.map((match, i) => (
-                                            <div key={i} className="mb-3 border-b border-white/5 pb-3 last:border-0 last:pb-0 last:mb-0">
-                                                <div className="flex justify-between mb-1">
-                                                    <span className="text-[#fb923c] font-semibold text-[13px]">{t('RegexTester.match')} {i + 1}</span>
-                                                    <span className="text-[#6b7280] text-xs">{t('RegexTester.index')}: {match.index}</span>
+                                            <div key={i} className="p-4 border-b border-[var(--border-color)] last:border-0 hover:bg-neutral-100/50 dark:hover:bg-white/5 transition-colors">
+                                                <div className="flex justify-between mb-2">
+                                                    <span className="text-orange-500 font-semibold text-[13px]">{t('RegexTester.match')} {i + 1}</span>
+                                                    <span className="text-[var(--muted-text)] text-xs font-mono">{t('RegexTester.index')}: {match.index}</span>
                                                 </div>
-                                                <div className="text-white text-sm font-mono break-all">"{match[0]}"</div>
+                                                <div className="text-[var(--foreground)] text-sm font-mono break-all p-2 bg-neutral-100 dark:bg-black/20 rounded-lg border border-[var(--border-color)]">"{match[0]}"</div>
                                                 {match.length > 1 && (
-                                                    <div className="mt-2 pl-2 border-l-2 border-white/10">
+                                                    <div className="mt-3 pl-3 border-l-2 border-neutral-200 dark:border-white/10 space-y-2">
                                                         {Array.from(match).slice(1).map((group, gi) => (
-                                                            <div key={gi} className="text-xs text-[#9ca3af]">
-                                                                {t('RegexTester.group')} {gi + 1}: <span className="text-[#e5e7eb] font-mono">"{group}"</span>
+                                                            <div key={gi} className="text-xs text-[var(--muted-text)] flex flex-col gap-1">
+                                                                <span>{t('RegexTester.group')} {gi + 1}:</span>
+                                                                <span className="text-[var(--foreground)] font-mono bg-neutral-100 dark:bg-black/20 px-2 py-1 rounded border border-[var(--border-color)] w-max max-w-full truncate">"{group}"</span>
                                                             </div>
                                                         ))}
                                                     </div>
@@ -173,12 +178,13 @@ export default function RegexTesterClient() {
                                             </div>
                                         ))
                                     ) : (
-                                        <div className="text-[#6b7280] text-[13px] text-center mt-10">
-                                            {t('RegexTester.noMatches')}
+                                        <div className="flex flex-col items-center justify-center h-full text-[var(--muted-text)] opacity-50 p-10 text-center">
+                                            <Flag size={32} className="mb-3 opacity-20" />
+                                            <div className="text-[13px]">{t('RegexTester.noMatches')}</div>
                                         </div>
                                     )}
                                 </div>
-                            </div>
+                            </LiquidCard>
                         </div>
                     </div>
                 </div>

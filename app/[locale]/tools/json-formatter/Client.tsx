@@ -8,6 +8,10 @@ import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
 import MotionCard from "../../../components/ui/MotionCard";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+
 export default function JSONFormatterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -58,8 +62,6 @@ export default function JSONFormatterClient() {
             setValidationSuccess(false);
         }
     };
-
-
 
     const downloadJSON = () => {
         const blob = new Blob([output], { type: "application/json" });
@@ -113,133 +115,135 @@ export default function JSONFormatterClient() {
                     />
 
                     {/* Controls */}
-                    <div className="flex flex-wrap items-center gap-3 mb-6">
-                        <button onClick={formatJSON} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-5">
+                    <div className="relative z-20 flex flex-wrap items-center gap-4 mb-8">
+                        <LiquidButton onClick={formatJSON} className="h-11 px-6 text-sm">
                             {t('common.format')} JSON
-                        </button>
+                        </LiquidButton>
 
-                        <button onClick={validateJSON} className="inline-flex items-center justify-center gap-2 bg-[var(--card-bg)] text-[#22c55e] font-semibold text-sm px-6 py-3 rounded-[10px] border border-[#22c55e]/30 cursor-pointer transition-all duration-300 no-underline hover:bg-[#22c55e]/10 hover:border-[#22c55e] hover:-translate-y-0.5 py-2.5 px-5">
-                            <Check width={16} height={16} />
+                        <LiquidButton onClick={validateJSON} variant="ghost" className="h-11 px-5 text-sm text-green-500 hover:text-green-600 border-green-500/30 hover:bg-green-500/10">
+                            <Check width={16} height={16} className="mr-2" />
                             Validate
-                        </button>
+                        </LiquidButton>
 
-                        <button onClick={minifyJSON} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-5">
+                        <LiquidButton onClick={minifyJSON} variant="secondary" className="h-11 px-5 text-sm">
                             {t('common.minify')}
-                        </button>
+                        </LiquidButton>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 px-4 py-2 flex items-center gap-2">
-                            <label className="text-[13px] text-[var(--muted-text)]">{t('common.indent')}</label>
-                            <select
-                                value={indentSize}
-                                onChange={(e) => setIndentSize(Number(e.target.value))}
-                                className="bg-transparent border-none outline-none text-[var(--foreground)] text-[13px] cursor-pointer"
-                            >
-                                <option value={2} className="bg-[var(--card-bg)] text-[var(--foreground)]">2 {t('JsonFormatter.spaces')}</option>
-                                <option value={4} className="bg-[var(--card-bg)] text-[var(--foreground)]">4 {t('JsonFormatter.spaces')}</option>
-                            </select>
+                        <div className="flex items-center gap-2 bg-neutral-100/50 dark:bg-neutral-800/50 backdrop-blur-xl border border-[var(--border-color)] rounded-xl px-4 h-11 transition-all hover:border-orange-500/50 group">
+                            <label className="text-[13px] text-[var(--muted-text)] whitespace-nowrap group-hover:text-orange-500 transition-colors">{t('common.indent')}</label>
+                            <LiquidSelect
+                                value={String(indentSize)}
+                                onChange={(val) => setIndentSize(Number(val))}
+                                options={[
+                                    { value: "2", label: `2 ${t('JsonFormatter.spaces')}` },
+                                    { value: "4", label: `4 ${t('JsonFormatter.spaces')}` }
+                                ]}
+                                className="min-w-[120px] bg-transparent border-none"
+                            />
                         </div>
 
-                        <label className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-5 cursor-pointer flex items-center gap-2">
-                            <Upload width={16} height={16} />
-                            {t('common.upload')}
-                            <input type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
-                        </label>
+                        <div className="w-px h-8 bg-[var(--border-color)] mx-1 hidden md:block" />
 
-                        <button onClick={sampleJSON} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-5">
+                        <div className="relative">
+                            <LiquidButton onClick={() => document.getElementById('json-upload')?.click()} variant="secondary" className="h-11 px-5 text-sm">
+                                <Upload width={16} height={16} className="mr-2" />
+                                {t('common.upload')}
+                            </LiquidButton>
+                            <input id="json-upload" type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
+                        </div>
+
+                        <LiquidButton onClick={sampleJSON} variant="ghost" className="h-11 px-5 text-sm">
                             {t('common.sample')}
-                        </button>
+                        </LiquidButton>
 
-                        <button
-                            onClick={clearAll}
-                            className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-5 flex items-center gap-2 text-[#ef4444] border-red-500/20"
-                        >
-                            <Trash2 width={16} height={16} />
+                        <LiquidButton onClick={clearAll} variant="ghost" className="h-11 px-5 text-sm text-red-500 hover:text-red-600 border-red-500/20 hover:bg-red-500/10">
+                            <Trash2 width={16} height={16} className="mr-2" />
                             {t('common.clear')}
-                        </button>
+                        </LiquidButton>
                     </div>
 
                     {/* Editor Grid */}
-                    <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         {/* Input */}
-                        <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] overflow-hidden">
-                            <div className="px-5 py-4 border-b border-[var(--border-color)] flex items-center justify-between">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[500px] group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
                                 <div className="flex items-center gap-3">
-                                    <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-[#ef4444]" />
-                                        <div className="w-3 h-3 rounded-full bg-[#eab308]" />
-                                        <div className="w-3 h-3 rounded-full bg-[#22c55e]" />
+                                    <div className="flex gap-1.5 opacity-60">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
                                     </div>
-                                    <span className="text-sm font-medium text-[var(--muted-text)]">{t('common.input')}</span>
+                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.input')}</span>
                                 </div>
-                                <span className="text-xs text-[var(--muted-text)]">{input.length} {t('common.chars')}</span>
+                                <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
                             </div>
                             <textarea
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 placeholder={t('JsonFormatter.inputPlaceholder')}
-                                className="w-full h-[450px] bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)]"
+                                className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
                                 spellCheck={false}
                             />
-                        </MotionCard>
+                        </LiquidCard>
 
                         {/* Output */}
-                        <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] overflow-hidden">
-                            <div className="px-5 py-4 border-b border-[var(--border-color)] flex items-center justify-between">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[500px] group focus-within:ring-2 ring-orange-500/20 transition-all relative">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
                                 <div className="flex items-center gap-3">
-                                    <div className="flex gap-1.5">
-                                        <div className="w-3 h-3 rounded-full bg-[#ef4444]" />
-                                        <div className="w-3 h-3 rounded-full bg-[#eab308]" />
-                                        <div className="w-3 h-3 rounded-full bg-[#22c55e]" />
+                                    <div className="flex gap-1.5 opacity-60">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
                                     </div>
-                                    <span className="text-sm font-medium text-[var(--muted-text)]">{t('common.output')}</span>
+                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.output')}</span>
                                 </div>
-                                <div className="flex items-center gap-2">
+                                <div className="flex items-center gap-1">
                                     {output && (
                                         <>
                                             <button
                                                 onClick={downloadJSON}
-                                                className="p-2 bg-transparent border-none cursor-pointer text-[var(--muted-text)] rounded-lg hover:text-[var(--foreground)]"
+                                                className="p-1.5 hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)]"
                                                 title={t('common.download')}
                                             >
-                                                <Download width={16} height={16} />
+                                                <Download width={14} height={14} />
                                             </button>
                                             <CopyButton
                                                 text={output}
-                                                className="text-[var(--muted-text)] hover:text-[var(--foreground)]"
+                                                className="hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)]"
                                             />
                                         </>
                                     )}
                                 </div>
                             </div>
-                            <div className="relative">
+                            <div className="relative flex-1 flex flex-col">
                                 <textarea
                                     value={output}
                                     readOnly
                                     placeholder={t('JsonFormatter.outputPlaceholder')}
-                                    className="w-full h-[450px] bg-transparent border-none p-5 font-mono text-[13px] text-[#4ade80] resize-none outline-none placeholder:text-[var(--muted-text)]"
+                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-green-600 dark:text-green-400 resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
                                     spellCheck={false}
                                 />
                                 {error && (
-                                    <div className="absolute inset-0 bg-black/90 flex items-center justify-center p-6 z-20">
-                                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 rounded-2xl max-w-[400px] text-center">
-                                            <div className="text-5xl mb-4">⚠️</div>
-                                            <h4 className="font-semibold text-[#ef4444] text-lg mb-2">{t('common.invalid')}</h4>
-                                            <p className="text-sm text-[#9ca3af] leading-relaxed">{error}</p>
+                                    <div className="absolute inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm flex items-center justify-center p-6 z-20 animate-in fade-in duration-200">
+                                        <div className="bg-white dark:bg-[#111] border border-red-200 dark:border-red-900/50 shadow-2xl rounded-2xl p-8 max-w-[400px] text-center">
+                                            <div className="text-4xl mb-4">⚠️</div>
+                                            <h4 className="font-bold text-red-500 text-lg mb-2">{t('common.invalid')}</h4>
+                                            <p className="text-sm text-[var(--muted-text)] leading-relaxed">{error}</p>
                                         </div>
                                     </div>
                                 )}
                                 {validationSuccess && !error && (
-                                    <div className="absolute inset-0 bg-black/60 flex items-center justify-center p-6 z-20 animate-in fade-in duration-200">
-                                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-green-500/30 rounded-[20px] p-8 rounded-2xl max-w-[400px] text-center shadow-[0_0_30px_rgba(34,197,94,0.2)]">
+                                    <div className="absolute inset-0 bg-white/60 dark:bg-black/60 backdrop-blur-[2px] flex items-center justify-center p-6 z-20 animate-in fade-in zoom-in duration-300">
+                                        <div className="bg-white dark:bg-[#111] border border-green-200 dark:border-green-900/50 shadow-2xl rounded-2xl p-8 text-center">
                                             <div className="text-5xl mb-4 text-green-500">
-                                                <Check className="w-16 h-16 mx-auto" />
+                                                <Check className="w-20 h-20 mx-auto" />
                                             </div>
-                                            <h4 className="font-semibold text-green-500 text-xl mb-2">Valid JSON!</h4>
+                                            <h4 className="font-bold text-green-500 text-2xl">Valid JSON!</h4>
                                         </div>
                                     </div>
                                 )}
                             </div>
-                        </MotionCard>
+                        </LiquidCard>
                     </div>
                 </div>
             </div>

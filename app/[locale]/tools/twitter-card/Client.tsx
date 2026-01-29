@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Twitter } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function TwitterCardClient() {
     const t = useTranslations('TwitterCard');
@@ -38,28 +39,33 @@ export default function TwitterCardClient() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
                             <div className="flex flex-col gap-4">
-                                <div>
+                                <div className="relative z-20">
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('cardType')}</label>
-                                    <select value={cardType} onChange={e => setCardType(e.target.value)} className="w-full p-3 rounded-xl bg-[#111] border border-[#333] text-white outline-none">
-                                        <option value="summary">Summary</option>
-                                        <option value="summary_large_image">Summary Large Image</option>
-                                    </select>
+                                    <LiquidSelect
+                                        value={cardType}
+                                        onChange={setCardType}
+                                        options={[
+                                            { value: 'summary', label: 'Summary' },
+                                            { value: 'summary_large_image', label: 'Summary Large Image' }
+                                        ]}
+                                        className="w-full"
+                                    />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('siteHandle')}</label>
-                                    <input type="text" value={site} onChange={e => setSite(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <input type="text" value={site} onChange={e => setSite(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('title')}</label>
-                                    <input type="text" value={title} onChange={e => setTitle(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <input type="text" value={title} onChange={e => setTitle(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('description')}</label>
-                                    <textarea value={desc} onChange={e => setDesc(e.target.value)} className="input-field w-full h-20 p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y" />
+                                    <textarea value={desc} onChange={e => setDesc(e.target.value)} className="input-field w-full h-20 p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] resize-y" />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('imageUrl')}</label>
-                                    <input type="text" value={image} onChange={e => setImage(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <input type="text" value={image} onChange={e => setImage(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                 </div>
                             </div>
                         </div>

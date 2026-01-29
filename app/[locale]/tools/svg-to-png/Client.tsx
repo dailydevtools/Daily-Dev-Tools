@@ -89,7 +89,7 @@ export default function SvgToPngClient() {
                             <textarea
                                 value={svgContent} onChange={e => { setSvgContent(e.target.value); process(e.target.value); }}
                                 placeholder="<svg>...</svg>"
-                                className="w-full h-[100px] p-3 rounded-xl bg-black/30 border border-white/10 text-white font-mono text-xs resize-y"
+                                className="w-full h-[100px] p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] font-mono text-xs resize-y"
                             />
                         </div>
 

@@ -11,6 +11,9 @@ interface KeywordStat {
     density: string;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function KeywordDensityClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -52,54 +55,57 @@ export default function KeywordDensityClient() {
                         icon={<Search size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="grid grid-cols-[minmax(300px,1fr)_1fr] gap-6">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 flex flex-col">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-[600px]">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all h-full">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
                                 {t('common.input')}
                             </div>
                             <textarea
-                                value={input} onChange={e => setInput(e.target.value)}
+                                value={input}
+                                onChange={e => setInput(e.target.value)}
                                 placeholder={t('KeywordDensity.inputPlaceholder')}
-                                className="w-full h-[400px] bg-transparent border-none p-5 text-white text-sm resize-none outline-none"
+                                className="flex-1 w-full bg-transparent border-none p-5 text-[var(--foreground)] text-sm resize-none outline-none leading-relaxed"
                             />
-                            <div className="p-4 text-right border-t border-white/10">
-                                <button onClick={analyze} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-6">{t('KeywordDensity.analyze')}</button>
+                            <div className="p-4 border-t border-[var(--border-color)] flex justify-end bg-neutral-50 dark:bg-white/[0.02]">
+                                <LiquidButton onClick={analyze}>
+                                    {t('KeywordDensity.analyze')}
+                                </LiquidButton>
                             </div>
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden flex flex-col max-h-[460px]">
-                            <div className="p-4 bg-black/20 text-white font-semibold border-b border-white/10 flex items-center gap-2">
-                                <BarChart size={18} color="#fb923c" /> {t('common.output')}
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-full">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 flex items-center gap-2 text-[var(--foreground)] font-medium">
+                                <BarChart size={18} className="text-orange-500" /> {t('common.output')}
                             </div>
-                            <div className="overflow-y-auto flex-1">
+                            <div className="overflow-y-auto flex-1 custom-scrollbar">
                                 {stats.length > 0 ? (
                                     <table className="w-full border-collapse text-sm">
-                                        <thead className="bg-white/5 text-[#9ca3af] text-left sticky top-0">
+                                        <thead className="bg-neutral-50 dark:bg-white/5 text-[var(--muted-text)] text-xs uppercase tracking-wider sticky top-0 backdrop-blur-md">
                                             <tr>
-                                                <th className="p-3 px-4">{t('KeywordDensity.keyword')}</th>
-                                                <th className="p-3 px-4">{t('KeywordDensity.count')}</th>
-                                                <th className="p-3 px-4">{t('KeywordDensity.density')}</th>
+                                                <th className="p-3 px-5 text-left font-medium">{t('KeywordDensity.keyword')}</th>
+                                                <th className="p-3 px-5 text-right font-medium">{t('KeywordDensity.count')}</th>
+                                                <th className="p-3 px-5 text-right font-medium">{t('KeywordDensity.density')}</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody className="divide-y divide-[var(--border-color)]">
                                             {stats.map((s, i) => (
-                                                <tr key={i} className="border-b border-white/5">
-                                                    <td className="p-2.5 px-4 text-white">{s.word}</td>
-                                                    <td className="p-2.5 px-4 text-[#fb923c]">{s.count}</td>
-                                                    <td className="p-2.5 px-4 text-[#9ca3af]">{s.density}</td>
+                                                <tr key={i} className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                                                    <td className="p-3 px-5 text-[var(--foreground)] font-medium">{s.word}</td>
+                                                    <td className="p-3 px-5 text-right text-orange-500 font-mono">{s.count}</td>
+                                                    <td className="p-3 px-5 text-right text-[var(--muted-text)] font-mono">{s.density}</td>
                                                 </tr>
                                             ))}
                                         </tbody>
                                     </table>
                                 ) : (
-                                    <div className="p-10 text-center text-[#6b7280]">
-                                        {t('HtmlEncoder.resultPlaceholder')}
+                                    <div className="h-full flex flex-col items-center justify-center text-[var(--muted-text)] gap-4 p-10 opacity-60">
+                                        <BarChart size={48} className="opacity-20" />
+                                        <p>{t('HtmlEncoder.resultPlaceholder')}</p>
                                     </div>
                                 )}
                             </div>
-                        </div>
+                        </LiquidCard>
                     </div>
-
                 </div>
             </div>
         </main>

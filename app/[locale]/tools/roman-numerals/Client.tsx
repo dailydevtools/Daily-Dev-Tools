@@ -6,6 +6,9 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function RomanNumeralsClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -55,23 +58,23 @@ export default function RomanNumeralsClient() {
                         icon={<ToolIcon name="Hash" size={32} />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <LiquidCard className="p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
                         <div>
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RomanNumerals.decimal')}</label>
-                            <input
+                            <label className="block mb-3 text-[var(--muted-text)] text-[13px]">{t('RomanNumerals.decimal')}</label>
+                            <LiquidInput
                                 type="number" value={num} onChange={e => { setNum(e.target.value); setRoman(toRoman(Number(e.target.value))); }}
-                                className="input-field w-full p-5 rounded-xl bg-black/30 border border-white/10 text-white text-2xl text-center" placeholder={t('RomanNumerals.decimalPlaceholder')}
+                                className="text-2xl text-center h-16 w-full" placeholder={t('RomanNumerals.decimalPlaceholder')}
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RomanNumerals.roman')}</label>
-                            <input
+                            <label className="block mb-3 text-[var(--muted-text)] text-[13px]">{t('RomanNumerals.roman')}</label>
+                            <LiquidInput
                                 type="text" value={roman} onChange={e => { setRoman(e.target.value.toUpperCase()); setNum(toNum(e.target.value)); }}
-                                className="input-field w-full p-5 rounded-xl bg-black/30 border border-white/10 text-[#fb923c] text-2xl text-center" placeholder={t('RomanNumerals.placeholder')}
+                                className="text-2xl text-center h-16 w-full text-orange-500" placeholder={t('RomanNumerals.placeholder')}
                             />
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

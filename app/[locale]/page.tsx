@@ -11,6 +11,7 @@ import ToolIcon from "../components/ToolIcon";
 import ToolMarquee from "../components/ToolMarquee";
 import { useTranslations } from "next-intl";
 import MotionCard from "../components/ui/MotionCard";
+import GitHubStarCard from "../components/GitHubStarCard";
 
 type CategoryFilter = "All" | "Favorites" | ToolCategory;
 const CATEGORIES: CategoryFilter[] = ["All", "Developer", "Design", "Content", "Security", "Productivity", "Math", "Utility"];
@@ -21,8 +22,9 @@ export default function Home() {
   const tHeader = useTranslations('Header');
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("All");
+  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const [favorites, setFavorites] = useState<string[]>([]);
-  const [recents, setRecents] = useState<any[]>([]); // Using any[] to safely map from ID
+  const [recents, setRecents] = useState<typeof tools>([]);
   const [mounted, setMounted] = useState(false);
 
   const loadFromStorage = () => {
@@ -38,12 +40,20 @@ export default function Home() {
   };
 
   useEffect(() => {
-    setMounted(true);
-    loadFromStorage();
+    // Defer state updates to the next tick to avoid
+    // synchronous setState directly inside the effect body.
+    const timeoutId = window.setTimeout(() => {
+      setMounted(true);
+      loadFromStorage();
+    }, 0);
 
     // Listen for updates from other components/tabs
     window.addEventListener("storage", loadFromStorage);
-    return () => window.removeEventListener("storage", loadFromStorage);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+      window.removeEventListener("storage", loadFromStorage);
+    };
   }, []);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
@@ -108,6 +118,10 @@ export default function Home() {
             {t('subtitle')}
           </p>
 
+          <div className="mb-12">
+            <GitHubStarCard />
+          </div>
+
           {/* Tool Marquee */}
           <div className="w-full max-w-[1200px] overflow-hidden mb-10">
             <ToolMarquee />
@@ -170,56 +184,121 @@ export default function Home() {
       <section id="tools" className="relative z-10 py-20 px-6 flex flex-col items-center min-h-screen [overflow-anchor:none]">
         <div className="w-full max-w-[1200px] mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-[clamp(28px,5vw,44px)] font-bold font-heading mb-3 text-[var(--title-color)]">
-              {query ? t('searchResults') : <><span className="bg-gradient-to-br from-[#fb923c] via-[#facc15] to-[#fde047] bg-clip-text text-transparent">{activeCategory === 'All' ? t('popularTools') : t(`categories.${activeCategory}`)}</span> {tHeader('tools')}</>}
+            <h2 className="text-[clamp(28px,5vw,44px)] font-bold font-heading mb-3 text-(--title-color)">
+              {query ? t('searchResults') : <><span className="bg-linear-to-br from-[#fb923c] via-[#facc15] to-[#fde047] bg-clip-text text-transparent">{activeCategory === 'All' ? t('popularTools') : t(`categories.${activeCategory}`)}</span> {tHeader('tools')}</>}
             </h2>
-            <p className="text-[var(--muted-text)]">{t('toolsCount', { count: filteredTools.length })}</p>
+            <p className="text-(--muted-text)">{t('toolsCount', { count: filteredTools.length })}</p>
           </div>
 
-          {/* Category Pills */}
-          <div className="flex justify-center flex-wrap gap-2 mb-10 md:justify-center md:flex-nowrap md:overflow-x-auto md:px-4 md:-mx-4 md:[&::-webkit-scrollbar]:hidden md:[-ms-overflow-style:none] md:[scrollbar-width:none]">
-            {CATEGORIES.map(cat => (
-              <button
-                key={cat}
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // e.currentTarget.blur();
-                  // Capture current scroll
-                  const scrollY = window.scrollY;
-                  setActiveCategory(cat);
-                  // Restore scroll immediately with instant behavior to prevent visual jump
-                  requestAnimationFrame(() => window.scrollTo({ top: scrollY, behavior: 'instant' }));
-                }}
-                className={`gap-2 text-[13px] px-4 py-2 h-auto whitespace-nowrap flex-shrink-0 flex items-center justify-center transition-all duration-300 rounded-full cursor-pointer
-                  ${activeCategory === cat
-                    ? 'bg-gradient-to-br from-[#fb923c] to-[#f97316] text-[#0a0a0a] font-semibold border-transparent hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]'
-                    : 'bg-transparent text-[var(--muted-text)] font-medium border border-[var(--border-color)] hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'}`}
-              >
-                {t(`categories.${cat}`)}
-              </button>
-            ))}
-            {mounted && favorites.length > 0 && (
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.preventDefault();
-                  // e.currentTarget.blur();
-                  const scrollY = window.scrollY;
-                  setActiveCategory("Favorites");
-                  requestAnimationFrame(() => window.scrollTo({ top: scrollY, behavior: 'instant' }));
-                }}
-                className={`gap-2 text-[13px] px-4 py-2 h-auto flex items-center justify-center whitespace-nowrap flex-shrink-0 transition-all duration-300 rounded-full cursor-pointer
-                  ${activeCategory === "Favorites"
-                    ? 'bg-gradient-to-br from-[#fb923c] to-[#f97316] text-[#0a0a0a] font-semibold border-transparent hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]'
-                    : 'bg-transparent text-[var(--muted-text)] font-medium border border-[var(--border-color)] hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'}`}
-              >
-                <Star size={14} fill={activeCategory === "Favorites" ? "#0a0a0a" : "none"} className={activeCategory === "Favorites" ? "text-[#0a0a0a]" : ""} /> {t('categories.Favorites')} ({favorites.length})
-              </button>
-            )}
+          {/* Deep Liquid Tabs (Hover + Active Motion) - FIXED FOR LIGHT/DARK MODE */}
+          <div className="flex justify-center mb-12 w-full px-4 overflow-hidden">
+            <div
+              className="flex flex-nowrap gap-1 p-1 bg-[rgba(255,255,255,0.9)] dark:bg-[var(--card-bg)] rounded-full backdrop-blur-xl backdrop-saturate-150 relative z-0 overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] border border-[var(--card-border)] scroll-smooth mx-auto shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:shadow-none"
+              onMouseLeave={() => setHoveredCategory(null)}
+            >
+              {CATEGORIES.map(cat => (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveCategory(cat);
+                  }}
+                  onMouseEnter={() => setHoveredCategory(cat)}
+                  className={`relative px-4 py-1.5 text-[13px] font-medium transition-colors duration-200 rounded-full flex-shrink-0 z-10 select-none outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50
+                    ${activeCategory === cat
+                      ? 'text-[var(--title-color)] font-semibold'
+                      : 'text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200'}`}
+                  style={
+                    activeCategory === cat || hoveredCategory === cat
+                      ? { color: 'var(--title-color)' }
+                      : undefined
+                  }
+                >
+                  {/* Active Pill */}
+                  {activeCategory === cat && (
+                    <motion.div
+                      layoutId="active-pill"
+                      className="absolute inset-0 rounded-full shadow-[0_10px_30px_rgba(15,23,42,0.12)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.5)] bg-[var(--tab-pill-active-bg)] ring-1 ring-[rgba(15,23,42,0.06)] dark:ring-white/5"
+                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      style={{ zIndex: -1 }}
+                    />
+                  )}
+
+                  {/* Hover Pill - Only shows if not active */}
+                  {hoveredCategory === cat && activeCategory !== cat && (
+                    <motion.div
+                      layoutId="hover-pill"
+                      className="absolute inset-0 rounded-full bg-[var(--tab-pill-hover-bg)] border border-[var(--tab-pill-hover-border)]"
+                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      initial={{ scale: 0.95, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      exit={{ scale: 0.9, opacity: 0 }}
+                      style={{ zIndex: -2 }}
+                    />
+                  )}
+                  <span className="relative block">
+                    {t(`categories.${cat}`)}
+                  </span>
+                </button>
+              ))}
+
+              {mounted && favorites.length > 0 && (
+                <button
+                  type="button"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setActiveCategory("Favorites");
+                  }}
+                  onMouseEnter={() => setHoveredCategory("Favorites")}
+                  className={`group relative px-4 py-1.5 text-[13px] font-medium transition-colors duration-200 rounded-full flex-shrink-0 z-10 flex items-center gap-1.5 select-none outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50
+                    ${activeCategory === "Favorites"
+                      ? 'text-[var(--title-color)] font-semibold'
+                      : 'text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200'}`}
+                  style={
+                    activeCategory === "Favorites" || hoveredCategory === "Favorites"
+                      ? { color: 'var(--title-color)' }
+                      : undefined
+                  }
+                >
+                  {activeCategory === "Favorites" && (
+                    <motion.div
+                      layoutId="active-pill"
+                      className="absolute inset-0 rounded-full shadow-[0_10px_30px_rgba(15,23,42,0.12)] dark:shadow-[0_1px_2px_rgba(0,0,0,0.5)] bg-[var(--tab-pill-active-bg)] ring-1 ring-[rgba(15,23,42,0.06)] dark:ring-white/5"
+                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      style={{ zIndex: -1 }}
+                    />
+                  )}
+                  {hoveredCategory === "Favorites" && activeCategory !== "Favorites" && (
+                    <motion.div
+                      layoutId="hover-pill"
+                      className="absolute inset-0 rounded-full bg-[var(--tab-pill-hover-bg)] border border-[var(--tab-pill-hover-border)]"
+                      transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                      initial={{ scale: 0.95, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      exit={{ scale: 0.9, opacity: 0 }}
+                      style={{ zIndex: -2 }}
+                    />
+                  )}
+                  <span className="relative flex items-center gap-1.5">
+                    <Star
+                      size={13}
+                      className={activeCategory === "Favorites"
+                        ? "text-orange-500 fill-orange-500"
+                        : "text-neutral-600 dark:text-neutral-400"
+                      }
+                    />
+                    {t('categories.Favorites')}
+                    <span className={activeCategory === "Favorites" ? "opacity-100" : "opacity-60"}>
+                      ({favorites.length})
+                    </span>
+                  </span>
+                </button>
+              )}
+            </div>
           </div>
 
-          <div className="min-h-[100vh]">
+          <div className="min-h-screen">
             <motion.div
               layout
               className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-5"
@@ -241,8 +320,9 @@ export default function Home() {
                           onClick={(e) => toggleFavorite(e, tool.id)}
                           className={`absolute top-5 right-5 bg-transparent border-none cursor-pointer transition-all duration-200 z-10 ${favorites.includes(tool.id) ? 'text-[#fb923c]' : 'text-[var(--muted-text)]'
                             }`}
+                          aria-label={favorites.includes(tool.id) ? "Remove from favorites" : "Add to favorites"}
                         >
-                          <Star size={20} fill={favorites.includes(tool.id) ? "#fb923c" : "none"} />
+                          <Star size={20} fill={favorites.includes(tool.id) ? "#fb923c" : "none"} aria-hidden="true" />
                         </button>
 
                         <div className="flex items-center justify-center rounded-xl bg-[#f973161a] text-[#fb923c] border border-[#f9731633] transition-transform duration-300 group-hover:scale-110 w-12 h-12 mb-4">
@@ -273,14 +353,14 @@ export default function Home() {
             )}
           </div>
         </div>
-      </section>
+      </section >
 
       <section className="relative z-10 py-20 px-6 flex flex-col items-center">
         <div className="w-full max-w-[800px] mx-auto flex justify-center">
           <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] w-full p-[clamp(24px,5vw,40px)] text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[rgba(249,115,22,0.05)] to-[rgba(250,204,21,0.05)]" />
             <div className="relative z-10 flex flex-col items-center">
-              <p className="text-[var(--muted-text)] text-sm mb-4 italic text-center">"{t('cta.feedbackText')}"</p>
+              <p className="text-[var(--muted-text)] text-sm mb-4 italic text-center">&ldquo;{t('cta.feedbackText')}&rdquo;</p>
               <button
                 onClick={() => window.dispatchEvent(new Event('open-feedback-modal'))}
                 className="bg-transparent border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--title-color)] hover:border-[#fb923c] text-xs px-5 py-2.5 rounded-full transition-all duration-300 cursor-pointer"
@@ -295,6 +375,6 @@ export default function Home() {
       <div className="max-w-[1000px] mx-auto px-6 relative z-10">
         {/* <AdUnit slot="homepage_bottom" /> */}
       </div>
-    </div>
+    </div >
   );
 }

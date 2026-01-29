@@ -5,6 +5,9 @@ import { Ratio } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function AspectRatioClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -37,50 +40,50 @@ export default function AspectRatioClient() {
                         icon={<Ratio size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10">
 
                         <div className="flex gap-6 items-center mb-10">
                             <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('AspectRatioCalculator.originalWidth')}</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('AspectRatioCalculator.originalWidth')}</label>
+                                <LiquidInput
                                     type="number" value={w1} onChange={e => setW1(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                    className="text-lg"
                                 />
                             </div>
                             <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('AspectRatioCalculator.originalHeight')}</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('AspectRatioCalculator.originalHeight')}</label>
+                                <LiquidInput
                                     type="number" value={h1} onChange={e => setH1(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                    className="text-lg"
                                 />
                             </div>
                         </div>
 
-                        <div className="h-px bg-white/10 mb-10" />
+                        <div className="h-px bg-neutral-200 dark:bg-neutral-800 mb-10" />
 
                         <div className="flex gap-6 items-center">
                             <div className="flex-1">
-                                <label className="block mb-2 text-[#fb923c] text-[13px]">{t('AspectRatioCalculator.newWidth')}</label>
-                                <input
+                                <label className="block mb-2 text-orange-500 font-medium text-sm">{t('AspectRatioCalculator.newWidth')}</label>
+                                <LiquidInput
                                     type="number" value={w2} onChange={e => calculateH2(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-xl bg-orange-500/10 border border-orange-500/20 text-[#fb923c]"
+                                    className="text-lg border-orange-200 focus:border-orange-500 focus:ring-orange-500/20 text-orange-600 dark:text-orange-400"
                                 />
                             </div>
                             <div className="flex-1">
-                                <label className="block mb-2 text-[#fb923c] text-[13px]">{t('AspectRatioCalculator.newHeight')}</label>
-                                <input
+                                <label className="block mb-2 text-orange-500 font-medium text-sm">{t('AspectRatioCalculator.newHeight')}</label>
+                                <LiquidInput
                                     type="number" value={h2} onChange={e => calculateW2(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-xl bg-orange-500/10 border border-orange-500/20 text-[#fb923c]"
+                                    className="text-lg border-orange-200 focus:border-orange-500 focus:ring-orange-500/20 text-orange-600 dark:text-orange-400"
                                 />
                             </div>
                         </div>
 
-                        <div className="mt-10 text-center">
-                            <div className="text-[13px] text-[#9ca3af] mb-2">{t('AspectRatioCalculator.resultRatio')}</div>
-                            <div className="text-5xl font-bold text-white">{common === "16:9" ? "16:9" : ratio}</div>
+                        <div className="mt-12 text-center">
+                            <div className="text-sm text-[var(--muted-text)] mb-2 font-medium">{t('AspectRatioCalculator.resultRatio')}</div>
+                            <div className="text-5xl font-bold text-[var(--foreground)] tracking-tight">{common === "16:9" ? "16:9" : ratio}</div>
                         </div>
 
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

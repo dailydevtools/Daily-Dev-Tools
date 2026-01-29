@@ -112,7 +112,7 @@ export default function DeepLinkTesterClient() {
                                     value={uri}
                                     onChange={e => setUri(e.target.value)}
                                     placeholder={t('DeepLinkTester.linkPlaceholder')}
-                                    className="flex-1 p-4 rounded-xl bg-black/30 border border-white/10 text-white text-base font-mono"
+                                    className="flex-1 p-4 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-base font-mono"
                                 />
                             </div>
 

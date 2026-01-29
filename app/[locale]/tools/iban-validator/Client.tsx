@@ -5,6 +5,9 @@ import { CheckCircle, XCircle, CreditCard } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function IbanValidatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -47,33 +50,33 @@ export default function IbanValidatorClient() {
                         icon={<CreditCard size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
+                    <LiquidCard className="p-10 text-center">
                         <div className="mb-8">
-                            <label className="block mb-3 text-[#9ca3af] text-[13px]">{t('IbanValidator.inputLabel')}</label>
-                            <input
+                            <label className="block mb-3 text-[var(--muted-text)] text-sm font-medium">{t('IbanValidator.inputLabel')}</label>
+                            <LiquidInput
                                 type="text" value={iban} onChange={e => validate(e.target.value)}
                                 placeholder={t('IbanValidator.placeholder')}
-                                className="input-field w-full p-4 text-lg text-center rounded-xl bg-black/30 border border-white/10 text-white font-mono"
+                                className="text-center font-mono text-lg h-14"
                             />
                         </div>
 
                         {iban.length > 5 && isValid !== null && (
                             <div className={`
-                                p-6 rounded-2xl flex items-center justify-center gap-4 border
+                                p-6 rounded-2xl flex items-center justify-center gap-4 border animate-in fade-in zoom-in duration-300
                                 ${isValid ? 'bg-green-500/10 border-green-500/20' : 'bg-red-500/10 border-red-500/20'}
                             `}>
-                                {isValid ? <CheckCircle size={32} color="#22c55e" /> : <XCircle size={32} color="#ef4444" />}
+                                {isValid ? <CheckCircle size={32} className="text-green-500" /> : <XCircle size={32} className="text-red-500" />}
                                 <div className="text-left">
-                                    <div className={`font-bold text-lg ${isValid ? 'text-[#22c55e]' : 'text-[#ef4444]'}`}>
+                                    <div className={`font-bold text-lg ${isValid ? 'text-green-500' : 'text-red-500'}`}>
                                         {isValid ? t('IbanValidator.validTitle') : t('IbanValidator.invalidTitle')}
                                     </div>
-                                    <div className="text-[13px] text-[#9ca3af] mt-1">
+                                    <div className="text-sm text-[var(--muted-text)] mt-1">
                                         {isValid ? t('IbanValidator.validDesc') : t('IbanValidator.invalidDesc')}
                                     </div>
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

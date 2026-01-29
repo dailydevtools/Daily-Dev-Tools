@@ -12,6 +12,9 @@ interface DiffLine {
     lineNumR?: number;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function JsonDiffClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -73,53 +76,68 @@ export default function JsonDiffClient() {
                         icon={<GitCompare size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 flex flex-col">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('JsonDiff.original')}</div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
+                                {t('JsonDiff.original')}
+                            </div>
                             <textarea
                                 value={left} onChange={e => setLeft(e.target.value)}
                                 placeholder='{"a": 1}'
-                                className="flex-1 min-h-[200px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none"
+                                className="flex-1 min-h-[300px] bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-y outline-none text-sm leading-relaxed"
                             />
-                        </div>
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 flex flex-col">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('JsonDiff.modified')}</div>
+                        </LiquidCard>
+
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
+                                {t('JsonDiff.modified')}
+                            </div>
                             <textarea
                                 value={right} onChange={e => setRight(e.target.value)}
                                 placeholder='{"a": 2}'
-                                className="flex-1 min-h-[200px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none"
+                                className="flex-1 min-h-[300px] bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-y outline-none text-sm leading-relaxed"
                             />
+                        </LiquidCard>
+                    </div>
+
+                    <div className="text-center mb-8">
+                        <LiquidButton onClick={computeDiff} className="px-12 py-4 text-base">
+                            <GitCompare size={20} className="mr-2" />
+                            {t('JsonDiff.compare')}
+                        </LiquidButton>
+                    </div>
+
+                    {error && (
+                        <div className="text-center text-red-500 mb-8 p-4 bg-red-500/10 border border-red-500/20 rounded-xl animate-in fade-in slide-in-from-top-2">
+                            {error}
                         </div>
-                    </div>
-
-                    <div className="text-center mb-6">
-                        <button onClick={computeDiff} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8">{t('JsonDiff.compare')}</button>
-                    </div>
-
-                    {error && <div className="text-center text-[#ef4444] mb-6">{error}</div>}
+                    )}
 
                     {diffs.length > 0 && (
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">
+                        <LiquidCard className="p-0 overflow-hidden">
+                            <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
                                 {t('JsonDiff.differences')}
                             </div>
-                            <div className="p-0 font-mono text-sm overflow-x-auto">
+                            <div className="p-0 font-mono text-sm overflow-x-auto bg-white dark:bg-[#0a0a0a]">
                                 {diffs.map((d, i) => (
                                     <div key={i} className={`
-                                        flex
-                                        ${d.type === 'added' ? 'bg-green-500/10 border-l-4 border-[#22c55e]' : ''}
-                                        ${d.type === 'removed' ? 'bg-red-500/10 border-l-4 border-[#ef4444]' : ''}
-                                        ${d.type === 'same' ? 'bg-transparent border-l-4 border-transparent text-[#d1d5db]' : 'text-white'}
+                                        flex hover:bg-black/5 dark:hover:bg-white/5 transition-colors
+                                        ${d.type === 'added' ? 'bg-green-500/10 dark:bg-green-500/20 border-l-4 border-green-500' : ''}
+                                        ${d.type === 'removed' ? 'bg-red-500/10 dark:bg-red-500/20 border-l-4 border-red-500' : ''}
+                                        ${d.type === 'same' ? 'border-l-4 border-transparent text-[var(--muted-text)]' : 'text-[var(--foreground)]'}
                                     `}>
-                                        <div className="w-10 text-right pr-3 text-[#6b7280] select-none">{d.lineNumL || ''}</div>
-                                        <div className="w-10 text-right pr-3 text-[#6b7280] select-none">{d.lineNumR || ''}</div>
-                                        <div className="whitespace-pre-wrap py-0.5">
-                                            {d.type === 'added' ? '+' : d.type === 'removed' ? '-' : ' '} {d.content}
+                                        <div className="w-12 text-right pr-4 text-[var(--muted-text)] select-none opacity-50 py-1 bg-neutral-50 dark:bg-white/5 border-r border-[var(--border-color)]">{d.lineNumL || ''}</div>
+                                        <div className="w-12 text-right pr-4 text-[var(--muted-text)] select-none opacity-50 py-1 bg-neutral-50 dark:bg-white/5 border-r border-[var(--border-color)] mr-2">{d.lineNumR || ''}</div>
+                                        <div className="whitespace-pre-wrap py-1 flex-1 px-2">
+                                            <span className="inline-block w-4 opacity-50 select-none mr-2 font-bold">
+                                                {d.type === 'added' ? '+' : d.type === 'removed' ? '-' : ''}
+                                            </span>
+                                            {d.content}
                                         </div>
                                     </div>
                                 ))}
                             </div>
-                        </div>
+                        </LiquidCard>
                     )}
 
                 </div>

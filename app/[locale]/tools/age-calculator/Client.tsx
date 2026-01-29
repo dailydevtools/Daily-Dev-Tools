@@ -5,6 +5,9 @@ import { Cake } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function AgeCalculatorClient() {
     const t = useTranslations('AgeCalculator');
     const [dob, setDob] = useState("");
@@ -51,39 +54,41 @@ export default function AgeCalculatorClient() {
                         icon={<Cake size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
+                    <LiquidCard className="p-8 text-center">
                         <div className="mb-8">
-                            <label className="block mb-3 text-[#9ca3af] text-[13px]">{t('dob')}</label>
-                            <input
-                                type="date" value={dob} onChange={e => setDob(e.target.value)}
-                                className="input-field w-full p-4 rounded-xl bg-black/30 border border-white/10 text-white text-lg text-center"
+                            <label className="block mb-3 text-[var(--muted-text)] text-sm font-medium">{t('dob')}</label>
+                            <LiquidInput
+                                type="date"
+                                value={dob}
+                                onChange={e => setDob(e.target.value)}
+                                className="text-center text-lg"
                             />
                         </div>
 
                         {res && (
-                            <div className="grid gap-6">
-                                <div className="p-6 bg-white/5 rounded-2xl">
-                                    <div className="text-[13px] text-[#9ca3af] mb-2">{t('age')}</div>
+                            <div className="grid gap-6 animate-[fadeIn_0.3s_ease-out]">
+                                <div className="p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-neutral-200/50 dark:border-white/5">
+                                    <div className="text-sm text-[var(--muted-text)] mb-2 font-medium">{t('age')}</div>
                                     <div className="flex items-baseline justify-center gap-3">
-                                        <span className="text-5xl font-bold text-white">{res.years}</span>
-                                        <span className="text-base text-[#9ca3af]">{t('years')}</span>
+                                        <span className="text-5xl font-bold text-[var(--foreground)]">{res.years}</span>
+                                        <span className="text-base text-[var(--muted-text)]">{t('years')}</span>
                                     </div>
-                                    <div className="text-[#9ca3af] mt-2">
+                                    <div className="text-[var(--muted-text)] mt-2">
                                         {res.months} {t('months')}, {res.days} {t('days')}
                                     </div>
                                 </div>
 
-                                <div className="p-6 bg-orange-400/10 rounded-2xl border border-orange-400/20">
-                                    <div className="flex items-center justify-center gap-3 text-[#fb923c] mb-2">
+                                <div className="p-6 bg-orange-50 dark:bg-orange-900/10 rounded-2xl border border-orange-200 dark:border-orange-900/30">
+                                    <div className="flex items-center justify-center gap-3 text-orange-600 dark:text-orange-400 mb-2 font-medium">
                                         <Cake size={20} /> {t('nextBirthday')}
                                     </div>
-                                    <div className="text-2xl font-bold text-[#fb923c]">
+                                    <div className="text-2xl font-bold text-orange-600 dark:text-orange-400">
                                         {res.daysToBday} {t('days')}
                                     </div>
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

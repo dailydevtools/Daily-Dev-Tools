@@ -5,6 +5,9 @@ import { ArrowDownAZ, ArrowUpAZ, Shuffle, Trash2, List } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function ListSorterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -29,36 +32,53 @@ export default function ListSorterClient() {
     return (
         <main className="relative min-h-screen">
             <div className="relative z-10 pt-6 pb-16 px-6">
-                <div className="max-w-[800px] mx-auto">
+                <div className="max-w-[1000px] mx-auto">
                     <ToolPageHeader
                         title={tTools('list-sorter.name')}
                         description={tTools('list-sorter.description')}
                         icon={<List size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden flex flex-col">
-                        <div className="p-4 border-b border-white/10 flex gap-3 flex-wrap bg-black/20">
-                            <button onClick={() => process('az')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px] gap-1.5"><ArrowDownAZ size={16} /> {t('ListSorter.ascending')}</button>
-                            <button onClick={() => process('za')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px] gap-1.5"><ArrowUpAZ size={16} /> {t('ListSorter.descending')}</button>
-                            <button onClick={() => process('reverse')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px]">{t('ListSorter.reverse')}</button>
-                            <button onClick={() => process('random')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px] gap-1.5"><Shuffle size={16} /> {t('ListSorter.shuffle')}</button>
-                            <button onClick={() => process('length')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px]">{t('ListSorter.length')}</button>
-                            <button onClick={() => process('unique')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px] text-[#fb923c]">{t('ListSorter.deduplicate')}</button>
-                            <button onClick={() => process('trim')} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px]">{t('ListSorter.trim')}</button>
+                    <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <div className="p-4 border-b border-[var(--border-color)] flex gap-3 flex-wrap bg-neutral-100/50 dark:bg-white/5 items-center">
+                            <LiquidButton onClick={() => process('az')} variant="ghost" className="gap-2">
+                                <ArrowDownAZ size={16} /> {t('ListSorter.ascending')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('za')} variant="ghost" className="gap-2">
+                                <ArrowUpAZ size={16} /> {t('ListSorter.descending')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('reverse')} variant="ghost">
+                                {t('ListSorter.reverse')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('random')} variant="ghost" className="gap-2">
+                                <Shuffle size={16} /> {t('ListSorter.shuffle')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('length')} variant="ghost">
+                                {t('ListSorter.length')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('unique')} variant="secondary" className="text-orange-500 bg-orange-500/10 border-orange-500/20 hover:bg-orange-500/20">
+                                {t('ListSorter.deduplicate')}
+                            </LiquidButton>
+                            <LiquidButton onClick={() => process('trim')} variant="ghost">
+                                {t('ListSorter.trim')}
+                            </LiquidButton>
                             <div className="flex-1" />
-                            <button onClick={() => setInput("")} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-[13px] text-[#ef4444]"><Trash2 size={16} /></button>
+                            <LiquidButton onClick={() => setInput("")} variant="ghost" className="text-red-500 hover:text-red-600 hover:bg-red-500/10 gap-2">
+                                <Trash2 size={16} /> {t('common.clear')}
+                            </LiquidButton>
                         </div>
 
                         <textarea
-                            value={input} onChange={e => setInput(e.target.value)}
+                            value={input}
+                            onChange={e => setInput(e.target.value)}
                             placeholder={t('ListSorter.inputPlaceholder')}
-                            className="w-full h-[500px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none text-sm leading-relaxed"
+                            className="w-full h-[500px] bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-y outline-none text-sm leading-relaxed"
                         />
 
-                        <div className="p-3 bg-black/20 border-t border-white/10 text-[#6b7280] text-xs text-right">
-                            {t('ListSorter.lines')} {input.split('\n').length} | {t('ListSorter.chars')} {input.length}
+                        <div className="p-3 bg-neutral-50 dark:bg-white/[0.02] border-t border-[var(--border-color)] text-[var(--muted-text)] text-xs text-right">
+                            {t('ListSorter.lines')} {input ? input.split('\n').length : 0} | {t('ListSorter.chars')} {input.length}
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

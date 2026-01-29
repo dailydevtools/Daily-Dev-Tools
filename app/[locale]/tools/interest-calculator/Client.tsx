@@ -11,6 +11,10 @@ interface ChartData {
     interest: number;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+
 export default function InterestCalculatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -69,81 +73,86 @@ export default function InterestCalculatorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-[minmax(300px,1fr)_2fr] gap-6 items-start">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('InterestCalculator.principal')} ($)</label>
-                                <input type="number" value={principal} onChange={e => setPrincipal(Number(e.target.value))} className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
+                        <LiquidCard className="p-8">
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.principal')} ($)</label>
+                                <LiquidInput type="number" value={principal} onChange={e => setPrincipal(Number(e.target.value))} />
                             </div>
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('InterestCalculator.rate')} (%)</label>
-                                <div className="flex gap-3">
-                                    <input type="number" value={rate} onChange={e => setRate(Number(e.target.value))} className="input-field flex-1 p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
-                                    <input type="range" min="1" max="20" step="0.5" value={rate} onChange={e => setRate(Number(e.target.value))} className="flex-1 accent-[#fb923c]" />
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.rate')} (%)</label>
+                                <div className="flex gap-4 items-center">
+                                    <LiquidInput type="number" value={rate} onChange={e => setRate(Number(e.target.value))} className="w-24 text-center" />
+                                    <input type="range" min="1" max="20" step="0.5" value={rate} onChange={e => setRate(Number(e.target.value))} className="flex-1 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none" />
                                 </div>
                             </div>
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('InterestCalculator.time')}</label>
-                                <input type="range" min="1" max="50" value={years} onChange={e => setYears(Number(e.target.value))} className="w-full mb-2 accent-[#fb923c]" />
-                                <div className="text-center font-bold text-white">{years} {t('InterestCalculator.year')}s</div>
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.time')}</label>
+                                <input type="range" min="1" max="50" value={years} onChange={e => setYears(Number(e.target.value))} className="w-full mb-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none" />
+                                <div className="text-center font-bold text-[var(--foreground)]">{years} {t('InterestCalculator.year')}s</div>
                             </div>
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('InterestCalculator.type')}</label>
-                                <div className="flex gap-3">
-                                    <button onClick={() => setType('simple')} className={`flex-1 p-3 rounded-lg ${type === 'simple' ? 'inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]' : 'inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'}`}>{t('InterestCalculator.simpleInterest')}</button>
-                                    <button onClick={() => setType('compound')} className={`flex-1 p-3 rounded-lg ${type === 'compound' ? 'inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]' : 'inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'}`}>{t('InterestCalculator.compoundInterest')}</button>
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.type')}</label>
+                                <div className="flex dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5">
+                                    <button onClick={() => setType('simple')} className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${type === 'simple' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}>{t('InterestCalculator.simpleInterest')}</button>
+                                    <button onClick={() => setType('compound')} className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${type === 'compound' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}>{t('InterestCalculator.compoundInterest')}</button>
                                 </div>
                             </div>
                             {type === 'compound' && (
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('InterestCalculator.frequency')}</label>
-                                    <select value={frequency} onChange={e => setFrequency(Number(e.target.value))} className="w-full p-3 rounded-lg bg-[#111] border-none text-white">
-                                        <option value={1}>{t('InterestCalculator.annually')}</option>
-                                        <option value={12}>{t('InterestCalculator.monthly')}</option>
-                                        <option value={365}>{t('InterestCalculator.daily')}</option>
-                                    </select>
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.frequency')}</label>
+                                    <LiquidSelect
+                                        value={frequency.toString()}
+                                        onChange={(val) => setFrequency(Number(val))}
+                                        options={[
+                                            { value: "1", label: t('InterestCalculator.annually') },
+                                            { value: "12", label: t('InterestCalculator.monthly') },
+                                            { value: "365", label: t('InterestCalculator.daily') }
+                                        ]}
+                                    />
                                 </div>
                             )}
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                            <div className="flex gap-8 mb-8">
+                        <LiquidCard className="p-8">
+                            <div className="flex gap-8 mb-10 pb-8 border-b border-[var(--border-color)]">
                                 <div>
-                                    <div className="text-[13px] text-[#9ca3af]">{t('InterestCalculator.totalAmount')}</div>
-                                    <div className="text-[32px] font-bold text-white">{result ? format(result.total) : '-'}</div>
+                                    <div className="text-sm font-medium text-[var(--muted-text)] mb-1">{t('InterestCalculator.totalAmount')}</div>
+                                    <div className="text-4xl font-bold text-[var(--foreground)]">{result ? format(result.total) : '-'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-[13px] text-[#9ca3af]">{t('InterestCalculator.totalAmount')}</div>
-                                    <div className="text-[32px] font-bold text-[#22c55e]">{result ? format(result.interest) : '-'}</div>
+                                    <div className="text-sm font-medium text-[var(--muted-text)] mb-1">{t('InterestCalculator.totalAmount')}</div>
+                                    <div className="text-4xl font-bold text-green-500">{result ? format(result.interest) : '-'}</div>
                                 </div>
                             </div>
 
                             {/* CSS Bar Chart */}
-                            <div className="h-[300px] flex items-end gap-2 py-5">
+                            <div className="h-[300px] flex items-end gap-1.5 py-5 pb-8 relative">
+                                <div className="absolute left-0 bottom-0 w-full h-px bg-[var(--border-color)]"></div>
                                 {chartData.map((d: ChartData) => {
                                     const pHeight = (d.principal / maxVal) * 100;
                                     const iHeight = (d.interest / maxVal) * 100;
                                     return (
-                                        <div key={d.year} className="flex-1 h-full flex flex-col-reverse relative group" title={`${t('InterestCalculator.year')} ${d.year}: ${format(d.principal + d.interest)}`}>
-                                            <div style={{ height: `${pHeight}%` }} className="bg-[#3b82f6] rounded-b-sm opacity-80" />
-                                            <div style={{ height: `${iHeight}%` }} className="bg-[#22c55e] rounded-t-sm" />
+                                        <div key={d.year} className="flex-1 h-full flex flex-col-reverse relative group cursor-pointer" title={`${t('InterestCalculator.year')} ${d.year}: ${format(d.principal + d.interest)}`}>
+                                            <div style={{ height: `${pHeight}%` }} className="bg-blue-500/80 rounded-b-sm group-hover:bg-blue-500 transition-colors" />
+                                            <div style={{ height: `${iHeight}%` }} className="bg-green-500/80 rounded-t-sm group-hover:bg-green-500 transition-colors" />
                                         </div>
                                     );
                                 })}
                             </div>
-                            <div className="flex justify-between text-xs text-[#6b7280] mt-2">
+                            <div className="flex justify-between text-xs font-medium text-[var(--muted-text)] mt-2">
                                 <span>{t('InterestCalculator.year')} 1</span>
                                 <span>{t('InterestCalculator.year')} {years}</span>
                             </div>
 
-                            <div className="flex justify-center gap-4 mt-4">
-                                <div className="flex items-center gap-2 text-xs text-[#9ca3af]">
-                                    <div className="w-3 h-3 rounded-sm bg-[#3b82f6]" /> {t('InterestCalculator.principal')}
+                            <div className="flex justify-center gap-6 mt-6">
+                                <div className="flex items-center gap-2 text-sm text-[var(--muted-text)]">
+                                    <div className="w-3 h-3 rounded-sm bg-blue-500" /> {t('InterestCalculator.principal')}
                                 </div>
-                                <div className="flex items-center gap-2 text-xs text-[#9ca3af]">
-                                    <div className="w-3 h-3 rounded-sm bg-[#22c55e]" /> {t('InterestCalculator.interest')}
+                                <div className="flex items-center gap-2 text-sm text-[var(--muted-text)]">
+                                    <div className="w-3 h-3 rounded-sm bg-green-500" /> {t('InterestCalculator.interest')}
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

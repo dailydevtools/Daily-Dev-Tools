@@ -6,6 +6,9 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function PomodoroTimerClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -66,14 +69,6 @@ export default function PomodoroTimerClient() {
 
     return (
         <main className="relative min-h-screen transition-colors duration-500">
-            {/* Ambient Backlight based on mode */}
-            <div
-                className="fixed inset-0 pointer-events-none z-0"
-                style={{
-                    background: `radial-gradient(circle at 50% 50%, ${MODES[mode].color}20 0%, transparent 60%)`,
-                }}
-            />
-
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[600px] mx-auto text-center">
 
@@ -83,55 +78,51 @@ export default function PomodoroTimerClient() {
                         icon={<ToolIcon name="Timer" size={32} />}
                     />
 
-                    <div className="flex justify-center gap-3 mb-10">
+                    <div className="flex justify-center gap-3 mb-10 overflow-x-auto pb-2">
                         {(Object.keys(MODES) as Array<keyof typeof MODES>).map((m) => (
-                            <button
+                            <LiquidButton
                                 key={m}
                                 onClick={() => setMode(m)}
-                                className={`glass px-6 py-3 rounded-full border cursor-pointer font-semibold transition-colors duration-300 ${mode === m
-                                    ? 'text-white'
-                                    : 'border-white/10 text-gray-400 bg-transparent'
-                                    }`}
-                                style={mode === m ? {
-                                    borderColor: MODES[m].color,
-                                    backgroundColor: `${MODES[m].color}33`, // 20% opacity using hex alpha
-                                } : {}}
+                                variant={mode === m ? "primary" : "ghost"}
+                                className={`rounded-full h-11 px-6 transition-all ${mode === m ? '' : 'border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
+                                style={mode === m ? { backgroundColor: MODES[m].color, borderColor: MODES[m].color } : {}}
                             >
                                 {MODES[m].label}
-                            </button>
+                            </LiquidButton>
                         ))}
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 py-16 px-5 relative overflow-hidden">
-                        <div className="text-[120px] font-bold text-white font-mono leading-none tracking-tight">
+                    <LiquidCard className="py-16 px-5 relative overflow-hidden text-center">
+                        <div className="text-[clamp(60px,15vw,120px)] font-bold text-[var(--foreground)] font-mono leading-none tracking-tight transition-colors" style={{ color: isActive ? MODES[mode].color : 'var(--foreground)' }}>
                             {formatTime(timeLeft)}
                         </div>
 
                         <div className="mt-10 flex justify-center gap-5">
-                            <button onClick={toggleTimer} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-[140px] h-14 text-lg flex items-center justify-center gap-2">
+                            <LiquidButton onClick={toggleTimer} className="w-[140px] h-14 text-lg gap-3" style={isActive ? { backgroundColor: MODES[mode].color, borderColor: MODES[mode].color } : {}}>
                                 {isActive ? <Pause size={24} /> : <Play size={24} />}
                                 {isActive ? t('PomodoroTimer.pause') : t('PomodoroTimer.start')}
-                            </button>
-                            <button onClick={resetTimer} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] w-14 h-14 p-0 flex items-center justify-center">
+                            </LiquidButton>
+                            <LiquidButton onClick={resetTimer} variant="ghost" className="w-14 h-14 p-0 rounded-xl border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)] hover:border-[var(--foreground)]">
                                 <RotateCcw size={24} />
-                            </button>
+                            </LiquidButton>
                         </div>
 
-                        <button
+                        <LiquidButton
                             onClick={() => setSoundEnabled(!soundEnabled)}
-                            className="absolute top-5 right-5 bg-transparent border-none text-[#6b7280] cursor-pointer hover:text-white transition-colors"
+                            variant="ghost"
+                            className="absolute top-5 right-5 h-auto w-auto p-2 text-[var(--muted-text)] hover:text-[var(--foreground)]"
                         >
                             {soundEnabled ? <Volume2 size={20} /> : <VolumeX size={20} />}
-                        </button>
+                        </LiquidButton>
 
                         {/* Progress Bar Bottom */}
-                        <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/10">
+                        <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-neutral-100 dark:bg-white/5">
                             <div
                                 style={{ width: `${progress}%`, background: MODES[mode].color }}
                                 className="h-full transition-[width] duration-1000 linear"
                             />
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

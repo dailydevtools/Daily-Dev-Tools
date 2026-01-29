@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Copy, Layers } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function BoxShadowGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -38,65 +40,122 @@ export default function BoxShadowGeneratorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-10 items-start">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
+                        {/* Controls Panel - Liquid Glass Card */}
+                        <LiquidCard className="p-8">
 
-                            <div className="mb-5">
-                                <label className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
-                                    <span>{t('BoxShadowGenerator.horizontal')}</span> <span>{x}px</span>
+                            <div className="mb-6">
+                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
+                                    <span>{t('BoxShadowGenerator.horizontal')}</span> <span className="text-[var(--title-color)] font-mono">{x}px</span>
                                 </label>
-                                <input type="range" min="-100" max="100" value={x} onChange={e => setX(Number(e.target.value))} className="w-full" />
-                            </div>
-                            <div className="mb-5">
-                                <label className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
-                                    <span>{t('BoxShadowGenerator.vertical')}</span> <span>{y}px</span>
-                                </label>
-                                <input type="range" min="-100" max="100" value={y} onChange={e => setY(Number(e.target.value))} className="w-full" />
-                            </div>
-                            <div className="mb-5">
-                                <label className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
-                                    <span>{t('BoxShadowGenerator.blur')}</span> <span>{blur}px</span>
-                                </label>
-                                <input type="range" min="0" max="100" value={blur} onChange={e => setBlur(Number(e.target.value))} className="w-full" />
-                            </div>
-                            <div className="mb-5">
-                                <label className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
-                                    <span>{t('BoxShadowGenerator.spread')}</span> <span>{spread}px</span>
-                                </label>
-                                <input type="range" min="-100" max="100" value={spread} onChange={e => setSpread(Number(e.target.value))} className="w-full" />
+                                <input
+                                    type="range"
+                                    min="-100"
+                                    max="100"
+                                    value={x}
+                                    onChange={e => setX(Number(e.target.value))}
+                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                />
                             </div>
 
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('BoxShadowGenerator.colorOpacity')}</label>
-                                <div className="flex gap-3">
-                                    <input type="color" value={color} onChange={e => setColor(e.target.value)} className="w-10 h-10 rounded-lg border-none p-0 bg-transparent" />
-                                    <input type="range" min="0" max="1" step="0.01" value={opacity} onChange={e => setOpacity(Number(e.target.value))} className="flex-1" />
+                            <div className="mb-6">
+                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
+                                    <span>{t('BoxShadowGenerator.vertical')}</span> <span className="text-[var(--title-color)] font-mono">{y}px</span>
+                                </label>
+                                <input
+                                    type="range"
+                                    min="-100"
+                                    max="100"
+                                    value={y}
+                                    onChange={e => setY(Number(e.target.value))}
+                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                />
+                            </div>
+
+                            <div className="mb-6">
+                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
+                                    <span>{t('BoxShadowGenerator.blur')}</span> <span className="text-[var(--title-color)] font-mono">{blur}px</span>
+                                </label>
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="100"
+                                    value={blur}
+                                    onChange={e => setBlur(Number(e.target.value))}
+                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                />
+                            </div>
+
+                            <div className="mb-6">
+                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
+                                    <span>{t('BoxShadowGenerator.spread')}</span> <span className="text-[var(--title-color)] font-mono">{spread}px</span>
+                                </label>
+                                <input
+                                    type="range"
+                                    min="-100"
+                                    max="100"
+                                    value={spread}
+                                    onChange={e => setSpread(Number(e.target.value))}
+                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                />
+                            </div>
+
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px] font-medium">{t('BoxShadowGenerator.colorOpacity')}</label>
+                                <div className="flex gap-3 items-center">
+                                    <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)]">
+                                        <input
+                                            type="color"
+                                            value={color}
+                                            onChange={e => setColor(e.target.value)}
+                                            className="absolute -top-2 -left-2 w-[200%] h-[200%] p-0 m-0 cursor-pointer"
+                                        />
+                                    </div>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="1"
+                                        step="0.01"
+                                        value={opacity}
+                                        onChange={e => setOpacity(Number(e.target.value))}
+                                        className="flex-1 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                    />
                                 </div>
                             </div>
 
-                            <div className="mb-5">
-                                <label className="flex items-center gap-2 cursor-pointer text-white">
-                                    <input type="checkbox" checked={inset} onChange={e => setInset(e.target.checked)} className="w-4 h-4" />
-                                    {t('BoxShadowGenerator.inset')}
+                            <div className="mb-2">
+                                <label className="flex items-center gap-3 cursor-pointer group">
+                                    <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${inset ? 'bg-orange-400 border-orange-400' : 'bg-transparent border-[var(--border-color)] group-hover:border-orange-400'}`}>
+                                        {inset && <div className="w-2.5 h-1.5 border-b-2 border-l-2 border-white -rotate-45 mb-0.5"></div>}
+                                    </div>
+                                    <input type="checkbox" checked={inset} onChange={e => setInset(e.target.checked)} className="hidden" />
+                                    <span className="text-[var(--title-color)] text-sm font-medium">{t('BoxShadowGenerator.inset')}</span>
                                 </label>
                             </div>
 
-                        </div>
+                        </LiquidCard>
 
                         <div className="flex flex-col gap-6">
-                            <div className="h-[400px] bg-white rounded-2xl flex items-center justify-center relative overflow-hidden">
-                                <div className="absolute inset-0 bg-[image:linear-gradient(45deg,#ccc_25%,transparent_25%),linear-gradient(-45deg,#ccc_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#ccc_75%),linear-gradient(-45deg,transparent_75%,#ccc_75%)] bg-[length:20px_20px] bg-[position:0_0,0_10px,10px_-10px,-10px_0px] opacity-10 pointer-events-none" />
+                            {/* Preview Stage */}
+                            <div className="h-[400px] bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[24px] flex items-center justify-center relative overflow-hidden shadow-[inset_0_0_0_1px_var(--glass-highlight)]">
+                                <div className="absolute inset-0 bg-[image:linear-gradient(45deg,#8882_25%,transparent_25%),linear-gradient(-45deg,#8882_25%,transparent_25%),linear-gradient(45deg,transparent_75%,#8882_75%),linear-gradient(-45deg,transparent_75%,#8882_75%)] bg-[length:24px_24px] bg-[position:0_0,0_12px,12px_-12px,-12px_0px] opacity-10 pointer-events-none" />
 
                                 <div
-                                    className="w-[200px] h-[200px] bg-[#fb923c] rounded-xl"
+                                    className="w-[180px] h-[180px] bg-[#fb923c] rounded-2xl transition-all duration-300"
                                     style={{ boxShadow: shadow }}
                                 />
                             </div>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 flex items-center justify-between font-mono text-sm">
-                                <code>{css}</code>
-                                <button onClick={() => navigator.clipboard.writeText(css)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4 text-xs flex gap-2 items-center">
-                                    <Copy size={16} /> {t('common.copy')}
-                                </button>
+                            {/* Code Snippet - Liquid Glass Input */}
+                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] p-6 flex items-center justify-between shadow-[0_4px_6px_-1px_rgba(0,0,0,0.02),inset_0_0_0_1px_var(--glass-highlight)]">
+                                <code className="font-mono text-sm text-[var(--title-color)] opacity-90">{css}</code>
+                                <LiquidButton
+                                    onClick={() => navigator.clipboard.writeText(css)}
+                                    variant="secondary"
+                                    className="h-10 px-4 text-xs gap-2"
+                                >
+                                    <Copy size={14} />
+                                    {t('common.copy')}
+                                </LiquidButton>
                             </div>
                         </div>
                     </div>

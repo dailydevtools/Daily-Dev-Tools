@@ -32,6 +32,8 @@ const codes: Status[] = [
     { code: 504, title: "Gateway Timeout", desc: "The server did not get a response in time from the upstream server.", cat: "5xx" },
 ];
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+
 export default function HttpStatusClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -39,11 +41,11 @@ export default function HttpStatusClient() {
     const filtered = codes.filter(c => c.code.toString().includes(search) || c.title.toLowerCase().includes(search.toLowerCase()));
 
     const getIcon = (cat: string) => {
-        if (cat === "1xx") return <Info color="#3b82f6" />;
-        if (cat === "2xx") return <CheckCircle color="#22c55e" />;
-        if (cat === "3xx") return <ArrowLeft color="#eab308" />;
-        if (cat === "4xx") return <AlertTriangle color="#f97316" />;
-        if (cat === "5xx") return <XCircle color="#ef4444" />;
+        if (cat === "1xx") return <Info className="text-blue-500" />;
+        if (cat === "2xx") return <CheckCircle className="text-green-500" />;
+        if (cat === "3xx") return <ArrowLeft className="text-yellow-500" />;
+        if (cat === "4xx") return <AlertTriangle className="text-orange-500" />;
+        if (cat === "5xx") return <XCircle className="text-red-500" />;
         return <Info />;
     };
 
@@ -58,27 +60,31 @@ export default function HttpStatusClient() {
                         icon={<Info size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 mb-6 flex gap-3 items-center sticky top-24 z-20 backdrop-blur-md">
-                        <Search color="#9ca3af" />
-                        <input
-                            type="text" value={search} onChange={e => setSearch(e.target.value)}
-                            placeholder={t('HttpStatus.searchPlaceholder')}
-                            className="flex-1 bg-transparent border-none text-base text-[var(--foreground)] outline-none placeholder:text-[var(--muted-text)]"
-                        />
+                    <div className="sticky top-24 z-20 mb-8">
+                        <LiquidCard className="p-4 flex gap-3 items-center backdrop-blur-md bg-white/80 dark:bg-black/80">
+                            <Search className="text-[var(--muted-text)]" size={20} />
+                            <input
+                                type="text"
+                                value={search}
+                                onChange={e => setSearch(e.target.value)}
+                                placeholder={t('HttpStatus.searchPlaceholder')}
+                                className="flex-1 bg-transparent border-none text-base text-[var(--foreground)] outline-none placeholder:text-[var(--muted-text)] h-full w-full"
+                            />
+                        </LiquidCard>
                     </div>
 
                     <div className="flex flex-col gap-4">
                         {filtered.map(code => (
-                            <div key={code.code} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 flex gap-6">
-                                <div className="min-w-[60px] flex flex-col items-center gap-2">
+                            <LiquidCard key={code.code} className="p-6 flex gap-6 items-start hover:scale-[1.01] transition-transform">
+                                <div className="min-w-[60px] flex flex-col items-center gap-2 pt-1">
                                     {getIcon(code.cat)}
-                                    <div className="text-xl font-bold text-[var(--title-color)]">{code.code}</div>
+                                    <div className="text-xl font-bold text-[var(--foreground)]">{code.code}</div>
                                 </div>
                                 <div>
-                                    <div className="text-lg font-semibold text-[var(--title-color)] mb-1">{code.title}</div>
+                                    <div className="text-lg font-semibold text-[var(--foreground)] mb-1">{code.title}</div>
                                     <div className="text-sm text-[var(--muted-text)] leading-relaxed">{code.desc}</div>
                                 </div>
-                            </div>
+                            </LiquidCard>
                         ))}
                     </div>
 

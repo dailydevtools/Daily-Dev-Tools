@@ -5,6 +5,9 @@ import { TrendingUp } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function RoiCalculatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -32,46 +35,46 @@ export default function RoiCalculatorClient() {
                         icon={<TrendingUp size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
-                        <div className="flex flex-col md:flex-row gap-6 mb-10">
-                            <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RoiCalculator.investment')} ($)</label>
-                                <input
+                    <LiquidCard className="p-8 md:p-10">
+                        <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_140px] gap-6 mb-10">
+                            <div>
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('RoiCalculator.investment')} ($)</label>
+                                <LiquidInput
                                     type="number" value={invested} onChange={e => setInvested(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-lg" placeholder="1000.00"
+                                    className="text-lg h-12" placeholder="1000.00"
                                 />
                             </div>
-                            <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RoiCalculator.finalValue')} ($)</label>
-                                <input
+                            <div>
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('RoiCalculator.finalValue')} ($)</label>
+                                <LiquidInput
                                     type="number" value={returned} onChange={e => setReturned(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-lg" placeholder="1500.00"
+                                    className="text-lg h-12" placeholder="1500.00"
                                 />
                             </div>
-                            <div className="w-full md:w-[140px]">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RoiCalculator.time')}</label>
-                                <input
+                            <div>
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('RoiCalculator.time')}</label>
+                                <LiquidInput
                                     type="number" value={years} onChange={e => setYears(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-lg" placeholder="1"
+                                    className="text-lg h-12" placeholder="1"
                                 />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
-                                <div className="text-[13px] text-[#9ca3af] mb-2">{t('RoiCalculator.totalGain')}</div>
-                                <div className={`text-2xl font-bold ${gain >= 0 ? 'text-[#22c55e]' : 'text-[#ef4444]'}`}>${gain.toFixed(2)}</div>
+                            <div className="p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-[var(--border-color)]">
+                                <div className="text-[13px] text-[var(--muted-text)] mb-2">{t('RoiCalculator.totalGain')}</div>
+                                <div className={`text-2xl font-bold ${gain >= 0 ? 'text-green-500' : 'text-red-500'}`}>${gain.toFixed(2)}</div>
                             </div>
-                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
-                                <div className="text-[13px] text-[#9ca3af] mb-2">{t('RoiCalculator.roi')}</div>
-                                <div className="text-2xl font-bold text-[#fb923c]">{roi.toFixed(2)}%</div>
+                            <div className="p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-[var(--border-color)]">
+                                <div className="text-[13px] text-[var(--muted-text)] mb-2">{t('RoiCalculator.roi')}</div>
+                                <div className="text-2xl font-bold text-orange-500">{roi.toFixed(2)}%</div>
                             </div>
-                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
-                                <div className="text-[13px] text-[#9ca3af] mb-2">{t('RoiCalculator.annualizedRoi')}</div>
-                                <div className="text-2xl font-bold text-[#3b82f6]">{annualized.toFixed(2)}%</div>
+                            <div className="p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-[var(--border-color)]">
+                                <div className="text-[13px] text-[var(--muted-text)] mb-2">{t('RoiCalculator.annualizedRoi')}</div>
+                                <div className="text-2xl font-bold text-blue-500">{annualized.toFixed(2)}%</div>
                             </div>
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

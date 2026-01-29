@@ -51,7 +51,14 @@ interface Account {
     updatedAt: number;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
+// ... (keep helper functions deriveKey, encrypt, decrypt, and Account interface)
+
 export default function PasswordManagerClient() {
+    // ... (keep state and hooks: t, masterKey, isUnlocked, hasVault, passwordInput, error, loading, accounts, search, viewMode)
     const t = useTranslations('PasswordManager');
     const [masterKey, setMasterKey] = useState<CryptoKey | null>(null);
     const [isUnlocked, setIsUnlocked] = useState(false);
@@ -64,7 +71,6 @@ export default function PasswordManagerClient() {
     const [search, setSearch] = useState("");
     const [viewMode, setViewMode] = useState<"list" | "add">("list");
 
-    // Load initial state
     useEffect(() => {
         const data = localStorage.getItem("qdt_vault_data");
         if (data) setHasVault(true);
@@ -83,7 +89,6 @@ export default function PasswordManagerClient() {
                 const json = await decrypt(data, key);
                 acts = JSON.parse(json);
             } else {
-                // New vault
                 await saveVault([], key);
             }
 
@@ -94,7 +99,6 @@ export default function PasswordManagerClient() {
         } catch (err) {
             setError(t('incorrectPassword'));
             if (!hasVault) {
-                // Creating new
                 const key = await deriveKey(passwordInput);
                 setMasterKey(key);
                 setAccounts([]);
@@ -133,9 +137,8 @@ export default function PasswordManagerClient() {
         // Could show toast
     };
 
-    // --- Views ---
 
-    if (loading) return <div className="p-20 text-center text-white">{t('loading')}</div>;
+    if (loading) return <div className="p-20 text-center text-[var(--muted-text)]">{t('loading')}</div>;
 
     if (!isUnlocked) {
         return (
@@ -146,37 +149,37 @@ export default function PasswordManagerClient() {
                     icon={<Key size={28} className="text-[#fb923c]" />}
                 />
                 <div className="flex items-center justify-center p-6">
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 w-full max-w-[400px] p-10 text-center">
-                        <div className="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 text-[#fb923c]">
+                    <LiquidCard className="w-full max-w-[400px] p-10 text-center">
+                        <div className="w-16 h-16 bg-neutral-100/50 dark:bg-white/5 rounded-full flex items-center justify-center mx-auto mb-6 text-orange-500">
                             {hasVault ? <Lock size={32} /> : <div className="text-[32px]">🆕</div>}
                         </div>
 
-                        <h2 className="text-2xl font-bold text-white mb-2">
+                        <h2 className="text-2xl font-bold text-[var(--foreground)] mb-2">
                             {hasVault ? t('unlock') : t('create')}
                         </h2>
-                        <p className="text-[#9ca3af] mb-6">
+                        <p className="text-[var(--muted-text)] mb-6">
                             {hasVault ? t('unlockDesc') : t('createDesc')}
                         </p>
 
-                        <input
+                        <LiquidInput
                             type="password"
                             value={passwordInput}
                             onChange={e => setPasswordInput(e.target.value)}
                             placeholder={t('masterPassword')}
                             onKeyDown={e => e.key === 'Enter' && handleUnlock()}
-                            className="w-full p-4 rounded-xl bg-black/30 border border-white/10 text-white mb-4 outline-none focus:border-[#fb923c]/50 transition-colors"
+                            className="mb-4"
                         />
 
-                        {error && <div className="text-[#ef4444] mb-4 text-[13px]">{error}</div>}
+                        {error && <div className="text-red-500 mb-4 text-[13px]">{error}</div>}
 
-                        <button onClick={handleUnlock} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full p-4">
+                        <LiquidButton onClick={handleUnlock} className="w-full justify-center">
                             {hasVault ? t('unlockBtn') : t('createBtn')}
-                        </button>
+                        </LiquidButton>
 
-                        <p className="mt-6 text-xs text-[#6b7280]">
+                        <p className="mt-6 text-xs text-[var(--muted-text)]">
                             {t('note')}
                         </p>
-                    </div>
+                    </LiquidCard>
                 </div>
             </main>
         );
@@ -190,47 +193,47 @@ export default function PasswordManagerClient() {
                 <div className="max-w-[800px] mx-auto">
 
                     <div className="flex justify-between items-center mb-8">
-                        <h1 className="text-[28px] font-bold text-white">{t('myPasswords')}</h1>
+                        <h1 className="text-[28px] font-bold text-[var(--foreground)]">{t('myPasswords')}</h1>
                         <div className="flex gap-3">
-                            <button onClick={() => setViewMode("add")} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] flex items-center gap-2">
+                            <LiquidButton onClick={() => setViewMode("add")} className="gap-2">
                                 <Plus size={18} /> {t('addNew')}
-                            </button>
-                            <button onClick={() => window.location.reload()} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]" title="Lock">
+                            </LiquidButton>
+                            <LiquidButton onClick={() => window.location.reload()} variant="ghost" className="text-[var(--muted-text)] hover:text-red-500" title="Lock">
                                 <LogOut size={18} />
-                            </button>
+                            </LiquidButton>
                         </div>
                     </div>
 
                     {viewMode === "list" && (
                         <>
                             <div className="mb-6 relative">
-                                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9ca3af]" />
-                                <input
+                                <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--muted-text)] z-10" />
+                                <LiquidInput
                                     value={search} onChange={e => setSearch(e.target.value)}
                                     placeholder={t('search')}
-                                    className="w-full py-3 pr-3 pl-12 rounded-xl bg-white/5 border-none text-white outline-none focus:bg-white/10 transition-colors"
+                                    className="pl-12"
                                 />
                             </div>
 
                             <div className="grid gap-4">
                                 {filtered.map(acc => (
-                                    <div key={acc.id} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 flex justify-between items-center">
+                                    <LiquidCard key={acc.id} className="p-5 flex justify-between items-center">
                                         <div>
-                                            <div className="text-lg font-semibold text-white">{acc.title}</div>
-                                            <div className="text-[#9ca3af] text-[13px]">{acc.username}</div>
-                                            {acc.url && <a href={acc.url} target="_blank" className="text-[#fb923c] text-xs no-underline hover:underline">{acc.url}</a>}
+                                            <div className="text-lg font-semibold text-[var(--foreground)]">{acc.title}</div>
+                                            <div className="text-[var(--muted-text)] text-[13px]">{acc.username}</div>
+                                            {acc.url && <a href={acc.url} target="_blank" className="text-orange-500 text-xs no-underline hover:underline">{acc.url}</a>}
                                         </div>
                                         <div className="flex gap-2">
-                                            <button onClick={() => copyToClipboard(acc.password)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-2.5" title="Copy Password">
+                                            <LiquidButton onClick={() => copyToClipboard(acc.password)} variant="ghost" className="p-2.5 text-[var(--muted-text)] hover:text-[var(--foreground)]" title="Copy Password">
                                                 <Copy size={16} />
-                                            </button>
-                                            <button onClick={() => deleteAccount(acc.id)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-2.5 text-[#ef4444]" title="Delete">
+                                            </LiquidButton>
+                                            <LiquidButton onClick={() => deleteAccount(acc.id)} variant="ghost" className="p-2.5 text-[var(--muted-text)] hover:text-red-500" title="Delete">
                                                 <Trash2 size={16} />
-                                            </button>
+                                            </LiquidButton>
                                         </div>
-                                    </div>
+                                    </LiquidCard>
                                 ))}
-                                {filtered.length === 0 && <div className="text-center p-10 text-[#6b7280]">{t('noPasswords')}</div>}
+                                {filtered.length === 0 && <div className="text-center p-10 text-[var(--muted-text)]">{t('noPasswords')}</div>}
                             </div>
                         </>
                     )}
@@ -252,36 +255,36 @@ function AddForm({ onSave, onCancel, t }: any) {
     };
 
     return (
-        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-            <h2 className="text-xl font-bold text-white mb-6">{t('addAccount')}</h2>
+        <LiquidCard className="p-8">
+            <h2 className="text-xl font-bold text-[var(--foreground)] mb-6">{t('addAccount')}</h2>
             <form onSubmit={handleSubmit} className="grid gap-5">
                 <div>
-                    <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('accountTitle')}</label>
-                    <input required value={form.title} onChange={e => setForm({ ...form, title: e.target.value })} className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
+                    <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('accountTitle')}</label>
+                    <LiquidInput required value={form.title} onChange={e => setForm({ ...form, title: e.target.value })} />
                 </div>
                 <div>
-                    <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('username')}</label>
-                    <input required value={form.username} onChange={e => setForm({ ...form, username: e.target.value })} className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
+                    <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('username')}</label>
+                    <LiquidInput required value={form.username} onChange={e => setForm({ ...form, username: e.target.value })} />
                 </div>
                 <div>
-                    <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('password')}</label>
+                    <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('password')}</label>
                     <div className="relative">
-                        <input required type={showPass ? "text" : "password"} value={form.password} onChange={e => setForm({ ...form, password: e.target.value })} className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
-                        <button type="button" onClick={() => setShowPass(!showPass)} className="absolute right-3 top-3 bg-transparent border-none text-[#9ca3af] cursor-pointer">
+                        <LiquidInput required type={showPass ? "text" : "password"} value={form.password} onChange={e => setForm({ ...form, password: e.target.value })} className="pr-10" />
+                        <button type="button" onClick={() => setShowPass(!showPass)} className="absolute right-3 top-1/2 -translate-y-1/2 bg-transparent border-none text-[var(--muted-text)] cursor-pointer hover:text-[var(--foreground)]">
                             {showPass ? <EyeOff size={18} /> : <Eye size={18} />}
                         </button>
                     </div>
                 </div>
                 <div>
-                    <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('url')}</label>
-                    <input value={form.url} onChange={e => setForm({ ...form, url: e.target.value })} className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white" />
+                    <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('url')}</label>
+                    <LiquidInput value={form.url} onChange={e => setForm({ ...form, url: e.target.value })} />
                 </div>
 
                 <div className="flex gap-4 mt-4">
-                    <button type="submit" className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-6">{t('save')}</button>
-                    <button type="button" onClick={onCancel} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-3 px-6">{t('cancel')}</button>
+                    <LiquidButton type="submit" className="px-6 py-3">{t('save')}</LiquidButton>
+                    <LiquidButton type="button" onClick={onCancel} variant="ghost" className="px-6 py-3 border border-[var(--border-color)]">{t('cancel')}</LiquidButton>
                 </div>
             </form>
-        </div>
+        </LiquidCard>
     );
 }

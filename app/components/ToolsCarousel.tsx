@@ -29,8 +29,18 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
 
     useEffect(() => {
         checkScroll();
-        window.addEventListener("resize", checkScroll);
-        return () => window.removeEventListener("resize", checkScroll);
+
+        let timeoutId: NodeJS.Timeout;
+        const handleResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(checkScroll, 100);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            clearTimeout(timeoutId);
+        };
     }, [tools]);
 
     const scroll = (direction: "left" | "right") => {
@@ -79,16 +89,18 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
                 onClick={() => scroll("left")}
                 disabled={!canScrollLeft}
                 className={`absolute -left-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--title-color)] flex items-center justify-center z-10 shadow-[0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-200 ${canScrollLeft ? "cursor-pointer opacity-100" : "cursor-not-allowed opacity-30"}`}
+                aria-label="Previous items"
             >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={20} aria-hidden="true" />
             </button>
 
             <button
                 onClick={() => scroll("right")}
                 disabled={!canScrollRight}
                 className={`absolute -right-5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] text-[var(--title-color)] flex items-center justify-center z-10 shadow-[0_4px_12px_rgba(0,0,0,0.5)] transition-all duration-200 ${canScrollRight ? "cursor-pointer opacity-100" : "cursor-not-allowed opacity-30"}`}
+                aria-label="Next items"
             >
-                <ChevronRight size={20} />
+                <ChevronRight size={20} aria-hidden="true" />
             </button>
         </div>
     );

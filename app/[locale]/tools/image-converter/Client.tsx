@@ -13,6 +13,10 @@ interface ConvertedFile {
     size: number;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+
 export default function ImageConverterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -104,97 +108,93 @@ export default function ImageConverterClient() {
                         icon={<RefreshCw size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center mb-6">
-                        <div className="mb-6">
-                            <input
-                                type="file"
-                                accept="image/*"
-                                multiple
-                                onChange={handleFileChange}
-                                className="hidden"
-                                id="file-upload"
-                            />
-                            <label
-                                htmlFor="file-upload"
-                                className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-4 px-8 text-base inline-flex items-center gap-2 cursor-pointer"
-                            >
-                                <Upload size={20} />
-                                {t('ImageConverter.selectImage')}
-                            </label>
-                            <p className="mt-3 text-[#9ca3af] text-[13px]">
-                                Supports PNG, JPG, WEBP, AVIF. Processed locally.
-                            </p>
+                    <div className="border-2 border-dashed border-[var(--border-color)] bg-neutral-50/50 dark:bg-white/5 rounded-3xl p-10 text-center mb-8 cursor-pointer hover:border-orange-500/50 hover:bg-orange-500/5 transition-all group" onClick={() => document.getElementById('file-upload')?.click()}>
+                        <div className="w-16 h-16 rounded-full bg-orange-100 dark:bg-orange-500/10 flex items-center justify-center text-orange-500 mx-auto mb-4 group-hover:scale-110 transition-transform">
+                            <Upload size={32} />
                         </div>
+                        <input
+                            type="file"
+                            accept="image/*"
+                            multiple
+                            onChange={handleFileChange}
+                            className="hidden"
+                            id="file-upload"
+                        />
+                        <div className="text-lg font-semibold text-[var(--foreground)] mb-2">{t('ImageConverter.selectImage')}</div>
+                        <p className="text-[var(--muted-text)] text-sm">
+                            Supports PNG, JPG, WEBP, AVIF. Processed locally.
+                        </p>
+                    </div>
 
-                        {files && files.length > 0 && (
-                            <div className="p-6 bg-white/5 rounded-xl text-left">
-                                <div className="flex flex-wrap gap-6 mb-6 items-center">
-                                    <div>
-                                        <label className="block mb-2 text-[13px] text-[#9ca3af]">{t('ImageConverter.format')}</label>
-                                        <select
-                                            value={format}
-                                            onChange={e => setFormat(e.target.value)}
-                                            className="input-field p-2.5 rounded-lg min-w-[120px] bg-[#111] text-white border border-[#333]"
-                                        >
-                                            <option value="image/webp">WebP</option>
-                                            <option value="image/jpeg">JPEG</option>
-                                            <option value="image/png">PNG</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label className="block mb-2 text-[13px] text-[#9ca3af]">{t('ImageConverter.quality')} ({Math.round(quality * 100)}%)</label>
-                                        <input
-                                            type="range" min="0.1" max="1" step="0.1"
-                                            value={quality} onChange={e => setQuality(Number(e.target.value))}
-                                            className="w-[150px] accent-[#fb923c]"
-                                        />
-                                    </div>
-                                    <div className="flex-1 text-right">
-                                        <button
-                                            onClick={convert}
-                                            disabled={isProcessing}
-                                            className={`inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-6 ${isProcessing ? 'opacity-70' : ''}`}
-                                        >
-                                            {isProcessing ? <RefreshCw className="animate-spin" size={18} /> : t('ImageConverter.convert')}
-                                        </button>
-                                    </div>
+                    {files && files.length > 0 && (
+                        <LiquidCard className="p-6">
+                            <div className="flex flex-wrap gap-6 mb-8 items-end border-b border-[var(--border-color)] pb-6">
+                                <div className="flex-1 min-w-[150px]">
+                                    <label className="block mb-2 text-sm font-medium text-[var(--muted-text)]">{t('ImageConverter.format')}</label>
+                                    <LiquidSelect
+                                        value={format}
+                                        onChange={setFormat}
+                                        options={[
+                                            { value: "image/webp", label: "WebP" },
+                                            { value: "image/jpeg", label: "JPEG" },
+                                            { value: "image/png", label: "PNG" }
+                                        ]}
+                                    />
                                 </div>
-
-                                <div className="border-t border-white/10 pt-4">
-                                    {results.length > 0 ? (
-                                        <div className="grid gap-3">
-                                            {results.map((res, i) => (
-                                                <div key={i} className="flex items-center justify-between p-3 bg-black/30 rounded-lg">
-                                                    <div className="flex items-center gap-3">
-                                                        <div className="w-10 h-10 bg-[#111] rounded flex items-center justify-center">
-                                                            <FileImage size={20} color="#fb923c" />
-                                                        </div>
-                                                        <div>
-                                                            <div className="text-white text-sm">{res.originalName}</div>
-                                                            <div className="text-[#9ca3af] text-xs">
-                                                                {formatSize(res.size)} • {res.format.toUpperCase()}
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a
-                                                        href={res.url}
-                                                        download={`converted_${i}.${res.format}`}
-                                                        className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4 flex items-center gap-1.5 text-[13px]"
-                                                    >
-                                                        <Download size={14} /> {t('ImageConverter.download')}
-                                                    </a>
-                                                </div>
-                                            ))}
-                                        </div>
-                                    ) : (
-                                        <div className="text-[#6b7280] text-sm text-center">
-                                            {files.length} file(s) selected. Ready to convert.
-                                        </div>
-                                    )}
+                                <div className="flex-1 min-w-[150px]">
+                                    <label className="block mb-2 text-sm font-medium text-[var(--muted-text)]">{t('ImageConverter.quality')} ({Math.round(quality * 100)}%)</label>
+                                    <input
+                                        type="range" min="0.1" max="1" step="0.1"
+                                        value={quality} onChange={e => setQuality(Number(e.target.value))}
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none my-3"
+                                    />
+                                </div>
+                                <div className="min-w-[150px]">
+                                    <LiquidButton
+                                        onClick={convert}
+                                        disabled={isProcessing}
+                                        className="w-full justify-center"
+                                    >
+                                        {isProcessing ? <RefreshCw className="animate-spin mr-2" size={18} /> : null}
+                                        {t('ImageConverter.convert')}
+                                    </LiquidButton>
                                 </div>
                             </div>
-                        )}
-                    </div>
+
+                            <div className="space-y-3">
+                                {results.length > 0 ? (
+                                    results.map((res, i) => (
+                                        <div key={i} className="flex items-center justify-between p-4 bg-neutral-100 dark:bg-white/5 rounded-xl border border-transparent hover:border-orange-500/30 transition-colors">
+                                            <div className="flex items-center gap-4">
+                                                <div className="w-12 h-12 bg-white dark:bg-black/40 rounded-lg flex items-center justify-center border border-[var(--border-color)]">
+                                                    <FileImage size={24} className="text-orange-500" />
+                                                </div>
+                                                <div>
+                                                    <div className="text-[var(--foreground)] font-medium text-sm">{res.originalName}</div>
+                                                    <div className="text-[var(--muted-text)] text-xs mt-0.5 font-mono">
+                                                        {formatSize(res.size)} • {res.format.toUpperCase()}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a
+                                                href={res.url}
+                                                download={`converted_${i}.${res.format}`}
+                                                className="inline-flex"
+                                            >
+                                                <LiquidButton variant="secondary" className="text-xs py-2 px-4 h-auto">
+                                                    <Download size={14} className="mr-2" /> {t('ImageConverter.download')}
+                                                </LiquidButton>
+                                            </a>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <div className="text-[var(--muted-text)] text-sm text-center py-8 bg-neutral-50/50 dark:bg-white/5 rounded-xl border border-dashed border-[var(--border-color)]">
+                                        {files.length} file(s) selected. Ready to convert.
+                                    </div>
+                                )}
+                            </div>
+                        </LiquidCard>
+                    )}
 
                 </div>
             </div>

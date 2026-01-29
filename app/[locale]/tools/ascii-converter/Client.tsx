@@ -5,6 +5,9 @@ import { FileCode } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+
 export default function AsciiConverterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -34,24 +37,24 @@ export default function AsciiConverterClient() {
                         icon={<FileCode size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <LiquidCard className="p-10 grid grid-cols-1 md:grid-cols-2 gap-10">
 
                         <div>
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('AsciiConverter.text')}</label>
-                            <textarea
+                            <label className="block mb-3 text-[var(--muted-text)] text-sm font-medium">{t('AsciiConverter.text')}</label>
+                            <LiquidTextArea
                                 value={text} onChange={e => handleText(e.target.value)}
-                                className="input-field w-full h-[200px] p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y"
+                                className="h-[200px] resize-y"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('AsciiConverter.ascii')}</label>
-                            <textarea
+                            <label className="block mb-3 text-[var(--muted-text)] text-sm font-medium">{t('AsciiConverter.ascii')}</label>
+                            <LiquidTextArea
                                 value={ascii} onChange={e => handleAscii(e.target.value)}
-                                className="input-field w-full h-[200px] p-3 rounded-xl bg-black/30 border border-white/10 text-[#fb923c] font-mono resize-y"
+                                className="h-[200px] resize-y font-mono text-orange-500"
                             />
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

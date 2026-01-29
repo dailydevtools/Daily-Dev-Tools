@@ -11,6 +11,11 @@ interface Rule {
     path: string;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function RobotsGeneratorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -35,15 +40,6 @@ export default function RobotsGeneratorClient() {
 
     const generate = () => {
         let txt = "";
-        // Group by agent? Or just list. Standard is User-agent block.
-        // Simple implementation: List blocks.
-        // Usually:
-        // User-agent: *
-        // Disallow: /admin/
-        // User-agent: Googlebot
-        // ...
-
-        // Let's create a map agent -> rules
         const map: Record<string, string[]> = {};
         rules.forEach(r => {
             if (!map[r.agent]) map[r.agent] = [];
@@ -75,63 +71,66 @@ export default function RobotsGeneratorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
+                        <LiquidCard className="p-8">
                             <div className="flex justify-between items-center mb-6">
-                                <div className="font-semibold text-white">{t('RobotsGenerator.rules')}</div>
-                                <button onClick={addRule} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4 flex gap-2 items-center text-sm">
+                                <div className="font-semibold text-[var(--foreground)]">{t('RobotsGenerator.rules')}</div>
+                                <LiquidButton onClick={addRule} variant="ghost" className="h-9 px-3 gap-2 text-xs">
                                     <Plus size={16} /> {t('RobotsGenerator.addRule')}
-                                </button>
+                                </LiquidButton>
                             </div>
 
                             <div className="flex flex-col gap-4">
                                 {rules.map((r, i) => (
-                                    <div key={i} className="flex gap-3 items-center bg-white/5 p-3 rounded-xl">
-                                        <input
+                                    <div key={i} className="flex gap-3 items-center bg-neutral-100/50 dark:bg-white/5 p-3 rounded-xl border border-[var(--border-color)]">
+                                        <LiquidInput
                                             type="text" value={r.agent} onChange={e => updateRule(i, 'agent', e.target.value)}
                                             placeholder="*"
-                                            className="input-field w-20 p-2 bg-[#111] border border-[#333] text-white rounded-md text-sm"
+                                            className="w-20 h-9 text-sm"
                                         />
-                                        <select
+                                        <LiquidSelect
                                             value={r.allow ? "Allow" : "Disallow"}
-                                            onChange={e => updateRule(i, 'allow', e.target.value === "Allow")}
-                                            className={`p-2 bg-[#111] border border-[#333] rounded-md text-sm ${r.allow ? 'text-[#22c55e]' : 'text-[#ef4444]'}`}
-                                        >
-                                            <option value="Allow">{t('RobotsGenerator.allow')}</option>
-                                            <option value="Disallow">{t('RobotsGenerator.disallow')}</option>
-                                        </select>
-                                        <input
+                                            onChange={(val) => updateRule(i, 'allow', val === "Allow")}
+                                            className={`h-9 text-sm ${r.allow ? 'text-green-500' : 'text-red-500'}`}
+                                            options={[
+                                                { value: "Allow", label: t('RobotsGenerator.allow') },
+                                                { value: "Disallow", label: t('RobotsGenerator.disallow') }
+                                            ]}
+                                        />
+                                        <LiquidInput
                                             type="text" value={r.path} onChange={e => updateRule(i, 'path', e.target.value)}
                                             placeholder="/"
-                                            className="input-field flex-1 p-2 bg-[#111] border border-[#333] text-white rounded-md text-sm"
+                                            className="flex-1 h-9 text-sm"
                                         />
-                                        <button onClick={() => removeRule(i)} className="text-[#6b7280] hover:text-[#ef4444] transition-colors bg-transparent border-none cursor-pointer">
+                                        <LiquidButton onClick={() => removeRule(i)} variant="ghost" className="h-9 w-9 p-0 text-[var(--muted-text)] hover:text-red-500">
                                             <Trash2 size={16} />
-                                        </button>
+                                        </LiquidButton>
                                     </div>
                                 ))}
                             </div>
 
                             <div className="mt-6">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('RobotsGenerator.sitemap')}</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('RobotsGenerator.sitemap')}</label>
+                                <LiquidInput
                                     type="text" value={sitemap} onChange={e => setSitemap(e.target.value)}
                                     placeholder="https://example.com/sitemap.xml"
-                                    className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white text-sm"
+                                    className="text-sm"
                                 />
                             </div>
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 flex flex-col overflow-hidden">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('RobotsGenerator.output')}</div>
+                        <LiquidCard className="p-0 flex flex-col overflow-hidden">
+                            <div className="p-3 bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-[13px] border-b border-[var(--border-color)]">{t('RobotsGenerator.output')}</div>
                             <textarea
                                 readOnly
                                 value={output}
-                                className="flex-1 bg-transparent border-none p-5 text-[#fb923c] font-mono resize-none w-full min-h-[300px] outline-none text-sm"
+                                className="flex-1 bg-transparent border-none p-5 text-orange-500 font-mono resize-none w-full min-h-[300px] outline-none text-sm leading-relaxed"
                             />
-                            <div className="p-4 text-right border-t border-white/10">
-                                <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]">{t('common.copy')}</button>
+                            <div className="p-4 text-right border-t border-[var(--border-color)] bg-neutral-100/30 dark:bg-white/[0.02]">
+                                <LiquidButton onClick={() => navigator.clipboard.writeText(output)} variant="ghost" className="border border-[var(--border-color)] h-10 px-4 text-sm">
+                                    {t('common.copy')}
+                                </LiquidButton>
                             </div>
-                        </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

@@ -5,6 +5,9 @@ import { Percent } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function PercentageCalculatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -31,37 +34,37 @@ export default function PercentageCalculatorClient() {
 
                     <div className="flex flex-col gap-6">
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex items-center justify-between gap-6">
-                            <div className="flex items-center gap-3 flex-1 text-white text-lg">
+                        <LiquidCard className="p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                            <div className="flex flex-wrap items-center gap-3 flex-1 text-[var(--foreground)] text-lg justify-center md:justify-start">
                                 <span>{t('PercentageCalculator.whatIs')}</span>
-                                <input type="number" value={val1} onChange={e => setVal1(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                                <LiquidInput type="number" value={val1} onChange={e => setVal1(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>{t('PercentageCalculator.of')}</span>
-                                <input type="number" value={val2} onChange={e => setVal2(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                                <LiquidInput type="number" value={val2} onChange={e => setVal2(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>?</span>
                             </div>
-                            <div className="text-[32px] font-bold text-[#fb923c] min-w-[100px] text-right">{res1}</div>
-                        </div>
+                            <div className="text-[32px] font-bold text-orange-500 min-w-[100px] text-right">{res1}</div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex items-center justify-between gap-6">
-                            <div className="flex items-center gap-3 flex-1 text-white text-lg">
-                                <input type="number" value={val3} onChange={e => setVal3(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                        <LiquidCard className="p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                            <div className="flex flex-wrap items-center gap-3 flex-1 text-[var(--foreground)] text-lg justify-center md:justify-start">
+                                <LiquidInput type="number" value={val3} onChange={e => setVal3(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>{t('PercentageCalculator.isWhatPercentOf')}</span>
-                                <input type="number" value={val4} onChange={e => setVal4(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                                <LiquidInput type="number" value={val4} onChange={e => setVal4(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>?</span>
                             </div>
-                            <div className="text-[32px] font-bold text-[#fb923c] min-w-[100px] text-right">{res2}%</div>
-                        </div>
+                            <div className="text-[32px] font-bold text-orange-500 min-w-[100px] text-right">{res2}%</div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex items-center justify-between gap-6">
-                            <div className="flex items-center gap-3 flex-1 text-white text-lg">
+                        <LiquidCard className="p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                            <div className="flex flex-wrap items-center gap-3 flex-1 text-[var(--foreground)] text-lg justify-center md:justify-start">
                                 <span>{t('PercentageCalculator.percentChangeFrom')}</span>
-                                <input type="number" value={val5} onChange={e => setVal5(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                                <LiquidInput type="number" value={val5} onChange={e => setVal5(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>{t('PercentageCalculator.to')}</span>
-                                <input type="number" value={val6} onChange={e => setVal6(e.target.value)} className="input-field w-20 p-2 bg-black/30 border border-white/10 text-white rounded-lg" />
+                                <LiquidInput type="number" value={val6} onChange={e => setVal6(e.target.value)} className="w-24 p-2 text-center h-10" />
                                 <span>?</span>
                             </div>
-                            <div className={`text-[32px] font-bold min-w-[100px] text-right ${Number(res3) > 0 ? 'text-[#22c55e]' : 'text-[#fb923c]'}`}>{res3}%</div>
-                        </div>
+                            <div className={`text-[32px] font-bold min-w-[100px] text-right ${Number(res3) > 0 ? 'text-green-500' : 'text-orange-500'}`}>{res3}%</div>
+                        </LiquidCard>
 
                     </div>
 

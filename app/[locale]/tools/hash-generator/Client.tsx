@@ -5,6 +5,10 @@ import { Copy, Check, Hash } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+
 export default function HashGeneratorClient() {
     const [input, setInput] = useState("");
     const [hashes, setHashes] = useState<Record<string, string>>({});
@@ -61,37 +65,41 @@ export default function HashGeneratorClient() {
                         icon={<Hash size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 rounded-2xl mb-8">
-                        <label className="block text-sm font-medium text-[#fb923c] mb-3">{t('inputText')}</label>
-                        <textarea
+                    <LiquidCard className="p-6 mb-8">
+                        <label className="block text-sm font-medium text-[var(--muted-text)] mb-3">{t('inputText')}</label>
+                        <LiquidTextArea
                             value={input}
                             onChange={(e) => generateHashes(e.target.value)}
                             placeholder={t('placeholder')}
-                            className="w-full h-[100px] bg-black/20 rounded-lg border border-white/5 p-4 font-mono text-sm text-[#e5e7eb] resize-none outline-none"
+                            className="min-h-[120px]"
                         />
-                    </div>
+                    </LiquidCard>
 
                     <div className="grid gap-4">
                         {algorithms.map((algo) => {
                             const hash = hashes[algo.algo];
                             return (
-                                <div key={algo.algo} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-xl overflow-hidden">
-                                    <div className="flex items-center justify-between py-4 px-5 bg-white/5">
-                                        <span className="font-semibold text-white">{algo.name}</span>
-                                        <button
+                                <LiquidCard key={algo.algo} className="p-0 overflow-hidden">
+                                    <div className="flex items-center justify-between py-3 px-5 bg-neutral-50/50 dark:bg-white/5 border-b border-[var(--border-color)]">
+                                        <span className="font-semibold text-[var(--foreground)] text-sm">{algo.name}</span>
+                                        <LiquidButton
+                                            variant="ghost"
                                             onClick={() => copyToClipboard(hash, algo.algo)}
                                             disabled={!input}
-                                            className={`p-2 bg-transparent border-none ${input ? 'cursor-pointer hover:bg-white/10' : 'cursor-not-allowed opacity-50'} rounded-lg transition-colors duration-200 ${copied === algo.algo ? 'text-[#22c55e]' : 'text-[#9ca3af]'}`}
+                                            className="h-8 w-8 p-0"
+                                            title="Copy Hash"
                                         >
-                                            {copied === algo.algo ? <Check size={16} /> : <Copy size={16} />}
-                                        </button>
+                                            {copied === algo.algo ? <Check size={16} className="text-green-500" /> : <Copy size={16} />}
+                                        </LiquidButton>
                                     </div>
-                                    <div className="py-4 px-5">
-                                        <code className={`text-[13px] font-mono break-all ${input ? 'text-[#4ade80]' : 'text-[#6b7280]'}`}>
-                                            {input ? hash : t('waiting')}
-                                        </code>
+                                    <div className="p-5 font-mono text-sm break-all">
+                                        {input ? (
+                                            <span className="text-green-600 dark:text-green-400">{hash}</span>
+                                        ) : (
+                                            <span className="text-[var(--muted-text)] italic opacity-50">{t('waiting')}</span>
+                                        )}
                                     </div>
-                                </div>
+                                </LiquidCard>
                             );
                         })}
                     </div>

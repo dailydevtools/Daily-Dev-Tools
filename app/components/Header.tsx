@@ -7,43 +7,71 @@ import { motion, AnimatePresence } from "framer-motion";
 import HeaderSearchTrigger from "./HeaderSearchTrigger";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSelector from "./LanguageSelector";
-import { Link } from "../../i18n/routing";
+import { Link, usePathname } from "../../i18n/routing";
 import { useTranslations } from "next-intl";
 
 export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [hoveredNav, setHoveredNav] = useState<string | null>(null);
     const t = useTranslations('Header');
+    const pathname = usePathname();
+
+    const navItems = [
+        { id: 'tools', label: t('tools'), href: '/#tools' },
+        { id: 'blog', label: t('blog'), href: '/blog' }
+    ];
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-[100] px-6 py-3 bg-[var(--header-bg)] backdrop-blur-[20px] border-b border-[var(--border-color)] flex justify-center">
             <div className="w-full max-w-[1200px] flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 h-9 rounded-lg no-underline group">
+                <Link href="/" className="flex items-center gap-2 h-9 rounded-lg no-underline group focus-visible:ring-2 focus-visible:ring-orange-500/50 outline-none">
                     <Image src="/project_logo.webp" alt="DailyDevTools Logo" width={42} height={42} priority />
-
                     <span className="text-[18px] font-bold font-heading tracking-tight text-[var(--title-color)]">{t('title')}</span>
                 </Link>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-5 desktop-nav">
                     <HeaderSearchTrigger />
-                    <Link href="/#tools" className="text-[var(--muted-text)] font-heading text-sm no-underline px-3 py-1.5 rounded-lg transition-all hover:bg-[var(--card-hover-bg)] hover:text-[var(--title-color)] relative group">
-                        {t('tools')}
-                        <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-[#fb923c] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
-                    </Link>
-                    <Link href="/blog" className="text-[var(--muted-text)] font-heading text-sm no-underline px-3 py-1.5 rounded-lg transition-all hover:bg-[var(--card-hover-bg)] hover:text-[var(--title-color)] relative group">
-                        {t('blog')}
-                        <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-[#fb923c] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-center" />
-                    </Link>
+
+                    {/* Liquid Glass Nav - Clean Hover Pills */}
+                    <div className="flex items-center gap-2" onMouseLeave={() => setHoveredNav(null)}>
+                        {navItems.map((item) => (
+                            <Link
+                                key={item.id}
+                                href={item.href}
+                                className="relative px-4 py-2 text-sm font-medium text-neutral-600 dark:text-neutral-400 hover:text-[var(--title-color)] transition-colors duration-200 rounded-full select-none outline-none focus-visible:ring-2 focus-visible:ring-orange-500/50"
+                                onMouseEnter={() => setHoveredNav(item.id)}
+                            >
+                                {/* Hover Pill - Scale Effect */}
+                                {hoveredNav === item.id && (
+                                    <motion.div
+                                        layoutId="nav-hover"
+                                        className="absolute inset-0 bg-[var(--tab-pill-hover-bg)] border border-[var(--tab-pill-hover-border)] rounded-full"
+                                        transition={{ type: "spring", stiffness: 400, damping: 30 }}
+                                        initial={{ scale: 0.95, opacity: 0 }}
+                                        animate={{ scale: 1, opacity: 1 }}
+                                        exit={{ scale: 0.9, opacity: 0 }}
+                                        style={{ zIndex: -1 }}
+                                    />
+                                )}
+                                <span className="relative block">
+                                    {item.label}
+                                </span>
+                            </Link>
+                        ))}
+                    </div>
 
                     <LanguageSelector variant="desktop" />
 
                     <ThemeToggle />
                     <a
-                        href="https://github.com/sohanpaliyal/Daily-Dev-Tools"
+                        href="https://github.com/dailydevtools/Daily-Dev-Tools"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-transparent border border-[var(--card-border)] rounded-lg w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-200 text-[var(--muted-text)] hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[#fb923c]"
+                        className="relative overflow-hidden rounded-full w-11 h-11 flex items-center justify-center cursor-pointer transition-all duration-300
+                                   bg-[var(--card-bg)] border border-[var(--card-border)] shadow-[0_10px_30px_rgba(15,23,42,0.08)]
+                                   text-[var(--muted-text)] hover:bg-[var(--card-hover-bg)] hover:text-[var(--orange-500)]"
                         aria-label="GitHub Repository"
                     >
                         <Github size={20} />
@@ -86,7 +114,7 @@ export default function Header() {
                             <LanguageSelector variant="mobile" />
                         </motion.div>
                         <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }} className="pt-2">
-                            <a href="https://github.com/sohanpaliyal/Daily-Dev-Tools" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-4 py-3 rounded-xl border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] text-center w-full">
+                            <a href="https://github.com/dailydevtools/Daily-Dev-Tools" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-4 py-3 rounded-xl border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[#fb923c] hover:text-[var(--title-color)] text-center w-full">
                                 {t('github')}
                             </a>
                         </motion.div>

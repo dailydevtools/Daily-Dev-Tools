@@ -5,6 +5,10 @@ import { Copy, Check, RefreshCw, FileText } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+
 export default function LoremIpsumClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -50,34 +54,35 @@ export default function LoremIpsumClient() {
                         icon={<FileText size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 rounded-2xl mb-6 flex items-center gap-6">
+                    <LiquidCard className="p-6 mb-6 flex flex-wrap items-center gap-6">
                         <div className="flex items-center gap-3">
-                            <label className="text-[#fb923c] font-medium">{t('LoremIpsum.paragraphs')}</label>
-                            <input
+                            <label className="text-orange-500 font-medium">{t('LoremIpsum.paragraphs')}</label>
+                            <LiquidInput
                                 type="number"
                                 min="1"
                                 max="20"
                                 value={paragraphs}
                                 onChange={(e) => setParagraphs(Number(e.target.value))}
-                                className="bg-black/30 border border-white/10 px-3 py-2 rounded-lg text-white w-20"
+                                className="w-24 text-center"
                             />
                         </div>
-                        <button onClick={generateLorem} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-6 flex items-center gap-2">
+                        <LiquidButton onClick={generateLorem} className="gap-2">
                             <RefreshCw size={16} /> {t('LoremIpsum.generate')}
-                        </button>
-                        <button onClick={copyToClipboard} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] ml-auto py-2.5 px-6 flex items-center gap-2">
-                            {copied ? <Check size={16} className="text-[#22c55e]" /> : <Copy size={16} />}
+                        </LiquidButton>
+                        <div className="flex-1" />
+                        <LiquidButton onClick={copyToClipboard} variant="ghost" className="gap-2">
+                            {copied ? <Check size={16} className="text-green-500" /> : <Copy size={16} />}
                             {t('LoremIpsum.copyText')}
-                        </button>
-                    </div>
+                        </LiquidButton>
+                    </LiquidCard>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 rounded-3xl min-h-[400px]">
+                    <LiquidCard className="p-10 min-h-[400px]">
                         {text.split('\n\n').map((p, i) => (
-                            <p key={i} className="text-[#e5e7eb] leading-[1.8] mb-6 text-base">
+                            <p key={i} className="text-[var(--foreground)] leading-loose mb-6 text-lg last:mb-0">
                                 {p}
                             </p>
                         ))}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

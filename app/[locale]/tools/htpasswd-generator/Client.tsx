@@ -5,6 +5,11 @@ import { Lock, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
+
 export default function HtpasswdGeneratorClient() {
     const t = useTranslations('HtpasswdGenerator');
     const [user, setUser] = useState("admin");
@@ -37,44 +42,50 @@ export default function HtpasswdGeneratorClient() {
                         icon={<Lock size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10">
                         <div className="mb-6">
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('username')}</label>
-                            <input
+                            <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('username')}</label>
+                            <LiquidInput
                                 type="text" value={user} onChange={e => setUser(e.target.value)}
-                                className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                             />
                         </div>
 
                         <div className="mb-6">
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('password')}</label>
-                            <input
+                            <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('password')}</label>
+                            <LiquidInput
                                 type="password" value={pass} onChange={e => setPass(e.target.value)}
-                                className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                             />
                         </div>
 
                         <div className="mb-8">
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('algorithm')}</label>
-                            <select value={algo} onChange={e => setAlgo(e.target.value)} className="w-full p-3 rounded-xl bg-[#111] border border-[#333] text-white">
-                                <option value="sha1">{t('sha1')}</option>
-                            </select>
+                            <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('algorithm')}</label>
+                            <LiquidSelect
+                                value={algo}
+                                onChange={setAlgo}
+                                options={[
+                                    { value: "sha1", label: t('sha1') }
+                                ]}
+                            />
                         </div>
 
-                        <button onClick={generate} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full p-4 mb-8">
+                        <LiquidButton onClick={generate} className="w-full mb-8 py-3">
                             {t('generate')}
-                        </button>
+                        </LiquidButton>
 
                         {output && (
-                            <div className="p-5 bg-white/5 rounded-xl relative">
-                                <div className="text-[13px] text-[#9ca3af] mb-2">{t('result')}</div>
-                                <div className="font-mono text-[#fb923c] text-base break-all">{output}</div>
-                                <button onClick={() => navigator.clipboard.writeText(output)} className="absolute top-4 right-4 bg-transparent border-none text-[#9ca3af] cursor-pointer">
+                            <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl relative border border-neutral-200 dark:border-white/5 animate-in fade-in slide-in-from-top-2">
+                                <div className="text-xs text-[var(--muted-text)] mb-2 font-medium uppercase tracking-wider">{t('result')}</div>
+                                <div className="font-mono text-orange-500 text-sm break-all pr-8">{output}</div>
+                                <LiquidButton
+                                    variant="ghost"
+                                    onClick={() => navigator.clipboard.writeText(output)}
+                                    className="absolute top-2 right-2 h-8 w-8 p-0"
+                                >
                                     <Copy size={16} />
-                                </button>
+                                </LiquidButton>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

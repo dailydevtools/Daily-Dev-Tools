@@ -5,6 +5,10 @@ import { Code, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+
 export default function HtmlEncoderClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -38,47 +42,55 @@ export default function HtmlEncoderClient() {
                         icon={<Code size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center mb-8">
-                        <div className="bg-white/5 p-1 rounded-xl flex gap-1">
+                    <div className="flex justify-center mb-10">
+                        <div className="bg-neutral-100 dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex gap-1">
                             <button
                                 onClick={() => { setMode("encode"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-6 rounded-lg border-none cursor-pointer font-medium transition-colors ${mode === 'encode' ? 'bg-[#fb923c] text-black' : 'bg-transparent text-[#9ca3af]'}`}
+                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'encode' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                             >
                                 {t('HtmlEncoder.encode')}
                             </button>
                             <button
                                 onClick={() => { setMode("decode"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-6 rounded-lg border-none cursor-pointer font-medium transition-colors ${mode === 'decode' ? 'bg-[#fb923c] text-black' : 'bg-transparent text-[#9ca3af]'}`}
+                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'decode' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                             >
                                 {t('HtmlEncoder.decode')}
                             </button>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-4">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                            <textarea
+                    <div className="grid grid-cols-1 gap-6">
+                        <LiquidCard className="p-0 overflow-hidden group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <LiquidTextArea
                                 value={input} onChange={e => setInput(e.target.value)}
                                 placeholder={mode === 'encode' ? '<div class="foo">Bar</div>' : '&lt;div class=&quot;foo&quot;&gt;Bar&lt;/div&gt;'}
-                                className="w-full h-[200px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none"
+                                className="h-[200px] border-none rounded-none focus:ring-0 text-base p-6 resize-none"
                             />
+                        </LiquidCard>
+
+                        <div className="flex justify-center">
+                            <LiquidButton onClick={process} className="px-10 py-4 text-base">
+                                {mode === 'encode' ? t('HtmlEncoder.encode') : t('HtmlEncoder.decode')} HTML
+                            </LiquidButton>
                         </div>
 
-                        <button onClick={process} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] justify-self-center py-3 px-8">
-                            {mode === 'encode' ? t('HtmlEncoder.encode') : t('HtmlEncoder.decode')} HTML
-                        </button>
-
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden relative">
+                        <LiquidCard className="p-0 overflow-hidden relative group">
                             <textarea
                                 readOnly
                                 value={output}
                                 placeholder={t('HtmlEncoder.resultPlaceholder')}
-                                className="w-full h-[200px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none"
+                                className="w-full h-[200px] bg-neutral-50/50 dark:bg-neutral-900/30 border-none p-6 text-[var(--foreground)] font-mono resize-none outline-none text-sm"
                             />
-                            <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3 flex items-center gap-2">
-                                <Copy size={14} /> {t('common.copy')}
-                            </button>
-                        </div>
+                            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <LiquidButton
+                                    variant="ghost"
+                                    onClick={() => navigator.clipboard.writeText(output)}
+                                    className="h-8 px-3 text-xs bg-white/80 dark:bg-black/50 backdrop-blur-sm shadow-sm hover:bg-white dark:hover:bg-black"
+                                >
+                                    <Copy size={14} className="mr-1.5" /> {t('common.copy')}
+                                </LiquidButton>
+                            </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

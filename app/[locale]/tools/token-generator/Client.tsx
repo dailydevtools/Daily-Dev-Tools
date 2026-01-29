@@ -73,7 +73,7 @@ export default function TokenGeneratorClient() {
                                 <textarea
                                     readOnly
                                     value={token}
-                                    className="w-full h-[120px] bg-black/30 border border-white/10 rounded-xl p-4 text-[#fb923c] text-lg font-mono resize-none"
+                                    className="w-full h-[120px] bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 rounded-xl p-4 text-[#fb923c] text-lg font-mono resize-none"
                                 />
                                 <button
                                     onClick={() => navigator.clipboard.writeText(token)}

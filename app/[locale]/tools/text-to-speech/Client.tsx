@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Volume2, Square } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function TextToSpeechClient() {
     const t = useTranslations('TextToSpeech');
@@ -61,22 +62,20 @@ export default function TextToSpeechClient() {
                         <div className="mb-6">
                             <textarea
                                 value={text} onChange={e => setText(e.target.value)}
-                                className="input-field w-full h-[150px] p-4 rounded-xl bg-black/30 border border-white/10 text-white text-lg resize-y"
+                                className="input-field w-full h-[150px] p-4 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-lg resize-y"
                                 placeholder={t('placeholder')}
                             />
                         </div>
 
                         <div className="flex gap-6 mb-8 flex-wrap">
-                            <div className="flex-2 min-w-[200px]">
+                            <div className="flex-2 min-w-[200px] relative z-20">
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('voice')}</label>
-                                <select
-                                    value={selectedVoice} onChange={e => setSelectedVoice(e.target.value)}
-                                    className="w-full p-3 rounded-xl bg-[#111] border border-[#333] text-white"
-                                >
-                                    {voices.map(v => (
-                                        <option key={v.name} value={v.name}>{v.name} ({v.lang})</option>
-                                    ))}
-                                </select>
+                                <LiquidSelect
+                                    value={selectedVoice}
+                                    onChange={setSelectedVoice}
+                                    options={voices.map(v => ({ value: v.name, label: `${v.name} (${v.lang})` }))}
+                                    className="w-full"
+                                />
                             </div>
                             <div className="flex-1 min-w-[100px]">
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('speed')} ({rate})</label>

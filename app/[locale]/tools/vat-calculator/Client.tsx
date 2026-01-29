@@ -36,7 +36,7 @@ export default function VatCalculatorClient() {
                                 <input
                                     id="amount"
                                     type="number" value={amount} onChange={e => setAmount(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-lg"
+                                    className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-lg"
                                     placeholder="100.00"
                                 />
                             </div>
@@ -45,13 +45,13 @@ export default function VatCalculatorClient() {
                                 <input
                                     id="rate"
                                     type="number" value={rate} onChange={e => setRate(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-lg"
+                                    className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-lg"
                                 />
                             </div>
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
+                            <div className="p-6 bg-neutral-100 dark:bg-white/5 rounded-2xl border border-neutral-200 dark:border-white/5">
                                 <div className="text-[13px] text-[#9ca3af] mb-4">{t('addVat')}</div>
                                 <div className="flex justify-between mb-2">
                                     <span className="text-[#6b7280]">{t('netAmount')}</span>
@@ -68,7 +68,7 @@ export default function VatCalculatorClient() {
                                 </div>
                             </div>
 
-                            <div className="p-6 bg-white/5 rounded-2xl border border-white/5">
+                            <div className="p-6 bg-neutral-100 dark:bg-white/5 rounded-2xl border border-neutral-200 dark:border-white/5">
                                 <div className="text-[13px] text-[#9ca3af] mb-4">{t('removeVat')}</div>
                                 <div className="flex justify-between mb-2">
                                     <span className="text-[#6b7280]">{t('grossAmount')}</span>

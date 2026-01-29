@@ -73,7 +73,7 @@ export default function CreditCardValidatorClient() {
                                     onChange={(e) => validate(e.target.value)}
                                     placeholder={t('CreditCardValidator.placeholder')}
                                     maxLength={24}
-                                    className="input-field w-full p-4 pl-12 text-xl rounded-xl bg-black/30 border border-white/10 text-white font-mono placeholder:text-white/20 transition-all focus:border-[#fb923c] outline-none"
+                                    className="input-field w-full p-4 pl-12 text-xl rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] font-mono placeholder:text-gray-400 dark:placeholder:text-white/20 transition-all focus:border-[#fb923c] outline-none"
                                 />
                                 <CreditCard className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9ca3af]" size={20} />
                             </div>
@@ -90,7 +90,7 @@ export default function CreditCardValidatorClient() {
                                     </div>
                                     {brand && (
                                         <div className="text-white/80 text-sm flex items-center gap-2">
-                                            <ShieldCheck size={14} /> {t('CreditCardValidator.cardType')}: <span className="text-white font-semibold">{brand}</span>
+                                            <ShieldCheck size={14} /> {t('CreditCardValidator.cardType')}: <span className="text-[var(--foreground)] font-semibold">{brand}</span>
                                         </div>
                                     )}
                                 </div>

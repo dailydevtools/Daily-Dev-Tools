@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Globe } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 const RECORD_TYPES = ["A", "AAAA", "CNAME", "MX", "NS", "TXT", "PTR", "SRV", "SOA"];
 
@@ -47,22 +48,21 @@ export default function DNSLookupClient() {
                         icon={<Globe size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex gap-4 items-center mb-6 flex-wrap">
+                    <div className="relative z-20 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex gap-4 items-center mb-6 flex-wrap">
                         <Globe size={20} className="text-[#9ca3af]" />
                         <input
                             value={domain}
                             onChange={e => setDomain(e.target.value)}
                             onKeyDown={e => e.key === 'Enter' && lookup()}
                             placeholder={t('DnsLookup.placeholder')}
-                            className="flex-1 p-3 rounded-lg bg-black/30 border border-white/10 text-white text-base min-w-[200px]"
+                            className="flex-1 p-3 rounded-lg bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-base min-w-[200px]"
                         />
-                        <select
+                        <LiquidSelect
                             value={type}
-                            onChange={e => setType(e.target.value)}
-                            className="p-3 rounded-lg bg-[#111] text-white border border-[#333]"
-                        >
-                            {RECORD_TYPES.map(t => <option key={t} value={t}>{t}</option>)}
-                        </select>
+                            onChange={setType}
+                            options={RECORD_TYPES}
+                            className="min-w-[120px]"
+                        />
                         <button onClick={lookup} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-6">
                             {loading ? "..." : t('DnsLookup.lookup')}
                         </button>

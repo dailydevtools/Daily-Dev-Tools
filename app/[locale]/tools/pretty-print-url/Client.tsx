@@ -60,7 +60,7 @@ export default function PrettyPrintUrlClient() {
                             <input
                                 type="text" value={input} onChange={e => setInput(e.target.value)}
                                 placeholder="https://example.com/path?param=value&other=123"
-                                className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white focus:outline-none focus:border-[#fb923c]"
+                                className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] focus:outline-none focus:border-[#fb923c]"
                             />
                         </div>
 
@@ -76,7 +76,7 @@ export default function PrettyPrintUrlClient() {
                                     </button>
                                 </div>
                                 <div className="relative group">
-                                    <pre className="w-full p-4 rounded-xl bg-black/30 border border-white/10 text-white overflow-x-auto whitespace-pre-wrap font-mono text-sm leading-relaxed">
+                                    <pre className="w-full p-4 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] overflow-x-auto whitespace-pre-wrap font-mono text-sm leading-relaxed">
                                         {output}
                                     </pre>
                                 </div>
