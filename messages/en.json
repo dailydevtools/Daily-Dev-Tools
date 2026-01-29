@@ -695,7 +695,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragraphs",
       "generate": "Generate",
-      "copy": "Copy"
+      "copy": "Copy",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "Angle",
@@ -1713,7 +1714,9 @@
     "note": "Signatures are processed locally in your browser. We do not store or upload them."
   },
   "MarkdownEditor": {
-    "previewLabel": "Live Preview"
+    "previewLabel": "Live Preview",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Shift Amount (N)",
