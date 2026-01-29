@@ -25,7 +25,7 @@ export default function GitHubStarCard() {
             className="group inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-[var(--background)] border border-[var(--border-color)] hover:border-[#fb923c] transition-all duration-300 no-underline shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_4px_16px_rgba(251,146,60,0.2)]"
         >
             <div className="flex items-center gap-2">
-                <Github size={18} className="text-[var(--foreground)] transition-colors group-hover:text-[#fb923c]" />
+                <Github size={18} className="text-[var(--foreground)] transition-colors group-hover:text-[#fb923c]" aria-hidden="true" />
                 <span className="text-[13px] font-semibold text-[var(--foreground)] tracking-wide">
                     Star on GitHub
                 </span>
@@ -33,7 +33,7 @@ export default function GitHubStarCard() {
 
             {stars !== null && (
                 <div className="flex items-center gap-1.5 pl-2.5 border-l border-[var(--border-color)]">
-                    <Star size={14} className="text-[#fb923c] fill-[#fb923c] group-hover:rotate-[72deg] transition-transform duration-500" />
+                    <Star size={14} className="text-[#fb923c] fill-[#fb923c] group-hover:rotate-[72deg] transition-transform duration-500" aria-hidden="true" />
                     <span className="text-[13px] font-mono font-medium text-[var(--muted-text)] group-hover:text-[var(--foreground)] transition-colors">
                         {stars.toLocaleString()}
                     </span>
