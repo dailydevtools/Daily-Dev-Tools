@@ -14,6 +14,10 @@ interface DateResult {
     totalWeeks: number;
 }
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function DateDiffClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -67,43 +71,47 @@ export default function DateDiffClient() {
                         icon={<CalendarDays size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center mb-6">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <LiquidCard className="p-10 mb-8">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('DateDiff.startDate')}</label>
-                                <input type="date" value={start} onChange={e => setStart(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-base" />
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DateDiff.startDate')}</label>
+                                <LiquidInput type="date" value={start} onChange={e => setStart(e.target.value)} className="text-lg" />
                             </div>
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('DateDiff.endDate')}</label>
-                                <input type="date" value={end} onChange={e => setEnd(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white text-base" />
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DateDiff.endDate')}</label>
+                                <LiquidInput type="date" value={end} onChange={e => setEnd(e.target.value)} className="text-lg" />
                             </div>
                         </div>
-                        <button onClick={calculate} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8">{t('DateDiff.calculate')}</button>
-                    </div>
+                        <div className="text-center">
+                            <LiquidButton onClick={calculate} className="w-full md:w-auto px-12 py-3">
+                                {t('DateDiff.calculate')}
+                            </LiquidButton>
+                        </div>
+                    </LiquidCard>
 
                     {result && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 col-span-1 md:col-span-2 text-center bg-gradient-to-br from-orange-500/10 to-yellow-400/10">
-                                <div className="text-[13px] text-[#fb923c] mb-1">{t('DateDiff.difference')}</div>
-                                <div className="text-3xl font-bold text-white">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-[fadeIn_0.5s_ease-out]">
+                            <LiquidCard className="p-8 col-span-1 md:col-span-2 text-center bg-gradient-to-br from-orange-500/5 to-yellow-500/5 border-orange-200/50 dark:border-orange-500/20">
+                                <div className="text-sm text-orange-600 dark:text-orange-400 mb-2 font-medium uppercase tracking-wide">{t('DateDiff.difference')}</div>
+                                <div className="text-3xl md:text-4xl font-bold text-[var(--foreground)]">
                                     {result.years > 0 ? `${result.years} ${t('DateDiff.years')}, ` : ''}
                                     {result.months > 0 ? `${result.months} ${t('DateDiff.months')}, ` : ''}
                                     {result.days} {t('DateDiff.days')}
                                 </div>
-                            </div>
+                            </LiquidCard>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 text-center">
-                                <div className="text-xs text-[#9ca3af] mb-1">{t('DateDiff.totalDays')}</div>
-                                <div className="text-2xl font-bold text-white">{result.totalDays.toLocaleString()}</div>
-                            </div>
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 text-center">
-                                <div className="text-xs text-[#9ca3af] mb-1">{t('DateDiff.totalWeeks')}</div>
-                                <div className="text-2xl font-bold text-white">{result.totalWeeks.toLocaleString()}</div>
-                            </div>
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 text-center">
-                                <div className="text-xs text-[#9ca3af] mb-1">{t('DateDiff.totalHours')}</div>
-                                <div className="text-2xl font-bold text-white">{result.totalHours.toLocaleString()}</div>
-                            </div>
+                            <LiquidCard className="p-6 text-center">
+                                <div className="text-xs text-[var(--muted-text)] uppercase tracking-wider mb-2 font-medium">{t('DateDiff.totalDays')}</div>
+                                <div className="text-3xl font-bold text-[var(--foreground)]">{result.totalDays.toLocaleString()}</div>
+                            </LiquidCard>
+                            <LiquidCard className="p-6 text-center">
+                                <div className="text-xs text-[var(--muted-text)] uppercase tracking-wider mb-2 font-medium">{t('DateDiff.totalWeeks')}</div>
+                                <div className="text-3xl font-bold text-[var(--foreground)]">{result.totalWeeks.toLocaleString()}</div>
+                            </LiquidCard>
+                            <LiquidCard className="p-6 text-center md:col-span-2">
+                                <div className="text-xs text-[var(--muted-text)] uppercase tracking-wider mb-2 font-medium">{t('DateDiff.totalHours')}</div>
+                                <div className="text-3xl font-bold text-[var(--foreground)]">{result.totalHours.toLocaleString()}</div>
+                            </LiquidCard>
                         </div>
                     )}
 

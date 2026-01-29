@@ -5,6 +5,9 @@ import { Calculator } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+
 export default function LoanCalculatorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -57,93 +60,92 @@ export default function LoanCalculatorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                            <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-2">
-                                <Calculator size={20} color="#fb923c" /> {t('LoanCalculator.loanDetails')}
+                        <LiquidCard className="p-8">
+                            <h2 className="text-xl font-bold text-[var(--foreground)] mb-6 flex items-center gap-2">
+                                <Calculator size={20} className="text-orange-500" /> {t('LoanCalculator.loanDetails')}
                             </h2>
 
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('LoanCalculator.loanAmount')} ($)</label>
-                                <input
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('LoanCalculator.loanAmount')} ($)</label>
+                                <LiquidInput
                                     type="number"
                                     value={amount} onChange={e => setAmount(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white text-base"
                                 />
                                 <input
                                     type="range" min="1000" max="1000000" step="1000"
                                     value={amount} onChange={e => setAmount(Number(e.target.value))}
-                                    className="w-full mt-2 accent-[#fb923c]"
+                                    className="w-full mt-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                 />
                             </div>
 
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('LoanCalculator.interestRate')} (%)</label>
-                                <input
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('LoanCalculator.interestRate')} (%)</label>
+                                <LiquidInput
                                     type="number"
                                     value={rate} onChange={e => setRate(Number(e.target.value))}
-                                    className="input-field w-full p-3 rounded-lg bg-black/30 border border-white/10 text-white text-base"
                                 />
                                 <input
                                     type="range" min="0.1" max="30" step="0.1"
                                     value={rate} onChange={e => setRate(Number(e.target.value))}
-                                    className="w-full mt-2 accent-[#fb923c]"
+                                    className="w-full mt-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                 />
                             </div>
 
-                            <div className="mb-5">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('LoanCalculator.loanTerm')}</label>
+                            <div className="mb-6">
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('LoanCalculator.loanTerm')}</label>
                                 <div className="flex gap-3">
-                                    <input
+                                    <LiquidInput
                                         type="number"
                                         value={term} onChange={e => setTerm(Number(e.target.value))}
-                                        className="input-field flex-1 p-3 rounded-lg bg-black/30 border border-white/10 text-white text-base"
+                                        className="flex-1"
                                     />
-                                    <select
+                                    <LiquidSelect
                                         value={termType} onChange={e => setTermType(e.target.value as any)}
-                                        className="px-4 rounded-lg bg-[#111] text-white border border-[#333]"
+                                        className="w-32"
                                     >
                                         <option value="years">{t('LoanCalculator.years')}</option>
                                         <option value="months">{t('LoanCalculator.months')}</option>
-                                    </select>
+                                    </LiquidSelect>
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 text-center">
+                        <LiquidCard className="p-8 text-center">
                             <div className="mb-8">
-                                <div className="text-sm text-[#9ca3af] mb-2">{t('LoanCalculator.monthlyPayment')}</div>
-                                <div className="text-5xl font-bold text-[#22c55e]">{formatMoney(monthlyPayment)}</div>
+                                <div className="text-sm font-medium text-[var(--muted-text)] mb-2 uppercase tracking-wider">{t('LoanCalculator.monthlyPayment')}</div>
+                                <div className="text-5xl font-bold text-green-500">{formatMoney(monthlyPayment)}</div>
                             </div>
 
                             <div className="grid grid-cols-2 gap-4 mb-8 text-left">
-                                <div className="p-4 bg-white/5 rounded-xl">
-                                    <div className="text-xs text-[#9ca3af]">{t('LoanCalculator.totalInterest')}</div>
-                                    <div className="text-lg font-semibold text-[#f97316]">{formatMoney(totalInterest)}</div>
+                                <div className="p-4 bg-neutral-50 dark:bg-white/5 rounded-xl border border-[var(--border-color)]">
+                                    <div className="text-xs font-medium text-[var(--muted-text)] mb-1">{t('LoanCalculator.totalInterest')}</div>
+                                    <div className="text-lg font-bold text-orange-500">{formatMoney(totalInterest)}</div>
                                 </div>
-                                <div className="p-4 bg-white/5 rounded-xl">
-                                    <div className="text-xs text-[#9ca3af]">{t('LoanCalculator.totalPayment')}</div>
-                                    <div className="text-lg font-semibold text-white">{formatMoney(totalPayment)}</div>
+                                <div className="p-4 bg-neutral-50 dark:bg-white/5 rounded-xl border border-[var(--border-color)]">
+                                    <div className="text-xs font-medium text-[var(--muted-text)] mb-1">{t('LoanCalculator.totalPayment')}</div>
+                                    <div className="text-lg font-bold text-[var(--foreground)]">{formatMoney(totalPayment)}</div>
                                 </div>
                             </div>
 
                             {/* CSS Only Pie Chart */}
-                            <div className="flex justify-center items-center h-[200px]">
-                                <div className="relative w-40 h-40 rounded-full" style={{
+                            <div className="flex justify-center items-center h-[200px] mb-4 relative">
+                                <div className="relative w-40 h-40 rounded-full shadow-xl" style={{
                                     background: `conic-gradient(#3b82f6 0% ${pPerc}%, #f97316 ${pPerc}% 100%)`
                                 }}>
-                                    <div className="absolute inset-[30px] bg-[#000] rounded-full" />
-                                </div>
-                            </div>
-                            <div className="flex justify-center gap-4 mt-4">
-                                <div className="flex items-center gap-2 text-xs text-[#9ca3af]">
-                                    <div className="w-3 h-3 rounded-full bg-[#3b82f6]" /> {t('LoanCalculator.principal')}
-                                </div>
-                                <div className="flex items-center gap-2 text-xs text-[#9ca3af]">
-                                    <div className="w-3 h-3 rounded-full bg-[#f97316]" /> {t('LoanCalculator.interest')}
+                                    <div className="absolute inset-[30px] bg-white dark:bg-[#111] rounded-full flex items-center justify-center shadow-inner" />
                                 </div>
                             </div>
 
-                        </div>
+                            <div className="flex justify-center gap-6">
+                                <div className="flex items-center gap-2 text-sm text-[var(--muted-text)]">
+                                    <div className="w-3 h-3 rounded-full bg-blue-500 shadow-sm" /> {t('LoanCalculator.principal')}
+                                </div>
+                                <div className="flex items-center gap-2 text-sm text-[var(--muted-text)]">
+                                    <div className="w-3 h-3 rounded-full bg-orange-500 shadow-sm" /> {t('LoanCalculator.interest')}
+                                </div>
+                            </div>
+
+                        </LiquidCard>
                     </div>
 
                 </div>

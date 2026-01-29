@@ -5,6 +5,9 @@ import { Table, Trash2, Code } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function MarkdownTableClient() {
     const t = useTranslations('MarkdownTable');
     // Simple 2D array state
@@ -72,10 +75,14 @@ export default function MarkdownTableClient() {
                     />
 
                     <div className="flex flex-col lg:flex-row gap-6 items-start">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 flex-[2] overflow-x-auto w-full">
-                            <div className="flex gap-3 mb-4">
-                                <button onClick={addRow} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-3 text-[13px]">{t('addRow')}</button>
-                                <button onClick={addCol} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-3 text-[13px]">{t('addCol')}</button>
+                        <LiquidCard className="p-6 flex-[2] overflow-x-auto w-full">
+                            <div className="flex gap-3 mb-6">
+                                <LiquidButton onClick={addRow} variant="secondary" className="gap-2">
+                                    {t('addRow')}
+                                </LiquidButton>
+                                <LiquidButton onClick={addCol} variant="secondary" className="gap-2">
+                                    {t('addCol')}
+                                </LiquidButton>
                             </div>
 
                             <table className="border-collapse">
@@ -88,36 +95,41 @@ export default function MarkdownTableClient() {
                                                         type="text"
                                                         value={cell}
                                                         onChange={e => updateCell(r, c, e.target.value)}
-                                                        className={`w-[120px] p-2 border border-white/10 text-white rounded text-sm ${r === 0 ? 'bg-white/10 font-bold' : 'bg-black/30'}`}
+                                                        className={`w-[120px] p-2 border border-[var(--border-color)] bg-transparent rounded-lg text-sm text-[var(--foreground)] focus:ring-2 ring-orange-500/50 outline-none transition-all ${r === 0 ? 'font-bold bg-neutral-100/50 dark:bg-white/10' : ''}`}
                                                         placeholder={r === 0 ? t('headerPlaceholder') : ""}
                                                     />
                                                     {r === 0 && (
-                                                        <button onClick={() => removeCol(c)} className="absolute -top-2.5 right-0 bg-none border-none text-[#ef4444] cursor-pointer text-[10px] hover:text-red-400">x</button>
+                                                        <button onClick={() => removeCol(c)} className="absolute -top-2.5 right-0 bg-white dark:bg-black border border-[var(--border-color)] rounded-full w-5 h-5 flex items-center justify-center text-red-500 cursor-pointer text-[10px] hover:text-red-600 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">x</button>
                                                     )}
                                                 </td>
                                             ))}
                                             <td>
-                                                <button onClick={() => removeRow(r)} className="bg-none border-none text-[#ef4444] cursor-pointer p-2 hover:text-red-400">
-                                                    <Trash2 size={14} />
+                                                <button onClick={() => removeRow(r)} className="bg-transparent border-none text-[var(--muted-text)] cursor-pointer p-2 hover:text-red-500 transition-colors">
+                                                    <Trash2 size={16} />
                                                 </button>
                                             </td>
                                         </tr>
                                     ))}
                                 </tbody>
                             </table>
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 flex-1 flex flex-col w-full">
-                            <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('outputLabel')}</div>
+                        <LiquidCard className="p-0 flex-1 flex flex-col w-full h-full min-h-[400px]">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 flex items-center gap-2">
+                                <Code className="w-4 h-4 text-orange-500" />
+                                <span className="text-sm font-medium text-[var(--foreground)]">{t('outputLabel')}</span>
+                            </div>
                             <textarea
                                 readOnly
                                 value={output}
-                                className="w-full h-[300px] bg-transparent border-none p-5 text-[#fb923c] font-mono resize-y outline-none whitespace-pre text-sm"
+                                className="w-full flex-1 bg-transparent border-none p-5 text-orange-500 font-mono resize-y outline-none whitespace-pre text-sm leading-relaxed min-h-[300px]"
                             />
-                            <div className="p-4 text-right border-t border-white/10">
-                                <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4">{t('copy')}</button>
+                            <div className="p-4 text-right border-t border-[var(--border-color)] bg-neutral-50 dark:bg-white/[0.02]">
+                                <LiquidButton onClick={() => navigator.clipboard.writeText(output)}>
+                                    {t('copy')}
+                                </LiquidButton>
                             </div>
-                        </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

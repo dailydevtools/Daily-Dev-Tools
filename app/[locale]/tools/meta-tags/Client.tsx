@@ -5,6 +5,10 @@ import { Copy, Code2 } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function MetaTagsClient() {
     const t = useTranslations('MetaTags');
     const [title, setTitle] = useState("");
@@ -35,60 +39,59 @@ export default function MetaTagsClient() {
                         icon={<Code2 size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
-                        <div className="grid grid-cols-1 gap-5">
+                    <LiquidCard className="p-8">
+                        <div className="grid grid-cols-1 gap-6">
 
                             <div>
-                                <div className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
+                                <div className="flex justify-between mb-2 text-xs font-medium text-[var(--muted-text)]">
                                     <span>{t('pageTitle')}</span>
                                     <span>{title.length}/60</span>
                                 </div>
-                                <input
+                                <LiquidInput
                                     type="text" value={title} onChange={e => setTitle(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                 />
                             </div>
 
                             <div>
-                                <div className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
+                                <div className="flex justify-between mb-2 text-xs font-medium text-[var(--muted-text)]">
                                     <span>{t('description')}</span>
                                     <span>{desc.length}/160</span>
                                 </div>
                                 <textarea
                                     value={desc} onChange={e => setDesc(e.target.value)}
-                                    className="input-field w-full h-20 p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y"
+                                    className="w-full h-24 bg-neutral-100 dark:bg-black/30 border border-transparent dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('keywords')}</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('keywords')}</label>
+                                <LiquidInput
                                     type="text" value={keywords} onChange={e => setKeywords(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('author')}</label>
-                                <input
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('author')}</label>
+                                <LiquidInput
                                     type="text" value={author} onChange={e => setAuthor(e.target.value)}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                 />
                             </div>
 
-                            <div className="relative mt-3">
+                            <div className="relative mt-6">
                                 <textarea
                                     readOnly
                                     value={output}
-                                    className="w-full h-[200px] p-5 rounded-xl bg-[#111] border-none text-[#fb923c] font-mono resize-none"
+                                    className="w-full h-[200px] p-5 rounded-xl bg-neutral-900 border border-[var(--border-color)] text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
                                 />
-                                <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3 p-2">
-                                    <Copy size={16} />
-                                </button>
+                                <div className="absolute top-3 right-3">
+                                    <LiquidButton onClick={() => navigator.clipboard.writeText(output)} variant="ghost" className="h-8 w-8 p-0">
+                                        <Copy size={14} />
+                                    </LiquidButton>
+                                </div>
                             </div>
 
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

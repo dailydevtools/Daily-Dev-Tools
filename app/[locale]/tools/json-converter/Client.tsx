@@ -5,6 +5,9 @@ import { ArrowRightLeft, FileJson } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function JsonCsvConverterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -69,30 +72,24 @@ export default function JsonCsvConverterClient() {
     return (
         <main className="relative min-h-screen">
             <div className="relative z-10 pt-6 pb-16 px-6">
-                <div className="max-w-[1000px] mx-auto">
+                <div className="max-w-[1200px] mx-auto">
                     <ToolPageHeader
                         title={tTools('json-converter.name')}
                         description={tTools('json-converter.description')}
                         icon={<FileJson size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center mb-8">
-                        <div className="bg-white/5 p-1 rounded-xl flex gap-1">
+                    <div className="flex justify-center mb-10">
+                        <div className="dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex gap-1">
                             <button
                                 onClick={() => { setMode("json-to-csv"); setInput(""); setOutput(""); }}
-                                className={`
-                                    py-2 px-6 rounded-lg border-none cursor-pointer font-medium transition-colors
-                                    ${mode === 'json-to-csv' ? 'bg-[#fb923c] text-black' : 'bg-transparent text-[#9ca3af]'}
-                                `}
+                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'json-to-csv' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                             >
                                 {t('JsonConverter.jsonToCsv')}
                             </button>
                             <button
                                 onClick={() => { setMode("csv-to-json"); setInput(""); setOutput(""); }}
-                                className={`
-                                    py-2 px-6 rounded-lg border-none cursor-pointer font-medium transition-colors
-                                    ${mode === 'csv-to-json' ? 'bg-[#fb923c] text-black' : 'bg-transparent text-[#9ca3af]'}
-                                `}
+                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'csv-to-json' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                             >
                                 {t('JsonConverter.csvToJson')}
                             </button>
@@ -100,46 +97,46 @@ export default function JsonCsvConverterClient() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden flex flex-col h-[500px]">
-                            <div className="py-3 px-4 border-b border-white/10 bg-black/20 text-[#9ca3af] text-[13px] flex justify-between">
-                                <span>{mode === 'json-to-csv' ? t('JsonConverter.jsonInput') : t('JsonConverter.csvInput')}</span>
-                                <div className="flex gap-3">
-                                    <button onClick={() => setInput("")} className="bg-transparent border-none text-[#6b7280] cursor-pointer hover:text-white transition-colors">{t('common.clear')}</button>
-                                    <button onClick={() => navigator.clipboard.readText().then(t => setInput(t))} className="bg-transparent border-none text-[#fb923c] cursor-pointer hover:text-white transition-colors">{t('common.paste')}</button>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[600px] group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium flex justify-between items-center">
+                                <span className="uppercase tracking-wider opacity-70">{mode === 'json-to-csv' ? t('JsonConverter.jsonInput') : t('JsonConverter.csvInput')}</span>
+                                <div className="flex gap-2">
+                                    <button onClick={() => setInput("")} className="hover:text-[var(--foreground)] transition-colors px-2 py-1">{t('common.clear')}</button>
+                                    <button onClick={() => navigator.clipboard.readText().then(t => setInput(t))} className="text-orange-500 hover:text-orange-400 transition-colors px-2 py-1 font-medium bg-orange-500/10 rounded">{t('common.paste')}</button>
                                 </div>
                             </div>
                             <textarea
                                 value={input}
                                 onChange={e => setInput(e.target.value)}
                                 placeholder={mode === 'json-to-csv' ? '[{"name": "John", "age": 30}]' : 'name,age\nJohn,30'}
-                                className="flex-1 w-full bg-transparent border-none p-4 text-white font-mono resize-none outline-none text-sm"
+                                className="flex-1 w-full bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-none outline-none text-sm leading-relaxed"
                             />
-                        </div>
+                        </LiquidCard>
 
                         <div className="flex flex-col gap-3">
-                            <button onClick={handleConvert} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] p-4 rounded-full">
+                            <LiquidButton onClick={handleConvert} className="p-0 w-12 h-12 rounded-full flex items-center justify-center">
                                 <ArrowRightLeft size={20} />
-                            </button>
+                            </LiquidButton>
                         </div>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden flex flex-col h-[500px]">
-                            <div className="py-3 px-4 border-b border-white/10 bg-black/20 text-[#9ca3af] text-[13px] flex justify-between">
-                                <span>{mode === 'json-to-csv' ? t('JsonConverter.csvOutput') : t('JsonConverter.jsonOutput')}</span>
-                                <div className="flex gap-3">
-                                    <button onClick={() => setOutput("")} className="bg-transparent border-none text-[#6b7280] cursor-pointer hover:text-white transition-colors">{t('common.clear')}</button>
-                                    <button onClick={copy} className="bg-transparent border-none text-[#fb923c] cursor-pointer hover:text-white transition-colors">{t('common.copy')}</button>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[600px] group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium flex justify-between items-center">
+                                <span className="uppercase tracking-wider opacity-70">{mode === 'json-to-csv' ? t('JsonConverter.csvOutput') : t('JsonConverter.jsonOutput')}</span>
+                                <div className="flex gap-2">
+                                    <button onClick={() => setOutput("")} className="hover:text-[var(--foreground)] transition-colors px-2 py-1">{t('common.clear')}</button>
+                                    <button onClick={copy} className="text-orange-500 hover:text-orange-400 transition-colors px-2 py-1 font-medium bg-orange-500/10 rounded">{t('common.copy')}</button>
                                 </div>
                             </div>
                             <textarea
                                 readOnly
                                 value={output}
-                                className="flex-1 w-full bg-transparent border-none p-4 text-white font-mono resize-none outline-none text-sm"
+                                className="flex-1 w-full bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-none outline-none text-sm leading-relaxed"
                             />
-                        </div>
+                        </LiquidCard>
                     </div>
 
                     {error && (
-                        <div className="mt-6 p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-[#ef4444] text-center">
+                        <div className="mt-8 p-4 bg-red-500/10 border border-red-500/20 rounded-xl text-red-500 text-center animate-in fade-in slide-in-from-top-2">
                             {error}
                         </div>
                     )}

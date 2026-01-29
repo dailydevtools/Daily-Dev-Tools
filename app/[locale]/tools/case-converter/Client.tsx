@@ -5,6 +5,10 @@ import { Copy, Check, Type } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function CaseConverterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -86,39 +90,41 @@ export default function CaseConverterClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-8">
 
                         {/* Input */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 rounded-3xl flex flex-col">
-                            <div className="border-b border-white/5 pb-4 mb-4 flex justify-between">
-                                <label className="text-[#fb923c] font-semibold">{t('CaseConverter.inputText')}</label>
-                                <button onClick={() => setText("")} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-1 px-3 text-xs">{t('CaseConverter.clear')}</button>
+                        <LiquidCard className="p-6 flex flex-col h-[600px]">
+                            <div className="border-b border-[var(--border-color)] pb-4 mb-4 flex justify-between items-center">
+                                <label className="text-orange-500 font-semibold">{t('CaseConverter.inputText')}</label>
+                                <LiquidButton variant="ghost" onClick={() => setText("")} className="px-3 py-1.5 text-xs h-auto">
+                                    {t('CaseConverter.clear')}
+                                </LiquidButton>
                             </div>
-                            <textarea
+                            <LiquidTextArea
                                 value={text}
                                 onChange={(e) => setText(e.target.value)}
                                 placeholder={t('CaseConverter.inputPlaceholder')}
-                                className="flex-1 min-h-[400px] bg-transparent border-none resize-none outline-none text-base text-[#e5e7eb] leading-relaxed"
+                                className="flex-1 bg-transparent border-none resize-none outline-none text-base leading-relaxed p-0 focus:ring-0 rounded-none h-full"
                             />
-                        </div>
+                        </LiquidCard>
 
                         {/* Output List */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 rounded-3xl flex flex-col gap-4 max-h-[calc(100vh-200px)] overflow-y-auto">
-                            <h3 className="text-white font-semibold mb-2">{t('CaseConverter.conversions')}</h3>
+                        <LiquidCard className="p-6 flex flex-col gap-4 max-h-[600px] overflow-y-auto custom-scrollbar">
+                            <h3 className="text-[var(--foreground)] font-semibold mb-2">{t('CaseConverter.conversions')}</h3>
                             {cases.map((c) => {
                                 const converted = convert(c.id);
                                 return (
-                                    <div key={c.id} className="bg-white/5 p-4 rounded-xl">
+                                    <div key={c.id} className="bg-neutral-100/50 dark:bg-white/5 p-4 rounded-xl border border-[var(--border-color)] transition-colors hover:border-orange-500/30">
                                         <div className="flex items-center justify-between mb-2">
-                                            <span className="text-[#9ca3af] text-[13px]">{c.label}</span>
-                                            <button onClick={() => copyToClipboard(converted, c.id)} className={`bg-transparent border-none cursor-pointer ${copied === c.id ? 'text-[#4ade80]' : 'text-[#6b7280]'}`}>
+                                            <span className="text-[var(--muted-text)] text-[13px]">{c.label}</span>
+                                            <button onClick={() => copyToClipboard(converted, c.id)} className={`bg-transparent border-none cursor-pointer transition-colors ${copied === c.id ? 'text-green-500' : 'text-[var(--muted-text)] hover:text-orange-500'}`}>
                                                 {copied === c.id ? <Check size={14} /> : <Copy size={14} />}
                                             </button>
                                         </div>
-                                        <div className="text-white font-mono text-sm break-all">
+                                        <div className="text-[var(--foreground)] font-mono text-sm break-all">
                                             {converted || <span className="opacity-30">{c.example}</span>}
                                         </div>
                                     </div>
                                 );
                             })}
-                        </div>
+                        </LiquidCard>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,9 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function GradientGeneratorClient() {
     const t = useTranslations('GradientGenerator');
     const [color1, setColor1] = useState("#f97316");
@@ -47,45 +50,49 @@ export default function GradientGeneratorClient() {
                         icon={<ToolIcon name="Layers" size={32} />}
                     />
 
-                    <div className="grid grid-cols-1 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {/* Controls */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                            <h2 className="text-2xl font-bold text-white mb-6">{t('config')}</h2>
+                        <LiquidCard className="p-8">
+                            <h2 className="text-xl font-bold text-[var(--foreground)] mb-6">{t('config')}</h2>
 
                             <div className="mb-6">
-                                <label className="block text-sm text-[#9ca3af] mb-3">{t('colors')}</label>
+                                <label className="block text-sm text-[var(--muted-text)] mb-3 font-medium">{t('colors')}</label>
                                 <div className="flex gap-4">
                                     <div className="flex-1">
-                                        <input
-                                            type="color"
-                                            value={color1}
-                                            onChange={(e) => setColor1(e.target.value)}
-                                            className="w-full h-12 rounded-lg border-none cursor-pointer bg-transparent"
-                                        />
-                                        <div className="text-center mt-2 text-[13px] text-[#d1d5db] font-mono">{color1}</div>
+                                        <div className="relative h-12 w-full rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)]">
+                                            <input
+                                                type="color"
+                                                value={color1}
+                                                onChange={(e) => setColor1(e.target.value)}
+                                                className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer border-none bg-transparent p-0 m-0"
+                                            />
+                                        </div>
+                                        <div className="text-center mt-2 text-xs text-[var(--muted-text)] font-mono uppercase">{color1}</div>
                                     </div>
                                     <div className="flex-1">
-                                        <input
-                                            type="color"
-                                            value={color2}
-                                            onChange={(e) => setColor2(e.target.value)}
-                                            className="w-full h-12 rounded-lg border-none cursor-pointer bg-transparent"
-                                        />
-                                        <div className="text-center mt-2 text-[13px] text-[#d1d5db] font-mono">{color2}</div>
+                                        <div className="relative h-12 w-full rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)]">
+                                            <input
+                                                type="color"
+                                                value={color2}
+                                                onChange={(e) => setColor2(e.target.value)}
+                                                className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer border-none bg-transparent p-0 m-0"
+                                            />
+                                        </div>
+                                        <div className="text-center mt-2 text-xs text-[var(--muted-text)] font-mono uppercase">{color2}</div>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="mb-6">
-                                <label className="block text-sm text-[#9ca3af] mb-3">{t('type')}</label>
-                                <div className="flex bg-white/5 rounded-lg p-1">
+                                <label className="block text-sm text-[var(--muted-text)] mb-3 font-medium">{t('type')}</label>
+                                <div className="dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex">
                                     {['linear', 'radial'].map((t) => (
                                         <button
                                             key={t}
                                             onClick={() => setType(t)}
-                                            className={`flex-1 py-2 rounded-md border-none text-sm font-medium cursor-pointer capitalize ${type === t ? 'bg-white/10 text-white' : 'bg-transparent text-[#6b7280]'}`}
+                                            className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${type === t ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                                         >
-                                            {t}
+                                            {t.charAt(0).toUpperCase() + t.slice(1)}
                                         </button>
                                     ))}
                                 </div>
@@ -94,8 +101,8 @@ export default function GradientGeneratorClient() {
                             {type === 'linear' && (
                                 <div className="mb-8">
                                     <div className="flex justify-between mb-3">
-                                        <label className="text-sm text-[#9ca3af]">{t('angle')}</label>
-                                        <span className="text-sm text-white">{angle}°</span>
+                                        <label className="text-sm text-[var(--muted-text)] font-medium">{t('angle')}</label>
+                                        <span className="text-sm text-[var(--foreground)] font-mono">{angle}°</span>
                                     </div>
                                     <input
                                         type="range"
@@ -103,37 +110,37 @@ export default function GradientGeneratorClient() {
                                         max="360"
                                         value={angle}
                                         onChange={(e) => setAngle(Number(e.target.value))}
-                                        className="w-full cursor-pointer"
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                     />
                                 </div>
                             )}
 
-                            <div className="flex gap-3">
-                                <button onClick={randomize} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] flex-1 flex justify-center items-center gap-2">
+                            <div>
+                                <LiquidButton onClick={randomize} variant="secondary" className="w-full gap-2">
                                     <RefreshCw size={16} /> {t('random')}
-                                </button>
+                                </LiquidButton>
                             </div>
-                        </div>
+                        </LiquidCard>
 
                         {/* Preview */}
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-6">
                             <div
-                                className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex-1 min-h-[300px] rounded-3xl shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] border border-white/10"
+                                className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[24px] shadow-sm flex-1 min-h-[300px] w-full"
                                 style={{ background: gradient }}
                             />
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-5 flex items-center justify-between gap-4">
-                                <code className="font-mono text-[#fb923c] text-sm overflow-hidden text-ellipsis whitespace-nowrap">
+                            <LiquidCard className="p-5 flex items-center justify-between gap-4">
+                                <code className="font-mono text-orange-500 text-sm overflow-hidden text-ellipsis whitespace-nowrap bg-orange-50 dark:bg-orange-500/10 px-3 py-1 rounded-lg border border-orange-100 dark:border-orange-500/20 w-full">
                                     {css}
                                 </code>
-                                <button
+                                <LiquidButton
                                     onClick={copyToClipboard}
-                                    className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2 px-4 text-[13px] flex items-center gap-2"
+                                    className="px-4 py-2 text-xs flex items-center gap-2 whitespace-nowrap"
                                 >
-                                    {copied ? <Check size={16} /> : <Copy size={16} />}
+                                    {copied ? <Check size={14} /> : <Copy size={14} />}
                                     {copied ? t('copied') : t('copyCss')}
-                                </button>
-                            </div>
+                                </LiquidButton>
+                            </LiquidCard>
                         </div>
                     </div>
                 </div>

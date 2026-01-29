@@ -5,6 +5,9 @@ import { Copy, Check, Grid, Settings, Code } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function GridGeneratorClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -40,51 +43,51 @@ export default function GridGeneratorClient() {
 
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 items-start">
                         {/* Controls */}
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6">
-                            <div className="flex items-center gap-2.5 mb-5 text-white font-semibold">
+                        <LiquidCard className="p-6">
+                            <div className="flex items-center gap-2.5 mb-5 text-[var(--foreground)] font-semibold">
                                 <Settings size={18} className="text-orange-400" /> {t('GridGenerator.options')}
                             </div>
 
-                            <div className="flex flex-col gap-5">
+                            <div className="flex flex-col gap-6">
                                 <div>
-                                    <label className="block text-[#9ca3af] text-[13px] mb-2">{t('GridGenerator.rows')} ({rows})</label>
+                                    <label className="block text-[var(--muted-text)] text-xs font-medium mb-3">{t('GridGenerator.rows')} ({rows})</label>
                                     <input
                                         type="range" min="1" max="12" value={rows}
                                         onChange={(e) => setRows(Number(e.target.value))}
-                                        className="w-full accent-[#fb923c]"
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[#9ca3af] text-[13px] mb-2">{t('GridGenerator.columns')} ({cols})</label>
+                                    <label className="block text-[var(--muted-text)] text-xs font-medium mb-3">{t('GridGenerator.columns')} ({cols})</label>
                                     <input
                                         type="range" min="1" max="12" value={cols}
                                         onChange={(e) => setCols(Number(e.target.value))}
-                                        className="w-full accent-[#fb923c]"
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[#9ca3af] text-[13px] mb-2">{t('GridGenerator.rowGap')} ({rowGap}px)</label>
+                                    <label className="block text-[var(--muted-text)] text-xs font-medium mb-3">{t('GridGenerator.rowGap')} ({rowGap}px)</label>
                                     <input
                                         type="range" min="0" max="50" value={rowGap}
                                         onChange={(e) => setRowGap(Number(e.target.value))}
-                                        className="w-full accent-[#fb923c]"
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-[#9ca3af] text-[13px] mb-2">{t('GridGenerator.colGap')} ({colGap}px)</label>
+                                    <label className="block text-[var(--muted-text)] text-xs font-medium mb-3">{t('GridGenerator.colGap')} ({colGap}px)</label>
                                     <input
                                         type="range" min="0" max="50" value={colGap}
                                         onChange={(e) => setColGap(Number(e.target.value))}
-                                        className="w-full accent-[#fb923c]"
+                                        className="w-full accent-orange-500 cursor-pointer h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
                                     />
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
 
                         {/* Preview & Code */}
                         <div className="flex flex-col gap-6">
                             {/* Visual Preview */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 min-h-[300px] flex items-center justify-center bg-[#0a0a0a]">
+                            <LiquidCard className="p-6 min-h-[300px] flex items-center justify-center bg-neutral-50 dark:bg-[#0a0a0a]">
                                 <div style={{
                                     display: "grid",
                                     gridTemplateColumns: `repeat(${cols}, 1fr)`,
@@ -96,30 +99,32 @@ export default function GridGeneratorClient() {
                                     minHeight: 250
                                 }}>
                                     {Array.from({ length: rows * cols }).map((_, i) => (
-                                        <div key={i} className="bg-orange-500/20 border border-dashed border-orange-500/40 rounded-md flex items-center justify-center text-[#fb923c] text-xs font-semibold">
+                                        <div key={i} className="bg-orange-500/10 border border-dashed border-orange-500/40 rounded-lg flex items-center justify-center text-orange-500 text-xs font-semibold animate-in fade-in zoom-in duration-300">
                                             {i + 1}
                                         </div>
                                     ))}
                                 </div>
-                            </div>
+                            </LiquidCard>
 
                             {/* Code Block */}
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                                <div className="px-5 py-3 border-b border-white/10 flex justify-between items-center bg-white/5">
-                                    <div className="flex items-center gap-2 text-white text-sm font-medium">
+                            <LiquidCard className="p-0 overflow-hidden">
+                                <div className="px-5 py-3 border-b border-[var(--border-color)] flex justify-between items-center bg-neutral-50/50 dark:bg-white/5">
+                                    <div className="flex items-center gap-2 text-[var(--foreground)] text-sm font-medium">
                                         <Code size={16} className="text-orange-400" /> {t('GridGenerator.css')}
                                     </div>
-                                    <button
+                                    <LiquidButton
+                                        variant="ghost"
                                         onClick={handleCopy}
-                                        className={`flex items-center gap-1.5 bg-transparent border-none cursor-pointer text-xs transition-colors duration-200 ${copied ? "text-[#22c55e]" : "text-[#9ca3af]"}`}
+                                        className="h-auto py-1 px-2 text-xs gap-1.5"
                                     >
-                                        {copied ? <Check size={14} /> : <Copy size={14} />} {copied ? "Copied!" : t('GridGenerator.copyCss')}
-                                    </button>
+                                        {copied ? <Check size={14} className="text-green-500" /> : <Copy size={14} />}
+                                        {copied ? "Copied!" : t('GridGenerator.copyCss')}
+                                    </LiquidButton>
                                 </div>
-                                <pre className="m-0 p-5 bg-[#111] text-[#a5b4fc] text-sm font-mono overflow-x-auto">
+                                <pre className="m-0 p-5 bg-neutral-100 dark:bg-[#111] text-indigo-600 dark:text-indigo-300 text-sm font-mono overflow-x-auto">
                                     {cssCode}
                                 </pre>
-                            </div>
+                            </LiquidCard>
                         </div>
                     </div>
                 </div>

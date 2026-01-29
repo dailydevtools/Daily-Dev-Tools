@@ -13,6 +13,8 @@ const cursors = [
     "ew-resize", "ns-resize", "nesw-resize", "nwse-resize", "zoom-in", "zoom-out"
 ];
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+
 export default function CssCursorClient() {
     const t = useTranslations('CssCursor');
     const [selected, setSelected] = useState("auto");
@@ -28,30 +30,33 @@ export default function CssCursorClient() {
                         icon={<MousePointer size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
-                        <div className="text-center mb-10 p-10 bg-white/5 rounded-2xl border border-dashed border-white/10">
-                            <div className="text-[13px] text-[#9ca3af] mb-3">{t('hoverTest')}</div>
+                    <LiquidCard className="p-10">
+                        <div className="text-center mb-12 p-12 bg-neutral-100 dark:bg-[#111] rounded-[24px] border border-dashed border-neutral-300 dark:border-neutral-800 relative overflow-hidden group">
+
+                            <div className="absolute inset-0 bg-grid-slate-200/50 -z-10 [mask-image:linear-gradient(to_bottom,white,transparent)] dark:bg-grid-slate-800/20" />
+
+                            <div className="text-sm text-[var(--muted-text)] mb-4 font-medium">{t('hoverTest')}</div>
                             <div
                                 style={{ cursor: selected }}
-                                className="text-3xl font-bold text-white inline-block py-5 px-10 bg-[#222] rounded-xl"
+                                className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-orange-600 inline-block py-6 px-12 bg-white dark:bg-neutral-800 rounded-2xl shadow-xl shadow-orange-500/5 border border-white dark:border-white/5 transition-transform hover:scale-105"
                             >
                                 cursor: {selected};
                             </div>
                         </div>
 
-                        <div className="grid grid-cols-[repeat(auto-fill,minmax(140px,1fr))] gap-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
                             {cursors.map(c => (
                                 <button
                                     key={c}
                                     onClick={() => { setSelected(c); navigator.clipboard.writeText(`cursor: ${c};`); }}
                                     style={{ cursor: c }}
-                                    className={`p-4 rounded-xl border transition-all duration-200 text-center ${selected === c ? 'border-[#fb923c] bg-orange-500/20 text-[#fb923c]' : 'border-white/10 bg-white/5 text-white'}`}
+                                    className={`p-4 rounded-xl border text-center transition-all duration-300 ${selected === c ? 'bg-orange-500 border-orange-400 text-white shadow-lg shadow-orange-500/30 scale-105 z-10' : 'bg-neutral-50 dark:bg-white/5 border-[var(--border-color)] text-[var(--foreground)] hover:bg-neutral-100 dark:hover:bg-white/10 hover:border-orange-200 dark:hover:border-orange-800'}`}
                                 >
-                                    <div className="text-sm font-medium text-center">{c}</div>
+                                    <div className="text-xs font-medium font-mono truncate">{c}</div>
                                 </button>
                             ))}
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

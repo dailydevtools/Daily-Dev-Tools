@@ -5,6 +5,10 @@ import { Dices } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function RandomGeneratorClient() {
     const t = useTranslations('RandomGenerator');
     const [tab, setTab] = useState<'number' | 'list' | 'coin'>('number');
@@ -50,45 +54,48 @@ export default function RandomGeneratorClient() {
                         icon={<Dices size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex gap-3 mb-8 overflow-x-auto pb-1">
+                    <div className="flex justify-center gap-3 mb-8 overflow-x-auto pb-1">
                         {[
                             { id: 'number', label: t('numberGen') },
                             { id: 'list', label: t('listGen') },
                             { id: 'coin', label: t('coinGen') }
                         ].map((item) => (
-                            <button
+                            <LiquidButton
                                 key={item.id}
                                 onClick={() => setTab(item.id as any)}
-                                className={`capitalize px-6 py-2 rounded-full font-medium transition-colors ${tab === item.id ? 'inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]' : 'inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]'}`}
+                                variant={tab === item.id ? "primary" : "ghost"}
+                                className={`rounded-full h-11 px-6 transition-all ${tab === item.id ? '' : 'border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
                             >
                                 {item.label}
-                            </button>
+                            </LiquidButton>
                         ))}
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
+                    <LiquidCard className="p-8">
                         {tab === 'number' && (
                             <div>
                                 <div className="grid grid-cols-2 gap-5 mb-6">
                                     <div>
-                                        <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('min')}</label>
-                                        <input type="number" value={min} onChange={(e) => setMin(Number(e.target.value))} className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white" />
+                                        <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('min')}</label>
+                                        <LiquidInput type="number" value={min} onChange={(e) => setMin(Number(e.target.value))} />
                                     </div>
                                     <div>
-                                        <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('max')}</label>
-                                        <input type="number" value={max} onChange={(e) => setMax(Number(e.target.value))} className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white" />
+                                        <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('max')}</label>
+                                        <LiquidInput type="number" value={max} onChange={(e) => setMax(Number(e.target.value))} />
                                     </div>
                                 </div>
                                 <div className="mb-8">
-                                    <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('count')}</label>
-                                    <input type="number" value={count} min={1} max={100} onChange={(e) => setCount(Number(e.target.value))} className="w-full p-3 rounded-xl bg-white/5 border border-white/10 text-white" />
+                                    <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('count')}</label>
+                                    <LiquidInput type="number" value={count} min={1} max={100} onChange={(e) => setCount(Number(e.target.value))} />
                                 </div>
-                                <button onClick={generateNumbers} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full py-3">{t('generate')}</button>
+                                <LiquidButton onClick={generateNumbers} className="w-full h-11">
+                                    {t('generate')}
+                                </LiquidButton>
 
                                 {numbers.length > 0 && (
                                     <div className="mt-8 flex flex-wrap gap-3 justify-center">
                                         {numbers.map((n, i) => (
-                                            <div key={i} className="w-16 h-16 rounded-full bg-[#22c55e] text-black flex items-center justify-center font-bold text-xl">{n}</div>
+                                            <div key={i} className="w-16 h-16 rounded-full bg-green-500 text-white flex items-center justify-center font-bold text-xl shadow-lg shadow-green-500/20">{n}</div>
                                         ))}
                                     </div>
                                 )}
@@ -97,18 +104,20 @@ export default function RandomGeneratorClient() {
 
                         {tab === 'list' && (
                             <div>
-                                <label className="block text-[#9ca3af] mb-2 text-[13px]">{t('listLabel')}</label>
+                                <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('listLabel')}</label>
                                 <textarea
                                     value={listInput}
                                     onChange={(e) => setListInput(e.target.value)}
-                                    className="w-full h-[200px] p-4 rounded-xl bg-white/5 border border-white/10 text-white mb-6 font-mono resize-y"
+                                    className="w-full h-[200px] p-4 rounded-xl bg-neutral-100/50 dark:bg-black/30 border border-black/5 dark:border-white/10 text-[var(--foreground)] mb-6 font-mono resize-y focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-all placeholder:text-[var(--muted-text)]"
                                 />
-                                <button onClick={pickFromList} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full py-3">{t('pick')}</button>
+                                <LiquidButton onClick={pickFromList} className="w-full h-11">
+                                    {t('pick')}
+                                </LiquidButton>
 
                                 {picked && (
                                     <div className="mt-10 text-center">
-                                        <div className="text-sm text-[#9ca3af] mb-3">{t('winner')}</div>
-                                        <div className="text-[32px] font-bold text-[#facc15]">{picked}</div>
+                                        <div className="text-sm text-[var(--muted-text)] mb-3">{t('winner')}</div>
+                                        <div className="text-[32px] font-bold text-yellow-400 animate-in fade-in zoom-in duration-300">{picked}</div>
                                     </div>
                                 )}
                             </div>
@@ -116,20 +125,20 @@ export default function RandomGeneratorClient() {
 
                         {tab === 'coin' && (
                             <div className="text-center py-10">
-                                <button onClick={flipCoin} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-4 px-10 text-lg flex items-center gap-3 mx-auto">
+                                <LiquidButton onClick={flipCoin} className="mx-auto h-14 px-10 text-lg gap-3">
                                     <Dices size={24} /> {t('flip')}
-                                </button>
+                                </LiquidButton>
 
                                 {coinResult && (
                                     <div className="mt-10">
-                                        <div className="w-[120px] h-[120px] rounded-full bg-gradient-to-br from-[#f97316] to-[#facc15] flex items-center justify-center text-2xl font-bold text-black mx-auto shadow-[0_0_40px_rgba(249,115,22,0.4)]">
+                                        <div className="w-[120px] h-[120px] rounded-full bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center text-2xl font-bold text-black mx-auto shadow-[0_0_40px_rgba(249,115,22,0.4)] animate-in spin-in-180 duration-500">
                                             {coinResult}
                                         </div>
                                     </div>
                                 )}
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
                 </div>
             </div>
         </main>

@@ -1,9 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Share2 } from "lucide-react";
+import { Share2, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function OgGeneratorClient() {
     const t = useTranslations('OgGenerator');
@@ -36,58 +40,68 @@ export default function OgGeneratorClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                            <div className="flex flex-col gap-4">
+                        <LiquidCard className="p-8">
+                            <div className="flex flex-col gap-6">
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('title')}</label>
-                                    <input type="text" value={title} onChange={e => setTitle(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('title')}</label>
+                                    <LiquidInput type="text" value={title} onChange={e => setTitle(e.target.value)} />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('description')}</label>
-                                    <textarea value={desc} onChange={e => setDesc(e.target.value)} className="input-field w-full h-20 p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('description')}</label>
+                                    <textarea
+                                        value={desc}
+                                        onChange={e => setDesc(e.target.value)}
+                                        className="w-full h-24 bg-neutral-100 dark:bg-black/30 border border-transparent dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
+                                    />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('image')}</label>
-                                    <input type="text" value={image} onChange={e => setImage(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('image')}</label>
+                                    <LiquidInput type="text" value={image} onChange={e => setImage(e.target.value)} />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('url')}</label>
-                                    <input type="text" value={url} onChange={e => setUrl(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('url')}</label>
+                                    <LiquidInput type="text" value={url} onChange={e => setUrl(e.target.value)} />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('type')}</label>
-                                    <select value={type} onChange={e => setType(e.target.value)} className="w-full p-3 rounded-xl bg-[#111] border border-[#333] text-white">
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('type')}</label>
+                                    <LiquidSelect value={type} onChange={e => setType(e.target.value)}>
                                         <option value="website">{t('website')}</option>
                                         <option value="article">{t('article')}</option>
                                         <option value="profile">{t('profile')}</option>
-                                    </select>
+                                    </LiquidSelect>
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
 
                         <div className="flex flex-col gap-6">
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                                <div className="p-3 bg-white/5 text-[13px] text-[#9ca3af] border-b border-white/5">{t('preview')}</div>
-                                <div className="p-0 bg-[#f0f2f5] rounded-b-2xl">
-                                    <div className="w-full h-[200px] flex items-center justify-center text-[#8b9dc3] bg-cover bg-center"
+                            <LiquidCard className="p-0 overflow-hidden">
+                                <div className="p-3 bg-neutral-100/50 dark:bg-white/5 text-[13px] font-medium text-[var(--muted-text)] border-b border-[var(--border-color)]">{t('preview')}</div>
+                                <div className="p-0 bg-[#f0f2f5] border-b border-[var(--border-color)]">
+                                    <div className="w-full h-[200px] flex items-center justify-center text-[#8b9dc3] bg-cover bg-center overflow-hidden"
                                         style={{ backgroundImage: image ? `url(${image})` : 'none', backgroundColor: image ? 'transparent' : '#dfe3ee' }}>
                                         {!image && <Share2 size={48} />}
                                     </div>
-                                    <div className="p-3 bg-[#f0f2f5] border-t border-[#ddd]">
-                                        <div className="text-xs text-[#606770] uppercase">{url ? new URL(url).hostname : 'EXAMPLE.COM'}</div>
-                                        <div className="text-base font-semibold text-[#1d2129] my-1 leading-tight">{title || "Your Page Title"}</div>
-                                        <div className="text-sm text-[#606770] leading-snug max-h-10 overflow-hidden line-clamp-2">{desc || "A description of your page content goes here."}</div>
+                                    <div className="p-4 bg-[#f0f2f5] border-t border-[#ddd]">
+                                        <div className="text-xs text-[#606770] uppercase truncate">{url ? new URL(url).hostname : 'EXAMPLE.COM'}</div>
+                                        <div className="text-base font-bold text-[#1d2129] my-1 leading-tight line-clamp-2">{title || "Your Page Title"}</div>
+                                        <div className="text-sm text-[#606770] leading-snug max-h-12 overflow-hidden line-clamp-2">{desc || "A description of your page content goes here."}</div>
                                     </div>
                                 </div>
-                            </div>
+                            </LiquidCard>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0">
-                                <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('generatedHtml')}</div>
-                                <textarea readOnly value={output} className="w-full h-[150px] p-5 rounded-none bg-transparent border-none text-[#fb923c] font-mono resize-none outline-none" />
-                                <div className="p-3 text-right border-t border-white/10">
-                                    <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4">{t('copy')}</button>
+                            <LiquidCard className="p-0 flex-1 flex flex-col">
+                                <div className="p-4 px-6 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <span className="font-medium text-orange-500">{t('generatedHtml')}</span>
+                                    <LiquidButton onClick={() => navigator.clipboard.writeText(output)} variant="ghost" className="h-8 py-0 px-3 text-xs gap-2">
+                                        <Copy size={14} /> {t('copy')}
+                                    </LiquidButton>
                                 </div>
-                            </div>
+                                <textarea
+                                    readOnly
+                                    value={output}
+                                    className="w-full h-[200px] p-5 bg-transparent border-none text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
+                                />
+                            </LiquidCard>
                         </div>
                     </div>
 

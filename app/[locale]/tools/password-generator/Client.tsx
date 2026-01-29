@@ -5,7 +5,8 @@ import { Copy, Check, RefreshCw, Lock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
-import MotionCard from "../../../components/ui/MotionCard";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { toast } from "sonner";
 
 export default function PasswordGeneratorClient() {
@@ -57,29 +58,32 @@ export default function PasswordGeneratorClient() {
                         icon={<ToolIcon name="Key" size={32} />}
                     />
 
-                    <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] p-10 mb-6 text-center">
-                        <div className="text-[32px] font-bold text-[#4ade80] font-mono mb-6 break-all min-h-[48px]">
+                    <LiquidCard className="p-10 mb-6 text-center">
+                        <div className="text-[32px] font-bold text-green-500 font-mono mb-8 break-all min-h-[48px] tracking-wider">
                             {password}
                         </div>
 
                         <div className="flex justify-center gap-4">
-                            <button onClick={generatePassword} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8 flex items-center gap-2">
+                            <LiquidButton onClick={generatePassword} className="px-8 gap-2">
                                 <RefreshCw size={18} /> {t('generateNew')}
-                            </button>
-                            <button onClick={copyToClipboard} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-3 px-8 flex items-center gap-2">
+                            </LiquidButton>
+                            <LiquidButton onClick={copyToClipboard} variant="secondary" className="px-8 gap-2">
                                 <Copy size={18} />
                                 {tCommon('copy')}
-                            </button>
+                            </LiquidButton>
                         </div>
-                    </MotionCard>
+                    </LiquidCard>
 
-                    <MotionCard className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] p-8">
-                        <h3 className="text-base font-semibold text-white mb-5">{t('configuration')}</h3>
+                    <LiquidCard className="p-8">
+                        <h3 className="text-base font-semibold text-[var(--foreground)] mb-8 flex items-center gap-2">
+                            <ToolIcon name="Settings" size={20} className="text-[var(--muted-text)]" />
+                            {t('configuration')}
+                        </h3>
 
-                        <div className="mb-6">
-                            <div className="flex justify-between mb-2">
-                                <label className="text-[#9ca3af]">{t('length')}</label>
-                                <span className="text-[#fb923c] font-bold">{length}</span>
+                        <div className="mb-8 p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-[var(--border-color)]">
+                            <div className="flex justify-between mb-4">
+                                <label className="text-[var(--muted-text)] font-medium">{t('length')}</label>
+                                <span className="text-orange-500 font-bold text-lg">{length}</span>
                             </div>
                             <input
                                 type="range"
@@ -87,25 +91,34 @@ export default function PasswordGeneratorClient() {
                                 max="64"
                                 value={length}
                                 onChange={(e) => setLength(Number(e.target.value))}
-                                className="w-full accent-[#fb923c]"
+                                className="w-full accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer"
                             />
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <label className="flex items-center gap-3 cursor-pointer p-3 rounded-xl bg-white/[0.03]">
-                                <input type="checkbox" checked={useUppercase} onChange={(e) => setUseUppercase(e.target.checked)} className="w-[18px] h-[18px] accent-[#fb923c]" />
-                                <span className="text-white">{t('uppercase')}</span>
+                            <label className="flex items-center gap-4 cursor-pointer p-4 rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 border border-[var(--border-color)] transition-all group select-none">
+                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${useUppercase ? 'bg-orange-500 border-orange-500' : 'border-[var(--muted-text)] bg-transparent'}`}>
+                                    {useUppercase && <Check size={12} className="text-white" />}
+                                </div>
+                                <input type="checkbox" checked={useUppercase} onChange={(e) => setUseUppercase(e.target.checked)} className="hidden" />
+                                <span className="text-[var(--foreground)] group-hover:text-orange-500 transition-colors font-medium">{t('uppercase')}</span>
                             </label>
-                            <label className="flex items-center gap-3 cursor-pointer p-3 rounded-xl bg-white/[0.03]">
-                                <input type="checkbox" checked={useNumbers} onChange={(e) => setUseNumbers(e.target.checked)} className="w-[18px] h-[18px] accent-[#fb923c]" />
-                                <span className="text-white">{t('numbers')}</span>
+                            <label className="flex items-center gap-4 cursor-pointer p-4 rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 border border-[var(--border-color)] transition-all group select-none">
+                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${useNumbers ? 'bg-orange-500 border-orange-500' : 'border-[var(--muted-text)] bg-transparent'}`}>
+                                    {useNumbers && <Check size={12} className="text-white" />}
+                                </div>
+                                <input type="checkbox" checked={useNumbers} onChange={(e) => setUseNumbers(e.target.checked)} className="hidden" />
+                                <span className="text-[var(--foreground)] group-hover:text-orange-500 transition-colors font-medium">{t('numbers')}</span>
                             </label>
-                            <label className="flex items-center gap-3 cursor-pointer p-3 rounded-xl bg-white/[0.03]">
-                                <input type="checkbox" checked={useSymbols} onChange={(e) => setUseSymbols(e.target.checked)} className="w-[18px] h-[18px] accent-[#fb923c]" />
-                                <span className="text-white">{t('symbols')}</span>
+                            <label className="flex items-center gap-4 cursor-pointer p-4 rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 border border-[var(--border-color)] transition-all group select-none">
+                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${useSymbols ? 'bg-orange-500 border-orange-500' : 'border-[var(--muted-text)] bg-transparent'}`}>
+                                    {useSymbols && <Check size={12} className="text-white" />}
+                                </div>
+                                <input type="checkbox" checked={useSymbols} onChange={(e) => setUseSymbols(e.target.checked)} className="hidden" />
+                                <span className="text-[var(--foreground)] group-hover:text-orange-500 transition-colors font-medium">{t('symbols')}</span>
                             </label>
                         </div>
-                    </MotionCard>
+                    </LiquidCard>
 
                 </div>
             </div>

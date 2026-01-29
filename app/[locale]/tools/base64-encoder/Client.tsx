@@ -6,6 +6,10 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function Base64EncoderClient() {
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
@@ -29,8 +33,6 @@ export default function Base64EncoderClient() {
         }
     };
 
-
-
     const swapMode = () => {
         setMode(mode === "encode" ? "decode" : "encode");
         setInput(output);
@@ -50,60 +52,65 @@ export default function Base64EncoderClient() {
                     />
 
                     {/* Mode Toggle */}
-                    <div className="flex items-center gap-3 mb-6">
-                        <button
-                            onClick={() => setMode("encode")}
-                            className={`py-2.5 px-6 ${mode === "encode" ? "inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]" : "inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]"}`}
-                        >
-                            {t('encode')}
-                        </button>
-                        <button onClick={swapMode} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-3">
-                            <ArrowRightLeft size={16} />
-                        </button>
-                        <button
-                            onClick={() => setMode("decode")}
-                            className={`py-2.5 px-6 ${mode === "decode" ? "inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]" : "inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]"}`}
-                        >
-                            {t('decode')}
-                        </button>
+                    <div className="flex justify-center mb-8">
+                        <div className="dark:bg-neutral-800 p-1 rounded-xl flex gap-1 border border-neutral-200 dark:border-white/5">
+                            <button
+                                onClick={() => setMode("encode")}
+                                className={`py-2 px-6 rounded-lg text-sm font-medium transition-all ${mode === "encode" ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300'}`}
+                            >
+                                {t('encode')}
+                            </button>
+                            <button
+                                onClick={swapMode}
+                                className="py-2 px-3 rounded-lg text-sm text-neutral-500 hover:text-orange-500 hover:bg-neutral-200/50 dark:hover:bg-neutral-700/50 transition-all"
+                            >
+                                <ArrowRightLeft size={16} />
+                            </button>
+                            <button
+                                onClick={() => setMode("decode")}
+                                className={`py-2 px-6 rounded-lg text-sm font-medium transition-all ${mode === "decode" ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300'}`}
+                            >
+                                {t('decode')}
+                            </button>
+                        </div>
                     </div>
 
                     {/* Input */}
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl mb-5 overflow-hidden">
-                        <div className="px-5 py-4 border-b border-white/5 flex items-center justify-between">
-                            <span className="text-sm font-medium text-[#9ca3af]">{mode === "encode" ? t('textToEncode') : t('base64ToDecode')}</span>
-                            <span className="text-xs text-[#6b7280]">{input.length} {tCommon('chars')}</span>
+                    <LiquidCard className="p-0 mb-5 overflow-hidden">
+                        <div className="px-5 py-4 border-b border-[var(--border-color)] bg-neutral-50/50 dark:bg-white/5 flex items-center justify-between">
+                            <span className="text-sm font-medium text-[var(--muted-text)]">{mode === "encode" ? t('textToEncode') : t('base64ToDecode')}</span>
+                            <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} {tCommon('chars')}</span>
                         </div>
-                        <textarea
+                        <LiquidTextArea
                             value={input}
                             onChange={(e) => setInput(e.target.value)}
                             placeholder={mode === "encode" ? t('enterText') : t('enterBase64')}
-                            className="w-full h-[180px] bg-transparent border-none p-5 font-mono text-sm text-[#e5e7eb] resize-none outline-none"
+                            className="w-full h-[180px] bg-transparent border-none rounded-none focus:ring-0 text-base p-6 resize-none"
                         />
-                    </div>
+                    </LiquidCard>
 
                     {/* Convert Button */}
-                    <div className="text-center mb-5">
-                        <button onClick={handleConvert} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8">
+                    <div className="text-center mb-8">
+                        <LiquidButton onClick={handleConvert} className="px-10 py-3 text-base shadow-lg hover:shadow-xl">
                             {mode === "encode" ? t('encodeAction') : t('decodeAction')}
-                        </button>
+                        </LiquidButton>
                     </div>
 
                     {/* Output */}
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden">
-                        <div className="px-5 py-4 border-b border-white/5 flex items-center justify-between">
-                            <span className="text-sm font-medium text-[#9ca3af]">{mode === "encode" ? t('base64Output') : t('decodedText')}</span>
+                    <LiquidCard className="p-0 overflow-hidden">
+                        <div className="px-5 py-4 border-b border-[var(--border-color)] bg-neutral-50/50 dark:bg-white/5 flex items-center justify-between">
+                            <span className="text-sm font-medium text-[var(--muted-text)]">{mode === "encode" ? t('base64Output') : t('decodedText')}</span>
                             {output && (
-                                <CopyButton text={output} className="text-[#9ca3af] hover:text-[#fb923c]" />
+                                <CopyButton text={output} className="text-[var(--muted-text)] hover:text-orange-500" />
                             )}
                         </div>
-                        <textarea
+                        <LiquidTextArea
                             value={error || output}
                             readOnly
                             placeholder={t('resultPlaceholder')}
-                            className={`w-full h-[180px] bg-transparent border-none p-5 font-mono text-sm resize-none outline-none ${error ? 'text-[#ef4444]' : 'text-[#4ade80]'}`}
+                            className={`w-full h-[180px] bg-transparent border-none rounded-none focus:ring-0 text-base p-6 resize-none ${error ? 'text-red-500' : 'text-green-600 dark:text-green-400'}`}
                         />
-                    </div>
+                    </LiquidCard>
                 </div>
             </div>
         </main>
