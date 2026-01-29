@@ -52,7 +52,7 @@ export default function PrimeFactorsClient() {
                             <label className="block mb-3 text-[#9ca3af] text-[13px]">{t('PrimeFactors.inputLabel')}</label>
                             <input
                                 type="number" value={num} onChange={e => calculate(e.target.value)}
-                                className="input-field w-full p-4 text-2xl text-center rounded-xl bg-black/30 border border-white/10 text-white outline-none focus:border-[#fb923c]/50 transition-colors"
+                                className="input-field w-full p-4 text-2xl text-center rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] outline-none focus:border-[#fb923c]/50 transition-colors"
                                 placeholder={t('PrimeFactors.placeholder')}
                             />
                         </div>
@@ -60,7 +60,7 @@ export default function PrimeFactorsClient() {
                         {factors.length > 0 && (
                             <div>
                                 <div className="text-[13px] text-[#9ca3af] mb-3">{t('PrimeFactors.factors')}</div>
-                                <div className="text-[32px] font-bold text-white flex flex-wrap gap-3 justify-center items-center">
+                                <div className="text-[32px] font-bold text-[var(--foreground)] flex flex-wrap gap-3 justify-center items-center">
                                     {factors.map((f, i) => (
                                         <div key={i} className="flex items-center gap-3">
                                             <span className="text-[#fb923c]">{f}</span>

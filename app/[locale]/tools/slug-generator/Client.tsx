@@ -41,14 +41,14 @@ export default function SlugGeneratorClient() {
                                 type="text"
                                 value={input} onChange={e => setInput(e.target.value)}
                                 placeholder="Hello World! This is a Title."
-                                className="input-field w-full p-4 text-lg rounded-xl bg-black/30 border border-white/10 text-white text-center"
+                                className="input-field w-full p-4 text-lg rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-center"
                             />
                         </div>
 
                         {output && (
                             <div className="p-6 bg-[#22c55e]/10 rounded-2xl border border-[#22c55e]/20">
                                 <div className="text-[13px] text-[#22c55e] mb-2 font-semibold">{t('generated')}</div>
-                                <div className="text-2xl font-bold text-white font-mono break-all">{output}</div>
+                                <div className="text-2xl font-bold text-[var(--foreground)] font-mono break-all">{output}</div>
                                 <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] mt-4 py-2 px-6">{t('copy')}</button>
                             </div>
                         )}

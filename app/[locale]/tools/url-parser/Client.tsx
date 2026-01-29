@@ -56,7 +56,7 @@ export default function UrlParserClient() {
                             <input
                                 type="text" value={input} onChange={e => setInput(e.target.value)}
                                 placeholder="https://example.com/path?query=123"
-                                className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]"
                             />
                         </div>
 
@@ -69,7 +69,7 @@ export default function UrlParserClient() {
                                     return (
                                         <div key={key}>
                                             <div className="text-[13px] text-[#9ca3af] capitalize">{key}</div>
-                                            <div className="text-white break-all p-2 bg-white/5 rounded-md mt-1">{String(val) || '-'}</div>
+                                            <div className="text-[var(--foreground)] break-all p-2 bg-neutral-100 dark:bg-white/5 rounded-md mt-1">{String(val) || '-'}</div>
                                         </div>
                                     );
                                 })}
@@ -79,9 +79,9 @@ export default function UrlParserClient() {
                                         <div className="text-[13px] text-[#9ca3af]">{t('params')}</div>
                                         <div className="mt-2 flex flex-col gap-2">
                                             {Object.entries(parsed.params).map(([k, v]) => (
-                                                <div key={k} className="flex bg-white/5 rounded-md p-2">
+                                                <div key={k} className="flex bg-neutral-100 dark:bg-white/5 rounded-md p-2">
                                                     <div className="w-[120px] font-semibold text-[#fb923c]">{k}</div>
-                                                    <div className="flex-1 text-white break-all">{String(v)}</div>
+                                                    <div className="flex-1 text-[var(--foreground)] break-all">{String(v)}</div>
                                                 </div>
                                             ))}
                                         </div>

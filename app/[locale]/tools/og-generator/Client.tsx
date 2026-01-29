@@ -6,7 +6,8 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function OgGeneratorClient() {
@@ -64,11 +65,15 @@ export default function OgGeneratorClient() {
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('type')}</label>
-                                    <LiquidSelect value={type} onChange={e => setType(e.target.value)}>
-                                        <option value="website">{t('website')}</option>
-                                        <option value="article">{t('article')}</option>
-                                        <option value="profile">{t('profile')}</option>
-                                    </LiquidSelect>
+                                    <LiquidSelect
+                                        value={type}
+                                        onChange={setType}
+                                        options={[
+                                            { value: "website", label: t('website') },
+                                            { value: "article", label: t('article') },
+                                            { value: "profile", label: t('profile') }
+                                        ]}
+                                    />
                                 </div>
                             </div>
                         </LiquidCard>

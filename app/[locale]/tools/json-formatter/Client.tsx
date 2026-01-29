@@ -10,7 +10,7 @@ import MotionCard from "../../../components/ui/MotionCard";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidSelect } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function JSONFormatterClient() {
     const t = useTranslations('ToolPage');
@@ -115,7 +115,7 @@ export default function JSONFormatterClient() {
                     />
 
                     {/* Controls */}
-                    <div className="flex flex-wrap items-center gap-4 mb-8">
+                    <div className="relative z-20 flex flex-wrap items-center gap-4 mb-8">
                         <LiquidButton onClick={formatJSON} className="h-11 px-6 text-sm">
                             {t('common.format')} JSON
                         </LiquidButton>
@@ -131,14 +131,15 @@ export default function JSONFormatterClient() {
 
                         <div className="flex items-center gap-2 bg-neutral-100/50 dark:bg-neutral-800/50 backdrop-blur-xl border border-[var(--border-color)] rounded-xl px-4 h-11 transition-all hover:border-orange-500/50 group">
                             <label className="text-[13px] text-[var(--muted-text)] whitespace-nowrap group-hover:text-orange-500 transition-colors">{t('common.indent')}</label>
-                            <select
-                                value={indentSize}
-                                onChange={(e) => setIndentSize(Number(e.target.value))}
-                                className="bg-transparent border-none outline-none text-[var(--foreground)] text-[13px] cursor-pointer font-medium"
-                            >
-                                <option value={2} className="bg-neutral-800 text-white">2 {t('JsonFormatter.spaces')}</option>
-                                <option value={4} className="bg-neutral-800 text-white">4 {t('JsonFormatter.spaces')}</option>
-                            </select>
+                            <LiquidSelect
+                                value={String(indentSize)}
+                                onChange={(val) => setIndentSize(Number(val))}
+                                options={[
+                                    { value: "2", label: `2 ${t('JsonFormatter.spaces')}` },
+                                    { value: "4", label: `4 ${t('JsonFormatter.spaces')}` }
+                                ]}
+                                className="min-w-[120px] bg-transparent border-none"
+                            />
                         </div>
 
                         <div className="w-px h-8 bg-[var(--border-color)] mx-1 hidden md:block" />

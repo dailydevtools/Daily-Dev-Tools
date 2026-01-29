@@ -190,7 +190,7 @@ export default function Home() {
             <p className="text-(--muted-text)">{t('toolsCount', { count: filteredTools.length })}</p>
           </div>
 
-          {/* Deep Liquid Tabs (Hover + Active Motion) */}
+          {/* Deep Liquid Tabs (Hover + Active Motion) - FIXED FOR LIGHT/DARK MODE */}
           <div className="flex justify-center mb-12 w-full px-4 overflow-hidden">
             <div
               className="flex flex-nowrap gap-1 p-1 bg-[rgba(255,255,255,0.9)] dark:bg-[var(--card-bg)] rounded-full backdrop-blur-xl backdrop-saturate-150 relative z-0 overflow-x-auto max-w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] border border-[var(--card-border)] scroll-smooth mx-auto shadow-[0_18px_45px_rgba(15,23,42,0.08)] dark:shadow-none"
@@ -281,9 +281,17 @@ export default function Home() {
                     />
                   )}
                   <span className="relative flex items-center gap-1.5">
-                    <Star size={13} className={activeCategory === "Favorites" ? "text-orange-500 fill-orange-500" : ""} />
+                    <Star
+                      size={13}
+                      className={activeCategory === "Favorites"
+                        ? "text-orange-500 fill-orange-500"
+                        : "text-neutral-600 dark:text-neutral-400"
+                      }
+                    />
                     {t('categories.Favorites')}
-                    <span className={activeCategory === "Favorites" ? "opacity-100" : "opacity-60"}>({favorites.length})</span>
+                    <span className={activeCategory === "Favorites" ? "opacity-100" : "opacity-60"}>
+                      ({favorites.length})
+                    </span>
                   </span>
                 </button>
               )}

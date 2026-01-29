@@ -12,7 +12,8 @@ interface Rule {
 }
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function RobotsGeneratorClient() {
@@ -88,12 +89,13 @@ export default function RobotsGeneratorClient() {
                                         />
                                         <LiquidSelect
                                             value={r.allow ? "Allow" : "Disallow"}
-                                            onChange={e => updateRule(i, 'allow', e.target.value === "Allow")}
+                                            onChange={(val) => updateRule(i, 'allow', val === "Allow")}
                                             className={`h-9 text-sm ${r.allow ? 'text-green-500' : 'text-red-500'}`}
-                                        >
-                                            <option value="Allow">{t('RobotsGenerator.allow')}</option>
-                                            <option value="Disallow">{t('RobotsGenerator.disallow')}</option>
-                                        </LiquidSelect>
+                                            options={[
+                                                { value: "Allow", label: t('RobotsGenerator.allow') },
+                                                { value: "Disallow", label: t('RobotsGenerator.disallow') }
+                                            ]}
+                                        />
                                         <LiquidInput
                                             type="text" value={r.path} onChange={e => updateRule(i, 'path', e.target.value)}
                                             placeholder="/"

@@ -62,11 +62,11 @@ export default function TimezoneConverterClient() {
                         <div className="flex gap-6 mb-10">
                             <div className="flex-1">
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('date')}</label>
-                                <input type="date" value={date} onChange={e => setDate(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                <input type="date" value={date} onChange={e => setDate(e.target.value)} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                             </div>
                             <div className="flex-1">
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('time')}</label>
-                                <input type="time" value={time} onChange={e => setTime(e.target.value)} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                <input type="time" value={time} onChange={e => setTime(e.target.value)} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                             </div>
                         </div>
 

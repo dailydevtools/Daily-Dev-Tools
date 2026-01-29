@@ -6,7 +6,8 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function PaypalLinkClient() {
@@ -50,14 +51,16 @@ export default function PaypalLinkClient() {
                                 <div className="w-[120px]">
                                     <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('PayPalLink.currency')}</label>
                                     <LiquidSelect
-                                        value={currency} onChange={e => setCurrency(e.target.value)}
-                                    >
-                                        <option value="USD">USD</option>
-                                        <option value="EUR">EUR</option>
-                                        <option value="GBP">GBP</option>
-                                        <option value="CAD">CAD</option>
-                                        <option value="AUD">AUD</option>
-                                    </LiquidSelect>
+                                        value={currency}
+                                        onChange={setCurrency}
+                                        options={[
+                                            { value: "USD", label: "USD" },
+                                            { value: "EUR", label: "EUR" },
+                                            { value: "GBP", label: "GBP" },
+                                            { value: "CAD", label: "CAD" },
+                                            { value: "AUD", label: "AUD" }
+                                        ]}
+                                    />
                                 </div>
                             </div>
 

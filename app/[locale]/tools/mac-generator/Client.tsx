@@ -7,7 +7,8 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function MacGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -56,12 +57,16 @@ export default function MacGeneratorClient() {
                         <div className="grid grid-cols-2 gap-6 mb-8">
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('MacGenerator.format')}</label>
-                                <LiquidSelect value={format} onChange={e => setFormat(e.target.value)}>
-                                    <option value="Colon">MM:MM:MM:SS:SS:SS</option>
-                                    <option value="Dash">MM-MM-MM-SS-SS-SS</option>
-                                    <option value="Dot">MMMM.MMSS.SSSS</option>
-                                    <option value="None">MMMMMMSSSSSS</option>
-                                </LiquidSelect>
+                                <LiquidSelect
+                                    value={format}
+                                    onChange={setFormat}
+                                    options={[
+                                        { value: "Colon", label: "MM:MM:MM:SS:SS:SS" },
+                                        { value: "Dash", label: "MM-MM-MM-SS-SS-SS" },
+                                        { value: "Dot", label: "MMMM.MMSS.SSSS" },
+                                        { value: "None", label: "MMMMMMSSSSSS" }
+                                    ]}
+                                />
                             </div>
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('MacGenerator.quantity')}</label>

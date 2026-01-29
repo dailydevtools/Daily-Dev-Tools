@@ -6,6 +6,7 @@ import { Copy, Check, Download, Upload, Trash2, Code2, Settings, Play, Terminal,
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 // Helper to define supported languages
 const LANGUAGES = [
@@ -148,38 +149,32 @@ export default function CodeEditorClient() {
                     />
 
                     {/* Controls Bar */}
-                    <div className="flex flex-wrap items-center gap-3 mb-6 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] p-4 rounded-[20px]">
+                    <div className="relative z-20 flex flex-wrap items-center gap-3 mb-6 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] p-4 rounded-[20px]">
 
                         {/* Language Selector */}
                         <div className="flex items-center gap-2">
                             <span className="text-xs text-[var(--muted-text)] font-medium uppercase tracking-wider">{tEditor('language')}</span>
-                            <select
+                            <LiquidSelect
                                 value={language}
-                                onChange={(e) => {
-                                    setLanguage(e.target.value);
+                                onChange={(val) => {
+                                    setLanguage(val);
                                     setOutput(null);
                                 }}
-                                className="bg-transparent text-[var(--foreground)] text-sm font-medium border border-border-color rounded-lg px-3 py-1.5 outline-none focus:border-[#f97316] cursor-pointer"
-                            >
-                                {LANGUAGES.map(lang => (
-                                    <option key={lang} value={lang} className="bg-[var(--card-bg)]">{lang}</option>
-                                ))}
-                            </select>
+                                options={LANGUAGES}
+                                className="min-w-[140px]"
+                            />
                         </div>
 
                         <div className="w-[1px] h-8 bg-[var(--border-color)] mx-2 hidden sm:block" />
 
                         {/* Theme & Settings */}
                         <div className="flex items-center gap-3">
-                            <select
+                            <LiquidSelect
                                 value={theme}
-                                onChange={(e) => setTheme(e.target.value)}
-                                className="bg-transparent text-[var(--foreground)] text-sm border border-border-color rounded-lg px-3 py-1.5 outline-none cursor-pointer"
-                            >
-                                {THEMES.map(th => (
-                                    <option key={th} value={th} className="bg-[var(--card-bg)]">{th === 'vs-dark' ? 'Dark' : 'Light'}</option>
-                                ))}
-                            </select>
+                                onChange={setTheme}
+                                options={THEMES.map(th => ({ value: th, label: th === 'vs-dark' ? 'Dark' : 'Light' }))}
+                                className="min-w-[100px]"
+                            />
 
                             <div className="flex items-center gap-2 border border-border-color rounded-lg px-3 py-1.5">
                                 <span className="text-xs text-[var(--muted-text)]">Size</span>
@@ -243,7 +238,7 @@ export default function CodeEditorClient() {
                     {/* Editor & Output Container */}
                     <div className={`grid gap-4 h-[75vh] ${output !== null ? 'grid-rows-[1fr_auto] lg:grid-rows-1 lg:grid-cols-2' : 'grid-rows-1'}`}>
                         {/* Editor */}
-                        <div className={`rounded-[20px] overflow-hidden border border-[var(--card-border)] shadow-2xl bg-[#1e1e1e]`}>
+                        <div className={`rounded-[20px] overflow-hidden border border-[var(--card-border)] shadow-2xl ${theme === 'vs-dark' ? 'bg-[#1e1e1e]' : 'bg-white'}`}>
                             <Editor
                                 height="100%"
                                 language={language}
@@ -269,21 +264,21 @@ export default function CodeEditorClient() {
 
                         {/* Output Panel */}
                         {output !== null && (
-                            <div className="bg-[#1e1e1e] border border-[var(--card-border)] rounded-[20px] overflow-hidden flex flex-col max-h-[30vh] lg:max-h-full animate-in slide-in-from-bottom-5 lg:slide-in-from-right-5 fade-in duration-300">
-                                <div className="flex items-center justify-between px-4 py-2 bg-[#2d2d2d] border-b border-[var(--card-border)]">
-                                    <div className="flex items-center gap-2 text-sm font-medium text-[var(--foreground)]">
+                            <div className={`border border-[var(--card-border)] rounded-[20px] overflow-hidden flex flex-col max-h-[30vh] lg:max-h-full animate-in slide-in-from-bottom-5 lg:slide-in-from-right-5 fade-in duration-300 ${theme === 'vs-dark' ? 'bg-[#1e1e1e]' : 'bg-white'}`}>
+                                <div className={`flex items-center justify-between px-4 py-2 border-b border-[var(--card-border)] ${theme === 'vs-dark' ? 'bg-[#2d2d2d]' : 'bg-neutral-100'}`}>
+                                    <div className={`flex items-center gap-2 text-sm font-medium ${theme === 'vs-dark' ? 'text-white' : 'text-neutral-900'}`}>
                                         <Terminal size={16} />
                                         {tEditor('output')}
                                     </div>
                                     <button
                                         onClick={clearOutput}
-                                        className="p-1 text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors hover:bg-white/10 rounded"
+                                        className={`p-1 transition-colors rounded ${theme === 'vs-dark' ? 'text-gray-400 hover:text-white hover:bg-white/10' : 'text-gray-500 hover:text-black hover:bg-black/10'}`}
                                         title={tEditor('clearOutput')}
                                     >
                                         <X size={16} />
                                     </button>
                                 </div>
-                                <div className="p-4 overflow-auto font-mono text-sm whitespace-pre-wrap text-white/90 selection:bg-white/20 h-full">
+                                <div className={`p-4 overflow-auto font-mono text-sm whitespace-pre-wrap selection:bg-white/20 h-full ${theme === 'vs-dark' ? 'text-white/90' : 'text-neutral-900'}`}>
                                     {output}
                                 </div>
                             </div>

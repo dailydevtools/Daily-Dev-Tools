@@ -7,7 +7,8 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidInput, LiquidTextArea, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function HmacGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -76,13 +77,15 @@ export default function HmacGeneratorClient() {
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('HmacGenerator.algorithm')}</label>
                                 <LiquidSelect
-                                    value={algo} onChange={e => setAlgo(e.target.value)}
-                                >
-                                    <option value="SHA-1">SHA-1</option>
-                                    <option value="SHA-256">SHA-256</option>
-                                    <option value="SHA-384">SHA-384</option>
-                                    <option value="SHA-512">SHA-512</option>
-                                </LiquidSelect>
+                                    value={algo}
+                                    onChange={setAlgo}
+                                    options={[
+                                        { value: "SHA-1", label: "SHA-1" },
+                                        { value: "SHA-256", label: "SHA-256" },
+                                        { value: "SHA-384", label: "SHA-384" },
+                                        { value: "SHA-512", label: "SHA-512" }
+                                    ]}
+                                />
                             </div>
                         </div>
 

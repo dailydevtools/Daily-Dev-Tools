@@ -15,7 +15,7 @@ interface ConvertedFile {
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidSelect } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function ImageConverterClient() {
     const t = useTranslations('ToolPage');
@@ -133,12 +133,13 @@ export default function ImageConverterClient() {
                                     <label className="block mb-2 text-sm font-medium text-[var(--muted-text)]">{t('ImageConverter.format')}</label>
                                     <LiquidSelect
                                         value={format}
-                                        onChange={e => setFormat(e.target.value)}
-                                    >
-                                        <option value="image/webp">WebP</option>
-                                        <option value="image/jpeg">JPEG</option>
-                                        <option value="image/png">PNG</option>
-                                    </LiquidSelect>
+                                        onChange={setFormat}
+                                        options={[
+                                            { value: "image/webp", label: "WebP" },
+                                            { value: "image/jpeg", label: "JPEG" },
+                                            { value: "image/png", label: "PNG" }
+                                        ]}
+                                    />
                                 </div>
                                 <div className="flex-1 min-w-[150px]">
                                     <label className="block mb-2 text-sm font-medium text-[var(--muted-text)]">{t('ImageConverter.quality')} ({Math.round(quality * 100)}%)</label>

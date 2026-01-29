@@ -60,27 +60,27 @@ export default function CronGeneratorClient() {
                             <div className="flex items-center gap-4 flex-wrap">
                                 <div className="flex-1 min-w-[120px]">
                                     <label className="block text-[#fb923c] text-[13px] font-semibold mb-2">{t('CronGenerator.minute')}</label>
-                                    <input type="text" value={min} onChange={(e) => setMin(e.target.value)} className="w-full p-3 rounded-xl border border-white/10 bg-black/30 text-white text-lg text-center" />
+                                    <input type="text" value={min} onChange={(e) => setMin(e.target.value)} className="w-full p-3 rounded-xl border border-neutral-200 dark:border-white/10 bg-transparent dark:bg-black/30 text-[var(--foreground)] text-lg text-center" />
                                 </div>
                                 <div className="flex-1 min-w-[120px]">
                                     <label className="block text-[#fb923c] text-[13px] font-semibold mb-2">{t('CronGenerator.hour')}</label>
-                                    <input type="text" value={hour} onChange={(e) => setHour(e.target.value)} className="w-full p-3 rounded-xl border border-white/10 bg-black/30 text-white text-lg text-center" />
+                                    <input type="text" value={hour} onChange={(e) => setHour(e.target.value)} className="w-full p-3 rounded-xl border border-neutral-200 dark:border-white/10 bg-transparent dark:bg-black/30 text-[var(--foreground)] text-lg text-center" />
                                 </div>
                                 <div className="flex-1 min-w-[120px]">
                                     <label className="block text-[#fb923c] text-[13px] font-semibold mb-2">{t('CronGenerator.dayMonth')}</label>
-                                    <input type="text" value={dom} onChange={(e) => setDom(e.target.value)} className="w-full p-3 rounded-xl border border-white/10 bg-black/30 text-white text-lg text-center" />
+                                    <input type="text" value={dom} onChange={(e) => setDom(e.target.value)} className="w-full p-3 rounded-xl border border-neutral-200 dark:border-white/10 bg-transparent dark:bg-black/30 text-[var(--foreground)] text-lg text-center" />
                                 </div>
                                 <div className="flex-1 min-w-[120px]">
                                     <label className="block text-[#fb923c] text-[13px] font-semibold mb-2">{t('CronGenerator.month')}</label>
-                                    <input type="text" value={month} onChange={(e) => setMonth(e.target.value)} className="w-full p-3 rounded-xl border border-white/10 bg-black/30 text-white text-lg text-center" />
+                                    <input type="text" value={month} onChange={(e) => setMonth(e.target.value)} className="w-full p-3 rounded-xl border border-neutral-200 dark:border-white/10 bg-transparent dark:bg-black/30 text-[var(--foreground)] text-lg text-center" />
                                 </div>
                                 <div className="flex-1 min-w-[120px]">
                                     <label className="block text-[#fb923c] text-[13px] font-semibold mb-2">{t('CronGenerator.dayWeek')}</label>
-                                    <input type="text" value={dow} onChange={(e) => setDow(e.target.value)} className="w-full p-3 rounded-xl border border-white/10 bg-black/30 text-white text-lg text-center" />
+                                    <input type="text" value={dow} onChange={(e) => setDow(e.target.value)} className="w-full p-3 rounded-xl border border-neutral-200 dark:border-white/10 bg-transparent dark:bg-black/30 text-[var(--foreground)] text-lg text-center" />
                                 </div>
                             </div>
 
-                            <div className="bg-white/5 p-6 rounded-2xl flex items-center justify-between">
+                            <div className="bg-neutral-100 dark:bg-white/5 p-6 rounded-2xl flex items-center justify-between">
                                 <div className="text-3xl font-mono text-[#4ade80] font-bold">
                                     {cronString}
                                 </div>

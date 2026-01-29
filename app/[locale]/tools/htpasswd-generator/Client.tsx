@@ -7,7 +7,8 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function HtpasswdGeneratorClient() {
     const t = useTranslations('HtpasswdGenerator');
@@ -58,9 +59,13 @@ export default function HtpasswdGeneratorClient() {
 
                         <div className="mb-8">
                             <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('algorithm')}</label>
-                            <LiquidSelect value={algo} onChange={e => setAlgo(e.target.value)}>
-                                <option value="sha1">{t('sha1')}</option>
-                            </LiquidSelect>
+                            <LiquidSelect
+                                value={algo}
+                                onChange={setAlgo}
+                                options={[
+                                    { value: "sha1", label: t('sha1') }
+                                ]}
+                            />
                         </div>
 
                         <LiquidButton onClick={generate} className="w-full mb-8 py-3">

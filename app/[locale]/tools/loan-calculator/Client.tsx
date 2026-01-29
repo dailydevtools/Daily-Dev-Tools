@@ -6,7 +6,8 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function LoanCalculatorClient() {
     const t = useTranslations('ToolPage');
@@ -100,12 +101,14 @@ export default function LoanCalculatorClient() {
                                         className="flex-1"
                                     />
                                     <LiquidSelect
-                                        value={termType} onChange={e => setTermType(e.target.value as any)}
+                                        value={termType}
+                                        onChange={(val) => setTermType(val as any)}
                                         className="w-32"
-                                    >
-                                        <option value="years">{t('LoanCalculator.years')}</option>
-                                        <option value="months">{t('LoanCalculator.months')}</option>
-                                    </LiquidSelect>
+                                        options={[
+                                            { value: "years", label: t('LoanCalculator.years') },
+                                            { value: "months", label: t('LoanCalculator.months') }
+                                        ]}
+                                    />
                                 </div>
                             </div>
                         </LiquidCard>

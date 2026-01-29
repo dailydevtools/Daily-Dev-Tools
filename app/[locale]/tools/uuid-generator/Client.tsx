@@ -58,7 +58,7 @@ export default function UuidGeneratorClient() {
                         icon={<Fingerprint size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex items-center gap-4 mb-6 bg-white/5 p-4 rounded-xl">
+                    <div className="flex items-center gap-4 mb-6 bg-neutral-100 dark:bg-white/5 p-4 rounded-xl">
                         <div className="flex items-center gap-2">
                             <span className="text-[#9ca3af] text-sm">{t('UuidGenerator.generateCount')}</span>
                             <input
@@ -67,7 +67,7 @@ export default function UuidGeneratorClient() {
                                 max="100"
                                 value={amount}
                                 onChange={(e) => setAmount(Number(e.target.value))}
-                                className="bg-black/30 border border-white/10 text-white p-2 rounded-lg w-20 text-sm outline-none"
+                                className="bg-white dark:bg-black/30 border border-neutral-300 dark:border-white/10 text-[var(--foreground)] p-2 rounded-lg w-20 text-sm outline-none"
                             />
                         </div>
                         <button onClick={generateUuids} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2 px-6 flex items-center gap-2">

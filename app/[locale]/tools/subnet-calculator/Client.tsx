@@ -68,7 +68,7 @@ export default function SubnetCalculatorClient() {
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('ip')}</label>
                                 <input
                                     type="text" value={ip} onChange={e => { setIp(e.target.value); }}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                    className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]"
                                     placeholder="192.168.1.1"
                                 />
                             </div>
@@ -76,7 +76,7 @@ export default function SubnetCalculatorClient() {
                                 <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('cidr')}</label>
                                 <input
                                     type="number" min="0" max="32" value={cidr} onChange={e => { setCidr(e.target.value); }}
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                    className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]"
                                 />
                             </div>
                             <div className="flex items-end">
@@ -86,27 +86,27 @@ export default function SubnetCalculatorClient() {
 
                         {info && (
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('subnetMask')}</div>
-                                    <div className="text-lg font-semibold text-white">{info.mask}</div>
+                                    <div className="text-lg font-semibold text-[var(--foreground)]">{info.mask}</div>
                                 </div>
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('networkAddress')}</div>
                                     <div className="text-lg font-semibold text-[#fb923c]">{info.network}</div>
                                 </div>
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('firstHost')}</div>
-                                    <div className="text-lg font-semibold text-white">{info.first}</div>
+                                    <div className="text-lg font-semibold text-[var(--foreground)]">{info.first}</div>
                                 </div>
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('lastHost')}</div>
-                                    <div className="text-lg font-semibold text-white">{info.last}</div>
+                                    <div className="text-lg font-semibold text-[var(--foreground)]">{info.last}</div>
                                 </div>
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('broadcastAddress')}</div>
                                     <div className="text-lg font-semibold text-[#ef4444]">{info.broadcast}</div>
                                 </div>
-                                <div className="p-5 bg-white/5 rounded-xl border border-white/5">
+                                <div className="p-5 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5">
                                     <div className="text-[13px] text-[#9ca3af] mb-1">{t('totalHosts')}</div>
                                     <div className="text-lg font-semibold text-[#22c55e]">{info.count}</div>
                                 </div>

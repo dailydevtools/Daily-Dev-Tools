@@ -32,7 +32,7 @@ export default function WhatsAppLinkClient() {
                                     <input
                                         type="text" value={phone} onChange={e => setPhone(e.target.value)}
                                         placeholder="e.g. 15551234567"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
+                                        className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]"
                                     />
                                     <div className="text-xs text-[#6b7280] mt-2">{t('hint')}</div>
                                 </div>
@@ -41,7 +41,7 @@ export default function WhatsAppLinkClient() {
                                     <textarea
                                         value={message} onChange={e => setMessage(e.target.value)}
                                         placeholder="Hello, I'm interested..."
-                                        className="input-field w-full h-[120px] p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y"
+                                        className="input-field w-full h-[120px] p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] resize-y"
                                     />
                                 </div>
                             </div>

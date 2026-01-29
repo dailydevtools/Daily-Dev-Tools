@@ -120,7 +120,7 @@ select:focus-visible {
   }
 
   .animate-marquee {
-    animation: marquee 360s linear infinite;
+    animation: marquee 50s linear infinite;
   }
 
 

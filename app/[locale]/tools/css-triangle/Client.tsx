@@ -80,18 +80,18 @@ border-color: transparent transparent ${color} transparent;`;
                                     <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('color')}</label>
                                     <div className="flex gap-3">
                                         <input type="color" value={color} onChange={e => setColor(e.target.value)} className="w-10 h-10 p-0 border-none rounded-lg bg-transparent cursor-pointer" />
-                                        <input type="text" value={color} onChange={e => setColor(e.target.value)} className="input-field flex-1 p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                        <input type="text" value={color} onChange={e => setColor(e.target.value)} className="input-field flex-1 p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                     </div>
                                 </div>
 
                                 <div className="flex gap-6">
                                     <div className="flex-1">
                                         <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('width')}</label>
-                                        <input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                        <input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                     </div>
                                     <div className="flex-1">
                                         <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('height')}</label>
-                                        <input type="number" value={height} onChange={e => setHeight(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white" />
+                                        <input type="number" value={height} onChange={e => setHeight(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
                                     </div>
                                 </div>
                             </div>

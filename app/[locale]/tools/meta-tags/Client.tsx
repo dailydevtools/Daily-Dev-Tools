@@ -59,7 +59,7 @@ export default function MetaTagsClient() {
                                 </div>
                                 <textarea
                                     value={desc} onChange={e => setDesc(e.target.value)}
-                                    className="w-full h-24 bg-neutral-100 dark:bg-black/30 border border-transparent dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
+                                    className="w-full h-24 bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
                                 />
                             </div>
 

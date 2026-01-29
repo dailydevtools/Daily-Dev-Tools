@@ -57,7 +57,7 @@ export default function TextToolsClient() {
                             <textarea
                                 value={input} onChange={e => setInput(e.target.value)}
                                 placeholder={t('TextTools.inputPlaceholder')}
-                                className="input-field w-full h-[120px] p-3 rounded-xl bg-black/30 border border-white/10 text-white resize-y"
+                                className="input-field w-full h-[120px] p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] resize-y"
                             />
                         </div>
 
@@ -67,7 +67,7 @@ export default function TextToolsClient() {
                                 <textarea
                                     readOnly
                                     value={output}
-                                    className="w-full h-[120px] bg-black/30 border border-white/10 rounded-xl p-4 text-[#fb923c] text-base resize-y outline-none"
+                                    className="w-full h-[120px] bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 rounded-xl p-4 text-[#fb923c] text-base resize-y outline-none"
                                 />
                                 <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3 p-2">
                                     <Copy size={16} />

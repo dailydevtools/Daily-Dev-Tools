@@ -12,7 +12,8 @@ interface ChartData {
 }
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput, LiquidSelect } from "../../../components/ui/LiquidInput";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function InterestCalculatorClient() {
     const t = useTranslations('ToolPage');
@@ -99,11 +100,15 @@ export default function InterestCalculatorClient() {
                             {type === 'compound' && (
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.frequency')}</label>
-                                    <LiquidSelect value={frequency} onChange={e => setFrequency(Number(e.target.value))}>
-                                        <option value={1}>{t('InterestCalculator.annually')}</option>
-                                        <option value={12}>{t('InterestCalculator.monthly')}</option>
-                                        <option value={365}>{t('InterestCalculator.daily')}</option>
-                                    </LiquidSelect>
+                                    <LiquidSelect
+                                        value={frequency.toString()}
+                                        onChange={(val) => setFrequency(Number(val))}
+                                        options={[
+                                            { value: "1", label: t('InterestCalculator.annually') },
+                                            { value: "12", label: t('InterestCalculator.monthly') },
+                                            { value: "365", label: t('InterestCalculator.daily') }
+                                        ]}
+                                    />
                                 </div>
                             )}
                         </LiquidCard>
