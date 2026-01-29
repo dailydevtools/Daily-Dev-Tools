@@ -95,7 +95,7 @@ export default function CommandPalette() {
                         onChange={e => { setQuery(e.target.value); setActiveIndex(0); }}
                         onKeyDown={handleKeyDown}
                         placeholder={t('searchPlaceholder')}
-                        className="flex-1 bg-transparent border-none outline-none text-lg text-[var(--title-color)] font-inherit"
+                        className="flex-1 bg-transparent border-none outline-none focus-visible:outline-none text-lg text-[var(--title-color)] placeholder:text-[var(--muted-text)] font-inherit"
                     />
                     <button
                         onClick={() => setIsOpen(false)}
