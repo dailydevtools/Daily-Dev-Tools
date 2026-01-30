@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Editor from "@monaco-editor/react";
+import dynamic from "next/dynamic";
+const Editor = dynamic(() => import("@monaco-editor/react"), { ssr: false });
 import { Copy, Check, Download, Upload, Trash2, Code2, Settings, Play, Terminal, X } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
