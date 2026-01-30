@@ -17,6 +17,7 @@ interface LiquidSelectProps {
     className?: string;
     title?: string; // Label for accessibility/visual
     disabled?: boolean;
+    variant?: "default" | "ghost";
 }
 
 const LiquidSelect = memo(function LiquidSelect({
@@ -26,7 +27,8 @@ const LiquidSelect = memo(function LiquidSelect({
     placeholder = "Select...",
     className = "",
     title,
-    disabled = false
+    disabled = false,
+    variant = "default"
 }: LiquidSelectProps) {
     const [isOpen, setIsOpen] = useState(false);
     const [focusedIndex, setFocusedIndex] = useState(-1);
@@ -142,11 +144,14 @@ const LiquidSelect = memo(function LiquidSelect({
                 aria-expanded={isOpen}
                 className={`
                     flex items-center justify-between gap-2 w-full px-3 py-2 rounded-lg
-                    text-sm font-medium transition-all duration-200
-                    bg-[var(--card-bg)] border border-[var(--card-border)]
-                    text-[var(--foreground)] outline-none
-                    ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer hover:border-[#fb923c] focus-visible:ring-2 focus-visible:ring-orange-500/50'}
-                    ${isOpen ? 'border-[#fb923c] ring-2 ring-orange-500/20' : ''}
+                    text-sm font-medium transition-all duration-200 outline-none
+                    ${variant === 'default'
+                        ? 'bg-[var(--card-bg)] border border-[var(--card-border)]'
+                        : 'bg-transparent border border-transparent hover:bg-neutral-100 dark:hover:bg-white/5'}
+                    text-[var(--foreground)]
+                    ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
+                    ${variant === 'default' && !disabled ? 'hover:border-[#fb923c] focus-visible:ring-2 focus-visible:ring-orange-500/50' : ''}
+                    ${isOpen ? (variant === 'default' ? 'border-[#fb923c] ring-2 ring-orange-500/20' : 'bg-neutral-100 dark:bg-white/5') : ''}
                 `}
             >
                 <div className="flex items-center gap-2 truncate">
