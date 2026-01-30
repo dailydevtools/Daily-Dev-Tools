@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Menu, X, Github } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -11,6 +11,7 @@ import { Link, usePathname } from "../../i18n/routing";
 import { useTranslations } from "next-intl";
 
 export default function Header() {
+    const [isScrolled, setIsScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [hoveredNav, setHoveredNav] = useState<string | null>(null);
     const t = useTranslations('Header');
@@ -21,9 +22,20 @@ export default function Header() {
         { id: 'blog', label: t('blog'), href: '/blog' }
     ];
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
     return (
-        <nav className="fixed top-0 left-0 right-0 z-[100] px-6 py-3 bg-[var(--header-bg)] backdrop-blur-[20px] border-b border-[var(--border-color)] flex justify-center">
-            <div className="w-full max-w-[1200px] flex items-center justify-between">
+        <nav
+            className={`fixed left-1/2 -translate-x-1/2 z-[100] flex justify-center items-center w-[98%] max-w-[1280px] border border-[var(--border-color)] bg-[var(--header-bg)] backdrop-blur-[20px] shadow-sm transition-all duration-300
+                ${isScrolled ? "top-1" : "top-4"} rounded-2xl`}
+        >
+            <div className="flex items-center justify-between py-3 w-full h-full max-w-[1200px] mx-auto">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 h-9 rounded-lg no-underline group focus-visible:ring-2 focus-visible:ring-orange-500/50 outline-none">
                     <Image src="/project_logo.webp" alt="DailyDevTools Logo" width={42} height={42} priority />
@@ -89,6 +101,7 @@ export default function Header() {
                         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
+
             </div>
 
             {/* Mobile Menu */}
@@ -99,7 +112,7 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0, height: 'auto' }}
                         exit={{ opacity: 0, y: -20, height: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="absolute top-full left-0 right-0 bg-[var(--background)] border-b border-[var(--border-color)] px-6 py-4 flex flex-col gap-2 md:hidden mobile-menu overflow-hidden"
+                        className="absolute top-full left-0 right-0 bg-[var(--background)] border-b border-[var(--border-color)] px-6 py-4 flex flex-col gap-2 md:hidden mobile-menu overflow-hidden shadow-lg"
                     >
                         <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
                             <HeaderSearchTrigger />
