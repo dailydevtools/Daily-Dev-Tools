@@ -5,6 +5,9 @@ import { Copy, Check, Trash2, Database } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+
 export default function SqlFormatterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -51,41 +54,64 @@ export default function SqlFormatterClient() {
                     />
 
                     <div className="flex items-center gap-3 mb-6">
-                        <button onClick={formatSql} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-6">
+                        <LiquidButton onClick={formatSql} className="px-6 py-3">
                             {t('common.format')} SQL
-                        </button>
-                        <button onClick={() => { setInput(""); setOutput(""); }} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2.5 px-6 text-[#ef4444] border-red-500/30 flex items-center gap-2">
-                            <Trash2 size={16} /> {t('common.clear')}
-                        </button>
+                        </LiquidButton>
+                        <LiquidButton onClick={() => { setInput(""); setOutput(""); }} variant="ghost" className="px-6 py-3 border border-red-500/30 text-red-500 hover:text-red-600 hover:bg-red-500/10">
+                            <Trash2 size={16} className="mr-2" /> {t('common.clear')}
+                        </LiquidButton>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden flex flex-col">
-                            <div className="p-3 px-5 border-b border-white/5 flex justify-between">
-                                <span className="text-sm font-medium text-[#9ca3af]">{t('common.input')} SQL</span>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                <div className="flex items-center gap-3">
+                                    <div className="flex gap-1.5 opacity-60">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                    </div>
+                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.input')} SQL</span>
+                                </div>
+                                <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
                             </div>
                             <textarea
                                 value={input}
                                 onChange={(e) => setInput(e.target.value)}
                                 placeholder={t('SqlFormatter.inputPlaceholder')}
-                                className="flex-1 h-[400px] bg-transparent border-none p-5 font-mono text-[13px] text-[#e5e7eb] resize-none outline-none"
+                                className="flex-1 min-h-[400px] w-full bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
+                                spellCheck={false}
                             />
-                        </div>
+                        </LiquidCard>
 
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden flex flex-col">
-                            <div className="p-3 px-5 border-b border-white/5 flex justify-between items-center">
-                                <span className="text-sm font-medium text-[#fb923c]">{t('common.output')}</span>
-                                <button onClick={copyToClipboard} className={`bg-transparent border-none cursor-pointer ${copied ? 'text-[#22c55e]' : 'text-[#9ca3af]'}`}>
-                                    {copied ? <Check size={16} /> : <Copy size={16} />}
-                                </button>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-green-500/20 transition-all relative">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                <div className="flex items-center gap-3">
+                                    <div className="flex gap-1.5 opacity-60">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                    </div>
+                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.output')}</span>
+                                </div>
+                                {output && (
+                                    <button
+                                        onClick={copyToClipboard}
+                                        className={`p-1.5 rounded-lg transition-colors bg-transparent border-none cursor-pointer hover:bg-black/5 dark:hover:bg-white/10 ${copied ? 'text-green-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
+                                        title={t('common.copy')}
+                                    >
+                                        {copied ? <Check size={16} /> : <Copy size={16} />}
+                                    </button>
+                                )}
                             </div>
                             <textarea
                                 value={output}
                                 readOnly
                                 placeholder={t('SqlFormatter.outputPlaceholder')}
-                                className="flex-1 h-[400px] bg-transparent border-none p-5 font-mono text-[13px] text-[#4ade80] resize-none outline-none"
+                                className="flex-1 min-h-[400px] w-full bg-transparent border-none p-5 font-mono text-[13px] text-green-600 dark:text-green-400 resize-none outline-none leading-relaxed placeholder:text-[var(--muted-text)]"
+                                spellCheck={false}
                             />
-                        </div>
+                        </LiquidCard>
                     </div>
 
                 </div>

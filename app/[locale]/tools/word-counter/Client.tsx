@@ -6,6 +6,8 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+
 export default function WordCounterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -61,27 +63,35 @@ export default function WordCounterClient() {
                             { label: t('WordCounter.paragraphs'), value: stats.paragraphs, color: '#60a5fa' },
                             { label: t('WordCounter.readingTime'), value: `~${stats.readingTime} ${t('WordCounter.min')}`, color: '#a78bfa' },
                         ].map((stat, i) => (
-                            <div key={i} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 rounded-2xl text-center flex flex-col items-center justify-center">
+                            <LiquidCard key={i} className="p-6 text-center flex flex-col items-center justify-center">
                                 <div className="text-3xl font-bold mb-1" style={{ color: stat.color }}>{stat.value}</div>
-                                <div className="text-xs text-[#9ca3af] uppercase tracking-wider">{stat.label}</div>
-                            </div>
+                                <div className="text-xs text-[var(--muted-text)] uppercase tracking-wider">{stat.label}</div>
+                            </LiquidCard>
                         ))}
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-3xl overflow-hidden flex flex-col">
-                        <div className="p-4 px-6 border-b border-white/5 flex items-center justify-between bg-white/5">
-                            <span className="font-medium text-[#fb923c]">{t('WordCounter.textInput')}</span>
-                            <button onClick={clearText} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-1.5 px-3 text-xs flex items-center gap-1.5 text-[#ef4444] border-red-500/20 hover:bg-red-500/10">
-                                <RefreshCw size={14} /> {t('WordCounter.clear')}
+                    <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                            <div className="flex items-center gap-3">
+                                <div className="flex gap-1.5 opacity-60">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                </div>
+                                <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('WordCounter.textInput')}</span>
+                            </div>
+                            <button onClick={clearText} className="text-xs flex items-center gap-1.5 text-red-500 hover:text-red-600 transition-colors bg-red-50 dark:bg-red-500/10 hover:bg-red-100 dark:hover:bg-red-500/20 px-2.5 py-1 rounded-md border border-red-200 dark:border-red-500/20">
+                                <RefreshCw size={12} /> {t('WordCounter.clear')}
                             </button>
                         </div>
                         <textarea
                             value={text}
                             onChange={(e) => setText(e.target.value)}
                             placeholder={t('WordCounter.inputPlaceholder')}
-                            className="flex-1 min-h-[400px] bg-transparent border-none p-6 text-[#e5e7eb] text-base resize-none outline-none leading-relaxed"
+                            className="flex-1 min-h-[400px] bg-transparent border-none p-6 text-[var(--foreground)] text-base resize-none outline-none leading-relaxed placeholder:text-[var(--muted-text)]"
+                            spellCheck={false}
                         />
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

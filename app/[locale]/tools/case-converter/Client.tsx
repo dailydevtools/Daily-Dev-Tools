@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Copy, Check, Type } from "lucide-react";
+import { Copy, Check, Type, RotateCcw } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidTextArea } from "../../../components/ui/LiquidInput";
-import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function CaseConverterClient() {
     const t = useTranslations('ToolPage');
@@ -90,18 +88,26 @@ export default function CaseConverterClient() {
                     <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_400px] gap-8">
 
                         {/* Input */}
-                        <LiquidCard className="p-6 flex flex-col h-[600px]">
-                            <div className="border-b border-[var(--border-color)] pb-4 mb-4 flex justify-between items-center">
-                                <label className="text-orange-500 font-semibold">{t('CaseConverter.inputText')}</label>
-                                <LiquidButton variant="ghost" onClick={() => setText("")} className="px-3 py-1.5 text-xs h-auto">
-                                    {t('CaseConverter.clear')}
-                                </LiquidButton>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[600px] group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                <div className="flex items-center gap-3">
+                                    <div className="flex gap-1.5 opacity-60">
+                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                    </div>
+                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('CaseConverter.inputText')}</span>
+                                </div>
+                                <button onClick={() => setText("")} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors">
+                                    <RotateCcw size={12} /> {t('CaseConverter.clear')}
+                                </button>
                             </div>
-                            <LiquidTextArea
+                            <textarea
                                 value={text}
                                 onChange={(e) => setText(e.target.value)}
                                 placeholder={t('CaseConverter.inputPlaceholder')}
-                                className="flex-1 bg-transparent border-none resize-none outline-none text-base leading-relaxed p-0 focus:ring-0 rounded-none h-full"
+                                className="flex-1 bg-transparent border-none p-6 text-[var(--foreground)] text-base resize-none outline-none leading-relaxed placeholder:text-[var(--muted-text)] font-sans"
+                                spellCheck={false}
                             />
                         </LiquidCard>
 
