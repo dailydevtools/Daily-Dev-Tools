@@ -64,10 +64,10 @@ export default function PasswordGeneratorClient() {
                         </div>
 
                         <div className="flex justify-center gap-4">
-                            <LiquidButton onClick={generatePassword} className="px-8 gap-2">
+                            <LiquidButton onClick={generatePassword} className="px-6 py-2.5 h-[46px] gap-2">
                                 <RefreshCw size={18} /> {t('generateNew')}
                             </LiquidButton>
-                            <LiquidButton onClick={copyToClipboard} variant="secondary" className="px-8 gap-2">
+                            <LiquidButton onClick={copyToClipboard} variant="secondary" className="px-6 py-2.5 h-[46px] gap-2 border-[var(--border-color)]">
                                 <Copy size={18} />
                                 {tCommon('copy')}
                             </LiquidButton>

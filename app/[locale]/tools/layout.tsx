@@ -18,7 +18,7 @@ export default function ToolsLayout({
             <RecentToolsTracker />
             <ScrollToTop />
             {/* Main Grid Layout: Left Ad | Content | Right Ad */}
-            <div className="flex-1 flex pt-16"> {/* Add padding for fixed header */}
+            <div className="flex-1 flex pt-24"> {/* Add padding for fixed header */}
 
                 {/* Left Sidebar Ad */}
                 <aside className="hidden xl:hidden min-[1400px]:flex w-[160px] shrink-0 pt-[120px] h-screen sticky top-0 flex-col items-center border-r border-[var(--border-color)]">

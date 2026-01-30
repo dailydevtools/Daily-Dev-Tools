@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function BackToTop() {
     const [visible, setVisible] = useState(false);
@@ -26,15 +27,28 @@ export default function BackToTop() {
         });
     };
 
-    if (!visible) return null;
-
     return (
-        <button
-            onClick={scrollToTop}
-            className="fixed bottom-8 right-8 z-[100] flex items-center justify-center w-12 h-12 p-0 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white rounded-full shadow-[0_4px_12px_rgba(249,115,22,0.4)] border-none cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]"
-            aria-label="Back to top"
-        >
-            <ArrowUp size={24} />
-        </button>
+        <AnimatePresence>
+            {visible && (
+                <motion.button
+                    initial={{ opacity: 0, scale: 0.8, y: -100 }}
+                    animate={{ opacity: 1, scale: 1, y: 0 }}
+                    exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 } }}
+                    transition={{ type: "spring", stiffness: 400, damping: 25, mass: 1.5 }}
+                    whileHover={{ scale: 1.1, translateY: -5 }}
+                    whileTap={{ scale: 0.9 }}
+                    onClick={scrollToTop}
+                    className="fixed bottom-8 right-8 z-[90] flex items-center justify-center w-12 h-12 p-0 
+                             bg-[var(--card-bg)] backdrop-blur-[20px] rounded-full 
+                             border border-[var(--border-color)] 
+                             shadow-[0_8px_32px_rgba(0,0,0,0.12)] 
+                             text-[var(--muted-text)]
+                             cursor-pointer transition-colors duration-300"
+                    aria-label="Back to top"
+                >
+                    <ArrowUp size={20} />
+                </motion.button>
+            )}
+        </AnimatePresence>
     );
 }

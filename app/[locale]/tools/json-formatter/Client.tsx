@@ -129,7 +129,7 @@ export default function JSONFormatterClient() {
                             {t('common.minify')}
                         </LiquidButton>
 
-                        <div className="flex items-center gap-2 bg-neutral-100/50 dark:bg-neutral-800/50 backdrop-blur-xl border border-[var(--border-color)] rounded-xl px-4 h-11 transition-all hover:border-orange-500/50 group">
+                        <div className="flex items-center gap-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl pl-4 pr-1 h-11 transition-all hover:border-orange-500/50 group">
                             <label className="text-[13px] text-[var(--muted-text)] whitespace-nowrap group-hover:text-orange-500 transition-colors">{t('common.indent')}</label>
                             <LiquidSelect
                                 value={String(indentSize)}
@@ -138,7 +138,8 @@ export default function JSONFormatterClient() {
                                     { value: "2", label: `2 ${t('JsonFormatter.spaces')}` },
                                     { value: "4", label: `4 ${t('JsonFormatter.spaces')}` }
                                 ]}
-                                className="min-w-[120px] bg-transparent border-none"
+                                className="min-w-[120px]"
+                                variant="ghost"
                             />
                         </div>
 

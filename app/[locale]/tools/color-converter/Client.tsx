@@ -6,7 +6,6 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput } from "../../../components/ui/LiquidInput";
 
 export default function ColorConverterClient() {
     const t = useTranslations('ToolPage');
@@ -71,72 +70,112 @@ export default function ColorConverterClient() {
                         icon={<Palette size={28} className="text-[#fb923c]" />}
                     />
 
-                    <LiquidCard className="p-10 grid grid-cols-1 md:grid-cols-[minmax(300px,1fr)_200px] gap-10">
-
+                    <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-8 items-start">
                         <div className="flex flex-col gap-6">
-                            <div>
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">HEX</label>
-                                <div className="flex gap-3">
-                                    <div
-                                        className="w-12 h-12 rounded-xl border border-[var(--border-color)] shadow-sm"
-                                        style={{ background: hex }}
-                                    />
-                                    <LiquidInput
-                                        type="text" value={hex} onChange={e => handleHexChange(e.target.value)}
-                                        className="flex-1 font-mono"
-                                    />
+                            {/* HEX Input */}
+                            <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-blue-500/20 transition-all">
+                                <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex gap-1.5 opacity-60">
+                                            <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                        </div>
+                                        <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">HEX</span>
+                                    </div>
+                                    <div className="w-4 h-4 rounded-full border border-black/10 dark:border-white/10 shadow-sm" style={{ background: hex }} />
                                 </div>
-                            </div>
-
-                            <div>
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">RGB</label>
-                                <div className="relative group">
-                                    <LiquidInput
-                                        type="text" value={rgb} readOnly
-                                        className="w-full font-mono text-[var(--muted-text)]"
-                                    />
-                                    <button
-                                        onClick={() => navigator.clipboard.writeText(`rgb(${rgb})`)}
-                                        className="absolute right-2 top-1/2 -translate-y-1/2 py-1.5 px-3 rounded-lg bg-neutral-200 dark:bg-neutral-800 text-[var(--muted-text)] hover:text-orange-500 text-xs font-medium transition-colors opacity-0 group-hover:opacity-100"
-                                    >
-                                        {t('ColorConverter.copy')}
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div>
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">HSL</label>
-                                <div className="relative group">
-                                    <LiquidInput
-                                        type="text" value={hsl} readOnly
-                                        className="w-full font-mono text-[var(--muted-text)]"
-                                    />
-                                    <button
-                                        onClick={() => navigator.clipboard.writeText(`hsl(${hsl})`)}
-                                        className="absolute right-2 top-1/2 -translate-y-1/2 py-1.5 px-3 rounded-lg bg-neutral-200 dark:bg-neutral-800 text-[var(--muted-text)] hover:text-orange-500 text-xs font-medium transition-colors opacity-0 group-hover:opacity-100"
-                                    >
-                                        {t('ColorConverter.copy')}
-                                    </button>
-                                </div>
-                            </div>
-                            <div className="text-xs text-[var(--muted-text)] opacity-60">{t('ColorConverter.hexToRgbNote')}</div>
-                        </div>
-
-                        <div className="flex flex-col gap-6 items-center justify-center">
-                            <div
-                                className="w-[180px] h-[180px] rounded-full shadow-[0_8px_32px_rgba(0,0,0,0.1),_inset_0_0_0_1px_rgba(255,255,255,0.1)] border-4 border-white dark:border-neutral-800 transition-all duration-300"
-                                style={{ background: hex }}
-                            />
-                            <div className="w-full relative h-10 overflow-hidden rounded-xl border border-[var(--border-color)]">
                                 <input
-                                    type="color"
+                                    type="text"
                                     value={hex}
                                     onChange={e => handleHexChange(e.target.value)}
-                                    className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer p-0 m-0"
+                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-lg text-[var(--foreground)] outline-none uppercase placeholder:text-[var(--muted-text)]"
+                                    spellCheck={false}
                                 />
+                            </LiquidCard>
+
+                            {/* RGB Output */}
+                            <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                                <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex gap-1.5 opacity-60">
+                                            <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                        </div>
+                                        <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">RGB</span>
+                                    </div>
+                                    <button
+                                        onClick={() => navigator.clipboard.writeText(`rgb(${rgb})`)}
+                                        className="text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors"
+                                        title={t('ColorConverter.copy')}
+                                    >
+                                        <Palette size={14} className="opacity-0 w-0" /> {/* Placeholder spacing if needed, else explicit Copylucide */}
+                                        <span className="text-[10px] bg-neutral-200 dark:bg-white/10 px-2 py-1 rounded inline-flex items-center gap-1 cursor-pointer hover:bg-neutral-300 dark:hover:bg-white/20">
+                                            Copy
+                                        </span>
+                                    </button>
+                                </div>
+                                <input
+                                    type="text"
+                                    value={rgb}
+                                    readOnly
+                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-base text-[var(--muted-text)] outline-none"
+                                />
+                            </LiquidCard>
+
+                            {/* HSL Output */}
+                            <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                                <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <div className="flex items-center gap-3">
+                                        <div className="flex gap-1.5 opacity-60">
+                                            <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                            <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                        </div>
+                                        <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">HSL</span>
+                                    </div>
+                                    <button
+                                        onClick={() => navigator.clipboard.writeText(`hsl(${hsl})`)}
+                                        className="text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors"
+                                        title={t('ColorConverter.copy')}
+                                    >
+                                        <span className="text-[10px] bg-neutral-200 dark:bg-white/10 px-2 py-1 rounded inline-flex items-center gap-1 cursor-pointer hover:bg-neutral-300 dark:hover:bg-white/20">
+                                            Copy
+                                        </span>
+                                    </button>
+                                </div>
+                                <input
+                                    type="text"
+                                    value={hsl}
+                                    readOnly
+                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-base text-[var(--muted-text)] outline-none"
+                                />
+                            </LiquidCard>
+
+                            <div className="text-xs text-[var(--muted-text)] opacity-60 pl-1">{t('ColorConverter.hexToRgbNote')}</div>
+                        </div>
+
+                        {/* Preview Column */}
+                        <div className="flex flex-col gap-6 items-center justify-center h-full min-h-[300px] bg-[var(--card-bg)] rounded-[30px] border border-[var(--card-border)] backdrop-blur-xl relative overflow-hidden">
+                            <div className="absolute inset-0 bg-neutral-50/30 dark:bg-white/5 z-0" />
+
+                            <div className="relative z-10 flex flex-col items-center gap-6">
+                                <div
+                                    className="w-[200px] h-[200px] rounded-full shadow-[0_20px_40px_-12px_rgba(0,0,0,0.2)] border-8 border-white dark:border-neutral-800 transition-all duration-300 ring-1 ring-black/5 dark:ring-white/10"
+                                    style={{ background: hex }}
+                                />
+                                <div className="w-48 relative h-12 overflow-hidden rounded-full shadow-sm border border-[var(--border-color)] ring-2 ring-white dark:ring-neutral-900">
+                                    <input
+                                        type="color"
+                                        value={hex}
+                                        onChange={e => handleHexChange(e.target.value)}
+                                        className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer p-0 m-0"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </LiquidCard>
+                    </div>
 
                 </div>
             </div>

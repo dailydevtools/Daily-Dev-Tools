@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useRef } from "react";
-import Editor from "@monaco-editor/react";
+import { useState, useRef, useEffect } from "react";
+import dynamic from "next/dynamic";
+const Editor = dynamic(() => import("@monaco-editor/react"), { ssr: false });
 import { Copy, Check, Download, Upload, Trash2, Code2, Settings, Play, Terminal, X } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { useTheme } from "../../../components/ThemeProvider";
 
 // Helper to define supported languages
 const LANGUAGES = [
@@ -35,6 +37,7 @@ const PISTON_RUNTIMES: Record<string, string> = {
 };
 
 export default function CodeEditorClient() {
+    const { theme: globalTheme } = useTheme();
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
     const tEditor = useTranslations('ToolPage.CodeEditor');
@@ -42,7 +45,12 @@ export default function CodeEditorClient() {
     // State
     const [code, setCode] = useState("// Start typing or paste your code here...");
     const [language, setLanguage] = useState("javascript");
-    const [theme, setTheme] = useState("vs-dark");
+    const [theme, setTheme] = useState(globalTheme === "light" ? "light" : "vs-dark");
+
+    // Sync editor theme with global theme
+    useEffect(() => {
+        setTheme(globalTheme === "light" ? "light" : "vs-dark");
+    }, [globalTheme]);
     const [fontSize, setFontSize] = useState(14);
     const [minimap, setMinimap] = useState(true);
     const [copied, setCopied] = useState(false);
@@ -176,13 +184,14 @@ export default function CodeEditorClient() {
                                 className="min-w-[100px]"
                             />
 
-                            <div className="flex items-center gap-2 border border-border-color rounded-lg px-3 py-1.5">
-                                <span className="text-xs text-[var(--muted-text)]">Size</span>
+                            <div className="flex items-center gap-2 border border-[var(--card-border)] bg-[var(--card-bg)] rounded-lg px-3 py-2 h-[38px] transition-all duration-200 hover:border-[#fb923c] focus-within:border-[#fb923c] focus-within:ring-2 focus-within:ring-orange-500/50 cursor-text group" onClick={() => document.getElementById('font-size-input')?.focus()}>
+                                <span className="text-xs text-[var(--muted-text)] font-medium uppercase tracking-wider whitespace-nowrap select-none group-hover:text-[var(--foreground)] transition-colors">Size</span>
                                 <input
+                                    id="font-size-input"
                                     type="number"
                                     value={fontSize}
                                     onChange={(e) => setFontSize(Number(e.target.value))}
-                                    className="w-12 bg-transparent text-[var(--foreground)] text-sm outline-none border-none"
+                                    className="w-12 bg-transparent text-[var(--foreground)] text-sm font-medium outline-none border-none p-0 appearance-none [-moz-appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                                     min={10} max={30}
                                 />
                             </div>
