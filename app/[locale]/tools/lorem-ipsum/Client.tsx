@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidInput } from "../../../components/ui/LiquidInput";
 
 export default function LoremIpsumClient() {
     const t = useTranslations('ToolPage');
@@ -54,23 +53,24 @@ export default function LoremIpsumClient() {
                         icon={<FileText size={28} className="text-[#fb923c]" />}
                     />
 
-                    <LiquidCard className="p-6 mb-6 flex flex-wrap items-center gap-6">
-                        <div className="flex items-center gap-3">
-                            <label className="text-orange-500 font-medium">{t('LoremIpsum.paragraphs')}</label>
-                            <LiquidInput
-                                type="number"
-                                min="1"
-                                max="20"
-                                value={paragraphs}
-                                onChange={(e) => setParagraphs(Number(e.target.value))}
-                                className="w-24 text-center"
-                            />
+                    <LiquidCard className="p-4 px-6 mb-6 flex flex-wrap items-center justify-between gap-4">
+                        <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-3 bg-neutral-100/50 dark:bg-white/5 p-1 pr-2 rounded-lg border border-[var(--border-color)]">
+                                <label className="text-[var(--muted-text)] font-medium text-sm px-3">{t('LoremIpsum.paragraphs')}</label>
+                                <input
+                                    type="number"
+                                    min="1"
+                                    max="20"
+                                    value={paragraphs}
+                                    onChange={(e) => setParagraphs(Number(e.target.value))}
+                                    className="w-16 text-center bg-transparent border-none outline-none text-[var(--foreground)] font-mono"
+                                />
+                            </div>
+                            <LiquidButton onClick={generateLorem} className="px-6 py-2.5 gap-2 h-10">
+                                <RefreshCw size={16} /> {t('LoremIpsum.generate')}
+                            </LiquidButton>
                         </div>
-                        <LiquidButton onClick={generateLorem} className="gap-2">
-                            <RefreshCw size={16} /> {t('LoremIpsum.generate')}
-                        </LiquidButton>
-                        <div className="flex-1" />
-                        <LiquidButton onClick={copyToClipboard} variant="ghost" className="gap-2">
+                        <LiquidButton onClick={copyToClipboard} variant="ghost" className="px-6 py-2.5 gap-2 h-10 border border-[var(--border-color)]">
                             {copied ? <Check size={16} className="text-green-500" /> : <Copy size={16} />}
                             {t('LoremIpsum.copyText')}
                         </LiquidButton>

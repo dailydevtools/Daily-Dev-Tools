@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidTextArea } from "../../../components/ui/LiquidInput";
 
 export default function HashGeneratorClient() {
     const [input, setInput] = useState("");
@@ -65,13 +64,24 @@ export default function HashGeneratorClient() {
                         icon={<Hash size={28} className="text-[#fb923c]" />}
                     />
 
-                    <LiquidCard className="p-6 mb-8">
-                        <label className="block text-sm font-medium text-[var(--muted-text)] mb-3">{t('inputText')}</label>
-                        <LiquidTextArea
+                    <LiquidCard className="p-0 mb-8 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                            <div className="flex items-center gap-3">
+                                <div className="flex gap-1.5 opacity-60">
+                                    <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                                    <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                                </div>
+                                <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('inputText')}</span>
+                            </div>
+                            <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
+                        </div>
+                        <textarea
                             value={input}
                             onChange={(e) => generateHashes(e.target.value)}
                             placeholder={t('placeholder')}
-                            className="min-h-[120px]"
+                            className="flex-1 w-full h-[150px] bg-transparent border-none p-5 font-mono text-[14px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
+                            spellCheck={false}
                         />
                     </LiquidCard>
 

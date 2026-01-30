@@ -5,6 +5,8 @@ import { Check, RefreshCw, CopyCheck, Fingerprint } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function UuidGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -49,7 +51,7 @@ export default function UuidGeneratorClient() {
 
     return (
         <main className="relative min-h-screen">
-            <div className="relative z-10 pb-16 px-6 pt-6">
+            <div className="relative z-10 pb-[60px] px-6 pt-6">
                 <div className="max-w-[900px] mx-auto">
 
                     <ToolPageHeader
@@ -58,40 +60,48 @@ export default function UuidGeneratorClient() {
                         icon={<Fingerprint size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex items-center gap-4 mb-6 bg-neutral-100 dark:bg-white/5 p-4 rounded-xl">
-                        <div className="flex items-center gap-2">
-                            <span className="text-[#9ca3af] text-sm">{t('UuidGenerator.generateCount')}</span>
+                    <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+                        <LiquidCard className="p-0 overflow-hidden flex items-center h-11 w-auto pr-2 group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <span className="px-4 text-xs font-medium text-[var(--muted-text)] border-r border-[var(--border-color)] bg-neutral-50/50 dark:bg-white/5 h-full flex items-center uppercase tracking-wider">
+                                {t('UuidGenerator.generateCount')}
+                            </span>
                             <input
                                 type="number"
                                 min="1"
                                 max="100"
                                 value={amount}
                                 onChange={(e) => setAmount(Number(e.target.value))}
-                                className="bg-white dark:bg-black/30 border border-neutral-300 dark:border-white/10 text-[var(--foreground)] p-2 rounded-lg w-20 text-sm outline-none"
+                                className="w-20 bg-transparent border-none text-[var(--foreground)] px-3 text-center outline-none h-full font-mono text-sm"
                             />
-                        </div>
-                        <button onClick={generateUuids} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2 px-6 flex items-center gap-2">
-                            <RefreshCw size={16} /> {t('UuidGenerator.generate')}
-                        </button>
-                        <button onClick={copyAll} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-6 flex items-center gap-2">
-                            {copied ? <Check size={16} className="text-[#22c55e]" /> : <CopyCheck size={16} />}
+                        </LiquidCard>
+
+                        <LiquidButton onClick={generateUuids} className="h-11 px-6 shadow-lg hover:shadow-xl">
+                            <RefreshCw size={16} className="mr-2" /> {t('UuidGenerator.generate')}
+                        </LiquidButton>
+
+                        <LiquidButton onClick={copyAll} variant="ghost" className="h-11 px-6 border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]">
+                            {copied ? <Check size={16} className="text-green-500 mr-2" /> : <CopyCheck size={16} className="mr-2" />}
                             {t('UuidGenerator.copyAll')}
-                        </button>
+                        </LiquidButton>
                     </div>
 
                     <div className="grid gap-3">
                         {uuids.map((uuid, i) => (
-                            <div key={i} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex items-center justify-between p-4 px-6 rounded-xl">
-                                <code className="text-base text-[#4ade80] font-mono">{uuid}</code>
-                                <CopyButton
-                                    text={uuid}
-                                    className="text-[#9ca3af] hover:bg-white/10"
-                                />
-                            </div>
+                            <LiquidCard key={i} className="p-0 overflow-hidden flex items-center justify-between transition-all hover:-translate-y-1 hover:shadow-md group">
+                                <div className="p-4 px-6 font-mono text-green-600 dark:text-green-400 text-base break-all">
+                                    {uuid}
+                                </div>
+                                <div className="pr-4">
+                                    <CopyButton
+                                        text={uuid}
+                                        className="text-[var(--muted-text)] hover:text-[var(--foreground)] hover:bg-neutral-100 dark:hover:bg-white/10"
+                                    />
+                                </div>
+                            </LiquidCard>
                         ))}
                     </div>
 
-                    <div className="text-center mt-8 text-[#6b7280] text-[13px]">
+                    <div className="text-center mt-8 text-[var(--muted-text)] text-[13px] opacity-70">
                         {t('UuidGenerator.generatedAt', { time: lastGenerated })}
                     </div>
 
