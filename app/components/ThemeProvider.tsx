@@ -21,17 +21,26 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        // Check localStorage or system preference
         const saved = localStorage.getItem("theme") as Theme;
-        if (saved) {
-            setTheme(saved);
-            document.documentElement.classList.remove("light", "dark");
-            document.documentElement.classList.add(saved);
-        } else {
-            // Default to dark
-            setTheme("dark");
+        const initialTheme = saved || "dark";
+
+        setTheme(initialTheme);
+
+        // IMPORTANT: Remove the dark class first
+        document.documentElement.classList.remove("dark");
+
+        // Only add it back if theme is dark
+        if (initialTheme === "dark") {
             document.documentElement.classList.add("dark");
         }
+
+        // Debug logs
+        console.log("=== THEME PROVIDER INIT ===");
+        console.log("Theme from localStorage:", saved);
+        console.log("Initial theme:", initialTheme);
+        console.log("HTML element classes:", document.documentElement.className);
+        console.log("Has dark class?", document.documentElement.classList.contains("dark"));
+
         setMounted(true);
     }, []);
 
@@ -39,8 +48,20 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         const newTheme = theme === "dark" ? "light" : "dark";
         setTheme(newTheme);
         localStorage.setItem("theme", newTheme);
-        document.documentElement.classList.remove("light", "dark");
-        document.documentElement.classList.add(newTheme);
+
+        // Remove dark class first
+        document.documentElement.classList.remove("dark");
+
+        // Add it back only if new theme is dark
+        if (newTheme === "dark") {
+            document.documentElement.classList.add("dark");
+        }
+
+        // Debug logs
+        console.log("=== THEME TOGGLED ===");
+        console.log("New theme:", newTheme);
+        console.log("HTML element classes:", document.documentElement.className);
+        console.log("Has dark class?", document.documentElement.classList.contains("dark"));
     };
 
     return (
