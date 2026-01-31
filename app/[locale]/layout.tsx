@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
-import "../globals.css";
+
 import { ThemeProvider } from "../components/ThemeProvider";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -151,6 +151,20 @@ export default async function LocaleLayout({
     return (
         <html lang={locale} suppressHydrationWarning>
             <head>
+                <script
+                    dangerouslySetInnerHTML={{
+                        __html: `
+                    (function() {
+                        const theme = localStorage.getItem('theme') || 'dark';
+                        if (theme === 'dark') {
+                            document.documentElement.classList.add('dark');
+                        } else {
+                            document.documentElement.classList.remove('dark');
+                        }
+                    })();
+                `,
+                    }}
+                />
                 <link rel="manifest" href="/manifest.json" />
                 {gaId && <link rel="preconnect" href="https://www.googletagmanager.com" />}
                 {gaId && <link rel="preconnect" href="https://www.google-analytics.com" />}
