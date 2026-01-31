@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function JsonCsvConverterClient() {
     const t = useTranslations('ToolPage');
@@ -79,21 +80,16 @@ export default function JsonCsvConverterClient() {
                         icon={<FileJson size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center mb-10">
-                        <div className="dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex gap-1">
-                            <button
-                                onClick={() => { setMode("json-to-csv"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'json-to-csv' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('JsonConverter.jsonToCsv')}
-                            </button>
-                            <button
-                                onClick={() => { setMode("csv-to-json"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'csv-to-json' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('JsonConverter.csvToJson')}
-                            </button>
-                        </div>
+                    <div className="mb-10 w-full max-w-[400px] mx-auto">
+                        <LiquidTabs
+                            tabs={["json-to-csv", "csv-to-json"]}
+                            activeTab={mode}
+                            onChange={(m) => { setMode(m as any); setInput(""); setOutput(""); }}
+                            labels={{
+                                "json-to-csv": t('JsonConverter.jsonToCsv'),
+                                "csv-to-json": t('JsonConverter.csvToJson')
+                            }}
+                        />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">

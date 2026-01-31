@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Play } from "lucide-react";
+import { Play, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function CssTriangleClient() {
     const t = useTranslations('CssTriangle');
@@ -60,15 +63,15 @@ border-color: transparent transparent ${color} transparent;`;
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                        <LiquidCard className="p-10">
                             <div className="flex flex-col gap-6">
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('direction')}</label>
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('direction')}</label>
                                     <div className="grid grid-cols-4 gap-2">
                                         {['top', 'right', 'bottom', 'left', 'top-left', 'top-right', 'bottom-left', 'bottom-right'].map(d => (
                                             <button
                                                 key={d} onClick={() => setDirection(d)}
-                                                className={`p-2 rounded-lg border text-xs transition-colors duration-200 ${direction === d ? 'border-[#fb923c] bg-orange-500/20 text-[#fb923c]' : 'border-white/10 bg-white/5 text-white'}`}
+                                                className={`p-2 rounded-lg border text-xs font-medium transition-colors duration-200 ${direction === d ? 'border-orange-500 bg-orange-500/10 text-orange-500' : 'border-[var(--border-color)] bg-[var(--card-bg)] text-[var(--muted-text)] hover:bg-[var(--card-hover-bg)] hover:text-[var(--foreground)]'}`}
                                             >
                                                 {d}
                                             </button>
@@ -77,28 +80,30 @@ border-color: transparent transparent ${color} transparent;`;
                                 </div>
 
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('color')}</label>
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('color')}</label>
                                     <div className="flex gap-3">
-                                        <input type="color" value={color} onChange={e => setColor(e.target.value)} className="w-10 h-10 p-0 border-none rounded-lg bg-transparent cursor-pointer" />
-                                        <input type="text" value={color} onChange={e => setColor(e.target.value)} className="input-field flex-1 p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                        <div className="relative w-10 h-10 rounded-lg overflow-hidden border border-[var(--border-color)] shrink-0">
+                                            <input type="color" value={color} onChange={e => setColor(e.target.value)} className="absolute inset-0 w-[150%] h-[150%] -top-[25%] -left-[25%] p-0 border-none cursor-pointer" />
+                                        </div>
+                                        <LiquidInput value={color} onChange={e => setColor(e.target.value)} />
                                     </div>
                                 </div>
 
                                 <div className="flex gap-6">
                                     <div className="flex-1">
-                                        <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('width')}</label>
-                                        <input type="number" value={width} onChange={e => setWidth(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                        <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('width')}</label>
+                                        <LiquidInput type="number" value={width} onChange={e => setWidth(Number(e.target.value))} />
                                     </div>
                                     <div className="flex-1">
-                                        <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('height')}</label>
-                                        <input type="number" value={height} onChange={e => setHeight(Number(e.target.value))} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                        <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('height')}</label>
+                                        <LiquidInput type="number" value={height} onChange={e => setHeight(Number(e.target.value))} />
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
 
                         <div className="flex flex-col gap-6">
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 flex items-center justify-center bg-[#111] min-h-[200px]">
+                            <LiquidCard className="p-10 flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 min-h-[200px]">
                                 <div style={{
                                     width: 0, height: 0, borderStyle: 'solid',
                                     borderWidth: direction === 'top' ? `0 ${width / 2}px ${height}px ${width / 2}px` :
@@ -118,15 +123,21 @@ border-color: transparent transparent ${color} transparent;`;
                                                             direction === 'bottom-left' ? `transparent transparent transparent ${color}` :
                                                                 `transparent transparent ${color} transparent`
                                 }} />
-                            </div>
+                            </LiquidCard>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0">
-                                <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('outputLabel')}</div>
-                                <textarea readOnly value={css} className="w-full h-[120px] p-5 rounded-none bg-transparent border-none text-[#fb923c] font-mono resize-none outline-none" />
-                                <div className="p-3 text-right border-t border-white/10">
-                                    <button onClick={() => navigator.clipboard.writeText(css)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] py-2 px-4 rounded-lg">{t('copy')}</button>
+                            <LiquidCard className="p-0 flex flex-col">
+                                <div className="p-4 px-6 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <span className="text-sm font-medium text-[var(--muted-text)]">CSS Output</span>
+                                    <LiquidButton onClick={() => navigator.clipboard.writeText(css)} variant="ghost" className="h-8 py-0 px-3 text-xs gap-2">
+                                        <Copy size={14} /> {t('copy')}
+                                    </LiquidButton>
                                 </div>
-                            </div>
+                                <LiquidTextArea
+                                    readOnly
+                                    value={css}
+                                    className="h-[150px] border-none !bg-transparent text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
+                                />
+                            </LiquidCard>
                         </div>
                     </div>
 

@@ -6,8 +6,10 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function RandomGeneratorClient() {
     const t = useTranslations('RandomGenerator');
@@ -54,21 +56,17 @@ export default function RandomGeneratorClient() {
                         icon={<Dices size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center gap-3 mb-8 overflow-x-auto pb-1">
-                        {[
-                            { id: 'number', label: t('numberGen') },
-                            { id: 'list', label: t('listGen') },
-                            { id: 'coin', label: t('coinGen') }
-                        ].map((item) => (
-                            <LiquidButton
-                                key={item.id}
-                                onClick={() => setTab(item.id as any)}
-                                variant={tab === item.id ? "primary" : "ghost"}
-                                className={`rounded-full h-11 px-6 transition-all ${tab === item.id ? '' : 'border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {item.label}
-                            </LiquidButton>
-                        ))}
+                    <div className="mb-8">
+                        <LiquidTabs
+                            tabs={['number', 'list', 'coin'] as const}
+                            activeTab={tab}
+                            onChange={setTab}
+                            labels={{
+                                number: t('numberGen'),
+                                list: t('listGen'),
+                                coin: t('coinGen')
+                            }}
+                        />
                     </div>
 
                     <LiquidCard className="p-8">
@@ -105,10 +103,10 @@ export default function RandomGeneratorClient() {
                         {tab === 'list' && (
                             <div>
                                 <label className="block text-[var(--muted-text)] mb-2 text-[13px]">{t('listLabel')}</label>
-                                <textarea
+                                <LiquidTextArea
                                     value={listInput}
                                     onChange={(e) => setListInput(e.target.value)}
-                                    className="w-full h-[200px] p-4 rounded-xl bg-neutral-100/50 dark:bg-black/30 border border-black/5 dark:border-white/10 text-[var(--foreground)] mb-6 font-mono resize-y focus:outline-none focus:ring-2 focus:ring-orange-500/50 transition-all placeholder:text-[var(--muted-text)]"
+                                    className="h-[200px] mb-6 resize-y"
                                 />
                                 <LiquidButton onClick={pickFromList} className="w-full h-11">
                                     {t('pick')}

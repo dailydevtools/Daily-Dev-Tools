@@ -13,6 +13,13 @@ export default function SignatureGeneratorClient() {
     const [color, setColor] = useState("#000000"); // Default black for signature
     const [width, setWidth] = useState(2);
 
+    // Set initial color based on theme
+    useEffect(() => {
+        if (document.documentElement.classList.contains('dark')) {
+            setColor("#ffffff");
+        }
+    }, []);
+
     // Initialize canvas context
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -117,7 +124,7 @@ export default function SignatureGeneratorClient() {
                         </div>
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 h-[400px] bg-white overflow-hidden cursor-crosshair relative">
+                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 h-[400px] bg-white dark:bg-white/5 overflow-hidden cursor-crosshair relative">
                         <canvas
                             ref={canvasRef}
                             onMouseDown={startDrawing}

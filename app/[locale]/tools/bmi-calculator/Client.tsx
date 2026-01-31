@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function BMICalculatorClient() {
     const t = useTranslations('ToolPage');
@@ -50,20 +51,15 @@ export default function BMICalculatorClient() {
 
                     <LiquidCard className="p-10 text-center">
                         <div className="flex justify-center mb-8">
-                            <div className="dark:bg-neutral-800 p-1 rounded-xl flex gap-1 border border-neutral-200 dark:border-white/5">
-                                <button
-                                    onClick={() => { setUnit("metric"); setBmi(null); setHeight(""); setWeight(""); }}
-                                    className={`py-2 px-6 rounded-lg text-sm font-medium transition-all ${unit === 'metric' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300'}`}
-                                >
-                                    {t('BmiCalculator.metric')}
-                                </button>
-                                <button
-                                    onClick={() => { setUnit("imperial"); setBmi(null); setHeight(""); setWeight(""); }}
-                                    className={`py-2 px-6 rounded-lg text-sm font-medium transition-all ${unit === 'imperial' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-neutral-500 hover:text-neutral-700 dark:hover:text-neutral-300'}`}
-                                >
-                                    {t('BmiCalculator.imperial')}
-                                </button>
-                            </div>
+                            <LiquidTabs
+                                tabs={['metric', 'imperial']}
+                                activeTab={unit}
+                                onChange={(tab) => { setUnit(tab as "metric" | "imperial"); setBmi(null); setHeight(""); setWeight(""); }}
+                                labels={{
+                                    metric: `${t('BmiCalculator.metric')} (kg/cm)`,
+                                    imperial: `${t('BmiCalculator.imperial')} (lbs/in)`
+                                }}
+                            />
                         </div>
 
                         <div className="grid grid-cols-2 gap-6 mb-8">

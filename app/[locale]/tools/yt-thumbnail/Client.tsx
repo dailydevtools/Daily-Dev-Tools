@@ -5,7 +5,8 @@ import { Download, Search, Image as ImageIcon } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
-
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function YTThumbnailClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -60,21 +61,21 @@ export default function YTThumbnailClient() {
                         icon={<ToolIcon name="Youtube" size={32} />}
                     />
 
-                    <div className="flex gap-3 mb-10">
-                        <div className="glass flex-1 px-5 flex items-center gap-3 rounded-xl">
-                            <Search className="text-[#9ca3af]" size={20} />
-                            <input
+                    <div className="flex flex-col md:flex-row gap-3 mb-10">
+                        <div className="relative flex-1">
+                            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[var(--muted-text)] pointer-events-none z-10" size={20} />
+                            <LiquidInput
                                 type="text"
                                 placeholder={t('YtThumbnail.inputPlaceholder')}
                                 value={url}
                                 onChange={(e) => setUrl(e.target.value)}
                                 onKeyDown={(e) => e.key === 'Enter' && extractId()}
-                                className="w-full h-14 bg-transparent border-none outline-none text-white text-base"
+                                className="pl-11"
                             />
                         </div>
-                        <button onClick={extractId} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] px-8 rounded-xl font-medium">
+                        <LiquidButton onClick={extractId} className="px-8">
                             {t('YtThumbnail.getThumbnail')}
-                        </button>
+                        </LiquidButton>
                     </div>
 
                     {error && (

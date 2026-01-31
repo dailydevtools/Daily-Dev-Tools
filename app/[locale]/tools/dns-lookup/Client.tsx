@@ -5,6 +5,9 @@ import { Globe } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 const RECORD_TYPES = ["A", "AAAA", "CNAME", "MX", "NS", "TXT", "PTR", "SRV", "SOA"];
 
@@ -48,24 +51,26 @@ export default function DNSLookupClient() {
                         icon={<Globe size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="relative z-20 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8 flex gap-4 items-center mb-6 flex-wrap">
-                        <Globe size={20} className="text-[#9ca3af]" />
-                        <input
-                            value={domain}
-                            onChange={e => setDomain(e.target.value)}
-                            onKeyDown={e => e.key === 'Enter' && lookup()}
-                            placeholder={t('DnsLookup.placeholder')}
-                            className="flex-1 p-3 rounded-lg bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-base min-w-[200px]"
-                        />
+                    <div className="relative z-20 flex flex-col md:flex-row gap-4 mb-6">
+                        <div className="relative flex-1">
+                            <Globe size={20} className="absolute left-4 top-1/2 -translate-y-1/2 text-[var(--muted-text)] z-10" />
+                            <LiquidInput
+                                value={domain}
+                                onChange={e => setDomain(e.target.value)}
+                                onKeyDown={e => e.key === 'Enter' && lookup()}
+                                placeholder={t('DnsLookup.placeholder')}
+                                className="pl-12"
+                            />
+                        </div>
                         <LiquidSelect
                             value={type}
                             onChange={setType}
                             options={RECORD_TYPES}
                             className="min-w-[120px]"
                         />
-                        <button onClick={lookup} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-6">
+                        <LiquidButton onClick={lookup} className="px-8">
                             {loading ? "..." : t('DnsLookup.lookup')}
-                        </button>
+                        </LiquidButton>
                     </div>
 
                     {error && <div className="text-[#ef4444] text-center mb-6">{error}</div>}
@@ -73,32 +78,32 @@ export default function DNSLookupClient() {
                     {data && (
                         <div className="grid gap-4">
                             <div className="flex gap-4 flex-wrap">
-                                <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex-1 p-5">
-                                    <div className="text-[13px] text-[#9ca3af] mb-1">{t('DnsLookup.status')}</div>
+                                <LiquidCard className="flex-1 p-5 text-center sm:text-left">
+                                    <div className="text-[13px] text-[var(--muted-text)] mb-1">{t('DnsLookup.status')}</div>
                                     <div className={`text-lg font-semibold ${data.Status === 0 ? 'text-[#22c55e]' : 'text-[#ef4444]'}`}>
                                         {data.Status === 0 ? "NOERROR" : `Error ${data.Status}`}
                                     </div>
-                                </div>
-                                <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex-1 p-5">
-                                    <div className="text-[13px] text-[#9ca3af] mb-1">{t('DnsLookup.time')}</div>
-                                    <div className="text-lg text-white font-semibold">
+                                </LiquidCard>
+                                <LiquidCard className="flex-1 p-5 text-center sm:text-left">
+                                    <div className="text-[13px] text-[var(--muted-text)] mb-1">{t('DnsLookup.time')}</div>
+                                    <div className="text-lg text-[var(--foreground)] font-semibold">
                                         {Date.now() - (data.Timestamp ? 0 : 0)} ms (est)
                                     </div>
-                                </div>
-                                <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 flex-1 p-5">
-                                    <div className="text-[13px] text-[#9ca3af] mb-1">{t('DnsLookup.server')}</div>
-                                    <div className="text-lg text-white font-semibold">Cloudflare DoH</div>
-                                </div>
+                                </LiquidCard>
+                                <LiquidCard className="flex-1 p-5 text-center sm:text-left">
+                                    <div className="text-[13px] text-[var(--muted-text)] mb-1">{t('DnsLookup.server')}</div>
+                                    <div className="text-lg text-[var(--foreground)] font-semibold">Cloudflare DoH</div>
+                                </LiquidCard>
                             </div>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                                <div className="p-4 px-5 border-b border-white/10 font-semibold text-white">
+                            <LiquidCard className="p-0 overflow-hidden">
+                                <div className="p-4 px-5 border-b border-[var(--border-color)] font-semibold text-[var(--foreground)]">
                                     {t('DnsLookup.answerSection')}
                                 </div>
                                 {data.Answer ? (
                                     <table className="w-full border-collapse">
                                         <thead>
-                                            <tr className="bg-white/5 text-left text-[13px] text-[#9ca3af]">
+                                            <tr className="bg-neutral-100/50 dark:bg-white/5 text-left text-[13px] text-[var(--muted-text)]">
                                                 <th className="p-3 px-5">{t('DnsLookup.name')}</th>
                                                 <th className="p-3 px-5">{t('DnsLookup.type')}</th>
                                                 <th className="p-3 px-5">{t('DnsLookup.ttl')}</th>
@@ -107,19 +112,19 @@ export default function DNSLookupClient() {
                                         </thead>
                                         <tbody>
                                             {data.Answer.map((ans: any, i: number) => (
-                                                <tr key={i} className="border-t border-white/5">
-                                                    <td className="p-3 px-5 text-white">{ans.name}</td>
+                                                <tr key={i} className="border-t border-[var(--border-color)]">
+                                                    <td className="p-3 px-5 text-[var(--foreground)]">{ans.name}</td>
                                                     <td className="p-3 px-5 text-[#fb923c]">{RECORD_TYPES.find(t => t === type) || ans.type}</td>
-                                                    <td className="p-3 px-5 text-[#9ca3af]">{ans.TTL}</td>
-                                                    <td className="p-3 px-5 text-white font-mono break-all">{ans.data}</td>
+                                                    <td className="p-3 px-5 text-[var(--muted-text)]">{ans.TTL}</td>
+                                                    <td className="p-3 px-5 text-[var(--foreground)] font-mono break-all">{ans.data}</td>
                                                 </tr>
                                             ))}
                                         </tbody>
                                     </table>
                                 ) : (
-                                    <div className="p-8 text-center text-[#6b7280]">{t('DnsLookup.noRecords')} {type}.</div>
+                                    <div className="p-8 text-center text-[var(--muted-text)]">{t('DnsLookup.noRecords')} {type}.</div>
                                 )}
-                            </div>
+                            </LiquidCard>
                         </div>
                     )}
                 </div>

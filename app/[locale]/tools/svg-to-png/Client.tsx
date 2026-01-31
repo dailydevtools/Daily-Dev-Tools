@@ -4,7 +4,9 @@ import { useState, useRef } from "react";
 import { Image as ImageIcon, Download } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
-
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function SvgToPngClient() {
     const t = useTranslations('SvgToPng');
     const [svgContent, setSvgContent] = useState("");
@@ -73,39 +75,47 @@ export default function SvgToPngClient() {
                         icon={<ImageIcon size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
+                    <LiquidCard className="p-10 text-center">
                         <div
-                            className="border-2 border-dashed border-white/10 rounded-2xl p-10 text-center mb-6 cursor-pointer hover:bg-white/5 transition-colors"
+                            className="border-2 border-dashed border-[var(--border-color)] rounded-2xl p-10 text-center mb-6 cursor-pointer hover:bg-[var(--card-hover-bg)] transition-colors"
                             onClick={() => document.getElementById('svgInput')?.click()}
                         >
                             <input id="svgInput" type="file" accept=".svg" onChange={handleFile} className="hidden" />
                             <ImageIcon size={48} className="text-[#fb923c] mb-4 mx-auto" />
-                            <div className="text-lg text-white mb-2">{t('upload')}</div>
-                            <div className="text-sm text-[#9ca3af]">{t('browse')}</div>
+                            <div className="text-lg text-[var(--foreground)] mb-2 font-medium">{t('upload')}</div>
+                            <div className="text-sm text-[var(--muted-text)]">{t('browse')}</div>
                         </div>
 
                         <div className="mb-6">
-                            <div className="text-[13px] text-[#9ca3af] mb-2 text-left px-1">{t('paste')}</div>
-                            <textarea
+                            <div className="text-[13px] text-[var(--muted-text)] mb-2 text-left px-1">{t('paste')}</div>
+                            <LiquidTextArea
                                 value={svgContent} onChange={e => { setSvgContent(e.target.value); process(e.target.value); }}
                                 placeholder="<svg>...</svg>"
-                                className="w-full h-[100px] p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] font-mono text-xs resize-y"
+                                className="h-[100px] font-mono text-xs"
                             />
                         </div>
 
-                        {error && <div className="text-[#ef4444] mb-5 text-sm">{error}</div>}
+                        {error && <div className="text-red-500 mb-5 text-sm">{error}</div>}
 
                         <div className={`mt-5 ${downloadUrl ? 'block' : 'hidden'}`}>
-                            <div className="mb-3 text-[13px] text-[#9ca3af]">{t('preview')}</div>
-                            <canvas ref={canvasRef} className="max-w-full border border-white/10 bg-[repeating-conic-gradient(#111_0%_25%,_#222_0%_50%)_50%_/_20px_20px] rounded-lg" />
+                            <div className="mb-3 text-[13px] text-[var(--muted-text)]">{t('preview')}</div>
+                            <canvas ref={canvasRef} className="max-w-full border border-[var(--border-color)] bg-neutral-100 dark:bg-[#111] rounded-lg mx-auto" />
 
                             <div className="mt-6">
-                                <a href={downloadUrl} download="converted.png" className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8 inline-flex items-center gap-2 no-underline">
-                                    <Download size={18} /> {t('download')}
-                                </a>
+                                <LiquidButton
+                                    onClick={() => {
+                                        const a = document.createElement('a');
+                                        a.href = downloadUrl;
+                                        a.download = 'converted.png';
+                                        a.click();
+                                    }}
+                                    className="px-8 py-3"
+                                >
+                                    <Download size={18} className="mr-2" /> {t('download')}
+                                </LiquidButton>
                             </div>
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function HtmlEncoderClient() {
     const t = useTranslations('ToolPage');
@@ -43,20 +44,15 @@ export default function HtmlEncoderClient() {
                     />
 
                     <div className="flex justify-center mb-10">
-                        <div className="bg-neutral-100 dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex gap-1">
-                            <button
-                                onClick={() => { setMode("encode"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'encode' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('HtmlEncoder.encode')}
-                            </button>
-                            <button
-                                onClick={() => { setMode("decode"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'decode' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('HtmlEncoder.decode')}
-                            </button>
-                        </div>
+                        <LiquidTabs
+                            tabs={['encode', 'decode']}
+                            activeTab={mode}
+                            onChange={(m) => { setMode(m as any); setInput(""); setOutput(""); }}
+                            labels={{
+                                encode: t('HtmlEncoder.encode'),
+                                decode: t('HtmlEncoder.decode')
+                            }}
+                        />
                     </div>
 
                     <div className="grid grid-cols-1 gap-6">

@@ -61,7 +61,7 @@ export default function AgeCalculatorClient() {
                                 type="date"
                                 value={dob}
                                 onChange={e => setDob(e.target.value)}
-                                className="text-center text-lg"
+                                className="text-center text-lg cursor-pointer dark:[color-scheme:dark]"
                             />
                         </div>
 

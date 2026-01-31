@@ -5,6 +5,7 @@ import { RefreshCw } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function TextDiffClient() {
     const t = useTranslations('TextDiff');
@@ -65,53 +66,59 @@ export default function TextDiffClient() {
                         icon={<ToolIcon name="GitCompare" size={32} />}
                     />
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-4 rounded-2xl flex flex-col">
-                            <label className="text-[#fb923c] font-semibold mb-2 text-sm">{t('original')}</label>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                            <label className="text-[#fb923c] font-semibold mb-3 text-xs uppercase tracking-wider">{t('original')}</label>
                             <textarea
                                 value={oldText}
                                 onChange={(e) => { setOldText(e.target.value); computeDiff(); }}
-                                className="flex-1 min-h-[200px] bg-black/20 border-none resize-none outline-none text-[13px] text-[#e5e7eb] font-mono p-3 rounded-lg"
+                                placeholder="Paste original text here..."
+                                className="flex-1 min-h-[300px] bg-neutral-100/50 dark:bg-white/5 border border-[var(--border-color)] resize-none outline-none text-[13px] text-[var(--foreground)] font-mono p-4 rounded-xl transition-colors focus:border-orange-500/30"
+                                spellCheck={false}
                             />
-                        </div>
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-4 rounded-2xl flex flex-col">
-                            <label className="text-[#facc15] font-semibold mb-2 text-sm">{t('changed')}</label>
+                        </LiquidCard>
+                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-yellow-500/20 transition-all">
+                            <label className="text-yellow-600 dark:text-[#facc15] font-semibold mb-3 text-xs uppercase tracking-wider">{t('changed')}</label>
                             <textarea
                                 value={newText}
                                 onChange={(e) => { setNewText(e.target.value); computeDiff(); }}
-                                className="flex-1 min-h-[200px] bg-black/20 border-none resize-none outline-none text-[13px] text-[#e5e7eb] font-mono p-3 rounded-lg"
+                                placeholder="Paste changed text here..."
+                                className="flex-1 min-h-[300px] bg-neutral-100/50 dark:bg-white/5 border border-[var(--border-color)] resize-none outline-none text-[13px] text-[var(--foreground)] font-mono p-4 rounded-xl transition-colors focus:border-yellow-500/30"
+                                spellCheck={false}
                             />
-                        </div>
+                        </LiquidCard>
                     </div>
 
-                    <div className="flex justify-center mb-6">
-                        <button onClick={computeDiff} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-2.5 px-8 flex items-center gap-2">
-                            <RefreshCw size={16} /> {t('update')}
+                    <div className="flex justify-center mb-10">
+                        <button onClick={computeDiff} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-8 py-3 rounded-xl border-none cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] active:scale-95 group">
+                            <RefreshCw size={18} className="group-hover:rotate-180 transition-transform duration-500" /> {t('update')}
                         </button>
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 rounded-2xl overflow-hidden">
-                        <div className="bg-black/40 py-2 px-4 grid grid-cols-[50px_50px_1fr] gap-4 border-b border-white/5">
-                            <div className="text-[#9ca3af] text-xs text-right">{t('old')}</div>
-                            <div className="text-[#9ca3af] text-xs text-right">{t('new')}</div>
-                            <div className="text-[#9ca3af] text-xs">{t('content')}</div>
+                    <LiquidCard className="p-0 overflow-hidden">
+                        <div className="bg-neutral-100/80 dark:bg-white/5 py-3 px-6 grid grid-cols-[60px_60px_1fr] gap-4 border-b border-[var(--border-color)] backdrop-blur-md sticky top-0 z-10">
+                            <div className="text-[var(--muted-text)] text-[11px] font-bold uppercase tracking-widest text-right">{t('old')}</div>
+                            <div className="text-[var(--muted-text)] text-[11px] font-bold uppercase tracking-widest text-right">{t('new')}</div>
+                            <div className="text-[var(--muted-text)] text-[11px] font-bold uppercase tracking-widest">{t('content')}</div>
                         </div>
-                        <div className="font-mono text-[13px]">
+                        <div className="font-mono text-[13px] divide-y divide-[var(--border-color)]/50">
                             {diff.map((line, i) => (
                                 <div
                                     key={i}
-                                    className={`grid grid-cols-[50px_50px_1fr] gap-4 py-1 px-4 ${line.type === 'added' ? 'bg-[#22c55e]/10' : line.type === 'removed' ? 'bg-[#ef4444]/10' : 'bg-transparent'}`}
+                                    className={`grid grid-cols-[60px_60px_1fr] gap-4 py-1.5 px-6 transition-colors ${line.type === 'added' ? 'bg-green-500/10' : line.type === 'removed' ? 'bg-red-500/10' : 'hover:bg-neutral-500/5'}`}
                                 >
-                                    <div className="text-[#6b7280] text-right">{line.lineOld || ''}</div>
-                                    <div className="text-[#6b7280] text-right">{line.lineNew || ''}</div>
-                                    <div className={`whitespace-pre-wrap break-all ${line.type === 'same' ? 'text-[#d1d5db]' : line.type === 'added' ? 'text-[#86efac]' : 'text-[#fca5a5]'}`}>
-                                        {line.type === 'added' ? '+ ' : line.type === 'removed' ? '- ' : '  '}
+                                    <div className="text-[var(--muted-text)] text-right opacity-50 select-none text-xs flex items-center justify-end">{line.lineOld || ''}</div>
+                                    <div className="text-[var(--muted-text)] text-right opacity-50 select-none text-xs flex items-center justify-end">{line.lineNew || ''}</div>
+                                    <div className={`whitespace-pre-wrap break-all py-0.5 leading-relaxed ${line.type === 'same' ? 'text-[var(--foreground)]' : line.type === 'added' ? 'text-green-600 dark:text-green-400 font-medium' : 'text-red-600 dark:text-red-400 font-medium'}`}>
+                                        <span className={`inline-block w-4 select-none opacity-50`}>
+                                            {line.type === 'added' ? '+' : line.type === 'removed' ? '-' : ' '}
+                                        </span>
                                         {line.content}
                                     </div>
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

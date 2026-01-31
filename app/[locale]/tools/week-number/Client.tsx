@@ -4,7 +4,9 @@ import { useState, useEffect } from "react";
 import { Calendar } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
-
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidProgressBar } from "../../../components/ui/LiquidProgressBar";
 export default function WeekNumberClient() {
     const t = useTranslations('WeekNumber');
     const [date, setDate] = useState("");
@@ -52,29 +54,33 @@ export default function WeekNumberClient() {
                         icon={<Calendar size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
-                        <div className="text-[13px] text-[#9ca3af] mb-3">{t('checkLabel')}</div>
-                        <input
-                            type="date"
-                            value={date} onChange={e => setDate(e.target.value)}
-                            className="input-field p-3 rounded-xl bg-black/30 border border-white/10 text-white text-base mb-8 w-full max-w-[200px]"
-                        />
-
-                        <div className="bg-white/5 p-8 rounded-3xl mb-8">
-                            <div className="text-base text-[#9ca3af] mb-1">{t('weekNumber')}</div>
-                            <div className="text-8xl font-black text-[#fb923c] leading-none">{week}</div>
+                    <LiquidCard className="p-10 text-center">
+                        <div className="text-[13px] text-[var(--muted-text)] mb-3">{t('checkLabel')}</div>
+                        <div className="mb-10">
+                            <LiquidInput
+                                type="date"
+                                value={date} onChange={e => setDate(e.target.value)}
+                                className="max-w-[240px] mx-auto text-center cursor-pointer dark:[color-scheme:dark]"
+                            />
                         </div>
 
-                        <div className="text-left">
-                            <div className="flex justify-between mb-2 text-[13px] text-[#9ca3af]">
-                                <span>{t('yearProgress')}</span>
-                                <span>{yearProgress.toFixed(1)}%</span>
-                            </div>
-                            <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                                <div className="h-full bg-[#22c55e]" style={{ width: `${yearProgress}%` }} />
-                            </div>
+                        <div className="bg-[var(--card-hover-bg)] border border-[var(--border-color)] p-8 rounded-3xl mb-10 inline-block min-w-[200px]">
+                            <div className="text-base text-[var(--muted-text)] mb-2 font-medium">Week Number</div>
+                            <div className="text-8xl font-black text-orange-500 leading-none tracking-tighter">{week}</div>
                         </div>
-                    </div>
+
+                        <div className="text-left max-w-[400px] mx-auto">
+                            <div className="flex justify-between mb-2 text-sm">
+                                <span className="text-[var(--muted-text)] font-medium">{t('yearProgress')}</span>
+                                <span className="text-[var(--foreground)] font-medium">{yearProgress.toFixed(1)}%</span>
+                            </div>
+                            <LiquidProgressBar
+                                value={yearProgress}
+                                max={100}
+                                height="h-3"
+                            />
+                        </div>
+                    </LiquidCard>
 
                 </div>
             </div>
