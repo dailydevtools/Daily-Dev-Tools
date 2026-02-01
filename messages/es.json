@@ -10,6 +10,20 @@
     "title": "DailyDevTools - Herramientas de Desarrollo Online Gratuitas",
     "description": "Más de 90 herramientas online gratuitas para todos. Formateadores, conversores, generadores y utilidades. Sencillo, privado y sin registro."
   },
+  "MockDataGenerator": {
+    "settings": "Configuración",
+    "rowCount": "Número de Filas",
+    "format": "Formato de Salida",
+    "generate": "Generar Datos",
+    "fields": "Campos",
+    "preview": "Vista Previa",
+    "copy": "Copiar al Portapapeles",
+    "download": "Descargar Archivo",
+    "copied": "¡Datos copiados al portapapeles!",
+    "placeholder": "Genere datos para ver la vista previa...",
+    "name": "Generador de Datos Falsos",
+    "description": "Genere datos aleatorios JSON o CSV para pruebas con esquemas personalizados."
+  },
   "NotFound": {
     "title": "Página no encontrada",
     "description": "Lo sentimos, no pudimos encontrar la página que buscas.",
@@ -71,6 +85,13 @@
     "about": "Acerca de",
     "privacy": "Privacidad",
     "terms": "Términos"
+  },
+  "Credit": {
+    "title": "Crédito de la Comunidad",
+    "inspiredBy": "Esta herramienta fue inspirada por una sugerencia de",
+    "inspiredByApp": "Esta herramienta fue inspirada por una aplicación desarrollada por",
+    "checkOut": "Echa un vistazo a",
+    "thanks": "Gracias por ayudar a mejorar DailyDevTools ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +461,10 @@
     "pretty-print-url": {
       "name": "Embellecedor URL",
       "description": "Formatea URLs para legibilidad"
+    },
+    "mock-data-generator": {
+      "name": "Generador de Datos Falsos",
+      "description": "Genere datos aleatorios JSON o CSV"
     }
   },
   "Terms": {
