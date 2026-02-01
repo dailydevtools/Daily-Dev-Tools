@@ -4,7 +4,9 @@ import { useState } from "react";
 import { Link as LinkIcon, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
-
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function UtmBuilderClient() {
     const t = useTranslations('UtmBuilder');
     const [url, setUrl] = useState("");
@@ -41,75 +43,74 @@ export default function UtmBuilderClient() {
                         icon={<LinkIcon size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10">
                         <div className="flex flex-col gap-5">
 
                             <div>
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('websiteUrl')}</label>
-                                <input
-                                    type="text" value={url} onChange={e => setUrl(e.target.value)}
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('websiteUrl')}</label>
+                                <LiquidInput
+                                    value={url} onChange={e => setUrl(e.target.value)}
                                     placeholder="https://example.com"
-                                    className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                 />
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('source')}</label>
-                                    <input
-                                        type="text" value={source} onChange={e => setSource(e.target.value)}
+                                    <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('source')}</label>
+                                    <LiquidInput
+                                        value={source} onChange={e => setSource(e.target.value)}
                                         placeholder="google, newsletter"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('medium')}</label>
-                                    <input
-                                        type="text" value={medium} onChange={e => setMedium(e.target.value)}
+                                    <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('medium')}</label>
+                                    <LiquidInput
+                                        value={medium} onChange={e => setMedium(e.target.value)}
                                         placeholder="cpc, banner, email"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('name')}</label>
-                                    <input
-                                        type="text" value={campaign} onChange={e => setCampaign(e.target.value)}
+                                    <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('name')}</label>
+                                    <LiquidInput
+                                        value={campaign} onChange={e => setCampaign(e.target.value)}
                                         placeholder="summer_sale"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('term')}</label>
-                                    <input
-                                        type="text" value={term} onChange={e => setTerm(e.target.value)}
+                                    <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('term')}</label>
+                                    <LiquidInput
+                                        value={term} onChange={e => setTerm(e.target.value)}
                                         placeholder="running+shoes"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                     />
                                 </div>
                                 <div className="md:col-span-2">
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('content')}</label>
-                                    <input
-                                        type="text" value={content} onChange={e => setContent(e.target.value)}
+                                    <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('content')}</label>
+                                    <LiquidInput
+                                        value={content} onChange={e => setContent(e.target.value)}
                                         placeholder="logolink, textlink"
-                                        className="input-field w-full p-3 rounded-xl bg-black/30 border border-white/10 text-white"
                                     />
                                 </div>
                             </div>
 
-                            <div className="p-6 bg-white/5 rounded-2xl mt-3">
-                                <div className="text-[13px] text-[#9ca3af] mb-2">{t('generatedUrl')}</div>
-                                <div className="mb-6 break-all text-[#fb923c] text-base font-mono">
+                            <div className="p-6 bg-[var(--card-hover-bg)] border border-[var(--border-color)] rounded-2xl mt-3">
+                                <div className="text-[13px] text-[var(--muted-text)] mb-2">{t('generatedUrl')}</div>
+                                <div className="mb-6 break-all text-orange-500 text-base font-mono min-h-[1.5em]">
                                     {result || "..."}
                                 </div>
                                 <div className="text-right">
-                                    <button onClick={() => navigator.clipboard.writeText(result)} className={`inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] flex items-center gap-2 ml-auto ${!url ? 'opacity-50 cursor-not-allowed' : 'hover:bg-white/10'}`} disabled={!url}>
-                                        <Copy size={16} /> {t('copy')}
-                                    </button>
+                                    <LiquidButton
+                                        variant="ghost"
+                                        onClick={() => navigator.clipboard.writeText(result)}
+                                        disabled={!url}
+                                        className="ml-auto"
+                                    >
+                                        <Copy size={16} className="mr-2" /> Copy URL
+                                    </LiquidButton>
                                 </div>
                             </div>
 
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

@@ -6,7 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function MetaTagsClient() {
@@ -57,31 +57,31 @@ export default function MetaTagsClient() {
                                     <span>{t('description')}</span>
                                     <span>{desc.length}/160</span>
                                 </div>
-                                <textarea
+                                <LiquidTextArea
                                     value={desc} onChange={e => setDesc(e.target.value)}
-                                    className="w-full h-24 bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
+                                    className="h-24"
                                 />
                             </div>
 
                             <div>
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('keywords')}</label>
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">Keywords</label>
                                 <LiquidInput
-                                    type="text" value={keywords} onChange={e => setKeywords(e.target.value)}
+                                    value={keywords} onChange={e => setKeywords(e.target.value)}
                                 />
                             </div>
 
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('author')}</label>
                                 <LiquidInput
-                                    type="text" value={author} onChange={e => setAuthor(e.target.value)}
+                                    value={author} onChange={e => setAuthor(e.target.value)}
                                 />
                             </div>
 
                             <div className="relative mt-6">
-                                <textarea
+                                <LiquidTextArea
                                     readOnly
                                     value={output}
-                                    className="w-full h-[200px] p-5 rounded-xl bg-neutral-900 border border-[var(--border-color)] text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
+                                    className="h-[200px] font-mono text-orange-600 dark:text-orange-500 bg-neutral-100 dark:bg-neutral-900 border-neutral-200 dark:border-neutral-800"
                                 />
                                 <div className="absolute top-3 right-3">
                                     <LiquidButton onClick={() => navigator.clipboard.writeText(output)} variant="ghost" className="h-8 w-8 p-0">

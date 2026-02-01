@@ -44,14 +44,14 @@ export default function AspectRatioClient() {
 
                         <div className="flex gap-6 items-center mb-10">
                             <div className="flex-1">
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('AspectRatioCalculator.originalWidth')}</label>
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">Original Width</label>
                                 <LiquidInput
                                     type="number" value={w1} onChange={e => setW1(Number(e.target.value))}
                                     className="text-lg"
                                 />
                             </div>
                             <div className="flex-1">
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('AspectRatioCalculator.originalHeight')}</label>
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">Original Height</label>
                                 <LiquidInput
                                     type="number" value={h1} onChange={e => setH1(Number(e.target.value))}
                                     className="text-lg"
@@ -63,14 +63,14 @@ export default function AspectRatioClient() {
 
                         <div className="flex gap-6 items-center">
                             <div className="flex-1">
-                                <label className="block mb-2 text-orange-500 font-medium text-sm">{t('AspectRatioCalculator.newWidth')}</label>
+                                <label className="block mb-2 text-orange-500 font-medium text-sm">New Width</label>
                                 <LiquidInput
                                     type="number" value={w2} onChange={e => calculateH2(Number(e.target.value))}
                                     className="text-lg border-orange-200 focus:border-orange-500 focus:ring-orange-500/20 text-orange-600 dark:text-orange-400"
                                 />
                             </div>
                             <div className="flex-1">
-                                <label className="block mb-2 text-orange-500 font-medium text-sm">{t('AspectRatioCalculator.newHeight')}</label>
+                                <label className="block mb-2 text-orange-500 font-medium text-sm">New Height</label>
                                 <LiquidInput
                                     type="number" value={h2} onChange={e => calculateW2(Number(e.target.value))}
                                     className="text-lg border-orange-200 focus:border-orange-500 focus:ring-orange-500/20 text-orange-600 dark:text-orange-400"
@@ -79,7 +79,7 @@ export default function AspectRatioClient() {
                         </div>
 
                         <div className="mt-12 text-center">
-                            <div className="text-sm text-[var(--muted-text)] mb-2 font-medium">{t('AspectRatioCalculator.resultRatio')}</div>
+                            <div className="text-sm text-[var(--muted-text)] mb-2 font-medium">Result Ratio</div>
                             <div className="text-5xl font-bold text-[var(--foreground)] tracking-tight">{common === "16:9" ? "16:9" : ratio}</div>
                         </div>
 

@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function PomodoroTimerClient() {
     const t = useTranslations('ToolPage');
@@ -78,18 +79,17 @@ export default function PomodoroTimerClient() {
                         icon={<ToolIcon name="Timer" size={32} />}
                     />
 
-                    <div className="flex justify-center gap-3 mb-10 overflow-x-auto pb-2">
-                        {(Object.keys(MODES) as Array<keyof typeof MODES>).map((m) => (
-                            <LiquidButton
-                                key={m}
-                                onClick={() => setMode(m)}
-                                variant={mode === m ? "primary" : "ghost"}
-                                className={`rounded-full h-11 px-6 transition-all ${mode === m ? '' : 'border border-[var(--border-color)] text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                                style={mode === m ? { backgroundColor: MODES[m].color, borderColor: MODES[m].color } : {}}
-                            >
-                                {MODES[m].label}
-                            </LiquidButton>
-                        ))}
+                    <div className="mb-10">
+                        <LiquidTabs
+                            tabs={Object.keys(MODES) as Array<keyof typeof MODES>}
+                            activeTab={mode}
+                            onChange={(m) => setMode(m)}
+                            labels={{
+                                work: MODES.work.label,
+                                short: MODES.short.label,
+                                long: MODES.long.label
+                            }}
+                        />
                     </div>
 
                     <LiquidCard className="py-16 px-5 relative overflow-hidden text-center">

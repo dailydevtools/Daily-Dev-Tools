@@ -5,6 +5,10 @@ import { Volume2, Square } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function TextToSpeechClient() {
     const t = useTranslations('TextToSpeech');
@@ -57,19 +61,19 @@ export default function TextToSpeechClient() {
                         icon={<Volume2 size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10">
 
                         <div className="mb-6">
-                            <textarea
+                            <LiquidTextArea
                                 value={text} onChange={e => setText(e.target.value)}
-                                className="input-field w-full h-[150px] p-4 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] text-lg resize-y"
+                                className="h-[150px]"
                                 placeholder={t('placeholder')}
                             />
                         </div>
 
                         <div className="flex gap-6 mb-8 flex-wrap">
                             <div className="flex-2 min-w-[200px] relative z-20">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('voice')}</label>
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('voice')}</label>
                                 <LiquidSelect
                                     value={selectedVoice}
                                     onChange={setSelectedVoice}
@@ -78,25 +82,25 @@ export default function TextToSpeechClient() {
                                 />
                             </div>
                             <div className="flex-1 min-w-[100px]">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('speed')} ({rate})</label>
-                                <input type="range" min="0.5" max="2" step="0.1" value={rate} onChange={e => setRate(Number(e.target.value))} className="w-full" />
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('speed')} ({rate})</label>
+                                <LiquidSlider min={0.5} max={2} step={0.1} value={rate} onChange={e => setRate(Number(e.target.value))} />
                             </div>
                             <div className="flex-1 min-w-[100px]">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('pitch')} ({pitch})</label>
-                                <input type="range" min="0" max="2" step="0.1" value={pitch} onChange={e => setPitch(Number(e.target.value))} className="w-full" />
+                                <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('pitch')} ({pitch})</label>
+                                <LiquidSlider min={0} max={2} step={0.1} value={pitch} onChange={e => setPitch(Number(e.target.value))} />
                             </div>
                         </div>
 
                         <div className="flex gap-4">
-                            <button onClick={speak} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] flex-1 p-4 flex items-center justify-center gap-2">
+                            <LiquidButton onClick={speak} className="flex-1 gap-2">
                                 <Volume2 size={20} /> {t('speak')}
-                            </button>
-                            <button onClick={stop} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] w-[60px] flex items-center justify-center">
-                                <Square size={20} />
-                            </button>
+                            </LiquidButton>
+                            <LiquidButton onClick={stop} variant="ghost" className="w-auto px-6 flex items-center justify-center gap-2 border border-neutral-300 dark:border-white/10 text-neutral-600 dark:text-neutral-400 hover:text-orange-500 hover:border-orange-500 hover:bg-orange-500/10 transition-all">
+                                <Square size={20} /> Stop
+                            </LiquidButton>
                         </div>
 
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

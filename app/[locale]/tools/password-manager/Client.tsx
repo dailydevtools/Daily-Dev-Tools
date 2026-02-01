@@ -54,6 +54,7 @@ interface Account {
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import CreditCard from "../../../components/CreditCard";
 
 // ... (keep helper functions deriveKey, encrypt, decrypt, and Account interface)
 
@@ -181,6 +182,14 @@ export default function PasswordManagerClient() {
                         </p>
                     </LiquidCard>
                 </div>
+
+                <CreditCard
+                    name="Yogesh Choudhary Paliyal"
+                    linkedin="https://www.linkedin.com/in/yogeshpaliyal/"
+                    github="https://github.com/yogeshpaliyal/KeyPass"
+                    appName="KeyPass"
+                    appUrl="https://play.google.com/store/apps/details?id=com.yogeshpaliyal.keypass"
+                />
             </main>
         );
     }
@@ -239,6 +248,14 @@ export default function PasswordManagerClient() {
                     )}
 
                     {viewMode === "add" && <AddForm onSave={addAccount} onCancel={() => setViewMode("list")} t={t} />}
+
+                    <CreditCard
+                        name="Yogesh Choudhary Paliyal"
+                        linkedin="https://www.linkedin.com/in/yogeshpaliyal/"
+                        github="https://github.com/yogeshpaliyal/KeyPass"
+                        appName="KeyPass"
+                        appUrl="https://play.google.com/store/apps/details?id=com.yogeshpaliyal.keypass"
+                    />
                 </div>
             </div>
         </main>

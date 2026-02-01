@@ -10,6 +10,20 @@
     "title": "DailyDevTools - Free Online Developer Tools",
     "description": "90+ free online tools for everyone. Formatters, converters, generators, and utilities. Fast, private, and no registration required."
   },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
   "Breadcrumb": {
     "home": "Home",
     "tools": "Tools"
@@ -77,6 +91,13 @@
     "about": "About",
     "privacy": "Privacy",
     "terms": "Terms"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -446,6 +467,10 @@
     "pretty-print-url": {
       "name": "Pretty Print URL",
       "description": "Format and beautify URLs for readability"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
     },
     "code-editor": {
       "name": "Online Code Editor",
@@ -970,7 +995,9 @@
       "jsonInput": "JSON Input",
       "csvInput": "CSV Input",
       "jsonOutput": "JSON Output",
-      "csvOutput": "CSV Output"
+      "csvOutput": "CSV Output",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "Original JSON",
@@ -1166,14 +1193,7 @@
       "reset": "Reset",
       "lap": "Lap"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP Address",
-      "subnetMask": "Subnet Mask",
-      "calculate": "Calculate",
-      "networkAddress": "Network Address",
-      "broadcastAddress": "Broadcast Address",
-      "usableHosts": "Usable Hosts"
-    },
+
     "SvgToPng": {
       "pasteSvg": "Paste SVG",
       "uploadSvg": "Upload SVG",
@@ -1456,10 +1476,7 @@
     "subtitle": "Explore other popular developer tools",
     "openTool": "Open Tool"
   },
-  "Breadcrumb": {
-    "home": "Home",
-    "tools": "Tools"
-  },
+
   "SvgToPng": {
     "upload": "Upload SVG File",
     "browse": "or click to browse",
@@ -1570,7 +1587,7 @@
   },
   "SubnetCalculator": {
     "ip": "IP Address",
-    "cidr": "CIDR (/{cidr})",
+    "cidr": "CIDR",
     "calculate": "Calculate",
     "subnetMask": "Subnet Mask",
     "networkAddress": "Network Address",

@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidCheckbox } from "../../../components/ui/LiquidCheckbox";
 
 export default function MacGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -75,15 +76,11 @@ export default function MacGeneratorClient() {
                         </div>
 
                         <div className="mb-8">
-                            <label className="flex items-center gap-3 text-[var(--foreground)] cursor-pointer group">
-                                <input
-                                    type="checkbox"
-                                    checked={uppercase}
-                                    onChange={e => setUppercase(e.target.checked)}
-                                    className="w-5 h-5 rounded border-gray-300 text-orange-500 focus:ring-orange-500 transition-colors bg-white/10 border-white/10"
-                                />
-                                <span className="group-hover:text-orange-500 transition-colors">{t('MacGenerator.uppercase')}</span>
-                            </label>
+                            <LiquidCheckbox
+                                checked={uppercase}
+                                onChange={setUppercase}
+                                label={t('MacGenerator.uppercase')}
+                            />
                         </div>
 
                         <LiquidButton onClick={generate} className="w-full mb-8 py-4 text-base shadow-orange-500/20 shadow-lg">

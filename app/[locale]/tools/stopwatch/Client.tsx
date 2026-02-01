@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Play, Pause, RotateCcw, Flag, Timer } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function StopwatchClient() {
     const t = useTranslations('ToolPage');
@@ -51,9 +52,9 @@ export default function StopwatchClient() {
                         icon={<Timer size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
+                    <LiquidCard className="p-10 text-center">
 
-                        <div className="text-8xl md:text-9xl font-bold text-white font-mono mb-10">
+                        <div className="text-6xl md:text-8xl font-bold text-[var(--foreground)] font-mono mb-10 w-full overflow-hidden text-ellipsis">
                             {format(time)}
                         </div>
 
@@ -67,14 +68,14 @@ export default function StopwatchClient() {
 
                             <button
                                 onClick={lap} disabled={!running}
-                                className={`w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center border-none transition-all ${running ? 'cursor-pointer opacity-100 hover:bg-white/20' : 'cursor-not-allowed opacity-50'}`}
+                                className={`w-16 h-16 rounded-full flex items-center justify-center border-none transition-all ${running ? 'cursor-pointer opacity-100 bg-neutral-100 dark:bg-white/10 text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-white/20' : 'cursor-not-allowed opacity-50 bg-neutral-100 dark:bg-white/10 text-neutral-400 dark:text-neutral-500'}`}
                             >
                                 <Flag size={24} />
                             </button>
 
                             <button
                                 onClick={reset}
-                                className="w-16 h-16 rounded-full bg-white/10 text-white flex items-center justify-center border-none cursor-pointer hover:bg-white/20 transition-colors"
+                                className="w-16 h-16 rounded-full bg-neutral-100 dark:bg-white/10 text-neutral-600 dark:text-white flex items-center justify-center border-none cursor-pointer hover:bg-neutral-200 dark:hover:bg-white/20 transition-colors"
                             >
                                 <RotateCcw size={24} />
                             </button>
@@ -82,18 +83,18 @@ export default function StopwatchClient() {
 
                         {laps.length > 0 && (
                             <div className="text-left max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
-                                <div className="text-[13px] text-[#9ca3af] mb-3">{t('Stopwatch.lap')}</div>
+                                <div className="text-[13px] text-[var(--muted-text)] mb-3">{t('Stopwatch.lap')}</div>
                                 <div className="flex flex-col gap-2">
                                     {laps.map((l, i) => (
-                                        <div key={i} className="flex justify-between p-3 bg-white/5 rounded-lg border border-white/5">
-                                            <span className="text-[#9ca3af]">{t('Stopwatch.lap')} {laps.length - i}</span>
-                                            <span className="text-white font-mono">{format(l)}</span>
+                                        <div key={i} className="flex justify-between p-3 bg-neutral-100 dark:bg-white/5 rounded-lg border border-neutral-200 dark:border-white/5">
+                                            <span className="text-[var(--muted-text)]">{t('Stopwatch.lap')} {laps.length - i}</span>
+                                            <span className="text-[var(--foreground)] font-mono">{format(l)}</span>
                                         </div>
                                     ))}
                                 </div>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

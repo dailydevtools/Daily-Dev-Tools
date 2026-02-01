@@ -75,11 +75,11 @@ export default function DateDiffClient() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DateDiff.startDate')}</label>
-                                <LiquidInput type="date" value={start} onChange={e => setStart(e.target.value)} className="text-lg" />
+                                <LiquidInput type="date" value={start} onChange={e => setStart(e.target.value)} className="text-lg cursor-pointer dark:[color-scheme:dark]" />
                             </div>
                             <div>
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('DateDiff.endDate')}</label>
-                                <LiquidInput type="date" value={end} onChange={e => setEnd(e.target.value)} className="text-lg" />
+                                <LiquidInput type="date" value={end} onChange={e => setEnd(e.target.value)} className="text-lg cursor-pointer dark:[color-scheme:dark]" />
                             </div>
                         </div>
                         <div className="text-center">

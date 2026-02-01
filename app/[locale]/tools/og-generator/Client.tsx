@@ -6,7 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
-import { LiquidInput } from "../../../components/ui/LiquidInput";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
@@ -49,19 +49,19 @@ export default function OgGeneratorClient() {
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('description')}</label>
-                                    <textarea
+                                    <LiquidTextArea
                                         value={desc}
                                         onChange={e => setDesc(e.target.value)}
-                                        className="w-full h-24 bg-neutral-100 dark:bg-black/30 border border-transparent dark:border-white/10 p-4 rounded-xl text-[var(--foreground)] outline-none resize-y focus:ring-2 ring-orange-500/50 transition-all text-sm leading-relaxed"
+                                        className="h-24"
                                     />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('image')}</label>
-                                    <LiquidInput type="text" value={image} onChange={e => setImage(e.target.value)} />
+                                    <LiquidInput value={image} onChange={e => setImage(e.target.value)} />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('url')}</label>
-                                    <LiquidInput type="text" value={url} onChange={e => setUrl(e.target.value)} />
+                                    <LiquidInput value={url} onChange={e => setUrl(e.target.value)} />
                                 </div>
                                 <div>
                                     <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('type')}</label>
@@ -81,15 +81,15 @@ export default function OgGeneratorClient() {
                         <div className="flex flex-col gap-6">
                             <LiquidCard className="p-0 overflow-hidden">
                                 <div className="p-3 bg-neutral-100/50 dark:bg-white/5 text-[13px] font-medium text-[var(--muted-text)] border-b border-[var(--border-color)]">{t('preview')}</div>
-                                <div className="p-0 bg-[#f0f2f5] border-b border-[var(--border-color)]">
-                                    <div className="w-full h-[200px] flex items-center justify-center text-[#8b9dc3] bg-cover bg-center overflow-hidden"
-                                        style={{ backgroundImage: image ? `url(${image})` : 'none', backgroundColor: image ? 'transparent' : '#dfe3ee' }}>
+                                <div className="p-0 bg-neutral-100 dark:bg-neutral-900 border-b border-[var(--border-color)] transition-colors">
+                                    <div className="w-full h-[200px] flex items-center justify-center text-neutral-400 dark:text-neutral-600 bg-cover bg-center overflow-hidden transition-colors"
+                                        style={{ backgroundImage: image ? `url(${image})` : 'none', backgroundColor: image ? 'transparent' : 'var(--card-hover-bg)' }}>
                                         {!image && <Share2 size={48} />}
                                     </div>
-                                    <div className="p-4 bg-[#f0f2f5] border-t border-[#ddd]">
-                                        <div className="text-xs text-[#606770] uppercase truncate">{url ? new URL(url).hostname : 'EXAMPLE.COM'}</div>
-                                        <div className="text-base font-bold text-[#1d2129] my-1 leading-tight line-clamp-2">{title || "Your Page Title"}</div>
-                                        <div className="text-sm text-[#606770] leading-snug max-h-12 overflow-hidden line-clamp-2">{desc || "A description of your page content goes here."}</div>
+                                    <div className="p-4 bg-neutral-100 dark:bg-neutral-900 border-t border-[var(--border-color)] transition-colors">
+                                        <div className="text-xs text-neutral-500 dark:text-neutral-400 uppercase truncate">{url ? new URL(url).hostname : 'EXAMPLE.COM'}</div>
+                                        <div className="text-base font-bold text-neutral-900 dark:text-white my-1 leading-tight line-clamp-2">{title || "Your Page Title"}</div>
+                                        <div className="text-sm text-neutral-600 dark:text-neutral-400 leading-snug max-h-12 overflow-hidden line-clamp-2">{desc || "A description of your page content goes here."}</div>
                                     </div>
                                 </div>
                             </LiquidCard>
@@ -101,10 +101,10 @@ export default function OgGeneratorClient() {
                                         <Copy size={14} /> {t('copy')}
                                     </LiquidButton>
                                 </div>
-                                <textarea
+                                <LiquidTextArea
                                     readOnly
                                     value={output}
-                                    className="w-full h-[200px] p-5 bg-transparent border-none text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
+                                    className="h-[200px] border-none !bg-transparent text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
                                 />
                             </LiquidCard>
                         </div>

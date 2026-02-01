@@ -102,4 +102,5 @@ export const tools: Tool[] = [
     { id: "roi-calculator", name: "ROI Calculator", description: "Calculate Return on Investment", icon: "TrendingUp", category: "Math" },
     { id: "fuel-calculator", name: "Fuel Cost Calculator", description: "Calculate trip fuel cost", icon: "Fuel", category: "Math" },
     { id: "pretty-print-url", name: "Pretty Print URL", description: "Format and beautify URLs for readability", icon: "Link", category: "Developer" },
+    { id: "mock-data-generator", name: "Mock Data Generator", description: "Generate random JSON/CSV data for testing", icon: "Database", category: "Developer" },
 ];

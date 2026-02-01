@@ -7,6 +7,8 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
+import { LiquidCheckbox } from "../../../components/ui/LiquidCheckbox";
 
 export default function JsonCsvConverterClient() {
     const t = useTranslations('ToolPage');
@@ -14,6 +16,8 @@ export default function JsonCsvConverterClient() {
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
     const [mode, setMode] = useState<"json-to-csv" | "csv-to-json">("json-to-csv");
+    const [minify, setMinify] = useState(false);
+    const [parseNumbers, setParseNumbers] = useState(true);
     const [error, setError] = useState("");
 
     const handleConvert = () => {
@@ -51,14 +55,14 @@ export default function JsonCsvConverterClient() {
                         // Try to parse numbers/bools
                         if (val === "true") val = true;
                         else if (val === "false") val = false;
-                        else if (!isNaN(Number(val)) && val !== "") val = Number(val);
+                        else if (parseNumbers && !isNaN(Number(val)) && val !== "") val = Number(val);
                         else if (val?.startsWith('"') && val?.endsWith('"')) val = val.slice(1, -1);
 
                         obj[h] = val;
                     });
                     return obj;
                 });
-                setOutput(JSON.stringify(result, null, 2));
+                setOutput(JSON.stringify(result, null, minify ? 0 : 2));
             }
         } catch (e: any) {
             setError(e.message);
@@ -79,21 +83,30 @@ export default function JsonCsvConverterClient() {
                         icon={<FileJson size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center mb-10">
-                        <div className="dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5 flex gap-1">
-                            <button
-                                onClick={() => { setMode("json-to-csv"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'json-to-csv' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('JsonConverter.jsonToCsv')}
-                            </button>
-                            <button
-                                onClick={() => { setMode("csv-to-json"); setInput(""); setOutput(""); }}
-                                className={`py-2 px-8 rounded-lg text-sm font-medium transition-all ${mode === 'csv-to-json' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                {t('JsonConverter.csvToJson')}
-                            </button>
-                        </div>
+                    <div className="mb-10 w-full max-w-[400px] mx-auto">
+                        <LiquidTabs
+                            tabs={["json-to-csv", "csv-to-json"]}
+                            activeTab={mode}
+                            onChange={(m) => { setMode(m as any); setInput(""); setOutput(""); }}
+                            labels={{
+                                "json-to-csv": t('JsonConverter.jsonToCsv'),
+                                "csv-to-json": t('JsonConverter.csvToJson')
+                            }}
+                        />
+                        {mode === 'csv-to-json' && (
+                            <div className="flex justify-center gap-6 mt-6 animate-in fade-in slide-in-from-top-2 duration-300">
+                                <LiquidCheckbox
+                                    checked={parseNumbers}
+                                    onChange={setParseNumbers}
+                                    label={t('JsonConverter.parseNumbers')}
+                                />
+                                <LiquidCheckbox
+                                    checked={minify}
+                                    onChange={setMinify}
+                                    label={t('JsonConverter.minifyOutput')}
+                                />
+                            </div>
+                        )}
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-6 items-center">

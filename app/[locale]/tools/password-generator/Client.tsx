@@ -7,6 +7,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 import { toast } from "sonner";
 
 export default function PasswordGeneratorClient() {
@@ -80,20 +81,15 @@ export default function PasswordGeneratorClient() {
                             {t('configuration')}
                         </h3>
 
-                        <div className="mb-8 p-6 bg-neutral-100/50 dark:bg-white/5 rounded-2xl border border-[var(--border-color)]">
-                            <div className="flex justify-between mb-4">
-                                <label className="text-[var(--muted-text)] font-medium">{t('length')}</label>
-                                <span className="text-orange-500 font-bold text-lg">{length}</span>
-                            </div>
-                            <input
-                                type="range"
-                                min="8"
-                                max="64"
-                                value={length}
-                                onChange={(e) => setLength(Number(e.target.value))}
-                                className="w-full accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer"
-                            />
-                        </div>
+                        <LiquidSlider
+                            label={t('length')}
+                            valueDisplay={length}
+                            min="8"
+                            max="64"
+                            value={length}
+                            onChange={(e) => setLength(Number(e.target.value))}
+                            containerClassName="mb-10"
+                        />
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <label className="flex items-center gap-4 cursor-pointer p-4 rounded-xl bg-neutral-100/50 dark:bg-white/5 hover:bg-neutral-100 dark:hover:bg-white/10 border border-[var(--border-color)] transition-all group select-none">

@@ -5,6 +5,11 @@ import { RefreshCw, Copy, Key } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+
 export default function TokenGeneratorClient() {
     const t = useTranslations('TokenGenerator');
     const [length, setLength] = useState(32);
@@ -38,52 +43,59 @@ export default function TokenGeneratorClient() {
                         icon={<Key size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
-                        <div className="mb-8">
-                            <label className="flex justify-between mb-3 text-[#9ca3af] text-[13px]">
-                                <span>{t('length')}</span>
-                                <span>{length} characters</span>
-                            </label>
-                            <input
-                                type="range" min="8" max="128" step="1"
-                                value={length} onChange={e => setLength(Number(e.target.value))}
-                                className="w-full accent-[#fb923c]"
-                            />
-                        </div>
+                    <LiquidCard className="p-10">
+                        <LiquidSlider
+                            label={t('length')}
+                            valueDisplay={`${length} characters`}
+                            min={8} max={128} step={1}
+                            value={length}
+                            onChange={(e) => setLength(Number(e.target.value))}
+                            containerClassName="mb-8"
+                        />
 
-                        <div className="flex gap-6 mb-8">
-                            <label className="flex items-center gap-2 cursor-pointer text-white">
-                                <input type="checkbox" checked={includeNumbers} onChange={e => setIncludeNumbers(e.target.checked)} className="w-[18px] h-[18px] accent-[#fb923c]" />
-                                {t('includeNumbers')}
+                        <div className="flex gap-8 mb-8">
+                            <label className="flex items-center gap-3 cursor-pointer group">
+                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${includeNumbers ? 'bg-orange-500 border-orange-500' : 'bg-transparent border-[var(--border-color)] group-hover:border-orange-500'}`}>
+                                    {includeNumbers && <div className="w-2.5 h-1.5 border-b-2 border-l-2 border-white -rotate-45 mb-0.5"></div>}
+                                </div>
+                                <input type="checkbox" checked={includeNumbers} onChange={e => setIncludeNumbers(e.target.checked)} className="hidden" />
+                                <span className="text-[var(--foreground)] text-sm font-medium">{t('includeNumbers')}</span>
                             </label>
-                            <label className="flex items-center gap-2 cursor-pointer text-white">
-                                <input type="checkbox" checked={includeSymbols} onChange={e => setIncludeSymbols(e.target.checked)} className="w-[18px] h-[18px] accent-[#fb923c]" />
-                                {t('includeSymbols')}
+
+                            <label className="flex items-center gap-3 cursor-pointer group">
+                                <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${includeSymbols ? 'bg-orange-500 border-orange-500' : 'bg-transparent border-[var(--border-color)] group-hover:border-orange-500'}`}>
+                                    {includeSymbols && <div className="w-2.5 h-1.5 border-b-2 border-l-2 border-white -rotate-45 mb-0.5"></div>}
+                                </div>
+                                <input type="checkbox" checked={includeSymbols} onChange={e => setIncludeSymbols(e.target.checked)} className="hidden" />
+                                <span className="text-[var(--foreground)] text-sm font-medium">{t('includeSymbols')}</span>
                             </label>
                         </div>
 
                         <div className="flex gap-4 mb-6">
-                            <button onClick={generate} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] flex-1 py-3 flex items-center justify-center gap-2">
-                                <RefreshCw size={18} /> {t('generate')}
-                            </button>
+                            <LiquidButton onClick={generate} className="flex-1 py-3 text-base">
+                                <RefreshCw size={18} className="mr-2" /> {t('generate')}
+                            </LiquidButton>
                         </div>
 
                         {token && (
                             <div className="relative">
-                                <textarea
+                                <LiquidTextArea
                                     readOnly
                                     value={token}
-                                    className="w-full h-[120px] bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 rounded-xl p-4 text-[#fb923c] text-lg font-mono resize-none"
+                                    className="h-[120px] text-orange-500 text-lg font-mono"
                                 />
-                                <button
-                                    onClick={() => navigator.clipboard.writeText(token)}
-                                    className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3"
-                                >
-                                    <Copy size={16} />
-                                </button>
+                                <div className="absolute top-3 right-3">
+                                    <LiquidButton
+                                        variant="ghost"
+                                        onClick={() => navigator.clipboard.writeText(token)}
+                                        className="h-8 w-8 p-0"
+                                    >
+                                        <Copy size={16} />
+                                    </LiquidButton>
+                                </div>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

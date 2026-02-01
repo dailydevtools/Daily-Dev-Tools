@@ -112,24 +112,28 @@ export default function CaseConverterClient() {
                         </LiquidCard>
 
                         {/* Output List */}
-                        <LiquidCard className="p-6 flex flex-col gap-4 max-h-[600px] overflow-y-auto custom-scrollbar">
-                            <h3 className="text-[var(--foreground)] font-semibold mb-2">{t('CaseConverter.conversions')}</h3>
-                            {cases.map((c) => {
-                                const converted = convert(c.id);
-                                return (
-                                    <div key={c.id} className="bg-neutral-100/50 dark:bg-white/5 p-4 rounded-xl border border-[var(--border-color)] transition-colors hover:border-orange-500/30">
-                                        <div className="flex items-center justify-between mb-2">
-                                            <span className="text-[var(--muted-text)] text-[13px]">{c.label}</span>
-                                            <button onClick={() => copyToClipboard(converted, c.id)} className={`bg-transparent border-none cursor-pointer transition-colors ${copied === c.id ? 'text-green-500' : 'text-[var(--muted-text)] hover:text-orange-500'}`}>
-                                                {copied === c.id ? <Check size={14} /> : <Copy size={14} />}
-                                            </button>
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col max-h-[600px]">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5">
+                                <h3 className="text-[var(--foreground)] text-xs font-medium uppercase tracking-wider text-[var(--muted-text)]">{t('CaseConverter.conversions')}</h3>
+                            </div>
+                            <div className="overflow-y-auto flex-1 custom-scrollbar p-6 flex flex-col gap-4">
+                                {cases.map((c) => {
+                                    const converted = convert(c.id);
+                                    return (
+                                        <div key={c.id} className="bg-neutral-100/50 dark:bg-white/5 p-4 rounded-xl border border-[var(--border-color)] transition-colors hover:border-orange-500/30">
+                                            <div className="flex items-center justify-between mb-2">
+                                                <span className="text-[var(--muted-text)] text-[13px]">{c.label}</span>
+                                                <button onClick={() => copyToClipboard(converted, c.id)} className={`bg-transparent border-none cursor-pointer transition-colors ${copied === c.id ? 'text-green-500' : 'text-[var(--muted-text)] hover:text-orange-500'}`}>
+                                                    {copied === c.id ? <Check size={14} /> : <Copy size={14} />}
+                                                </button>
+                                            </div>
+                                            <div className="text-[var(--foreground)] font-mono text-sm break-all">
+                                                {converted || <span className="opacity-30">{c.example}</span>}
+                                            </div>
                                         </div>
-                                        <div className="text-[var(--foreground)] font-mono text-sm break-all">
-                                            {converted || <span className="opacity-30">{c.example}</span>}
-                                        </div>
-                                    </div>
-                                );
-                            })}
+                                    );
+                                })}
+                            </div>
                         </LiquidCard>
                     </div>
                 </div>

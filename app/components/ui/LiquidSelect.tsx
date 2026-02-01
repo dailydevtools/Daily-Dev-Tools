@@ -143,10 +143,10 @@ const LiquidSelect = memo(function LiquidSelect({
                 aria-haspopup="listbox"
                 aria-expanded={isOpen}
                 className={`
-                    flex items-center justify-between gap-2 w-full px-3 py-2 rounded-lg
+                    flex items-center justify-between gap-2 w-full px-4 py-3 rounded-xl h-full
                     text-sm font-medium transition-all duration-200 outline-none
                     ${variant === 'default'
-                        ? 'bg-[var(--card-bg)] border border-[var(--card-border)]'
+                        ? 'bg-neutral-100/50 dark:bg-white/5 border border-[var(--border-color)] dark:border-white/10'
                         : 'bg-transparent border border-transparent hover:bg-neutral-100 dark:hover:bg-white/5'}
                     text-[var(--foreground)]
                     ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}

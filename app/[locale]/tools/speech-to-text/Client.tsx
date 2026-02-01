@@ -4,6 +4,9 @@ import { useState, useRef, useEffect } from "react";
 import { Mic, MicOff, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function SpeechToTextClient() {
     const t = useTranslations('SpeechToText');
@@ -67,7 +70,7 @@ export default function SpeechToTextClient() {
                         icon={<Mic size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10">
 
                         {!supported && (
                             <div className="p-3 bg-red-500/10 text-[#ef4444] rounded-lg mb-6 text-center">
@@ -76,14 +79,18 @@ export default function SpeechToTextClient() {
                         )}
 
                         <div className="mb-6 relative">
-                            <textarea
+                            <LiquidTextArea
                                 value={text} onChange={e => setText(e.target.value)}
-                                className="input-field w-full h-[200px] p-5 rounded-xl bg-black/30 border border-white/10 text-white text-lg resize-y"
+                                className="h-[200px]"
                                 placeholder={t('placeholder')}
                             />
-                            <button onClick={() => navigator.clipboard.writeText(text)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3 p-2">
+                            <LiquidButton
+                                onClick={() => navigator.clipboard.writeText(text)}
+                                variant="ghost"
+                                className="absolute top-2 right-2 p-2 h-auto border border-neutral-200 dark:border-white/10 text-neutral-500 dark:text-gray-400 hover:bg-neutral-100 dark:hover:bg-white/10"
+                            >
                                 <Copy size={16} />
-                            </button>
+                            </LiquidButton>
                         </div>
 
                         <div className="flex justify-center">
@@ -96,11 +103,11 @@ export default function SpeechToTextClient() {
                             </button>
                         </div>
 
-                        <div className="text-center mt-4 text-[#9ca3af] text-[13px]">
+                        <div className="text-center mt-4 text-[var(--muted-text)] text-[13px]">
                             {listening ? t('listening') : t('start')}
                         </div>
 
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

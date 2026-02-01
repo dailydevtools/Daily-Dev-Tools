@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { Link as LinkIcon, Copy, Check } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { useTranslations } from "next-intl";
 
 export default function PrettyPrintUrlClient() {
@@ -54,29 +56,30 @@ export default function PrettyPrintUrlClient() {
                         icon={<LinkIcon size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <LiquidCard className="p-10 hover:bg-[var(--card-hover-bg)] hover:border-orange-500/20 hover:-translate-y-1">
                         <div className="mb-6">
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('enterUrl')}</label>
-                            <input
-                                type="text" value={input} onChange={e => setInput(e.target.value)}
+                            <label className="block mb-2 text-neutral-500 dark:text-neutral-400 text-[13px]">{t('enterUrl')}</label>
+                            <LiquidInput
+                                value={input}
+                                onChange={e => setInput(e.target.value)}
                                 placeholder="https://example.com/path?param=value&other=123"
-                                className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] focus:outline-none focus:border-[#fb923c]"
+                                className="font-mono text-sm"
                             />
                         </div>
 
                         {output && (
                             <div className="mt-6">
                                 <div className="flex justify-between items-center mb-2">
-                                    <label className="text-[#9ca3af] text-[13px]">{t('formatted')}</label>
+                                    <label className="text-neutral-500 dark:text-neutral-400 text-[13px]">{t('formatted')}</label>
                                     <button
                                         onClick={handleCopy}
-                                        className="flex items-center gap-2 text-[#fb923c] hover:text-white transition-colors text-sm font-medium"
+                                        className="flex items-center gap-2 text-orange-500 hover:text-orange-600 dark:text-orange-400 dark:hover:text-orange-300 transition-colors text-sm font-medium"
                                     >
                                         {copied ? <><Check size={14} /> {t('copied')}</> : <><Copy size={14} /> {t('copy')}</>}
                                     </button>
                                 </div>
                                 <div className="relative group">
-                                    <pre className="w-full p-4 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] overflow-x-auto whitespace-pre-wrap font-mono text-sm leading-relaxed">
+                                    <pre className="w-full p-4 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] overflow-x-auto whitespace-pre-wrap font-mono text-sm leading-relaxed">
                                         {output}
                                     </pre>
                                 </div>
@@ -84,11 +87,11 @@ export default function PrettyPrintUrlClient() {
                         )}
 
                         {!input && (
-                            <div className="mt-8 text-center text-[#9ca3af] text-sm opacity-60">
+                            <div className="mt-8 text-center text-neutral-400 dark:text-neutral-500 text-sm opacity-60">
                                 {t('placeholder')}
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
                 </div>
             </div>
         </main>

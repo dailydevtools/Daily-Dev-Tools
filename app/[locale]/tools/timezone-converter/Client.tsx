@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Clock } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { useTranslations } from "next-intl";
 
 export default function TimezoneConverterClient() {
@@ -57,24 +58,34 @@ export default function TimezoneConverterClient() {
                         icon={<Clock size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
+                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--border-color)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-orange-500/20 hover:-translate-y-1 p-10">
 
-                        <div className="flex gap-6 mb-10">
-                            <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('date')}</label>
-                                <input type="date" value={date} onChange={e => setDate(e.target.value)} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                        <div className="flex flex-wrap gap-6 mb-10">
+                            <div className="flex-1 min-w-[200px]">
+                                <label className="block mb-2 text-neutral-500 dark:text-neutral-400 text-[13px] font-medium uppercase tracking-wide">{t('date')}</label>
+                                <LiquidInput
+                                    type="date"
+                                    value={date}
+                                    onChange={e => setDate(e.target.value)}
+                                    className="dark:[color-scheme:dark]"
+                                />
                             </div>
-                            <div className="flex-1">
-                                <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('time')}</label>
-                                <input type="time" value={time} onChange={e => setTime(e.target.value)} className="input-field w-full p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                            <div className="flex-1 min-w-[200px]">
+                                <label className="block mb-2 text-neutral-500 dark:text-neutral-400 text-[13px] font-medium uppercase tracking-wide">{t('time')}</label>
+                                <LiquidInput
+                                    type="time"
+                                    value={time}
+                                    onChange={e => setTime(e.target.value)}
+                                    className="dark:[color-scheme:dark]"
+                                />
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-4">
+                        <div className="flex flex-col gap-3">
                             {results.map(r => (
-                                <div key={r.name} className="flex justify-between p-4 bg-white/5 rounded-xl">
-                                    <span className="text-[#9ca3af]">{r.name}</span>
-                                    <span className="text-white font-semibold">{r.time}</span>
+                                <div key={r.name} className="flex justify-between items-center p-4 bg-neutral-100 dark:bg-white/5 border border-transparent hover:border-orange-500/30 rounded-xl transition-all">
+                                    <span className="text-neutral-500 dark:text-neutral-400 font-medium">{r.name}</span>
+                                    <span className="text-[var(--foreground)] font-semibold font-mono">{r.time}</span>
                                 </div>
                             ))}
                         </div>

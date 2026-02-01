@@ -6,6 +6,8 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+
 export default function DeviceInfoClient() {
     const t = useTranslations('DeviceInfo');
     const [info, setInfo] = useState<any>(null);
@@ -44,15 +46,15 @@ export default function DeviceInfoClient() {
     if (!info) return null;
 
     const InfoCard = ({ icon, label, value }: any) => (
-        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-6 flex items-center gap-4">
-            <div className="p-3 rounded-xl bg-white/5 text-[#fb923c]">
+        <LiquidCard className="p-6 flex items-center gap-5 group hover:border-orange-500/30 transition-all">
+            <div className="p-4 rounded-2xl bg-orange-500/5 dark:bg-orange-500/10 text-orange-500 group-hover:scale-110 transition-transform">
                 {icon}
             </div>
             <div>
-                <div className="text-[13px] text-[#9ca3af] mb-1">{label}</div>
-                <div className="text-base font-semibold text-white">{value}</div>
+                <div className="text-[11px] font-bold uppercase tracking-widest text-[var(--muted-text)] mb-1">{label}</div>
+                <div className="text-lg font-bold text-[var(--foreground)]">{value}</div>
             </div>
-        </div>
+        </LiquidCard>
     );
 
     return (
@@ -66,18 +68,20 @@ export default function DeviceInfoClient() {
                         icon={<ToolIcon name="Smartphone" size={32} />}
                     />
 
-                    <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-5 mb-10">
-                        <InfoCard icon={<Monitor size={20} />} label={t('screenResolution')} value={info.screen} />
-                        <InfoCard icon={<Globe size={20} />} label={t('browser')} value={navigator.vendor || t('unknown')} />
-                        <InfoCard icon={<Cpu size={20} />} label={t('cpuCores')} value={info.cores} />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                        <InfoCard icon={<Monitor size={24} />} label={t('screenResolution')} value={info.screen} />
+                        <InfoCard icon={<Globe size={24} />} label={t('browser')} value={navigator.vendor || t('unknown')} />
+                        <InfoCard icon={<Cpu size={24} />} label={t('cpuCores')} value={info.cores} />
                         {info.battery && (
-                            <InfoCard icon={<Battery size={20} />} label={t('battery')} value={`${info.battery.level} (${info.battery.charging})`} />
+                            <InfoCard icon={<Battery size={24} />} label={t('battery')} value={info.battery.level} />
                         )}
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
-                        <h3 className="text-lg font-bold text-white mb-5">{t('detailedSpecs')}</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                    <LiquidCard className="p-0 overflow-hidden">
+                        <div className="p-8 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5">
+                            <h3 className="text-xl font-bold text-[var(--title-color)]">{t('detailedSpecs')}</h3>
+                        </div>
+                        <div className="grid grid-cols-1 md:grid-cols-2">
                             {[
                                 [t('userAgent'), info.userAgent],
                                 [t('platform'), info.platform],
@@ -87,14 +91,14 @@ export default function DeviceInfoClient() {
                                 [t('ram'), info.memory],
                                 [t('cookiesEnabled'), info.cookies],
                                 [t('onlineStatus'), info.online]
-                            ].map(([label, value]) => (
-                                <div key={label} className="p-3 border-b border-white/5">
-                                    <div className="text-[#9ca3af] mb-1">{label}</div>
-                                    <div className="text-white break-all">{value}</div>
+                            ].map(([label, value], i) => (
+                                <div key={label} className={`p-6 border-[var(--border-color)] ${i % 2 === 0 ? 'md:border-r' : ''} border-b last:border-b-0`}>
+                                    <div className="text-[11px] font-bold uppercase tracking-widest text-[var(--muted-text)] mb-2">{label}</div>
+                                    <div className="text-[var(--foreground)] font-medium break-all">{value}</div>
                                 </div>
                             ))}
                         </div>
-                    </div>
+                    </LiquidCard>
                 </div>
             </div>
         </main>

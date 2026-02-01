@@ -4,7 +4,8 @@ import { useState, useRef } from "react";
 import { Image as ImageIcon, Download } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
-
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function FaviconGeneratorClient() {
     const t = useTranslations('FaviconGenerator');
     const [preview, setPreview] = useState("");
@@ -50,37 +51,45 @@ export default function FaviconGeneratorClient() {
                         icon={<ImageIcon size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
-                        <div className="border-2 border-dashed border-white/10 rounded-2xl p-10 text-center mb-6 cursor-pointer hover:border-[#fb923c]/50 transition-colors" onClick={() => document.getElementById('favInput')?.click()}>
+                    <LiquidCard className="p-10 text-center">
+                        <div className="border-2 border-dashed border-[var(--border-color)] rounded-2xl p-10 text-center mb-6 cursor-pointer hover:border-[#fb923c]/50 transition-colors" onClick={() => document.getElementById('favInput')?.click()}>
                             <input id="favInput" type="file" accept="image/*" onChange={handleFile} className="hidden" />
                             <ImageIcon size={48} color="#fb923c" className="mx-auto mb-4" />
-                            <div className="text-lg text-white mb-2">{t('upload')}</div>
-                            <div className="text-sm text-[#9ca3af]">{t('browse')}</div>
+                            <div className="text-lg text-[var(--foreground)] mb-2 font-medium">{t('upload')}</div>
+                            <div className="text-sm text-[var(--muted-text)]">Recommended: 512x512 PNG</div>
                         </div>
 
                         {preview && (
                             <div className="flex flex-col items-center gap-6 mt-10">
                                 <div className="flex gap-10">
                                     <div>
-                                        <div className="mb-2 text-[13px] text-[#9ca3af]">{t('original')}</div>
+                                        <div className="mb-2 text-[13px] text-[var(--muted-text)]">{t('original')}</div>
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={preview} alt="Original" className="w-16 h-16 rounded-lg" />
+                                        <img src={preview} alt="Original" className="w-16 h-16 rounded-lg border border-[var(--border-color)]" />
                                     </div>
                                     <div>
-                                        <div className="mb-2 text-[13px] text-[#9ca3af]">{t('favicon')}</div>
-                                        <canvas ref={canvasRef} width={32} height={32} className="w-8 h-8 border border-[#333]" />
+                                        <div className="mb-2 text-[13px] text-[var(--muted-text)]">{t('favicon')}</div>
+                                        <canvas ref={canvasRef} width={32} height={32} className="w-8 h-8 border border-[var(--border-color)]" />
                                     </div>
                                 </div>
 
                                 {downloadUrl && (
-                                    <a href={downloadUrl} download="favicon.png" className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] py-3 px-8 flex items-center gap-2 no-underline">
-                                        <Download size={18} /> {t('download')}
-                                    </a>
+                                    <LiquidButton
+                                        onClick={() => {
+                                            const link = document.createElement('a');
+                                            link.href = downloadUrl;
+                                            link.download = 'favicon.png';
+                                            link.click();
+                                        }}
+                                        className="px-8 py-3"
+                                    >
+                                        <Download size={18} className="mr-2" /> {t('download')}
+                                    </LiquidButton>
                                 )}
-                                <div className="text-xs text-[#6b7280]">{t('note')}</div>
+                                <div className="text-xs text-[var(--muted-text)]">{t('note')}</div>
                             </div>
                         )}
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

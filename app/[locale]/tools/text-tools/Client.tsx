@@ -4,7 +4,10 @@ import { useState } from "react";
 import { Copy, Type } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
-
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function TextToolsClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
@@ -44,37 +47,50 @@ export default function TextToolsClient() {
                         icon={<Type size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="flex justify-center gap-3 mb-6 flex-wrap">
-                        <button onClick={() => setMode("reverse")} className={`inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] ${mode === 'reverse' ? 'bg-orange-500 text-black border-orange-500 hover:bg-orange-600' : ''}`}>{t('TextTools.reverse')}</button>
-                        <button onClick={() => setMode("flip")} className={`inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] ${mode === 'flip' ? 'bg-orange-500 text-black border-orange-500 hover:bg-orange-600' : ''}`}>Upside Down</button>
-                        <button onClick={() => setMode("binary")} className={`inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] ${mode === 'binary' ? 'bg-orange-500 text-black border-orange-500 hover:bg-orange-600' : ''}`}>Binary</button>
-                        <button onClick={() => setMode("hex")} className={`inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] ${mode === 'hex' ? 'bg-orange-500 text-black border-orange-500 hover:bg-orange-600' : ''}`}>Hex</button>
+                    <div className="flex justify-center mb-6">
+                        <LiquidTabs
+                            tabs={['reverse', 'flip', 'binary', 'hex']}
+                            activeTab={mode}
+                            onChange={(m) => setMode(m as any)}
+                            labels={{
+                                reverse: t('TextTools.reverse'),
+                                flip: "Upside Down",
+                                binary: "Binary",
+                                hex: "Hex"
+                            }}
+                        />
                     </div>
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10">
-                        <div className="mb-5">
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('common.input')}</label>
-                            <textarea
+                    <LiquidCard className="p-10">
+                        <div className="mb-6">
+                            <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('common.input')}</label>
+                            <LiquidTextArea
                                 value={input} onChange={e => setInput(e.target.value)}
                                 placeholder={t('TextTools.inputPlaceholder')}
-                                className="input-field w-full h-[120px] p-3 rounded-xl bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] resize-y"
+                                className="h-[120px]"
                             />
                         </div>
 
                         <div>
-                            <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('common.output')}</label>
+                            <label className="block mb-2 text-[var(--muted-text)] text-[13px]">{t('common.output')}</label>
                             <div className="relative">
-                                <textarea
+                                <LiquidTextArea
                                     readOnly
                                     value={output}
-                                    className="w-full h-[120px] bg-transparent dark:bg-black/30 border border-neutral-200 dark:border-white/10 rounded-xl p-4 text-[#fb923c] text-base resize-y outline-none"
+                                    className="h-[120px] text-orange-500"
                                 />
-                                <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] absolute top-3 right-3 p-2">
-                                    <Copy size={16} />
-                                </button>
+                                <div className="absolute top-3 right-3">
+                                    <LiquidButton
+                                        variant="ghost"
+                                        onClick={() => navigator.clipboard.writeText(output)}
+                                        className="h-8 w-8 p-0"
+                                    >
+                                        <Copy size={16} />
+                                    </LiquidButton>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>

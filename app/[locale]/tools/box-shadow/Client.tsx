@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function BoxShadowGeneratorClient() {
     const t = useTranslations('ToolPage');
@@ -43,66 +44,46 @@ export default function BoxShadowGeneratorClient() {
                         {/* Controls Panel - Liquid Glass Card */}
                         <LiquidCard className="p-8">
 
-                            <div className="mb-6">
-                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
-                                    <span>{t('BoxShadowGenerator.horizontal')}</span> <span className="text-[var(--title-color)] font-mono">{x}px</span>
-                                </label>
-                                <input
-                                    type="range"
-                                    min="-100"
-                                    max="100"
-                                    value={x}
-                                    onChange={e => setX(Number(e.target.value))}
-                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
-                                />
-                            </div>
+                            <LiquidSlider
+                                label={t('BoxShadowGenerator.horizontal')}
+                                valueDisplay={`${x}px`}
+                                min={-100} max={100}
+                                value={x}
+                                onChange={(e) => setX(Number(e.target.value))}
+                                containerClassName="mb-6"
+                            />
 
-                            <div className="mb-6">
-                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
-                                    <span>{t('BoxShadowGenerator.vertical')}</span> <span className="text-[var(--title-color)] font-mono">{y}px</span>
-                                </label>
-                                <input
-                                    type="range"
-                                    min="-100"
-                                    max="100"
-                                    value={y}
-                                    onChange={e => setY(Number(e.target.value))}
-                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
-                                />
-                            </div>
+                            <LiquidSlider
+                                label={t('BoxShadowGenerator.vertical')}
+                                valueDisplay={`${y}px`}
+                                min={-100} max={100}
+                                value={y}
+                                onChange={(e) => setY(Number(e.target.value))}
+                                containerClassName="mb-6"
+                            />
 
-                            <div className="mb-6">
-                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
-                                    <span>{t('BoxShadowGenerator.blur')}</span> <span className="text-[var(--title-color)] font-mono">{blur}px</span>
-                                </label>
-                                <input
-                                    type="range"
-                                    min="0"
-                                    max="100"
-                                    value={blur}
-                                    onChange={e => setBlur(Number(e.target.value))}
-                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
-                                />
-                            </div>
+                            <LiquidSlider
+                                label={t('BoxShadowGenerator.blur')}
+                                valueDisplay={`${blur}px`}
+                                min={0} max={100}
+                                value={blur}
+                                onChange={(e) => setBlur(Number(e.target.value))}
+                                containerClassName="mb-6"
+                            />
 
-                            <div className="mb-6">
-                                <label className="flex justify-between mb-2 text-[13px] font-medium text-[var(--muted-text)]">
-                                    <span>{t('BoxShadowGenerator.spread')}</span> <span className="text-[var(--title-color)] font-mono">{spread}px</span>
-                                </label>
-                                <input
-                                    type="range"
-                                    min="-100"
-                                    max="100"
-                                    value={spread}
-                                    onChange={e => setSpread(Number(e.target.value))}
-                                    className="w-full h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
-                                />
-                            </div>
+                            <LiquidSlider
+                                label={t('BoxShadowGenerator.spread')}
+                                valueDisplay={`${spread}px`}
+                                min={-100} max={100}
+                                value={spread}
+                                onChange={(e) => setSpread(Number(e.target.value))}
+                                containerClassName="mb-6"
+                            />
 
                             <div className="mb-6">
                                 <label className="block mb-2 text-[var(--muted-text)] text-[13px] font-medium">{t('BoxShadowGenerator.colorOpacity')}</label>
-                                <div className="flex gap-3 items-center">
-                                    <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)]">
+                                <div className="flex gap-3 items-end">
+                                    <div className="relative w-12 h-12 rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)] shrink-0 bg-[var(--card-bg)]">
                                         <input
                                             type="color"
                                             value={color}
@@ -110,14 +91,12 @@ export default function BoxShadowGeneratorClient() {
                                             className="absolute -top-2 -left-2 w-[200%] h-[200%] p-0 m-0 cursor-pointer"
                                         />
                                     </div>
-                                    <input
-                                        type="range"
-                                        min="0"
-                                        max="1"
-                                        step="0.01"
+                                    <LiquidSlider
+                                        min={0} max={1} step={0.01}
                                         value={opacity}
-                                        onChange={e => setOpacity(Number(e.target.value))}
-                                        className="flex-1 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-orange-400"
+                                        onChange={(e) => setOpacity(Number(e.target.value))}
+                                        containerClassName="flex-1"
+                                        valueDisplay={opacity}
                                     />
                                 </div>
                             </div>

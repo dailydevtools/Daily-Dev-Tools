@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function LoanCalculatorClient() {
     const t = useTranslations('ToolPage');
@@ -72,10 +73,11 @@ export default function LoanCalculatorClient() {
                                     type="number"
                                     value={amount} onChange={e => setAmount(Number(e.target.value))}
                                 />
-                                <input
-                                    type="range" min="1000" max="1000000" step="1000"
-                                    value={amount} onChange={e => setAmount(Number(e.target.value))}
-                                    className="w-full mt-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
+                                <LiquidSlider
+                                    min={1000} max={1000000} step={1000}
+                                    value={amount}
+                                    onChange={(e) => setAmount(Number(e.target.value))}
+                                    containerClassName="mt-6"
                                 />
                             </div>
 
@@ -85,10 +87,11 @@ export default function LoanCalculatorClient() {
                                     type="number"
                                     value={rate} onChange={e => setRate(Number(e.target.value))}
                                 />
-                                <input
-                                    type="range" min="0.1" max="30" step="0.1"
-                                    value={rate} onChange={e => setRate(Number(e.target.value))}
-                                    className="w-full mt-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none"
+                                <LiquidSlider
+                                    min={0.1} max={30} step={0.1}
+                                    value={rate}
+                                    onChange={(e) => setRate(Number(e.target.value))}
+                                    containerClassName="mt-6"
                                 />
                             </div>
 

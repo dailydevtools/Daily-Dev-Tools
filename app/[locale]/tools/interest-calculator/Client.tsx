@@ -14,6 +14,8 @@ interface ChartData {
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function InterestCalculatorClient() {
     const t = useTranslations('ToolPage');
@@ -80,22 +82,34 @@ export default function InterestCalculatorClient() {
                             </div>
                             <div className="mb-6">
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.rate')} (%)</label>
-                                <div className="flex gap-4 items-center">
-                                    <LiquidInput type="number" value={rate} onChange={e => setRate(Number(e.target.value))} className="w-24 text-center" />
-                                    <input type="range" min="1" max="20" step="0.5" value={rate} onChange={e => setRate(Number(e.target.value))} className="flex-1 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none" />
-                                </div>
+                                <LiquidInput type="number" value={rate} onChange={e => setRate(Number(e.target.value))} />
+                                <LiquidSlider
+                                    min={1} max={20} step={0.5}
+                                    value={rate}
+                                    onChange={(e) => setRate(Number(e.target.value))}
+                                    containerClassName="mt-6"
+                                />
                             </div>
                             <div className="mb-6">
-                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.time')}</label>
-                                <input type="range" min="1" max="50" value={years} onChange={e => setYears(Number(e.target.value))} className="w-full mb-3 accent-orange-500 h-2 bg-neutral-200 dark:bg-neutral-800 rounded-lg appearance-none" />
-                                <div className="text-center font-bold text-[var(--foreground)]">{years} {t('InterestCalculator.year')}s</div>
+                                <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.time')} ({years} {t('InterestCalculator.year')}s)</label>
+                                <LiquidSlider
+                                    min={1} max={50} step={1}
+                                    value={years}
+                                    onChange={(e) => setYears(Number(e.target.value))}
+                                    containerClassName="mt-2"
+                                />
                             </div>
                             <div className="mb-6">
                                 <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('InterestCalculator.type')}</label>
-                                <div className="flex dark:bg-neutral-800 p-1 rounded-xl border border-neutral-200 dark:border-white/5">
-                                    <button onClick={() => setType('simple')} className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${type === 'simple' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}>{t('InterestCalculator.simpleInterest')}</button>
-                                    <button onClick={() => setType('compound')} className={`flex-1 py-2 rounded-lg text-sm font-medium transition-all ${type === 'compound' ? 'bg-white dark:bg-neutral-700 shadow-sm text-orange-500' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}>{t('InterestCalculator.compoundInterest')}</button>
-                                </div>
+                                <LiquidTabs
+                                    tabs={['simple', 'compound']}
+                                    activeTab={type}
+                                    onChange={(t) => setType(t as any)}
+                                    labels={{
+                                        simple: t('InterestCalculator.simpleInterest'),
+                                        compound: t('InterestCalculator.compoundInterest')
+                                    }}
+                                />
                             </div>
                             {type === 'compound' && (
                                 <div>
@@ -120,7 +134,7 @@ export default function InterestCalculatorClient() {
                                     <div className="text-4xl font-bold text-[var(--foreground)]">{result ? format(result.total) : '-'}</div>
                                 </div>
                                 <div>
-                                    <div className="text-sm font-medium text-[var(--muted-text)] mb-1">{t('InterestCalculator.totalAmount')}</div>
+                                    <div className="text-sm font-medium text-[var(--muted-text)] mb-1">{t('LoanCalculator.totalInterest')}</div>
                                     <div className="text-4xl font-bold text-green-500">{result ? format(result.interest) : '-'}</div>
                                 </div>
                             </div>
@@ -149,7 +163,7 @@ export default function InterestCalculatorClient() {
                                     <div className="w-3 h-3 rounded-sm bg-blue-500" /> {t('InterestCalculator.principal')}
                                 </div>
                                 <div className="flex items-center gap-2 text-sm text-[var(--muted-text)]">
-                                    <div className="w-3 h-3 rounded-sm bg-green-500" /> {t('InterestCalculator.interest')}
+                                    <div className="w-3 h-3 rounded-sm bg-green-500" /> {t('LoanCalculator.interest')}
                                 </div>
                             </div>
                         </LiquidCard>

@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Twitter } from "lucide-react";
+import { Twitter, Copy } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function TwitterCardClient() {
     const t = useTranslations('TwitterCard');
@@ -37,10 +40,10 @@ export default function TwitterCardClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                        <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-8">
+                        <LiquidCard className="p-8">
                             <div className="flex flex-col gap-4">
                                 <div className="relative z-20">
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('cardType')}</label>
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('cardType')}</label>
                                     <LiquidSelect
                                         value={cardType}
                                         onChange={setCardType}
@@ -52,54 +55,60 @@ export default function TwitterCardClient() {
                                     />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('siteHandle')}</label>
-                                    <input type="text" value={site} onChange={e => setSite(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('siteHandle')}</label>
+                                    <LiquidInput value={site} onChange={e => setSite(e.target.value)} />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('title')}</label>
-                                    <input type="text" value={title} onChange={e => setTitle(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('title')}</label>
+                                    <LiquidInput value={title} onChange={e => setTitle(e.target.value)} />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('description')}</label>
-                                    <textarea value={desc} onChange={e => setDesc(e.target.value)} className="input-field w-full h-20 p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)] resize-y" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('description')}</label>
+                                    <LiquidTextArea value={desc} onChange={e => setDesc(e.target.value)} className="h-24" />
                                 </div>
                                 <div>
-                                    <label className="block mb-2 text-[#9ca3af] text-[13px]">{t('imageUrl')}</label>
-                                    <input type="text" value={image} onChange={e => setImage(e.target.value)} className="input-field w-full p-3 rounded-xl bg-neutral-100 dark:bg-black/30 border border-neutral-200 dark:border-white/10 text-[var(--foreground)]" />
+                                    <label className="block mb-2 text-[var(--muted-text)] text-sm font-medium">{t('imageUrl')}</label>
+                                    <LiquidInput value={image} onChange={e => setImage(e.target.value)} />
                                 </div>
                             </div>
-                        </div>
+                        </LiquidCard>
 
                         <div className="flex flex-col gap-6">
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0 overflow-hidden">
-                                <div className="p-3 bg-white/5 text-[13px] text-[#9ca3af] border-b border-white/5">{t('preview')}</div>
-                                <div className="p-4 bg-black rounded-b-2xl">
-                                    <div className={`border border-[#333] rounded-xl overflow-hidden ${cardType === 'summary' ? 'flex' : 'block'}`}>
+                            <LiquidCard className="p-0 overflow-hidden">
+                                <div className="p-3 bg-neutral-100/50 dark:bg-white/5 text-[13px] font-medium text-[var(--muted-text)] border-b border-[var(--border-color)]">{t('preview')}</div>
+                                <div className="p-4 bg-neutral-100 dark:bg-neutral-900 rounded-b-2xl transition-colors">
+                                    <div className={`border border-[var(--border-color)] rounded-xl overflow-hidden bg-white dark:bg-black transition-colors ${cardType === 'summary' ? 'flex' : 'block'}`}>
                                         <div
                                             className={`
                                                 ${cardType === 'summary' ? 'w-[120px] h-[120px]' : 'w-full h-[200px]'}
-                                                bg-[#222] flex items-center justify-center text-[#555] shrink-0 bg-center bg-cover
+                                                bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-neutral-400 dark:text-neutral-600 shrink-0 bg-center bg-cover transition-colors
                                             `}
                                             style={{ backgroundImage: image ? `url(${image})` : undefined }}
                                         >
                                             {!image && <Twitter size={32} />}
                                         </div>
-                                        <div className="p-3 bg-black flex-1">
-                                            <div className="text-sm font-bold text-white mb-1">{title || t('placeholderTitle')}</div>
-                                            <div className="text-[13px] text-[#8899a6] mb-1 max-h-10 overflow-hidden">{desc || t('placeholderDesc')}</div>
-                                            <div className="text-xs text-[#8899a6]">Example.com</div>
+                                        <div className="p-3 flex-1">
+                                            <div className="text-sm font-bold text-neutral-900 dark:text-white mb-1 line-clamp-1">{title || t('placeholderTitle')}</div>
+                                            <div className="text-[13px] text-neutral-500 dark:text-neutral-400 mb-1 max-h-10 overflow-hidden line-clamp-2">{desc || t('placeholderDesc')}</div>
+                                            <div className="text-xs text-neutral-400 dark:text-neutral-500">Example.com</div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </LiquidCard>
 
-                            <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-0">
-                                <div className="p-3 bg-black/20 text-[#9ca3af] text-[13px] border-b border-white/10">{t('generatedHtml')}</div>
-                                <textarea readOnly value={output} className="w-full h-[150px] p-5 bg-transparent border-none text-[#fb923c] font-mono resize-none outline-none" />
-                                <div className="p-3 text-right border-t border-white/10">
-                                    <button onClick={() => navigator.clipboard.writeText(output)} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)]">{t('copy')}</button>
+                            <LiquidCard className="p-0 flex-1 flex flex-col">
+                                <div className="p-4 px-6 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
+                                    <span className="font-medium text-orange-500">{t('generatedHtml')}</span>
+                                    <LiquidButton onClick={() => navigator.clipboard.writeText(output)} variant="ghost" className="h-8 py-0 px-3 text-xs gap-2">
+                                        <Copy size={14} /> {t('copy')}
+                                    </LiquidButton>
                                 </div>
-                            </div>
+                                <LiquidTextArea
+                                    readOnly
+                                    value={output}
+                                    className="h-[150px] border-none !bg-transparent text-orange-500 font-mono resize-none outline-none text-sm leading-relaxed"
+                                />
+                            </LiquidCard>
                         </div>
                     </div>
 

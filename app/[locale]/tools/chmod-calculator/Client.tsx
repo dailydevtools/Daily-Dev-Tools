@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Check, Shield } from "lucide-react";
+import { Shield } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
@@ -12,6 +12,7 @@ interface Permission {
 }
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidCheckbox } from "../../../components/ui/LiquidCheckbox";
 
 export default function ChmodCalculatorClient() {
     const t = useTranslations('ChmodCalculator');
@@ -25,17 +26,7 @@ export default function ChmodCalculatorClient() {
     const numeric = `${calc(owner)}${calc(group)}${calc(public_)}`;
     const symbolic = `${sym(owner)}${sym(group)}${sym(public_)}`;
 
-    const Toggle = ({ checked, onChange, label }: { checked: boolean; onChange: (v: boolean) => void; label: string }) => (
-        <button
-            onClick={() => onChange(!checked)}
-            className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-all duration-200 border w-full text-left ${checked ? 'bg-orange-500/10 border-orange-500/30' : 'bg-neutral-100/50 dark:bg-white/5 border-transparent hover:border-orange-500/20'}`}
-        >
-            <div className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${checked ? 'bg-orange-500 border-orange-500' : 'bg-transparent border-[var(--border-color)]'}`}>
-                {checked && <Check size={12} className="text-white" />}
-            </div>
-            <span className={`font-medium ${checked ? 'text-orange-600 dark:text-orange-400' : 'text-[var(--muted-text)]'}`}>{label}</span>
-        </button>
-    );
+
 
     return (
         <main className="relative min-h-screen">
@@ -53,25 +44,25 @@ export default function ChmodCalculatorClient() {
                             <div>
                                 <div className="mb-4 text-[var(--foreground)] font-semibold text-center">{t('owner')}</div>
                                 <div className="grid gap-3">
-                                    <Toggle checked={owner.r} onChange={(v) => setOwner({ ...owner, r: v })} label={`${t('read')} (4)`} />
-                                    <Toggle checked={owner.w} onChange={(v) => setOwner({ ...owner, w: v })} label={`${t('write')} (2)`} />
-                                    <Toggle checked={owner.x} onChange={(v) => setOwner({ ...owner, x: v })} label={`${t('execute')} (1)`} />
+                                    <LiquidCheckbox variant="card" checked={owner.r} onChange={(v) => setOwner({ ...owner, r: v })} label={`${t('read')} (4)`} />
+                                    <LiquidCheckbox variant="card" checked={owner.w} onChange={(v) => setOwner({ ...owner, w: v })} label={`${t('write')} (2)`} />
+                                    <LiquidCheckbox variant="card" checked={owner.x} onChange={(v) => setOwner({ ...owner, x: v })} label={`${t('execute')} (1)`} />
                                 </div>
                             </div>
                             <div>
                                 <div className="mb-4 text-[var(--foreground)] font-semibold text-center">{t('group')}</div>
                                 <div className="grid gap-3">
-                                    <Toggle checked={group.r} onChange={(v) => setGroup({ ...group, r: v })} label={`${t('read')} (4)`} />
-                                    <Toggle checked={group.w} onChange={(v) => setGroup({ ...group, w: v })} label={`${t('write')} (2)`} />
-                                    <Toggle checked={group.x} onChange={(v) => setGroup({ ...group, x: v })} label={`${t('execute')} (1)`} />
+                                    <LiquidCheckbox variant="card" checked={group.r} onChange={(v) => setGroup({ ...group, r: v })} label={`${t('read')} (4)`} />
+                                    <LiquidCheckbox variant="card" checked={group.w} onChange={(v) => setGroup({ ...group, w: v })} label={`${t('write')} (2)`} />
+                                    <LiquidCheckbox variant="card" checked={group.x} onChange={(v) => setGroup({ ...group, x: v })} label={`${t('execute')} (1)`} />
                                 </div>
                             </div>
                             <div>
                                 <div className="mb-4 text-[var(--foreground)] font-semibold text-center">{t('public')}</div>
                                 <div className="grid gap-3">
-                                    <Toggle checked={public_.r} onChange={(v) => setPublic({ ...public_, r: v })} label={`${t('read')} (4)`} />
-                                    <Toggle checked={public_.w} onChange={(v) => setPublic({ ...public_, w: v })} label={`${t('write')} (2)`} />
-                                    <Toggle checked={public_.x} onChange={(v) => setPublic({ ...public_, x: v })} label={`${t('execute')} (1)`} />
+                                    <LiquidCheckbox variant="card" checked={public_.r} onChange={(v) => setPublic({ ...public_, r: v })} label={`${t('read')} (4)`} />
+                                    <LiquidCheckbox variant="card" checked={public_.w} onChange={(v) => setPublic({ ...public_, w: v })} label={`${t('write')} (2)`} />
+                                    <LiquidCheckbox variant="card" checked={public_.x} onChange={(v) => setPublic({ ...public_, x: v })} label={`${t('execute')} (1)`} />
                                 </div>
                             </div>
                         </div>
@@ -87,8 +78,8 @@ export default function ChmodCalculatorClient() {
                             </div>
                         </div>
 
-                        <div className="p-4 bg-neutral-900 border border-neutral-800 rounded-xl text-neutral-400 text-center font-mono text-sm shadow-inner">
-                            chmod <span className="text-orange-400 font-bold">{numeric}</span> filename
+                        <div className="p-4 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl text-neutral-600 dark:text-neutral-400 text-center font-mono text-sm shadow-inner transition-colors">
+                            chmod <span className="text-orange-500 dark:text-orange-400 font-bold">{numeric}</span> filename
                         </div>
                     </LiquidCard>
 
