@@ -36,7 +36,7 @@ export function LiquidSlider({
                 <div className="absolute top-1/2 left-0 w-full h-2.5 -translate-y-1/2 bg-neutral-100/80 dark:bg-white/5 border border-white/20 dark:border-white/5 rounded-full backdrop-blur-sm shadow-inner overflow-hidden">
                     {/* Progressive Fill Layer */}
                     <div
-                        className="h-full bg-gradient-to-r from-orange-400/80 to-orange-500/90 shadow-[0_0_15px_rgba(249,115,22,0.3)] transition-all duration-150 rounded-l-full"
+                        className="h-full bg-gradient-to-r from-orange-400/80 to-orange-500/90 shadow-[0_0_15px_rgba(249,115,22,0.3)] rounded-l-full"
                         style={{ width: `${((Number(props.value || 0) - Number(props.min || 0)) / (Number(props.max || 100) - Number(props.min || 0))) * 100}%` }}
                     />
                 </div>
@@ -44,7 +44,7 @@ export function LiquidSlider({
                 <input
                     type="range"
                     className={`
-                        absolute inset-0 w-full h-full opacity-0 cursor-grab active:cursor-grabbing z-10
+                        absolute inset-0 w-full h-full opacity-0 cursor-grab active:cursor-grabbing z-20
                         ${className}
                     `}
                     {...props}
@@ -52,7 +52,7 @@ export function LiquidSlider({
 
                 {/* Visual Thumb representation */}
                 <div
-                    className="absolute top-1/2 -translate-y-1/2 pointer-events-none transition-all duration-150"
+                    className="absolute top-1/2 -translate-y-1/2 pointer-events-none"
                     style={{
                         left: `calc(${((Number(props.value || 0) - Number(props.min || 0)) / (Number(props.max || 100) - Number(props.min || 0))) * 100}% - 10px)`
                     }}
