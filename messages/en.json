@@ -970,7 +970,9 @@
       "jsonInput": "JSON Input",
       "csvInput": "CSV Input",
       "jsonOutput": "JSON Output",
-      "csvOutput": "CSV Output"
+      "csvOutput": "CSV Output",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "Original JSON",
@@ -1166,14 +1168,7 @@
       "reset": "Reset",
       "lap": "Lap"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP Address",
-      "subnetMask": "Subnet Mask",
-      "calculate": "Calculate",
-      "networkAddress": "Network Address",
-      "broadcastAddress": "Broadcast Address",
-      "usableHosts": "Usable Hosts"
-    },
+
     "SvgToPng": {
       "pasteSvg": "Paste SVG",
       "uploadSvg": "Upload SVG",
@@ -1456,10 +1451,7 @@
     "subtitle": "Explore other popular developer tools",
     "openTool": "Open Tool"
   },
-  "Breadcrumb": {
-    "home": "Home",
-    "tools": "Tools"
-  },
+
   "SvgToPng": {
     "upload": "Upload SVG File",
     "browse": "or click to browse",
@@ -1570,7 +1562,7 @@
   },
   "SubnetCalculator": {
     "ip": "IP Address",
-    "cidr": "CIDR (/{cidr})",
+    "cidr": "CIDR",
     "calculate": "Calculate",
     "subnetMask": "Subnet Mask",
     "networkAddress": "Network Address",

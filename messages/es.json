@@ -946,7 +946,9 @@
       "jsonInput": "Entrada JSON",
       "csvInput": "Entrada CSV",
       "jsonOutput": "Salida JSON",
-      "csvOutput": "Salida CSV"
+      "csvOutput": "Salida CSV",
+      "minifyOutput": "Minificar Salida",
+      "parseNumbers": "Analizar Números"
     },
     "JsonDiff": {
       "original": "JSON originales",
@@ -1142,14 +1144,7 @@
       "reset": "Reiniciar",
       "lap": "Regazo"
     },
-    "SubnetCalculator": {
-      "ipAddress": "Dirección IP",
-      "subnetMask": "Máscara de subred",
-      "calculate": "Calcular",
-      "networkAddress": "Dirección de red",
-      "broadcastAddress": "Dirección de transmisión",
-      "usableHosts": "Hosts utilizables"
-    },
+
     "SvgToPng": {
       "pasteSvg": "Pegar SVG",
       "uploadSvg": "Subir SVG",
@@ -1545,7 +1540,7 @@
   },
   "SubnetCalculator": {
     "ip": "Dirección IP",
-    "cidr": "CIDR(/{cidr})",
+    "cidr": "CIDR",
     "calculate": "Calcular",
     "subnetMask": "Máscara de subred",
     "networkAddress": "Dirección de red",
