@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { Smartphone } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
+import { LiquidCard } from "../../../components/ui/LiquidCard";
+import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 import { useTranslations } from "next-intl";
 
 export default function VibrationTesterClient() {
@@ -25,32 +28,53 @@ export default function VibrationTesterClient() {
                         icon={<Smartphone size={28} className="text-[#fb923c]" />}
                     />
 
-                    <div className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 p-10 text-center">
-                        <div className="mb-6 p-6 bg-white/5 rounded-xl">
-                            <Smartphone size={48} className="text-white mx-auto mb-4" />
-                            <div className="text-[#9ca3af]">{t('worksOnly')}</div>
+                    <LiquidCard className="p-10 text-center">
+                        <div className="mb-6 p-6 bg-neutral-100 dark:bg-white/5 rounded-xl border border-neutral-200 dark:border-white/5 transition-colors">
+                            <Smartphone size={48} className="text-orange-500 mx-auto mb-4" />
+                            <div className="text-neutral-500 dark:text-neutral-400 font-medium">{t('worksOnly')}</div>
                         </div>
 
                         <div className="mb-8">
-                            <label className="block mb-3 text-[#9ca3af] text-[13px]">{t('duration')}: {duration}</label>
-                            <input type="range" min="50" max="2000" step="50" value={duration} onChange={e => setDuration(Number(e.target.value))} className="w-full accent-[#fb923c]" />
+                            <LiquidSlider
+                                label={t('duration')}
+                                value={duration}
+                                min="50"
+                                max="2000"
+                                step="50"
+                                valueDisplay={`${duration}ms`}
+                                onChange={e => setDuration(Number(e.target.value))}
+                            />
                         </div>
 
                         <div className="grid gap-4">
-                            <button onClick={() => vibrate(duration)} className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] p-5">
+                            <LiquidButton onClick={() => vibrate(duration)} className="py-5 shadow-lg shadow-orange-500/20">
                                 {t('vibrateOnce')}
-                            </button>
-                            <button onClick={() => vibrate([200, 100, 200, 100, 200])} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-5">
+                            </LiquidButton>
+
+                            <LiquidButton
+                                variant="ghost"
+                                onClick={() => vibrate([200, 100, 200, 100, 200])}
+                                className="py-5 border-neutral-200 dark:border-white/10 hover:bg-neutral-100 dark:hover:bg-white/10 text-neutral-600 dark:text-neutral-400"
+                            >
                                 {t('pulsePattern')}
-                            </button>
-                            <button onClick={() => vibrate([500, 100, 500, 100, 1000])} className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-5">
+                            </LiquidButton>
+
+                            <LiquidButton
+                                variant="ghost"
+                                onClick={() => vibrate([500, 100, 500, 100, 1000])}
+                                className="py-5 border-neutral-200 dark:border-white/10 hover:bg-neutral-100 dark:hover:bg-white/10 text-neutral-600 dark:text-neutral-400"
+                            >
                                 {t('longPulse')}
-                            </button>
-                            <button onClick={() => vibrate(0)} className="p-5 rounded-xl bg-[#ef4444] text-white border-none font-semibold cursor-pointer hover:bg-[#dc2626] transition-colors">
+                            </LiquidButton>
+
+                            <button
+                                onClick={() => vibrate(0)}
+                                className="p-5 rounded-xl bg-red-500 text-white border-none font-semibold cursor-pointer hover:bg-red-600 hover:-translate-y-1 transition-all shadow-lg shadow-red-500/20 active:scale-95 duration-200"
+                            >
                                 {t('stop')}
                             </button>
                         </div>
-                    </div>
+                    </LiquidCard>
 
                 </div>
             </div>
