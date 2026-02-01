@@ -28,15 +28,16 @@ export default function ToolsLayout({
 
                 {/* Tool Content */}
                 <main className="flex-1 min-w-0 flex flex-col">
-                    <div className="max-w-[1200px] mx-auto w-full px-6 pt-6">
+                    <div className="max-w-[1200px] mx-auto w-full px-2 pt-6 flex justify-between items-center">
                         <Breadcrumb />
+                        <ShareButton />
                     </div>
                     {children}
 
                     {/* Engagement Section (Share + Related) */}
                     <section className="max-w-[1200px] mx-auto w-full px-6">
-                        <div className="flex justify-center mt-[60px] mb-5">
-                            <ShareButton />
+                        <div className="mt-[60px] mb-5">
+                            {/* ShareButton moved to top */}
                         </div>
                         <Comments />
                         <RelatedTools />

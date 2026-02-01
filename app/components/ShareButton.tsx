@@ -3,6 +3,7 @@
 import { Share2, Check } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { LiquidButton } from "./ui/LiquidButton";
 
 export default function ShareButton() {
     const t = useTranslations('ShareButton');
@@ -30,12 +31,13 @@ export default function ShareButton() {
     };
 
     return (
-        <button
+        <LiquidButton
+            variant="secondary"
             onClick={handleShare}
-            className="inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] flex items-center gap-2 px-4 py-2 text-[13px]"
+            className="flex items-center gap-2 px-3 py-1.5 h-auto text-xs rounded-lg mb-6"
         >
-            {copied ? <Check size={14} className="text-[#22c55e]" /> : <Share2 size={14} />}
+            {copied ? <Check size={12} className="text-[#22c55e]" /> : <Share2 size={12} />}
             {copied ? t('copiedLink') : t('shareTool')}
-        </button>
+        </LiquidButton>
     );
 }
