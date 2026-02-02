@@ -10,6 +10,7 @@ import { ColorPicker } from "../../../components/ui/ColorPicker";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { SaveToDriveButton } from "../../../components/ui/SaveToDriveButton";
 
 export default function QrGeneratorClient() {
     const [text, setText] = useState("https://dailydev.tools");
@@ -22,6 +23,7 @@ export default function QrGeneratorClient() {
     const debouncedText = useDebounce(text, 500);
     const debouncedColor = useDebounce(color, 500);
     const debouncedBg = useDebounce(bg, 500);
+    const [qrBlob, setQrBlob] = useState<Blob | null>(null);
     const { download } = useDownload();
 
     useEffect(() => {
@@ -30,6 +32,13 @@ export default function QrGeneratorClient() {
         const cleanBg = debouncedBg.replace('#', '');
         const url = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(debouncedText)}&color=${cleanColor}&bgcolor=${cleanBg}`;
         setQrDataUrl(url);
+
+        // Fetch blob for drive upload
+        fetch(url)
+            .then(res => res.blob())
+            .then(blob => setQrBlob(blob))
+            .catch(err => console.error("Failed to fetch QR blob", err));
+
     }, [debouncedText, debouncedColor, debouncedBg]);
 
     const handleDownload = () => {
@@ -94,9 +103,19 @@ export default function QrGeneratorClient() {
                             <div className="bg-white p-4 rounded-2xl mb-6 shadow-sm border border-neutral-200">
                                 {qrDataUrl && <img src={qrDataUrl} alt="QR Code" className="w-[240px] h-[240px] block" />}
                             </div>
-                            <LiquidButton onClick={handleDownload} className="w-full gap-2 h-11 text-base">
+                            <LiquidButton onClick={handleDownload} className="w-full gap-2 h-11 text-base mb-2">
                                 <Download size={18} /> {t('download')}
                             </LiquidButton>
+
+                            {/* Convert data URL to Blob for upload */}
+                            {qrDataUrl && qrBlob && (
+                                <SaveToDriveButton
+                                    blob={qrBlob}
+                                    filename="qrcode.png"
+                                    toolName="QR Generator"
+                                    className="w-full gap-2 h-11 text-base"
+                                />
+                            )}
                         </LiquidCard>
 
                     </div>

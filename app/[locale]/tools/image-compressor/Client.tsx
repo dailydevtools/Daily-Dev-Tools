@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import { SaveToDriveButton } from "../../../components/ui/SaveToDriveButton";
 
 export default function ImageCompressorClient() {
     const t = useTranslations('ImageCompressor');
@@ -171,15 +172,23 @@ export default function ImageCompressorClient() {
 
                                     <div className="flex flex-col gap-3 mt-auto">
                                         {compressedBlob && (
-                                            <a
-                                                href={URL.createObjectURL(compressedBlob)}
-                                                download={`compressed-${originalFile.name}`}
-                                                className="w-full"
-                                            >
-                                                <LiquidButton className="w-full justify-center py-4">
-                                                    <Download size={18} className="mr-2" /> {t('download')}
-                                                </LiquidButton>
-                                            </a>
+                                            <>
+                                                <a
+                                                    href={URL.createObjectURL(compressedBlob)}
+                                                    download={`compressed-${originalFile.name}`}
+                                                    className="w-full"
+                                                >
+                                                    <LiquidButton className="w-full justify-center py-4">
+                                                        <Download size={18} className="mr-2" /> {t('download')}
+                                                    </LiquidButton>
+                                                </a>
+                                                <SaveToDriveButton
+                                                    blob={compressedBlob}
+                                                    filename={`compressed-${originalFile.name}`}
+                                                    toolName="Image Compressor"
+                                                    className="w-full justify-center py-4"
+                                                />
+                                            </>
                                         )}
                                         <LiquidButton
                                             variant="secondary"

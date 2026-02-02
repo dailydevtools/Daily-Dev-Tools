@@ -7,6 +7,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
 import MotionCard from "../../../components/ui/MotionCard";
+import { SaveToDriveButton } from "../../../components/ui/SaveToDriveButton";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
@@ -211,6 +212,12 @@ export default function JSONFormatterClient() {
                                             <CopyButton
                                                 text={output}
                                                 className="hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)]"
+                                            />
+                                            <SaveToDriveButton
+                                                blob={new Blob([output + "\n\nGenerated via dailydevtools.io"], { type: "text/plain" })}
+                                                filename={`formatted-json-${new Date().toISOString().split('T')[0]}.doc`}
+                                                toolName="JSON Formatter"
+                                                className="hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)] !p-0 !min-w-[28px] !h-[28px] !justify-center !gap-0"
                                             />
                                         </>
                                     )}
