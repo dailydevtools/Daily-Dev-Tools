@@ -184,10 +184,10 @@ export default function Home() {
       <section id="tools" className="relative z-10 py-20 px-6 flex flex-col items-center min-h-screen [overflow-anchor:none]">
         <div className="w-full max-w-[1200px] mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-[clamp(28px,5vw,44px)] font-bold font-heading mb-3 text-(--title-color)">
-              {query ? t('searchResults') : <><span className="bg-linear-to-br from-[#fb923c] via-[#facc15] to-[#fde047] bg-clip-text text-transparent">{activeCategory === 'All' ? t('popularTools') : t(`categories.${activeCategory}`)}</span> {tHeader('tools')}</>}
+            <h2 className="text-[clamp(28px,5vw,44px)] font-bold font-heading mb-3 text-[var(--title-color)]">
+              {query ? t('searchResults') : <><span className="bg-gradient-to-br from-orange-600 via-amber-500 to-orange-400 dark:from-[#fb923c] dark:via-[#facc15] dark:to-[#fde047] bg-clip-text text-transparent">{activeCategory === 'All' ? t('popularTools') : t(`categories.${activeCategory}`)}</span> {tHeader('tools')}</>}
             </h2>
-            <p className="text-(--muted-text)">{t('toolsCount', { count: filteredTools.length })}</p>
+            <p className="text-[var(--muted-text)]">{t('toolsCount', { count: filteredTools.length })}</p>
           </div>
 
           {/* Deep Liquid Tabs (Hover + Active Motion) - FIXED FOR LIGHT/DARK MODE */}
