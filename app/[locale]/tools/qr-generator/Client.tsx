@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { Download, QrCode } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { useDebounce } from "../../../hooks/useDebounce";
+import { useDownload } from "../../../hooks/useDownload";
+import { ColorPicker } from "../../../components/ui/ColorPicker";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
@@ -16,27 +19,21 @@ export default function QrGeneratorClient() {
     const t = useTranslations('ToolPage.QrGenerator');
     const tTools = useTranslations('Tools');
 
+    const debouncedText = useDebounce(text, 500);
+    const debouncedColor = useDebounce(color, 500);
+    const debouncedBg = useDebounce(bg, 500);
+    const { download } = useDownload();
+
     useEffect(() => {
-        const generateQr = () => {
-            if (!text) return;
-            const cleanColor = color.replace('#', '');
-            const cleanBg = bg.replace('#', '');
-            const url = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(text)}&color=${cleanColor}&bgcolor=${cleanBg}`;
-            setQrDataUrl(url);
-        };
+        if (!debouncedText) return;
+        const cleanColor = debouncedColor.replace('#', '');
+        const cleanBg = debouncedBg.replace('#', '');
+        const url = `https://api.qrserver.com/v1/create-qr-code/?size=400x400&data=${encodeURIComponent(debouncedText)}&color=${cleanColor}&bgcolor=${cleanBg}`;
+        setQrDataUrl(url);
+    }, [debouncedText, debouncedColor, debouncedBg]);
 
-        // Debounce to prevent too many requests
-        const timer = setTimeout(() => {
-            generateQr();
-        }, 500);
-        return () => clearTimeout(timer);
-    }, [text, color, bg]);
-
-    const downloadQr = () => {
-        const a = document.createElement("a");
-        a.href = qrDataUrl;
-        a.download = "qrcode.png";
-        a.click();
+    const handleDownload = () => {
+        download(qrDataUrl, "qrcode.png");
     };
 
     return (
@@ -79,34 +76,16 @@ export default function QrGeneratorClient() {
                             <LiquidCard className="p-6">
                                 <h3 className="text-[var(--foreground)] font-semibold mb-4 text-sm uppercase tracking-wider opacity-80">{t('customization')}</h3>
                                 <div className="flex flex-col gap-6">
-                                    <div>
-                                        <label className="block text-[var(--muted-text)] mb-2 text-[12px] font-medium uppercase tracking-wide">{t('foreground')}</label>
-                                        <div className="flex gap-3 items-center">
-                                            <div className="relative w-11 h-11 rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)] shrink-0 group hover:scale-105 transition-transform">
-                                                <input type="color" value={color} onChange={(e) => setColor(e.target.value)} className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer p-0 m-0 border-none" />
-                                            </div>
-                                            <input
-                                                type="text"
-                                                value={color}
-                                                onChange={(e) => setColor(e.target.value)}
-                                                className="flex-1 h-11 bg-transparent border border-[var(--border-color)] rounded-xl px-3 text-[var(--foreground)] text-sm font-mono outline-none focus:border-orange-500/50 transition-colors uppercase"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label className="block text-[var(--muted-text)] mb-2 text-[12px] font-medium uppercase tracking-wide">{t('background')}</label>
-                                        <div className="flex gap-3 items-center">
-                                            <div className="relative w-11 h-11 rounded-xl overflow-hidden shadow-sm border border-[var(--border-color)] shrink-0 group hover:scale-105 transition-transform">
-                                                <input type="color" value={bg} onChange={(e) => setBg(e.target.value)} className="absolute -top-1/2 -left-1/2 w-[200%] h-[200%] cursor-pointer p-0 m-0 border-none" />
-                                            </div>
-                                            <input
-                                                type="text"
-                                                value={bg}
-                                                onChange={(e) => setBg(e.target.value)}
-                                                className="flex-1 h-11 bg-transparent border border-[var(--border-color)] rounded-xl px-3 text-[var(--foreground)] text-sm font-mono outline-none focus:border-orange-500/50 transition-colors uppercase"
-                                            />
-                                        </div>
-                                    </div>
+                                    <ColorPicker
+                                        label={t('foreground')}
+                                        value={color}
+                                        onChange={setColor}
+                                    />
+                                    <ColorPicker
+                                        label={t('background')}
+                                        value={bg}
+                                        onChange={setBg}
+                                    />
                                 </div>
                             </LiquidCard>
                         </div>
@@ -115,7 +94,7 @@ export default function QrGeneratorClient() {
                             <div className="bg-white p-4 rounded-2xl mb-6 shadow-sm border border-neutral-200">
                                 {qrDataUrl && <img src={qrDataUrl} alt="QR Code" className="w-[240px] h-[240px] block" />}
                             </div>
-                            <LiquidButton onClick={downloadQr} className="w-full gap-2 h-11 text-base">
+                            <LiquidButton onClick={handleDownload} className="w-full gap-2 h-11 text-base">
                                 <Download size={18} /> {t('download')}
                             </LiquidButton>
                         </LiquidCard>
