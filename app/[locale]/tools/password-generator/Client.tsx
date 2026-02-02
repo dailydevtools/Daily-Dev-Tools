@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, RefreshCw, Lock } from "lucide-react";
+import { RefreshCw, Check } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import CopyButton from "../../../components/ui/CopyButton";
 import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 import { toast } from "sonner";
 
@@ -43,10 +44,6 @@ export default function PasswordGeneratorClient() {
         setPassword(generated);
     }
 
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText(password);
-        toast.success(tCommon('copied'));
-    };
 
     return (
         <main className="relative min-h-screen">
@@ -68,10 +65,13 @@ export default function PasswordGeneratorClient() {
                             <LiquidButton onClick={generatePassword} className="px-6 py-2.5 h-[46px] gap-2">
                                 <RefreshCw size={18} /> {t('generateNew')}
                             </LiquidButton>
-                            <LiquidButton onClick={copyToClipboard} variant="secondary" className="px-6 py-2.5 h-[46px] gap-2 border-[var(--border-color)]">
-                                <Copy size={18} />
-                                {tCommon('copy')}
-                            </LiquidButton>
+                            <CopyButton
+                                text={password}
+                                variant="liquid"
+                                buttonVariant="secondary"
+                                className="px-6 py-2.5 h-[46px] gap-2 border-[var(--border-color)]"
+                                iconSize={18}
+                            />
                         </div>
                     </LiquidCard>
 
