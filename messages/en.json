@@ -472,6 +472,18 @@
       "name": "Mock Data Generator",
       "description": "Generate random JSON/CSV data"
     },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
     "code-editor": {
       "name": "Online Code Editor",
       "description": "Write, edit, and format code with syntax highlighting"
