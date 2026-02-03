@@ -1,10 +1,47 @@
 import type { Metadata } from 'next';
 import { Shield, Zap, Code, Heart } from 'lucide-react';
 
-export const metadata: Metadata = {
-    title: 'About DailyDevTools - Our Mission',
-    description: 'Learn about DailyDevTools and our mission to build fast, private, and free developer tools that run entirely in your browser.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const title = 'About DailyDevTools - Our Mission';
+    const description = 'Learn about DailyDevTools and our mission to build fast, private, and free developer tools that run entirely in your browser.';
+    const siteUrl = 'https://dailydev.tools';
+    const canonical = `${siteUrl}/${locale}/about`;
+
+    const ogImageUrl = new URL(`${siteUrl}/api/og`);
+    ogImageUrl.searchParams.set('title', 'About Us');
+    ogImageUrl.searchParams.set('description', description);
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: canonical,
+        },
+        openGraph: {
+            title,
+            description,
+            siteName: "DailyDevTools",
+            url: canonical,
+            locale: locale === 'en' ? 'en_US' : locale,
+            type: 'website',
+            images: [
+                {
+                    url: ogImageUrl.toString(),
+                    width: 1200,
+                    height: 630,
+                    alt: "About DailyDevTools",
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [ogImageUrl.toString()],
+        },
+    };
+}
 
 export default function AboutPage() {
     return (

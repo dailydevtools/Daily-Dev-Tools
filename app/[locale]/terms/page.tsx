@@ -1,9 +1,46 @@
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-    title: 'Terms of Service - DailyDevTools',
-    description: 'Terms of Service for using DailyDevTools.',
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    const title = 'Terms of Service - DailyDevTools';
+    const description = 'Terms of Service for using DailyDevTools.';
+    const siteUrl = 'https://dailydev.tools';
+    const canonical = `${siteUrl}/${locale}/terms`;
+
+    const ogImageUrl = new URL(`${siteUrl}/api/og`);
+    ogImageUrl.searchParams.set('title', 'Terms of Service');
+    ogImageUrl.searchParams.set('description', description);
+
+    return {
+        title,
+        description,
+        alternates: {
+            canonical: canonical,
+        },
+        openGraph: {
+            title,
+            description,
+            siteName: "DailyDevTools",
+            url: canonical,
+            locale: locale === 'en' ? 'en_US' : locale,
+            type: 'website',
+            images: [
+                {
+                    url: ogImageUrl.toString(),
+                    width: 1200,
+                    height: 630,
+                    alt: title,
+                },
+            ],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
+            images: [ogImageUrl.toString()],
+        },
+    };
+}
 
 import { useTranslations } from 'next-intl';
 

@@ -3,23 +3,37 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { blogPosts } from "../data";
 import BlogSchema from "../../../components/BlogSchema";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import BlogPostContent from "./BlogPostContent";
+import { routing } from "@/i18n/routing";
 
 interface Props {
     params: Promise<{ slug: string; locale: string }>;
 }
 
 export async function generateStaticParams() {
-    return blogPosts.map((post) => ({
-        slug: post.slug,
-    }));
+    const params = [];
+    for (const locale of routing.locales) {
+        for (const post of blogPosts) {
+            params.push({ locale, slug: post.slug });
+        }
+    }
+    return params;
 }
 
 export async function generateMetadata({ params }: Props) {
-    const { slug } = await params;
+    const { slug, locale } = await params;
+    setRequestLocale(locale);
+
     const post = blogPosts.find((p) => p.slug === slug);
     if (!post) return { title: 'Post Not Found' };
+
+    const siteUrl = 'https://dailydev.tools';
+    const canonical = `${siteUrl}/${locale}/blog/${post.slug}`;
+
+    const ogImageUrl = new URL(`${siteUrl}/api/og`);
+    ogImageUrl.searchParams.set('title', post.title);
+    ogImageUrl.searchParams.set('description', post.excerpt);
 
     return {
         title: post.title,
@@ -30,20 +44,32 @@ export async function generateMetadata({ params }: Props) {
             type: 'article',
             publishedTime: post.date,
             authors: ['Sohan Paliyal'],
+            url: canonical,
+            images: [
+                {
+                    url: ogImageUrl.toString(),
+                    width: 1200,
+                    height: 630,
+                    alt: post.title,
+                },
+            ],
         },
         twitter: {
             card: 'summary_large_image',
             title: post.title,
             description: post.excerpt,
+            images: [ogImageUrl.toString()],
         },
         alternates: {
-            canonical: `https://dailydev.tools/blog/${post.slug}`,
+            canonical: canonical,
         },
     };
 }
 
 export default async function BlogPost({ params }: Props) {
     const { slug, locale } = await params;
+    setRequestLocale(locale);
+
     const t = await getTranslations('Blog');
     const tPosts = await getTranslations('BlogPosts');
 

@@ -103,4 +103,7 @@ export const tools: Tool[] = [
     { id: "fuel-calculator", name: "Fuel Cost Calculator", description: "Calculate trip fuel cost", icon: "Fuel", category: "Math" },
     { id: "pretty-print-url", name: "Pretty Print URL", description: "Format and beautify URLs for readability", icon: "Link", category: "Developer" },
     { id: "mock-data-generator", name: "Mock Data Generator", description: "Generate random JSON/CSV data for testing", icon: "Database", category: "Developer" },
+    { id: "cron-generator", name: "Cron Generator", description: "Generate cron schedule expressions easily", icon: "Clock", category: "Developer" },
+    { id: "css-clip-path", name: "CSS Clip Path Generator", description: "Create custom shapes with CSS clip-path", icon: "Scissors", category: "Design" },
+    { id: "meta-generator", name: "Meta Tag Builder", description: "Generate SEO meta tags for your website", icon: "Tag", category: "Content" },
 ];

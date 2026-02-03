@@ -465,6 +465,18 @@
     "mock-data-generator": {
       "name": "Generador de Datos Falsos",
       "description": "Genere datos aleatorios JSON o CSV"
+    },
+    "cron-generator": {
+      "name": "Generador Cron",
+      "description": "Generar expresiones de programación cron fácilmente"
+    },
+    "css-clip-path": {
+      "name": "Generador CSS Clip Path",
+      "description": "Crea formas personalizadas con CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Constructor de Meta Tags",
+      "description": "Genera meta tags SEO para tu sitio web"
     }
   },
   "Terms": {

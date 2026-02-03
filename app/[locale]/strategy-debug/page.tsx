@@ -1,6 +1,17 @@
-
 import { execSync } from 'child_process';
 import path from 'path';
+
+export async function generateMetadata() {
+    return {
+        title: 'Strategy Debug - DailyDevTools',
+        description: 'Internal debug page',
+        robots: {
+            index: false,
+            follow: false,
+        }
+    };
+}
+
 
 export default function StrategyDebug() {
     let content = '';
