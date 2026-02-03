@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { RefreshCw, Copy, Check, Clock, ChevronRight } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
@@ -18,6 +18,21 @@ export default function CrontabGeneratorClient() {
     const [nextDates, setNextDates] = useState<Date[]>([]);
     const [showMore, setShowMore] = useState(false);
     const [humanText, setHumanText] = useState("");
+    const inputRefs = useRef<Array<HTMLInputElement | null>>([]);
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>, index: number, value: string) => {
+        if (e.key === 'Backspace' && value === '') {
+            if (index > 0) {
+                e.preventDefault();
+                const prevInput = inputRefs.current[index - 1];
+                if (prevInput) {
+                    const len = prevInput.value.length;
+                    prevInput.setSelectionRange(len, len);
+                    prevInput.focus();
+                }
+            }
+        }
+    };
 
     const result = `${min} ${hour} ${day} ${month} ${week}`;
 
@@ -254,23 +269,53 @@ export default function CrontabGeneratorClient() {
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mb-10">
                             <div>
                                 <label className="block mb-2 text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide text-center">{t('minute')}</label>
-                                <LiquidInput value={min} onChange={e => { setMin(e.target.value); setShowMore(false); }} className="text-center font-mono" />
+                                <LiquidInput
+                                    ref={el => { inputRefs.current[0] = el }}
+                                    onKeyDown={e => handleKeyDown(e, 0, min)}
+                                    value={min}
+                                    onChange={e => { setMin(e.target.value); setShowMore(false); }}
+                                    className="text-center font-mono"
+                                />
                             </div>
                             <div>
                                 <label className="block mb-2 text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide text-center">{t('hour')}</label>
-                                <LiquidInput value={hour} onChange={e => { setHour(e.target.value); setShowMore(false); }} className="text-center font-mono" />
+                                <LiquidInput
+                                    ref={el => { inputRefs.current[1] = el }}
+                                    onKeyDown={e => handleKeyDown(e, 1, hour)}
+                                    value={hour}
+                                    onChange={e => { setHour(e.target.value); setShowMore(false); }}
+                                    className="text-center font-mono"
+                                />
                             </div>
                             <div>
                                 <label className="block mb-2 text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide text-center">{t('day')}</label>
-                                <LiquidInput value={day} onChange={e => { setDay(e.target.value); setShowMore(false); }} className="text-center font-mono" />
+                                <LiquidInput
+                                    ref={el => { inputRefs.current[2] = el }}
+                                    onKeyDown={e => handleKeyDown(e, 2, day)}
+                                    value={day}
+                                    onChange={e => { setDay(e.target.value); setShowMore(false); }}
+                                    className="text-center font-mono"
+                                />
                             </div>
                             <div>
                                 <label className="block mb-2 text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide text-center">{t('month')}</label>
-                                <LiquidInput value={month} onChange={e => { setMonth(e.target.value); setShowMore(false); }} className="text-center font-mono" />
+                                <LiquidInput
+                                    ref={el => { inputRefs.current[3] = el }}
+                                    onKeyDown={e => handleKeyDown(e, 3, month)}
+                                    value={month}
+                                    onChange={e => { setMonth(e.target.value); setShowMore(false); }}
+                                    className="text-center font-mono"
+                                />
                             </div>
                             <div className="col-span-2 sm:col-span-1">
                                 <label className="block mb-2 text-xs text-neutral-500 dark:text-neutral-400 font-medium uppercase tracking-wide text-center">{t('weekday')}</label>
-                                <LiquidInput value={week} onChange={e => { setWeek(e.target.value); setShowMore(false); }} className="text-center font-mono" />
+                                <LiquidInput
+                                    ref={el => { inputRefs.current[4] = el }}
+                                    onKeyDown={e => handleKeyDown(e, 4, week)}
+                                    value={week}
+                                    onChange={e => { setWeek(e.target.value); setShowMore(false); }}
+                                    className="text-center font-mono"
+                                />
                             </div>
                         </div>
 
