@@ -122,7 +122,7 @@ export default function ImageCompressorClient() {
                                 <div className="flex flex-col gap-4">
                                     <div className="rounded-2xl overflow-hidden bg-[repeating-conic-gradient(#f5f5f5_0%_25%,_#ffffff_0%_50%)_50%_/_20px_20px] dark:bg-[repeating-conic-gradient(#111_0%_25%,_#222_0%_50%)_50%_/_20px_20px] border border-[var(--border-color)] flex items-center justify-center min-h-[400px]">
                                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img src={previewUrl} alt="Preview" className="max-w-full max-h-[600px] object-contain" />
+                                        {previewUrl && <img src={previewUrl} alt="Preview" className="max-w-full max-h-[600px] object-contain" />}
                                     </div>
                                 </div>
 
