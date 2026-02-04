@@ -1,69 +1,115 @@
 "use client";
 
-import { useState } from "react";
-import { Copy, Check, Download, Upload, Trash2, FileJson } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Copy, Check, Download, Upload, Trash2, FileJson, Wrench, Code2, Network, ChevronDown } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
-import MotionCard from "../../../components/ui/MotionCard";
-
-import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import JsonEditor from "../../../components/JsonEditor";
+import { repairJSON } from "../../../lib/jsonRepair";
+import JsonTree from "../../../components/JsonTree";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function JSONFormatterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
+
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
+    const [parsedData, setParsedData] = useState<any>(null);
     const [error, setError] = useState("");
     const [indentSize, setIndentSize] = useState(2);
-    const [validationSuccess, setValidationSuccess] = useState(false);
+    const [activeTab, setActiveTab] = useState("code"); // 'code' | 'tree'
+    const [stats, setStats] = useState({ size: 0, items: 0, depth: 0 });
 
-    const formatJSON = () => {
+    useEffect(() => {
+        if (!input) {
+            setStats({ size: 0, items: 0, depth: 0 });
+            return;
+        }
+
+        // Calculate basic stats on input change
+        setStats(s => ({
+            ...s,
+            size: new Blob([input]).size
+        }));
+    }, [input]);
+
+    const calculateStats = (data: any) => {
+        let items = 0;
+        let maxDepth = 0;
+
+        const traverse = (obj: any, depth: number) => {
+            if (depth > maxDepth) maxDepth = depth;
+            if (obj && typeof obj === 'object') {
+                items++;
+                Object.values(obj).forEach(val => traverse(val, depth + 1));
+            }
+        };
+
+        traverse(data, 1);
+        setStats(s => ({ ...s, items, depth: maxDepth }));
+    };
+
+    const processJSON = (jsonStr: string, mode: 'format' | 'minify' | 'validate' | 'repair' = 'format') => {
         try {
-            const parsed = JSON.parse(input);
-            const formatted = JSON.stringify(parsed, null, indentSize);
-            setOutput(formatted);
+            let processedStr = jsonStr;
+
+            if (mode === 'repair') {
+                processedStr = repairJSON(jsonStr);
+                setInput(processedStr); // Update input with repaired version
+            }
+
+            const parsed = JSON.parse(processedStr);
+            setParsedData(parsed);
+            calculateStats(parsed);
+
+            if (mode === 'minify') {
+                setOutput(JSON.stringify(parsed));
+            } else {
+                // Default format
+                setOutput(JSON.stringify(parsed, null, indentSize));
+            }
+
             setError("");
-            setValidationSuccess(true);
-            setTimeout(() => setValidationSuccess(false), 3000);
         } catch (err: any) {
             setError(err.message);
-            setOutput("");
-            setValidationSuccess(false);
+            setParsedData(null);
+            if (mode !== 'validate') {
+                setOutput(""); // Clear output on error unless just validating
+            }
         }
     };
 
-    const validateJSON = () => {
-        try {
-            JSON.parse(input);
-            setError("");
-            setValidationSuccess(true);
-            setTimeout(() => setValidationSuccess(false), 3000);
-        } catch (err: any) {
-            setError(err.message);
-            setValidationSuccess(false);
-        }
-    };
+    const handleFormat = () => processJSON(input, 'format');
+    const handleMinify = () => processJSON(input, 'minify');
+    const handleRepair = () => processJSON(input, 'repair');
 
-    const minifyJSON = () => {
-        try {
-            const parsed = JSON.parse(input);
-            const minified = JSON.stringify(parsed);
-            setOutput(minified);
-            setError("");
-            setValidationSuccess(true);
-            setTimeout(() => setValidationSuccess(false), 3000);
-        } catch (err: any) {
-            setError(err.message);
-            setOutput("");
-            setValidationSuccess(false);
+    // Auto-update output when indentation changes if we have valid data
+    useEffect(() => {
+        if (parsedData) {
+            setOutput(JSON.stringify(parsedData, null, indentSize));
+        }
+    }, [indentSize, parsedData]);
+
+    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (event) => {
+                const text = event.target?.result as string;
+                setInput(text);
+                processJSON(text, 'format'); // Auto-format on upload
+            };
+            reader.readAsText(file);
         }
     };
 
     const downloadJSON = () => {
+        if (!output) return;
         const blob = new Blob([output], { type: "application/json" });
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
@@ -73,180 +119,128 @@ export default function JSONFormatterClient() {
         URL.revokeObjectURL(url);
     };
 
-    const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-                setInput(event.target?.result as string);
-            };
-            reader.readAsText(file);
-        }
-    };
-
-    const clearAll = () => {
-        setInput("");
-        setOutput("");
-        setError("");
-        setValidationSuccess(false);
-    };
-
-    const sampleJSON = () => {
-        setInput(JSON.stringify({
-            "name": "John Doe",
-            "email": "john@example.com",
-            "age": 30,
-            "address": {
-                "city": "New York",
-                "zip": "10001"
-            },
-            "hobbies": ["coding", "gaming", "reading"]
-        }));
-    };
-
     return (
-        <main className="relative min-h-screen">
-            <div className="relative z-10 pb-[60px] px-6 pt-6">
-                <div className="max-w-[1200px] mx-auto">
-                    <ToolPageHeader
-                        title={tTools('json-formatter.name')}
-                        description={tTools('json-formatter.description')}
-                        icon={<ToolIcon name="Braces" size={32} />}
-                    />
-
-                    {/* Controls */}
-                    <div className="relative z-20 flex flex-wrap items-center gap-4 mb-8">
-                        <LiquidButton onClick={formatJSON} className="h-11 px-6 text-sm">
-                            {t('common.format')} JSON
-                        </LiquidButton>
-
-                        <LiquidButton onClick={validateJSON} variant="ghost" className="h-11 px-5 text-sm text-green-500 hover:text-green-600 border-green-500/30 hover:bg-green-500/10">
-                            <Check width={16} height={16} className="mr-2" />
-                            Validate
-                        </LiquidButton>
-
-                        <LiquidButton onClick={minifyJSON} variant="secondary" className="h-11 px-5 text-sm">
-                            {t('common.minify')}
-                        </LiquidButton>
-
-                        <div className="flex items-center gap-2 bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl pl-4 pr-1 h-11 transition-all hover:border-orange-500/50 group">
-                            <label className="text-[13px] text-[var(--muted-text)] whitespace-nowrap group-hover:text-orange-500 transition-colors">{t('common.indent')}</label>
-                            <LiquidSelect
-                                value={String(indentSize)}
-                                onChange={(val) => setIndentSize(Number(val))}
-                                options={[
-                                    { value: "2", label: `2 ${t('JsonFormatter.spaces')}` },
-                                    { value: "4", label: `4 ${t('JsonFormatter.spaces')}` }
-                                ]}
-                                className="min-w-[120px]"
-                                variant="ghost"
-                            />
+        <main className="min-h-screen flex flex-col pb-10">
+            <div className="pt-6 px-6 pb-4 border-b border-[var(--border-color)] bg-[var(--bg-color)] sticky top-0 z-30">
+                <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div className="flex items-center gap-3">
+                        <div className="p-2.5 bg-orange-500/10 rounded-xl text-orange-500">
+                            <ToolIcon name="Braces" size={24} />
                         </div>
-
-                        <div className="w-px h-8 bg-[var(--border-color)] mx-1 hidden md:block" />
-
-                        <div className="relative">
-                            <LiquidButton onClick={() => document.getElementById('json-upload')?.click()} variant="secondary" className="h-11 px-5 text-sm">
-                                <Upload width={16} height={16} className="mr-2" />
-                                {t('common.upload')}
-                            </LiquidButton>
-                            <input id="json-upload" type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
+                        <div>
+                            <h1 className="text-xl font-bold">{tTools('json-formatter.name')}</h1>
+                            <div className="text-xs text-[var(--muted-text)] hidden sm:block">
+                                {stats.size > 0 && `${stats.size} Bytes • ${stats.items} Objects • Depth ${stats.depth}`}
+                            </div>
                         </div>
-
-                        <LiquidButton onClick={sampleJSON} variant="ghost" className="h-11 px-5 text-sm">
-                            {t('common.sample')}
-                        </LiquidButton>
-
-                        <LiquidButton onClick={clearAll} variant="ghost" className="h-11 px-5 text-sm text-red-500 hover:text-red-600 border-red-500/20 hover:bg-red-500/10">
-                            <Trash2 width={16} height={16} className="mr-2" />
-                            {t('common.clear')}
-                        </LiquidButton>
                     </div>
 
-                    {/* Editor Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                        {/* Input */}
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[500px] group focus-within:ring-2 ring-orange-500/20 transition-all">
-                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
-                                <div className="flex items-center gap-3">
-                                    <div className="flex gap-1.5 opacity-60">
-                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
-                                    </div>
-                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.input')}</span>
-                                </div>
-                                <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
-                            </div>
-                            <textarea
-                                value={input}
-                                onChange={(e) => setInput(e.target.value)}
-                                placeholder={t('JsonFormatter.inputPlaceholder')}
-                                className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
-                                spellCheck={false}
-                            />
-                        </LiquidCard>
+                    <div className="flex flex-wrap items-center gap-2">
+                        <LiquidButton onClick={handleFormat} className="h-9 px-4 text-xs font-medium">
+                            Format
+                        </LiquidButton>
+                        <LiquidButton onClick={handleRepair} variant="secondary" className="h-9 px-4 text-xs font-medium text-blue-600 dark:text-blue-400 bg-blue-500/10 hover:bg-blue-500/20 border-blue-500/20">
+                            <Wrench size={14} className="mr-2" />
+                            Repair
+                        </LiquidButton>
+                        <LiquidButton onClick={handleMinify} variant="ghost" className="h-9 px-3 text-xs">
+                            Minify
+                        </LiquidButton>
 
-                        {/* Output */}
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col h-[500px] group focus-within:ring-2 ring-orange-500/20 transition-all relative">
-                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
-                                <div className="flex items-center gap-3">
-                                    <div className="flex gap-1.5 opacity-60">
-                                        <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
-                                        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
-                                        <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
-                                    </div>
-                                    <span className="text-xs font-medium text-[var(--muted-text)] uppercase tracking-wider">{t('common.output')}</span>
-                                </div>
-                                <div className="flex items-center gap-1">
-                                    {output && (
-                                        <>
-                                            <button
-                                                onClick={downloadJSON}
-                                                className="p-1.5 hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)]"
-                                                title={t('common.download')}
-                                            >
-                                                <Download width={14} height={14} />
-                                            </button>
-                                            <CopyButton
-                                                text={output}
-                                                className="hover:bg-neutral-200 dark:hover:bg-white/10 rounded-lg transition-colors text-[var(--muted-text)] hover:text-[var(--foreground)]"
-                                            />
-                                        </>
-                                    )}
-                                </div>
-                            </div>
-                            <div className="relative flex-1 flex flex-col">
-                                <textarea
-                                    value={output}
-                                    readOnly
-                                    placeholder={t('JsonFormatter.outputPlaceholder')}
-                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-green-600 dark:text-green-400 resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
-                                    spellCheck={false}
-                                />
-                                {error && (
-                                    <div className="absolute inset-0 bg-white/80 dark:bg-black/80 backdrop-blur-sm flex items-center justify-center p-6 z-20 animate-in fade-in duration-200">
-                                        <div className="bg-white dark:bg-[#111] border border-red-200 dark:border-red-900/50 shadow-2xl rounded-2xl p-8 max-w-[400px] text-center">
-                                            <div className="text-4xl mb-4">⚠️</div>
-                                            <h4 className="font-bold text-red-500 text-lg mb-2">{t('common.invalid')}</h4>
-                                            <p className="text-sm text-[var(--muted-text)] leading-relaxed">{error}</p>
-                                        </div>
-                                    </div>
-                                )}
-                                {validationSuccess && !error && (
-                                    <div className="absolute inset-0 bg-white/60 dark:bg-black/60 backdrop-blur-[2px] flex items-center justify-center p-6 z-20 animate-in fade-in zoom-in duration-300">
-                                        <div className="bg-white dark:bg-[#111] border border-green-200 dark:border-green-900/50 shadow-2xl rounded-2xl p-8 text-center">
-                                            <div className="text-5xl mb-4 text-green-500">
-                                                <Check className="w-20 h-20 mx-auto" />
-                                            </div>
-                                            <h4 className="font-bold text-green-500 text-2xl">Valid JSON!</h4>
-                                        </div>
-                                    </div>
-                                )}
-                            </div>
-                        </LiquidCard>
+                        <div className="w-px h-6 bg-[var(--border-color)] mx-1" />
+
+                        <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg flex items-center h-9 px-2">
+                            <span className="text-[10px] text-[var(--muted-text)] mr-2 uppercase tracking-wide">Indent</span>
+                            <select
+                                value={indentSize}
+                                onChange={(e) => setIndentSize(Number(e.target.value))}
+                                className="bg-transparent text-xs font-medium outline-none cursor-pointer"
+                            >
+                                <option value="2">2 Spaces</option>
+                                <option value="4">4 Spaces</option>
+                                <option value="8">8 Spaces</option>
+                            </select>
+                        </div>
+
+                        <LiquidButton onClick={() => setInput("")} variant="ghost" className="h-9 px-3 text-xs text-red-500 hover:text-red-600">
+                            <Trash2 size={14} />
+                        </LiquidButton>
                     </div>
                 </div>
+            </div>
+
+            <div className="flex-1 p-4 md:p-6 max-w-[1600px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+
+                {/* Left Column: Input */}
+                <div className="flex flex-col h-[600px] lg:h-[calc(100vh-140px)] min-h-[500px]">
+                    <div className="flex items-center justify-between mb-3 px-1">
+                        <div className="flex items-center gap-2">
+                            <span className="text-sm font-semibold text-[var(--foreground)]">Original JSON</span>
+                            {error && <span className="text-xs bg-red-500/10 text-red-500 px-2 py-0.5 rounded-full font-medium">Invalid</span>}
+                        </div>
+                        <div className="flex gap-2">
+                            <button onClick={() => document.getElementById('json-upload')?.click()} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors bg-neutral-100 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-[var(--border-color)]">
+                                <Upload size={13} /> Upload
+                            </button>
+                            <input id="json-upload" type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
+                        </div>
+                    </div>
+
+                    <div className={`flex-1 rounded-xl overflow-hidden border transition-colors relative ${error ? 'border-red-500/50' : 'border-[var(--border-color)]'}`}>
+                        <JsonEditor
+                            value={input}
+                            onChange={(val) => setInput(val || "")}
+                            className="h-full w-full"
+                        />
+                        {error && (
+                            <div className="absolute bottom-4 left-4 right-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-600 dark:text-red-400 p-3 rounded-lg text-xs font-mono shadow-lg backdrop-blur-md">
+                                <div className="font-bold mb-1">Syntax Error</div>
+                                {error}
+                            </div>
+                        )}
+                    </div>
+                </div>
+
+                {/* Right Column: Output */}
+                <div className="flex flex-col h-[600px] lg:h-[calc(100vh-140px)] min-h-[500px]">
+                    <div className="flex items-center justify-between mb-3 px-1">
+                        <div className="flex bg-neutral-100 dark:bg-white/5 p-1 rounded-lg border border-[var(--border-color)]">
+                            <button
+                                onClick={() => setActiveTab('code')}
+                                className={`px-3 py-1 rounded text-xs font-medium transition-all flex items-center gap-2 ${activeTab === 'code' ? 'bg-white dark:bg-[#1e1e1e] text-[var(--foreground)] shadow-sm' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
+                            >
+                                <Code2 size={14} /> Code
+                            </button>
+                            <button
+                                onClick={() => setActiveTab('tree')}
+                                className={`px-3 py-1 rounded text-xs font-medium transition-all flex items-center gap-2 ${activeTab === 'tree' ? 'bg-white dark:bg-[#1e1e1e] text-[var(--foreground)] shadow-sm' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
+                            >
+                                <Network size={14} /> Tree
+                            </button>
+                        </div>
+                        <div className="flex gap-2">
+                            <button onClick={downloadJSON} disabled={!output} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] disabled:opacity-50 transition-colors bg-neutral-100 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-[var(--border-color)]">
+                                <Download size={13} /> Download
+                            </button>
+                            <CopyButton text={output} className="text-xs px-3 py-1.5 bg-neutral-100 dark:bg-white/5 rounded-lg border border-transparent hover:border-[var(--border-color)]" />
+                        </div>
+                    </div>
+
+                    <div className="flex-1 rounded-xl overflow-hidden border border-[var(--border-color)] bg-neutral-50/50 dark:bg-[#111]">
+                        {activeTab === 'code' ? (
+                            <JsonEditor
+                                value={output}
+                                readOnly={true}
+                                className="h-full w-full"
+                            />
+                        ) : (
+                            <div className="h-full w-full overflow-auto p-4 bg-white dark:bg-[#1e1e1e]">
+                                {parsedData ? <JsonTree data={parsedData} /> : <div className="h-full flex items-center justify-center text-[var(--muted-text)] text-sm">Valid JSON required for tree view</div>}
+                            </div>
+                        )}
+                    </div>
+                </div>
+
             </div>
         </main>
     );
