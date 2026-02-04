@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "Cerca..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - Strumenti per sviluppatori online gratuiti",
     "description": "90+ strumenti online gratuiti per tutti. Formattatori, convertitori, generatori e utilità. Veloce, privato e senza registrazione."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "Casa",
+    "tools": "Utensili"
   },
   "NotFound": {
     "title": "Pagina non trovata",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "Pronto a migliorare la tua produttività?",
       "text": "Inizia a usare gratuitamente i nostri strumenti per sviluppatori. Nessuna registrazione richiesta, nessuna raccolta dati.",
-      "button": "Inizia gratis"
+      "button": "Inizia gratis",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "Apri strumento",
     "noResults": "Nessuno strumento trovato per",
@@ -71,6 +167,13 @@
     "about": "Informazioni",
     "privacy": "Privacy",
     "terms": "Termini"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "URL piuttosto stampato",
       "description": "Formatta e abbellisci URL"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "Caricamento",
       "sample": "Campione",
       "clear": "Pulisci",
+      "swap": "Swap",
       "indent": "Rientro:",
       "chars": "caratteri",
       "error": "Errore",
@@ -534,6 +666,16 @@
       "convert": "Convertire",
       "validate": "Convalidare",
       "resultPlaceholder": "Il risultato apparirà qui..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "Codificare",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "Editore",
       "preview": "Anteprima",
-      "inputPlaceholder": "Inserisci Markdown qui..."
+      "inputPlaceholder": "Inserisci Markdown qui...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "Testo originale",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragrafi",
       "generate": "Generare",
-      "copy": "Copia"
+      "copy": "Copia",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "Angolo",
@@ -946,7 +1091,9 @@
       "jsonInput": "Ingresso JSON",
       "csvInput": "Ingresso CSV",
       "jsonOutput": "Uscita JSON",
-      "csvOutput": "Uscita CSV"
+      "csvOutput": "Uscita CSV",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON originale",
@@ -1142,14 +1289,6 @@
       "reset": "Reset",
       "lap": "Giro"
     },
-    "SubnetCalculator": {
-      "ipAddress": "Indirizzo IP",
-      "subnetMask": "Maschera di sottorete",
-      "calculate": "Calcolare",
-      "networkAddress": "Indirizzo di rete",
-      "broadcastAddress": "Indirizzo di trasmissione",
-      "usableHosts": "Host utilizzabili"
-    },
     "SvgToPng": {
       "pasteSvg": "Incolla SVG",
       "uploadSvg": "Carica SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "Numero della settimana corrente",
       "yearProgress": "Anno di progresso",
-      "week": "Settimana"
+      "week": "Settimana",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Numero di telefono",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Formato",
       "copy": "Copia"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Indirizzo IP",
+      "subnetMask": "Maschera di sottorete",
+      "calculate": "Calcolare",
+      "networkAddress": "Indirizzo di rete",
+      "broadcastAddress": "Indirizzo di trasmissione",
+      "usableHosts": "Host utilizzabili"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "Potrebbe piacerti anche",
     "subtitle": "Esplora altri strumenti per sviluppatori popolari",
     "openTool": "Apri strumento"
-  },
-  "Breadcrumb": {
-    "home": "Casa",
-    "tools": "Utensili"
   },
   "SvgToPng": {
     "upload": "Carica file SVG",
@@ -1690,7 +1834,9 @@
     "note": "Le firme vengono elaborate localmente nel tuo browser. Non li memorizziamo né li carichiamo."
   },
   "MarkdownEditor": {
-    "previewLabel": "Anteprima dal vivo"
+    "previewLabel": "Anteprima dal vivo",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Importo dello spostamento (N)",

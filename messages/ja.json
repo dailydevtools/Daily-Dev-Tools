@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "検索..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - 無料のオンライン開発者ツール",
     "description": "誰でも使える90以上の無料オンラインツール。フォーマッター、コンバーター、ジェネレーター、ユーティリティなど。高速、プライベート、登録不要。"
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "ホーム",
+    "tools": "ツール"
   },
   "NotFound": {
     "title": "ページが見つかりません",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "生産性を向上させる準備はできましたか？",
       "text": "無料の開発者ツールを使い始めましょう。登録不要、データ収集なし、純粋な生産性向上。",
-      "button": "無料で始める"
+      "button": "無料で始める",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "ツールを開く",
     "noResults": "一致するツールが見つかりません",
@@ -71,6 +167,13 @@
     "about": "概要",
     "privacy": "プライバシー",
     "terms": "利用規約"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "URL整形",
       "description": "URLを読みやすく整形"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "アップロード",
       "sample": "サンプル",
       "clear": "クリア",
+      "swap": "Swap",
       "indent": "インデント:",
       "chars": "文字",
       "error": "エラー",
@@ -534,6 +666,16 @@
       "convert": "変換",
       "validate": "検証",
       "resultPlaceholder": "結果がここに表示されます..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "エンコード",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "エディター",
       "preview": "プレビュー",
-      "inputPlaceholder": "ここにMarkdownを入力..."
+      "inputPlaceholder": "ここにMarkdownを入力...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "元のテキスト",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "段落数",
       "generate": "生成",
-      "copy": "コピー"
+      "copy": "コピー",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "角度",
@@ -952,7 +1097,9 @@
       "jsonInput": "JSON入力",
       "csvInput": "CSV入力",
       "jsonOutput": "JSON出力",
-      "csvOutput": "CSV出力"
+      "csvOutput": "CSV出力",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "元のJSON",
@@ -1148,14 +1295,6 @@
       "reset": "リセット",
       "lap": "ラップ"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IPアドレス",
-      "subnetMask": "サブネットマスク",
-      "calculate": "計算",
-      "networkAddress": "ネットワークアドレス",
-      "broadcastAddress": "ブロードキャストアドレス",
-      "usableHosts": "使用可能ホスト数"
-    },
     "SvgToPng": {
       "pasteSvg": "SVGを貼り付け",
       "uploadSvg": "SVGをアップロード",
@@ -1222,7 +1361,8 @@
     "WeekNumber": {
       "currentWeek": "現在の週番号",
       "yearProgress": "年の進捗",
-      "week": "週"
+      "week": "週",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "電話番号",
@@ -1330,6 +1470,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "整形",
       "copy": "コピー"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IPアドレス",
+      "subnetMask": "サブネットマスク",
+      "calculate": "計算",
+      "networkAddress": "ネットワークアドレス",
+      "broadcastAddress": "ブロードキャストアドレス",
+      "usableHosts": "使用可能ホスト数"
     }
   },
   "BlogPosts": {
@@ -1436,10 +1584,6 @@
     "title": "こちらもおすすめ",
     "subtitle": "他の人気の開発者ツールを見る",
     "openTool": "ツールを開く"
-  },
-  "Breadcrumb": {
-    "home": "ホーム",
-    "tools": "ツール"
   },
   "SvgToPng": {
     "upload": "SVGファイルをアップロード",
@@ -1696,7 +1840,9 @@
     "note": "署名はブラウザ内でローカルに処理されます。保存やアップロードはされません。"
   },
   "MarkdownEditor": {
-    "previewLabel": "ライブプレビュー"
+    "previewLabel": "ライブプレビュー",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "シフト量 (N)",

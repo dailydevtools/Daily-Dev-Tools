@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "Αναζήτηση..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - Δωρεάν Online Εργαλεία Προγραμματιστών",
     "description": "90+ δωρεάν online εργαλεία για όλους. Μορφοποιητές, μετατροπείς, γεννήτριες και βοηθητικά προγράμματα. Γρήγορα, ιδιωτικά και χωρίς εγγραφή."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "Σπίτι",
+    "tools": "Εργαλεία"
   },
   "NotFound": {
     "title": "Η σελίδα δεν βρέθηκε",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "Έτοιμοι να αυξήσετε την παραγωγικότητά σας;",
       "text": "Ξεκινήστε να χρησιμοποιείτε τα εργαλεία προγραμματιστών μας δωρεάν. Χωρίς εγγραφή, χωρίς συλλογή δεδομένων.",
-      "button": "Ξεκινήστε Δωρεάν"
+      "button": "Ξεκινήστε Δωρεάν",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "Άνοιγμα εργαλείου",
     "noResults": "Δεν βρέθηκαν εργαλεία που να ταιριάζουν με",
@@ -71,6 +167,13 @@
     "about": "Σχετικά",
     "privacy": "Ιδιωτικότητα",
     "terms": "Όροι"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "URL όμορφης εκτύπωσης",
       "description": "Μορφοποίηση και ωραιοποίηση URLs για αναγνωσιμότητα"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "Μεταφόρτωση",
       "sample": "Δείγμα",
       "clear": "Καθαρισμός",
+      "swap": "Swap",
       "indent": "Δαντελώνω:",
       "chars": "οστεοφυλάκιο",
       "error": "Σφάλμα",
@@ -534,6 +666,16 @@
       "convert": "Μετατρέπω",
       "validate": "Επικυρώνω",
       "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "Κωδικοποίηση",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "Συντάκτης",
       "preview": "Πρεμιέρα",
-      "inputPlaceholder": "Εισαγάγετε το Markdown εδώ..."
+      "inputPlaceholder": "Εισαγάγετε το Markdown εδώ...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "Πρωτότυπο Κείμενο",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "Παράγραφοι",
       "generate": "Παράγω",
-      "copy": "Αντίγραφο"
+      "copy": "Αντίγραφο",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "Γωνία",
@@ -946,7 +1091,9 @@
       "jsonInput": "Είσοδος JSON",
       "csvInput": "Είσοδος CSV",
       "jsonOutput": "Έξοδος JSON",
-      "csvOutput": "Έξοδος CSV"
+      "csvOutput": "Έξοδος CSV",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "Πρωτότυπο JSON",
@@ -1142,14 +1289,6 @@
       "reset": "Επαναφορά",
       "lap": "Ποδιά"
     },
-    "SubnetCalculator": {
-      "ipAddress": "Διεύθυνση IP",
-      "subnetMask": "Μάσκα υποδικτύου",
-      "calculate": "Υπολογίζω",
-      "networkAddress": "Διεύθυνση δικτύου",
-      "broadcastAddress": "Διεύθυνση εκπομπής",
-      "usableHosts": "Χρησιμοποιήσιμοι κεντρικοί υπολογιστές"
-    },
     "SvgToPng": {
       "pasteSvg": "Επικόλληση SVG",
       "uploadSvg": "Μεταφόρτωση SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "Αριθμός τρέχουσας εβδομάδας",
       "yearProgress": "Έτος πρόοδος",
-      "week": "Εβδομάδα"
+      "week": "Εβδομάδα",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Αριθμός τηλεφώνου",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Σχήμα και διάταξις βιβλίου",
       "copy": "Αντίγραφο"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "Διεύθυνση IP",
+      "subnetMask": "Μάσκα υποδικτύου",
+      "calculate": "Υπολογίζω",
+      "networkAddress": "Διεύθυνση δικτύου",
+      "broadcastAddress": "Διεύθυνση εκπομπής",
+      "usableHosts": "Χρησιμοποιήσιμοι κεντρικοί υπολογιστές"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "Μπορεί επίσης να σας αρέσει",
     "subtitle": "Εξερευνήστε άλλα δημοφιλή εργαλεία προγραμματιστών",
     "openTool": "Ανοίξτε το Εργαλείο"
-  },
-  "Breadcrumb": {
-    "home": "Σπίτι",
-    "tools": "Εργαλεία"
   },
   "SvgToPng": {
     "upload": "Μεταφόρτωση αρχείου SVG",
@@ -1690,7 +1834,9 @@
     "note": "Οι υπογραφές επεξεργάζονται τοπικά στο πρόγραμμα περιήγησής σας. Δεν τα αποθηκεύουμε ούτε τα ανεβάζουμε."
   },
   "MarkdownEditor": {
-    "previewLabel": "Ζωντανή προεπισκόπηση"
+    "previewLabel": "Ζωντανή προεπισκόπηση",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Ποσό μετατόπισης (N)",
@@ -1800,7 +1946,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * *</co_to_ru\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Παραδείγματα</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Εκτέλεση κάθε μέρα τα μεσάνυχτα: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *-col->var*</code>",
       "block_4": "Παραδείγματα",
       "block_5": "Εκτέλεση κάθε 15 λεπτά: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *)*5*</code>",
-      "block_6": "Χρειάζεστε βοήθεια;Χρησιμοποιήστε το <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Γεννήτρια Cron</a> για να δημιουργήσετε εκφράσεις οπτικά."
+      "block_6": "Χρειάζεστε βοήθεια;Χρησιμοποιήστε το <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Γεννήτρια Cron</a> για να δημιουργήσετε εκφράσεις οπτικά.",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Το πρόβλημα με τα Cloud Vaults",

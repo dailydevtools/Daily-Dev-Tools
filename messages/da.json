@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "Søg..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - Gratis Online Udviklerværktøjer",
     "description": "90+ gratis online værktøjer for alle. Formateringsværktøjer, konvertere, generatorer og hjælpeprogrammer. Hurtigt, privat og ingen registrering påkrævet."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "Hjem",
+    "tools": "Værktøjer"
   },
   "NotFound": {
     "title": "Side ikke fundet",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "Klar til at øge din produktivitet?",
       "text": "Begynd at bruge vores udviklerværktøjer gratis. Ingen tilmelding påkrævet, ingen dataindsamling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "Åbn værktøj",
     "noResults": "Ingen værktøjer fundet der matcher",
@@ -71,6 +167,13 @@
     "about": "Om",
     "privacy": "Privatliv",
     "terms": "Vilkår"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "Pretty Print URL",
       "description": "Formatér og gør URL'er smukke for læsbarhed"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "Upload",
       "sample": "Prøve",
       "clear": "Ryd",
+      "swap": "Swap",
       "indent": "Indrykning:",
       "chars": "tegn",
       "error": "Fejl",
@@ -534,6 +666,16 @@
       "convert": "Konvertere",
       "validate": "Valider",
       "resultPlaceholder": "Resultatet vises her..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "Indkode",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "Redaktør",
       "preview": "Forhåndsvisning",
-      "inputPlaceholder": "Indtast Markdown her..."
+      "inputPlaceholder": "Indtast Markdown her...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "Original tekst",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "Afsnit",
       "generate": "Frembringe",
-      "copy": "Kopi"
+      "copy": "Kopi",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "Vinkel",
@@ -946,7 +1091,9 @@
       "jsonInput": "JSON-input",
       "csvInput": "CSV-input",
       "jsonOutput": "JSON-output",
-      "csvOutput": "CSV-output"
+      "csvOutput": "CSV-output",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "Original JSON",
@@ -1142,14 +1289,6 @@
       "reset": "Nulstil",
       "lap": "Skød"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP-adresse",
-      "subnetMask": "Undernetmaske",
-      "calculate": "Beregne",
-      "networkAddress": "Netværksadresse",
-      "broadcastAddress": "Udsendelsesadresse",
-      "usableHosts": "Brugbare værter"
-    },
     "SvgToPng": {
       "pasteSvg": "Indsæt SVG",
       "uploadSvg": "Upload SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "Aktuelt ugenummer",
       "yearProgress": "Årets fremskridt",
-      "week": "Uge"
+      "week": "Uge",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefonnummer",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Format",
       "copy": "Kopi"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-adresse",
+      "subnetMask": "Undernetmaske",
+      "calculate": "Beregne",
+      "networkAddress": "Netværksadresse",
+      "broadcastAddress": "Udsendelsesadresse",
+      "usableHosts": "Brugbare værter"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "Du kan også lide",
     "subtitle": "Udforsk andre populære udviklerværktøjer",
     "openTool": "Åbn Værktøj"
-  },
-  "Breadcrumb": {
-    "home": "Hjem",
-    "tools": "Værktøjer"
   },
   "SvgToPng": {
     "upload": "Upload SVG-fil",
@@ -1690,7 +1834,9 @@
     "note": "Signaturer behandles lokalt i din browser. Vi gemmer eller uploader dem ikke."
   },
   "MarkdownEditor": {
-    "previewLabel": "Live Preview"
+    "previewLabel": "Live Preview",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Skiftbeløb (N)",
@@ -1799,7 +1945,9 @@
       "block_2": "Minut, time, dag i måneden, måned, ugedag.Det er alt, hvad det er.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Eksempler</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Løb hver dag ved midnat: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] *border border-</0(-)-> border border-</0(-)->",
       "block_4": "Eksempler",
-      "block_5": "Har du brug for hjælp?Brug vores <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> til at bygge udtryk visuelt."
+      "block_5": "Har du brug for hjælp?Brug vores <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> til at bygge udtryk visuelt.",
+      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Problemet med Cloud Vaults",

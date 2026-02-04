@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "검색..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - 무료 온라인 개발자 도구",
     "description": "모두를 위한 90개 이상의 무료 온라인 도구. 포맷터, 변환기, 생성기 및 유틸리티. 빠르고 비공개이며 등록이 필요하지 않습니다."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "집",
+    "tools": "도구"
   },
   "NotFound": {
     "title": "페이지를 찾을 수 없습니다",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "생산성을 높일 준비가 되셨나요?",
       "text": "무료로 개발자 도구를 사용해보세요. 가입 필요 없음, 데이터 수집 없음.",
-      "button": "무료로 시작하기"
+      "button": "무료로 시작하기",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "도구 열기",
     "noResults": "일치하는 도구가 없습니다",
@@ -71,6 +167,13 @@
     "about": "정보",
     "privacy": "개인정보 보호",
     "terms": "이용약관"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "URL 예쁘게 꾸미기",
       "description": "가독성을 위해 URL을 포맷하고 정리"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "업로드",
       "sample": "견본",
       "clear": "지우기",
+      "swap": "Swap",
       "indent": "톱니 모양:",
       "chars": "문자",
       "error": "오류",
@@ -534,6 +666,16 @@
       "convert": "전환하다",
       "validate": "검증",
       "resultPlaceholder": "결과가 여기에 표시됩니다..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "인코딩",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "편집자",
       "preview": "시사",
-      "inputPlaceholder": "여기에 마크다운을 입력하세요..."
+      "inputPlaceholder": "여기에 마크다운을 입력하세요...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "원본 텍스트",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "단락",
       "generate": "생성하다",
-      "copy": "복사"
+      "copy": "복사",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "각도",
@@ -946,7 +1091,9 @@
       "jsonInput": "JSON 입력",
       "csvInput": "CSV 입력",
       "jsonOutput": "JSON 출력",
-      "csvOutput": "CSV 출력"
+      "csvOutput": "CSV 출력",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "원본 JSON",
@@ -1142,14 +1289,6 @@
       "reset": "다시 놓기",
       "lap": "무릎"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP 주소",
-      "subnetMask": "서브넷 마스크",
-      "calculate": "믿다",
-      "networkAddress": "네트워크 주소",
-      "broadcastAddress": "방송 주소",
-      "usableHosts": "사용 가능한 호스트"
-    },
     "SvgToPng": {
       "pasteSvg": "SVG 붙여넣기",
       "uploadSvg": "SVG 업로드",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "현재 주 번호",
       "yearProgress": "연도 진행",
-      "week": "주"
+      "week": "주",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "전화 번호",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "체재",
       "copy": "복사"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP 주소",
+      "subnetMask": "서브넷 마스크",
+      "calculate": "믿다",
+      "networkAddress": "네트워크 주소",
+      "broadcastAddress": "방송 주소",
+      "usableHosts": "사용 가능한 호스트"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "당신은 또한 좋아할 수도 있습니다",
     "subtitle": "다른 인기 있는 개발자 도구 살펴보기",
     "openTool": "도구 열기"
-  },
-  "Breadcrumb": {
-    "home": "집",
-    "tools": "도구"
   },
   "SvgToPng": {
     "upload": "SVG 파일 업로드",
@@ -1690,7 +1834,9 @@
     "note": "서명은 브라우저에서 로컬로 처리됩니다. 우리는 이를 저장하거나 업로드하지 않습니다."
   },
   "MarkdownEditor": {
-    "previewLabel": "실시간 미리보기"
+    "previewLabel": "실시간 미리보기",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "교대량(N)",

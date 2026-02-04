@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "Zoeken..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - Gratis Online Ontwikkelaarstools",
     "description": "90+ gratis online tools voor iedereen. Formatteerders, converters, generatoren en hulpprogramma's. Snel, privé en geen registratie vereist."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "Thuis",
+    "tools": "Hulpmiddelen"
   },
   "NotFound": {
     "title": "Pagina niet gevonden",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "Klaar om je productiviteit te verhogen?",
       "text": "Begin gratis met het gebruik van onze ontwikkelaarstools. Geen registratie vereist, geen gegevensverzameling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "Gereedschap openen",
     "noResults": "Geen tools gevonden die overeenkomen met",
@@ -71,6 +167,13 @@
     "about": "Over",
     "privacy": "Privacy",
     "terms": "Voorwaarden"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "Mooie afdruk-URL",
       "description": "Formatteer en verfraai URL's voor leesbaarheid"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "Uploaden",
       "sample": "Steekproef",
       "clear": "Wissen",
+      "swap": "Swap",
       "indent": "Inspringen:",
       "chars": "tekens",
       "error": "Fout",
@@ -534,6 +666,16 @@
       "convert": "Overzetten",
       "validate": "Valideer",
       "resultPlaceholder": "Het resultaat verschijnt hier..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "Coderen",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Voorbeeld",
-      "inputPlaceholder": "Voer hier Markdown in..."
+      "inputPlaceholder": "Voer hier Markdown in...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "Originele tekst",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragrafen",
       "generate": "Genereer",
-      "copy": "Kopiëren"
+      "copy": "Kopiëren",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "Hoek",
@@ -946,7 +1091,9 @@
       "jsonInput": "JSON-invoer",
       "csvInput": "CSV-invoer",
       "jsonOutput": "JSON-uitvoer",
-      "csvOutput": "CSV-uitvoer"
+      "csvOutput": "CSV-uitvoer",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "Originele JSON",
@@ -1142,14 +1289,6 @@
       "reset": "Opnieuw instellen",
       "lap": "Ronde"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP-adres",
-      "subnetMask": "Subnetmasker",
-      "calculate": "Berekenen",
-      "networkAddress": "Netwerkadres",
-      "broadcastAddress": "Broadcast-adres",
-      "usableHosts": "Bruikbare hosts"
-    },
     "SvgToPng": {
       "pasteSvg": "Plak SVG",
       "uploadSvg": "Upload SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "Huidig ​​weeknummer",
       "yearProgress": "Jaar vooruitgang",
-      "week": "Week"
+      "week": "Week",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefoonnummer",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Formaat",
       "copy": "Kopiëren"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP-adres",
+      "subnetMask": "Subnetmasker",
+      "calculate": "Berekenen",
+      "networkAddress": "Netwerkadres",
+      "broadcastAddress": "Broadcast-adres",
+      "usableHosts": "Bruikbare hosts"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "Misschien vind je het ook leuk",
     "subtitle": "Ontdek andere populaire ontwikkelaarstools",
     "openTool": "Gereedschap openen"
-  },
-  "Breadcrumb": {
-    "home": "Thuis",
-    "tools": "Hulpmiddelen"
   },
   "SvgToPng": {
     "upload": "Upload SVG-bestand",
@@ -1690,7 +1834,9 @@
     "note": "Handtekeningen worden lokaal in uw browser verwerkt. Wij slaan ze niet op en uploaden ze niet."
   },
   "MarkdownEditor": {
-    "previewLabel": "Live voorbeeld"
+    "previewLabel": "Live voorbeeld",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Dienstbedrag (N)",

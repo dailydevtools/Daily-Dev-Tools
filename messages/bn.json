@@ -6,9 +6,103 @@
     "github": "গিটহাব",
     "searchPlaceholder": "অনুসন্ধান..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - ফ্রি এবং অনলাইন ডেভেলপার টুলস",
     "description": "সবার জন্য ৯০+ ফ্রি অনলাইন টুলস। ফরম্যাটার, কনভার্টার, জেনারেটর এবং ইউটিলিটি। দ্রুত, ব্যক্তিগত এবং কোনো নিবন্ধনের প্রয়োজন নেই।"
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "হোম",
+    "tools": "টুলস"
   },
   "NotFound": {
     "title": "পৃষ্ঠা পাওয়া যায়নি",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "আপনার কর্মক্ষমতা বাড়াতে প্রস্তুত?",
       "text": "আমাদের ডেভেলপার টুলস বিনামূল্যে ব্যবহার শুরু করুন। সাইন আপের প্রয়োজন নেই, কোনো ডেটা সংগ্রহ করা হয় না।",
-      "button": "বিনামূল্যে শুরু করুন"
+      "button": "বিনামূল্যে শুরু করুন",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "টুল খুলুন",
     "noResults": "এর সাথে মেলানো কোনো টুল পাওয়া যায়নি",
@@ -71,6 +167,13 @@
     "about": "সম্পর্কে",
     "privacy": "গোপনীয়তা",
     "terms": "শর্তাবলী"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "প্রিটি প্রিন্ট URL",
       "description": "পাঠযোগ্যতার জন্য URL ফরম্যাট এবং সুন্দর করুন"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "আপলোড",
       "sample": "স্যাম্পল",
       "clear": "পরিষ্কার করুন",
+      "swap": "Swap",
       "indent": "ইনডেন্ট:",
       "chars": "অক্ষর",
       "error": "ত্রুটি",
@@ -534,6 +666,16 @@
       "convert": "রূপান্তর করুন",
       "validate": "যাচাই করুন",
       "resultPlaceholder": "ফলাফল এখানে প্রদর্শিত হবে..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "এনকোড",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "এডিটর",
       "preview": "প্রিভিউ",
-      "inputPlaceholder": "Markdown এখানে লিখুন..."
+      "inputPlaceholder": "Markdown এখানে লিখুন...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "মূল টেক্সট",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "অনুচ্ছেদ",
       "generate": "তৈরি করুন",
-      "copy": "কপি করুন"
+      "copy": "কপি করুন",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "কোণ",
@@ -946,7 +1091,9 @@
       "jsonInput": "JSON ইনপুট",
       "csvInput": "CSV ইনপুট",
       "jsonOutput": "JSON আউটপুট",
-      "csvOutput": "CSV আউটপুট"
+      "csvOutput": "CSV আউটপুট",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "মূল JSON",
@@ -1142,14 +1289,6 @@
       "reset": "রিসেট করুন",
       "lap": "ল্যাপ"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP ঠিকানা",
-      "subnetMask": "সাবনেট মাস্ক",
-      "calculate": "হিসাব করুন",
-      "networkAddress": "নেটওয়ার্ক ঠিকানা",
-      "broadcastAddress": "ব্রডকাস্ট ঠিকানা",
-      "usableHosts": "ব্যবহারযোগ্য হোস্ট"
-    },
     "SvgToPng": {
       "pasteSvg": "SVG পেস্ট করুন",
       "uploadSvg": "SVG আপলোড করুন",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "বর্তমান সপ্তাহ নম্বর",
       "yearProgress": "বছরের অগ্রগতি",
-      "week": "সপ্তাহ"
+      "week": "সপ্তাহ",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "ফোন নম্বর",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "ফরম্যাট",
       "copy": "কপি করুন"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "IP ঠিকানা",
+      "subnetMask": "সাবনেট মাস্ক",
+      "calculate": "হিসাব করুন",
+      "networkAddress": "নেটওয়ার্ক ঠিকানা",
+      "broadcastAddress": "ব্রডকাস্ট ঠিকানা",
+      "usableHosts": "ব্যবহারযোগ্য হোস্ট"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "আপনার পছন্দ হতে পারে",
     "subtitle": "অন্যান্য জনপ্রিয় ডেভেলপার টুল অন্বেষণ করুন",
     "openTool": "টুল খুলুন"
-  },
-  "Breadcrumb": {
-    "home": "হোম",
-    "tools": "টুলস"
   },
   "SvgToPng": {
     "upload": "SVG ফাইল আপলোড করুন",
@@ -1690,7 +1834,9 @@
     "note": "স্বাক্ষরগুলি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়। আমরা সেগুলি সংরক্ষণ বা আপলোড করি না।"
   },
   "MarkdownEditor": {
-    "previewLabel": "লাইভ প্রিভিউ"
+    "previewLabel": "লাইভ প্রিভিউ",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "শিফট পরিমাণ (N)",
@@ -1800,7 +1946,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">উদাহরণ</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">প্রতিদিন মাঝরাতে চালান: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 বৃত্তাকার font-mono text-[0.9em] text-[#fb923c] বর্ডার *-বর্ডার *[var->0</code>",
       "block_4": "উদাহরণ",
       "block_5": "উদাহরণ",
-      "block_6": "সহায়তা দরকার?দৃশ্যত অভিব্যক্তি তৈরি করতে আমাদের <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron জেনারেটর</a> ব্যবহার করুন৷"
+      "block_6": "সহায়তা দরকার?দৃশ্যত অভিব্যক্তি তৈরি করতে আমাদের <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron জেনারেটর</a> ব্যবহার করুন৷",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "ক্লাউড ভল্টের সমস্যা",

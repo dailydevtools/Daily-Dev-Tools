@@ -178,3 +178,20 @@ select:focus-visible {
     animation: wiggle 1.5s ease-in-out infinite;
   }
 }
+
+/* Monaco Editor Dark Mode Overrides */
+.dark .monaco-editor,
+.dark .monaco-editor .margin,
+.dark .monaco-editor-background,
+.dark .monaco-editor .inputarea.ime-input {
+  background-color: #1e1e1e !important;
+}
+
+.dark .monaco-editor .overflow-guard {
+  background-color: #1e1e1e !important;
+}
+
+/* Ensure Monaco scrollbar matches dark theme */
+.dark .monaco-editor .decorationsOverviewRuler {
+  background-color: #1e1e1e !important;
+}

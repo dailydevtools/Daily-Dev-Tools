@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "חיפוש..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - כלי מפתחים מקוונים בחינם",
     "description": "90+ כלי אונליין בחינם לכולם. מפרמטים, ממירים, מחוללים וכלי עזר. מהיר, פרטי וללא צורך בהרשמה."
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "בַּיִת",
+    "tools": "כְּלֵי עֲבוֹדָה"
   },
   "NotFound": {
     "title": "הדף לא נמצא",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "מוכן להגביר את הפרודוקטיביות שלך?",
       "text": "התחל להשתמש בכלי המפתחים שלנו בחינם. אין צורך בהרשמה, אין איסוף נתונים.",
-      "button": "התחל בחינם"
+      "button": "התחל בחינם",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "פתח כלי",
     "noResults": "לא נמצאו כלים התואמים ל-",
@@ -71,6 +167,13 @@
     "about": "אודות",
     "privacy": "פרטיות",
     "terms": "תנאים"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "כתובת אתר מודפסת יפה",
       "description": "עיצוב ולייפות כתובות אתרים לקריאות"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "העלה",
       "sample": "לִטעוֹם",
       "clear": "נקה",
+      "swap": "Swap",
       "indent": "לְשַׁנֵן:",
       "chars": "תווים",
       "error": "שְׁגִיאָה",
@@ -534,6 +666,16 @@
       "convert": "לְהַמִיר",
       "validate": "לְאַמֵת",
       "resultPlaceholder": "התוצאה תופיע כאן..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "לְהַצְפִּין",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "עוֹרֵך",
       "preview": "תצוגה מקדימה",
-      "inputPlaceholder": "היכנסו ל-Markdown כאן..."
+      "inputPlaceholder": "היכנסו ל-Markdown כאן...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "טקסט מקורי",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "פסקאות",
       "generate": "לִיצוֹר",
-      "copy": "לְהַעְתִיק"
+      "copy": "לְהַעְתִיק",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "זָוִית",
@@ -946,7 +1091,9 @@
       "jsonInput": "קלט JSON",
       "csvInput": "קלט CSV",
       "jsonOutput": "פלט JSON",
-      "csvOutput": "פלט CSV"
+      "csvOutput": "פלט CSV",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON מקורי",
@@ -1142,14 +1289,6 @@
       "reset": "אִתחוּל",
       "lap": "חֵיק"
     },
-    "SubnetCalculator": {
-      "ipAddress": "כתובת IP",
-      "subnetMask": "מסכת רשת משנה",
-      "calculate": "לְחַשֵׁב",
-      "networkAddress": "כתובת רשת",
-      "broadcastAddress": "כתובת לשידור",
-      "usableHosts": "מארחים שימושיים"
-    },
     "SvgToPng": {
       "pasteSvg": "הדבק SVG",
       "uploadSvg": "העלה SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "מספר שבוע נוכחי",
       "yearProgress": "התקדמות שנה",
-      "week": "שָׁבוּעַ"
+      "week": "שָׁבוּעַ",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "מספר טלפון",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "פוּרמָט",
       "copy": "לְהַעְתִיק"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "כתובת IP",
+      "subnetMask": "מסכת רשת משנה",
+      "calculate": "לְחַשֵׁב",
+      "networkAddress": "כתובת רשת",
+      "broadcastAddress": "כתובת לשידור",
+      "usableHosts": "מארחים שימושיים"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "אולי גם תאהב",
     "subtitle": "חקור כלים פופולריים אחרים למפתחים",
     "openTool": "פתח את הכלי"
-  },
-  "Breadcrumb": {
-    "home": "בַּיִת",
-    "tools": "כְּלֵי עֲבוֹדָה"
   },
   "SvgToPng": {
     "upload": "העלה קובץ SVG",
@@ -1690,7 +1834,9 @@
     "note": "החתימות מעובדות באופן מקומי בדפדפן שלך. אנחנו לא מאחסנים או מעלים אותם."
   },
   "MarkdownEditor": {
-    "previewLabel": "תצוגה מקדימה חיה"
+    "previewLabel": "תצוגה מקדימה חיה",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "כמות משמרת (N)",
@@ -1799,7 +1945,9 @@
       "block_2": "דקה, שעה, יום בחודש, חודש, יום בשבוע.זה כל מה שזה.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
       "block_4": "דוגמאות",
-      "block_5": "זקוק לעזרה?השתמש ב<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> שלנו כדי לבנות ביטויים בצורה ויזואלית."
+      "block_5": "זקוק לעזרה?השתמש ב<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> שלנו כדי לבנות ביטויים בצורה ויזואלית.",
+      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "הבעיה עם כספות בענן",

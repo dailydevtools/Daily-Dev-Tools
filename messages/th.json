@@ -6,9 +6,103 @@
     "github": "GitHub",
     "searchPlaceholder": "ค้นหา..."
   },
+  "CurlConverter": {
+    "title": "CURL Converter",
+    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "Paste your CURL command here...",
+    "outputPlaceholder": "Generated code will appear here...",
+    "convert": "Convert",
+    "language": "Target Language",
+    "copy": "Copy Code"
+  },
+  "APIDocs": {
+    "title": "API Documentation Builder",
+    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "Search collections...",
+    "newCollection": "New Collection",
+    "createCollection": "Create Collection",
+    "editCollection": "Edit Collection",
+    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
+    "noCollectionsYet": "No collections yet",
+    "noCollectionsFound": "No collections found",
+    "tryDifferentSearch": "Try a different search term",
+    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
+    "endpoint": "endpoint",
+    "endpoints": "endpoints",
+    "more": "more",
+    "edit": "Edit",
+    "addEndpoint": "Add Endpoint",
+    "editEndpoint": "Edit Endpoint",
+    "noEndpointsYet": "No endpoints yet",
+    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
+    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
+    "collectionName": "Collection Name",
+    "collectionNamePlaceholder": "e.g., Payment API",
+    "baseUrl": "Base URL",
+    "baseUrlPlaceholder": "https://api.example.com/v1",
+    "baseUrlHelp": "The base URL for all endpoints in this collection",
+    "descriptionLabel": "Description",
+    "descriptionPlaceholder": "Optional description for this API",
+    "authType": "Authentication Type",
+    "authNone": "No Authentication",
+    "authBearer": "Bearer Token",
+    "authApiKey": "API Key",
+    "authBasic": "Basic Auth",
+    "cancel": "Cancel",
+    "saveChanges": "Save Changes",
+    "collectionNameRequired": "Collection name is required",
+    "baseUrlRequired": "Base URL is required",
+    "invalidUrl": "Please enter a valid URL",
+    "pasteCurl": "Paste your cURL command",
+    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "Parse cURL",
+    "enterCurlCommand": "Please enter a cURL command",
+    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "Endpoint Name",
+    "endpointNamePlaceholder": "e.g., Create User",
+    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
+    "method": "Method",
+    "path": "Path",
+    "pathPlaceholder": "/users/':id'",
+    "headers": "Headers",
+    "addHeader": "+ Add Header",
+    "noHeaders": "No headers",
+    "key": "Key",
+    "value": "Value",
+    "queryParameters": "Query Parameters",
+    "addParameter": "+ Add Parameter",
+    "noQueryParameters": "No query parameters",
+    "requestBody": "Request Body",
+    "backToCurl": "← Back to cURL",
+    "endpointNameRequired": "Endpoint name is required",
+    "pathRequired": "Path is required",
+    "exportMd": "Export MD",
+    "codeExamples": "Code Examples",
+    "header": "Header",
+    "parameter": "Parameter",
+    "noCurlAvailable": "// No cURL command available"
+  },
   "Metadata": {
     "title": "DailyDevTools - เครื่องมือนักพัฒนาออนไลน์ฟรี",
     "description": "เครื่องมือออนไลน์ฟรีมากกว่า 90 รายการสำหรับทุกคน ตัวจัดรูปแบบ ตัวแปลง ตัวสร้าง และยูทิลิตี้ รวดเร็ว เป็นส่วนตัว และไม่ต้องลงทะเบียน"
+  },
+  "MockDataGenerator": {
+    "settings": "Configuration",
+    "rowCount": "Row Count",
+    "format": "Output Format",
+    "generate": "Generate Data",
+    "fields": "Fields",
+    "preview": "Data Preview",
+    "copy": "Copy to Clipboard",
+    "download": "Download File",
+    "copied": "Data copied to clipboard!",
+    "placeholder": "Generate data to see preview...",
+    "name": "Mock Data Generator",
+    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Breadcrumb": {
+    "home": "บ้าน",
+    "tools": "เครื่องมือ"
   },
   "NotFound": {
     "title": "ไม่พบหน้า",
@@ -58,7 +152,9 @@
     "cta": {
       "title": "พร้อมที่จะเพิ่มผลผลิตของคุณหรือยัง?",
       "text": "เริ่มใช้เครื่องมือนักพัฒนาของเราฟรี ไม่ต้องสมัคร ไม่มีการรวบรวมข้อมูล",
-      "button": "เริ่มฟรี"
+      "button": "เริ่มฟรี",
+      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "Share Feedback"
     },
     "openTool": "เปิดเครื่องมือ",
     "noResults": "ไม่พบเครื่องมือที่ตรงกับ",
@@ -71,6 +167,13 @@
     "about": "เกี่ยวกับ",
     "privacy": "ความเป็นส่วนตัว",
     "terms": "เงื่อนไข"
+  },
+  "Credit": {
+    "title": "Community Credit",
+    "inspiredBy": "This tool was inspired by a suggestion from",
+    "inspiredByApp": "This tool was inspired by an app developed by",
+    "checkOut": "Check out",
+    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -440,6 +543,34 @@
     "pretty-print-url": {
       "name": "จัดรูปแบบ URL",
       "description": "จัดรูปแบบและทำให้ URL อ่านง่าย"
+    },
+    "mock-data-generator": {
+      "name": "Mock Data Generator",
+      "description": "Generate random JSON/CSV data"
+    },
+    "cron-generator": {
+      "name": "Cron Generator",
+      "description": "Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "CSS Clip Path Generator",
+      "description": "Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "Meta Tag Builder",
+      "description": "Generate SEO meta tags for your website"
+    },
+    "code-editor": {
+      "name": "Online Code Editor",
+      "description": "Write, edit, and format code with syntax highlighting"
+    },
+    "curl-converter": {
+      "name": "CURL Converter",
+      "description": "Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "API Documentation Builder",
+      "description": "Create beautiful API docs from cURL commands"
     }
   },
   "Terms": {
@@ -524,6 +655,7 @@
       "upload": "อัปโหลด",
       "sample": "ตัวอย่าง",
       "clear": "ล้าง",
+      "swap": "Swap",
       "indent": "ย่อหน้า:",
       "chars": "ตัวอักษร",
       "error": "ข้อผิดพลาด",
@@ -534,6 +666,16 @@
       "convert": "แปลง",
       "validate": "ตรวจสอบ",
       "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่..."
+    },
+    "CodeEditor": {
+      "language": "Language",
+      "theme": "Theme",
+      "fontSize": "Font Size",
+      "minimap": "Minimap",
+      "run": "Run",
+      "running": "Running...",
+      "output": "Output",
+      "clearOutput": "Clear Output"
     },
     "Base64Encoder": {
       "encode": "เข้ารหัส",
@@ -650,7 +792,9 @@
     "MarkdownEditor": {
       "editor": "ตัวแก้ไข",
       "preview": "ดูตัวอย่าง",
-      "inputPlaceholder": "ป้อน Markdown ที่นี่..."
+      "inputPlaceholder": "ป้อน Markdown ที่นี่...",
+      "inputLabel": "Editor",
+      "previewLabel": "Live Preview"
     },
     "TextDiff": {
       "original": "ข้อความต้นฉบับ",
@@ -673,7 +817,8 @@
     "LoremIpsum": {
       "paragraphs": "ย่อหน้า",
       "generate": "สร้าง",
-      "copy": "คัดลอก"
+      "copy": "คัดลอก",
+      "copyText": "Copy Text"
     },
     "GradientGenerator": {
       "angle": "มุม",
@@ -946,7 +1091,9 @@
       "jsonInput": "อินพุต JSON",
       "csvInput": "อินพุต CSV",
       "jsonOutput": "เอาท์พุต JSON",
-      "csvOutput": "เอาท์พุต CSV"
+      "csvOutput": "เอาท์พุต CSV",
+      "minifyOutput": "Minify Output",
+      "parseNumbers": "Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON ต้นฉบับ",
@@ -1142,14 +1289,6 @@
       "reset": "รีเซ็ต",
       "lap": "รอบ"
     },
-    "SubnetCalculator": {
-      "ipAddress": "ที่อยู่ IP",
-      "subnetMask": "ซับเน็ตมาสก์",
-      "calculate": "คำนวณ",
-      "networkAddress": "ที่อยู่เครือข่าย",
-      "broadcastAddress": "ที่อยู่ Broadcast",
-      "usableHosts": "โฮสต์ที่ใช้งานได้"
-    },
     "SvgToPng": {
       "pasteSvg": "วาง SVG",
       "uploadSvg": "อัปโหลด SVG",
@@ -1216,7 +1355,8 @@
     "WeekNumber": {
       "currentWeek": "หมายเลขสัปดาห์ปัจจุบัน",
       "yearProgress": "ความคืบหน้าของปี",
-      "week": "สัปดาห์"
+      "week": "สัปดาห์",
+      "weekNumber": "Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "หมายเลขโทรศัพท์",
@@ -1324,6 +1464,14 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "จัดรูปแบบ",
       "copy": "คัดลอก"
+    },
+    "SubnetCalculator": {
+      "ipAddress": "ที่อยู่ IP",
+      "subnetMask": "ซับเน็ตมาสก์",
+      "calculate": "คำนวณ",
+      "networkAddress": "ที่อยู่เครือข่าย",
+      "broadcastAddress": "ที่อยู่ Broadcast",
+      "usableHosts": "โฮสต์ที่ใช้งานได้"
     }
   },
   "BlogPosts": {
@@ -1430,10 +1578,6 @@
     "title": "คุณอาจจะชอบ",
     "subtitle": "สำรวจเครื่องมือสำหรับนักพัฒนายอดนิยมอื่นๆ",
     "openTool": "เปิดเครื่องมือ"
-  },
-  "Breadcrumb": {
-    "home": "บ้าน",
-    "tools": "เครื่องมือ"
   },
   "SvgToPng": {
     "upload": "อัปโหลดไฟล์ SVG",
@@ -1690,7 +1834,9 @@
     "note": "ลายเซ็นได้รับการประมวลผลภายในเบราว์เซอร์ของคุณ เราไม่จัดเก็บหรืออัปโหลด"
   },
   "MarkdownEditor": {
-    "previewLabel": "ดูตัวอย่างสด"
+    "previewLabel": "ดูตัวอย่างสด",
+    "inputLabel": "Editor",
+    "inputPlaceholder": "Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "จำนวนกะ (N)",
