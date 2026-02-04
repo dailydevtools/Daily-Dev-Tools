@@ -55,7 +55,7 @@ export default function FeedbackForm() {
     }
 
     return (
-        <div className="fixed inset-0 z-[100] bg-black/50 backdrop-blur-[4px] flex items-center justify-center p-6" onClick={() => setIsOpen(false)}>
+        <div className="fixed inset-0 z-[1000] bg-black/50 backdrop-blur-[4px] flex items-center justify-center p-6" onClick={() => setIsOpen(false)}>
             <div className="w-full max-w-[420px] bg-[var(--background)] border border-[var(--border-color)] rounded-2xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.3)] animate-in fade-in zoom-in-95 duration-200" onClick={(e) => e.stopPropagation()}>
                 <div className="flex justify-between items-center mb-5">
                     <h3 className="text-lg font-semibold text-[var(--title-color)] flex items-center gap-2">
