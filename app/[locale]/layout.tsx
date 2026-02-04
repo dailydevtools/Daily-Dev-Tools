@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 
 import { ThemeProvider } from "../components/ThemeProvider";
+import { ConfirmDialogProvider } from "../components/ui/ConfirmDialog";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Script from "next/script";
@@ -188,12 +189,14 @@ export default async function LocaleLayout({
                 )}
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider>
-                        <LayoutEssentials />
-                        <Header />
-                        <main id="main-content">
-                            {children}
-                        </main>
-                        <Footer />
+                        <ConfirmDialogProvider>
+                            <LayoutEssentials />
+                            <Header />
+                            <main id="main-content">
+                                {children}
+                            </main>
+                            <Footer />
+                        </ConfirmDialogProvider>
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>
