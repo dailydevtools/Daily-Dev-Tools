@@ -6,11 +6,22 @@ export interface Tool {
     description: string;
     icon: string;
     category: ToolCategory;
+    isNew?: boolean;
+}
+
+// Helper to sort tools with new ones first
+export function getSortedTools(tools: Tool[]): Tool[] {
+    return [...tools].sort((a, b) => {
+        if (a.isNew && !b.isNew) return -1;
+        if (!a.isNew && b.isNew) return 1;
+        return 0;
+    });
 }
 
 export const tools: Tool[] = [
-    { id: "code-editor", name: "Code Editor", description: "View, edit, and format code in any language", icon: "Code2", category: "Developer" },
+    { id: "code-editor", name: "Code Editor", description: "View, edit, and format code in any language", icon: "Code2", category: "Developer", isNew: true },
     { id: "json-formatter", name: "JSON Formatter", description: "Format, validate & beautify JSON instantly", icon: "Braces", category: "Developer" },
+    { id: "curl-converter", name: "CURL Converter", description: "Convert CURL commands to any programming language", icon: "Terminal", category: "Developer", isNew: true },
     { id: "base64-encoder", name: "Base64 Encoder", description: "Encode and decode Base64 strings", icon: "Lock", category: "Developer" },
     { id: "url-encoder", name: "URL Encoder", description: "Encode and decode URLs safely", icon: "Link", category: "Developer" },
     { id: "jwt-decoder", name: "JWT Decoder", description: "Decode and inspect JSON Web Tokens", icon: "Ticket", category: "Developer" },
@@ -106,4 +117,5 @@ export const tools: Tool[] = [
     { id: "cron-generator", name: "Cron Generator", description: "Generate cron schedule expressions easily", icon: "Clock", category: "Developer" },
     { id: "css-clip-path", name: "CSS Clip Path Generator", description: "Create custom shapes with CSS clip-path", icon: "Scissors", category: "Design" },
     { id: "meta-generator", name: "Meta Tag Builder", description: "Generate SEO meta tags for your website", icon: "Tag", category: "Content" },
+    { id: "api-docs", name: "API Documentation Builder", description: "Create beautiful API docs from cURL commands", icon: "FileText", category: "Developer", isNew: true },
 ];
