@@ -1,17 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, ReactNode } from 'react';
 import ToolTabs from '../components/ToolTabs';
 import JsonFormatter from '../components/tools/JsonFormatter';
 import Base64Tool from '../components/tools/Base64Tool';
 import UrlEncoder from '../components/tools/UrlEncoder';
 import JwtDecoder from '../components/tools/JwtDecoder';
+import { JsonIcon, Base64Icon, UrlIcon, JwtIcon, WrenchIcon, ExternalLinkIcon } from '../components/icons';
 
 type Tool = 'json' | 'base64' | 'url' | 'jwt';
 
-const TOOLS: { id: Tool; label: string; icon: string }[] = [
-    { id: 'json', label: 'JSON', icon: '{ }' },
-    { id: 'base64', label: 'Base64', icon: '🔐' },
-    { id: 'url', label: 'URL', icon: '🔗' },
-    { id: 'jwt', label: 'JWT', icon: '🎫' },
+const TOOLS: { id: Tool; label: string; icon: ReactNode }[] = [
+    { id: 'json', label: 'JSON', icon: <JsonIcon /> },
+    { id: 'base64', label: 'Base64', icon: <Base64Icon /> },
+    { id: 'url', label: 'URL', icon: <UrlIcon /> },
+    { id: 'jwt', label: 'JWT', icon: <JwtIcon /> },
 ];
 
 export default function App() {
@@ -51,7 +52,7 @@ export default function App() {
         <div className="app">
             <header className="header">
                 <div className="logo">
-                    <span className="logo-icon">🔧</span>
+                    <span className="logo-icon"><WrenchIcon /></span>
                     <span className="logo-text">DailyDevTools</span>
                 </div>
             </header>
@@ -73,7 +74,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="footer-link"
                 >
-                    ⚡ Open in DailyDevTools.com
+                    <ExternalLinkIcon /> Open in DailyDevTools.com
                 </a>
             </footer>
 
@@ -87,7 +88,7 @@ export default function App() {
         .header {
           padding: 12px 16px;
           border-bottom: 1px solid var(--border-color);
-          background: var(--bg-secondary);
+          background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
         }
 
         .logo {
@@ -97,13 +98,18 @@ export default function App() {
         }
 
         .logo-icon {
-          font-size: 18px;
+          display: flex;
+          align-items: center;
+          color: var(--accent);
         }
 
         .logo-text {
           font-weight: 600;
           font-size: 14px;
-          color: var(--text-primary);
+          background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
         }
 
         .main {
@@ -120,15 +126,19 @@ export default function App() {
         }
 
         .footer-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
           color: var(--accent);
           text-decoration: none;
           font-size: 12px;
           font-weight: 500;
-          transition: color 0.2s;
+          transition: all 0.2s;
         }
 
         .footer-link:hover {
           color: var(--accent-hover);
+          gap: 8px;
         }
       `}</style>
         </div>

@@ -1,30 +1,32 @@
+import { ReactNode } from 'react';
+
 interface Tool {
-    id: string;
-    label: string;
-    icon: string;
+  id: string;
+  label: string;
+  icon: ReactNode;
 }
 
 interface ToolTabsProps {
-    tools: Tool[];
-    activeTool: string;
-    onChange: (id: any) => void;
+  tools: Tool[];
+  activeTool: string;
+  onChange: (id: any) => void;
 }
 
 export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps) {
-    return (
-        <div className="tool-tabs">
-            {tools.map((tool) => (
-                <button
-                    key={tool.id}
-                    className={`tool-tab ${activeTool === tool.id ? 'active' : ''}`}
-                    onClick={() => onChange(tool.id)}
-                >
-                    <span className="tab-icon">{tool.icon}</span>
-                    <span className="tab-label">{tool.label}</span>
-                </button>
-            ))}
+  return (
+    <div className="tool-tabs">
+      {tools.map((tool) => (
+        <button
+          key={tool.id}
+          className={`tool-tab ${activeTool === tool.id ? 'active' : ''}`}
+          onClick={() => onChange(tool.id)}
+        >
+          <span className="tab-icon">{tool.icon}</span>
+          <span className="tab-label">{tool.label}</span>
+        </button>
+      ))}
 
-            <style>{`
+      <style>{`
         .tool-tabs {
           display: flex;
           padding: 8px;
@@ -39,10 +41,21 @@ export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps)
           flex-direction: column;
           align-items: center;
           gap: 4px;
-          padding: 8px 4px;
-          border-radius: 8px;
-          transition: all 0.2s;
+          padding: 10px 4px;
+          border-radius: 10px;
+          transition: all 0.2s ease;
           color: var(--text-muted);
+          position: relative;
+          overflow: hidden;
+        }
+
+        .tool-tab::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(135deg, var(--accent) 0%, #fb923c 100%);
+          opacity: 0;
+          transition: opacity 0.2s;
         }
 
         .tool-tab:hover {
@@ -51,21 +64,31 @@ export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps)
         }
 
         .tool-tab.active {
-          background: var(--bg-tertiary);
+          background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(251, 146, 60, 0.1) 100%);
           color: var(--accent);
+          box-shadow: inset 0 0 0 1px rgba(249, 115, 22, 0.3);
+        }
+
+        .tool-tab.active .tab-icon {
+          transform: scale(1.1);
         }
 
         .tab-icon {
-          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 24px;
+          height: 24px;
+          transition: transform 0.2s ease;
         }
 
         .tab-label {
           font-size: 10px;
-          font-weight: 500;
+          font-weight: 600;
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
