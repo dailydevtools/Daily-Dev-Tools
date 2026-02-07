@@ -1,17 +1,18 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, Download, Upload, Trash2, FileJson, Wrench, Code2, Network, ChevronDown } from "lucide-react";
-import ToolPageHeader from "../../../components/ToolPageHeader";
+import { Download, Upload, Trash2, Wrench, Code2, Network, FileCode, ArrowLeftRight } from "lucide-react";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import CopyButton from "../../../components/ui/CopyButton";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
+import LiquidTabs from "../../../components/ui/LiquidTabs";
 import JsonEditor from "../../../components/JsonEditor";
 import { repairJSON } from "../../../lib/jsonRepair";
 import JsonTree from "../../../components/JsonTree";
-import LiquidTabs from "../../../components/ui/LiquidTabs";
+import JsonConverter from "./components/JsonConverter";
+import JsonSnippets from "./components/JsonSnippets";
 
 export default function JSONFormatterClient() {
     const t = useTranslations('ToolPage');
@@ -22,7 +23,7 @@ export default function JSONFormatterClient() {
     const [parsedData, setParsedData] = useState<any>(null);
     const [error, setError] = useState("");
     const [indentSize, setIndentSize] = useState(2);
-    const [activeTab, setActiveTab] = useState("code"); // 'code' | 'tree'
+    const [activeTab, setActiveTab] = useState("code"); // 'code' | 'tree' | 'convert' | 'snippet'
     const [stats, setStats] = useState({ size: 0, items: 0, depth: 0 });
 
     useEffect(() => {
@@ -50,7 +51,12 @@ export default function JSONFormatterClient() {
             }
         };
 
-        traverse(data, 1);
+        try {
+            traverse(data, 1);
+        } catch (e) {
+            // Handle massive JSON that might stack overflow
+        }
+
         setStats(s => ({ ...s, items, depth: maxDepth }));
     };
 
@@ -149,17 +155,19 @@ export default function JSONFormatterClient() {
 
                         <div className="w-px h-6 bg-[var(--border-color)] mx-1" />
 
-                        <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-lg flex items-center h-9 px-2">
-                            <span className="text-[10px] text-[var(--muted-text)] mr-2 uppercase tracking-wide">Indent</span>
-                            <select
-                                value={indentSize}
-                                onChange={(e) => setIndentSize(Number(e.target.value))}
-                                className="bg-transparent text-xs font-medium outline-none cursor-pointer"
-                            >
-                                <option value="2">2 Spaces</option>
-                                <option value="4">4 Spaces</option>
-                                <option value="8">8 Spaces</option>
-                            </select>
+                        <div className="flex items-center gap-2">
+                            <span className="text-[10px] text-[var(--muted-text)] uppercase tracking-wide">Indent</span>
+                            <LiquidSelect
+                                value={String(indentSize)}
+                                onChange={(val) => setIndentSize(Number(val))}
+                                options={[
+                                    { value: "2", label: "2 Spaces" },
+                                    { value: "4", label: "4 Spaces" },
+                                    { value: "8", label: "8 Spaces" },
+                                ]}
+                                variant="ghost"
+                                className="w-[100px]"
+                            />
                         </div>
 
                         <LiquidButton onClick={() => setInput("")} variant="ghost" className="h-9 px-3 text-xs text-red-500 hover:text-red-600">
@@ -173,20 +181,18 @@ export default function JSONFormatterClient() {
 
                 {/* Left Column: Input */}
                 <div className="flex flex-col h-[600px] lg:h-[calc(100vh-140px)] min-h-[500px]">
-                    <div className="flex items-center justify-between mb-3 px-1">
+                    <div className="flex items-center justify-between mb-3 px-1 py-0.5">
                         <div className="flex items-center gap-2">
                             <span className="text-sm font-semibold text-[var(--foreground)]">Original JSON</span>
                             {error && <span className="text-xs bg-red-500/10 text-red-500 px-2 py-0.5 rounded-full font-medium">Invalid</span>}
                         </div>
-                        <div className="flex gap-2">
-                            <button onClick={() => document.getElementById('json-upload')?.click()} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors bg-neutral-100 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-[var(--border-color)]">
-                                <Upload size={13} /> Upload
-                            </button>
-                            <input id="json-upload" type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
-                        </div>
+                        <button onClick={() => document.getElementById('json-upload')?.click()} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] transition-colors bg-neutral-100 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-[var(--border-color)]">
+                            <Upload size={13} /> Upload
+                        </button>
+                        <input id="json-upload" type="file" accept=".json" onChange={handleFileUpload} className="hidden" />
                     </div>
 
-                    <div className={`flex-1 rounded-xl overflow-hidden border transition-colors relative ${error ? 'border-red-500/50' : 'border-[var(--border-color)]'}`}>
+                    <div className={`flex-1 rounded-xl overflow-hidden border transition-colors relative bg-neutral-100/50 dark:bg-[#1e1e1e] ${error ? 'border-red-500/50' : 'border-[var(--border-color)]'}`}>
                         <JsonEditor
                             value={input}
                             onChange={(val) => setInput(val || "")}
@@ -204,38 +210,56 @@ export default function JSONFormatterClient() {
                 {/* Right Column: Output */}
                 <div className="flex flex-col h-[600px] lg:h-[calc(100vh-140px)] min-h-[500px]">
                     <div className="flex items-center justify-between mb-3 px-1">
-                        <div className="flex bg-neutral-100 dark:bg-white/5 p-1 rounded-lg border border-[var(--border-color)]">
-                            <button
-                                onClick={() => setActiveTab('code')}
-                                className={`px-3 py-1 rounded text-xs font-medium transition-all flex items-center gap-2 ${activeTab === 'code' ? 'bg-white dark:bg-[#1e1e1e] text-[var(--foreground)] shadow-sm' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                <Code2 size={14} /> Code
-                            </button>
-                            <button
-                                onClick={() => setActiveTab('tree')}
-                                className={`px-3 py-1 rounded text-xs font-medium transition-all flex items-center gap-2 ${activeTab === 'tree' ? 'bg-white dark:bg-[#1e1e1e] text-[var(--foreground)] shadow-sm' : 'text-[var(--muted-text)] hover:text-[var(--foreground)]'}`}
-                            >
-                                <Network size={14} /> Tree
-                            </button>
-                        </div>
-                        <div className="flex gap-2">
-                            <button onClick={downloadJSON} disabled={!output} className="text-xs flex items-center gap-1.5 text-[var(--muted-text)] hover:text-[var(--foreground)] disabled:opacity-50 transition-colors bg-neutral-100 dark:bg-white/5 px-3 py-1.5 rounded-lg border border-transparent hover:border-[var(--border-color)]">
-                                <Download size={13} /> Download
-                            </button>
-                            <CopyButton text={output} className="text-xs px-3 py-1.5 bg-neutral-100 dark:bg-white/5 rounded-lg border border-transparent hover:border-[var(--border-color)]" />
-                        </div>
+                        <LiquidTabs
+                            tabs={['code', 'tree', 'convert', 'snippet'] as const}
+                            activeTab={activeTab}
+                            onChange={setActiveTab}
+                            labels={{ code: 'Code', tree: 'Tree', convert: 'Convert', snippet: 'Snippet' }}
+                            icons={{
+                                code: <Code2 size={14} />,
+                                tree: <Network size={14} />,
+                                convert: <ArrowLeftRight size={14} />,
+                                snippet: <FileCode size={14} />
+                            }}
+                            variant="inline"
+                        />
+                        {activeTab === 'code' && (
+                            <div className="flex gap-2">
+                                <button onClick={downloadJSON} disabled={!output} className="text-xs flex 
+                                items-center gap-1.5 text-[var(--muted-text)]
+                                 hover:text-[var(--foreground)] disabled:opacity-50 transition-colors 
+                                 bg-neutral-100 dark:bg-white/5 px-3 py-1.5 h-8 rounded-lg border border-transparent 
+                                 hover:border-[var(--border-color)]">
+                                    <Download size={12} /> Download
+                                </button>
+                                <CopyButton text={output} className="text-xs px-3 py-1.5 min-h-8 bg-neutral-100 
+                                dark:bg-white/5 rounded-lg border border-transparent 
+                                hover:border-[var(--border-color)]" />
+                            </div>
+                        )}
                     </div>
 
-                    <div className="flex-1 rounded-xl overflow-hidden border border-[var(--border-color)] bg-neutral-50/50 dark:bg-[#111]">
-                        {activeTab === 'code' ? (
+                    <div className="flex-1 rounded-xl overflow-hidden border border-[var(--border-color)] bg-neutral-100/50 dark:bg-[#1e1e1e]">
+                        {activeTab === 'code' && (
                             <JsonEditor
                                 value={output}
                                 readOnly={true}
                                 className="h-full w-full"
                             />
-                        ) : (
+                        )}
+                        {activeTab === 'tree' && (
                             <div className="h-full w-full overflow-auto p-4 bg-white dark:bg-[#1e1e1e]">
                                 {parsedData ? <JsonTree data={parsedData} /> : <div className="h-full flex items-center justify-center text-[var(--muted-text)] text-sm">Valid JSON required for tree view</div>}
+                            </div>
+                        )}
+                        {activeTab === 'convert' && (
+                            <div className="h-full w-full bg-white dark:bg-[#1e1e1e] p-4">
+                                {parsedData ? <JsonConverter data={parsedData} /> : <div className="h-full flex items-center justify-center text-[var(--muted-text)] text-sm">Valid JSON required for conversion</div>}
+                            </div>
+                        )}
+                        {activeTab === 'snippet' && (
+                            <div className="h-full w-full bg-white dark:bg-[#1e1e1e] p-4">
+                                {parsedData ? <JsonSnippets data={parsedData} /> : <div className="h-full flex items-center justify-center text-[var(--muted-text)] text-sm">Valid JSON required for snippets</div>}
                             </div>
                         )}
                     </div>
