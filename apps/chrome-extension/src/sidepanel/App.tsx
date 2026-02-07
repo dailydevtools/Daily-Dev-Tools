@@ -1,5 +1,5 @@
 import { useState, useEffect, ReactNode } from 'react';
-import ToolTabs from '../components/ToolTabs';
+import LiquidTabs from '../components/LiquidTabs';
 import JsonFormatter from '../components/tools/JsonFormatter';
 import Base64Tool from '../components/tools/Base64Tool';
 import UrlEncoder from '../components/tools/UrlEncoder';
@@ -57,7 +57,7 @@ export default function App() {
                 </div>
             </header>
 
-            <ToolTabs
+            <LiquidTabs
                 tools={TOOLS}
                 activeTool={activeTool}
                 onChange={handleToolChange}
@@ -86,27 +86,28 @@ export default function App() {
         }
 
         .header {
-          padding: 12px 16px;
-          border-bottom: 1px solid var(--border-color);
-          background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+          padding: 14px 16px;
+          background: linear-gradient(180deg, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.9) 100%);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .logo {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 10px;
         }
 
         .logo-icon {
           display: flex;
           align-items: center;
           color: var(--accent);
+          filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.5));
         }
 
         .logo-text {
-          font-weight: 600;
-          font-size: 14px;
-          background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
+          font-weight: 700;
+          font-size: 15px;
+          background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -119,9 +120,9 @@ export default function App() {
         }
 
         .footer {
-          padding: 12px 16px;
-          border-top: 1px solid var(--border-color);
-          background: var(--bg-secondary);
+          padding: 14px 16px;
+          border-top: 1px solid rgba(255, 255, 255, 0.06);
+          background: linear-gradient(180deg, rgba(10, 10, 10, 0.9) 0%, rgba(5, 5, 5, 0.95) 100%);
           text-align: center;
         }
 
@@ -129,16 +130,21 @@ export default function App() {
           display: inline-flex;
           align-items: center;
           gap: 6px;
-          color: var(--accent);
+          color: var(--text-muted);
           text-decoration: none;
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 500;
-          transition: all 0.2s;
+          padding: 6px 12px;
+          border-radius: 6px;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.06);
+          transition: all 0.2s ease;
         }
 
         .footer-link:hover {
-          color: var(--accent-hover);
-          gap: 8px;
+          color: var(--accent);
+          border-color: rgba(249, 115, 22, 0.3);
+          background: rgba(249, 115, 22, 0.1);
         }
       `}</style>
         </div>

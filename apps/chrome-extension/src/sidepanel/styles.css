@@ -1,8 +1,8 @@
 :root {
   --bg-primary: #0a0a0a;
-  --bg-secondary: #141414;
-  --bg-tertiary: #1e1e1e;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --bg-secondary: #111111;
+  --bg-tertiary: #1a1a1a;
+  --border-color: rgba(255, 255, 255, 0.08);
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
@@ -10,6 +10,11 @@
   --accent-hover: #fb923c;
   --success: #22c55e;
   --error: #ef4444;
+  
+  /* Glass effect variables */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -20,7 +25,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--bg-primary);
+  background: linear-gradient(180deg, var(--bg-primary) 0%, #050505 100%);
   color: var(--text-primary);
   font-size: 13px;
   line-height: 1.5;
@@ -45,12 +50,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Buttons */
@@ -68,24 +73,53 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Textarea */
+/* Glass Textarea */
 textarea {
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   font-size: 12px;
-  background: var(--bg-tertiary);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   color: var(--text-primary);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 12px;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 14px;
   resize: none;
   outline: none;
   width: 100%;
+  box-shadow: var(--glass-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
 }
 
 textarea:focus {
   border-color: var(--accent);
+  box-shadow: var(--glass-shadow), 0 0 0 2px rgba(249, 115, 22, 0.2);
 }
 
 textarea::placeholder {
   color: var(--text-muted);
+}
+
+/* Glass Select */
+select {
+  font-family: inherit;
+  font-size: 12px;
+  padding: 8px 12px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: var(--text-primary);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+select:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+select:focus {
+  border-color: var(--accent);
 }
