@@ -150,7 +150,7 @@ export default async function LocaleLayout({
     const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
     return (
-        <html lang={locale} suppressHydrationWarning>
+        <html lang={locale} suppressHydrationWarning={true}>
             <head>
                 <script
                     dangerouslySetInnerHTML={{
@@ -170,7 +170,7 @@ export default async function LocaleLayout({
                 {gaId && <link rel="preconnect" href="https://www.googletagmanager.com" />}
                 {gaId && <link rel="preconnect" href="https://www.google-analytics.com" />}
             </head>
-            <body className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+            <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning={true}>
                 {gaId && (
                     <>
                         <Script
