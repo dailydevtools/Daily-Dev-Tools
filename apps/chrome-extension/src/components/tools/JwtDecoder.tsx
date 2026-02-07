@@ -55,14 +55,14 @@ export default function JwtDecoder() {
             </div>
 
             <div className="actions-row">
-                <ActionButton onClick={handleDecode} primary>🎫 Decode</ActionButton>
+                <ActionButton onClick={handleDecode} primary>Decode</ActionButton>
             </div>
 
             {error && <div className="error-message">{error}</div>}
 
             {expInfo && (
                 <div className={`exp-badge ${expInfo.expired ? 'expired' : 'valid'}`}>
-                    {expInfo.expired ? '⚠️' : '✅'} {expInfo.text}
+                    {expInfo.text}
                 </div>
             )}
 

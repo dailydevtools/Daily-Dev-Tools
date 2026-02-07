@@ -20,7 +20,7 @@ export default function CopyButton({ text }: CopyButtonProps) {
     return (
         <>
             <button className="copy-button" onClick={handleCopy}>
-                {copied ? '✓ Copied' : '📋 Copy'}
+                {copied ? 'Copied!' : 'Copy'}
             </button>
 
             <style>{`

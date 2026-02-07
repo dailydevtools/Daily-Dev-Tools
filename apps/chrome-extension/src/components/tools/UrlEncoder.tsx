@@ -4,88 +4,88 @@ import ActionButton from '../ActionButton';
 import CopyButton from '../CopyButton';
 
 export default function UrlEncoder() {
-    const [input, setInput] = useState('');
-    const [output, setOutput] = useState('');
-    const [error, setError] = useState('');
-    const [mode, setMode] = useState<'encode' | 'decode'>('encode');
+  const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
+  const [error, setError] = useState('');
+  const [mode, setMode] = useState<'encode' | 'decode'>('encode');
 
-    const handleProcess = useCallback(() => {
-        if (!input.trim()) {
-            setError('Please enter text');
-            setOutput('');
-            return;
-        }
+  const handleProcess = useCallback(() => {
+    if (!input.trim()) {
+      setError('Please enter text');
+      setOutput('');
+      return;
+    }
 
-        const result = mode === 'encode' ? encodeUrl(input) : decodeUrl(input);
+    const result = mode === 'encode' ? encodeUrl(input) : decodeUrl(input);
 
-        if (result.success) {
-            setOutput(result.output);
-            setError('');
-        } else {
-            setError(result.error || 'Processing failed');
-            setOutput('');
-        }
-    }, [input, mode]);
+    if (result.success) {
+      setOutput(result.output);
+      setError('');
+    } else {
+      setError(result.error || 'Processing failed');
+      setOutput('');
+    }
+  }, [input, mode]);
 
-    const handleSwap = useCallback(() => {
-        setInput(output);
-        setOutput('');
-        setMode(mode === 'encode' ? 'decode' : 'encode');
-    }, [output, mode]);
+  const handleSwap = useCallback(() => {
+    setInput(output);
+    setOutput('');
+    setMode(mode === 'encode' ? 'decode' : 'encode');
+  }, [output, mode]);
 
-    return (
-        <div className="tool-container">
-            <div className="mode-toggle">
-                <button
-                    className={`mode-btn ${mode === 'encode' ? 'active' : ''}`}
-                    onClick={() => setMode('encode')}
-                >
-                    Encode
-                </button>
-                <button
-                    className={`mode-btn ${mode === 'decode' ? 'active' : ''}`}
-                    onClick={() => setMode('decode')}
-                >
-                    Decode
-                </button>
-            </div>
+  return (
+    <div className="tool-container">
+      <div className="mode-toggle">
+        <button
+          className={`mode-btn ${mode === 'encode' ? 'active' : ''}`}
+          onClick={() => setMode('encode')}
+        >
+          Encode
+        </button>
+        <button
+          className={`mode-btn ${mode === 'decode' ? 'active' : ''}`}
+          onClick={() => setMode('decode')}
+        >
+          Decode
+        </button>
+      </div>
 
-            <div className="tool-section">
-                <label className="section-label">
-                    {mode === 'encode' ? 'Text to Encode' : 'URL to Decode'}
-                </label>
-                <textarea
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    placeholder={mode === 'encode' ? 'Hello World!' : 'Hello%20World%21'}
-                    rows={6}
-                />
-            </div>
+      <div className="tool-section">
+        <label className="section-label">
+          {mode === 'encode' ? 'Text to Encode' : 'URL to Decode'}
+        </label>
+        <textarea
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder={mode === 'encode' ? 'Hello World!' : 'Hello%20World%21'}
+          rows={6}
+        />
+      </div>
 
-            <div className="actions-row">
-                <ActionButton onClick={handleProcess} primary>
-                    {mode === 'encode' ? '🔗 Encode' : '🔓 Decode'}
-                </ActionButton>
-                {output && <ActionButton onClick={handleSwap}>↔ Swap</ActionButton>}
-            </div>
+      <div className="actions-row">
+        <ActionButton onClick={handleProcess} primary>
+          {mode === 'encode' ? 'Encode' : 'Decode'}
+        </ActionButton>
+        {output && <ActionButton onClick={handleSwap}>Swap</ActionButton>}
+      </div>
 
-            {error && <div className="error-message">{error}</div>}
+      {error && <div className="error-message">{error}</div>}
 
-            {output && (
-                <div className="tool-section">
-                    <div className="section-header">
-                        <label className="section-label">Output</label>
-                        <CopyButton text={output} />
-                    </div>
-                    <textarea
-                        value={output}
-                        readOnly
-                        rows={6}
-                    />
-                </div>
-            )}
+      {output && (
+        <div className="tool-section">
+          <div className="section-header">
+            <label className="section-label">Output</label>
+            <CopyButton text={output} />
+          </div>
+          <textarea
+            value={output}
+            readOnly
+            rows={6}
+          />
+        </div>
+      )}
 
-            <style>{`
+      <style>{`
         .tool-container {
           display: flex;
           flex-direction: column;
@@ -152,6 +152,6 @@ export default function UrlEncoder() {
           font-size: 12px;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }

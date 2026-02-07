@@ -69,12 +69,12 @@ export default function App() {
 
             <footer className="footer">
                 <a
-                    href="https://dailydevtools.com"
+                    href="https://dailydev.tools"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="footer-link"
                 >
-                    <ExternalLinkIcon /> Open in DailyDevTools.com
+                    <ExternalLinkIcon /> Open in DailyDev.Tools
                 </a>
             </footer>
 
