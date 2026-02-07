@@ -6,8 +6,7 @@ import { useTranslations } from "next-intl";
 import { LiquidButton } from "../../../../components/ui/LiquidButton";
 import { APIEndpoint, APICollection } from "../../../../lib/apiDocsTypes";
 import { convertCurl, TargetLanguage } from "../../../../lib/curlService";
-import Editor from "@monaco-editor/react";
-import { useTheme } from "next-themes";
+import CodeEditor from "../../../../components/CodeEditor";
 import CopyButton from "../../../../components/ui/CopyButton";
 
 interface Props {
@@ -28,7 +27,7 @@ const codeLanguages: { value: TargetLanguage; label: string; monacoLang: string 
 
 export default function DocumentationView({ endpoint, collection }: Props) {
     const t = useTranslations('APIDocs');
-    const { theme } = useTheme();
+
     const [selectedLang, setSelectedLang] = useState<TargetLanguage>('python');
     const [copied, setCopied] = useState(false);
     const [codeExample, setCodeExample] = useState<string>(t('noCurlAvailable'));
@@ -225,10 +224,9 @@ export default function DocumentationView({ endpoint, collection }: Props) {
                         </span>
                     </div>
                     <div className="h-48">
-                        <Editor
+                        <CodeEditor
                             height="100%"
                             defaultLanguage="json"
-                            theme={theme === "dark" ? "vs-dark" : "light"}
                             value={endpoint.requestBody.example}
                             options={{
                                 readOnly: true,
@@ -273,10 +271,9 @@ export default function DocumentationView({ endpoint, collection }: Props) {
 
                 {/* Code Editor */}
                 <div className="h-64">
-                    <Editor
+                    <CodeEditor
                         height="100%"
                         language={codeLanguages.find(l => l.value === selectedLang)?.monacoLang || 'python'}
-                        theme={theme === "dark" ? "vs-dark" : "light"}
                         value={codeExample}
                         options={{
                             readOnly: true,
