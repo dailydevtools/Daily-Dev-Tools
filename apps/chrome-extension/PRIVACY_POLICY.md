@@ -14,7 +14,7 @@ This extension:
 - ✅ Runs entirely locally on your device
 - ✅ Does not transmit any data to external servers
 - ✅ Does not track your browsing activity
-- ✅ Does not require an account or login
+- ✅ Does not require an account por login
 - ✅ Does not use analytics or telemetry
 
 ## Local Storage

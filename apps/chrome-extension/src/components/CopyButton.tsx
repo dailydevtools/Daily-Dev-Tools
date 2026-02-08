@@ -19,37 +19,26 @@ export default function CopyButton({ text }: CopyButtonProps) {
 
     return (
         <>
-            <button className={`copy-button ${copied ? 'copied' : ''}`} onClick={handleCopy}>
+            <button className="copy-button" onClick={handleCopy}>
                 {copied ? 'Copied!' : 'Copy'}
             </button>
 
             <style>{`
-        .copy-button {
-          padding: 5px 10px;
-          font-size: 10px;
-          font-weight: 600;
-          border-radius: 6px;
-          background: rgba(255, 255, 255, 0.05);
-          backdrop-filter: blur(10px);
-          color: var(--text-secondary);
-          border: 1px solid rgba(255, 255, 255, 0.08);
-          transition: all 0.2s ease;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-        }
-
-        .copy-button:hover {
-          color: var(--accent);
-          border-color: rgba(249, 115, 22, 0.3);
-          background: rgba(249, 115, 22, 0.1);
-        }
-
-        .copy-button.copied {
-          color: var(--success);
-          border-color: rgba(34, 197, 94, 0.3);
-          background: rgba(34, 197, 94, 0.1);
-        }
-      `}</style>
+                .copy-button {
+                    padding: 4px 10px;
+                    font-size: 11px;
+                    font-weight: 600;
+                    border-radius: 6px;
+                    background: var(--bg-tertiary);
+                    color: var(--text-secondary);
+                    border: 1px solid var(--border-color);
+                    transition: all 0.2s;
+                }
+                .copy-button:hover {
+                    color: var(--accent);
+                    border-color: var(--accent);
+                }
+            `}</style>
         </>
     );
 }

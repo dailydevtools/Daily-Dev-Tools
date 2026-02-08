@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promo Tile Generator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #111;
+            font-family: 'Inter', system-ui, sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .tile-container {
+            position: relative;
+            overflow: hidden;
+            background: #0a0a0f;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Background Effects */
+        .bg-gradient {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 40%);
+            z-index: 1;
+        }
+
+        .bg-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        /* Content Styling */
+        .content {
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            filter: drop-shadow(0 0 20px rgba(249, 115, 22, 0.4));
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            background: linear-gradient(to bottom right, #fff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        /* Marquee Tile (1400x560) */
+        #marquee-promo {
+            width: 1400px;
+            height: 560px;
+        }
+
+        #marquee-promo .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+        }
+
+        #marquee-promo h1 {
+            font-size: 5rem;
+        }
+
+        #marquee-promo .tagline {
+            font-size: 2rem;
+        }
+
+        /* Small Tile (440x280) */
+        #small-promo {
+            width: 440px;
+            height: 280px;
+        }
+
+        #small-promo .logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+
+        #small-promo h1 {
+            font-size: 2rem;
+        }
+
+        #small-promo .tagline {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Marquee Promo (1400x560) -->
+    <div id="marquee-promo" class="tile-container">
+        <div class="bg-grid"></div>
+        <div class="bg-gradient"></div>
+        <div class="content">
+            <img src="../../../public/logo.webp" class="logo" alt="Logo">
+            <h1>Daily Dev Tools</h1>
+            <p class="tagline">The ultimate developer utility suite</p>
+        </div>
+    </div>
+
+    <!-- Small Promo (440x280) -->
+    <div id="small-promo" class="tile-container">
+        <div class="bg-grid"></div>
+        <div class="bg-gradient"></div>
+        <div class="content">
+            <img src="../../../public/logo.webp" class="logo" alt="Logo">
+            <h1>Daily Dev Tools</h1>
+            <p class="tagline">Developer Utilities</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

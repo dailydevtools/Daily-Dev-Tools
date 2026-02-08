@@ -33,15 +33,32 @@ export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps)
           gap: 4px;
           background: var(--bg-primary);
           border-bottom: 1px solid var(--border-color);
+          overflow-x: auto;
+          scrollbar-width: thin;
+          scrollbar-color: var(--border-color) transparent;
+        }
+
+        .tool-tabs::-webkit-scrollbar {
+          height: 4px;
+        }
+
+        .tool-tabs::-webkit-scrollbar-track {
+          background: transparent;
+        }
+
+        .tool-tabs::-webkit-scrollbar-thumb {
+          background: var(--border-color);
+          border-radius: 2px;
         }
 
         .tool-tab {
-          flex: 1;
+          flex: 0 0 auto;
+          min-width: 52px;
           display: flex;
           flex-direction: column;
           align-items: center;
           gap: 4px;
-          padding: 10px 4px;
+          padding: 10px 8px;
           border-radius: 10px;
           transition: all 0.2s ease;
           color: var(--text-muted);

@@ -22,6 +22,9 @@
         "paths": {
             "@/*": [
                 "./src/*"
+            ],
+            "@dailydevtools/core-utils": [
+                "../../packages/core-utils/src/index.ts"
             ]
         }
     },
