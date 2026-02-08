@@ -58,7 +58,9 @@
     "cta": {
       "title": "Üretkenliğinizi artırmaya hazır mısınız?",
       "text": "Geliştirici araçlarımızı ücretsiz kullanmaya başlayın. Kayıt gerekmez, veri toplanmaz.",
-      "button": "Ücretsiz Başlayın"
+      "button": "Ücretsiz Başlayın",
+      "feedbackText": "[tr] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[tr] Share Feedback"
     },
     "openTool": "Aracı aç",
     "noResults": "Eşleşen araç bulunamadı",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "URL Güzelleştirici",
       "description": "URL'leri okunabilirlik için biçimlendirin ve güzelleştirin"
+    },
+    "mock-data-generator": {
+      "name": "[tr] Mock Data Generator",
+      "description": "[tr] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[tr] Online Code Editor",
+      "description": "[tr] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Hesapla",
       "convert": "Dönüştür",
       "validate": "Doğrula",
-      "resultPlaceholder": "Sonuç burada görünecek..."
+      "resultPlaceholder": "Sonuç burada görünecek...",
+      "swap": "[tr] Swap"
     },
     "Base64Encoder": {
       "encode": "Kodla",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Editör",
       "preview": "Önizleme",
-      "inputPlaceholder": "Markdown girin..."
+      "inputPlaceholder": "Markdown girin...",
+      "inputLabel": "[tr] Editor",
+      "previewLabel": "[tr] Live Preview"
     },
     "TextDiff": {
       "original": "Orijinal Metin",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragraflar",
       "generate": "Oluştur",
-      "copy": "Kopyala"
+      "copy": "Kopyala",
+      "copyText": "[tr] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Açı",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON Girişi",
       "csvInput": "CSV Girişi",
       "jsonOutput": "JSON Çıktısı",
-      "csvOutput": "CSV Çıktısı"
+      "csvOutput": "CSV Çıktısı",
+      "minifyOutput": "[tr] Minify Output",
+      "parseNumbers": "[tr] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Orijinal JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Güncel Hafta Numarası",
       "yearProgress": "Yıl İlerlemesi",
-      "week": "Hafta"
+      "week": "Hafta",
+      "weekNumber": "[tr] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefon Numarası",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Biçimlendir",
       "copy": "Kopyala"
+    },
+    "CodeEditor": {
+      "language": "[tr] Language",
+      "theme": "[tr] Theme",
+      "fontSize": "[tr] Font Size",
+      "minimap": "[tr] Minimap",
+      "run": "[tr] Run",
+      "running": "[tr] Running...",
+      "output": "[tr] Output",
+      "clearOutput": "[tr] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "İmzalar tarayıcınızda yerel olarak işlenir. Saklamıyoruz veya yüklemiyoruz."
   },
   "MarkdownEditor": {
-    "previewLabel": "Canlı Önizleme"
+    "previewLabel": "Canlı Önizleme",
+    "inputLabel": "[tr] Editor",
+    "inputPlaceholder": "[tr] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Kaydırma Miktarı (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Sıfır Bilgi:</strong> Şifrenizi asla görmeyiz.Cihazınızdan asla ayrılmaz.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Çevrimdışı Depolama:</strong> Şifrelenmiş kasanız tarayıcınızın LocalStorage'ında depolanır.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Dışa aktarılabilir:</strong> Ham şifrelenmiş verilerinizi istediğiniz zaman dışa aktarabilir/yedekleyebilirsiniz.</li>",
       "block_7": "Ana anahtarlarınız konusunda buluta güvenmeyi bırakın.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 vurgulu:text-[#ea580c]\">Yerel Şifre Yöneticisini</a> bugün deneyin."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[tr] Configuration",
+    "rowCount": "[tr] Row Count",
+    "format": "[tr] Output Format",
+    "generate": "[tr] Generate Data",
+    "fields": "[tr] Fields",
+    "preview": "[tr] Data Preview",
+    "copy": "[tr] Copy to Clipboard",
+    "download": "[tr] Download File",
+    "copied": "[tr] Data copied to clipboard!",
+    "placeholder": "[tr] Generate data to see preview...",
+    "name": "[tr] Mock Data Generator",
+    "description": "[tr] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[tr] Community Credit",
+    "inspiredBy": "[tr] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[tr] This tool was inspired by an app developed by",
+    "checkOut": "[tr] Check out",
+    "thanks": "[tr] Thanks for helping make DailyDevTools better ❤️"
   }
 }

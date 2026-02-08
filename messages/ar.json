@@ -58,7 +58,9 @@
     "cta": {
       "title": "هل أنت مستعد لتعزيز إنتاجيتك؟",
       "text": "ابدأ باستخدام أدوات المطورين لدينا مجانًا. لا يتطلب التسجيل، ولا يتم جمع البيانات.",
-      "button": "ابدأ مجانا"
+      "button": "ابدأ مجانا",
+      "feedbackText": "[ar] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ar] Share Feedback"
     },
     "openTool": "فتح الأداة",
     "noResults": "لم يتم العثور على أدوات مطابقة لـ",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "تجميل رابط URL",
       "description": "تنسيق وتجميل الروابط لسهولة القراءة"
+    },
+    "mock-data-generator": {
+      "name": "[ar] Mock Data Generator",
+      "description": "[ar] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[ar] Online Code Editor",
+      "description": "[ar] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "حساب",
       "convert": "تحويل",
       "validate": "تحقق",
-      "resultPlaceholder": "ستظهر النتيجة هنا..."
+      "resultPlaceholder": "ستظهر النتيجة هنا...",
+      "swap": "[ar] Swap"
     },
     "Base64Encoder": {
       "encode": "تشفير",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "المحرر",
       "preview": "المعاينة",
-      "inputPlaceholder": "أدخل Markdown هنا..."
+      "inputPlaceholder": "أدخل Markdown هنا...",
+      "inputLabel": "[ar] Editor",
+      "previewLabel": "[ar] Live Preview"
     },
     "TextDiff": {
       "original": "النص الأصلي",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "فقرات",
       "generate": "توليد",
-      "copy": "نسخ"
+      "copy": "نسخ",
+      "copyText": "[ar] Copy Text"
     },
     "GradientGenerator": {
       "angle": "الزاوية",
@@ -946,7 +960,9 @@
       "jsonInput": "إدخال JSON",
       "csvInput": "إدخال CSV",
       "jsonOutput": "مخرج JSON",
-      "csvOutput": "مخرج CSV"
+      "csvOutput": "مخرج CSV",
+      "minifyOutput": "[ar] Minify Output",
+      "parseNumbers": "[ar] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON الأصلي",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "رقم الأسبوع الحالي",
       "yearProgress": "تقدم السنة",
-      "week": "أسبوع"
+      "week": "أسبوع",
+      "weekNumber": "[ar] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "رقم الهاتف",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value",
       "format": "تنسيق",
       "copy": "نسخ"
+    },
+    "CodeEditor": {
+      "language": "[ar] Language",
+      "theme": "[ar] Theme",
+      "fontSize": "[ar] Font Size",
+      "minimap": "[ar] Minimap",
+      "run": "[ar] Run",
+      "running": "[ar] Running...",
+      "output": "[ar] Output",
+      "clearOutput": "[ar] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "تتم معالجة التواقيع محلياً في متصفحك. نحن لا نخزنها أو نرفعها."
   },
   "MarkdownEditor": {
-    "previewLabel": "معاينة حية"
+    "previewLabel": "معاينة حية",
+    "inputLabel": "[ar] Editor",
+    "inputPlaceholder": "[ar] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "مقدار الإزاحة (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">لا معرفة:</strong> لا نرى كلمة المرور الخاصة بك مطلقًا.فهو لا يغادر جهازك أبدًا.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">التخزين دون اتصال:</strong> يتم تخزين مخزنك المشفر في LocalStorage بالمتصفح الخاص بك.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] الخط-semibold\">قابل للتصدير:</strong> يمكنك تصدير/نسخ بياناتك الأولية المشفرة في أي وقت.</li>",
       "block_7": "توقف عن الوثوق في السحابة باستخدام مفاتيحك الرئيسية.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">جرب مدير كلمات المرور المحلي</a> اليوم."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ar] Configuration",
+    "rowCount": "[ar] Row Count",
+    "format": "[ar] Output Format",
+    "generate": "[ar] Generate Data",
+    "fields": "[ar] Fields",
+    "preview": "[ar] Data Preview",
+    "copy": "[ar] Copy to Clipboard",
+    "download": "[ar] Download File",
+    "copied": "[ar] Data copied to clipboard!",
+    "placeholder": "[ar] Generate data to see preview...",
+    "name": "[ar] Mock Data Generator",
+    "description": "[ar] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ar] Community Credit",
+    "inspiredBy": "[ar] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ar] This tool was inspired by an app developed by",
+    "checkOut": "[ar] Check out",
+    "thanks": "[ar] Thanks for helping make DailyDevTools better ❤️"
   }
 }

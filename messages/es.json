@@ -72,7 +72,9 @@
     "cta": {
       "title": "¿Listo para aumentar tu productividad?",
       "text": "Empieza a usar nuestras herramientas gratis. Sin registro, sin recolección de datos.",
-      "button": "Empezar Gratis"
+      "button": "Empezar Gratis",
+      "feedbackText": "[es] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[es] Share Feedback"
     },
     "openTool": "Abrir herramienta",
     "noResults": "No se encontraron herramientas que coincidan con",
@@ -465,6 +467,10 @@
     "mock-data-generator": {
       "name": "Generador de Datos Falsos",
       "description": "Genere datos aleatorios JSON o CSV"
+    },
+    "code-editor": {
+      "name": "[es] Online Code Editor",
+      "description": "[es] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -558,7 +564,8 @@
       "calculate": "Calcular",
       "convert": "Convertir",
       "validate": "Validar",
-      "resultPlaceholder": "El resultado aparecerá aquí..."
+      "resultPlaceholder": "El resultado aparecerá aquí...",
+      "swap": "[es] Swap"
     },
     "Base64Encoder": {
       "encode": "Codificar",
@@ -675,7 +682,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Vista Previa",
-      "inputPlaceholder": "Ingresa Markdown aquí..."
+      "inputPlaceholder": "Ingresa Markdown aquí...",
+      "inputLabel": "[es] Editor",
+      "previewLabel": "[es] Live Preview"
     },
     "TextDiff": {
       "original": "Texto Original",
@@ -698,7 +707,8 @@
     "LoremIpsum": {
       "paragraphs": "Párrafos",
       "generate": "Generar",
-      "copy": "Copiar"
+      "copy": "Copiar",
+      "copyText": "[es] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Ángulo",
@@ -1169,7 +1179,6 @@
       "reset": "Reiniciar",
       "lap": "Regazo"
     },
-
     "SvgToPng": {
       "pasteSvg": "Pegar SVG",
       "uploadSvg": "Subir SVG",
@@ -1236,7 +1245,8 @@
     "WeekNumber": {
       "currentWeek": "Número de semana actual",
       "yearProgress": "Progreso del año",
-      "week": "Semana"
+      "week": "Semana",
+      "weekNumber": "[es] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Número de teléfono",
@@ -1344,6 +1354,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Formato",
       "copy": "Copiar"
+    },
+    "CodeEditor": {
+      "language": "[es] Language",
+      "theme": "[es] Theme",
+      "fontSize": "[es] Font Size",
+      "minimap": "[es] Minimap",
+      "run": "[es] Run",
+      "running": "[es] Running...",
+      "output": "[es] Output",
+      "clearOutput": "[es] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1710,7 +1730,9 @@
     "note": "Las firmas se procesan localmente en su navegador. No los almacenamos ni los subimos."
   },
   "MarkdownEditor": {
-    "previewLabel": "Vista previa en vivo"
+    "previewLabel": "Vista previa en vivo",
+    "inputLabel": "[es] Editor",
+    "inputPlaceholder": "[es] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Cantidad de turno (N)",

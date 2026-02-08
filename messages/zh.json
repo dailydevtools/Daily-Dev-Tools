@@ -58,7 +58,9 @@
     "cta": {
       "title": "准备好提高效率了吗？",
       "text": "免费开始使用我们的开发者工具。无需注册，不收集数据，纯粹的高效。",
-      "button": "免费开始"
+      "button": "免费开始",
+      "feedbackText": "[zh] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[zh] Share Feedback"
     },
     "openTool": "打开工具",
     "noResults": "未找到匹配的工具",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "漂亮的打印网址",
       "description": "格式化和美化 URL 以提高可读性"
+    },
+    "mock-data-generator": {
+      "name": "[zh] Mock Data Generator",
+      "description": "[zh] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[zh] Online Code Editor",
+      "description": "[zh] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "计算",
       "convert": "转变",
       "validate": "证实",
-      "resultPlaceholder": "结果将出现在这里..."
+      "resultPlaceholder": "结果将出现在这里...",
+      "swap": "[zh] Swap"
     },
     "Base64Encoder": {
       "encode": "编码",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "编辑",
       "preview": "预览",
-      "inputPlaceholder": "在这里输入 Markdown..."
+      "inputPlaceholder": "在这里输入 Markdown...",
+      "inputLabel": "[zh] Editor",
+      "previewLabel": "[zh] Live Preview"
     },
     "TextDiff": {
       "original": "原文",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "段落",
       "generate": "产生",
-      "copy": "复制"
+      "copy": "复制",
+      "copyText": "[zh] Copy Text"
     },
     "GradientGenerator": {
       "angle": "角度",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON 输入",
       "csvInput": "CSV 输入",
       "jsonOutput": "JSON 输出",
-      "csvOutput": "CSV 输出"
+      "csvOutput": "CSV 输出",
+      "minifyOutput": "[zh] Minify Output",
+      "parseNumbers": "[zh] Parse Numbers"
     },
     "JsonDiff": {
       "original": "原始 JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "当前周数",
       "yearProgress": "年度进展",
-      "week": "星期"
+      "week": "星期",
+      "weekNumber": "[zh] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "电话号码",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "格式",
       "copy": "复制"
+    },
+    "CodeEditor": {
+      "language": "[zh] Language",
+      "theme": "[zh] Theme",
+      "fontSize": "[zh] Font Size",
+      "minimap": "[zh] Minimap",
+      "run": "[zh] Run",
+      "running": "[zh] Running...",
+      "output": "[zh] Output",
+      "clearOutput": "[zh] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "签名在您的浏览器中本地处理。我们不存储或上传它们。"
   },
   "MarkdownEditor": {
-    "previewLabel": "实时预览"
+    "previewLabel": "实时预览",
+    "inputLabel": "[zh] Editor",
+    "inputPlaceholder": "[zh] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "移动量（N）",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">零知识</strong>：我们永远不会看到您的密码。它永远不会离开您的设备。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">离线存储</strong>：您的加密保管库存储在浏览器的本地存储中。</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">可导出：</strong>您可以随时导出/备份原始加密数据。</li>",
       "block_7": "停止信任云与您的主密钥。 <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hide:text-[#ea580c]\">立即尝试本地密码管理器</a>。"
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[zh] Configuration",
+    "rowCount": "[zh] Row Count",
+    "format": "[zh] Output Format",
+    "generate": "[zh] Generate Data",
+    "fields": "[zh] Fields",
+    "preview": "[zh] Data Preview",
+    "copy": "[zh] Copy to Clipboard",
+    "download": "[zh] Download File",
+    "copied": "[zh] Data copied to clipboard!",
+    "placeholder": "[zh] Generate data to see preview...",
+    "name": "[zh] Mock Data Generator",
+    "description": "[zh] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[zh] Community Credit",
+    "inspiredBy": "[zh] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[zh] This tool was inspired by an app developed by",
+    "checkOut": "[zh] Check out",
+    "thanks": "[zh] Thanks for helping make DailyDevTools better ❤️"
   }
 }

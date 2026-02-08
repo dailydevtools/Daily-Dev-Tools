@@ -58,7 +58,9 @@
     "cta": {
       "title": "আপনার কর্মক্ষমতা বাড়াতে প্রস্তুত?",
       "text": "আমাদের ডেভেলপার টুলস বিনামূল্যে ব্যবহার শুরু করুন। সাইন আপের প্রয়োজন নেই, কোনো ডেটা সংগ্রহ করা হয় না।",
-      "button": "বিনামূল্যে শুরু করুন"
+      "button": "বিনামূল্যে শুরু করুন",
+      "feedbackText": "[bn] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[bn] Share Feedback"
     },
     "openTool": "টুল খুলুন",
     "noResults": "এর সাথে মেলানো কোনো টুল পাওয়া যায়নি",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "প্রিটি প্রিন্ট URL",
       "description": "পাঠযোগ্যতার জন্য URL ফরম্যাট এবং সুন্দর করুন"
+    },
+    "mock-data-generator": {
+      "name": "[bn] Mock Data Generator",
+      "description": "[bn] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[bn] Online Code Editor",
+      "description": "[bn] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "হিসাব করুন",
       "convert": "রূপান্তর করুন",
       "validate": "যাচাই করুন",
-      "resultPlaceholder": "ফলাফল এখানে প্রদর্শিত হবে..."
+      "resultPlaceholder": "ফলাফল এখানে প্রদর্শিত হবে...",
+      "swap": "[bn] Swap"
     },
     "Base64Encoder": {
       "encode": "এনকোড",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "এডিটর",
       "preview": "প্রিভিউ",
-      "inputPlaceholder": "Markdown এখানে লিখুন..."
+      "inputPlaceholder": "Markdown এখানে লিখুন...",
+      "inputLabel": "[bn] Editor",
+      "previewLabel": "[bn] Live Preview"
     },
     "TextDiff": {
       "original": "মূল টেক্সট",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "অনুচ্ছেদ",
       "generate": "তৈরি করুন",
-      "copy": "কপি করুন"
+      "copy": "কপি করুন",
+      "copyText": "[bn] Copy Text"
     },
     "GradientGenerator": {
       "angle": "কোণ",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON ইনপুট",
       "csvInput": "CSV ইনপুট",
       "jsonOutput": "JSON আউটপুট",
-      "csvOutput": "CSV আউটপুট"
+      "csvOutput": "CSV আউটপুট",
+      "minifyOutput": "[bn] Minify Output",
+      "parseNumbers": "[bn] Parse Numbers"
     },
     "JsonDiff": {
       "original": "মূল JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "বর্তমান সপ্তাহ নম্বর",
       "yearProgress": "বছরের অগ্রগতি",
-      "week": "সপ্তাহ"
+      "week": "সপ্তাহ",
+      "weekNumber": "[bn] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "ফোন নম্বর",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "ফরম্যাট",
       "copy": "কপি করুন"
+    },
+    "CodeEditor": {
+      "language": "[bn] Language",
+      "theme": "[bn] Theme",
+      "fontSize": "[bn] Font Size",
+      "minimap": "[bn] Minimap",
+      "run": "[bn] Run",
+      "running": "[bn] Running...",
+      "output": "[bn] Output",
+      "clearOutput": "[bn] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "স্বাক্ষরগুলি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়। আমরা সেগুলি সংরক্ষণ বা আপলোড করি না।"
   },
   "MarkdownEditor": {
-    "previewLabel": "লাইভ প্রিভিউ"
+    "previewLabel": "লাইভ প্রিভিউ",
+    "inputLabel": "[bn] Editor",
+    "inputPlaceholder": "[bn] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "শিফট পরিমাণ (N)",
@@ -1800,7 +1829,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">উদাহরণ</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">প্রতিদিন মাঝরাতে চালান: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 বৃত্তাকার font-mono text-[0.9em] text-[#fb923c] বর্ডার *-বর্ডার *[var->0</code>",
       "block_4": "উদাহরণ",
       "block_5": "উদাহরণ",
-      "block_6": "সহায়তা দরকার?দৃশ্যত অভিব্যক্তি তৈরি করতে আমাদের <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron জেনারেটর</a> ব্যবহার করুন৷"
+      "block_6": "সহায়তা দরকার?দৃশ্যত অভিব্যক্তি তৈরি করতে আমাদের <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron জেনারেটর</a> ব্যবহার করুন৷",
+      "block_7": "[bn] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "ক্লাউড ভল্টের সমস্যা",
@@ -1811,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">শূন্য জ্ঞান:</strong> আমরা কখনই আপনার পাসওয়ার্ড দেখি না৷এটি কখনই আপনার ডিভাইস ছেড়ে যায় না৷</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">অফলাইন স্টোরেজ:</strong> আপনার এনক্রিপ্ট করা ভল্টটি আপনার ব্রাউজারের লোকাল স্টোরেজে সংরক্ষিত আছে।</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">রপ্তানিযোগ্য:</strong> আপনি যেকোনো সময় আপনার কাঁচা এনক্রিপ্ট করা ডেটা রপ্তানি/ব্যাকআপ করতে পারেন।</li>",
       "block_7": "আপনার মাস্টার কী দিয়ে ক্লাউডকে বিশ্বাস করা বন্ধ করুন৷<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">আজই স্থানীয় পাসওয়ার্ড ম্যানেজার ব্যবহার করে দেখুন</a>।"
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[bn] Configuration",
+    "rowCount": "[bn] Row Count",
+    "format": "[bn] Output Format",
+    "generate": "[bn] Generate Data",
+    "fields": "[bn] Fields",
+    "preview": "[bn] Data Preview",
+    "copy": "[bn] Copy to Clipboard",
+    "download": "[bn] Download File",
+    "copied": "[bn] Data copied to clipboard!",
+    "placeholder": "[bn] Generate data to see preview...",
+    "name": "[bn] Mock Data Generator",
+    "description": "[bn] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[bn] Community Credit",
+    "inspiredBy": "[bn] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[bn] This tool was inspired by an app developed by",
+    "checkOut": "[bn] Check out",
+    "thanks": "[bn] Thanks for helping make DailyDevTools better ❤️"
   }
 }

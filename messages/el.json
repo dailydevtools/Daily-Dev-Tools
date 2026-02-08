@@ -58,7 +58,9 @@
     "cta": {
       "title": "Έτοιμοι να αυξήσετε την παραγωγικότητά σας;",
       "text": "Ξεκινήστε να χρησιμοποιείτε τα εργαλεία προγραμματιστών μας δωρεάν. Χωρίς εγγραφή, χωρίς συλλογή δεδομένων.",
-      "button": "Ξεκινήστε Δωρεάν"
+      "button": "Ξεκινήστε Δωρεάν",
+      "feedbackText": "[el] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[el] Share Feedback"
     },
     "openTool": "Άνοιγμα εργαλείου",
     "noResults": "Δεν βρέθηκαν εργαλεία που να ταιριάζουν με",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "URL όμορφης εκτύπωσης",
       "description": "Μορφοποίηση και ωραιοποίηση URLs για αναγνωσιμότητα"
+    },
+    "mock-data-generator": {
+      "name": "[el] Mock Data Generator",
+      "description": "[el] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[el] Online Code Editor",
+      "description": "[el] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Υπολογίζω",
       "convert": "Μετατρέπω",
       "validate": "Επικυρώνω",
-      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ..."
+      "resultPlaceholder": "Το αποτέλεσμα θα εμφανιστεί εδώ...",
+      "swap": "[el] Swap"
     },
     "Base64Encoder": {
       "encode": "Κωδικοποίηση",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Συντάκτης",
       "preview": "Πρεμιέρα",
-      "inputPlaceholder": "Εισαγάγετε το Markdown εδώ..."
+      "inputPlaceholder": "Εισαγάγετε το Markdown εδώ...",
+      "inputLabel": "[el] Editor",
+      "previewLabel": "[el] Live Preview"
     },
     "TextDiff": {
       "original": "Πρωτότυπο Κείμενο",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Παράγραφοι",
       "generate": "Παράγω",
-      "copy": "Αντίγραφο"
+      "copy": "Αντίγραφο",
+      "copyText": "[el] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Γωνία",
@@ -946,7 +960,9 @@
       "jsonInput": "Είσοδος JSON",
       "csvInput": "Είσοδος CSV",
       "jsonOutput": "Έξοδος JSON",
-      "csvOutput": "Έξοδος CSV"
+      "csvOutput": "Έξοδος CSV",
+      "minifyOutput": "[el] Minify Output",
+      "parseNumbers": "[el] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Πρωτότυπο JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Αριθμός τρέχουσας εβδομάδας",
       "yearProgress": "Έτος πρόοδος",
-      "week": "Εβδομάδα"
+      "week": "Εβδομάδα",
+      "weekNumber": "[el] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Αριθμός τηλεφώνου",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Σχήμα και διάταξις βιβλίου",
       "copy": "Αντίγραφο"
+    },
+    "CodeEditor": {
+      "language": "[el] Language",
+      "theme": "[el] Theme",
+      "fontSize": "[el] Font Size",
+      "minimap": "[el] Minimap",
+      "run": "[el] Run",
+      "running": "[el] Running...",
+      "output": "[el] Output",
+      "clearOutput": "[el] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Οι υπογραφές επεξεργάζονται τοπικά στο πρόγραμμα περιήγησής σας. Δεν τα αποθηκεύουμε ούτε τα ανεβάζουμε."
   },
   "MarkdownEditor": {
-    "previewLabel": "Ζωντανή προεπισκόπηση"
+    "previewLabel": "Ζωντανή προεπισκόπηση",
+    "inputLabel": "[el] Editor",
+    "inputPlaceholder": "[el] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Ποσό μετατόπισης (N)",
@@ -1800,7 +1829,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * *</co_to_ru\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Παραδείγματα</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Εκτέλεση κάθε μέρα τα μεσάνυχτα: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *-col->var*</code>",
       "block_4": "Παραδείγματα",
       "block_5": "Εκτέλεση κάθε 15 λεπτά: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 στρογγυλεμένη γραμματοσειρά-μονό κείμενο-[0.9em] text-[#fb923c] border *)*5*</code>",
-      "block_6": "Χρειάζεστε βοήθεια;Χρησιμοποιήστε το <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Γεννήτρια Cron</a> για να δημιουργήσετε εκφράσεις οπτικά."
+      "block_6": "Χρειάζεστε βοήθεια;Χρησιμοποιήστε το <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Γεννήτρια Cron</a> για να δημιουργήσετε εκφράσεις οπτικά.",
+      "block_7": "[el] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Το πρόβλημα με τα Cloud Vaults",
@@ -1811,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Μηδενική γνώση:</strong> Δεν βλέπουμε ποτέ τον κωδικό πρόσβασής σας.Δεν φεύγει ποτέ από τη συσκευή σας.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Αποθήκευση εκτός σύνδεσης:</strong> Το κρυπτογραφημένο θησαυροφυλάκιό σας αποθηκεύεται στο LocalStorage του προγράμματος περιήγησής σας.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Εξαγώγιμο:</strong> Μπορείτε να εξαγάγετε/δημιουργήσετε αντίγραφα ασφαλείας των ακατέργαστων κρυπτογραφημένων δεδομένων σας ανά πάσα στιγμή.</li>",
       "block_7": "Σταματήστε να εμπιστεύεστε το cloud με τα κύρια κλειδιά σας.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Δοκιμάστε το Local Password Manager</a> σήμερα."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[el] Configuration",
+    "rowCount": "[el] Row Count",
+    "format": "[el] Output Format",
+    "generate": "[el] Generate Data",
+    "fields": "[el] Fields",
+    "preview": "[el] Data Preview",
+    "copy": "[el] Copy to Clipboard",
+    "download": "[el] Download File",
+    "copied": "[el] Data copied to clipboard!",
+    "placeholder": "[el] Generate data to see preview...",
+    "name": "[el] Mock Data Generator",
+    "description": "[el] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[el] Community Credit",
+    "inspiredBy": "[el] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[el] This tool was inspired by an app developed by",
+    "checkOut": "[el] Check out",
+    "thanks": "[el] Thanks for helping make DailyDevTools better ❤️"
   }
 }

@@ -58,7 +58,9 @@
     "cta": {
       "title": "생산성을 높일 준비가 되셨나요?",
       "text": "무료로 개발자 도구를 사용해보세요. 가입 필요 없음, 데이터 수집 없음.",
-      "button": "무료로 시작하기"
+      "button": "무료로 시작하기",
+      "feedbackText": "[ko] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ko] Share Feedback"
     },
     "openTool": "도구 열기",
     "noResults": "일치하는 도구가 없습니다",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "URL 예쁘게 꾸미기",
       "description": "가독성을 위해 URL을 포맷하고 정리"
+    },
+    "mock-data-generator": {
+      "name": "[ko] Mock Data Generator",
+      "description": "[ko] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[ko] Online Code Editor",
+      "description": "[ko] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "믿다",
       "convert": "전환하다",
       "validate": "검증",
-      "resultPlaceholder": "결과가 여기에 표시됩니다..."
+      "resultPlaceholder": "결과가 여기에 표시됩니다...",
+      "swap": "[ko] Swap"
     },
     "Base64Encoder": {
       "encode": "인코딩",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "편집자",
       "preview": "시사",
-      "inputPlaceholder": "여기에 마크다운을 입력하세요..."
+      "inputPlaceholder": "여기에 마크다운을 입력하세요...",
+      "inputLabel": "[ko] Editor",
+      "previewLabel": "[ko] Live Preview"
     },
     "TextDiff": {
       "original": "원본 텍스트",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "단락",
       "generate": "생성하다",
-      "copy": "복사"
+      "copy": "복사",
+      "copyText": "[ko] Copy Text"
     },
     "GradientGenerator": {
       "angle": "각도",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON 입력",
       "csvInput": "CSV 입력",
       "jsonOutput": "JSON 출력",
-      "csvOutput": "CSV 출력"
+      "csvOutput": "CSV 출력",
+      "minifyOutput": "[ko] Minify Output",
+      "parseNumbers": "[ko] Parse Numbers"
     },
     "JsonDiff": {
       "original": "원본 JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "현재 주 번호",
       "yearProgress": "연도 진행",
-      "week": "주"
+      "week": "주",
+      "weekNumber": "[ko] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "전화 번호",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "체재",
       "copy": "복사"
+    },
+    "CodeEditor": {
+      "language": "[ko] Language",
+      "theme": "[ko] Theme",
+      "fontSize": "[ko] Font Size",
+      "minimap": "[ko] Minimap",
+      "run": "[ko] Run",
+      "running": "[ko] Running...",
+      "output": "[ko] Output",
+      "clearOutput": "[ko] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "서명은 브라우저에서 로컬로 처리됩니다. 우리는 이를 저장하거나 업로드하지 않습니다."
   },
   "MarkdownEditor": {
-    "previewLabel": "실시간 미리보기"
+    "previewLabel": "실시간 미리보기",
+    "inputLabel": "[ko] Editor",
+    "inputPlaceholder": "[ko] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "교대량(N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">Zero Knowledge:</strong> 우리는 귀하의 비밀번호를 결코 볼 수 없습니다.기기를 떠나지 않습니다.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">오프라인 저장소:</strong> 암호화된 저장소는 브라우저의 LocalStorage에 저장됩니다.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">내보내기 가능:</strong> 암호화된 원시 데이터를 언제든지 내보내거나 백업할 수 있습니다.</li>",
       "block_7": "마스터 키로 클라우드를 신뢰하지 마세요.지금 <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">로컬 비밀번호 관리자를 사용해 보세요</a>."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ko] Configuration",
+    "rowCount": "[ko] Row Count",
+    "format": "[ko] Output Format",
+    "generate": "[ko] Generate Data",
+    "fields": "[ko] Fields",
+    "preview": "[ko] Data Preview",
+    "copy": "[ko] Copy to Clipboard",
+    "download": "[ko] Download File",
+    "copied": "[ko] Data copied to clipboard!",
+    "placeholder": "[ko] Generate data to see preview...",
+    "name": "[ko] Mock Data Generator",
+    "description": "[ko] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ko] Community Credit",
+    "inspiredBy": "[ko] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ko] This tool was inspired by an app developed by",
+    "checkOut": "[ko] Check out",
+    "thanks": "[ko] Thanks for helping make DailyDevTools better ❤️"
   }
 }

@@ -58,7 +58,9 @@
     "cta": {
       "title": "Bersedia untuk meningkatkan produktiviti anda?",
       "text": "Mula gunakan alat pembangun kami secara percuma. Tiada pendaftaran diperlukan, tiada pengumpulan data.",
-      "button": "Mula Percuma"
+      "button": "Mula Percuma",
+      "feedbackText": "[ms] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ms] Share Feedback"
     },
     "openTool": "Buka alat",
     "noResults": "Tiada alat yang sepadan dengan",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "URL Cetak Cantik",
       "description": "Format dan cantikkan URL untuk kebolehbacaan"
+    },
+    "mock-data-generator": {
+      "name": "[ms] Mock Data Generator",
+      "description": "[ms] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[ms] Online Code Editor",
+      "description": "[ms] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Kira",
       "convert": "Tukar",
       "validate": "Sahkan",
-      "resultPlaceholder": "Keputusan akan muncul di sini..."
+      "resultPlaceholder": "Keputusan akan muncul di sini...",
+      "swap": "[ms] Swap"
     },
     "Base64Encoder": {
       "encode": "Pengekodan",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Pratonton",
-      "inputPlaceholder": "Masukkan Markdown di sini..."
+      "inputPlaceholder": "Masukkan Markdown di sini...",
+      "inputLabel": "[ms] Editor",
+      "previewLabel": "[ms] Live Preview"
     },
     "TextDiff": {
       "original": "Teks Asal",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Perenggan",
       "generate": "Menjana",
-      "copy": "salin"
+      "copy": "salin",
+      "copyText": "[ms] Copy Text"
     },
     "GradientGenerator": {
       "angle": "sudut",
@@ -946,7 +960,9 @@
       "jsonInput": "Input JSON",
       "csvInput": "Input CSV",
       "jsonOutput": "Output JSON",
-      "csvOutput": "Output CSV"
+      "csvOutput": "Output CSV",
+      "minifyOutput": "[ms] Minify Output",
+      "parseNumbers": "[ms] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON asal",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Nombor Minggu Semasa",
       "yearProgress": "Kemajuan Tahun",
-      "week": "Minggu"
+      "week": "Minggu",
+      "weekNumber": "[ms] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Nombor Telefon",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Format",
       "copy": "salin"
+    },
+    "CodeEditor": {
+      "language": "[ms] Language",
+      "theme": "[ms] Theme",
+      "fontSize": "[ms] Font Size",
+      "minimap": "[ms] Minimap",
+      "run": "[ms] Run",
+      "running": "[ms] Running...",
+      "output": "[ms] Output",
+      "clearOutput": "[ms] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Tandatangan diproses secara setempat dalam penyemak imbas anda. Kami tidak menyimpan atau memuat naiknya."
   },
   "MarkdownEditor": {
-    "previewLabel": "Pratonton Langsung"
+    "previewLabel": "Pratonton Langsung",
+    "inputLabel": "[ms] Editor",
+    "inputPlaceholder": "[ms] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Jumlah Anjakan (N)",
@@ -1799,7 +1828,9 @@
       "block_2": "Minit, Jam, Hari Bulan, Bulan, Hari Minggu.Itu sahaja.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Contoh</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Jalankan setiap hari pada tengah malam: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-code) *>0.0 color",
       "block_4": "* * * * * command_to_run",
-      "block_5": "Contoh"
+      "block_5": "Contoh",
+      "block_6": "[ms] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[ms] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Masalah dengan Cloud Vaults",
@@ -1810,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Pengetahuan Sifar:</strong> Kami tidak pernah melihat kata laluan anda.Ia tidak pernah meninggalkan peranti anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Storan Luar Talian:</strong> Bilik kebal anda yang disulitkan disimpan dalam LocalStorage penyemak imbas anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semilold\">Boleh Dieksport:</strong> Anda boleh mengeksport/menyandarkan data mentah anda yang disulitkan pada bila-bila masa.</li>",
       "block_7": "Berhenti mempercayai awan dengan kunci induk anda.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cuba Pengurus Kata Laluan Setempat</a> hari ini."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ms] Configuration",
+    "rowCount": "[ms] Row Count",
+    "format": "[ms] Output Format",
+    "generate": "[ms] Generate Data",
+    "fields": "[ms] Fields",
+    "preview": "[ms] Data Preview",
+    "copy": "[ms] Copy to Clipboard",
+    "download": "[ms] Download File",
+    "copied": "[ms] Data copied to clipboard!",
+    "placeholder": "[ms] Generate data to see preview...",
+    "name": "[ms] Mock Data Generator",
+    "description": "[ms] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ms] Community Credit",
+    "inspiredBy": "[ms] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ms] This tool was inspired by an app developed by",
+    "checkOut": "[ms] Check out",
+    "thanks": "[ms] Thanks for helping make DailyDevTools better ❤️"
   }
 }

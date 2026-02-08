@@ -58,7 +58,9 @@
     "cta": {
       "title": "अपनी उत्पादकता बढ़ाने के लिए तैयार हैं?",
       "text": "हमारे डेवलपर टूल का निःशुल्क उपयोग शुरू करें। कोई साइनअप आवश्यक नहीं, कोई डेटा एकत्र नहीं किया गया।",
-      "button": "निःशुल्क शुरू करें"
+      "button": "निःशुल्क शुरू करें",
+      "feedbackText": "[hi] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[hi] Share Feedback"
     },
     "openTool": "उपकरण खोलें",
     "noResults": "इससे मेल खाते कोई उपकरण नहीं मिले",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "प्रिटी प्रिंट URL",
       "description": "पठनीयता के लिए URL को फॉर्मेट और सुंदर बनाएं"
+    },
+    "mock-data-generator": {
+      "name": "[hi] Mock Data Generator",
+      "description": "[hi] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[hi] Online Code Editor",
+      "description": "[hi] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "गणना",
       "convert": "बदलना",
       "validate": "मान्य",
-      "resultPlaceholder": "परिणाम यहां दिखाई देगा..."
+      "resultPlaceholder": "परिणाम यहां दिखाई देगा...",
+      "swap": "[hi] Swap"
     },
     "Base64Encoder": {
       "encode": "एनकोड",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "संपादक",
       "preview": "पूर्व दर्शन",
-      "inputPlaceholder": "यहां मार्कडाउन दर्ज करें..."
+      "inputPlaceholder": "यहां मार्कडाउन दर्ज करें...",
+      "inputLabel": "[hi] Editor",
+      "previewLabel": "[hi] Live Preview"
     },
     "TextDiff": {
       "original": "मूललेख",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "पैराग्राफ",
       "generate": "उत्पन्न",
-      "copy": "प्रतिलिपि"
+      "copy": "प्रतिलिपि",
+      "copyText": "[hi] Copy Text"
     },
     "GradientGenerator": {
       "angle": "कोण",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON इनपुट",
       "csvInput": "सीएसवी इनपुट",
       "jsonOutput": "JSON आउटपुट",
-      "csvOutput": "सीएसवी आउटपुट"
+      "csvOutput": "सीएसवी आउटपुट",
+      "minifyOutput": "[hi] Minify Output",
+      "parseNumbers": "[hi] Parse Numbers"
     },
     "JsonDiff": {
       "original": "मूल JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "वर्तमान सप्ताह संख्या",
       "yearProgress": "वर्ष प्रगति",
-      "week": "सप्ताह"
+      "week": "सप्ताह",
+      "weekNumber": "[hi] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "फ़ोन नंबर",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "प्रारूप",
       "copy": "प्रतिलिपि"
+    },
+    "CodeEditor": {
+      "language": "[hi] Language",
+      "theme": "[hi] Theme",
+      "fontSize": "[hi] Font Size",
+      "minimap": "[hi] Minimap",
+      "run": "[hi] Run",
+      "running": "[hi] Running...",
+      "output": "[hi] Output",
+      "clearOutput": "[hi] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "हस्ताक्षर आपके ब्राउज़र में स्थानीय रूप से संसाधित होते हैं। हम उन्हें संग्रहीत या अपलोड नहीं करते हैं."
   },
   "MarkdownEditor": {
-    "previewLabel": "लाइव पूर्वावलोकन"
+    "previewLabel": "लाइव पूर्वावलोकन",
+    "inputLabel": "[hi] Editor",
+    "inputPlaceholder": "[hi] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "शिफ्ट राशि (एन)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>शून्य ज्ञान:</strong> हम आपका पासवर्ड कभी नहीं देखते हैं।यह आपके डिवाइस को कभी नहीं छोड़ता।</li>\n<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>ऑफ़लाइन स्टोरेज:</strong> आपका एन्क्रिप्टेड वॉल्ट आपके ब्राउज़र के लोकलस्टोरेज में संग्रहीत होता है।</li>\n<li class='mb-2'><strong class='text-[var(--title-color)] फ़ॉन्ट-सेमीबोल्ड'>निर्यात योग्य:</strong> आप अपने कच्चे एन्क्रिप्टेड डेटा को किसी भी समय निर्यात/बैकअप कर सकते हैं।</li>",
       "block_7": "अपनी मास्टर कुंजियों के साथ क्लाउड पर भरोसा करना बंद करें।<a href='/tools/password-manager' class='text-[#fb923c] अंडरलाइन अंडरलाइन-ऑफसेट-4 होवर:टेक्स्ट-[#ea580c]'>आज ही स्थानीय पासवर्ड मैनेजर आज़माएं</a>।"
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[hi] Configuration",
+    "rowCount": "[hi] Row Count",
+    "format": "[hi] Output Format",
+    "generate": "[hi] Generate Data",
+    "fields": "[hi] Fields",
+    "preview": "[hi] Data Preview",
+    "copy": "[hi] Copy to Clipboard",
+    "download": "[hi] Download File",
+    "copied": "[hi] Data copied to clipboard!",
+    "placeholder": "[hi] Generate data to see preview...",
+    "name": "[hi] Mock Data Generator",
+    "description": "[hi] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[hi] Community Credit",
+    "inspiredBy": "[hi] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[hi] This tool was inspired by an app developed by",
+    "checkOut": "[hi] Check out",
+    "thanks": "[hi] Thanks for helping make DailyDevTools better ❤️"
   }
 }

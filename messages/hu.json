@@ -58,7 +58,9 @@
     "cta": {
       "title": "Készen áll a termelékenység növelésére?",
       "text": "Kezdje el ingyenesen használni fejlesztői eszközeinket. Nincs regisztráció, nincs adatgyűjtés.",
-      "button": "Kezdés Ingyenesen"
+      "button": "Kezdés Ingyenesen",
+      "feedbackText": "[hu] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[hu] Share Feedback"
     },
     "openTool": "Eszköz megnyitása",
     "noResults": "Nem található eszköz, amely megfelel",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Szép nyomtatott URL",
       "description": "Formázza és szépítse az URL-eket az olvashatóság érdekében"
+    },
+    "mock-data-generator": {
+      "name": "[hu] Mock Data Generator",
+      "description": "[hu] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[hu] Online Code Editor",
+      "description": "[hu] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Számítsa ki",
       "convert": "Megtérít",
       "validate": "Érvényesít",
-      "resultPlaceholder": "Az eredmény itt fog megjelenni..."
+      "resultPlaceholder": "Az eredmény itt fog megjelenni...",
+      "swap": "[hu] Swap"
     },
     "Base64Encoder": {
       "encode": "Kódol",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Szerkesztő",
       "preview": "Előnézet",
-      "inputPlaceholder": "Írja be ide a Markdown-t..."
+      "inputPlaceholder": "Írja be ide a Markdown-t...",
+      "inputLabel": "[hu] Editor",
+      "previewLabel": "[hu] Live Preview"
     },
     "TextDiff": {
       "original": "Eredeti szöveg",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Bekezdések",
       "generate": "Generál",
-      "copy": "Másolat"
+      "copy": "Másolat",
+      "copyText": "[hu] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Szög",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON bemenet",
       "csvInput": "CSV bemenet",
       "jsonOutput": "JSON kimenet",
-      "csvOutput": "CSV kimenet"
+      "csvOutput": "CSV kimenet",
+      "minifyOutput": "[hu] Minify Output",
+      "parseNumbers": "[hu] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Eredeti JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Aktuális hét száma",
       "yearProgress": "Év Haladás",
-      "week": "Hét"
+      "week": "Hét",
+      "weekNumber": "[hu] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefonszám",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Formátum",
       "copy": "Másolat"
+    },
+    "CodeEditor": {
+      "language": "[hu] Language",
+      "theme": "[hu] Theme",
+      "fontSize": "[hu] Font Size",
+      "minimap": "[hu] Minimap",
+      "run": "[hu] Run",
+      "running": "[hu] Running...",
+      "output": "[hu] Output",
+      "clearOutput": "[hu] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Az aláírások feldolgozása helyileg, a böngészőben történik. Nem tároljuk és nem töltjük fel őket."
   },
   "MarkdownEditor": {
-    "previewLabel": "Élő előnézet"
+    "previewLabel": "Élő előnézet",
+    "inputLabel": "[hu] Editor",
+    "inputPlaceholder": "[hu] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Eltolás összege (N)",
@@ -1799,7 +1828,9 @@
       "block_2": "Perc, Óra, Hónap, Hónap, Hét napja.Ennyi az egész.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * parancs_futtatása</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Példák</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás minden nap éjfélkor: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border-[color) *]</code> border-[color) *]</b>border-0\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás 15 percenként: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border border-[var(]--border/-1><p>)\n\n<p class=\"mb-6 text-[var(--foreground)]\">Segítségre van szüksége?Használja <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron generátorunkat</a> a kifejezések vizuális létrehozásához.",
       "block_4": "* * * * * parancs_futtatása",
-      "block_5": "Példák"
+      "block_5": "Példák",
+      "block_6": "[hu] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[hu] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "A felhőtárolókkal kapcsolatos probléma",
@@ -1810,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zéró tudás:</strong> soha nem látjuk jelszavát.Soha nem hagyja el az eszközt.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline tárhely:</strong> Titkosított tárolóját a böngészője LocalStorage tárolja.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportálható:</strong> Nyers titkosított adatairól bármikor exportálhat/menthet biztonsági másolatot.</li>",
       "block_7": "Ne bízzon többé a felhőben a főkulcsokkal.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Próbálja ki a Helyi jelszókezelőt</a> még ma."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[hu] Configuration",
+    "rowCount": "[hu] Row Count",
+    "format": "[hu] Output Format",
+    "generate": "[hu] Generate Data",
+    "fields": "[hu] Fields",
+    "preview": "[hu] Data Preview",
+    "copy": "[hu] Copy to Clipboard",
+    "download": "[hu] Download File",
+    "copied": "[hu] Data copied to clipboard!",
+    "placeholder": "[hu] Generate data to see preview...",
+    "name": "[hu] Mock Data Generator",
+    "description": "[hu] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[hu] Community Credit",
+    "inspiredBy": "[hu] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[hu] This tool was inspired by an app developed by",
+    "checkOut": "[hu] Check out",
+    "thanks": "[hu] Thanks for helping make DailyDevTools better ❤️"
   }
 }

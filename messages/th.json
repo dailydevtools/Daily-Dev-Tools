@@ -58,7 +58,9 @@
     "cta": {
       "title": "พร้อมที่จะเพิ่มผลผลิตของคุณหรือยัง?",
       "text": "เริ่มใช้เครื่องมือนักพัฒนาของเราฟรี ไม่ต้องสมัคร ไม่มีการรวบรวมข้อมูล",
-      "button": "เริ่มฟรี"
+      "button": "เริ่มฟรี",
+      "feedbackText": "[th] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[th] Share Feedback"
     },
     "openTool": "เปิดเครื่องมือ",
     "noResults": "ไม่พบเครื่องมือที่ตรงกับ",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "จัดรูปแบบ URL",
       "description": "จัดรูปแบบและทำให้ URL อ่านง่าย"
+    },
+    "mock-data-generator": {
+      "name": "[th] Mock Data Generator",
+      "description": "[th] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[th] Online Code Editor",
+      "description": "[th] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "คำนวณ",
       "convert": "แปลง",
       "validate": "ตรวจสอบ",
-      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่..."
+      "resultPlaceholder": "ผลลัพธ์จะปรากฏที่นี่...",
+      "swap": "[th] Swap"
     },
     "Base64Encoder": {
       "encode": "เข้ารหัส",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "ตัวแก้ไข",
       "preview": "ดูตัวอย่าง",
-      "inputPlaceholder": "ป้อน Markdown ที่นี่..."
+      "inputPlaceholder": "ป้อน Markdown ที่นี่...",
+      "inputLabel": "[th] Editor",
+      "previewLabel": "[th] Live Preview"
     },
     "TextDiff": {
       "original": "ข้อความต้นฉบับ",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "ย่อหน้า",
       "generate": "สร้าง",
-      "copy": "คัดลอก"
+      "copy": "คัดลอก",
+      "copyText": "[th] Copy Text"
     },
     "GradientGenerator": {
       "angle": "มุม",
@@ -946,7 +960,9 @@
       "jsonInput": "อินพุต JSON",
       "csvInput": "อินพุต CSV",
       "jsonOutput": "เอาท์พุต JSON",
-      "csvOutput": "เอาท์พุต CSV"
+      "csvOutput": "เอาท์พุต CSV",
+      "minifyOutput": "[th] Minify Output",
+      "parseNumbers": "[th] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON ต้นฉบับ",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "หมายเลขสัปดาห์ปัจจุบัน",
       "yearProgress": "ความคืบหน้าของปี",
-      "week": "สัปดาห์"
+      "week": "สัปดาห์",
+      "weekNumber": "[th] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "หมายเลขโทรศัพท์",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "จัดรูปแบบ",
       "copy": "คัดลอก"
+    },
+    "CodeEditor": {
+      "language": "[th] Language",
+      "theme": "[th] Theme",
+      "fontSize": "[th] Font Size",
+      "minimap": "[th] Minimap",
+      "run": "[th] Run",
+      "running": "[th] Running...",
+      "output": "[th] Output",
+      "clearOutput": "[th] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "ลายเซ็นได้รับการประมวลผลภายในเบราว์เซอร์ของคุณ เราไม่จัดเก็บหรืออัปโหลด"
   },
   "MarkdownEditor": {
-    "previewLabel": "ดูตัวอย่างสด"
+    "previewLabel": "ดูตัวอย่างสด",
+    "inputLabel": "[th] Editor",
+    "inputPlaceholder": "[th] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "จำนวนกะ (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ความรู้เป็นศูนย์:</strong> เราไม่เคยเห็นรหัสผ่านของคุณมันไม่เคยออกจากอุปกรณ์ของคุณ</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">พื้นที่เก็บข้อมูลออฟไลน์:</strong> ห้องนิรภัยที่เข้ารหัสของคุณจะถูกจัดเก็บไว้ใน LocalStorage ของเบราว์เซอร์ของคุณ</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ส่งออกได้:</strong> คุณสามารถส่งออก/สำรองข้อมูลดิบที่เข้ารหัสของคุณได้ตลอดเวลา</li>",
       "block_7": "หยุดเชื่อถือระบบคลาวด์ด้วยคีย์หลักของคุณ<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">ลองใช้ Local Password Manager</a> วันนี้เลย"
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[th] Configuration",
+    "rowCount": "[th] Row Count",
+    "format": "[th] Output Format",
+    "generate": "[th] Generate Data",
+    "fields": "[th] Fields",
+    "preview": "[th] Data Preview",
+    "copy": "[th] Copy to Clipboard",
+    "download": "[th] Download File",
+    "copied": "[th] Data copied to clipboard!",
+    "placeholder": "[th] Generate data to see preview...",
+    "name": "[th] Mock Data Generator",
+    "description": "[th] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[th] Community Credit",
+    "inspiredBy": "[th] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[th] This tool was inspired by an app developed by",
+    "checkOut": "[th] Check out",
+    "thanks": "[th] Thanks for helping make DailyDevTools better ❤️"
   }
 }

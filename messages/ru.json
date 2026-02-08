@@ -58,7 +58,9 @@
     "cta": {
       "title": "Готовы повысить свою продуктивность?",
       "text": "Начните бесплатно использовать наши инструменты для разработчиков. Без регистрации, без сбора данных.",
-      "button": "Начать бесплатно"
+      "button": "Начать бесплатно",
+      "feedbackText": "[ru] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ru] Share Feedback"
     },
     "openTool": "Открыть инструмент",
     "noResults": "Инструменты не найдены по запросу",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Красивый URL-адрес для печати",
       "description": "Отформатируйте и украсьте URL-адреса для удобства чтения."
+    },
+    "mock-data-generator": {
+      "name": "[ru] Mock Data Generator",
+      "description": "[ru] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[ru] Online Code Editor",
+      "description": "[ru] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Рассчитать",
       "convert": "Конвертировать",
       "validate": "Подтвердить",
-      "resultPlaceholder": "Результат появится здесь..."
+      "resultPlaceholder": "Результат появится здесь...",
+      "swap": "[ru] Swap"
     },
     "Base64Encoder": {
       "encode": "Кодировать",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Редактор",
       "preview": "Предварительный просмотр",
-      "inputPlaceholder": "Введите Markdown здесь..."
+      "inputPlaceholder": "Введите Markdown здесь...",
+      "inputLabel": "[ru] Editor",
+      "previewLabel": "[ru] Live Preview"
     },
     "TextDiff": {
       "original": "Исходный текст",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Абзацы",
       "generate": "Генерировать",
-      "copy": "Копировать"
+      "copy": "Копировать",
+      "copyText": "[ru] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Угол",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON-ввод",
       "csvInput": "CSV-вход",
       "jsonOutput": "Вывод JSON",
-      "csvOutput": "CSV-вывод"
+      "csvOutput": "CSV-вывод",
+      "minifyOutput": "[ru] Minify Output",
+      "parseNumbers": "[ru] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Исходный JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Номер текущей недели",
       "yearProgress": "Год прогресса",
-      "week": "Неделя"
+      "week": "Неделя",
+      "weekNumber": "[ru] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Номер телефона",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Формат",
       "copy": "Копировать"
+    },
+    "CodeEditor": {
+      "language": "[ru] Language",
+      "theme": "[ru] Theme",
+      "fontSize": "[ru] Font Size",
+      "minimap": "[ru] Minimap",
+      "run": "[ru] Run",
+      "running": "[ru] Running...",
+      "output": "[ru] Output",
+      "clearOutput": "[ru] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Подписи обрабатываются локально в вашем браузере. Мы не храним и не загружаем их."
   },
   "MarkdownEditor": {
-    "previewLabel": "Живой просмотр"
+    "previewLabel": "Живой просмотр",
+    "inputLabel": "[ru] Editor",
+    "inputPlaceholder": "[ru] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Сумма смещения (Н)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Нулевое разглашение:</strong> Мы никогда не видим ваш пароль.Он никогда не покидает ваше устройство.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Автономное хранилище:</strong> Ваше зашифрованное хранилище хранится в LocalStorage вашего браузера.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Экспортируемый:</strong> Вы можете экспортировать или создать резервную копию своих необработанных зашифрованных данных в любое время.</li>",
       "block_7": "Не доверяйте облаку свои главные ключи.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Попробуйте локальный менеджер паролей</a> сегодня."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ru] Configuration",
+    "rowCount": "[ru] Row Count",
+    "format": "[ru] Output Format",
+    "generate": "[ru] Generate Data",
+    "fields": "[ru] Fields",
+    "preview": "[ru] Data Preview",
+    "copy": "[ru] Copy to Clipboard",
+    "download": "[ru] Download File",
+    "copied": "[ru] Data copied to clipboard!",
+    "placeholder": "[ru] Generate data to see preview...",
+    "name": "[ru] Mock Data Generator",
+    "description": "[ru] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ru] Community Credit",
+    "inspiredBy": "[ru] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ru] This tool was inspired by an app developed by",
+    "checkOut": "[ru] Check out",
+    "thanks": "[ru] Thanks for helping make DailyDevTools better ❤️"
   }
 }

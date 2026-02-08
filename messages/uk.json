@@ -58,7 +58,9 @@
     "cta": {
       "title": "Готові підвищити свою продуктивність?",
       "text": "Почніть використовувати наші інструменти для розробників безкоштовно. Без реєстрації, без збору даних.",
-      "button": "Почати безкоштовно"
+      "button": "Почати безкоштовно",
+      "feedbackText": "[uk] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[uk] Share Feedback"
     },
     "openTool": "Відкрити інструмент",
     "noResults": "Інструментів не знайдено за запитом",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Pretty Print URL",
       "description": "Форматуйте та прикрашайте URL-адреси для читабельності"
+    },
+    "mock-data-generator": {
+      "name": "[uk] Mock Data Generator",
+      "description": "[uk] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[uk] Online Code Editor",
+      "description": "[uk] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Обчислити",
       "convert": "конвертувати",
       "validate": "Підтвердити",
-      "resultPlaceholder": "Результат з'явиться тут..."
+      "resultPlaceholder": "Результат з'явиться тут...",
+      "swap": "[uk] Swap"
     },
     "Base64Encoder": {
       "encode": "Закодувати",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "редактор",
       "preview": "Попередній перегляд",
-      "inputPlaceholder": "Введіть Markdown тут..."
+      "inputPlaceholder": "Введіть Markdown тут...",
+      "inputLabel": "[uk] Editor",
+      "previewLabel": "[uk] Live Preview"
     },
     "TextDiff": {
       "original": "Оригінальний текст",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Абзаци",
       "generate": "Генерувати",
-      "copy": "Копіювати"
+      "copy": "Копіювати",
+      "copyText": "[uk] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Кут",
@@ -946,7 +960,9 @@
       "jsonInput": "Введення JSON",
       "csvInput": "Введення CSV",
       "jsonOutput": "Вихід JSON",
-      "csvOutput": "Вихід CSV"
+      "csvOutput": "Вихід CSV",
+      "minifyOutput": "[uk] Minify Output",
+      "parseNumbers": "[uk] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Оригінальний JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Номер поточного тижня",
       "yearProgress": "Прогрес року",
-      "week": "тиждень"
+      "week": "тиждень",
+      "weekNumber": "[uk] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Номер телефону",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Формат",
       "copy": "Копіювати"
+    },
+    "CodeEditor": {
+      "language": "[uk] Language",
+      "theme": "[uk] Theme",
+      "fontSize": "[uk] Font Size",
+      "minimap": "[uk] Minimap",
+      "run": "[uk] Run",
+      "running": "[uk] Running...",
+      "output": "[uk] Output",
+      "clearOutput": "[uk] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Підписи обробляються локально у вашому браузері. Ми не зберігаємо і не завантажуємо їх."
   },
   "MarkdownEditor": {
-    "previewLabel": "Попередній перегляд"
+    "previewLabel": "Попередній перегляд",
+    "inputLabel": "[uk] Editor",
+    "inputPlaceholder": "[uk] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Сума зсуву (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Нуль знань:</strong> ми ніколи не бачимо ваш пароль.Він ніколи не покидає ваш пристрій.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Офлайн-сховище:</strong> Ваше зашифроване сховище зберігається в LocalStorage вашого браузера.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Можливість експорту:</strong> Ви можете будь-коли експортувати/зробити резервну копію своїх необроблених зашифрованих даних.</li>",
       "block_7": "Припиніть довіряти хмарі свої головні ключі.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Спробуйте локальний менеджер паролів</a> сьогодні."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[uk] Configuration",
+    "rowCount": "[uk] Row Count",
+    "format": "[uk] Output Format",
+    "generate": "[uk] Generate Data",
+    "fields": "[uk] Fields",
+    "preview": "[uk] Data Preview",
+    "copy": "[uk] Copy to Clipboard",
+    "download": "[uk] Download File",
+    "copied": "[uk] Data copied to clipboard!",
+    "placeholder": "[uk] Generate data to see preview...",
+    "name": "[uk] Mock Data Generator",
+    "description": "[uk] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[uk] Community Credit",
+    "inspiredBy": "[uk] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[uk] This tool was inspired by an app developed by",
+    "checkOut": "[uk] Check out",
+    "thanks": "[uk] Thanks for helping make DailyDevTools better ❤️"
   }
 }

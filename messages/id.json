@@ -58,7 +58,9 @@
     "cta": {
       "title": "Siap meningkatkan produktivitas Anda?",
       "text": "Mulai gunakan alat pengembang kami secara gratis. Tidak perlu mendaftar, tidak ada pengumpulan data.",
-      "button": "Mulai Gratis"
+      "button": "Mulai Gratis",
+      "feedbackText": "[id] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[id] Share Feedback"
     },
     "openTool": "Buka alat",
     "noResults": "Tidak ditemukan alat yang cocok dengan",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "URL Cetak Cantik",
       "description": "Format dan percantik URL agar mudah dibaca"
+    },
+    "mock-data-generator": {
+      "name": "[id] Mock Data Generator",
+      "description": "[id] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[id] Online Code Editor",
+      "description": "[id] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Menghitung",
       "convert": "Mengubah",
       "validate": "Mengesahkan",
-      "resultPlaceholder": "Hasilnya akan muncul di sini..."
+      "resultPlaceholder": "Hasilnya akan muncul di sini...",
+      "swap": "[id] Swap"
     },
     "Base64Encoder": {
       "encode": "Menyandi",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Pratinjau",
-      "inputPlaceholder": "Masukkan Penurunan Harga di sini..."
+      "inputPlaceholder": "Masukkan Penurunan Harga di sini...",
+      "inputLabel": "[id] Editor",
+      "previewLabel": "[id] Live Preview"
     },
     "TextDiff": {
       "original": "Teks Asli",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragraf",
       "generate": "Menghasilkan",
-      "copy": "Menyalin"
+      "copy": "Menyalin",
+      "copyText": "[id] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Sudut",
@@ -946,7 +960,9 @@
       "jsonInput": "Masukan JSON",
       "csvInput": "Masukan CSV",
       "jsonOutput": "Keluaran JSON",
-      "csvOutput": "Keluaran CSV"
+      "csvOutput": "Keluaran CSV",
+      "minifyOutput": "[id] Minify Output",
+      "parseNumbers": "[id] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON asli",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Nomor Minggu Saat Ini",
       "yearProgress": "Kemajuan Tahun",
-      "week": "Pekan"
+      "week": "Pekan",
+      "weekNumber": "[id] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Nomor telepon",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Format",
       "copy": "Menyalin"
+    },
+    "CodeEditor": {
+      "language": "[id] Language",
+      "theme": "[id] Theme",
+      "fontSize": "[id] Font Size",
+      "minimap": "[id] Minimap",
+      "run": "[id] Run",
+      "running": "[id] Running...",
+      "output": "[id] Output",
+      "clearOutput": "[id] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Tanda tangan diproses secara lokal di browser Anda. Kami tidak menyimpan atau mengunggahnya."
   },
   "MarkdownEditor": {
-    "previewLabel": "Pratinjau Langsung"
+    "previewLabel": "Pratinjau Langsung",
+    "inputLabel": "[id] Editor",
+    "inputPlaceholder": "[id] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Jumlah Pergeseran (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Nol Pengetahuan:</strong> Kami tidak pernah melihat kata sandi Anda.Itu tidak pernah meninggalkan perangkat Anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Penyimpanan Offline:</strong> Gudang terenkripsi Anda disimpan di Penyimpanan Lokal browser Anda.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Dapat diekspor:</strong> Anda dapat mengekspor/mencadangkan data mentah terenkripsi kapan saja.</li>",
       "block_7": "Berhenti mempercayai cloud dengan kunci master Anda.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Coba Pengelola Kata Sandi Lokal</a> sekarang."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[id] Configuration",
+    "rowCount": "[id] Row Count",
+    "format": "[id] Output Format",
+    "generate": "[id] Generate Data",
+    "fields": "[id] Fields",
+    "preview": "[id] Data Preview",
+    "copy": "[id] Copy to Clipboard",
+    "download": "[id] Download File",
+    "copied": "[id] Data copied to clipboard!",
+    "placeholder": "[id] Generate data to see preview...",
+    "name": "[id] Mock Data Generator",
+    "description": "[id] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[id] Community Credit",
+    "inspiredBy": "[id] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[id] This tool was inspired by an app developed by",
+    "checkOut": "[id] Check out",
+    "thanks": "[id] Thanks for helping make DailyDevTools better ❤️"
   }
 }
