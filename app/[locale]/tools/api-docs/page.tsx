@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     setRequestLocale(locale);
 
     const t = await getTranslations({ locale, namespace: 'APIDocs' });
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/tools/api-docs`;
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);

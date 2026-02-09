@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = t('name');
     const description = t('description');
-    const url = `https://dailydev.tools/${locale}/tools/mock-data-generator`;
+    const url = `https://www.dailydev.tools/${locale}/tools/mock-data-generator`;
 
     return {
         title,

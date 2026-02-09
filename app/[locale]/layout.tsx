@@ -28,7 +28,7 @@ const spaceGrotesk = Space_Grotesk({
     display: "swap",
 });
 
-const siteUrl = "https://dailydev.tools";
+const siteUrl = "https://www.dailydev.tools";
 
 export async function generateMetadata({
     params

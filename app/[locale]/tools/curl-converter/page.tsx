@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     setRequestLocale(locale);
 
     const t = await getTranslations({ locale, namespace: 'CurlConverter' });
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/tools/curl-converter`;
 
     // Static OG Image for this tool

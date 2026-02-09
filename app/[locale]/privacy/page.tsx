@@ -4,7 +4,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
     const title = 'Privacy Policy - DailyDevTools';
     const description = 'Privacy Policy for DailyDevTools. We process your data locally in your browser.';
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/privacy`;
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);

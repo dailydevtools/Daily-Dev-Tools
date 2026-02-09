@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = t('title'); // "DailyDevTools - Free Online Developer Tools"
     const description = t('description');
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}`;
 
     // Dynamic OG Image for Homepage

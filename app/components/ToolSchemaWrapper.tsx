@@ -42,7 +42,7 @@ export default function ToolSchemaWrapper() {
         "@type": "SoftwareApplication",
         "name": toolName,
         "description": toolDescription,
-        "url": `https://dailydev.tools${pathname}`,
+        "url": `https://www.dailydev.tools${pathname}`,
         "applicationCategory": getApplicationCategory(tool.category),
         "operatingSystem": "Web Browser",
         "offers": {
@@ -58,7 +58,7 @@ export default function ToolSchemaWrapper() {
         "author": {
             "@type": "Organization",
             "name": "DailyDevTools",
-            "url": "https://dailydev.tools"
+            "url": "https://www.dailydev.tools"
         }
     };
 

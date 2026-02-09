@@ -5,7 +5,7 @@ import { blogPosts } from './[locale]/blog/data'
 import { locales } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://dailydev.tools'
+    const baseUrl = 'https://www.dailydev.tools'
 
     // const locales = ['en', 'es']; // Removed hardcoded list
 

@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = "Developer Blog - DailyDevTools";
     const description = "Tutorials, guides, and best practices for developers.";
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/blog`;
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
