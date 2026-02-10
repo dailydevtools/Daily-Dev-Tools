@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "بحث..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - أدوات المطورين المجانية عبر الإنترنت",
     "description": "90+ أداة مجانية عبر الإنترنت للجميع. منسقات ومحولات ومولدات وأدوات مساعدة. سريع وخاص ولا يتطلب التسجيل."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "الرئيسية",
-    "tools": "الأدوات"
   },
   "NotFound": {
     "title": "الصفحة غير موجودة",
@@ -153,8 +59,8 @@
       "title": "هل أنت مستعد لتعزيز إنتاجيتك؟",
       "text": "ابدأ باستخدام أدوات المطورين لدينا مجانًا. لا يتطلب التسجيل، ولا يتم جمع البيانات.",
       "button": "ابدأ مجانا",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[ar] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ar] Share Feedback"
     },
     "openTool": "فتح الأداة",
     "noResults": "لم يتم العثور على أدوات مطابقة لـ",
@@ -167,13 +73,6 @@
     "about": "حول",
     "privacy": "خصوصية",
     "terms": "شروط"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "تنسيق وتجميل الروابط لسهولة القراءة"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[ar] Mock Data Generator",
+      "description": "[ar] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[ar] Online Code Editor",
+      "description": "[ar] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "رفع",
       "sample": "نموذج",
       "clear": "مسح",
-      "swap": "Swap",
       "indent": "إزاحة:",
       "chars": "أحرف",
       "error": "خطأ",
@@ -665,17 +543,8 @@
       "calculate": "حساب",
       "convert": "تحويل",
       "validate": "تحقق",
-      "resultPlaceholder": "ستظهر النتيجة هنا..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "ستظهر النتيجة هنا...",
+      "swap": "[ar] Swap"
     },
     "Base64Encoder": {
       "encode": "تشفير",
@@ -793,8 +662,8 @@
       "editor": "المحرر",
       "preview": "المعاينة",
       "inputPlaceholder": "أدخل Markdown هنا...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[ar] Editor",
+      "previewLabel": "[ar] Live Preview"
     },
     "TextDiff": {
       "original": "النص الأصلي",
@@ -818,7 +687,7 @@
       "paragraphs": "فقرات",
       "generate": "توليد",
       "copy": "نسخ",
-      "copyText": "Copy Text"
+      "copyText": "[ar] Copy Text"
     },
     "GradientGenerator": {
       "angle": "الزاوية",
@@ -1092,8 +961,8 @@
       "csvInput": "إدخال CSV",
       "jsonOutput": "مخرج JSON",
       "csvOutput": "مخرج CSV",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[ar] Minify Output",
+      "parseNumbers": "[ar] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON الأصلي",
@@ -1289,6 +1158,14 @@
       "reset": "إعادة تعيين",
       "lap": "دورة"
     },
+    "SubnetCalculator": {
+      "ipAddress": "عنوان IP",
+      "subnetMask": "قناع الشبكة الفرعية",
+      "calculate": "حساب",
+      "networkAddress": "عنوان الشبكة",
+      "broadcastAddress": "عنوان البث",
+      "usableHosts": "المضيفين القابلين للاستخدام"
+    },
     "SvgToPng": {
       "pasteSvg": "الصق SVG",
       "uploadSvg": "رفع SVG",
@@ -1356,7 +1233,7 @@
       "currentWeek": "رقم الأسبوع الحالي",
       "yearProgress": "تقدم السنة",
       "week": "أسبوع",
-      "weekNumber": "Week Number"
+      "weekNumber": "[ar] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "رقم الهاتف",
@@ -1465,13 +1342,15 @@
       "format": "تنسيق",
       "copy": "نسخ"
     },
-    "SubnetCalculator": {
-      "ipAddress": "عنوان IP",
-      "subnetMask": "قناع الشبكة الفرعية",
-      "calculate": "حساب",
-      "networkAddress": "عنوان الشبكة",
-      "broadcastAddress": "عنوان البث",
-      "usableHosts": "المضيفين القابلين للاستخدام"
+    "CodeEditor": {
+      "language": "[ar] Language",
+      "theme": "[ar] Theme",
+      "fontSize": "[ar] Font Size",
+      "minimap": "[ar] Minimap",
+      "run": "[ar] Run",
+      "running": "[ar] Running...",
+      "output": "[ar] Output",
+      "clearOutput": "[ar] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "قد يعجبك أيضاً",
     "subtitle": "استكشف أدوات مطورين شائعة أخرى",
     "openTool": "فتح الأداة"
+  },
+  "Breadcrumb": {
+    "home": "الرئيسية",
+    "tools": "الأدوات"
   },
   "SvgToPng": {
     "upload": "رفع ملف SVG",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "معاينة حية",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[ar] Editor",
+    "inputPlaceholder": "[ar] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "مقدار الإزاحة (N)",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">لا معرفة:</strong> لا نرى كلمة المرور الخاصة بك مطلقًا.فهو لا يغادر جهازك أبدًا.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)]font-semibold\">التخزين دون اتصال:</strong> يتم تخزين مخزنك المشفر في LocalStorage بالمتصفح الخاص بك.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] الخط-semibold\">قابل للتصدير:</strong> يمكنك تصدير/نسخ بياناتك الأولية المشفرة في أي وقت.</li>",
       "block_7": "توقف عن الوثوق في السحابة باستخدام مفاتيحك الرئيسية.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">جرب مدير كلمات المرور المحلي</a> اليوم."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ar] Configuration",
+    "rowCount": "[ar] Row Count",
+    "format": "[ar] Output Format",
+    "generate": "[ar] Generate Data",
+    "fields": "[ar] Fields",
+    "preview": "[ar] Data Preview",
+    "copy": "[ar] Copy to Clipboard",
+    "download": "[ar] Download File",
+    "copied": "[ar] Data copied to clipboard!",
+    "placeholder": "[ar] Generate data to see preview...",
+    "name": "[ar] Mock Data Generator",
+    "description": "[ar] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ar] Community Credit",
+    "inspiredBy": "[ar] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ar] This tool was inspired by an app developed by",
+    "checkOut": "[ar] Check out",
+    "thanks": "[ar] Thanks for helping make DailyDevTools better ❤️"
   }
 }

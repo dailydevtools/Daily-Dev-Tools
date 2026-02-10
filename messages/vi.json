@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "Tìm kiếm..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - Công cụ phát triển trực tuyến miễn phí",
     "description": "Hơn 90 công cụ trực tuyến miễn phí cho mọi người. Định dạng, chuyển đổi, tạo và tiện ích. Nhanh chóng, riêng tư và không cần đăng ký."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "Trang chủ",
-    "tools": "Công cụ"
   },
   "NotFound": {
     "title": "Không tìm thấy trang",
@@ -153,8 +59,8 @@
       "title": "Sẵn sàng tăng năng suất của bạn?",
       "text": "Bắt đầu sử dụng các công cụ phát triển của chúng tôi miễn phí. Không cần đăng ký, không thu thập dữ liệu.",
       "button": "Bắt đầu miễn phí",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[vi] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[vi] Share Feedback"
     },
     "openTool": "Mở công cụ",
     "noResults": "Không tìm thấy công cụ phù hợp với",
@@ -167,13 +73,6 @@
     "about": "Giới thiệu",
     "privacy": "Quyền riêng tư",
     "terms": "Điều khoản"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "Định dạng và làm đẹp URL để dễ đọc"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[vi] Mock Data Generator",
+      "description": "[vi] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[vi] Online Code Editor",
+      "description": "[vi] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "Tải lên",
       "sample": "Vật mẫu",
       "clear": "Xóa",
-      "swap": "Swap",
       "indent": "Thụt lề:",
       "chars": "ký tự",
       "error": "Lỗi",
@@ -665,17 +543,8 @@
       "calculate": "Tính toán",
       "convert": "Chuyển thành",
       "validate": "Xác thực",
-      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "Kết quả sẽ xuất hiện ở đây...",
+      "swap": "[vi] Swap"
     },
     "Base64Encoder": {
       "encode": "Mã hóa",
@@ -793,8 +662,8 @@
       "editor": "Biên tập viên",
       "preview": "Xem trước",
       "inputPlaceholder": "Nhập Markdown vào đây...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[vi] Editor",
+      "previewLabel": "[vi] Live Preview"
     },
     "TextDiff": {
       "original": "Văn bản gốc",
@@ -818,7 +687,7 @@
       "paragraphs": "Đoạn văn",
       "generate": "Phát ra",
       "copy": "Sao chép",
-      "copyText": "Copy Text"
+      "copyText": "[vi] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Góc",
@@ -1092,8 +961,8 @@
       "csvInput": "Đầu vào CSV",
       "jsonOutput": "Đầu ra JSON",
       "csvOutput": "Đầu ra CSV",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[vi] Minify Output",
+      "parseNumbers": "[vi] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON gốc",
@@ -1289,6 +1158,14 @@
       "reset": "Cài lại",
       "lap": "vòng"
     },
+    "SubnetCalculator": {
+      "ipAddress": "Địa chỉ IP",
+      "subnetMask": "Mặt nạ mạng con",
+      "calculate": "Tính toán",
+      "networkAddress": "Địa chỉ mạng",
+      "broadcastAddress": "Địa chỉ phát sóng",
+      "usableHosts": "Máy chủ có thể sử dụng"
+    },
     "SvgToPng": {
       "pasteSvg": "Dán SVG",
       "uploadSvg": "Tải lên SVG",
@@ -1356,7 +1233,7 @@
       "currentWeek": "Số tuần hiện tại",
       "yearProgress": "Tiến độ năm",
       "week": "Tuần",
-      "weekNumber": "Week Number"
+      "weekNumber": "[vi] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Số điện thoại",
@@ -1465,13 +1342,15 @@
       "format": "Định dạng",
       "copy": "Sao chép"
     },
-    "SubnetCalculator": {
-      "ipAddress": "Địa chỉ IP",
-      "subnetMask": "Mặt nạ mạng con",
-      "calculate": "Tính toán",
-      "networkAddress": "Địa chỉ mạng",
-      "broadcastAddress": "Địa chỉ phát sóng",
-      "usableHosts": "Máy chủ có thể sử dụng"
+    "CodeEditor": {
+      "language": "[vi] Language",
+      "theme": "[vi] Theme",
+      "fontSize": "[vi] Font Size",
+      "minimap": "[vi] Minimap",
+      "run": "[vi] Run",
+      "running": "[vi] Running...",
+      "output": "[vi] Output",
+      "clearOutput": "[vi] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "Bạn cũng có thể thích",
     "subtitle": "Khám phá các công cụ dành cho nhà phát triển phổ biến khác",
     "openTool": "Mở công cụ"
+  },
+  "Breadcrumb": {
+    "home": "Trang chủ",
+    "tools": "Công cụ"
   },
   "SvgToPng": {
     "upload": "Tải lên tệp SVG",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "Xem trước trực tiếp",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[vi] Editor",
+    "inputPlaceholder": "[vi] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Số ca làm việc (N)",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Không có kiến thức:</strong> Chúng tôi không bao giờ nhìn thấy mật khẩu của bạn.Nó không bao giờ rời khỏi thiết bị của bạn.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Bộ nhớ ngoại tuyến:</strong> Kho tiền mã hóa của bạn được lưu trữ trong LocalStorage trên trình duyệt của bạn.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Có thể xuất:</strong> Bạn có thể xuất/sao lưu dữ liệu được mã hóa thô của mình bất kỳ lúc nào.</li>",
       "block_7": "Hãy ngừng tin cậy vào đám mây bằng các khóa chính của bạn.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] gạch chân underline-offset-4 hover:text-[#ea580c]\">Hãy dùng thử Trình quản lý mật khẩu cục bộ</a> ngay hôm nay."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[vi] Configuration",
+    "rowCount": "[vi] Row Count",
+    "format": "[vi] Output Format",
+    "generate": "[vi] Generate Data",
+    "fields": "[vi] Fields",
+    "preview": "[vi] Data Preview",
+    "copy": "[vi] Copy to Clipboard",
+    "download": "[vi] Download File",
+    "copied": "[vi] Data copied to clipboard!",
+    "placeholder": "[vi] Generate data to see preview...",
+    "name": "[vi] Mock Data Generator",
+    "description": "[vi] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[vi] Community Credit",
+    "inspiredBy": "[vi] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[vi] This tool was inspired by an app developed by",
+    "checkOut": "[vi] Check out",
+    "thanks": "[vi] Thanks for helping make DailyDevTools better ❤️"
   }
 }

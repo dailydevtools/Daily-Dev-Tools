@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "Пошук..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - Безкоштовні онлайн-інструменти для розробників",
     "description": "90+ безкоштовних онлайн-інструментів для всіх. Форматери, конвертери, генератори та утиліти. Швидко, приватно та без реєстрації."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "додому",
-    "tools": "Інструменти"
   },
   "NotFound": {
     "title": "Сторінку не знайдено",
@@ -153,8 +59,8 @@
       "title": "Готові підвищити свою продуктивність?",
       "text": "Почніть використовувати наші інструменти для розробників безкоштовно. Без реєстрації, без збору даних.",
       "button": "Почати безкоштовно",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[uk] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[uk] Share Feedback"
     },
     "openTool": "Відкрити інструмент",
     "noResults": "Інструментів не знайдено за запитом",
@@ -167,13 +73,6 @@
     "about": "Про нас",
     "privacy": "Конфіденційність",
     "terms": "Умови"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "Форматуйте та прикрашайте URL-адреси для читабельності"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[uk] Mock Data Generator",
+      "description": "[uk] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[uk] Online Code Editor",
+      "description": "[uk] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "Завантажити",
       "sample": "Зразок",
       "clear": "Очистити",
-      "swap": "Swap",
       "indent": "Відступ:",
       "chars": "символи",
       "error": "Помилка",
@@ -665,17 +543,8 @@
       "calculate": "Обчислити",
       "convert": "конвертувати",
       "validate": "Підтвердити",
-      "resultPlaceholder": "Результат з'явиться тут..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "Результат з'явиться тут...",
+      "swap": "[uk] Swap"
     },
     "Base64Encoder": {
       "encode": "Закодувати",
@@ -793,8 +662,8 @@
       "editor": "редактор",
       "preview": "Попередній перегляд",
       "inputPlaceholder": "Введіть Markdown тут...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[uk] Editor",
+      "previewLabel": "[uk] Live Preview"
     },
     "TextDiff": {
       "original": "Оригінальний текст",
@@ -818,7 +687,7 @@
       "paragraphs": "Абзаци",
       "generate": "Генерувати",
       "copy": "Копіювати",
-      "copyText": "Copy Text"
+      "copyText": "[uk] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Кут",
@@ -1092,8 +961,8 @@
       "csvInput": "Введення CSV",
       "jsonOutput": "Вихід JSON",
       "csvOutput": "Вихід CSV",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[uk] Minify Output",
+      "parseNumbers": "[uk] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Оригінальний JSON",
@@ -1289,6 +1158,14 @@
       "reset": "Скинути",
       "lap": "коліна"
     },
+    "SubnetCalculator": {
+      "ipAddress": "IP-адреса",
+      "subnetMask": "Маска підмережі",
+      "calculate": "Обчислити",
+      "networkAddress": "Адреса мережі",
+      "broadcastAddress": "Трансляційна адреса",
+      "usableHosts": "Корисні хости"
+    },
     "SvgToPng": {
       "pasteSvg": "Вставте SVG",
       "uploadSvg": "Завантажте SVG",
@@ -1356,7 +1233,7 @@
       "currentWeek": "Номер поточного тижня",
       "yearProgress": "Прогрес року",
       "week": "тиждень",
-      "weekNumber": "Week Number"
+      "weekNumber": "[uk] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Номер телефону",
@@ -1465,13 +1342,15 @@
       "format": "Формат",
       "copy": "Копіювати"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP-адреса",
-      "subnetMask": "Маска підмережі",
-      "calculate": "Обчислити",
-      "networkAddress": "Адреса мережі",
-      "broadcastAddress": "Трансляційна адреса",
-      "usableHosts": "Корисні хости"
+    "CodeEditor": {
+      "language": "[uk] Language",
+      "theme": "[uk] Theme",
+      "fontSize": "[uk] Font Size",
+      "minimap": "[uk] Minimap",
+      "run": "[uk] Run",
+      "running": "[uk] Running...",
+      "output": "[uk] Output",
+      "clearOutput": "[uk] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "Вам також може сподобатися",
     "subtitle": "Дізнайтеся про інші популярні інструменти розробника",
     "openTool": "Відкрити інструмент"
+  },
+  "Breadcrumb": {
+    "home": "додому",
+    "tools": "Інструменти"
   },
   "SvgToPng": {
     "upload": "Завантажте файл SVG",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "Попередній перегляд",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[uk] Editor",
+    "inputPlaceholder": "[uk] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Сума зсуву (N)",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Нуль знань:</strong> ми ніколи не бачимо ваш пароль.Він ніколи не покидає ваш пристрій.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Офлайн-сховище:</strong> Ваше зашифроване сховище зберігається в LocalStorage вашого браузера.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Можливість експорту:</strong> Ви можете будь-коли експортувати/зробити резервну копію своїх необроблених зашифрованих даних.</li>",
       "block_7": "Припиніть довіряти хмарі свої головні ключі.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Спробуйте локальний менеджер паролів</a> сьогодні."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[uk] Configuration",
+    "rowCount": "[uk] Row Count",
+    "format": "[uk] Output Format",
+    "generate": "[uk] Generate Data",
+    "fields": "[uk] Fields",
+    "preview": "[uk] Data Preview",
+    "copy": "[uk] Copy to Clipboard",
+    "download": "[uk] Download File",
+    "copied": "[uk] Data copied to clipboard!",
+    "placeholder": "[uk] Generate data to see preview...",
+    "name": "[uk] Mock Data Generator",
+    "description": "[uk] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[uk] Community Credit",
+    "inspiredBy": "[uk] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[uk] This tool was inspired by an app developed by",
+    "checkOut": "[uk] Check out",
+    "thanks": "[uk] Thanks for helping make DailyDevTools better ❤️"
   }
 }

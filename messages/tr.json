@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "Ara..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - Ücretsiz Çevrimiçi Geliştirici Araçları",
     "description": "Herkes için 90'dan fazla ücretsiz çevrimiçi araç. Biçimlendiriciler, dönüştürücüler, oluşturucular ve yardımcı programlar. Hızlı, gizli ve kayıt gerektirmez."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "Ana Sayfa",
-    "tools": "Araçlar"
   },
   "NotFound": {
     "title": "Sayfa Bulunamadı",
@@ -153,8 +59,8 @@
       "title": "Üretkenliğinizi artırmaya hazır mısınız?",
       "text": "Geliştirici araçlarımızı ücretsiz kullanmaya başlayın. Kayıt gerekmez, veri toplanmaz.",
       "button": "Ücretsiz Başlayın",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[tr] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[tr] Share Feedback"
     },
     "openTool": "Aracı aç",
     "noResults": "Eşleşen araç bulunamadı",
@@ -167,13 +73,6 @@
     "about": "Hakkında",
     "privacy": "Gizlilik",
     "terms": "Şartlar"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "URL'leri okunabilirlik için biçimlendirin ve güzelleştirin"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[tr] Mock Data Generator",
+      "description": "[tr] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[tr] Online Code Editor",
+      "description": "[tr] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "Yükle",
       "sample": "Örnek",
       "clear": "Temizle",
-      "swap": "Swap",
       "indent": "Girinti:",
       "chars": "karakter",
       "error": "Hata",
@@ -665,17 +543,8 @@
       "calculate": "Hesapla",
       "convert": "Dönüştür",
       "validate": "Doğrula",
-      "resultPlaceholder": "Sonuç burada görünecek..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "Sonuç burada görünecek...",
+      "swap": "[tr] Swap"
     },
     "Base64Encoder": {
       "encode": "Kodla",
@@ -793,8 +662,8 @@
       "editor": "Editör",
       "preview": "Önizleme",
       "inputPlaceholder": "Markdown girin...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[tr] Editor",
+      "previewLabel": "[tr] Live Preview"
     },
     "TextDiff": {
       "original": "Orijinal Metin",
@@ -818,7 +687,7 @@
       "paragraphs": "Paragraflar",
       "generate": "Oluştur",
       "copy": "Kopyala",
-      "copyText": "Copy Text"
+      "copyText": "[tr] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Açı",
@@ -1092,8 +961,8 @@
       "csvInput": "CSV Girişi",
       "jsonOutput": "JSON Çıktısı",
       "csvOutput": "CSV Çıktısı",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[tr] Minify Output",
+      "parseNumbers": "[tr] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Orijinal JSON",
@@ -1289,6 +1158,14 @@
       "reset": "Sıfırla",
       "lap": "Tur"
     },
+    "SubnetCalculator": {
+      "ipAddress": "IP Adresi",
+      "subnetMask": "Alt Ağ Maskesi",
+      "calculate": "Hesapla",
+      "networkAddress": "Ağ Adresi",
+      "broadcastAddress": "Yayın Adresi",
+      "usableHosts": "Kullanılabilir Hostlar"
+    },
     "SvgToPng": {
       "pasteSvg": "SVG Yapıştır",
       "uploadSvg": "SVG Yükle",
@@ -1356,7 +1233,7 @@
       "currentWeek": "Güncel Hafta Numarası",
       "yearProgress": "Yıl İlerlemesi",
       "week": "Hafta",
-      "weekNumber": "Week Number"
+      "weekNumber": "[tr] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefon Numarası",
@@ -1465,13 +1342,15 @@
       "format": "Biçimlendir",
       "copy": "Kopyala"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP Adresi",
-      "subnetMask": "Alt Ağ Maskesi",
-      "calculate": "Hesapla",
-      "networkAddress": "Ağ Adresi",
-      "broadcastAddress": "Yayın Adresi",
-      "usableHosts": "Kullanılabilir Hostlar"
+    "CodeEditor": {
+      "language": "[tr] Language",
+      "theme": "[tr] Theme",
+      "fontSize": "[tr] Font Size",
+      "minimap": "[tr] Minimap",
+      "run": "[tr] Run",
+      "running": "[tr] Running...",
+      "output": "[tr] Output",
+      "clearOutput": "[tr] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "Bunları da beğenebilirsiniz",
     "subtitle": "Diğer popüler geliştirici araçlarını keşfedin",
     "openTool": "Aracı Aç"
+  },
+  "Breadcrumb": {
+    "home": "Ana Sayfa",
+    "tools": "Araçlar"
   },
   "SvgToPng": {
     "upload": "SVG Dosyası Yükle",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "Canlı Önizleme",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[tr] Editor",
+    "inputPlaceholder": "[tr] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Kaydırma Miktarı (N)",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Sıfır Bilgi:</strong> Şifrenizi asla görmeyiz.Cihazınızdan asla ayrılmaz.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Çevrimdışı Depolama:</strong> Şifrelenmiş kasanız tarayıcınızın LocalStorage'ında depolanır.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Dışa aktarılabilir:</strong> Ham şifrelenmiş verilerinizi istediğiniz zaman dışa aktarabilir/yedekleyebilirsiniz.</li>",
       "block_7": "Ana anahtarlarınız konusunda buluta güvenmeyi bırakın.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 vurgulu:text-[#ea580c]\">Yerel Şifre Yöneticisini</a> bugün deneyin."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[tr] Configuration",
+    "rowCount": "[tr] Row Count",
+    "format": "[tr] Output Format",
+    "generate": "[tr] Generate Data",
+    "fields": "[tr] Fields",
+    "preview": "[tr] Data Preview",
+    "copy": "[tr] Copy to Clipboard",
+    "download": "[tr] Download File",
+    "copied": "[tr] Data copied to clipboard!",
+    "placeholder": "[tr] Generate data to see preview...",
+    "name": "[tr] Mock Data Generator",
+    "description": "[tr] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[tr] Community Credit",
+    "inspiredBy": "[tr] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[tr] This tool was inspired by an app developed by",
+    "checkOut": "[tr] Check out",
+    "thanks": "[tr] Thanks for helping make DailyDevTools better ❤️"
   }
 }

@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "Căutare..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - Instrumente Gratuite pentru Dezvoltatori Online",
     "description": "90+ instrumente online gratuite pentru toată lumea. Formatoare, convertoare, generatoare și utilitare. Rapid, privat și fără înregistrare."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "Acasă",
-    "tools": "Instrumente"
   },
   "NotFound": {
     "title": "Pagina nu a fost găsită",
@@ -153,8 +59,8 @@
       "title": "Ești gata să îți crești productivitatea?",
       "text": "Începe să folosești instrumentele noastre pentru dezvoltatori gratuit. Fără înregistrare, fără colectare de date.",
       "button": "Începe Gratuit",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[ro] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[ro] Share Feedback"
     },
     "openTool": "Deschide instrument",
     "noResults": "Nu s-au găsit instrumente care să se potrivească cu",
@@ -167,13 +73,6 @@
     "about": "Despre",
     "privacy": "Confidențialitate",
     "terms": "Termeni"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "Formatați și înfrumusețați adresele URL pentru lizibilitate"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[ro] Mock Data Generator",
+      "description": "[ro] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[ro] Online Code Editor",
+      "description": "[ro] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "Încărcați",
       "sample": "Eşantion",
       "clear": "Golește",
-      "swap": "Swap",
       "indent": "Indentare:",
       "chars": "caractere",
       "error": "Eroare",
@@ -665,17 +543,8 @@
       "calculate": "Calcula",
       "convert": "Convertit",
       "validate": "Valida",
-      "resultPlaceholder": "Rezultatul va apărea aici..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "Rezultatul va apărea aici...",
+      "swap": "[ro] Swap"
     },
     "Base64Encoder": {
       "encode": "Codifica",
@@ -793,8 +662,8 @@
       "editor": "Editor",
       "preview": "Previzualizare",
       "inputPlaceholder": "Introdu Markdown aici...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[ro] Editor",
+      "previewLabel": "[ro] Live Preview"
     },
     "TextDiff": {
       "original": "Textul original",
@@ -818,7 +687,7 @@
       "paragraphs": "Paragrafe",
       "generate": "Genera",
       "copy": "Copie",
-      "copyText": "Copy Text"
+      "copyText": "[ro] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Unghi",
@@ -1092,8 +961,8 @@
       "csvInput": "Intrare CSV",
       "jsonOutput": "Ieșire JSON",
       "csvOutput": "Ieșire CSV",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[ro] Minify Output",
+      "parseNumbers": "[ro] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON original",
@@ -1289,6 +1158,14 @@
       "reset": "Resetați",
       "lap": "Poala"
     },
+    "SubnetCalculator": {
+      "ipAddress": "Adresa IP",
+      "subnetMask": "Masca de subrețea",
+      "calculate": "Calcula",
+      "networkAddress": "Adresa de rețea",
+      "broadcastAddress": "Adresa de difuzare",
+      "usableHosts": "Gazde utilizabile"
+    },
     "SvgToPng": {
       "pasteSvg": "Lipiți SVG",
       "uploadSvg": "Încărcați SVG",
@@ -1356,7 +1233,7 @@
       "currentWeek": "Numărul săptămânii curente",
       "yearProgress": "Progresul anului",
       "week": "Săptămână",
-      "weekNumber": "Week Number"
+      "weekNumber": "[ro] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Număr de telefon",
@@ -1465,13 +1342,15 @@
       "format": "Format",
       "copy": "Copie"
     },
-    "SubnetCalculator": {
-      "ipAddress": "Adresa IP",
-      "subnetMask": "Masca de subrețea",
-      "calculate": "Calcula",
-      "networkAddress": "Adresa de rețea",
-      "broadcastAddress": "Adresa de difuzare",
-      "usableHosts": "Gazde utilizabile"
+    "CodeEditor": {
+      "language": "[ro] Language",
+      "theme": "[ro] Theme",
+      "fontSize": "[ro] Font Size",
+      "minimap": "[ro] Minimap",
+      "run": "[ro] Run",
+      "running": "[ro] Running...",
+      "output": "[ro] Output",
+      "clearOutput": "[ro] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "S-ar putea să vă placă și",
     "subtitle": "Explorați alte instrumente populare pentru dezvoltatori",
     "openTool": "Deschideți Instrumentul"
+  },
+  "Breadcrumb": {
+    "home": "Acasă",
+    "tools": "Instrumente"
   },
   "SvgToPng": {
     "upload": "Încărcați fișierul SVG",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "Previzualizare live",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[ro] Editor",
+    "inputPlaceholder": "[ro] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Suma de schimb (N)",
@@ -1946,8 +1829,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Exemple</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Rulează în fiecare zi la miezul nopții: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var()*></*->\">0-color\n<p class=\"mb-6 text-[var(--foreground)]\">Rulează la fiecare 15 minute: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var() *-]\">*-/var() *-->*</code>",
       "block_4": "Exemple",
       "block_5": "Aveți nevoie de ajutor?Utilizați <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Generatorul Cron</a> pentru a crea expresii vizual.",
-      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
-      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
+      "block_6": "[ro] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[ro] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Problema cu Cloud Vaults",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero cunoștințe:</strong> nu vă vedem niciodată parola.Nu părăsește niciodată dispozitivul dvs.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Stocare offline:</strong> seiful dvs. criptat este stocat în spațiul de stocare local al browserului dvs.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportabil:</strong> puteți exporta/sau copia de rezervă oricând datele criptate brute.</li>",
       "block_7": "Nu mai ai încredere în cloud cu cheile tale principale.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Încercați Managerul local de parole</a> astăzi."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[ro] Configuration",
+    "rowCount": "[ro] Row Count",
+    "format": "[ro] Output Format",
+    "generate": "[ro] Generate Data",
+    "fields": "[ro] Fields",
+    "preview": "[ro] Data Preview",
+    "copy": "[ro] Copy to Clipboard",
+    "download": "[ro] Download File",
+    "copied": "[ro] Data copied to clipboard!",
+    "placeholder": "[ro] Generate data to see preview...",
+    "name": "[ro] Mock Data Generator",
+    "description": "[ro] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[ro] Community Credit",
+    "inspiredBy": "[ro] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[ro] This tool was inspired by an app developed by",
+    "checkOut": "[ro] Check out",
+    "thanks": "[ro] Thanks for helping make DailyDevTools better ❤️"
   }
 }

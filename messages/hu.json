@@ -6,103 +6,9 @@
     "github": "GitHub",
     "searchPlaceholder": "Keresés..."
   },
-  "CurlConverter": {
-    "title": "CURL Converter",
-    "description": "Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
-    "inputPlaceholder": "Paste your CURL command here...",
-    "outputPlaceholder": "Generated code will appear here...",
-    "convert": "Convert",
-    "language": "Target Language",
-    "copy": "Copy Code"
-  },
-  "APIDocs": {
-    "title": "API Documentation Builder",
-    "description": "Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
-    "searchCollections": "Search collections...",
-    "newCollection": "New Collection",
-    "createCollection": "Create Collection",
-    "editCollection": "Edit Collection",
-    "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
-    "noCollectionsYet": "No collections yet",
-    "noCollectionsFound": "No collections found",
-    "tryDifferentSearch": "Try a different search term",
-    "createFirstCollection": "Create your first API collection to start documenting your endpoints",
-    "endpoint": "endpoint",
-    "endpoints": "endpoints",
-    "more": "more",
-    "edit": "Edit",
-    "addEndpoint": "Add Endpoint",
-    "editEndpoint": "Edit Endpoint",
-    "noEndpointsYet": "No endpoints yet",
-    "addFirstEndpoint": "Add your first endpoint by pasting a cURL command",
-    "deleteEndpointConfirm": "Are you sure you want to delete this endpoint?",
-    "collectionName": "Collection Name",
-    "collectionNamePlaceholder": "e.g., Payment API",
-    "baseUrl": "Base URL",
-    "baseUrlPlaceholder": "https://api.example.com/v1",
-    "baseUrlHelp": "The base URL for all endpoints in this collection",
-    "descriptionLabel": "Description",
-    "descriptionPlaceholder": "Optional description for this API",
-    "authType": "Authentication Type",
-    "authNone": "No Authentication",
-    "authBearer": "Bearer Token",
-    "authApiKey": "API Key",
-    "authBasic": "Basic Auth",
-    "cancel": "Cancel",
-    "saveChanges": "Save Changes",
-    "collectionNameRequired": "Collection name is required",
-    "baseUrlRequired": "Base URL is required",
-    "invalidUrl": "Please enter a valid URL",
-    "pasteCurl": "Paste your cURL command",
-    "curlTip": "Tip: Copy a cURL command from your browser's DevTools Network tab",
-    "parseCurl": "Parse cURL",
-    "enterCurlCommand": "Please enter a cURL command",
-    "invalidCurlCommand": "This doesn't look like a cURL command. It should start with \"curl\"",
-    "endpointName": "Endpoint Name",
-    "endpointNamePlaceholder": "e.g., Create User",
-    "descriptionPlaceholderEndpoint": "What does this endpoint do?",
-    "method": "Method",
-    "path": "Path",
-    "pathPlaceholder": "/users/':id'",
-    "headers": "Headers",
-    "addHeader": "+ Add Header",
-    "noHeaders": "No headers",
-    "key": "Key",
-    "value": "Value",
-    "queryParameters": "Query Parameters",
-    "addParameter": "+ Add Parameter",
-    "noQueryParameters": "No query parameters",
-    "requestBody": "Request Body",
-    "backToCurl": "← Back to cURL",
-    "endpointNameRequired": "Endpoint name is required",
-    "pathRequired": "Path is required",
-    "exportMd": "Export MD",
-    "codeExamples": "Code Examples",
-    "header": "Header",
-    "parameter": "Parameter",
-    "noCurlAvailable": "// No cURL command available"
-  },
   "Metadata": {
     "title": "DailyDevTools - Ingyenes Online Fejlesztői Eszközök",
     "description": "90+ ingyenes online eszköz mindenkinek. Formázók, átalakítók, generátorok és segédprogramok. Gyors, privát és regisztráció nem szükséges."
-  },
-  "MockDataGenerator": {
-    "settings": "Configuration",
-    "rowCount": "Row Count",
-    "format": "Output Format",
-    "generate": "Generate Data",
-    "fields": "Fields",
-    "preview": "Data Preview",
-    "copy": "Copy to Clipboard",
-    "download": "Download File",
-    "copied": "Data copied to clipboard!",
-    "placeholder": "Generate data to see preview...",
-    "name": "Mock Data Generator",
-    "description": "Generate random JSON or CSV data for testing purposes with custom schema."
-  },
-  "Breadcrumb": {
-    "home": "Otthon",
-    "tools": "Eszközök"
   },
   "NotFound": {
     "title": "Az oldal nem található",
@@ -153,8 +59,8 @@
       "title": "Készen áll a termelékenység növelésére?",
       "text": "Kezdje el ingyenesen használni fejlesztői eszközeinket. Nincs regisztráció, nincs adatgyűjtés.",
       "button": "Kezdés Ingyenesen",
-      "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
-      "feedbackButton": "Share Feedback"
+      "feedbackText": "[hu] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[hu] Share Feedback"
     },
     "openTool": "Eszköz megnyitása",
     "noResults": "Nem található eszköz, amely megfelel",
@@ -167,13 +73,6 @@
     "about": "Rólunk",
     "privacy": "Adatvédelem",
     "terms": "Feltételek"
-  },
-  "Credit": {
-    "title": "Community Credit",
-    "inspiredBy": "This tool was inspired by a suggestion from",
-    "inspiredByApp": "This tool was inspired by an app developed by",
-    "checkOut": "Check out",
-    "thanks": "Thanks for helping make DailyDevTools better ❤️"
   },
   "Tools": {
     "json-formatter": {
@@ -545,32 +444,12 @@
       "description": "Formázza és szépítse az URL-eket az olvashatóság érdekében"
     },
     "mock-data-generator": {
-      "name": "Mock Data Generator",
-      "description": "Generate random JSON/CSV data"
-    },
-    "cron-generator": {
-      "name": "Cron Generator",
-      "description": "Generate cron schedule expressions easily"
-    },
-    "css-clip-path": {
-      "name": "CSS Clip Path Generator",
-      "description": "Create custom shapes with CSS clip-path"
-    },
-    "meta-generator": {
-      "name": "Meta Tag Builder",
-      "description": "Generate SEO meta tags for your website"
+      "name": "[hu] Mock Data Generator",
+      "description": "[hu] Generate random JSON/CSV data"
     },
     "code-editor": {
-      "name": "Online Code Editor",
-      "description": "Write, edit, and format code with syntax highlighting"
-    },
-    "curl-converter": {
-      "name": "CURL Converter",
-      "description": "Convert CURL commands to Python, JavaScript, Go and more"
-    },
-    "api-docs": {
-      "name": "API Documentation Builder",
-      "description": "Create beautiful API docs from cURL commands"
+      "name": "[hu] Online Code Editor",
+      "description": "[hu] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -655,7 +534,6 @@
       "upload": "Feltöltés",
       "sample": "Minta",
       "clear": "Törlés",
-      "swap": "Swap",
       "indent": "Behúzás:",
       "chars": "karakterek",
       "error": "Hiba",
@@ -665,17 +543,8 @@
       "calculate": "Számítsa ki",
       "convert": "Megtérít",
       "validate": "Érvényesít",
-      "resultPlaceholder": "Az eredmény itt fog megjelenni..."
-    },
-    "CodeEditor": {
-      "language": "Language",
-      "theme": "Theme",
-      "fontSize": "Font Size",
-      "minimap": "Minimap",
-      "run": "Run",
-      "running": "Running...",
-      "output": "Output",
-      "clearOutput": "Clear Output"
+      "resultPlaceholder": "Az eredmény itt fog megjelenni...",
+      "swap": "[hu] Swap"
     },
     "Base64Encoder": {
       "encode": "Kódol",
@@ -793,8 +662,8 @@
       "editor": "Szerkesztő",
       "preview": "Előnézet",
       "inputPlaceholder": "Írja be ide a Markdown-t...",
-      "inputLabel": "Editor",
-      "previewLabel": "Live Preview"
+      "inputLabel": "[hu] Editor",
+      "previewLabel": "[hu] Live Preview"
     },
     "TextDiff": {
       "original": "Eredeti szöveg",
@@ -818,7 +687,7 @@
       "paragraphs": "Bekezdések",
       "generate": "Generál",
       "copy": "Másolat",
-      "copyText": "Copy Text"
+      "copyText": "[hu] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Szög",
@@ -1092,8 +961,8 @@
       "csvInput": "CSV bemenet",
       "jsonOutput": "JSON kimenet",
       "csvOutput": "CSV kimenet",
-      "minifyOutput": "Minify Output",
-      "parseNumbers": "Parse Numbers"
+      "minifyOutput": "[hu] Minify Output",
+      "parseNumbers": "[hu] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Eredeti JSON",
@@ -1289,6 +1158,14 @@
       "reset": "Reset",
       "lap": "Lap"
     },
+    "SubnetCalculator": {
+      "ipAddress": "IP-cím",
+      "subnetMask": "Alhálózati maszk",
+      "calculate": "Számítsa ki",
+      "networkAddress": "Hálózati cím",
+      "broadcastAddress": "Műsorszórási cím",
+      "usableHosts": "Használható hostok"
+    },
     "SvgToPng": {
       "pasteSvg": "SVG beillesztése",
       "uploadSvg": "SVG feltöltése",
@@ -1356,7 +1233,7 @@
       "currentWeek": "Aktuális hét száma",
       "yearProgress": "Év Haladás",
       "week": "Hét",
-      "weekNumber": "Week Number"
+      "weekNumber": "[hu] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefonszám",
@@ -1465,13 +1342,15 @@
       "format": "Formátum",
       "copy": "Másolat"
     },
-    "SubnetCalculator": {
-      "ipAddress": "IP-cím",
-      "subnetMask": "Alhálózati maszk",
-      "calculate": "Számítsa ki",
-      "networkAddress": "Hálózati cím",
-      "broadcastAddress": "Műsorszórási cím",
-      "usableHosts": "Használható hostok"
+    "CodeEditor": {
+      "language": "[hu] Language",
+      "theme": "[hu] Theme",
+      "fontSize": "[hu] Font Size",
+      "minimap": "[hu] Minimap",
+      "run": "[hu] Run",
+      "running": "[hu] Running...",
+      "output": "[hu] Output",
+      "clearOutput": "[hu] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1578,6 +1457,10 @@
     "title": "Neked is tetszhet",
     "subtitle": "Fedezzen fel más népszerű fejlesztői eszközöket",
     "openTool": "Nyissa meg az Eszközt"
+  },
+  "Breadcrumb": {
+    "home": "Otthon",
+    "tools": "Eszközök"
   },
   "SvgToPng": {
     "upload": "SVG fájl feltöltése",
@@ -1835,8 +1718,8 @@
   },
   "MarkdownEditor": {
     "previewLabel": "Élő előnézet",
-    "inputLabel": "Editor",
-    "inputPlaceholder": "Type your markdown here..."
+    "inputLabel": "[hu] Editor",
+    "inputPlaceholder": "[hu] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Eltolás összege (N)",
@@ -1946,8 +1829,8 @@
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * parancs_futtatása</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Példák</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás minden nap éjfélkor: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border-[color) *]</code> border-[color) *]</b>border-0\n<p class=\"mb-6 text-[var(--foreground)]\">Futtatás 15 percenként: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 kerekített font-mono text-[0.9em] text-[#fb923c] border border-[var(]--border/-1><p>)\n\n<p class=\"mb-6 text-[var(--foreground)]\">Segítségre van szüksége?Használja <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron generátorunkat</a> a kifejezések vizuális létrehozásához.",
       "block_4": "* * * * * parancs_futtatása",
       "block_5": "Példák",
-      "block_6": "Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
-      "block_7": "Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
+      "block_6": "[hu] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[hu] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "A felhőtárolókkal kapcsolatos probléma",
@@ -1958,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zéró tudás:</strong> soha nem látjuk jelszavát.Soha nem hagyja el az eszközt.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline tárhely:</strong> Titkosított tárolóját a böngészője LocalStorage tárolja.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportálható:</strong> Nyers titkosított adatairól bármikor exportálhat/menthet biztonsági másolatot.</li>",
       "block_7": "Ne bízzon többé a felhőben a főkulcsokkal.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Próbálja ki a Helyi jelszókezelőt</a> még ma."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[hu] Configuration",
+    "rowCount": "[hu] Row Count",
+    "format": "[hu] Output Format",
+    "generate": "[hu] Generate Data",
+    "fields": "[hu] Fields",
+    "preview": "[hu] Data Preview",
+    "copy": "[hu] Copy to Clipboard",
+    "download": "[hu] Download File",
+    "copied": "[hu] Data copied to clipboard!",
+    "placeholder": "[hu] Generate data to see preview...",
+    "name": "[hu] Mock Data Generator",
+    "description": "[hu] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[hu] Community Credit",
+    "inspiredBy": "[hu] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[hu] This tool was inspired by an app developed by",
+    "checkOut": "[hu] Check out",
+    "thanks": "[hu] Thanks for helping make DailyDevTools better ❤️"
   }
 }

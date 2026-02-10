@@ -118,4 +118,5 @@ export const tools: Tool[] = [
     { id: "css-clip-path", name: "CSS Clip Path Generator", description: "Create custom shapes with CSS clip-path", icon: "Scissors", category: "Design" },
     { id: "meta-generator", name: "Meta Tag Builder", description: "Generate SEO meta tags for your website", icon: "Tag", category: "Content" },
     { id: "api-docs", name: "API Documentation Builder", description: "Create beautiful API docs from cURL commands", icon: "FileText", category: "Developer", isNew: true },
+    { id: "visual-database-designer", name: "Visual Schema Designer", description: "Visually design database schemas and export SQL", icon: "Database", category: "Developer", isNew: true },
 ];
