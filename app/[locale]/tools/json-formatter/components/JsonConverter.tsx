@@ -88,7 +88,7 @@ export default function JsonConverter({ data }: JsonConverterProps) {
             }
 
             Object.entries(o).forEach(([key, value]) => {
-                let type = typeof value;
+                let type: string = typeof value;
                 if (value === null) type = "any";
                 else if (Array.isArray(value)) {
                     if (value.length > 0 && typeof value[0] === 'object' && value[0] !== null) {
