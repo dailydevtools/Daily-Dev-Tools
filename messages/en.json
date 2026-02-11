@@ -25,7 +25,7 @@
     "deleteCollection": "Delete Collection",
     "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
     "delete": "Delete",
-    "cancel": "Cancel",
+    "cancel_action": "Cancel",
     "noCollectionsYet": "No collections yet",
     "noCollectionsFound": "No collections found",
     "tryDifferentSearch": "Try a different search term",
@@ -52,7 +52,6 @@
     "authBearer": "Bearer Token",
     "authApiKey": "API Key",
     "authBasic": "Basic Auth",
-    "cancel": "Cancel",
     "saveChanges": "Save Changes",
     "collectionNameRequired": "Collection name is required",
     "baseUrlRequired": "Base URL is required",
@@ -575,6 +574,36 @@
     "api-docs": {
       "name": "API Documentation Builder",
       "description": "Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "Visual Schema Designer",
+      "description": "Visually design database schemas and export SQL"
+    }
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "Database Schema",
+      "targetDatabase": "Target Database",
+      "addTable": "Add Table",
+      "importSql": "Import SQL",
+      "fields": "Fields",
+      "generatedSql": "Generated SQL"
+    },
+    "canvas": {
+      "autoLayout": "Auto Layout"
+    },
+    "import": {
+      "title": "Import SQL",
+      "placeholder": "Paste your SQL create table statements here...",
+      "button": "Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "Table Name",
+      "deleteTable": "Delete Table",
+      "columnPlaceholder": "Column Name",
+      "deleteColumn": "Delete Column",
+      "addColumn": "Add Column",
+      "primaryKey": "Toggle Primary Key"
     }
   },
   "Terms": {
