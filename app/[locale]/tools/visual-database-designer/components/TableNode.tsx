@@ -180,7 +180,6 @@ const TableNode = ({ id, data, selected }: TableNodeProps) => {
                                 value={col.type}
                                 onChange={(val) => updateColumn(id, col.id, { type: val as any })}
                                 options={typeOptions}
-                                size="sm"
                                 variant="ghost"
                                 className="!h-6"
                             />
