@@ -24,8 +24,11 @@
   "dependencies": {
     "@giscus/react": "^3.1.0",
     "@monaco-editor/react": "^4.7.0",
+    "@types/dagre": "^0.7.53",
+    "@xyflow/react": "^12.10.0",
     "clsx": "^2.1.1",
     "curlconverter": "^4.12.0",
+    "dagre": "^0.8.5",
     "framer-motion": "^12.29.2",
     "idb": "^8.0.3",
     "isomorphic-dompurify": "^2.30.0",
