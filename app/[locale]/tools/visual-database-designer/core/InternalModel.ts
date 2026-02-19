@@ -1,14 +1,17 @@
 
 export type DataType =
-    | 'string'    // VARCHAR, TEXT
-    | 'number'    // INT, DECIMAL, FLOAT
-    | 'boolean'   // BOOLEAN, TINYINT(1)
-    | 'date'      // DATETIME, TIMESTAMP
-    | 'json'      // JSON, JSONB
-    | 'uuid'      // UUID
-    | 'increments' // SERIAL, AUTO_INCREMENT
-    | 'text'      // TEXT, LONGTEXT
-    | 'binary';   // BLOB, BYTEA
+    // Generic
+    | 'string' | 'number' | 'boolean' | 'date' | 'json' | 'uuid' | 'increments' | 'text' | 'binary'
+    // PostgreSQL Specific
+    | 'smallint' | 'integer' | 'bigint' | 'decimal' | 'numeric' | 'real' | 'double precision' | 'smallserial' | 'serial' | 'bigserial'
+    | 'char' | 'varchar' | 'time' | 'timestamp' | 'timestamptz' | 'interval' | 'jsonb' | 'xml' | 'inet' | 'cidr'
+    // MySQL Specific
+    | 'tinyint' | 'mediumint' | 'float' | 'double' | 'tinytext' | 'mediumtext' | 'longtext'
+    | 'datetime' | 'year' | 'varbinary' | 'tinyblob' | 'blob' | 'mediumblob' | 'longblob' | 'enum' | 'set'
+    // MongoDB Specific
+    | 'double' | 'int' | 'long' | 'decimal128' | 'objectId' | 'array' | 'object' | 'null' | 'regex' | 'javascript' | 'timestamp' | 'minKey' | 'maxKey'
+    // Prisma Specific
+    | 'Int' | 'BigInt' | 'Float' | 'Decimal' | 'Boolean' | 'DateTime' | 'Json' | 'Bytes' | 'Unsupported';
 
 export interface InternalSchema {
     tables: Record<string, Table>;
@@ -47,6 +50,7 @@ export interface Column {
     length?: number; // for varchar
     scale?: number; // for decimals
     precision?: number; // for decimals
+    isArray?: boolean; // for array types (e.g. PG TEXT[])
 }
 
 export interface Index {

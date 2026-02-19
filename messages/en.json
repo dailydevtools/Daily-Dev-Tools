@@ -26,6 +26,7 @@
     "deleteCollectionConfirm": "Are you sure you want to delete this collection and all its endpoints?",
     "delete": "Delete",
     "cancel_action": "Cancel",
+    "cancel": "Cancel",
     "noCollectionsYet": "No collections yet",
     "noCollectionsFound": "No collections found",
     "tryDifferentSearch": "Try a different search term",
@@ -582,12 +583,15 @@
   },
   "VisualDatabaseDesigner": {
     "sidebar": {
-      "title": "Database Schema",
+      "title": "Schema Designer",
       "targetDatabase": "Target Database",
       "addTable": "Add Table",
+      "clearAll": "Clear All",
       "importSql": "Import SQL",
-      "fields": "Fields",
-      "generatedSql": "Generated SQL"
+      "fields": "Add Fields",
+      "generatedSql": "Generated Output",
+      "copy": "Copy",
+      "download": "Download"
     },
     "canvas": {
       "autoLayout": "Auto Layout"

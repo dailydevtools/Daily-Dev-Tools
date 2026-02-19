@@ -26,6 +26,7 @@ interface SchemaState {
 
     // Actions
     addTable: (name: string, position: { x: number; y: number }) => void;
+    duplicateTable: (id: string) => void;
     updateTable: (id: string, updates: Partial<Table>) => void;
     removeTable: (id: string) => void;
 
@@ -39,6 +40,7 @@ interface SchemaState {
     setAdapter: (id: DatabaseAdapter['id']) => void;
     importSchema: (schema: InternalSchema) => void;
     importFromSql: (sql: string) => void;
+    clearSchema: () => void;
 
     // Computed
     generateCode: () => string;
@@ -98,6 +100,41 @@ export const useSchemaStore = create<SchemaState>()(
                                     }
                                 },
                                 indices: []
+                            }
+                        }
+                    }
+                };
+            }),
+
+            duplicateTable: (id) => set((state) => {
+                const sourceTable = state.schema.tables[id];
+                if (!sourceTable) return state;
+
+                const newId = nanoid();
+                const existingNames = Object.values(state.schema.tables).map(t => t.name);
+                const newName = getUniqueName(`${sourceTable.name}_copy`, existingNames);
+
+                // Clone columns with new IDs
+                const newColumns: Record<string, Column> = {};
+                Object.values(sourceTable.columns).forEach(col => {
+                    const newColId = nanoid();
+                    newColumns[newColId] = { ...col, id: newColId };
+                });
+
+                return {
+                    schema: {
+                        ...state.schema,
+                        tables: {
+                            ...state.schema.tables,
+                            [newId]: {
+                                ...sourceTable,
+                                id: newId,
+                                name: newName,
+                                columns: newColumns,
+                                position: {
+                                    x: sourceTable.position.x + 40,
+                                    y: sourceTable.position.y + 40
+                                }
                             }
                         }
                     }
@@ -229,6 +266,8 @@ export const useSchemaStore = create<SchemaState>()(
                     set({ schema });
                 }
             },
+
+            clearSchema: () => set({ schema: INITIAL_SCHEMA }),
 
             generateCode: () => {
                 const state = get();

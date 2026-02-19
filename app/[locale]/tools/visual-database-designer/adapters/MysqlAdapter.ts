@@ -46,31 +46,61 @@ export class MysqlAdapter implements DatabaseAdapter {
         let type = '';
 
         switch (col.type) {
-            case 'increments': type = 'INT AUTO_INCREMENT PRIMARY KEY'; break;
-            case 'string': type = 'VARCHAR(255)'; break;
+            case 'tinyint': type = 'TINYINT'; break;
+            case 'smallint': type = 'SMALLINT'; break;
+            case 'mediumint': type = 'MEDIUMINT'; break;
+            case 'integer': case 'number': type = 'INT'; break;
+            case 'bigint': type = 'BIGINT'; break;
+            case 'float': type = 'FLOAT'; break;
+            case 'double': type = 'DOUBLE'; break;
+            case 'decimal': type = `DECIMAL(${col.precision || 10}, ${col.scale || 2})`; break;
+            case 'char': type = `CHAR(${col.length || 1})`; break;
+            case 'varchar': case 'string': type = `VARCHAR(${col.length || 255})`; break;
+            case 'tinytext': type = 'TINYTEXT'; break;
             case 'text': type = 'TEXT'; break;
-            case 'number': type = 'INT'; break;
+            case 'mediumtext': type = 'MEDIUMTEXT'; break;
+            case 'longtext': type = 'LONGTEXT'; break;
+            case 'date': type = 'DATE'; break;
+            case 'time': type = 'TIME'; break;
+            case 'datetime': type = 'DATETIME'; break;
+            case 'timestamp': type = 'TIMESTAMP'; break;
+            case 'year': type = 'YEAR'; break;
+            case 'binary': type = `BINARY(${col.length || 1})`; break;
+            case 'varbinary': type = `VARBINARY(${col.length || 255})`; break;
+            case 'tinyblob': type = 'TINYBLOB'; break;
+            case 'blob': type = 'BLOB'; break;
+            case 'mediumblob': type = 'MEDIUMBLOB'; break;
+            case 'longblob': type = 'LONGBLOB'; break;
             case 'boolean': type = 'TINYINT(1)'; break;
-            case 'date': type = 'DATETIME'; break;
-            case 'uuid': type = 'CHAR(36)'; break; // MySQL 5.7+ doesn't have native UUID
+            case 'uuid': type = 'CHAR(36)'; break;
             case 'json': type = 'JSON'; break;
+            case 'increments': type = 'INT AUTO_INCREMENT'; break;
+            case 'enum': type = 'ENUM(...)'; break;
+            case 'set': type = 'SET(...)'; break;
             default: type = 'VARCHAR(255)';
+        }
+
+        if (col.autoIncrement || col.type === 'increments') {
+            if (!type.includes('AUTO_INCREMENT')) type += ' AUTO_INCREMENT';
         }
 
         let parts = [`\`${col.name}\``, type];
 
-        if (!col.nullable && col.type !== 'increments') parts.push('NOT NULL');
-        if (col.unique && col.type !== 'increments') parts.push('UNIQUE');
-        if (col.defaultValue) parts.push(`DEFAULT ${col.defaultValue}`);
+        if (!col.nullable) parts.push('NOT NULL');
+        if (col.unique) parts.push('UNIQUE');
+        if (col.defaultValue) {
+            if (typeof col.defaultValue === 'string' && !['CURRENT_TIMESTAMP', 'NULL'].includes(col.defaultValue.toUpperCase())) {
+                parts.push(`DEFAULT '${col.defaultValue}'`);
+            } else {
+                parts.push(`DEFAULT ${col.defaultValue}`);
+            }
+        }
 
         return parts.join(' ');
     }
 
     private generateRelation(rel: Relation): string {
         return `-- Relation: ${rel.fromTable}.${rel.fromColumn} -> ${rel.toTable}.${rel.toColumn} (${rel.type})`;
-        // MySQL FKs are usually generating inside CREATE TABLE or ALTER TABLE.
-        // For MVP, simple comments or ALTER TABLE statements
-        // return `ALTER TABLE \`${rel.fromTable}\` ADD CONSTRAINT ...`;
     }
 
     // --- PARSING LOGIC (Placeholder for now) ---
@@ -86,14 +116,31 @@ export class MysqlAdapter implements DatabaseAdapter {
 
     getDataTypes(): { value: string; label: string; group?: string }[] {
         return [
-            { value: 'increments', label: 'INT AUTO_INCREMENT' },
-            { value: 'string', label: 'VARCHAR(255)' },
-            { value: 'text', label: 'TEXT' },
-            { value: 'number', label: 'INT' },
-            { value: 'boolean', label: 'TINYINT(1)' },
-            { value: 'date', label: 'DATETIME' },
-            { value: 'uuid', label: 'CHAR(36)' },
-            { value: 'json', label: 'JSON' },
+            { value: 'tinyint', label: 'TINYINT', group: 'Numeric' },
+            { value: 'smallint', label: 'SMALLINT', group: 'Numeric' },
+            { value: 'integer', label: 'INT', group: 'Numeric' },
+            { value: 'bigint', label: 'BIGINT', group: 'Numeric' },
+            { value: 'float', label: 'FLOAT', group: 'Numeric' },
+            { value: 'double', label: 'DOUBLE', group: 'Numeric' },
+            { value: 'decimal', label: 'DECIMAL', group: 'Numeric' },
+            { value: 'increments', label: 'INT AUTO_INCREMENT', group: 'Numeric' },
+            { value: 'char', label: 'CHAR', group: 'String' },
+            { value: 'varchar', label: 'VARCHAR', group: 'String' },
+            { value: 'tinytext', label: 'TINYTEXT', group: 'String' },
+            { value: 'text', label: 'TEXT', group: 'String' },
+            { value: 'mediumtext', label: 'MEDIUMTEXT', group: 'String' },
+            { value: 'longtext', label: 'LONGTEXT', group: 'String' },
+            { value: 'date', label: 'DATE', group: 'Date/Time' },
+            { value: 'time', label: 'TIME', group: 'Date/Time' },
+            { value: 'datetime', label: 'DATETIME', group: 'Date/Time' },
+            { value: 'timestamp', label: 'TIMESTAMP', group: 'Date/Time' },
+            { value: 'year', label: 'YEAR', group: 'Date/Time' },
+            { value: 'binary', label: 'BINARY', group: 'Binary' },
+            { value: 'varbinary', label: 'VARBINARY', group: 'Binary' },
+            { value: 'blob', label: 'BLOB', group: 'Binary' },
+            { value: 'json', label: 'JSON', group: 'Other' },
+            { value: 'enum', label: 'ENUM', group: 'Other' },
+            { value: 'set', label: 'SET', group: 'Other' },
         ];
     }
 }

@@ -55,25 +55,29 @@ generator client {
                 type = 'Int';
                 attributes = '@id @default(autoincrement())';
                 break;
-            case 'string': type = 'String'; break;
-            case 'text': type = 'String'; break; // Prisma treats text as String usually (maybe @db.Text)
-            case 'number': type = 'Int'; break;
-            case 'boolean': type = 'Boolean'; break;
-            case 'date': type = 'DateTime'; break;
+            case 'string': case 'text': case 'varchar': case 'char': type = 'String'; break;
+            case 'Int': case 'number': case 'integer': type = 'Int'; break;
+            case 'BigInt': case 'bigint': type = 'BigInt'; break;
+            case 'Float': case 'float': case 'real': type = 'Float'; break;
+            case 'Decimal': case 'decimal': case 'numeric': type = 'Decimal'; break;
+            case 'Boolean': case 'boolean': type = 'Boolean'; break;
+            case 'DateTime': case 'date': case 'datetime': case 'timestamp': type = 'DateTime'; break;
+            case 'Json': case 'json': case 'jsonb': type = 'Json'; break;
+            case 'Bytes': case 'binary': case 'blob': type = 'Bytes'; break;
             case 'uuid':
                 type = 'String';
-                attributes = '@default(uuid())'; // Use UUID default if PK?
+                attributes = '@default(uuid())';
                 if (col.primaryKey) attributes += ' @id';
                 break;
-            case 'json': type = 'Json'; break;
+            case 'Unsupported': type = 'Unsupported("...")'; break;
             default: type = 'String';
         }
 
         if (col.primaryKey && col.type !== 'increments' && col.type !== 'uuid') {
-            attributes += ' @id';
+            if (!attributes.includes('@id')) attributes += ' @id';
         }
 
-        if (col.unique && col.type !== 'increments') {
+        if (col.unique && col.type !== 'increments' && !attributes.includes('@unique')) {
             attributes += ' @unique';
         }
 
@@ -81,10 +85,13 @@ generator client {
             type += '?';
         }
 
+        if (col.isArray) {
+            type += '[]';
+        }
+
         if (col.defaultValue && !attributes.includes('@default')) {
-            // Handle simple defaults
-            if (col.type === 'boolean') attributes += ` @default(${col.defaultValue})`;
-            else if (col.type === 'number') attributes += ` @default(${col.defaultValue})`;
+            if (col.type === 'Boolean' || col.type === 'boolean') attributes += ` @default(${col.defaultValue})`;
+            else if (col.type === 'Int' || col.type === 'number' || col.type === 'BigInt' || col.type === 'Float' || col.type === 'Decimal') attributes += ` @default(${col.defaultValue})`;
             else attributes += ` @default("${col.defaultValue}")`;
         }
 
@@ -95,7 +102,6 @@ generator client {
 
     parse(input: string): InternalSchema {
         const tables: Record<string, Table> = {};
-        const relations: any[] = []; // Not fully implemented yet
 
         // Remove comments
         const cleanInput = input.replace(/\/\/.*$/gm, '').trim();
@@ -117,9 +123,8 @@ generator client {
             const lines = content.split('\n').map(l => l.trim()).filter(Boolean);
 
             lines.forEach(line => {
-                if (line.startsWith('@@')) return; // Block attribute
+                if (line.startsWith('@@')) return;
 
-                // Simple field parser: name type attributes
                 const parts = line.split(/\s+/);
                 if (parts.length < 2) return;
 
@@ -131,11 +136,16 @@ generator client {
                 let type: DataType = 'string';
 
                 // Map Prisma types to ISM
-                if (rawType.startsWith('Int') || rawType.startsWith('Float')) type = 'number';
+                if (rawType.startsWith('Int')) type = 'Int';
+                if (rawType.startsWith('BigInt')) type = 'BigInt';
+                if (rawType.startsWith('Float')) type = 'Float';
+                if (rawType.startsWith('Decimal')) type = 'Decimal';
                 if (rawType.startsWith('String')) type = 'string';
-                if (rawType.startsWith('Boolean')) type = 'boolean';
-                if (rawType.startsWith('DateTime')) type = 'date';
-                if (rawType.startsWith('Json')) type = 'json';
+                if (rawType.startsWith('Boolean')) type = 'Boolean';
+                if (rawType.startsWith('DateTime')) type = 'DateTime';
+                if (rawType.startsWith('Json')) type = 'Json';
+                if (rawType.startsWith('Bytes')) type = 'Bytes';
+                if (rawType.startsWith('Unsupported')) type = 'Unsupported';
 
                 // Check attributes for refinements
                 if (rest.includes('@id')) {
@@ -168,11 +178,11 @@ generator client {
 
         return {
             tables,
-            relations: [], // TODO: Relations parsing
+            relations: [],
             meta: {
                 version: '1.0.0',
                 name: 'Imported Prisma Schema',
-                database: 'postgresql', // Prisma supports many, default to pg
+                database: 'postgresql',
                 createdAt: Date.now(),
                 updatedAt: Date.now()
             }
@@ -181,13 +191,18 @@ generator client {
 
     getDataTypes(): { value: string; label: string; group?: string }[] {
         return [
-            { value: 'string', label: 'String', group: 'Scalar' },
-            { value: 'number', label: 'Int', group: 'Scalar' },
-            { value: 'boolean', label: 'Boolean', group: 'Scalar' },
-            { value: 'date', label: 'DateTime', group: 'Scalar' },
-            { value: 'increments', label: 'Int @id @default(autoincrement())', group: 'ID' },
-            { value: 'uuid', label: 'String @id @default(uuid())', group: 'ID' },
-            { value: 'json', label: 'Json', group: 'Scalar' },
+            { value: 'String', label: 'String', group: 'Scalar' },
+            { value: 'Int', label: 'Int', group: 'Scalar' },
+            { value: 'BigInt', label: 'BigInt', group: 'Scalar' },
+            { value: 'Float', label: 'Float', group: 'Scalar' },
+            { value: 'Decimal', label: 'Decimal', group: 'Scalar' },
+            { value: 'Boolean', label: 'Boolean', group: 'Scalar' },
+            { value: 'DateTime', label: 'DateTime', group: 'Scalar' },
+            { value: 'Json', label: 'Json', group: 'Scalar' },
+            { value: 'Bytes', label: 'Bytes', group: 'Scalar' },
+            { value: 'increments', label: 'Int @id @default(autoincrement())', group: 'Special' },
+            { value: 'uuid', label: 'String @id @default(uuid())', group: 'Special' },
+            { value: 'Unsupported', label: 'Unsupported', group: 'Special' },
         ];
     }
 }

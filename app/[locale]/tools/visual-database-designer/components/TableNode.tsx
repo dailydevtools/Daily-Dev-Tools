@@ -1,7 +1,7 @@
 import { memo, useState, useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 import { Handle, Position, NodeProps } from '@xyflow/react';
-import { Trash2, Key, Database, Plus } from 'lucide-react';
+import { Trash2, Key, Database, Plus, Fingerprint, Copy } from 'lucide-react';
 import { useSchemaStore } from '../store/SchemaStore';
 import { Column } from '../core/InternalModel';
 import LiquidSelect from '../../../../components/ui/LiquidSelect';
@@ -16,20 +16,43 @@ type TableNodeProps = NodeProps & {
 };
 
 const DataTypeColor = (type: string) => {
-    switch (type) {
-        case 'string': return 'text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30';
-        case 'text': return 'text-green-700 dark:text-green-300 bg-green-100 dark:bg-green-900/30';
-        case 'number': return 'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30';
-        case 'increments': return 'text-blue-800 dark:text-blue-300 bg-blue-100 dark:bg-blue-900/40 font-bold';
-        case 'boolean': return 'text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30';
-        case 'date': return 'text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900/30';
-        case 'uuid': return 'text-orange-600 dark:text-orange-400 bg-orange-100 dark:bg-orange-900/30';
-        default: return 'text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800';
+    const lowType = type.toLowerCase();
+
+    // Strings
+    if (['string', 'text', 'char', 'varchar', 'tinytext', 'mediumtext', 'longtext', 'xml', 'json', 'jsonb', 'bytes'].includes(lowType)) {
+        return 'text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900/30';
     }
+
+    // Numbers
+    if (['number', 'int', 'integer', 'bigint', 'smallint', 'mediumint', 'tinyint', 'float', 'double', 'decimal', 'numeric', 'real', 'double precision', 'decimal128', 'long'].includes(lowType)) {
+        return 'text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30';
+    }
+
+    // Auto-increments
+    if (['increments', 'serial', 'bigserial', 'smallserial'].includes(lowType)) {
+        return 'text-blue-800 dark:text-blue-300 bg-blue-100 dark:bg-blue-900/40 font-bold';
+    }
+
+    // Booleans
+    if (['boolean'].includes(lowType)) {
+        return 'text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30';
+    }
+
+    // Date/Time
+    if (['date', 'datetime', 'time', 'timestamp', 'timestamptz', 'interval', 'year'].includes(lowType)) {
+        return 'text-yellow-600 dark:text-yellow-400 bg-yellow-100 dark:bg-yellow-900/30';
+    }
+
+    // Special
+    if (['uuid', 'objectid', 'inet', 'cidr', 'unsupported'].includes(lowType)) {
+        return 'text-orange-600 dark:text-orange-400 bg-orange-100 dark:bg-orange-900/30';
+    }
+
+    return 'text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-800';
 }
 
 const TableNode = ({ id, data, selected }: TableNodeProps) => {
-    const { updateTable, removeTable, addColumn, removeColumn, updateColumn, getAvailableTypes } = useSchemaStore();
+    const { updateTable, removeTable, addColumn, removeColumn, updateColumn, getAvailableTypes, duplicateTable } = useSchemaStore();
     const t = useTranslations('VisualDatabaseDesigner.table');
 
     // Local state for table name to avoid premature validation/renaming while typing
@@ -121,13 +144,22 @@ const TableNode = ({ id, data, selected }: TableNodeProps) => {
                         placeholder={t('tableNamePlaceholder')}
                     />
                 </div>
-                <button
-                    onClick={() => removeTable(id)}
-                    className="text-slate-400 hover:text-red-500 dark:text-slate-500 dark:hover:text-red-400 transition-colors p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-white/5"
-                    title={t('deleteTable')}
-                >
-                    <Trash2 className="w-3.5 h-3.5" />
-                </button>
+                <div className="flex items-center gap-1">
+                    <button
+                        onClick={() => duplicateTable(id)}
+                        className="text-slate-400 hover:text-orange-500 transition-colors p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-white/5"
+                        title="Duplicate Table"
+                    >
+                        <Copy className="w-3.5 h-3.5" />
+                    </button>
+                    <button
+                        onClick={() => removeTable(id)}
+                        className="text-slate-400 hover:text-red-500 dark:text-slate-500 dark:hover:text-red-400 transition-colors p-1.5 rounded-md hover:bg-slate-100 dark:hover:bg-white/5"
+                        title={t('deleteTable')}
+                    >
+                        <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                </div>
             </div>
 
             {/* Columns */}
@@ -152,14 +184,35 @@ const TableNode = ({ id, data, selected }: TableNodeProps) => {
                             className="opacity-0 group-hover:opacity-100 transition-opacity !rounded-full shadow-sm"
                         />
 
-                        {/* Primary Key Toggle */}
-                        <button
-                            onClick={() => updateColumn(id, col.id, { primaryKey: !col.primaryKey })}
-                            className={`transition-colors ${col.primaryKey ? 'text-orange-500' : 'text-slate-300 dark:text-slate-600 hover:text-slate-400'}`}
-                            title={t('primaryKey')}
-                        >
-                            <Key className="w-3.5 h-3.5" />
-                        </button>
+                        {/* Constraints Group */}
+                        <div className="flex items-center gap-1">
+                            {/* Primary Key Toggle */}
+                            <button
+                                onClick={() => updateColumn(id, col.id, { primaryKey: !col.primaryKey, nullable: false, unique: true })}
+                                className={`transition-all hover:scale-110 ${col.primaryKey ? 'text-orange-500' : 'text-slate-300 dark:text-slate-600 hover:text-slate-400'}`}
+                                title={t('primaryKey')}
+                            >
+                                <Key className="w-3.5 h-3.5" />
+                            </button>
+
+                            {/* Unique Toggle */}
+                            <button
+                                onClick={() => updateColumn(id, col.id, { unique: !col.unique })}
+                                className={`transition-all hover:scale-110 ${col.unique ? 'text-blue-500' : 'text-slate-300 dark:text-slate-600 hover:text-slate-400'}`}
+                                title="Unique"
+                            >
+                                <Fingerprint className="w-3.5 h-3.5" />
+                            </button>
+
+                            {/* Required Toggle */}
+                            <button
+                                onClick={() => updateColumn(id, col.id, { nullable: !col.nullable })}
+                                className={`transition-all hover:scale-110 ${!col.nullable ? 'text-red-500' : 'text-slate-300 dark:text-slate-600 hover:text-slate-400'}`}
+                                title="Required"
+                            >
+                                <div className="text-[10px] font-bold leading-none select-none">*</div>
+                            </button>
+                        </div>
 
                         {/* Column Name */}
                         <input
@@ -175,14 +228,17 @@ const TableNode = ({ id, data, selected }: TableNodeProps) => {
                         />
 
                         {/* Type Selector */}
-                        <div className="w-[100px]">
-                            <LiquidSelect
-                                value={col.type}
-                                onChange={(val) => updateColumn(id, col.id, { type: val as any })}
-                                options={typeOptions}
-                                variant="ghost"
-                                className="!h-6"
-                            />
+                        <div className="flex items-center gap-2">
+                            <div className={`w-1.5 h-1.5 rounded-full transition-colors ${DataTypeColor(col.type).split(' ').find(c => c.startsWith('bg-'))}`} />
+                            <div className="w-[110px]">
+                                <LiquidSelect
+                                    value={col.type}
+                                    onChange={(val) => updateColumn(id, col.id, { type: val as any })}
+                                    options={typeOptions}
+                                    variant="ghost"
+                                    className="!h-6 !text-[10px]"
+                                />
+                            </div>
                         </div>
 
                         {/* Delete Column */}

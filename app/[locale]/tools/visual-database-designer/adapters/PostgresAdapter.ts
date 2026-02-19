@@ -111,32 +111,73 @@ export class PostgresAdapter implements DatabaseAdapter {
 
     getDataTypes() {
         return [
-            { value: 'string', label: 'VARCHAR(255)', group: 'String' },
-            { value: 'text', label: 'TEXT', group: 'String' },
-            { value: 'number', label: 'INTEGER', group: 'Number' },
-            { value: 'increments', label: 'SERIAL (Auto Increment)', group: 'Number' },
+            { value: 'smallint', label: 'SMALLINT', group: 'Numeric' },
+            { value: 'integer', label: 'INTEGER', group: 'Numeric' },
+            { value: 'bigint', label: 'BIGINT', group: 'Numeric' },
+            { value: 'decimal', label: 'DECIMAL', group: 'Numeric' },
+            { value: 'numeric', label: 'NUMERIC', group: 'Numeric' },
+            { value: 'real', label: 'REAL', group: 'Numeric' },
+            { value: 'double precision', label: 'DOUBLE PRECISION', group: 'Numeric' },
+            { value: 'serial', label: 'SERIAL', group: 'Numeric' },
+            { value: 'bigserial', label: 'BIGSERIAL', group: 'Numeric' },
+            { value: 'char', label: 'CHAR', group: 'Character' },
+            { value: 'varchar', label: 'VARCHAR(255)', group: 'Character' },
+            { value: 'text', label: 'TEXT', group: 'Character' },
             { value: 'boolean', label: 'BOOLEAN', group: 'Boolean' },
-            { value: 'date', label: 'TIMESTAMP', group: 'Date/Time' },
-            { value: 'json', label: 'JSONB', group: 'JSON' },
-            { value: 'uuid', label: 'UUID', group: 'Other' },
+            { value: 'date', label: 'DATE', group: 'Date/Time' },
+            { value: 'time', label: 'TIME', group: 'Date/Time' },
+            { value: 'timestamp', label: 'TIMESTAMP', group: 'Date/Time' },
+            { value: 'timestamptz', label: 'TIMESTAMPTZ', group: 'Date/Time' },
+            { value: 'interval', label: 'INTERVAL', group: 'Date/Time' },
+            { value: 'json', label: 'JSON', group: 'JSON' },
+            { value: 'jsonb', label: 'JSONB', group: 'JSON' },
+            { value: 'uuid', label: 'UUID', group: 'Special' },
+            { value: 'xml', label: 'XML', group: 'Special' },
+            { value: 'inet', label: 'INET', group: 'Special' },
+            { value: 'cidr', label: 'CIDR', group: 'Special' },
         ];
     }
 
     private mapTypeToSql(col: Column): string {
         if (col.rawType) return col.rawType;
 
+        let type = '';
         switch (col.type) {
-            case 'string': return `VARCHAR(${col.length || 255})`;
-            case 'text': return 'TEXT';
-            case 'number': return col.autoIncrement ? 'SERIAL' : 'INTEGER';
-            case 'increments': return 'SERIAL';
-            case 'boolean': return 'BOOLEAN';
-            case 'date': return 'TIMESTAMP';
-            case 'json': return 'JSONB';
-            case 'uuid': return 'UUID';
-            case 'binary': return 'BYTEA';
-            default: return 'VARCHAR(255)';
+            case 'smallint': type = 'SMALLINT'; break;
+            case 'integer': type = 'INTEGER'; break;
+            case 'bigint': type = 'BIGINT'; break;
+            case 'decimal': type = `DECIMAL(${col.precision || 10}, ${col.scale || 2})`; break;
+            case 'numeric': type = `NUMERIC(${col.precision || 10}, ${col.scale || 2})`; break;
+            case 'real': type = 'REAL'; break;
+            case 'double precision': type = 'DOUBLE PRECISION'; break;
+            case 'serial': type = 'SERIAL'; break;
+            case 'bigserial': type = 'BIGSERIAL'; break;
+            case 'char': type = `CHAR(${col.length || 1})`; break;
+            case 'varchar': type = `VARCHAR(${col.length || 255})`; break;
+            case 'string': type = `VARCHAR(${col.length || 255})`; break;
+            case 'text': type = 'TEXT'; break;
+            case 'boolean': type = 'BOOLEAN'; break;
+            case 'date': type = 'DATE'; break;
+            case 'time': type = 'TIME'; break;
+            case 'timestamp': type = 'TIMESTAMP'; break;
+            case 'timestamptz': type = 'TIMESTAMPTZ'; break;
+            case 'interval': type = 'INTERVAL'; break;
+            case 'json': type = 'JSON'; break;
+            case 'jsonb': type = 'JSONB'; break;
+            case 'uuid': type = 'UUID'; break;
+            case 'xml': type = 'XML'; break;
+            case 'inet': type = 'INET'; break;
+            case 'cidr': type = 'CIDR'; break;
+            case 'increments': type = 'SERIAL'; break;
+            case 'number': type = col.autoIncrement ? 'SERIAL' : 'INTEGER'; break;
+            default: type = 'VARCHAR(255)';
         }
+
+        if (col.isArray) {
+            type += '[]';
+        }
+
+        return type;
     }
 
     private escapeString(str: string): string {
