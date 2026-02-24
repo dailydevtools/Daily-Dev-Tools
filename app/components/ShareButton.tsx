@@ -4,10 +4,16 @@ import { Share2, Check } from "lucide-react";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { LiquidButton } from "./ui/LiquidButton";
+import { usePathname } from "@/i18n/routing";
 
 export default function ShareButton() {
     const t = useTranslations('ShareButton');
     const [copied, setCopied] = useState(false);
+    const pathname = usePathname();
+
+    if (pathname === '/tools') {
+        return null;
+    }
 
     const handleShare = async () => {
         if (navigator.share) {

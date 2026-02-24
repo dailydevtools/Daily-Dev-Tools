@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
+
   /* Liquid Glass Light */
   --card-bg: rgba(255, 255, 255, 0.65);
   --card-border: rgba(0, 0, 0, 0.08);
@@ -15,12 +15,12 @@
   /* Subtle pill for inactive hover in light mode */
   --tab-pill-hover-bg: rgba(15, 23, 42, 0.04);
   --tab-pill-hover-border: rgba(15, 23, 42, 0.08);
-  
+
   --header-bg: rgba(255, 255, 255, 0.75);
   --border-color: rgba(0, 0, 0, 0.08);
   --muted-text: #6b7280;
   --title-color: #111827;
-  
+
   --orange-400: #fb923c;
   --orange-500: #f97316;
   --orange-glow: rgba(251, 146, 60, 0.4);
@@ -29,7 +29,7 @@
 .dark {
   --background: #000000;
   --foreground: #fafafa;
-  
+
   /* Liquid Glass Dark */
   --card-bg: rgba(20, 20, 20, 0.6);
   --card-border: rgba(255, 255, 255, 0.08);
@@ -38,7 +38,7 @@
   --tab-pill-active-bg: rgba(24, 24, 27, 0.96);
   --tab-pill-hover-bg: rgba(255, 255, 255, 0.05);
   --tab-pill-hover-border: transparent;
-  
+
   --header-bg: rgba(0, 0, 0, 0.75);
   --border-color: rgba(255, 255, 255, 0.08);
   --muted-text: #9ca3af;
@@ -71,9 +71,9 @@ body {
   width: 100%;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
-  
+
   /* Deep BG Gradient Subtle */
-  background-image: 
+  background-image:
     radial-gradient(circle at 50% 0%, rgba(251, 146, 60, 0.08) 0%, transparent 40%),
     radial-gradient(circle at 100% 0%, rgba(251, 146, 60, 0.05) 0%, transparent 30%);
   background-attachment: fixed;
@@ -84,13 +84,16 @@ body {
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-color);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--muted-text);
 }
@@ -99,6 +102,18 @@ body {
 :focus-visible {
   outline: 2px solid var(--orange-400);
   outline-offset: 2px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Remove global focus ring from form inputs to keep them minimal */
@@ -154,6 +169,30 @@ select:focus-visible {
 
   .animate-float {
     animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float-bubble {
+
+    0%,
+    100% {
+      transform: translate(-50%, -50%) translateY(0) translateX(0);
+    }
+
+    25% {
+      transform: translate(-50%, -50%) translateY(-12px) translateX(6px);
+    }
+
+    50% {
+      transform: translate(-50%, -50%) translateY(-6px) translateX(-4px);
+    }
+
+    75% {
+      transform: translate(-50%, -50%) translateY(-18px) translateX(8px);
+    }
+  }
+
+  .animate-float-bubble {
+    animation: float-bubble 8s ease-in-out infinite;
   }
 
   @keyframes wiggle {

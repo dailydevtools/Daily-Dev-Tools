@@ -61,7 +61,7 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
             <div
                 ref={scrollRef}
                 onScroll={checkScroll}
-                className="flex gap-4 overflow-x-auto snap-x snap-mandatory py-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+                className="flex gap-4 pt-8 pb-8 overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
             >
                 {tools.map((tool) => (
                     <Link

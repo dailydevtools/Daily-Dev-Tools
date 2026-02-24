@@ -18,7 +18,7 @@ export default function Header() {
     const pathname = usePathname();
 
     const navItems = [
-        { id: 'tools', label: t('tools'), href: '/#tools' },
+        { id: 'tools', label: t('tools'), href: '/tools' },
         { id: 'blog', label: t('blog'), href: '/blog' }
     ];
 
@@ -118,7 +118,7 @@ export default function Header() {
                             <HeaderSearchTrigger />
                         </motion.div>
                         <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.15 }}>
-                            <Link href="/#tools" onClick={() => setMobileMenuOpen(false)} className="text-[var(--title-color)] font-heading text-base no-underline py-3 block border-b border-dashed border-[var(--border-color)]">{t('tools')}</Link>
+                            <Link href="/tools" onClick={() => setMobileMenuOpen(false)} className="text-[var(--title-color)] font-heading text-base no-underline py-3 block border-b border-dashed border-[var(--border-color)]">{t('tools')}</Link>
                         </motion.div>
                         <motion.div initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
                             <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="text-[var(--title-color)] font-heading text-base no-underline py-3 block border-b border-dashed border-[var(--border-color)]">{t('blog')}</Link>
