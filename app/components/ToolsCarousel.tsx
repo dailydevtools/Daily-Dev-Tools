@@ -69,16 +69,21 @@ export default function ToolsCarousel({ tools }: ToolsCarouselProps) {
                         href={`/tools/${tool.id}`}
                         className="flex-shrink-0 snap-start min-w-[85%] md:min-w-[calc(50%-8px)] lg:min-w-[calc(33.333%-11px)] block no-underline"
                     >
-                        <MotionCard className="p-5 flex items-center gap-4 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] h-full">
+                        <MotionCard className="p-5 flex items-center gap-4 bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] text-[var(--foreground)] h-full relative">
                             <div className="w-12 h-12 flex items-center justify-center bg-[#f973161a] text-[#fb923c] rounded-xl border border-[#f9731633] transition-transform duration-300 group-hover:scale-110">
                                 <ToolIcon name={tool.icon} size={24} className="text-[#fb923c]" />
                             </div>
-                            <div className="text-start">
+                            <div className="text-start flex-1 min-w-0">
                                 <span className="text-[var(--muted-text)] text-[11px] uppercase tracking-[0.5px] font-semibold block mb-0.5">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
                                 <span className="text-[var(--title-color)] font-heading text-base font-semibold block truncate">
                                     {tTools(`${tool.id}.name`, { fallback: tool.name })}
                                 </span>
                             </div>
+                            {tool.isNew && (
+                                <span className="absolute right-4 bottom-4 px-2 py-1 text-[10px] font-bold uppercase tracking-wide bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-md shadow-lg">
+                                    NEW
+                                </span>
+                            )}
                         </MotionCard>
                     </Link>
                 ))}

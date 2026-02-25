@@ -58,7 +58,9 @@
     "cta": {
       "title": "Gotowy na zwiększenie produktywności?",
       "text": "Zacznij używać naszych narzędzi deweloperskich za darmo. Bez rejestracji, bez zbierania danych.",
-      "button": "Zacznij za darmo"
+      "button": "Zacznij za darmo",
+      "feedbackText": "[pl] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[pl] Share Feedback"
     },
     "openTool": "Otwórz narzędzie",
     "noResults": "Nie znaleziono narzędzi pasujących do",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Ładny adres URL wydruku",
       "description": "Formatuj i upiększaj adresy URL pod kątem czytelności"
+    },
+    "mock-data-generator": {
+      "name": "[pl] Mock Data Generator",
+      "description": "[pl] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[pl] Online Code Editor",
+      "description": "[pl] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Obliczać",
       "convert": "Konwertować",
       "validate": "Uprawomocnić",
-      "resultPlaceholder": "Wynik pojawi się tutaj..."
+      "resultPlaceholder": "Wynik pojawi się tutaj...",
+      "swap": "[pl] Swap"
     },
     "Base64Encoder": {
       "encode": "Kodować",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Redaktor",
       "preview": "Zapowiedź",
-      "inputPlaceholder": "Wpisz tutaj Markdown..."
+      "inputPlaceholder": "Wpisz tutaj Markdown...",
+      "inputLabel": "[pl] Editor",
+      "previewLabel": "[pl] Live Preview"
     },
     "TextDiff": {
       "original": "Tekst oryginalny",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Akapity",
       "generate": "Spowodować",
-      "copy": "Kopia"
+      "copy": "Kopia",
+      "copyText": "[pl] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Kąt",
@@ -946,7 +960,9 @@
       "jsonInput": "Dane wejściowe JSON",
       "csvInput": "Wejście CSV",
       "jsonOutput": "Dane wyjściowe JSON",
-      "csvOutput": "Dane wyjściowe CSV"
+      "csvOutput": "Dane wyjściowe CSV",
+      "minifyOutput": "[pl] Minify Output",
+      "parseNumbers": "[pl] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Oryginalny JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Numer bieżącego tygodnia",
       "yearProgress": "Rok Postępu",
-      "week": "Tydzień"
+      "week": "Tydzień",
+      "weekNumber": "[pl] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Numer telefonu",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Format",
       "copy": "Kopia"
+    },
+    "CodeEditor": {
+      "language": "[pl] Language",
+      "theme": "[pl] Theme",
+      "fontSize": "[pl] Font Size",
+      "minimap": "[pl] Minimap",
+      "run": "[pl] Run",
+      "running": "[pl] Running...",
+      "output": "[pl] Output",
+      "clearOutput": "[pl] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Podpisy przetwarzane są lokalnie w Twojej przeglądarce. Nie przechowujemy ich ani nie przesyłamy."
   },
   "MarkdownEditor": {
-    "previewLabel": "Podgląd na żywo"
+    "previewLabel": "Podgląd na żywo",
+    "inputLabel": "[pl] Editor",
+    "inputPlaceholder": "[pl] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Wartość zmiany (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] czcionki-sembold\">Wiedza zerowa:</strong> Nigdy nie widzimy Twojego hasła.Nigdy nie opuszcza Twojego urządzenia.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] czcionki-sembold\">Przechowywanie w trybie offline:</strong> Twój zaszyfrowany skarbiec jest przechowywany w pamięci lokalnej Twojej przeglądarki.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Możliwość eksportu:</strong> W dowolnym momencie możesz wyeksportować surowe zaszyfrowane dane lub wykonać ich kopię zapasową.</li>",
       "block_7": "Przestań powierzać chmurze swoje klucze główne.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Wypróbuj lokalnego menedżera haseł</a> już dziś."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[pl] Configuration",
+    "rowCount": "[pl] Row Count",
+    "format": "[pl] Output Format",
+    "generate": "[pl] Generate Data",
+    "fields": "[pl] Fields",
+    "preview": "[pl] Data Preview",
+    "copy": "[pl] Copy to Clipboard",
+    "download": "[pl] Download File",
+    "copied": "[pl] Data copied to clipboard!",
+    "placeholder": "[pl] Generate data to see preview...",
+    "name": "[pl] Mock Data Generator",
+    "description": "[pl] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[pl] Community Credit",
+    "inspiredBy": "[pl] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[pl] This tool was inspired by an app developed by",
+    "checkOut": "[pl] Check out",
+    "thanks": "[pl] Thanks for helping make DailyDevTools better ❤️"
   }
 }

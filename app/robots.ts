@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/api/', '/private/'],
             },
         ],
-        sitemap: 'https://dailydev.tools/sitemap.xml',
+        sitemap: 'https://www.dailydev.tools/sitemap.xml',
     };
 }

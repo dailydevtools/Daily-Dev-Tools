@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 
 import { ThemeProvider } from "../components/ThemeProvider";
+import { ConfirmDialogProvider } from "../components/ui/ConfirmDialog";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Script from "next/script";
@@ -27,7 +28,7 @@ const spaceGrotesk = Space_Grotesk({
     display: "swap",
 });
 
-const siteUrl = "https://dailydev.tools";
+const siteUrl = "https://www.dailydev.tools";
 
 export async function generateMetadata({
     params
@@ -149,7 +150,7 @@ export default async function LocaleLayout({
     const gaId = process.env.NEXT_PUBLIC_GA_ID;
 
     return (
-        <html lang={locale} suppressHydrationWarning>
+        <html lang={locale} suppressHydrationWarning={true}>
             <head>
                 <script
                     dangerouslySetInnerHTML={{
@@ -169,7 +170,7 @@ export default async function LocaleLayout({
                 {gaId && <link rel="preconnect" href="https://www.googletagmanager.com" />}
                 {gaId && <link rel="preconnect" href="https://www.google-analytics.com" />}
             </head>
-            <body className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+            <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`} suppressHydrationWarning={true}>
                 {gaId && (
                     <>
                         <Script
@@ -188,12 +189,14 @@ export default async function LocaleLayout({
                 )}
                 <NextIntlClientProvider messages={messages}>
                     <ThemeProvider>
-                        <LayoutEssentials />
-                        <Header />
-                        <main id="main-content">
-                            {children}
-                        </main>
-                        <Footer />
+                        <ConfirmDialogProvider>
+                            <LayoutEssentials />
+                            <Header />
+                            <main id="main-content">
+                                {children}
+                            </main>
+                            <Footer />
+                        </ConfirmDialogProvider>
                     </ThemeProvider>
                 </NextIntlClientProvider>
             </body>

@@ -58,7 +58,9 @@
     "cta": {
       "title": "Klar til å øke produktiviteten din?",
       "text": "Begynn å bruke våre utviklerverktøy gratis. Ingen registrering kreves, ingen datainnsamling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "[no] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[no] Share Feedback"
     },
     "openTool": "Åpne verktøy",
     "noResults": "Ingen verktøy funnet som matcher",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Pretty Print URL",
       "description": "Formater og forskjønn nettadresser for lesbarhet"
+    },
+    "mock-data-generator": {
+      "name": "[no] Mock Data Generator",
+      "description": "[no] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[no] Online Code Editor",
+      "description": "[no] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Kalkulere",
       "convert": "Konvertere",
       "validate": "Bekreft",
-      "resultPlaceholder": "Resultatet vises her..."
+      "resultPlaceholder": "Resultatet vises her...",
+      "swap": "[no] Swap"
     },
     "Base64Encoder": {
       "encode": "Kode",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Redaktør",
       "preview": "Forhåndsvisning",
-      "inputPlaceholder": "Skriv inn Markdown her..."
+      "inputPlaceholder": "Skriv inn Markdown her...",
+      "inputLabel": "[no] Editor",
+      "previewLabel": "[no] Live Preview"
     },
     "TextDiff": {
       "original": "Originaltekst",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Avsnitt",
       "generate": "Generere",
-      "copy": "Kopiere"
+      "copy": "Kopiere",
+      "copyText": "[no] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Vinkel",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON-inngang",
       "csvInput": "CSV-inngang",
       "jsonOutput": "JSON-utgang",
-      "csvOutput": "CSV-utgang"
+      "csvOutput": "CSV-utgang",
+      "minifyOutput": "[no] Minify Output",
+      "parseNumbers": "[no] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Original JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Nåværende ukenummer",
       "yearProgress": "Års fremgang",
-      "week": "Uke"
+      "week": "Uke",
+      "weekNumber": "[no] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefonnummer",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Format",
       "copy": "Kopiere"
+    },
+    "CodeEditor": {
+      "language": "[no] Language",
+      "theme": "[no] Theme",
+      "fontSize": "[no] Font Size",
+      "minimap": "[no] Minimap",
+      "run": "[no] Run",
+      "running": "[no] Running...",
+      "output": "[no] Output",
+      "clearOutput": "[no] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Signaturer behandles lokalt i nettleseren din. Vi lagrer eller laster dem ikke opp."
   },
   "MarkdownEditor": {
-    "previewLabel": "Live forhåndsvisning"
+    "previewLabel": "Live forhåndsvisning",
+    "inputLabel": "[no] Editor",
+    "inputPlaceholder": "[no] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Skiftbeløp (N)",
@@ -1799,7 +1828,9 @@
       "block_2": "Minutt, time, dag i måneden, måned, ukedag.Det er alt det er.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Eksempler</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Kjør hver dag ved midnatt: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] *border border-</0.923c] *border border-</0()-code",
       "block_4": "Eksempler",
-      "block_5": "Trenger du hjelp?Bruk <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> for å bygge uttrykk visuelt."
+      "block_5": "Trenger du hjelp?Bruk <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> for å bygge uttrykk visuelt.",
+      "block_6": "[no] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[no] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Problemet med skyhvelv",
@@ -1810,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Null kunnskap:</strong> Vi ser aldri passordet ditt.Den forlater aldri enheten din.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Frakoblet lagring:</strong> Ditt krypterte hvelv er lagret i nettleserens LocalStorage.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Eksporterbar:</strong> Du kan eksportere/sikkerhetskopiere de råkrypterte dataene dine når som helst.</li>",
       "block_7": "Slutt å stole på skyen med hovednøklene dine.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Prøv Local Password Manager</a> i dag."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[no] Configuration",
+    "rowCount": "[no] Row Count",
+    "format": "[no] Output Format",
+    "generate": "[no] Generate Data",
+    "fields": "[no] Fields",
+    "preview": "[no] Data Preview",
+    "copy": "[no] Copy to Clipboard",
+    "download": "[no] Download File",
+    "copied": "[no] Data copied to clipboard!",
+    "placeholder": "[no] Generate data to see preview...",
+    "name": "[no] Mock Data Generator",
+    "description": "[no] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[no] Community Credit",
+    "inspiredBy": "[no] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[no] This tool was inspired by an app developed by",
+    "checkOut": "[no] Check out",
+    "thanks": "[no] Thanks for helping make DailyDevTools better ❤️"
   }
 }

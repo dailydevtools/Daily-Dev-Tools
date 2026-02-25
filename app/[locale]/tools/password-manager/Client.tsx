@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Plus, Trash2, Key, Eye, EyeOff, Lock, Copy, Search, LogOut } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import { useConfirmDialog } from "../../../components/ui/ConfirmDialog";
 
 // --- Crypto Helpers ---
 async function deriveKey(password: string) {
@@ -61,6 +62,7 @@ import CreditCard from "../../../components/CreditCard";
 export default function PasswordManagerClient() {
     // ... (keep state and hooks: t, masterKey, isUnlocked, hasVault, passwordInput, error, loading, accounts, search, viewMode)
     const t = useTranslations('PasswordManager');
+    const { confirm } = useConfirmDialog();
     const [masterKey, setMasterKey] = useState<CryptoKey | null>(null);
     const [isUnlocked, setIsUnlocked] = useState(false);
     const [hasVault, setHasVault] = useState(false);
@@ -125,9 +127,15 @@ export default function PasswordManagerClient() {
         setViewMode("list");
     };
 
-    const deleteAccount = (id: string) => {
+    const deleteAccount = async (id: string) => {
         if (!masterKey) return;
-        if (!confirm("Are you sure?")) return;
+        if (!await confirm({
+            title: t('deleteAccount') || "Delete Account",
+            description: t('deleteAccountConfirm') || "Are you sure you want to delete this account?",
+            variant: "danger",
+            confirmText: t('delete') || "Delete",
+            cancelText: t('cancel') || "Cancel"
+        })) return;
         const updated = accounts.filter(a => a.id !== id);
         setAccounts(updated);
         saveVault(updated, masterKey);

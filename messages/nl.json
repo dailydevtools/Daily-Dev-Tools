@@ -58,7 +58,9 @@
     "cta": {
       "title": "Klaar om je productiviteit te verhogen?",
       "text": "Begin gratis met het gebruik van onze ontwikkelaarstools. Geen registratie vereist, geen gegevensverzameling.",
-      "button": "Start Gratis"
+      "button": "Start Gratis",
+      "feedbackText": "[nl] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[nl] Share Feedback"
     },
     "openTool": "Gereedschap openen",
     "noResults": "Geen tools gevonden die overeenkomen met",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Mooie afdruk-URL",
       "description": "Formatteer en verfraai URL's voor leesbaarheid"
+    },
+    "mock-data-generator": {
+      "name": "[nl] Mock Data Generator",
+      "description": "[nl] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[nl] Online Code Editor",
+      "description": "[nl] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Berekenen",
       "convert": "Overzetten",
       "validate": "Valideer",
-      "resultPlaceholder": "Het resultaat verschijnt hier..."
+      "resultPlaceholder": "Het resultaat verschijnt hier...",
+      "swap": "[nl] Swap"
     },
     "Base64Encoder": {
       "encode": "Coderen",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "Editor",
       "preview": "Voorbeeld",
-      "inputPlaceholder": "Voer hier Markdown in..."
+      "inputPlaceholder": "Voer hier Markdown in...",
+      "inputLabel": "[nl] Editor",
+      "previewLabel": "[nl] Live Preview"
     },
     "TextDiff": {
       "original": "Originele tekst",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "Paragrafen",
       "generate": "Genereer",
-      "copy": "Kopiëren"
+      "copy": "Kopiëren",
+      "copyText": "[nl] Copy Text"
     },
     "GradientGenerator": {
       "angle": "Hoek",
@@ -946,7 +960,9 @@
       "jsonInput": "JSON-invoer",
       "csvInput": "CSV-invoer",
       "jsonOutput": "JSON-uitvoer",
-      "csvOutput": "CSV-uitvoer"
+      "csvOutput": "CSV-uitvoer",
+      "minifyOutput": "[nl] Minify Output",
+      "parseNumbers": "[nl] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Originele JSON",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "Huidig ​​weeknummer",
       "yearProgress": "Jaar vooruitgang",
-      "week": "Week"
+      "week": "Week",
+      "weekNumber": "[nl] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefoonnummer",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "Formaat",
       "copy": "Kopiëren"
+    },
+    "CodeEditor": {
+      "language": "[nl] Language",
+      "theme": "[nl] Theme",
+      "fontSize": "[nl] Font Size",
+      "minimap": "[nl] Minimap",
+      "run": "[nl] Run",
+      "running": "[nl] Running...",
+      "output": "[nl] Output",
+      "clearOutput": "[nl] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "Handtekeningen worden lokaal in uw browser verwerkt. Wij slaan ze niet op en uploaden ze niet."
   },
   "MarkdownEditor": {
-    "previewLabel": "Live voorbeeld"
+    "previewLabel": "Live voorbeeld",
+    "inputLabel": "[nl] Editor",
+    "inputPlaceholder": "[nl] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Dienstbedrag (N)",
@@ -1812,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Geen kennis:</strong> We zien je wachtwoord nooit.Het verlaat uw apparaat nooit.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline opslag:</strong> uw gecodeerde kluis wordt opgeslagen in de LocalStorage van uw browser.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exporteerbaar:</strong> u kunt uw onbewerkte gecodeerde gegevens op elk gewenst moment exporteren/back-uppen.</li>",
       "block_7": "Vertrouw niet langer op de cloud met uw hoofdsleutels.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Probeer de lokale wachtwoordbeheerder</a> vandaag nog."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[nl] Configuration",
+    "rowCount": "[nl] Row Count",
+    "format": "[nl] Output Format",
+    "generate": "[nl] Generate Data",
+    "fields": "[nl] Fields",
+    "preview": "[nl] Data Preview",
+    "copy": "[nl] Copy to Clipboard",
+    "download": "[nl] Download File",
+    "copied": "[nl] Data copied to clipboard!",
+    "placeholder": "[nl] Generate data to see preview...",
+    "name": "[nl] Mock Data Generator",
+    "description": "[nl] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[nl] Community Credit",
+    "inspiredBy": "[nl] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[nl] This tool was inspired by an app developed by",
+    "checkOut": "[nl] Check out",
+    "thanks": "[nl] Thanks for helping make DailyDevTools better ❤️"
   }
 }

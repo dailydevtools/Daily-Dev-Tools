@@ -49,9 +49,19 @@ next-env.d.ts
 *.swp
 *.swo
 *~
+# node_modules
+**/node_modules/
+
+# build artifacts
+**/dist/
+**/build/
+*.zip
+
+# temporary/personal files
 scripts/
 ops.sh
 update_tools.sh
 temp_metadata.tsx
 __pycache__/
 ROADMAP_AND_STRATEGY.md
+social_media_assets/

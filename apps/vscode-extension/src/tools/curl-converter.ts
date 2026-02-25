@@ -1,0 +1,35 @@
+import { ITool, ToolInput, ToolOutput, ToolCategory } from '../types/tool';
+
+/**
+ * Simplified CURL to Language Converter for MVP.
+ * In a full implementation, we would use curlconverter library.
+ * For now, this serves as a placeholder/modular example.
+ */
+export class CurlConverterTool implements ITool {
+    readonly id = 'curl-converter';
+    readonly name = 'CURL → Language Converter';
+    readonly description = 'Convert CURL commands to various programming languages.';
+    readonly category: ToolCategory = 'Transformation';
+
+    async execute(input: ToolInput): Promise<ToolOutput> {
+        const text = input.text.trim();
+        if (!text.toLowerCase().startsWith('curl')) {
+            return { success: false, value: text, error: 'Input does not look like a CURL command.' };
+        }
+
+        // Mock conversion logic for demonstration of the modularity
+        // A real implementation would involve importing 'curlconverter'
+        try {
+            const urlMatch = text.match(/'(https?:\/\/[^']+)'/) || text.match(/"(https?:\/\/[^"]+)"/);
+            const url = urlMatch ? urlMatch[1] : 'http://example.com';
+
+            const pythonCode = `import requests\n\nresponse = requests.get('${url}')\nprint(response.json())`;
+            const jsCode = `fetch('${url}')\n  .then(res => res.json())\n  .then(console.log);`;
+
+            const result = `// Python (Requests)\n${pythonCode}\n\n// JavaScript (Fetch)\n${jsCode}`;
+            return { success: true, value: result };
+        } catch (error: any) {
+            return { success: false, value: text, error: `Conversion Error: ${error.message}` };
+        }
+    }
+}

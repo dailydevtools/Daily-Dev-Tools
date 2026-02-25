@@ -30,7 +30,7 @@ export async function constructToolMetadata({
         : rawDescription;
 
     const title = `${name} | DailyDevTools`;
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/tools/${toolId}`;
 
     // Construct Dynamic OG Image URL with parameters

@@ -5,7 +5,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     const { locale } = await params;
     const title = 'About DailyDevTools - Our Mission';
     const description = 'Learn about DailyDevTools and our mission to build fast, private, and free developer tools that run entirely in your browser.';
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/about`;
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);

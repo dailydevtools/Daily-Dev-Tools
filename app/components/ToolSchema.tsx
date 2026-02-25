@@ -24,7 +24,7 @@ export default function ToolSchema({ name, description, url, category }: ToolSch
         "provider": {
             "@type": "Organization",
             "name": "DailyDevTools",
-            "url": "https://dailydev.tools"
+            "url": "https://www.dailydev.tools"
         }
     };
 

@@ -58,7 +58,9 @@
     "cta": {
       "title": "Jste připraveni zvýšit svou produktivitu?",
       "text": "Začněte používat naše vývojářské nástroje zdarma. Žádná registrace, žádný sběr dat.",
-      "button": "Začít Zdarma"
+      "button": "Začít Zdarma",
+      "feedbackText": "[cs] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[cs] Share Feedback"
     },
     "openTool": "Otevřít nástroj",
     "noResults": "Nebyly nalezeny žádné nástroje odpovídající",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "Pěkná tisková adresa URL",
       "description": "Formátování a zkrášlování URL pro lepší čitelnost"
+    },
+    "mock-data-generator": {
+      "name": "[cs] Mock Data Generator",
+      "description": "[cs] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[cs] Online Code Editor",
+      "description": "[cs] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "Vypočítat",
       "convert": "Převést",
       "validate": "Ověřit",
-      "resultPlaceholder": "Výsledek se zobrazí zde..."
+      "resultPlaceholder": "Výsledek se zobrazí zde...",
+      "swap": "[cs] Swap"
     },
     "Base64Encoder": {
       "encode": "Kódovat",
@@ -660,7 +671,8 @@
     "LoremIpsum": {
       "paragraphs": "Odstavce",
       "generate": "Generovat",
-      "copy": "Kopírovat"
+      "copy": "Kopírovat",
+      "copyText": "[cs] Copy Text"
     },
     "AgeCalculator": {
       "birthDate": "Datum narození",
@@ -904,7 +916,9 @@
       "jsonInput": "Vstup JSON",
       "csvInput": "Vstup CSV",
       "jsonOutput": "Výstup JSON",
-      "csvOutput": "Výstup CSV"
+      "csvOutput": "Výstup CSV",
+      "minifyOutput": "[cs] Minify Output",
+      "parseNumbers": "[cs] Parse Numbers"
     },
     "JsonDiff": {
       "original": "Původní JSON",
@@ -1253,7 +1267,8 @@
       "currentWeek": "Aktuální číslo týdne",
       "yearProgress": "Průběh roku",
       "week": "Týden",
-      "checkLabel": "Zkontrolovat číslo týdne pro datum"
+      "checkLabel": "Zkontrolovat číslo týdne pro datum",
+      "weekNumber": "[cs] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "Telefonní číslo",
@@ -1553,7 +1568,8 @@
       "previewLabel": "Živý náhled",
       "editor": "Editor",
       "preview": "Náhled",
-      "inputPlaceholder": "Zde zadejte Markdown..."
+      "inputPlaceholder": "Zde zadejte Markdown...",
+      "inputLabel": "[cs] Editor"
     },
     "CipherTools": {
       "shiftAmount": "Hodnota posunu (N)",
@@ -1611,6 +1627,16 @@
       "celsius": "Celsius",
       "fahrenheit": "Fahrenheit",
       "kelvin": "Kelvin"
+    },
+    "CodeEditor": {
+      "language": "[cs] Language",
+      "theme": "[cs] Theme",
+      "fontSize": "[cs] Font Size",
+      "minimap": "[cs] Minimap",
+      "run": "[cs] Run",
+      "running": "[cs] Running...",
+      "output": "[cs] Output",
+      "clearOutput": "[cs] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1977,7 +2003,9 @@
     "note": "Podpisy jsou zpracovávány lokálně ve vašem prohlížeči. Neukládáme je ani nenahráváme."
   },
   "MarkdownEditor": {
-    "previewLabel": "Živý náhled"
+    "previewLabel": "Živý náhled",
+    "inputLabel": "[cs] Editor",
+    "inputPlaceholder": "[cs] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "Částka směny (N)",
@@ -2086,7 +2114,9 @@
       "block_2": "Minuta, hodina, den v měsíci, měsíc, den v týdnu.To je vše.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n\n<h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Příklady</h3>\n<p class=\"mb-6 text-[var(--foreground)]\">Spouštět každý den o půlnoci: <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] border border-[var(--border-color) */ *]\">0\n<p class=\"mb-6 text-[var(--foreground)]\">Spouštět každých 15 minut: <code class=\"bg-[var(--card-hover-bg)] px-1,5 py-0,5 zaoblené písmo-mono text-[0,9em] text-[#fb923c] border border-[var(--/15 *)]\">*\n\n<p class=\"mb-6 text-[var(--foreground)]\">Potřebujete pomoc?K vizuální tvorbě výrazů použijte náš <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a>.",
       "block_4": "* * * * * command_to_run",
-      "block_5": "Příklady"
+      "block_5": "Příklady",
+      "block_6": "[cs] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[cs] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "Problém s cloudovými trezory",
@@ -2097,5 +2127,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Nulové znalosti:</strong> Vaše heslo nikdy nevidíme.Nikdy neopustí vaše zařízení.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline úložiště:</strong> Váš šifrovaný trezor je uložen v LocalStorage vašeho prohlížeče.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportovatelné:</strong> Nezpracovaná zašifrovaná data můžete kdykoli exportovat/zálohovat.</li>",
       "block_7": "Přestaňte důvěřovat cloudu svými hlavními klíči.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Vyzkoušejte místního správce hesel</a> ještě dnes."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[cs] Configuration",
+    "rowCount": "[cs] Row Count",
+    "format": "[cs] Output Format",
+    "generate": "[cs] Generate Data",
+    "fields": "[cs] Fields",
+    "preview": "[cs] Data Preview",
+    "copy": "[cs] Copy to Clipboard",
+    "download": "[cs] Download File",
+    "copied": "[cs] Data copied to clipboard!",
+    "placeholder": "[cs] Generate data to see preview...",
+    "name": "[cs] Mock Data Generator",
+    "description": "[cs] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[cs] Community Credit",
+    "inspiredBy": "[cs] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[cs] This tool was inspired by an app developed by",
+    "checkOut": "[cs] Check out",
+    "thanks": "[cs] Thanks for helping make DailyDevTools better ❤️"
   }
 }

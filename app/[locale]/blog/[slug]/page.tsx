@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props) {
     const post = blogPosts.find((p) => p.slug === slug);
     if (!post) return { title: 'Post Not Found' };
 
-    const siteUrl = 'https://dailydev.tools';
+    const siteUrl = 'https://www.dailydev.tools';
     const canonical = `${siteUrl}/${locale}/blog/${post.slug}`;
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
@@ -88,7 +88,7 @@ export default async function BlogPost({ params }: Props) {
             <BlogSchema
                 title={localizedTitle}
                 description={localizedExcerpt}
-                url={`https://dailydev.tools/blog/${post.slug}`}
+                url={`https://www.dailydev.tools/blog/${post.slug}`}
                 datePublished={post.date}
             />
             <Link

@@ -9,7 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function QrGeneratorClient() {
-    const [text, setText] = useState("https://dailydev.tools");
+    const [text, setText] = useState("https://www.dailydev.tools");
     const [qrDataUrl, setQrDataUrl] = useState("");
     const [color, setColor] = useState("#000000");
     const [bg, setBg] = useState("#ffffff");

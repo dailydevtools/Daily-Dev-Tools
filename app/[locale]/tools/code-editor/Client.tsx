@@ -1,8 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import dynamic from "next/dynamic";
-const Editor = dynamic(() => import("@monaco-editor/react"), { ssr: false });
+import CodeEditor from "../../../components/CodeEditor";
 import { Copy, Check, Download, Upload, Trash2, Code2, Settings, Play, Terminal, X } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
@@ -248,7 +247,7 @@ export default function CodeEditorClient() {
                     <div className={`grid gap-4 h-[75vh] ${output !== null ? 'grid-rows-[1fr_auto] lg:grid-rows-1 lg:grid-cols-2' : 'grid-rows-1'}`}>
                         {/* Editor */}
                         <div className={`rounded-[20px] overflow-hidden border border-[var(--card-border)] shadow-2xl ${theme === 'vs-dark' ? 'bg-[#1e1e1e]' : 'bg-white'}`}>
-                            <Editor
+                            <CodeEditor
                                 height="100%"
                                 language={language}
                                 theme={theme}

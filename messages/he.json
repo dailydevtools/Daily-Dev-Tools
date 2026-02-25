@@ -58,7 +58,9 @@
     "cta": {
       "title": "מוכן להגביר את הפרודוקטיביות שלך?",
       "text": "התחל להשתמש בכלי המפתחים שלנו בחינם. אין צורך בהרשמה, אין איסוף נתונים.",
-      "button": "התחל בחינם"
+      "button": "התחל בחינם",
+      "feedbackText": "[he] Have an idea or found a bug? Your feedback drives what we build next.",
+      "feedbackButton": "[he] Share Feedback"
     },
     "openTool": "פתח כלי",
     "noResults": "לא נמצאו כלים התואמים ל-",
@@ -440,6 +442,14 @@
     "pretty-print-url": {
       "name": "כתובת אתר מודפסת יפה",
       "description": "עיצוב ולייפות כתובות אתרים לקריאות"
+    },
+    "mock-data-generator": {
+      "name": "[he] Mock Data Generator",
+      "description": "[he] Generate random JSON/CSV data"
+    },
+    "code-editor": {
+      "name": "[he] Online Code Editor",
+      "description": "[he] Write, edit, and format code with syntax highlighting"
     }
   },
   "Terms": {
@@ -533,7 +543,8 @@
       "calculate": "לְחַשֵׁב",
       "convert": "לְהַמִיר",
       "validate": "לְאַמֵת",
-      "resultPlaceholder": "התוצאה תופיע כאן..."
+      "resultPlaceholder": "התוצאה תופיע כאן...",
+      "swap": "[he] Swap"
     },
     "Base64Encoder": {
       "encode": "לְהַצְפִּין",
@@ -650,7 +661,9 @@
     "MarkdownEditor": {
       "editor": "עוֹרֵך",
       "preview": "תצוגה מקדימה",
-      "inputPlaceholder": "היכנסו ל-Markdown כאן..."
+      "inputPlaceholder": "היכנסו ל-Markdown כאן...",
+      "inputLabel": "[he] Editor",
+      "previewLabel": "[he] Live Preview"
     },
     "TextDiff": {
       "original": "טקסט מקורי",
@@ -673,7 +686,8 @@
     "LoremIpsum": {
       "paragraphs": "פסקאות",
       "generate": "לִיצוֹר",
-      "copy": "לְהַעְתִיק"
+      "copy": "לְהַעְתִיק",
+      "copyText": "[he] Copy Text"
     },
     "GradientGenerator": {
       "angle": "זָוִית",
@@ -946,7 +960,9 @@
       "jsonInput": "קלט JSON",
       "csvInput": "קלט CSV",
       "jsonOutput": "פלט JSON",
-      "csvOutput": "פלט CSV"
+      "csvOutput": "פלט CSV",
+      "minifyOutput": "[he] Minify Output",
+      "parseNumbers": "[he] Parse Numbers"
     },
     "JsonDiff": {
       "original": "JSON מקורי",
@@ -1216,7 +1232,8 @@
     "WeekNumber": {
       "currentWeek": "מספר שבוע נוכחי",
       "yearProgress": "התקדמות שנה",
-      "week": "שָׁבוּעַ"
+      "week": "שָׁבוּעַ",
+      "weekNumber": "[he] Week Number"
     },
     "WhatsappLink": {
       "phoneNumber": "מספר טלפון",
@@ -1324,6 +1341,16 @@
       "inputPlaceholder": "https://example.com/path?param=value&other=123",
       "format": "פוּרמָט",
       "copy": "לְהַעְתִיק"
+    },
+    "CodeEditor": {
+      "language": "[he] Language",
+      "theme": "[he] Theme",
+      "fontSize": "[he] Font Size",
+      "minimap": "[he] Minimap",
+      "run": "[he] Run",
+      "running": "[he] Running...",
+      "output": "[he] Output",
+      "clearOutput": "[he] Clear Output"
     }
   },
   "BlogPosts": {
@@ -1690,7 +1717,9 @@
     "note": "החתימות מעובדות באופן מקומי בדפדפן שלך. אנחנו לא מאחסנים או מעלים אותם."
   },
   "MarkdownEditor": {
-    "previewLabel": "תצוגה מקדימה חיה"
+    "previewLabel": "תצוגה מקדימה חיה",
+    "inputLabel": "[he] Editor",
+    "inputPlaceholder": "[he] Type your markdown here..."
   },
   "CipherTools": {
     "shiftAmount": "כמות משמרת (N)",
@@ -1799,7 +1828,9 @@
       "block_2": "דקה, שעה, יום בחודש, חודש, יום בשבוע.זה כל מה שזה.",
       "block_3": "<code class=\"bg-transparent p-0 text-[var(--foreground)] border-none\">* * * * * command_to_run</code></pre>\n      \n      <h3 class=\"text-[22px] font-semibold text-[var(--title-color)] mt-8 mb-4\">Examples</h3>\n      <p class=\"mb-6 text-[var(--foreground)]\">Run every day at midnight: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">0 0 * * *</code>",
       "block_4": "דוגמאות",
-      "block_5": "זקוק לעזרה?השתמש ב<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> שלנו כדי לבנות ביטויים בצורה ויזואלית."
+      "block_5": "זקוק לעזרה?השתמש ב<a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> שלנו כדי לבנות ביטויים בצורה ויזואלית.",
+      "block_6": "[he] Run every 15 minutes: <code class=\"bg-[var(--card-hover-bg)] px-1.5 py-0.5 rounded font-mono text-[0.9em] text-[#fb923c] border border-[var(--border-color)]\">*/15 * * * *</code>",
+      "block_7": "[he] Need help? Use our <a href=\"/tools/cron-generator\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Cron Generator</a> to build expressions visually."
     },
     "secure-password-storage-local": {
       "block_1": "הבעיה עם כספות בענן",
@@ -1810,5 +1841,26 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">אפס ידע:</strong> לעולם איננו רואים את הסיסמה שלך.זה אף פעם לא עוזב את המכשיר שלך.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">אחסון לא מקוון:</strong> הכספת המוצפנת שלך מאוחסנת ב-LocalStorage של הדפדפן שלך.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">ניתן לייצוא:</strong> תוכל לייצא/לגבות את הנתונים המוצפנים הגולמיים שלך בכל עת.</li>",
       "block_7": "הפסק לסמוך על המפתחות הראשיים שלך בענן.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">נסה את מנהל הסיסמאות המקומי</a> היום."
     }
+  },
+  "MockDataGenerator": {
+    "settings": "[he] Configuration",
+    "rowCount": "[he] Row Count",
+    "format": "[he] Output Format",
+    "generate": "[he] Generate Data",
+    "fields": "[he] Fields",
+    "preview": "[he] Data Preview",
+    "copy": "[he] Copy to Clipboard",
+    "download": "[he] Download File",
+    "copied": "[he] Data copied to clipboard!",
+    "placeholder": "[he] Generate data to see preview...",
+    "name": "[he] Mock Data Generator",
+    "description": "[he] Generate random JSON or CSV data for testing purposes with custom schema."
+  },
+  "Credit": {
+    "title": "[he] Community Credit",
+    "inspiredBy": "[he] This tool was inspired by a suggestion from",
+    "inspiredByApp": "[he] This tool was inspired by an app developed by",
+    "checkOut": "[he] Check out",
+    "thanks": "[he] Thanks for helping make DailyDevTools better ❤️"
   }
 }

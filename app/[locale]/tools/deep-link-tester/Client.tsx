@@ -5,6 +5,7 @@ import { QrCode, Save, Trash2, Play, Search, Link as LinkIcon } from "lucide-rea
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 import LiquidTabs from "../../../components/ui/LiquidTabs";
+import { useConfirmDialog } from "../../../components/ui/ConfirmDialog";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
@@ -20,6 +21,7 @@ interface DeepLink {
 export default function DeepLinkTesterClient() {
     const t = useTranslations('ToolPage');
     const tTools = useTranslations('Tools');
+    const { confirm, alert } = useConfirmDialog();
     const [uri, setUri] = useState("");
     const [links, setLinks] = useState<DeepLink[]>([]);
     const [activeTab, setActiveTab] = useState<"test" | "saved">("test");
@@ -55,7 +57,7 @@ export default function DeepLinkTesterClient() {
         window.open(target, '_blank');
     };
 
-    const handleSave = () => {
+    const handleSave = async () => {
         if (!uri) return;
         const label = prompt(t('DeepLinkTester.enterLabel'));
         if (!label) return;
@@ -69,11 +71,22 @@ export default function DeepLinkTesterClient() {
             lastUsed: Date.now()
         };
         saveLinks([newLink, ...links]);
-        alert(t('DeepLinkTester.saved'));
+        await alert({
+            title: t('DeepLinkTester.savedTitle') || "Saved",
+            description: t('DeepLinkTester.saved'),
+            variant: "success",
+            confirmText: "OK"
+        });
     };
 
-    const handleDelete = (id: string) => {
-        if (!confirm(t('DeepLinkTester.confirmDelete'))) return;
+    const handleDelete = async (id: string) => {
+        if (!await confirm({
+            title: t('DeepLinkTester.deleteLink') || "Delete Link",
+            description: t('DeepLinkTester.confirmDelete'),
+            variant: "danger",
+            confirmText: "Delete",
+            cancelText: "Cancel"
+        })) return;
         saveLinks(links.filter(l => l.id !== id));
     };
 
