@@ -160,6 +160,8 @@
       "feedbackText": "Have an idea or found a bug? Your feedback drives what we build next.",
       "feedbackButton": "Share Feedback"
     },
+    "exploreButton": "Explore Tools",
+    "starOnGithub": "Star on GitHub",
     "openTool": "Open tool",
     "noResults": "No tools found matching",
     "clearFilters": "Clear filters"
@@ -1326,7 +1328,6 @@
       "reset": "Reset",
       "lap": "Lap"
     },
-
     "SvgToPng": {
       "pasteSvg": "Paste SVG",
       "uploadSvg": "Upload SVG",
@@ -1609,7 +1610,6 @@
     "subtitle": "Explore other popular developer tools",
     "openTool": "Open Tool"
   },
-
   "SvgToPng": {
     "upload": "Upload SVG File",
     "browse": "or click to browse",

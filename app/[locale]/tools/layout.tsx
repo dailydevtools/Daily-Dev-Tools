@@ -21,10 +21,10 @@ export default function ToolsLayout({
             <div className="flex-1 flex pt-24"> {/* Add padding for fixed header */}
 
                 {/* Left Sidebar Ad */}
-                <aside className="hidden xl:hidden min-[1400px]:flex w-[160px] shrink-0 pt-[120px] h-screen sticky top-0 flex-col items-center border-r border-[var(--border-color)]">
-                    {/* <AdUnit slot="sidebar_left" className="h-[600px]" />
+                {/* <aside className="hidden xl:hidden min-[1400px]:flex w-[160px] shrink-0 pt-[120px] h-screen sticky top-0 flex-col items-center border-r border-[var(--border-color)]"> */}
+                {/* <AdUnit slot="sidebar_left" className="h-[600px]" />
                     <div className="text-[10px] text-[#374151] mt-3 text-center">Ad Space</div> */}
-                </aside>
+                {/* </aside> */}
 
                 {/* Tool Content */}
                 <main className="flex-1 min-w-0 flex flex-col">
@@ -45,10 +45,10 @@ export default function ToolsLayout({
                 </main>
 
                 {/* Right Sidebar Ad */}
-                <aside className="hidden xl:hidden min-[1400px]:flex w-[160px] shrink-0 pt-[120px] h-screen sticky top-0 flex-col items-center border-l border-[var(--border-color)]">
-                    {/* <AdUnit slot="sidebar_right" className="h-[600px]" />
+                {/* <aside className="hidden xl:hidden min-[1400px]:flex w-[160px] shrink-0 pt-[120px] h-screen sticky top-0 flex-col items-center border-l border-[var(--border-color)]"> */}
+                {/* <AdUnit slot="sidebar_right" className="h-[600px]" />
                     <div className="text-[10px] text-[#374151] mt-3 text-center">Ad Space</div> */}
-                </aside>
+                {/* </aside> */}
 
             </div>
 
