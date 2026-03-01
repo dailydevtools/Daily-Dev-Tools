@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Copy, Database, ArrowDown } from "lucide-react";
 import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function SqlToJsonClient() {
     const t = useTranslations('SqlToJson');
@@ -81,11 +82,14 @@ export default function SqlToJsonClient() {
                             <span>{t('inputLabel')}</span>
                             <Database size={14} />
                         </div>
-                        <textarea
-                            value={input} onChange={e => setInput(e.target.value)}
-                            placeholder="INSERT INTO users (id, name, age) VALUES (1, 'John', 30);"
-                            className="w-full h-[200px] bg-transparent border-none p-5 text-white font-mono resize-y outline-none"
-                        />
+                        <div className="flex-1 h-[300px] relative">
+                            <CodeEditor
+                                language="sql"
+                                value={input}
+                                onChange={(val) => setInput(val || "")}
+                                className="border-none !bg-transparent rounded-none rounded-b-[20px]"
+                            />
+                        </div>
                     </div>
 
                     <div className="text-center mb-6">
@@ -100,12 +104,15 @@ export default function SqlToJsonClient() {
                         <div className="p-3 bg-white/5 text-[#9ca3af] text-[13px] border-b border-white/5">
                             {t('outputLabel')}
                         </div>
-                        <textarea
-                            readOnly
-                            value={output}
-                            className="w-full h-[300px] bg-transparent border-none p-5 text-[#a5b4fc] font-mono resize-y outline-none"
-                        />
-                        <button onClick={() => navigator.clipboard.writeText(output)} className="absolute top-12 right-3 inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-2">
+                        <div className="flex-1 h-[400px] relative">
+                            <CodeEditor
+                                language="json"
+                                value={output}
+                                options={{ readOnly: true }}
+                                className="border-none !bg-transparent rounded-none rounded-b-[20px]"
+                            />
+                        </div>
+                        <button onClick={() => navigator.clipboard.writeText(output)} className="absolute top-12 right-6 z-10 inline-flex items-center justify-center gap-2 bg-transparent text-[var(--muted-text)] font-medium text-sm px-6 py-3 rounded-[10px] border border-[var(--border-color)] cursor-pointer transition-all duration-300 no-underline hover:bg-[var(--card-hover-bg)] hover:border-[var(--orange-400)] hover:text-[var(--title-color)] p-2 bg-[var(--card-bg)]">
                             <Copy size={16} />
                         </button>
                     </div>

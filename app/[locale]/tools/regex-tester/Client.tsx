@@ -7,6 +7,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
+import CodeEditor from "../../../components/CodeEditor";
 
 
 export default function RegexTesterClient() {
@@ -151,13 +152,15 @@ export default function RegexTesterClient() {
                                     </div>
                                     <span className="text-xs text-[var(--muted-text)] font-mono">{text.length} chars</span>
                                 </div>
-                                <textarea
-                                    value={text}
-                                    onChange={(e) => setText(e.target.value)}
-                                    placeholder={t('RegexTester.testStringPlaceholder')}
-                                    className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[14px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
-                                    spellCheck={false}
-                                />
+                                <div className="flex-1 w-full relative bg-transparent">
+                                    <CodeEditor
+                                        language="plaintext"
+                                        value={text}
+                                        onChange={(val) => setText(val || "")}
+                                        className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                        options={{ wordWrap: 'on' }}
+                                    />
+                                </div>
                             </LiquidCard>
                         </div>
 

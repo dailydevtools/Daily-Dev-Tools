@@ -14,6 +14,7 @@ interface DiffLine {
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function JsonDiffClient() {
     const t = useTranslations('ToolPage');
@@ -77,26 +78,32 @@ export default function JsonDiffClient() {
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all h-[400px]">
                             <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
                                 {t('JsonDiff.original')}
                             </div>
-                            <textarea
-                                value={left} onChange={e => setLeft(e.target.value)}
-                                placeholder='{"a": 1}'
-                                className="flex-1 min-h-[300px] bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-y outline-none text-sm leading-relaxed"
-                            />
+                            <div className="flex-1 min-h-[300px] relative w-full h-full">
+                                <CodeEditor
+                                    language="json"
+                                    value={left}
+                                    onChange={(val) => setLeft(val || "")}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
 
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all h-[400px]">
                             <div className="py-3 px-5 border-b border-[var(--border-color)] bg-neutral-100/50 dark:bg-white/5 text-[var(--muted-text)] text-xs font-medium uppercase tracking-wider">
                                 {t('JsonDiff.modified')}
                             </div>
-                            <textarea
-                                value={right} onChange={e => setRight(e.target.value)}
-                                placeholder='{"a": 2}'
-                                className="flex-1 min-h-[300px] bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-y outline-none text-sm leading-relaxed"
-                            />
+                            <div className="flex-1 min-h-[300px] relative w-full h-full">
+                                <CodeEditor
+                                    language="json"
+                                    value={right}
+                                    onChange={(val) => setRight(val || "")}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
                     </div>
 

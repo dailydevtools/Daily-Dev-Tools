@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 import LiquidTabs from "../../../components/ui/LiquidTabs";
 import { LiquidCheckbox } from "../../../components/ui/LiquidCheckbox";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function JsonCsvConverterClient() {
     const t = useTranslations('ToolPage');
@@ -118,12 +119,14 @@ export default function JsonCsvConverterClient() {
                                     <button onClick={() => navigator.clipboard.readText().then(t => setInput(t))} className="text-orange-500 hover:text-orange-400 transition-colors px-2 py-1 font-medium bg-orange-500/10 rounded">{t('common.paste')}</button>
                                 </div>
                             </div>
-                            <textarea
-                                value={input}
-                                onChange={e => setInput(e.target.value)}
-                                placeholder={mode === 'json-to-csv' ? '[{"name": "John", "age": 30}]' : 'name,age\nJohn,30'}
-                                className="flex-1 w-full bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-none outline-none text-sm leading-relaxed"
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language={mode === 'json-to-csv' ? 'json' : 'plaintext'}
+                                    value={input}
+                                    onChange={(val) => setInput(val || "")}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
 
                         <div className="flex flex-col gap-3">
@@ -140,11 +143,14 @@ export default function JsonCsvConverterClient() {
                                     <button onClick={copy} className="text-orange-500 hover:text-orange-400 transition-colors px-2 py-1 font-medium bg-orange-500/10 rounded">{t('common.copy')}</button>
                                 </div>
                             </div>
-                            <textarea
-                                readOnly
-                                value={output}
-                                className="flex-1 w-full bg-transparent border-none p-5 text-[var(--foreground)] font-mono resize-none outline-none text-sm leading-relaxed"
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language={mode === 'json-to-csv' ? 'plaintext' : 'json'}
+                                    value={output}
+                                    options={{ readOnly: true }}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
                     </div>
 
