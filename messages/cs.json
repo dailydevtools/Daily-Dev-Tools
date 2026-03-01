@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Licence k použití",
         "content": "DailyDevTools je zdarma k použití pro osobní i komerční účely. Nesmíte:",
-        "list": {
-          "0": "Pokoušet se o zpětné inženýrství nebo stahování významných částí webu.",
-          "1": "Používat web způsobem, který způsobuje nebo může způsobit poškození webu nebo narušení jeho dostupnosti."
-        }
+        "list": [
+          "Pokoušet se o zpětné inženýrství nebo stahování významných částí webu.",
+          "Používat web způsobem, který způsobuje nebo může způsobit poškození webu nebo narušení jeho dostupnosti."
+        ]
       },
       "disclaimer": {
         "title": "3. Zřeknutí se odpovědnosti",

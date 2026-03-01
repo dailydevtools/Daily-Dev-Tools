@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Kullanım Lisansı",
         "content": "DailyDevTools kişisel ve ticari amaçlarla ücretsiz kullanılabilir. Yapamayacaklarınız:",
-        "list": {
-          "0": "Sitenin önemli bölümlerini tersine mühendislik yapmaya veya kazımaya çalışmak.",
-          "1": "Web sitesini, siteye zarar verebilecek veya erişilebilirliğini bozabilecek herhangi bir şekilde kullanmak."
-        }
+        "list": [
+          "Sitenin önemli bölümlerini tersine mühendislik yapmaya veya kazımaya çalışmak.",
+          "Web sitesini, siteye zarar verebilecek veya erişilebilirliğini bozabilecek herhangi bir şekilde kullanmak."
+        ]
       },
       "disclaimer": {
         "title": "3. Sorumluluk Reddi",

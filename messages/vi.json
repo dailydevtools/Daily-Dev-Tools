@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Giấy phép sử dụng",
         "content": "DailyDevTools được sử dụng miễn phí cho mục đích cá nhân và thương mại. Bạn có thể không:",
-        "list": {
-          "0": "Cố gắng đảo ngược kỹ thuật hoặc loại bỏ các phần quan trọng của trang web.",
-          "1": "Sử dụng trang web theo bất kỳ cách nào gây ra hoặc có thể gây ra thiệt hại cho trang web hoặc làm suy giảm tính khả dụng hoặc khả năng truy cập của trang web."
-        }
+        "list": [
+          "Cố gắng đảo ngược kỹ thuật hoặc loại bỏ các phần quan trọng của trang web.",
+          "Sử dụng trang web theo bất kỳ cách nào gây ra hoặc có thể gây ra thiệt hại cho trang web hoặc làm suy giảm tính khả dụng hoặc khả năng truy cập của trang web."
+        ]
       },
       "disclaimer": {
         "title": "3. Tuyên bố từ chối trách nhiệm",

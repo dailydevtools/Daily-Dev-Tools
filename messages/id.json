@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Gunakan Lisensi",
         "content": "DailyDevTools gratis digunakan untuk tujuan pribadi dan komersial. Anda tidak boleh:",
-        "list": {
-          "0": "Mencoba merekayasa balik atau mengikis sebagian besar situs.",
-          "1": "Menggunakan situs web dengan cara apa pun yang menyebabkan, atau dapat menyebabkan, kerusakan pada situs web atau penurunan ketersediaan atau aksesibilitas situs web."
-        }
+        "list": [
+          "Mencoba merekayasa balik atau mengikis sebagian besar situs.",
+          "Menggunakan situs web dengan cara apa pun yang menyebabkan, atau dapat menyebabkan, kerusakan pada situs web atau penurunan ketersediaan atau aksesibilitas situs web."
+        ]
       },
       "disclaimer": {
         "title": "3. Penafian",

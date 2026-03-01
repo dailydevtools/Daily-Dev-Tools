@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Usa la licenza",
         "content": "DailyDevTools può essere utilizzato gratuitamente per scopi personali e commerciali. Non puoi:",
-        "list": {
-          "0": "Tentare di decodificare o raschiare parti significative del sito.",
-          "1": "Utilizzare il sito Web in qualsiasi modo che causi, o possa causare, danni al sito Web o compromissione della disponibilità o dell'accessibilità del sito Web."
-        }
+        "list": [
+          "Tentare di decodificare o raschiare parti significative del sito.",
+          "Utilizzare il sito Web in qualsiasi modo che causi, o possa causare, danni al sito Web o compromissione della disponibilità o dell'accessibilità del sito Web."
+        ]
       },
       "disclaimer": {
         "title": "3. Dichiarazione di non responsabilità",

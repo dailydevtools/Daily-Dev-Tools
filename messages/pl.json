@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Skorzystaj z licencji",
         "content": "Z DailyDevTools można korzystać bezpłatnie do celów osobistych i komercyjnych. Nie możesz:",
-        "list": {
-          "0": "Spróbuj przeprowadzić inżynierię wsteczną lub usunąć znaczną część witryny.",
-          "1": "Korzystania z serwisu w sposób powodujący lub mogący spowodować uszkodzenie serwisu lub ograniczenie dostępności lub przystępności serwisu."
-        }
+        "list": [
+          "Spróbuj przeprowadzić inżynierię wsteczną lub usunąć znaczną część witryny.",
+          "Korzystania z serwisu w sposób powodujący lub mogący spowodować uszkodzenie serwisu lub ograniczenie dostępności lub przystępności serwisu."
+        ]
       },
       "disclaimer": {
         "title": "3. Zastrzeżenie",
