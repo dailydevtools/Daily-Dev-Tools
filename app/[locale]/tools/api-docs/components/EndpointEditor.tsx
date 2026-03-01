@@ -9,6 +9,7 @@ import LiquidSelect from "../../../../components/ui/LiquidSelect";
 import { APICollection, APIEndpoint, HTTPMethod, HeaderParam, QueryParam } from "../../../../lib/apiDocsTypes";
 import { parseCurl, isValidCurl } from "../../../../lib/curlParser";
 import { generateId } from "../../../../lib/apiDocsStorage";
+import CodeEditor from "../../../../components/CodeEditor";
 
 interface Props {
     endpoint: APIEndpoint | null;
@@ -179,12 +180,15 @@ export default function EndpointEditor({ endpoint, collection, onSave, onClose }
                                 <label className="block text-sm font-medium mb-2">
                                     {t('pasteCurl')}
                                 </label>
-                                <textarea
-                                    value={curlInput}
-                                    onChange={(e) => setCurlInput(e.target.value)}
-                                    placeholder="curl https://api.example.com/users -H 'Authorization: Bearer token'"
-                                    className="w-full h-48 px-4 py-3 text-sm font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-300 dark:border-neutral-700 rounded-xl resize-none outline-none focus:ring-2 focus:ring-purple-500/30"
-                                />
+                                <div className="w-full h-48 border border-neutral-300 dark:border-neutral-700 rounded-xl relative overflow-hidden focus-within:ring-2 focus-within:ring-purple-500/30">
+                                    <CodeEditor
+                                        language="shell"
+                                        value={curlInput}
+                                        onChange={(val) => setCurlInput(val || "")}
+                                        className="border-none !bg-transparent rounded-none"
+                                        options={{ padding: { top: 12, bottom: 12 }, fontSize: 13, wordWrap: 'on' }}
+                                    />
+                                </div>
                                 <p className="text-xs text-[var(--muted-text)] mt-2">
                                     {t('curlTip')}
                                 </p>
@@ -345,12 +349,15 @@ export default function EndpointEditor({ endpoint, collection, onSave, onClose }
                             {/* Request Body */}
                             <div>
                                 <label className="block text-sm font-medium mb-2">{t('requestBody')}</label>
-                                <textarea
-                                    value={requestBody}
-                                    onChange={(e) => setRequestBody(e.target.value)}
-                                    placeholder='{"key": "value"}'
-                                    className="w-full h-40 px-4 py-3 text-sm font-mono bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 border border-neutral-300 dark:border-neutral-700 rounded-xl resize-none outline-none focus:ring-2 focus:ring-purple-500/30"
-                                />
+                                <div className="w-full h-40 border border-neutral-300 dark:border-neutral-700 rounded-xl relative overflow-hidden focus-within:ring-2 focus-within:ring-purple-500/30">
+                                    <CodeEditor
+                                        language="json"
+                                        value={requestBody}
+                                        onChange={(val) => setRequestBody(val || "")}
+                                        className="border-none !bg-transparent rounded-none"
+                                        options={{ padding: { top: 12, bottom: 12 }, fontSize: 13, wordWrap: 'on' }}
+                                    />
+                                </div>
                             </div>
 
                             {error && (

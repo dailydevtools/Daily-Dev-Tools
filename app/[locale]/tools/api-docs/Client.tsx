@@ -18,6 +18,7 @@ import { parseCurl } from "../../../lib/curlParser";
 import CollectionEditor from "./components/CollectionEditor";
 import EndpointEditor from "./components/EndpointEditor";
 import DocumentationView from "./components/DocumentationView";
+import ImportModal from "./components/ImportModal";
 
 type View = 'list' | 'collection' | 'endpoint' | 'docs';
 
@@ -38,6 +39,7 @@ export default function APIDocsClient() {
     const [editingCollection, setEditingCollection] = useState<APICollection | null>(null);
     const [showEndpointModal, setShowEndpointModal] = useState(false);
     const [editingEndpoint, setEditingEndpoint] = useState<APIEndpoint | null>(null);
+    const [showImportModal, setShowImportModal] = useState(false);
 
     // Load collections on mount
     useEffect(() => {
@@ -67,6 +69,12 @@ export default function APIDocsClient() {
         if (activeCollection?.id === collection.id) {
             setActiveCollection(collection);
         }
+    };
+
+    const handleImportCollection = async (collection: APICollection) => {
+        await saveCollection(collection);
+        await loadCollections();
+        setShowImportModal(false);
     };
 
     const handleDeleteCollection = async (id: string) => {
@@ -212,6 +220,13 @@ export default function APIDocsClient() {
                                     />
                                 </div>
                                 <LiquidButton
+                                    onClick={() => setShowImportModal(true)}
+                                    variant="secondary"
+                                    className="h-9"
+                                >
+                                    <FileText className="w-4 h-4 mr-1" /> Import
+                                </LiquidButton>
+                                <LiquidButton
                                     onClick={() => setShowCollectionModal(true)}
                                     className="h-9"
                                 >
@@ -266,9 +281,14 @@ export default function APIDocsClient() {
                                         : t('createFirstCollection')}
                                 </p>
                                 {!searchQuery && (
-                                    <LiquidButton onClick={() => setShowCollectionModal(true)}>
-                                        <Plus className="w-4 h-4 mr-1" /> {t('createCollection')}
-                                    </LiquidButton>
+                                    <div className="flex gap-2">
+                                        <LiquidButton onClick={() => setShowImportModal(true)} variant="secondary">
+                                            <FileText className="w-4 h-4 mr-1" /> Import
+                                        </LiquidButton>
+                                        <LiquidButton onClick={() => setShowCollectionModal(true)}>
+                                            <Plus className="w-4 h-4 mr-1" /> {t('createCollection')}
+                                        </LiquidButton>
+                                    </div>
                                 )}
                             </div>
                         ) : (
@@ -418,6 +438,14 @@ export default function APIDocsClient() {
                         setShowEndpointModal(false);
                         setEditingEndpoint(null);
                     }}
+                />
+            )}
+
+            {/* Import Modal */}
+            {showImportModal && (
+                <ImportModal
+                    onImport={handleImportCollection}
+                    onClose={() => setShowImportModal(false)}
                 />
             )}
         </main>
