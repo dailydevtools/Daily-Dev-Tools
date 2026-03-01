@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Utilizați licența",
         "content": "DailyDevTools este folosit gratuit în scopuri personale și comerciale. Nu puteți:",
-        "list": {
-          "0": "Încercați să faceți inginerie inversă sau să curățați porțiuni semnificative ale site-ului.",
-          "1": "Utilizați site-ul web în orice mod care cauzează sau poate cauza deteriorarea site-ului web sau afectarea disponibilității sau accesibilității site-ului web."
-        }
+        "list": [
+          "Încercați să faceți inginerie inversă sau să curățați porțiuni semnificative ale site-ului.",
+          "Utilizați site-ul web în orice mod care cauzează sau poate cauza deteriorarea site-ului web sau afectarea disponibilității sau accesibilității site-ului web."
+        ]
       },
       "disclaimer": {
         "title": "3. Exonerare de responsabilitate",

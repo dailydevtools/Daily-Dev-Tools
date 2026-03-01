@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Användningslicens",
         "content": "DailyDevTools är gratis att använda för personliga och kommersiella ändamål. Du får inte:",
-        "list": {
-          "0": "Försöka bakåtkompilera eller skrapa betydande delar av webbplatsen.",
-          "1": "Använda webbplatsen på ett sätt som orsakar, eller kan orsaka, skada på webbplatsen eller försämring av tillgängligheten eller åtkomsten till webbplatsen."
-        }
+        "list": [
+          "Försöka bakåtkompilera eller skrapa betydande delar av webbplatsen.",
+          "Använda webbplatsen på ett sätt som orsakar, eller kan orsaka, skada på webbplatsen eller försämring av tillgängligheten eller åtkomsten till webbplatsen."
+        ]
       },
       "disclaimer": {
         "title": "3. Ansvarsfriskrivning",

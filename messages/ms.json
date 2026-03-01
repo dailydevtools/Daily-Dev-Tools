@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Gunakan Lesen",
         "content": "DailyDevTools adalah percuma untuk digunakan untuk tujuan peribadi dan komersial. Anda mungkin tidak:",
-        "list": {
-          "0": "Cuba untuk kejuruteraan terbalik atau mengikis bahagian penting tapak.",
-          "1": "Gunakan laman web dalam apa jua cara yang menyebabkan, atau mungkin menyebabkan, kerosakan pada tapak web atau kemerosotan ketersediaan atau kebolehcapaian tapak web."
-        }
+        "list": [
+          "Cuba untuk kejuruteraan terbalik atau mengikis bahagian penting tapak.",
+          "Gunakan laman web dalam apa jua cara yang menyebabkan, atau mungkin menyebabkan, kerosakan pada tapak web atau kemerosotan ketersediaan atau kebolehcapaian tapak web."
+        ]
       },
       "disclaimer": {
         "title": "3. Penafian",

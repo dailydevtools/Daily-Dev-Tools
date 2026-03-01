@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Licença de uso",
         "content": "DailyDevTools é gratuito para uso pessoal e comercial. Você não pode:",
-        "list": {
-          "0": "Tente fazer engenharia reversa ou raspar partes significativas do site.",
-          "1": "Utilizar o site de qualquer forma que cause ou possa causar danos ao site ou prejudicar a disponibilidade ou acessibilidade do site."
-        }
+        "list": [
+          "Tente fazer engenharia reversa ou raspar partes significativas do site.",
+          "Utilizar o site de qualquer forma que cause ou possa causar danos ao site ou prejudicar a disponibilidade ou acessibilidade do site."
+        ]
       },
       "disclaimer": {
         "title": "3. Isenção de responsabilidade",

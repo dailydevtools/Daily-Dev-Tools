@@ -463,10 +463,10 @@
       "useLicense": {
         "title": "2. Licenc használata",
         "content": "A DailyDevTools ingyenesen használható személyes és kereskedelmi célokra. Nem lehet:",
-        "list": {
-          "0": "Próbálja meg visszafejteni vagy lekaparni a webhely jelentős részét.",
-          "1": "Használja a weboldalt bármilyen módon, amely kárt okoz vagy okozhat a webhelyen, vagy rontja a weboldal elérhetőségét vagy elérhetőségét."
-        }
+        "list": [
+          "Próbálja meg visszafejteni vagy lekaparni a webhely jelentős részét.",
+          "Használja a weboldalt bármilyen módon, amely kárt okoz vagy okozhat a webhelyen, vagy rontja a weboldal elérhetőségét vagy elérhetőségét."
+        ]
       },
       "disclaimer": {
         "title": "3. Jogi nyilatkozat",
