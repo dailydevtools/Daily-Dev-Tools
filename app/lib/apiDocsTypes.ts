@@ -65,3 +65,23 @@ export interface ExampleResponse {
     body: string;
     description?: string;
 }
+
+export interface RequestHistoryItem {
+    id: string;
+    collectionId: string;
+    endpointId: string;
+    method: string;
+    url: string;
+    status: number;
+    durationMs: number;
+    createdAt: number;
+}
+
+export interface SavedRequestExample {
+    id: string;
+    collectionId: string;
+    endpointId: string;
+    name: string;
+    payload: Record<string, any>; // store params, headers, body
+    createdAt: number;
+}

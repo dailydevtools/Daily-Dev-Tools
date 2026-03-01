@@ -7,6 +7,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function CssMinifierClient() {
     const t = useTranslations('ToolPage');
@@ -90,13 +91,18 @@ export default function CssMinifierClient() {
                                 </div>
                                 <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
                             </div>
-                            <textarea
-                                value={input}
-                                onChange={(e) => setInput(e.target.value)}
-                                placeholder={t('CssMinifier.inputPlaceholder')}
-                                className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language="css"
+                                    value={input}
+                                    onChange={(val) => setInput(val || "")}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                    options={{
+                                        wordWrap: "on",
+                                        padding: { top: 16, bottom: 16 }
+                                    }}
+                                />
+                            </div>
                         </LiquidCard>
 
                         <LiquidCard className="p-0 overflow-hidden flex flex-col h-[450px] group focus-within:ring-2 ring-green-500/20 transition-all relative">
@@ -112,13 +118,18 @@ export default function CssMinifierClient() {
                                     </button>
                                 )}
                             </div>
-                            <textarea
-                                value={output}
-                                readOnly
-                                placeholder={t('CssMinifier.outputPlaceholder')}
-                                className="flex-1 w-full bg-transparent border-none p-5 font-mono text-[13px] text-green-600 dark:text-green-400 resize-none outline-none leading-relaxed placeholder:text-[var(--muted-text)]"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language="css"
+                                    value={output}
+                                    options={{
+                                        readOnly: true,
+                                        wordWrap: "on",
+                                        padding: { top: 16, bottom: 16 }
+                                    }}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
                     </div>
 

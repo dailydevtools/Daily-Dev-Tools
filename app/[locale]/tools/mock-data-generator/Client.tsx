@@ -12,6 +12,7 @@ import LiquidTabs from "../../../components/ui/LiquidTabs";
 import { toast } from "sonner";
 import { generateRandomData } from "./utils";
 import CreditCard from "../../../components/CreditCard";
+import CodeEditor from "../../../components/CodeEditor";
 
 interface Field {
     id: string;
@@ -48,11 +49,11 @@ export default function MockDataGeneratorClient() {
     const [count, setCount] = useState(10);
     const [format, setFormat] = useState('json');
     const [preview, setPreview] = useState('');
-    const previewRef = useRef<HTMLTextAreaElement>(null);
+    const monacoRef = useRef<any>(null);
 
     const scrollToTop = () => {
-        if (previewRef.current) {
-            previewRef.current.scrollTop = 0;
+        if (monacoRef.current) {
+            monacoRef.current.setScrollTop(0);
         }
     };
 
@@ -239,16 +240,16 @@ export default function MockDataGeneratorClient() {
                                         </button>
                                     </div>
                                 </div>
-                                <div className="flex-1 relative">
-                                    <textarea
-                                        ref={previewRef}
-                                        readOnly
+                                <div className="flex-1 relative bg-transparent h-[500px]">
+                                    <CodeEditor
+                                        onMount={(editor) => monacoRef.current = editor}
+                                        language={format === 'json' ? 'json' : 'plaintext'}
                                         value={preview}
-                                        className="w-full h-full p-4 bg-transparent resize-none outline-none font-mono text-xs md:text-sm text-[var(--foreground)]"
-                                        placeholder={t('placeholder')}
+                                        options={{ readOnly: true, wordWrap: 'on' }}
+                                        className="border-none !bg-transparent rounded-none rounded-b-xl"
                                     />
                                     {!preview && (
-                                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10 bg-[var(--card-bg)]">
                                             <div className="text-[var(--muted-text)] opacity-50 text-center">
                                                 <Database size={48} className="mx-auto mb-4 opacity-50" />
                                                 <p>{t('placeholder')}</p>

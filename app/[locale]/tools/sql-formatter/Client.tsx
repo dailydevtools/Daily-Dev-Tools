@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function SqlFormatterClient() {
     const t = useTranslations('ToolPage');
@@ -63,7 +64,7 @@ export default function SqlFormatterClient() {
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all h-[500px]">
                             <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
                                 <div className="flex items-center gap-3">
                                     <div className="flex gap-1.5 opacity-60">
@@ -75,16 +76,21 @@ export default function SqlFormatterClient() {
                                 </div>
                                 <span className="text-xs text-[var(--muted-text)] font-mono">{input.length} chars</span>
                             </div>
-                            <textarea
-                                value={input}
-                                onChange={(e) => setInput(e.target.value)}
-                                placeholder={t('SqlFormatter.inputPlaceholder')}
-                                className="flex-1 min-h-[400px] w-full bg-transparent border-none p-5 font-mono text-[13px] text-[var(--foreground)] resize-none outline-none placeholder:text-[var(--muted-text)] leading-relaxed"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language="sql"
+                                    value={input}
+                                    onChange={(val) => setInput(val || "")}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                    options={{
+                                        wordWrap: "on",
+                                        padding: { top: 16, bottom: 16 }
+                                    }}
+                                />
+                            </div>
                         </LiquidCard>
 
-                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-green-500/20 transition-all relative">
+                        <LiquidCard className="p-0 overflow-hidden flex flex-col group focus-within:ring-2 ring-green-500/20 transition-all relative h-[500px]">
                             <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between bg-neutral-100/50 dark:bg-white/5">
                                 <div className="flex items-center gap-3">
                                     <div className="flex gap-1.5 opacity-60">
@@ -104,13 +110,18 @@ export default function SqlFormatterClient() {
                                     </button>
                                 )}
                             </div>
-                            <textarea
-                                value={output}
-                                readOnly
-                                placeholder={t('SqlFormatter.outputPlaceholder')}
-                                className="flex-1 min-h-[400px] w-full bg-transparent border-none p-5 font-mono text-[13px] text-green-600 dark:text-green-400 resize-none outline-none leading-relaxed placeholder:text-[var(--muted-text)]"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 w-full bg-transparent relative">
+                                <CodeEditor
+                                    language="sql"
+                                    value={output}
+                                    options={{
+                                        readOnly: true,
+                                        wordWrap: "on",
+                                        padding: { top: 16, bottom: 16 }
+                                    }}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
                     </div>
 

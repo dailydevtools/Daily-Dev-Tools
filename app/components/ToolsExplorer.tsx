@@ -4,7 +4,7 @@ import { useState, useMemo, useEffect } from "react";
 import { Link } from "../../i18n/routing";
 import { ArrowRight, Search, Star } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { tools, ToolCategory } from "../data/tools";
+import { tools, ToolCategory, getSortedTools } from "../data/tools";
 import ToolIcon from "./ToolIcon";
 import { useTranslations } from "next-intl";
 import MotionCard from "./ui/MotionCard";
@@ -66,7 +66,7 @@ export default function ToolsExplorer() {
     };
 
     const filteredTools = useMemo(() => {
-        return tools.filter((tool) => {
+        const filtered = tools.filter((tool) => {
             const matchesSearch = tool.name.toLowerCase().includes(query.toLowerCase()) ||
                 tool.description.toLowerCase().includes(query.toLowerCase());
 
@@ -79,6 +79,7 @@ export default function ToolsExplorer() {
 
             return matchesSearch && matchesCategory;
         });
+        return getSortedTools(filtered);
     }, [query, activeCategory, favorites]);
 
     return (
@@ -228,6 +229,11 @@ export default function ToolsExplorer() {
                                         <h3 className="text-lg font-semibold font-heading text-[var(--title-color)]">{tTools(`${tool.id}.name`, { fallback: tool.name })}</h3>
                                         <span className="text-[10px] bg-[var(--card-hover-bg)] px-2 py-0.5 rounded-full text-[var(--muted-text)] border border-[var(--border-color)] ml-4 shrink-0 mt-1">{t(`categories.${tool.category}`, { fallback: tool.category })}</span>
                                     </div>
+                                    {tool.isNew && (
+                                        <span className="absolute right-5 bottom-5 px-2 py-1 text-[10px] font-bold uppercase tracking-wide bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-md shadow-lg">
+                                            NEW
+                                        </span>
+                                    )}
                                     <p className="text-[var(--muted-text)] text-sm mb-4">{tTools(`${tool.id}.description`, { fallback: tool.description })}</p>
                                     <div className="flex items-center text-[#fb923c] text-sm font-medium">
                                         <span>{t('openTool')}</span>

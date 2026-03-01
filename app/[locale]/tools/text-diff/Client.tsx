@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function TextDiffClient() {
     const t = useTranslations('TextDiff');
@@ -67,25 +68,27 @@ export default function TextDiffClient() {
                     />
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all">
+                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-orange-500/20 transition-all h-[400px]">
                             <label className="text-[#fb923c] font-semibold mb-3 text-xs uppercase tracking-wider">{t('original')}</label>
-                            <textarea
-                                value={oldText}
-                                onChange={(e) => { setOldText(e.target.value); computeDiff(); }}
-                                placeholder="Paste original text here..."
-                                className="flex-1 min-h-[300px] bg-neutral-100/50 dark:bg-white/5 border border-[var(--border-color)] resize-none outline-none text-[13px] text-[var(--foreground)] font-mono p-4 rounded-xl transition-colors focus:border-orange-500/30"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 min-h-[300px] relative w-full h-full">
+                                <CodeEditor
+                                    language="plaintext"
+                                    value={oldText}
+                                    onChange={(val) => { setOldText(val || ""); computeDiff(); }}
+                                    className="rounded-xl h-full"
+                                />
+                            </div>
                         </LiquidCard>
-                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-yellow-500/20 transition-all">
+                        <LiquidCard className="p-5 flex flex-col group focus-within:ring-2 ring-yellow-500/20 transition-all h-[400px]">
                             <label className="text-yellow-600 dark:text-[#facc15] font-semibold mb-3 text-xs uppercase tracking-wider">{t('changed')}</label>
-                            <textarea
-                                value={newText}
-                                onChange={(e) => { setNewText(e.target.value); computeDiff(); }}
-                                placeholder="Paste changed text here..."
-                                className="flex-1 min-h-[300px] bg-neutral-100/50 dark:bg-white/5 border border-[var(--border-color)] resize-none outline-none text-[13px] text-[var(--foreground)] font-mono p-4 rounded-xl transition-colors focus:border-yellow-500/30"
-                                spellCheck={false}
-                            />
+                            <div className="flex-1 min-h-[300px] relative w-full h-full">
+                                <CodeEditor
+                                    language="plaintext"
+                                    value={newText}
+                                    onChange={(val) => { setNewText(val || ""); computeDiff(); }}
+                                    className="rounded-xl h-full"
+                                />
+                            </div>
                         </LiquidCard>
                     </div>
 

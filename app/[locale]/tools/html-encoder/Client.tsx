@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
-import { LiquidTextArea } from "../../../components/ui/LiquidInput";
+import CodeEditor from "../../../components/CodeEditor";
 import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function HtmlEncoderClient() {
@@ -56,12 +56,16 @@ export default function HtmlEncoderClient() {
                     </div>
 
                     <div className="grid grid-cols-1 gap-6">
-                        <LiquidCard className="p-0 overflow-hidden group focus-within:ring-2 ring-orange-500/20 transition-all">
-                            <LiquidTextArea
-                                value={input} onChange={e => setInput(e.target.value)}
-                                placeholder={mode === 'encode' ? '<div class="foo">Bar</div>' : '&lt;div class=&quot;foo&quot;&gt;Bar&lt;/div&gt;'}
-                                className="h-[200px] border-none rounded-none focus:ring-0 text-base p-6 resize-none"
-                            />
+                        <LiquidCard className="p-0 overflow-hidden group focus-within:ring-2 ring-orange-500/20 transition-all flex flex-col h-[280px]">
+                            <div className="flex-1 w-full relative">
+                                <CodeEditor
+                                    language="html"
+                                    value={input}
+                                    onChange={(val) => setInput(val || "")}
+                                    options={{ wordWrap: 'on' }}
+                                    className="border-none !bg-transparent rounded-none"
+                                />
+                            </div>
                         </LiquidCard>
 
                         <div className="flex justify-center">
@@ -70,14 +74,16 @@ export default function HtmlEncoderClient() {
                             </LiquidButton>
                         </div>
 
-                        <LiquidCard className="p-0 overflow-hidden relative group">
-                            <textarea
-                                readOnly
-                                value={output}
-                                placeholder={t('HtmlEncoder.resultPlaceholder')}
-                                className="w-full h-[200px] bg-neutral-50/50 dark:bg-neutral-900/30 border-none p-6 text-[var(--foreground)] font-mono resize-none outline-none text-sm"
-                            />
-                            <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <LiquidCard className="p-0 overflow-hidden relative group flex flex-col h-[280px]">
+                            <div className="flex-1 w-full relative">
+                                <CodeEditor
+                                    language="html"
+                                    value={output}
+                                    options={{ readOnly: true, wordWrap: 'on' }}
+                                    className="border-none !bg-transparent rounded-none bg-neutral-50/50 dark:bg-neutral-900/30"
+                                />
+                            </div>
+                            <div className="absolute top-4 right-8 z-10 opacity-0 group-hover:opacity-100 transition-opacity">
                                 <LiquidButton
                                     variant="ghost"
                                     onClick={() => navigator.clipboard.writeText(output)}

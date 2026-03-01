@@ -1,13 +1,16 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Copy, Check, Download, Code2 } from "lucide-react";
+import { Copy, Check, Download, Code2, Play, FileJson } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { LiquidButton } from "../../../../components/ui/LiquidButton";
+import LiquidTabs from "../../../../components/ui/LiquidTabs";
 import { APIEndpoint, APICollection } from "../../../../lib/apiDocsTypes";
 import { convertCurl, TargetLanguage } from "../../../../lib/curlService";
+import { generateOpenAPISpec } from "../../../../lib/openapiGenerator";
 import CodeEditor from "../../../../components/CodeEditor";
 import CopyButton from "../../../../components/ui/CopyButton";
+import TryItOut from "./TryItOut";
 
 interface Props {
     endpoint: APIEndpoint;
@@ -28,6 +31,7 @@ const codeLanguages: { value: TargetLanguage; label: string; monacoLang: string 
 export default function DocumentationView({ endpoint, collection }: Props) {
     const t = useTranslations('APIDocs');
 
+    const [activeTab, setActiveTab] = useState<'docs' | 'try-it'>('docs');
     const [selectedLang, setSelectedLang] = useState<TargetLanguage>('python');
     const [copied, setCopied] = useState(false);
     const [codeExample, setCodeExample] = useState<string>(t('noCurlAvailable'));
@@ -44,6 +48,7 @@ export default function DocumentationView({ endpoint, collection }: Props) {
         }
 
         const fetchCode = async () => {
+            // Only fetch if in docs mode to save resources, though useEffect handles deps well
             setIsLoading(true);
             try {
                 const result = await convertCurl(endpoint.originalCurl, selectedLang);
@@ -129,163 +134,202 @@ export default function DocumentationView({ endpoint, collection }: Props) {
         URL.revokeObjectURL(url);
     };
 
+    // Export OpenAPI Spec
+    const exportOpenApi = () => {
+        const spec = generateOpenAPISpec(collection);
+        const json = JSON.stringify(spec, null, 2);
+        const blob = new Blob([json], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${collection.name.toLowerCase().replace(/\s+/g, '-')}-openapi.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+    };
+
     return (
         <div className="space-y-6">
-            {/* Endpoint Overview */}
-            <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl p-6">
-                <div className="flex items-start justify-between mb-4">
-                    <div>
-                        <h2 className="text-2xl font-bold mb-2">{endpoint.name}</h2>
-                        {endpoint.description && (
-                            <p className="text-[var(--muted-text)]">{endpoint.description}</p>
-                        )}
-                    </div>
-                    <LiquidButton variant="secondary" onClick={exportToMarkdown}>
-                        <Download className="w-4 h-4 mr-1" /> {t('exportMd')}
-                    </LiquidButton>
-                </div>
-
-                {/* Method + URL */}
-                <div className="flex items-center gap-3 p-4 bg-[var(--bg-color)] rounded-xl">
-                    <span className={`text-sm font-bold px-3 py-1.5 rounded-lg ${getMethodColor(endpoint.method)}`}>
-                        {endpoint.method}
-                    </span>
-                    <code className="flex-1 text-sm font-mono break-all">{fullUrl}</code>
-                    <button
-                        onClick={copyUrl}
-                        className="p-2 hover:bg-[var(--card-bg)] rounded-lg transition-colors"
-                    >
-                        {copied ? <Check className="w-4 h-4 text-green-500" /> : <Copy className="w-4 h-4" />}
-                    </button>
-                </div>
-            </div>
-
-            {/* Headers */}
-            {endpoint.headers.length > 0 && (
-                <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
-                    <div className="px-5 py-3 border-b border-[var(--border-color)]">
-                        <h3 className="font-semibold">{t('headers')}</h3>
-                    </div>
-                    <div className="overflow-x-auto">
-                        <table className="w-full text-sm">
-                            <thead className="bg-[var(--bg-color)]">
-                                <tr>
-                                    <th className="text-left px-5 py-2.5 font-medium">{t('header')}</th>
-                                    <th className="text-left px-5 py-2.5 font-medium">{t('value')}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {endpoint.headers.map((header, i) => (
-                                    <tr key={i} className="border-t border-[var(--border-color)]">
-                                        <td className="px-5 py-3 font-mono text-purple-500">{header.key}</td>
-                                        <td className="px-5 py-3 font-mono text-[var(--muted-text)]">{header.value}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            )}
-
-            {/* Query Parameters */}
-            {endpoint.queryParams.length > 0 && (
-                <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
-                    <div className="px-5 py-3 border-b border-[var(--border-color)]">
-                        <h3 className="font-semibold">{t('queryParameters')}</h3>
-                    </div>
-                    <div className="overflow-x-auto">
-                        <table className="w-full text-sm">
-                            <thead className="bg-[var(--bg-color)]">
-                                <tr>
-                                    <th className="text-left px-5 py-2.5 font-medium">{t('parameter')}</th>
-                                    <th className="text-left px-5 py-2.5 font-medium">{t('value')}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {endpoint.queryParams.map((param, i) => (
-                                    <tr key={i} className="border-t border-[var(--border-color)]">
-                                        <td className="px-5 py-3 font-mono text-blue-500">{param.key}</td>
-                                        <td className="px-5 py-3 font-mono text-[var(--muted-text)]">{param.value}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            )}
-
-            {/* Request Body */}
-            {endpoint.requestBody && (
-                <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
-                    <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between">
-                        <h3 className="font-semibold">{t('requestBody')}</h3>
-                        <span className="text-xs font-mono bg-[var(--bg-color)] px-2 py-1 rounded">
-                            {endpoint.requestBody.contentType}
-                        </span>
-                    </div>
-                    <div className="h-48">
-                        <CodeEditor
-                            height="100%"
-                            defaultLanguage="json"
-                            value={endpoint.requestBody.example}
-                            options={{
-                                readOnly: true,
-                                minimap: { enabled: false },
-                                fontSize: 13,
-                                wordWrap: 'on',
-                                padding: { top: 12, bottom: 12 },
-                                lineNumbers: 'off',
-                                scrollBeyondLastLine: false,
-                            }}
-                        />
-                    </div>
-                </div>
-            )}
-
-            {/* Code Examples */}
+            {/* Endpoint Header */}
             <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
-                <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                        <Code2 className="w-4 h-4 text-purple-500" />
-                        <h3 className="font-semibold">{t('codeExamples')}</h3>
-                        {isLoading && <span className="text-xs text-[var(--muted-text)]">Loading...</span>}
+                {/* Top Bar: Method, URL, Actions */}
+                <div className="flex flex-col gap-4 p-4 md:p-6 border-b border-[var(--border-color)]">
+                    <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
+                        <div className="flex-1 min-w-0">
+                            <h2 className="text-2xl font-bold mb-2 truncate">{endpoint.name}</h2>
+                            {endpoint.description && (
+                                <p className="text-[var(--muted-text)] text-sm leading-relaxed">{endpoint.description}</p>
+                            )}
+                        </div>
+                        <div className="flex items-center gap-2 shrink-0">
+                            <LiquidButton variant="ghost" onClick={exportOpenApi} className="h-9 px-3 text-xs border border-[var(--border-color)] hover:bg-[var(--bg-color)]">
+                                <FileJson className="w-4 h-4 mr-2" />
+                                OpenAPI
+                            </LiquidButton>
+                            <LiquidButton variant="ghost" onClick={exportToMarkdown} className="h-9 px-3 text-xs border border-[var(--border-color)] hover:bg-[var(--bg-color)]">
+                                <Download className="w-4 h-4 mr-2" />
+                                Markdown
+                            </LiquidButton>
+                        </div>
                     </div>
-                    <CopyButton text={codeExample} className="h-8 px-2 text-xs" />
-                </div>
 
-                {/* Language Tabs */}
-                <div className="flex flex-wrap gap-1 px-5 py-3 border-b border-[var(--border-color)] bg-[var(--bg-color)]">
-                    {codeLanguages.map((lang) => (
+                    <div className="flex items-center gap-2 p-1.5 bg-[var(--bg-color)] rounded-lg border border-[var(--border-color)] w-full md:w-fit">
+                        <span className={`text-xs font-bold px-2.5 py-1 rounded-md min-w-[60px] text-center ${getMethodColor(endpoint.method)}`}>
+                            {endpoint.method}
+                        </span>
+                        <div className="h-4 w-px bg-[var(--border-color)] mx-1" />
+                        <code className="text-xs font-mono truncate text-[var(--muted-text)] flex-1 select-all">{fullUrl}</code>
                         <button
-                            key={lang.value}
-                            onClick={() => setSelectedLang(lang.value)}
-                            className={`px-3 py-1.5 text-xs font-medium rounded-lg transition-colors ${selectedLang === lang.value
-                                ? 'bg-purple-500 text-white'
-                                : 'bg-[var(--card-bg)] hover:bg-[var(--card-bg)]/80'
-                                }`}
+                            onClick={copyUrl}
+                            className="p-1.5 hover:bg-[var(--card-bg)] rounded-md transition-colors ml-2"
                         >
-                            {lang.label}
+                            {copied ? <Check className="w-3.5 h-3.5 text-green-500" /> : <Copy className="w-3.5 h-3.5 text-[var(--muted-text)]" />}
                         </button>
-                    ))}
+                    </div>
                 </div>
 
-                {/* Code Editor */}
-                <div className="h-64">
-                    <CodeEditor
-                        height="100%"
-                        language={codeLanguages.find(l => l.value === selectedLang)?.monacoLang || 'python'}
-                        value={codeExample}
-                        options={{
-                            readOnly: true,
-                            minimap: { enabled: false },
-                            fontSize: 13,
-                            wordWrap: 'on',
-                            padding: { top: 12, bottom: 12 },
-                            scrollBeyondLastLine: false,
+                {/* Tabs */}
+                <div className="px-4 md:px-6 pt-2 bg-[var(--card-bg)] border-t border-[var(--border-color)]">
+                    <LiquidTabs
+                        tabs={['docs', 'try-it'] as const}
+                        activeTab={activeTab}
+                        onChange={(tab) => setActiveTab(tab as 'docs' | 'try-it')}
+                        variant="inline"
+                        labels={{ docs: 'Documentation', 'try-it': 'Try it out' }}
+                        icons={{
+                            docs: <FileJson className="w-4 h-4" />,
+                            'try-it': <Play className="w-4 h-4" />,
                         }}
                     />
                 </div>
             </div>
+
+            {activeTab === 'try-it' ? (
+                <TryItOut endpoint={endpoint} collection={collection} />
+            ) : (
+                <>
+                    {/* Headers */}
+                    {endpoint.headers.length > 0 && (
+                        <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)]">
+                                <h3 className="font-semibold">{t('headers')}</h3>
+                            </div>
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-sm">
+                                    <thead className="bg-[var(--bg-color)]">
+                                        <tr>
+                                            <th className="text-left px-5 py-2.5 font-medium">{t('header')}</th>
+                                            <th className="text-left px-5 py-2.5 font-medium">{t('value')}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {endpoint.headers.map((header, i) => (
+                                            <tr key={i} className="border-t border-[var(--border-color)]">
+                                                <td className="px-5 py-3 font-mono text-purple-500">{header.key}</td>
+                                                <td className="px-5 py-3 font-mono text-[var(--muted-text)]">{header.value}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Query Parameters */}
+                    {endpoint.queryParams.length > 0 && (
+                        <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)]">
+                                <h3 className="font-semibold">{t('queryParameters')}</h3>
+                            </div>
+                            <div className="overflow-x-auto">
+                                <table className="w-full text-sm">
+                                    <thead className="bg-[var(--bg-color)]">
+                                        <tr>
+                                            <th className="text-left px-5 py-2.5 font-medium">{t('parameter')}</th>
+                                            <th className="text-left px-5 py-2.5 font-medium">{t('value')}</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {endpoint.queryParams.map((param, i) => (
+                                            <tr key={i} className="border-t border-[var(--border-color)]">
+                                                <td className="px-5 py-3 font-mono text-blue-500">{param.key}</td>
+                                                <td className="px-5 py-3 font-mono text-[var(--muted-text)]">{param.value}</td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Request Body */}
+                    {endpoint.requestBody && (
+                        <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
+                            <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between">
+                                <h3 className="font-semibold">{t('requestBody')}</h3>
+                                <span className="text-xs font-mono bg-[var(--bg-color)] px-2 py-1 rounded">
+                                    {endpoint.requestBody.contentType}
+                                </span>
+                            </div>
+                            <div className="h-48">
+                                <CodeEditor
+                                    height="100%"
+                                    defaultLanguage="json"
+                                    value={endpoint.requestBody.example}
+                                    options={{
+                                        readOnly: true,
+                                        minimap: { enabled: false },
+                                        fontSize: 13,
+                                        wordWrap: 'on',
+                                        padding: { top: 12, bottom: 12 },
+                                        lineNumbers: 'off',
+                                        scrollBeyondLastLine: false,
+                                    }}
+                                />
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Code Examples */}
+                    <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl overflow-hidden">
+                        <div className="px-5 py-3 border-b border-[var(--border-color)] flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                                <Code2 className="w-4 h-4 text-purple-500" />
+                                <h3 className="font-semibold">{t('codeExamples')}</h3>
+                                {isLoading && <span className="text-xs text-[var(--muted-text)]">Loading...</span>}
+                            </div>
+                            <CopyButton text={codeExample} className="h-8 px-2 text-xs" />
+                        </div>
+
+                        {/* Language Tabs */}
+                        <div className="px-5 py-3 border-b border-[var(--border-color)] bg-[var(--bg-color)]">
+                            <LiquidTabs
+                                tabs={codeLanguages.map(l => l.value) as any}
+                                activeTab={selectedLang}
+                                onChange={(lang) => setSelectedLang(lang as TargetLanguage)}
+                                variant="inline"
+                                labels={Object.fromEntries(codeLanguages.map(l => [l.value, l.label]))}
+                            />
+                        </div>
+
+                        {/* Code Editor */}
+                        <div className="h-64">
+                            <CodeEditor
+                                height="100%"
+                                language={codeLanguages.find(l => l.value === selectedLang)?.monacoLang || 'python'}
+                                value={codeExample}
+                                options={{
+                                    readOnly: true,
+                                    minimap: { enabled: false },
+                                    fontSize: 13,
+                                    wordWrap: 'on',
+                                    padding: { top: 12, bottom: 12 },
+                                    scrollBeyondLastLine: false,
+                                }}
+                            />
+                        </div>
+                    </div>
+                </>
+            )}
         </div>
     );
 }

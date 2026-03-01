@@ -10,7 +10,10 @@ import DOMPurify from "isomorphic-dompurify";
 // We will use a simple regex based parser for improved performance without heavy deps
 // In a real prod app, we'd use 'react-markdown' or 'marked'
 
+// In a real prod app, we'd use 'react-markdown' or 'marked'
+
 import { LiquidCard } from "../../../components/ui/LiquidCard";
+import CodeEditor from "../../../components/CodeEditor";
 
 export default function MarkdownEditorClient() {
     const t = useTranslations('MarkdownEditor');
@@ -50,11 +53,15 @@ export default function MarkdownEditorClient() {
                                 <Code className="w-4 h-4 text-orange-500" />
                                 <span className="text-sm font-medium text-[var(--foreground)]">{t('inputLabel')}</span>
                             </div>
-                            <textarea
-                                value={input}
-                                onChange={(e) => setInput(e.target.value)}
-                                className="flex-1 bg-transparent border-none p-5 font-mono text-sm text-[var(--foreground)] resize-none outline-none leading-relaxed"
-                            />
+                            <div className="flex-1 relative w-full h-full min-h-[300px]">
+                                <CodeEditor
+                                    language="markdown"
+                                    value={input}
+                                    onChange={(val) => setInput(val || "")}
+                                    options={{ wordWrap: 'on' }}
+                                    className="border-none !bg-transparent rounded-none rounded-b-xl"
+                                />
+                            </div>
                         </LiquidCard>
 
                         {/* Preview */}
