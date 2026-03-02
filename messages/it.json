@@ -64,7 +64,9 @@
     },
     "openTool": "Apri strumento",
     "noResults": "Nessuno strumento trovato per",
-    "clearFilters": "Cancella filtri"
+    "clearFilters": "Cancella filtri",
+    "exploreButton": "[it] Explore Tools",
+    "starOnGithub": "[it] Star on GitHub"
   },
   "Footer": {
     "builtWith": "Realizzato con ❤️ da",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[it] Online Code Editor",
       "description": "[it] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[it] Cron Generator",
+      "description": "[it] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[it] CSS Clip Path Generator",
+      "description": "[it] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[it] Meta Tag Builder",
+      "description": "[it] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[it] CURL Converter",
+      "description": "[it] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[it] API Documentation Builder",
+      "description": "[it] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[it] Visual Schema Designer",
+      "description": "[it] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[it] This tool was inspired by an app developed by",
     "checkOut": "[it] Check out",
     "thanks": "[it] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[it] CURL Converter",
+    "description": "[it] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[it] Paste your CURL command here...",
+    "outputPlaceholder": "[it] Generated code will appear here...",
+    "convert": "[it] Convert",
+    "language": "[it] Target Language",
+    "copy": "[it] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[it] API Documentation Builder",
+    "description": "[it] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[it] Search collections...",
+    "newCollection": "[it] New Collection",
+    "createCollection": "[it] Create Collection",
+    "editCollection": "[it] Edit Collection",
+    "deleteCollection": "[it] Delete Collection",
+    "deleteCollectionConfirm": "[it] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[it] Delete",
+    "cancel_action": "[it] Cancel",
+    "cancel": "[it] Cancel",
+    "noCollectionsYet": "[it] No collections yet",
+    "noCollectionsFound": "[it] No collections found",
+    "tryDifferentSearch": "[it] Try a different search term",
+    "createFirstCollection": "[it] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[it] endpoint",
+    "endpoints": "[it] endpoints",
+    "more": "[it] more",
+    "edit": "[it] Edit",
+    "addEndpoint": "[it] Add Endpoint",
+    "editEndpoint": "[it] Edit Endpoint",
+    "noEndpointsYet": "[it] No endpoints yet",
+    "addFirstEndpoint": "[it] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[it] Delete Endpoint",
+    "deleteEndpointConfirm": "[it] Are you sure you want to delete this endpoint?",
+    "collectionName": "[it] Collection Name",
+    "collectionNamePlaceholder": "[it] e.g., Payment API",
+    "baseUrl": "[it] Base URL",
+    "baseUrlPlaceholder": "[it] https://api.example.com/v1",
+    "baseUrlHelp": "[it] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[it] Description",
+    "descriptionPlaceholder": "[it] Optional description for this API",
+    "authType": "[it] Authentication Type",
+    "authNone": "[it] No Authentication",
+    "authBearer": "[it] Bearer Token",
+    "authApiKey": "[it] API Key",
+    "authBasic": "[it] Basic Auth",
+    "saveChanges": "[it] Save Changes",
+    "collectionNameRequired": "[it] Collection name is required",
+    "baseUrlRequired": "[it] Base URL is required",
+    "invalidUrl": "[it] Please enter a valid URL",
+    "pasteCurl": "[it] Paste your cURL command",
+    "curlTip": "[it] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[it] Parse cURL",
+    "enterCurlCommand": "[it] Please enter a cURL command",
+    "invalidCurlCommand": "[it] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[it] Endpoint Name",
+    "endpointNamePlaceholder": "[it] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[it] What does this endpoint do?",
+    "method": "[it] Method",
+    "path": "[it] Path",
+    "pathPlaceholder": "[it] /users/':id'",
+    "headers": "[it] Headers",
+    "addHeader": "[it] + Add Header",
+    "noHeaders": "[it] No headers",
+    "key": "[it] Key",
+    "value": "[it] Value",
+    "queryParameters": "[it] Query Parameters",
+    "addParameter": "[it] + Add Parameter",
+    "noQueryParameters": "[it] No query parameters",
+    "requestBody": "[it] Request Body",
+    "backToCurl": "[it] ← Back to cURL",
+    "endpointNameRequired": "[it] Endpoint name is required",
+    "pathRequired": "[it] Path is required",
+    "exportMd": "[it] Export MD",
+    "codeExamples": "[it] Code Examples",
+    "header": "[it] Header",
+    "parameter": "[it] Parameter",
+    "noCurlAvailable": "[it] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[it] Schema Designer",
+      "targetDatabase": "[it] Target Database",
+      "addTable": "[it] Add Table",
+      "clearAll": "[it] Clear All",
+      "importSql": "[it] Import SQL",
+      "fields": "[it] Add Fields",
+      "generatedSql": "[it] Generated Output",
+      "copy": "[it] Copy",
+      "download": "[it] Download"
+    },
+    "canvas": {
+      "autoLayout": "[it] Auto Layout"
+    },
+    "import": {
+      "title": "[it] Import SQL",
+      "placeholder": "[it] Paste your SQL create table statements here...",
+      "button": "[it] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[it] Table Name",
+      "deleteTable": "[it] Delete Table",
+      "columnPlaceholder": "[it] Column Name",
+      "deleteColumn": "[it] Delete Column",
+      "addColumn": "[it] Add Column",
+      "primaryKey": "[it] Toggle Primary Key"
+    }
   }
 }

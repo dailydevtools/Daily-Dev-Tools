@@ -64,7 +64,9 @@
     },
     "openTool": "Åbn værktøj",
     "noResults": "Ingen værktøjer fundet der matcher",
-    "clearFilters": "Ryd filtre"
+    "clearFilters": "Ryd filtre",
+    "exploreButton": "[da] Explore Tools",
+    "starOnGithub": "[da] Star on GitHub"
   },
   "Footer": {
     "builtWith": "Bygget med ❤️ af",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[da] Online Code Editor",
       "description": "[da] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[da] Cron Generator",
+      "description": "[da] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[da] CSS Clip Path Generator",
+      "description": "[da] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[da] Meta Tag Builder",
+      "description": "[da] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[da] CURL Converter",
+      "description": "[da] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[da] API Documentation Builder",
+      "description": "[da] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[da] Visual Schema Designer",
+      "description": "[da] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[da] This tool was inspired by an app developed by",
     "checkOut": "[da] Check out",
     "thanks": "[da] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[da] CURL Converter",
+    "description": "[da] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[da] Paste your CURL command here...",
+    "outputPlaceholder": "[da] Generated code will appear here...",
+    "convert": "[da] Convert",
+    "language": "[da] Target Language",
+    "copy": "[da] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[da] API Documentation Builder",
+    "description": "[da] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[da] Search collections...",
+    "newCollection": "[da] New Collection",
+    "createCollection": "[da] Create Collection",
+    "editCollection": "[da] Edit Collection",
+    "deleteCollection": "[da] Delete Collection",
+    "deleteCollectionConfirm": "[da] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[da] Delete",
+    "cancel_action": "[da] Cancel",
+    "cancel": "[da] Cancel",
+    "noCollectionsYet": "[da] No collections yet",
+    "noCollectionsFound": "[da] No collections found",
+    "tryDifferentSearch": "[da] Try a different search term",
+    "createFirstCollection": "[da] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[da] endpoint",
+    "endpoints": "[da] endpoints",
+    "more": "[da] more",
+    "edit": "[da] Edit",
+    "addEndpoint": "[da] Add Endpoint",
+    "editEndpoint": "[da] Edit Endpoint",
+    "noEndpointsYet": "[da] No endpoints yet",
+    "addFirstEndpoint": "[da] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[da] Delete Endpoint",
+    "deleteEndpointConfirm": "[da] Are you sure you want to delete this endpoint?",
+    "collectionName": "[da] Collection Name",
+    "collectionNamePlaceholder": "[da] e.g., Payment API",
+    "baseUrl": "[da] Base URL",
+    "baseUrlPlaceholder": "[da] https://api.example.com/v1",
+    "baseUrlHelp": "[da] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[da] Description",
+    "descriptionPlaceholder": "[da] Optional description for this API",
+    "authType": "[da] Authentication Type",
+    "authNone": "[da] No Authentication",
+    "authBearer": "[da] Bearer Token",
+    "authApiKey": "[da] API Key",
+    "authBasic": "[da] Basic Auth",
+    "saveChanges": "[da] Save Changes",
+    "collectionNameRequired": "[da] Collection name is required",
+    "baseUrlRequired": "[da] Base URL is required",
+    "invalidUrl": "[da] Please enter a valid URL",
+    "pasteCurl": "[da] Paste your cURL command",
+    "curlTip": "[da] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[da] Parse cURL",
+    "enterCurlCommand": "[da] Please enter a cURL command",
+    "invalidCurlCommand": "[da] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[da] Endpoint Name",
+    "endpointNamePlaceholder": "[da] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[da] What does this endpoint do?",
+    "method": "[da] Method",
+    "path": "[da] Path",
+    "pathPlaceholder": "[da] /users/':id'",
+    "headers": "[da] Headers",
+    "addHeader": "[da] + Add Header",
+    "noHeaders": "[da] No headers",
+    "key": "[da] Key",
+    "value": "[da] Value",
+    "queryParameters": "[da] Query Parameters",
+    "addParameter": "[da] + Add Parameter",
+    "noQueryParameters": "[da] No query parameters",
+    "requestBody": "[da] Request Body",
+    "backToCurl": "[da] ← Back to cURL",
+    "endpointNameRequired": "[da] Endpoint name is required",
+    "pathRequired": "[da] Path is required",
+    "exportMd": "[da] Export MD",
+    "codeExamples": "[da] Code Examples",
+    "header": "[da] Header",
+    "parameter": "[da] Parameter",
+    "noCurlAvailable": "[da] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[da] Schema Designer",
+      "targetDatabase": "[da] Target Database",
+      "addTable": "[da] Add Table",
+      "clearAll": "[da] Clear All",
+      "importSql": "[da] Import SQL",
+      "fields": "[da] Add Fields",
+      "generatedSql": "[da] Generated Output",
+      "copy": "[da] Copy",
+      "download": "[da] Download"
+    },
+    "canvas": {
+      "autoLayout": "[da] Auto Layout"
+    },
+    "import": {
+      "title": "[da] Import SQL",
+      "placeholder": "[da] Paste your SQL create table statements here...",
+      "button": "[da] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[da] Table Name",
+      "deleteTable": "[da] Delete Table",
+      "columnPlaceholder": "[da] Column Name",
+      "deleteColumn": "[da] Delete Column",
+      "addColumn": "[da] Add Column",
+      "primaryKey": "[da] Toggle Primary Key"
+    }
   }
 }

@@ -64,7 +64,9 @@
     },
     "openTool": "도구 열기",
     "noResults": "일치하는 도구가 없습니다",
-    "clearFilters": "필터 지우기"
+    "clearFilters": "필터 지우기",
+    "exploreButton": "[ko] Explore Tools",
+    "starOnGithub": "[ko] Star on GitHub"
   },
   "Footer": {
     "builtWith": "만든 사람 ❤️",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[ko] Online Code Editor",
       "description": "[ko] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[ko] Cron Generator",
+      "description": "[ko] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[ko] CSS Clip Path Generator",
+      "description": "[ko] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[ko] Meta Tag Builder",
+      "description": "[ko] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[ko] CURL Converter",
+      "description": "[ko] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[ko] API Documentation Builder",
+      "description": "[ko] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[ko] Visual Schema Designer",
+      "description": "[ko] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[ko] This tool was inspired by an app developed by",
     "checkOut": "[ko] Check out",
     "thanks": "[ko] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[ko] CURL Converter",
+    "description": "[ko] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[ko] Paste your CURL command here...",
+    "outputPlaceholder": "[ko] Generated code will appear here...",
+    "convert": "[ko] Convert",
+    "language": "[ko] Target Language",
+    "copy": "[ko] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[ko] API Documentation Builder",
+    "description": "[ko] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[ko] Search collections...",
+    "newCollection": "[ko] New Collection",
+    "createCollection": "[ko] Create Collection",
+    "editCollection": "[ko] Edit Collection",
+    "deleteCollection": "[ko] Delete Collection",
+    "deleteCollectionConfirm": "[ko] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[ko] Delete",
+    "cancel_action": "[ko] Cancel",
+    "cancel": "[ko] Cancel",
+    "noCollectionsYet": "[ko] No collections yet",
+    "noCollectionsFound": "[ko] No collections found",
+    "tryDifferentSearch": "[ko] Try a different search term",
+    "createFirstCollection": "[ko] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[ko] endpoint",
+    "endpoints": "[ko] endpoints",
+    "more": "[ko] more",
+    "edit": "[ko] Edit",
+    "addEndpoint": "[ko] Add Endpoint",
+    "editEndpoint": "[ko] Edit Endpoint",
+    "noEndpointsYet": "[ko] No endpoints yet",
+    "addFirstEndpoint": "[ko] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[ko] Delete Endpoint",
+    "deleteEndpointConfirm": "[ko] Are you sure you want to delete this endpoint?",
+    "collectionName": "[ko] Collection Name",
+    "collectionNamePlaceholder": "[ko] e.g., Payment API",
+    "baseUrl": "[ko] Base URL",
+    "baseUrlPlaceholder": "[ko] https://api.example.com/v1",
+    "baseUrlHelp": "[ko] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[ko] Description",
+    "descriptionPlaceholder": "[ko] Optional description for this API",
+    "authType": "[ko] Authentication Type",
+    "authNone": "[ko] No Authentication",
+    "authBearer": "[ko] Bearer Token",
+    "authApiKey": "[ko] API Key",
+    "authBasic": "[ko] Basic Auth",
+    "saveChanges": "[ko] Save Changes",
+    "collectionNameRequired": "[ko] Collection name is required",
+    "baseUrlRequired": "[ko] Base URL is required",
+    "invalidUrl": "[ko] Please enter a valid URL",
+    "pasteCurl": "[ko] Paste your cURL command",
+    "curlTip": "[ko] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[ko] Parse cURL",
+    "enterCurlCommand": "[ko] Please enter a cURL command",
+    "invalidCurlCommand": "[ko] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[ko] Endpoint Name",
+    "endpointNamePlaceholder": "[ko] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[ko] What does this endpoint do?",
+    "method": "[ko] Method",
+    "path": "[ko] Path",
+    "pathPlaceholder": "[ko] /users/':id'",
+    "headers": "[ko] Headers",
+    "addHeader": "[ko] + Add Header",
+    "noHeaders": "[ko] No headers",
+    "key": "[ko] Key",
+    "value": "[ko] Value",
+    "queryParameters": "[ko] Query Parameters",
+    "addParameter": "[ko] + Add Parameter",
+    "noQueryParameters": "[ko] No query parameters",
+    "requestBody": "[ko] Request Body",
+    "backToCurl": "[ko] ← Back to cURL",
+    "endpointNameRequired": "[ko] Endpoint name is required",
+    "pathRequired": "[ko] Path is required",
+    "exportMd": "[ko] Export MD",
+    "codeExamples": "[ko] Code Examples",
+    "header": "[ko] Header",
+    "parameter": "[ko] Parameter",
+    "noCurlAvailable": "[ko] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[ko] Schema Designer",
+      "targetDatabase": "[ko] Target Database",
+      "addTable": "[ko] Add Table",
+      "clearAll": "[ko] Clear All",
+      "importSql": "[ko] Import SQL",
+      "fields": "[ko] Add Fields",
+      "generatedSql": "[ko] Generated Output",
+      "copy": "[ko] Copy",
+      "download": "[ko] Download"
+    },
+    "canvas": {
+      "autoLayout": "[ko] Auto Layout"
+    },
+    "import": {
+      "title": "[ko] Import SQL",
+      "placeholder": "[ko] Paste your SQL create table statements here...",
+      "button": "[ko] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[ko] Table Name",
+      "deleteTable": "[ko] Delete Table",
+      "columnPlaceholder": "[ko] Column Name",
+      "deleteColumn": "[ko] Delete Column",
+      "addColumn": "[ko] Add Column",
+      "primaryKey": "[ko] Toggle Primary Key"
+    }
   }
 }

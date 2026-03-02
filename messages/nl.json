@@ -64,7 +64,9 @@
     },
     "openTool": "Gereedschap openen",
     "noResults": "Geen tools gevonden die overeenkomen met",
-    "clearFilters": "Filters wissen"
+    "clearFilters": "Filters wissen",
+    "exploreButton": "[nl] Explore Tools",
+    "starOnGithub": "[nl] Star on GitHub"
   },
   "Footer": {
     "builtWith": "Gebouwd met ❤️ door",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[nl] Online Code Editor",
       "description": "[nl] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[nl] Cron Generator",
+      "description": "[nl] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[nl] CSS Clip Path Generator",
+      "description": "[nl] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[nl] Meta Tag Builder",
+      "description": "[nl] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[nl] CURL Converter",
+      "description": "[nl] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[nl] API Documentation Builder",
+      "description": "[nl] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[nl] Visual Schema Designer",
+      "description": "[nl] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[nl] This tool was inspired by an app developed by",
     "checkOut": "[nl] Check out",
     "thanks": "[nl] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[nl] CURL Converter",
+    "description": "[nl] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[nl] Paste your CURL command here...",
+    "outputPlaceholder": "[nl] Generated code will appear here...",
+    "convert": "[nl] Convert",
+    "language": "[nl] Target Language",
+    "copy": "[nl] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[nl] API Documentation Builder",
+    "description": "[nl] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[nl] Search collections...",
+    "newCollection": "[nl] New Collection",
+    "createCollection": "[nl] Create Collection",
+    "editCollection": "[nl] Edit Collection",
+    "deleteCollection": "[nl] Delete Collection",
+    "deleteCollectionConfirm": "[nl] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[nl] Delete",
+    "cancel_action": "[nl] Cancel",
+    "cancel": "[nl] Cancel",
+    "noCollectionsYet": "[nl] No collections yet",
+    "noCollectionsFound": "[nl] No collections found",
+    "tryDifferentSearch": "[nl] Try a different search term",
+    "createFirstCollection": "[nl] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[nl] endpoint",
+    "endpoints": "[nl] endpoints",
+    "more": "[nl] more",
+    "edit": "[nl] Edit",
+    "addEndpoint": "[nl] Add Endpoint",
+    "editEndpoint": "[nl] Edit Endpoint",
+    "noEndpointsYet": "[nl] No endpoints yet",
+    "addFirstEndpoint": "[nl] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[nl] Delete Endpoint",
+    "deleteEndpointConfirm": "[nl] Are you sure you want to delete this endpoint?",
+    "collectionName": "[nl] Collection Name",
+    "collectionNamePlaceholder": "[nl] e.g., Payment API",
+    "baseUrl": "[nl] Base URL",
+    "baseUrlPlaceholder": "[nl] https://api.example.com/v1",
+    "baseUrlHelp": "[nl] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[nl] Description",
+    "descriptionPlaceholder": "[nl] Optional description for this API",
+    "authType": "[nl] Authentication Type",
+    "authNone": "[nl] No Authentication",
+    "authBearer": "[nl] Bearer Token",
+    "authApiKey": "[nl] API Key",
+    "authBasic": "[nl] Basic Auth",
+    "saveChanges": "[nl] Save Changes",
+    "collectionNameRequired": "[nl] Collection name is required",
+    "baseUrlRequired": "[nl] Base URL is required",
+    "invalidUrl": "[nl] Please enter a valid URL",
+    "pasteCurl": "[nl] Paste your cURL command",
+    "curlTip": "[nl] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[nl] Parse cURL",
+    "enterCurlCommand": "[nl] Please enter a cURL command",
+    "invalidCurlCommand": "[nl] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[nl] Endpoint Name",
+    "endpointNamePlaceholder": "[nl] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[nl] What does this endpoint do?",
+    "method": "[nl] Method",
+    "path": "[nl] Path",
+    "pathPlaceholder": "[nl] /users/':id'",
+    "headers": "[nl] Headers",
+    "addHeader": "[nl] + Add Header",
+    "noHeaders": "[nl] No headers",
+    "key": "[nl] Key",
+    "value": "[nl] Value",
+    "queryParameters": "[nl] Query Parameters",
+    "addParameter": "[nl] + Add Parameter",
+    "noQueryParameters": "[nl] No query parameters",
+    "requestBody": "[nl] Request Body",
+    "backToCurl": "[nl] ← Back to cURL",
+    "endpointNameRequired": "[nl] Endpoint name is required",
+    "pathRequired": "[nl] Path is required",
+    "exportMd": "[nl] Export MD",
+    "codeExamples": "[nl] Code Examples",
+    "header": "[nl] Header",
+    "parameter": "[nl] Parameter",
+    "noCurlAvailable": "[nl] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[nl] Schema Designer",
+      "targetDatabase": "[nl] Target Database",
+      "addTable": "[nl] Add Table",
+      "clearAll": "[nl] Clear All",
+      "importSql": "[nl] Import SQL",
+      "fields": "[nl] Add Fields",
+      "generatedSql": "[nl] Generated Output",
+      "copy": "[nl] Copy",
+      "download": "[nl] Download"
+    },
+    "canvas": {
+      "autoLayout": "[nl] Auto Layout"
+    },
+    "import": {
+      "title": "[nl] Import SQL",
+      "placeholder": "[nl] Paste your SQL create table statements here...",
+      "button": "[nl] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[nl] Table Name",
+      "deleteTable": "[nl] Delete Table",
+      "columnPlaceholder": "[nl] Column Name",
+      "deleteColumn": "[nl] Delete Column",
+      "addColumn": "[nl] Add Column",
+      "primaryKey": "[nl] Toggle Primary Key"
+    }
   }
 }
