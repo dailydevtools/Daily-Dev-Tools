@@ -64,7 +64,9 @@
     },
     "openTool": "ツールを開く",
     "noResults": "一致するツールが見つかりません",
-    "clearFilters": "フィルターをクリア"
+    "clearFilters": "フィルターをクリア",
+    "exploreButton": "[ja] Explore Tools",
+    "starOnGithub": "[ja] Star on GitHub"
   },
   "Footer": {
     "builtWith": "開発者 ❤️",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[ja] Online Code Editor",
       "description": "[ja] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[ja] Cron Generator",
+      "description": "[ja] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[ja] CSS Clip Path Generator",
+      "description": "[ja] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[ja] Meta Tag Builder",
+      "description": "[ja] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[ja] CURL Converter",
+      "description": "[ja] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[ja] API Documentation Builder",
+      "description": "[ja] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[ja] Visual Schema Designer",
+      "description": "[ja] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1868,5 +1894,114 @@
     "inspiredByApp": "[ja] This tool was inspired by an app developed by",
     "checkOut": "[ja] Check out",
     "thanks": "[ja] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[ja] CURL Converter",
+    "description": "[ja] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[ja] Paste your CURL command here...",
+    "outputPlaceholder": "[ja] Generated code will appear here...",
+    "convert": "[ja] Convert",
+    "language": "[ja] Target Language",
+    "copy": "[ja] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[ja] API Documentation Builder",
+    "description": "[ja] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[ja] Search collections...",
+    "newCollection": "[ja] New Collection",
+    "createCollection": "[ja] Create Collection",
+    "editCollection": "[ja] Edit Collection",
+    "deleteCollection": "[ja] Delete Collection",
+    "deleteCollectionConfirm": "[ja] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[ja] Delete",
+    "cancel_action": "[ja] Cancel",
+    "cancel": "[ja] Cancel",
+    "noCollectionsYet": "[ja] No collections yet",
+    "noCollectionsFound": "[ja] No collections found",
+    "tryDifferentSearch": "[ja] Try a different search term",
+    "createFirstCollection": "[ja] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[ja] endpoint",
+    "endpoints": "[ja] endpoints",
+    "more": "[ja] more",
+    "edit": "[ja] Edit",
+    "addEndpoint": "[ja] Add Endpoint",
+    "editEndpoint": "[ja] Edit Endpoint",
+    "noEndpointsYet": "[ja] No endpoints yet",
+    "addFirstEndpoint": "[ja] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[ja] Delete Endpoint",
+    "deleteEndpointConfirm": "[ja] Are you sure you want to delete this endpoint?",
+    "collectionName": "[ja] Collection Name",
+    "collectionNamePlaceholder": "[ja] e.g., Payment API",
+    "baseUrl": "[ja] Base URL",
+    "baseUrlPlaceholder": "[ja] https://api.example.com/v1",
+    "baseUrlHelp": "[ja] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[ja] Description",
+    "descriptionPlaceholder": "[ja] Optional description for this API",
+    "authType": "[ja] Authentication Type",
+    "authNone": "[ja] No Authentication",
+    "authBearer": "[ja] Bearer Token",
+    "authApiKey": "[ja] API Key",
+    "authBasic": "[ja] Basic Auth",
+    "saveChanges": "[ja] Save Changes",
+    "collectionNameRequired": "[ja] Collection name is required",
+    "baseUrlRequired": "[ja] Base URL is required",
+    "invalidUrl": "[ja] Please enter a valid URL",
+    "pasteCurl": "[ja] Paste your cURL command",
+    "curlTip": "[ja] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[ja] Parse cURL",
+    "enterCurlCommand": "[ja] Please enter a cURL command",
+    "invalidCurlCommand": "[ja] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[ja] Endpoint Name",
+    "endpointNamePlaceholder": "[ja] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[ja] What does this endpoint do?",
+    "method": "[ja] Method",
+    "path": "[ja] Path",
+    "pathPlaceholder": "[ja] /users/':id'",
+    "headers": "[ja] Headers",
+    "addHeader": "[ja] + Add Header",
+    "noHeaders": "[ja] No headers",
+    "key": "[ja] Key",
+    "value": "[ja] Value",
+    "queryParameters": "[ja] Query Parameters",
+    "addParameter": "[ja] + Add Parameter",
+    "noQueryParameters": "[ja] No query parameters",
+    "requestBody": "[ja] Request Body",
+    "backToCurl": "[ja] ← Back to cURL",
+    "endpointNameRequired": "[ja] Endpoint name is required",
+    "pathRequired": "[ja] Path is required",
+    "exportMd": "[ja] Export MD",
+    "codeExamples": "[ja] Code Examples",
+    "header": "[ja] Header",
+    "parameter": "[ja] Parameter",
+    "noCurlAvailable": "[ja] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[ja] Schema Designer",
+      "targetDatabase": "[ja] Target Database",
+      "addTable": "[ja] Add Table",
+      "clearAll": "[ja] Clear All",
+      "importSql": "[ja] Import SQL",
+      "fields": "[ja] Add Fields",
+      "generatedSql": "[ja] Generated Output",
+      "copy": "[ja] Copy",
+      "download": "[ja] Download"
+    },
+    "canvas": {
+      "autoLayout": "[ja] Auto Layout"
+    },
+    "import": {
+      "title": "[ja] Import SQL",
+      "placeholder": "[ja] Paste your SQL create table statements here...",
+      "button": "[ja] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[ja] Table Name",
+      "deleteTable": "[ja] Delete Table",
+      "columnPlaceholder": "[ja] Column Name",
+      "deleteColumn": "[ja] Delete Column",
+      "addColumn": "[ja] Add Column",
+      "primaryKey": "[ja] Toggle Primary Key"
+    }
   }
 }

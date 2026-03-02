@@ -64,7 +64,9 @@
     },
     "openTool": "打开工具",
     "noResults": "未找到匹配的工具",
-    "clearFilters": "清除筛选"
+    "clearFilters": "清除筛选",
+    "exploreButton": "[zh] Explore Tools",
+    "starOnGithub": "[zh] Star on GitHub"
   },
   "Footer": {
     "builtWith": "构建者 ❤️",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[zh] Online Code Editor",
       "description": "[zh] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[zh] Cron Generator",
+      "description": "[zh] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[zh] CSS Clip Path Generator",
+      "description": "[zh] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[zh] Meta Tag Builder",
+      "description": "[zh] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[zh] CURL Converter",
+      "description": "[zh] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[zh] API Documentation Builder",
+      "description": "[zh] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[zh] Visual Schema Designer",
+      "description": "[zh] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[zh] This tool was inspired by an app developed by",
     "checkOut": "[zh] Check out",
     "thanks": "[zh] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[zh] CURL Converter",
+    "description": "[zh] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[zh] Paste your CURL command here...",
+    "outputPlaceholder": "[zh] Generated code will appear here...",
+    "convert": "[zh] Convert",
+    "language": "[zh] Target Language",
+    "copy": "[zh] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[zh] API Documentation Builder",
+    "description": "[zh] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[zh] Search collections...",
+    "newCollection": "[zh] New Collection",
+    "createCollection": "[zh] Create Collection",
+    "editCollection": "[zh] Edit Collection",
+    "deleteCollection": "[zh] Delete Collection",
+    "deleteCollectionConfirm": "[zh] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[zh] Delete",
+    "cancel_action": "[zh] Cancel",
+    "cancel": "[zh] Cancel",
+    "noCollectionsYet": "[zh] No collections yet",
+    "noCollectionsFound": "[zh] No collections found",
+    "tryDifferentSearch": "[zh] Try a different search term",
+    "createFirstCollection": "[zh] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[zh] endpoint",
+    "endpoints": "[zh] endpoints",
+    "more": "[zh] more",
+    "edit": "[zh] Edit",
+    "addEndpoint": "[zh] Add Endpoint",
+    "editEndpoint": "[zh] Edit Endpoint",
+    "noEndpointsYet": "[zh] No endpoints yet",
+    "addFirstEndpoint": "[zh] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[zh] Delete Endpoint",
+    "deleteEndpointConfirm": "[zh] Are you sure you want to delete this endpoint?",
+    "collectionName": "[zh] Collection Name",
+    "collectionNamePlaceholder": "[zh] e.g., Payment API",
+    "baseUrl": "[zh] Base URL",
+    "baseUrlPlaceholder": "[zh] https://api.example.com/v1",
+    "baseUrlHelp": "[zh] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[zh] Description",
+    "descriptionPlaceholder": "[zh] Optional description for this API",
+    "authType": "[zh] Authentication Type",
+    "authNone": "[zh] No Authentication",
+    "authBearer": "[zh] Bearer Token",
+    "authApiKey": "[zh] API Key",
+    "authBasic": "[zh] Basic Auth",
+    "saveChanges": "[zh] Save Changes",
+    "collectionNameRequired": "[zh] Collection name is required",
+    "baseUrlRequired": "[zh] Base URL is required",
+    "invalidUrl": "[zh] Please enter a valid URL",
+    "pasteCurl": "[zh] Paste your cURL command",
+    "curlTip": "[zh] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[zh] Parse cURL",
+    "enterCurlCommand": "[zh] Please enter a cURL command",
+    "invalidCurlCommand": "[zh] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[zh] Endpoint Name",
+    "endpointNamePlaceholder": "[zh] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[zh] What does this endpoint do?",
+    "method": "[zh] Method",
+    "path": "[zh] Path",
+    "pathPlaceholder": "[zh] /users/':id'",
+    "headers": "[zh] Headers",
+    "addHeader": "[zh] + Add Header",
+    "noHeaders": "[zh] No headers",
+    "key": "[zh] Key",
+    "value": "[zh] Value",
+    "queryParameters": "[zh] Query Parameters",
+    "addParameter": "[zh] + Add Parameter",
+    "noQueryParameters": "[zh] No query parameters",
+    "requestBody": "[zh] Request Body",
+    "backToCurl": "[zh] ← Back to cURL",
+    "endpointNameRequired": "[zh] Endpoint name is required",
+    "pathRequired": "[zh] Path is required",
+    "exportMd": "[zh] Export MD",
+    "codeExamples": "[zh] Code Examples",
+    "header": "[zh] Header",
+    "parameter": "[zh] Parameter",
+    "noCurlAvailable": "[zh] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[zh] Schema Designer",
+      "targetDatabase": "[zh] Target Database",
+      "addTable": "[zh] Add Table",
+      "clearAll": "[zh] Clear All",
+      "importSql": "[zh] Import SQL",
+      "fields": "[zh] Add Fields",
+      "generatedSql": "[zh] Generated Output",
+      "copy": "[zh] Copy",
+      "download": "[zh] Download"
+    },
+    "canvas": {
+      "autoLayout": "[zh] Auto Layout"
+    },
+    "import": {
+      "title": "[zh] Import SQL",
+      "placeholder": "[zh] Paste your SQL create table statements here...",
+      "button": "[zh] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[zh] Table Name",
+      "deleteTable": "[zh] Delete Table",
+      "columnPlaceholder": "[zh] Column Name",
+      "deleteColumn": "[zh] Delete Column",
+      "addColumn": "[zh] Add Column",
+      "primaryKey": "[zh] Toggle Primary Key"
+    }
   }
 }

@@ -64,7 +64,9 @@
     },
     "openTool": "Deschide instrument",
     "noResults": "Nu s-au găsit instrumente care să se potrivească cu",
-    "clearFilters": "Șterge filtrele"
+    "clearFilters": "Șterge filtrele",
+    "exploreButton": "[ro] Explore Tools",
+    "starOnGithub": "[ro] Star on GitHub"
   },
   "Footer": {
     "builtWith": "Construit cu ❤️ de",
@@ -450,6 +452,30 @@
     "code-editor": {
       "name": "[ro] Online Code Editor",
       "description": "[ro] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[ro] Cron Generator",
+      "description": "[ro] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[ro] CSS Clip Path Generator",
+      "description": "[ro] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[ro] Meta Tag Builder",
+      "description": "[ro] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[ro] CURL Converter",
+      "description": "[ro] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[ro] API Documentation Builder",
+      "description": "[ro] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[ro] Visual Schema Designer",
+      "description": "[ro] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1862,5 +1888,114 @@
     "inspiredByApp": "[ro] This tool was inspired by an app developed by",
     "checkOut": "[ro] Check out",
     "thanks": "[ro] Thanks for helping make DailyDevTools better ❤️"
+  },
+  "CurlConverter": {
+    "title": "[ro] CURL Converter",
+    "description": "[ro] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[ro] Paste your CURL command here...",
+    "outputPlaceholder": "[ro] Generated code will appear here...",
+    "convert": "[ro] Convert",
+    "language": "[ro] Target Language",
+    "copy": "[ro] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[ro] API Documentation Builder",
+    "description": "[ro] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[ro] Search collections...",
+    "newCollection": "[ro] New Collection",
+    "createCollection": "[ro] Create Collection",
+    "editCollection": "[ro] Edit Collection",
+    "deleteCollection": "[ro] Delete Collection",
+    "deleteCollectionConfirm": "[ro] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[ro] Delete",
+    "cancel_action": "[ro] Cancel",
+    "cancel": "[ro] Cancel",
+    "noCollectionsYet": "[ro] No collections yet",
+    "noCollectionsFound": "[ro] No collections found",
+    "tryDifferentSearch": "[ro] Try a different search term",
+    "createFirstCollection": "[ro] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[ro] endpoint",
+    "endpoints": "[ro] endpoints",
+    "more": "[ro] more",
+    "edit": "[ro] Edit",
+    "addEndpoint": "[ro] Add Endpoint",
+    "editEndpoint": "[ro] Edit Endpoint",
+    "noEndpointsYet": "[ro] No endpoints yet",
+    "addFirstEndpoint": "[ro] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[ro] Delete Endpoint",
+    "deleteEndpointConfirm": "[ro] Are you sure you want to delete this endpoint?",
+    "collectionName": "[ro] Collection Name",
+    "collectionNamePlaceholder": "[ro] e.g., Payment API",
+    "baseUrl": "[ro] Base URL",
+    "baseUrlPlaceholder": "[ro] https://api.example.com/v1",
+    "baseUrlHelp": "[ro] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[ro] Description",
+    "descriptionPlaceholder": "[ro] Optional description for this API",
+    "authType": "[ro] Authentication Type",
+    "authNone": "[ro] No Authentication",
+    "authBearer": "[ro] Bearer Token",
+    "authApiKey": "[ro] API Key",
+    "authBasic": "[ro] Basic Auth",
+    "saveChanges": "[ro] Save Changes",
+    "collectionNameRequired": "[ro] Collection name is required",
+    "baseUrlRequired": "[ro] Base URL is required",
+    "invalidUrl": "[ro] Please enter a valid URL",
+    "pasteCurl": "[ro] Paste your cURL command",
+    "curlTip": "[ro] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[ro] Parse cURL",
+    "enterCurlCommand": "[ro] Please enter a cURL command",
+    "invalidCurlCommand": "[ro] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[ro] Endpoint Name",
+    "endpointNamePlaceholder": "[ro] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[ro] What does this endpoint do?",
+    "method": "[ro] Method",
+    "path": "[ro] Path",
+    "pathPlaceholder": "[ro] /users/':id'",
+    "headers": "[ro] Headers",
+    "addHeader": "[ro] + Add Header",
+    "noHeaders": "[ro] No headers",
+    "key": "[ro] Key",
+    "value": "[ro] Value",
+    "queryParameters": "[ro] Query Parameters",
+    "addParameter": "[ro] + Add Parameter",
+    "noQueryParameters": "[ro] No query parameters",
+    "requestBody": "[ro] Request Body",
+    "backToCurl": "[ro] ← Back to cURL",
+    "endpointNameRequired": "[ro] Endpoint name is required",
+    "pathRequired": "[ro] Path is required",
+    "exportMd": "[ro] Export MD",
+    "codeExamples": "[ro] Code Examples",
+    "header": "[ro] Header",
+    "parameter": "[ro] Parameter",
+    "noCurlAvailable": "[ro] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[ro] Schema Designer",
+      "targetDatabase": "[ro] Target Database",
+      "addTable": "[ro] Add Table",
+      "clearAll": "[ro] Clear All",
+      "importSql": "[ro] Import SQL",
+      "fields": "[ro] Add Fields",
+      "generatedSql": "[ro] Generated Output",
+      "copy": "[ro] Copy",
+      "download": "[ro] Download"
+    },
+    "canvas": {
+      "autoLayout": "[ro] Auto Layout"
+    },
+    "import": {
+      "title": "[ro] Import SQL",
+      "placeholder": "[ro] Paste your SQL create table statements here...",
+      "button": "[ro] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[ro] Table Name",
+      "deleteTable": "[ro] Delete Table",
+      "columnPlaceholder": "[ro] Column Name",
+      "deleteColumn": "[ro] Delete Column",
+      "addColumn": "[ro] Add Column",
+      "primaryKey": "[ro] Toggle Primary Key"
+    }
   }
 }

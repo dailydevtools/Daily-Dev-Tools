@@ -63,9 +63,13 @@ export default function TermsPage() {
                         {/* Special handling for lists or extra content if needed, currently useLicense has a list */}
                         {section === 'useLicense' && (
                             <ul className="list-disc pl-6 mb-6 text-[var(--foreground)]">
-                                {t.raw('sections.useLicense.list').map((item: string, i: number) => (
-                                    <li key={i} className="mb-2">{item}</li>
-                                ))}
+                                {Array.isArray(t.raw('sections.useLicense.list')) ? (
+                                    t.raw('sections.useLicense.list').map((item: string, i: number) => (
+                                        <li key={i} className="mb-2">{item}</li>
+                                    ))
+                                ) : (
+                                    <li className="mb-2 text-rose-500 italic">Translation missing or invalid format (sections.useLicense.list)</li>
+                                )}
                             </ul>
                         )}
                     </div>

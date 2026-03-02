@@ -78,7 +78,9 @@
     },
     "openTool": "Abrir herramienta",
     "noResults": "No se encontraron herramientas que coincidan con",
-    "clearFilters": "Borrar filtros"
+    "clearFilters": "Borrar filtros",
+    "exploreButton": "[es] Explore Tools",
+    "starOnGithub": "[es] Star on GitHub"
   },
   "Footer": {
     "builtWith": "Creado con ❤️ por",
@@ -471,6 +473,30 @@
     "code-editor": {
       "name": "[es] Online Code Editor",
       "description": "[es] Write, edit, and format code with syntax highlighting"
+    },
+    "cron-generator": {
+      "name": "[es] Cron Generator",
+      "description": "[es] Generate cron schedule expressions easily"
+    },
+    "css-clip-path": {
+      "name": "[es] CSS Clip Path Generator",
+      "description": "[es] Create custom shapes with CSS clip-path"
+    },
+    "meta-generator": {
+      "name": "[es] Meta Tag Builder",
+      "description": "[es] Generate SEO meta tags for your website"
+    },
+    "curl-converter": {
+      "name": "[es] CURL Converter",
+      "description": "[es] Convert CURL commands to Python, JavaScript, Go and more"
+    },
+    "api-docs": {
+      "name": "[es] API Documentation Builder",
+      "description": "[es] Create beautiful API docs from cURL commands"
+    },
+    "visual-database-designer": {
+      "name": "[es] Visual Schema Designer",
+      "description": "[es] Visually design database schemas and export SQL"
     }
   },
   "Terms": {
@@ -1853,6 +1879,115 @@
       "block_5": "Cómo funciona",
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Conocimiento cero:</strong> Nunca vemos su contraseña.Nunca sale de tu dispositivo.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Almacenamiento sin conexión:</strong> Su bóveda cifrada se almacena en el LocalStorage de su navegador.</li>\n<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable:</strong> Puede exportar/hacer una copia de seguridad de sus datos cifrados sin procesar en cualquier momento.</li>",
       "block_7": "Deje de confiarle a la nube sus claves maestras.<a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Pruebe el administrador de contraseñas local</a> hoy."
+    }
+  },
+  "CurlConverter": {
+    "title": "[es] CURL Converter",
+    "description": "[es] Convert CURL commands to Python, JavaScript, Go, PHP, and more.",
+    "inputPlaceholder": "[es] Paste your CURL command here...",
+    "outputPlaceholder": "[es] Generated code will appear here...",
+    "convert": "[es] Convert",
+    "language": "[es] Target Language",
+    "copy": "[es] Copy Code"
+  },
+  "APIDocs": {
+    "title": "[es] API Documentation Builder",
+    "description": "[es] Create beautiful API documentation from cURL commands without writing OpenAPI specs.",
+    "searchCollections": "[es] Search collections...",
+    "newCollection": "[es] New Collection",
+    "createCollection": "[es] Create Collection",
+    "editCollection": "[es] Edit Collection",
+    "deleteCollection": "[es] Delete Collection",
+    "deleteCollectionConfirm": "[es] Are you sure you want to delete this collection and all its endpoints?",
+    "delete": "[es] Delete",
+    "cancel_action": "[es] Cancel",
+    "cancel": "[es] Cancel",
+    "noCollectionsYet": "[es] No collections yet",
+    "noCollectionsFound": "[es] No collections found",
+    "tryDifferentSearch": "[es] Try a different search term",
+    "createFirstCollection": "[es] Create your first API collection to start documenting your endpoints",
+    "endpoint": "[es] endpoint",
+    "endpoints": "[es] endpoints",
+    "more": "[es] more",
+    "edit": "[es] Edit",
+    "addEndpoint": "[es] Add Endpoint",
+    "editEndpoint": "[es] Edit Endpoint",
+    "noEndpointsYet": "[es] No endpoints yet",
+    "addFirstEndpoint": "[es] Add your first endpoint by pasting a cURL command",
+    "deleteEndpoint": "[es] Delete Endpoint",
+    "deleteEndpointConfirm": "[es] Are you sure you want to delete this endpoint?",
+    "collectionName": "[es] Collection Name",
+    "collectionNamePlaceholder": "[es] e.g., Payment API",
+    "baseUrl": "[es] Base URL",
+    "baseUrlPlaceholder": "[es] https://api.example.com/v1",
+    "baseUrlHelp": "[es] The base URL for all endpoints in this collection",
+    "descriptionLabel": "[es] Description",
+    "descriptionPlaceholder": "[es] Optional description for this API",
+    "authType": "[es] Authentication Type",
+    "authNone": "[es] No Authentication",
+    "authBearer": "[es] Bearer Token",
+    "authApiKey": "[es] API Key",
+    "authBasic": "[es] Basic Auth",
+    "saveChanges": "[es] Save Changes",
+    "collectionNameRequired": "[es] Collection name is required",
+    "baseUrlRequired": "[es] Base URL is required",
+    "invalidUrl": "[es] Please enter a valid URL",
+    "pasteCurl": "[es] Paste your cURL command",
+    "curlTip": "[es] Tip: Copy a cURL command from your browser's DevTools Network tab",
+    "parseCurl": "[es] Parse cURL",
+    "enterCurlCommand": "[es] Please enter a cURL command",
+    "invalidCurlCommand": "[es] This doesn't look like a cURL command. It should start with \"curl\"",
+    "endpointName": "[es] Endpoint Name",
+    "endpointNamePlaceholder": "[es] e.g., Create User",
+    "descriptionPlaceholderEndpoint": "[es] What does this endpoint do?",
+    "method": "[es] Method",
+    "path": "[es] Path",
+    "pathPlaceholder": "[es] /users/':id'",
+    "headers": "[es] Headers",
+    "addHeader": "[es] + Add Header",
+    "noHeaders": "[es] No headers",
+    "key": "[es] Key",
+    "value": "[es] Value",
+    "queryParameters": "[es] Query Parameters",
+    "addParameter": "[es] + Add Parameter",
+    "noQueryParameters": "[es] No query parameters",
+    "requestBody": "[es] Request Body",
+    "backToCurl": "[es] ← Back to cURL",
+    "endpointNameRequired": "[es] Endpoint name is required",
+    "pathRequired": "[es] Path is required",
+    "exportMd": "[es] Export MD",
+    "codeExamples": "[es] Code Examples",
+    "header": "[es] Header",
+    "parameter": "[es] Parameter",
+    "noCurlAvailable": "[es] // No cURL command available"
+  },
+  "VisualDatabaseDesigner": {
+    "sidebar": {
+      "title": "[es] Schema Designer",
+      "targetDatabase": "[es] Target Database",
+      "addTable": "[es] Add Table",
+      "clearAll": "[es] Clear All",
+      "importSql": "[es] Import SQL",
+      "fields": "[es] Add Fields",
+      "generatedSql": "[es] Generated Output",
+      "copy": "[es] Copy",
+      "download": "[es] Download"
+    },
+    "canvas": {
+      "autoLayout": "[es] Auto Layout"
+    },
+    "import": {
+      "title": "[es] Import SQL",
+      "placeholder": "[es] Paste your SQL create table statements here...",
+      "button": "[es] Import"
+    },
+    "table": {
+      "tableNamePlaceholder": "[es] Table Name",
+      "deleteTable": "[es] Delete Table",
+      "columnPlaceholder": "[es] Column Name",
+      "deleteColumn": "[es] Delete Column",
+      "addColumn": "[es] Add Column",
+      "primaryKey": "[es] Toggle Primary Key"
     }
   }
 }
