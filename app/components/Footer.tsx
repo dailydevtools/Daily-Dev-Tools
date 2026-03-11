@@ -44,6 +44,18 @@ export default function Footer() {
                             GitHub
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#fb923c] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                         </a>
+                        <a href="https://marketplace.visualstudio.com/items?itemName=sohanpaliyal.dailydevtools" target="_blank" className="text-[var(--muted-text)] no-underline hover:text-[#007ACC] relative group py-1">
+                            VS Code Extension
+                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#007ACC] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                        </a>
+                        <a href="https://chromewebstore.google.com/search/DailyDevTools" target="_blank" className="text-[var(--muted-text)] no-underline hover:text-[#4285F4] relative group py-1">
+                            Chrome Extension
+                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#4285F4] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                        </a>
+                        <a href="https://buymeacoffee.com/sohanpaliyal" target="_blank" rel="noopener noreferrer" className="text-[var(--muted-text)] no-underline hover:text-[#FFDD00] relative group py-1">
+                            Buy me a coffee ☕
+                            <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#FFDD00] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+                        </a>
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-[var(--border-color)] text-center">
