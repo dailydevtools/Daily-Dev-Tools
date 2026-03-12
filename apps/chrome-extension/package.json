@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@dailydevtools/core-utils": "*",
+    "lucide-react": "^0.577.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@dailydevtools/core-utils": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.260",

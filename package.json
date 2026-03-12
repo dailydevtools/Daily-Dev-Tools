@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Fast, free, and privacy-focused developer tools.",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dailydevtools/Daily-Dev-Tools.git"
@@ -51,9 +55,18 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@types/babel__core": "^7.20.5",
+    "@types/babel__generator": "^7.27.0",
+    "@types/babel__template": "^7.4.4",
+    "@types/babel__traverse": "^7.28.0",
+    "@types/chrome": "^0.1.37",
+    "@types/filesystem": "^0.0.36",
+    "@types/filewriter": "^0.0.33",
+    "@types/har-format": "^1.2.16",
     "@types/js-yaml": "^4.0.9",
     "@types/json2csv": "^5.0.7",
     "@types/node": "^20",
+    "@types/prop-types": "^15.7.15",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@types/xml-js": "^0.9.0",
