@@ -1,5 +1,5 @@
 // External tools configuration for the Chrome Extension
-// Version: 1.0.2
+// Version: 1.0.2-pnpm-fix
 export const EXTERNAL_TOOLS = [
     { id: 'age-calculator', label: 'Age Calculator', iconName: 'Calendar', isExternal: true, externalUrl: 'https://dailydev.tools/en/tools/age-calculator' },
     { id: 'ascii-converter', label: 'Ascii Converter', iconName: 'Binary', isExternal: true, externalUrl: 'https://dailydev.tools/en/tools/ascii-converter' },
