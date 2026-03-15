@@ -1,4 +1,4 @@
-import { useState, useEffect, ReactNode } from 'react';
+import { useState, useEffect } from 'react';
 import ToolTabs from '../components/ToolTabs';
 import JsonFormatter from '../components/tools/JsonFormatter';
 import Base64Tool from '../components/tools/Base64Tool';
@@ -17,34 +17,32 @@ import SlugGenerator from '../components/tools/SlugGenerator';
 import HtmlEncoder from '../components/tools/HtmlEncoder';
 import { EXTERNAL_TOOLS } from '../externalTools';
 import {
-    JsonIcon, Base64Icon, UrlIcon, JwtIcon, ExternalLinkIcon,
-    UuidIcon, HashIcon, ClockIcon, CaseIcon, ColorIcon, TextIcon, RegexIcon, CoffeeIcon,
-    KeyIcon, AlignJustifyIcon, LinkIcon, CodeIcon, SearchIcon, WrenchIcon
+    ExternalLinkIcon, CoffeeIcon, SearchIcon
 } from '../components/icons';
 
 type Tool = string;
 
-const TOOLS: { id: Tool; label: string; icon: ReactNode; isExternal?: boolean; externalUrl?: string }[] = [
-    { id: 'json', label: 'JSON', icon: <JsonIcon /> },
-    { id: 'base64', label: 'Base64', icon: <Base64Icon /> },
-    { id: 'url', label: 'URL', icon: <UrlIcon /> },
-    { id: 'jwt', label: 'JWT', icon: <JwtIcon /> },
-    { id: 'password', label: 'Password', icon: <KeyIcon /> },
-    { id: 'uuid', label: 'UUID', icon: <UuidIcon /> },
-    { id: 'hash', label: 'Hash', icon: <HashIcon /> },
-    { id: 'timestamp', label: 'Time', icon: <ClockIcon /> },
-    { id: 'case', label: 'Case', icon: <CaseIcon /> },
-    { id: 'color', label: 'Color', icon: <ColorIcon /> },
-    { id: 'lorem', label: 'Lorem', icon: <TextIcon /> },
-    { id: 'regex', label: 'Regex', icon: <RegexIcon /> },
-    { id: 'word', label: 'Words', icon: <AlignJustifyIcon /> },
-    { id: 'slug', label: 'Slug', icon: <LinkIcon /> },
-    { id: 'html', label: 'HTML', icon: <CodeIcon /> },
+const TOOLS: { id: Tool; label: string; iconName: string; isExternal?: boolean; externalUrl?: string }[] = [
+    { id: 'json', label: 'JSON', iconName: 'FileJson' },
+    { id: 'base64', label: 'Base64', iconName: 'FileCode2' },
+    { id: 'url', label: 'URL', iconName: 'Globe' },
+    { id: 'jwt', label: 'JWT', iconName: 'Shield' },
+    { id: 'password', label: 'Password', iconName: 'Lock' },
+    { id: 'uuid', label: 'UUID', iconName: 'Fingerprint' },
+    { id: 'hash', label: 'Hash', iconName: 'Hash' },
+    { id: 'timestamp', label: 'Time', iconName: 'Clock' },
+    { id: 'case', label: 'Case', iconName: 'CaseLower' },
+    { id: 'color', label: 'Color', iconName: 'Pipette' },
+    { id: 'lorem', label: 'Lorem', iconName: 'AlignLeft' },
+    { id: 'regex', label: 'Regex', iconName: 'ScanSearch' },
+    { id: 'word', label: 'Words', iconName: 'TextCursorInput' },
+    { id: 'slug', label: 'Slug', iconName: 'Unlink' },
+    { id: 'html', label: 'HTML', iconName: 'Code' },
 ];
 
 const ALL_TOOLS = [
     ...TOOLS,
-    ...EXTERNAL_TOOLS.map(t => ({ ...t, icon: <WrenchIcon /> }))
+    ...EXTERNAL_TOOLS
 ];
 
 export default function App() {
@@ -110,9 +108,22 @@ export default function App() {
                 />
             </div>
 
-            <ToolTabs tools={filteredTools} activeTool={activeTool} onChange={handleToolChange} />
-
-            <main className="main">{renderTool()}</main>
+            {filteredTools.length > 0 ? (
+                <>
+                    <ToolTabs tools={filteredTools} activeTool={activeTool} onChange={handleToolChange} />
+                    <main className="main">{renderTool()}</main>
+                </>
+            ) : (
+                <div className="no-results">
+                    <div className="no-results-icon">
+                        <SearchIcon size={32} />
+                    </div>
+                    <p className="no-results-text">No tools found matching "{searchQuery}"</p>
+                    <button className="clear-search-btn" onClick={() => setSearchQuery('')}>
+                        Clear search
+                    </button>
+                </div>
+            )}
 
             <footer className="footer">
                 <a href="https://dailydev.tools/en" target="_blank" rel="noopener noreferrer" className="footer-link">
@@ -138,6 +149,11 @@ export default function App() {
                 .footer-link:hover { color: var(--accent-hover); }
                 .coffee-link { color: var(--text-muted); transition: all 0.2s; display: flex; align-items: center; }
                 .coffee-link:hover { color: #FFDD00; }
+                .no-results { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 40px 20px; color: var(--text-muted); text-align: center; }
+                .no-results-icon { margin-bottom: 16px; opacity: 0.5; }
+                .no-results-text { font-size: 14px; margin-bottom: 20px; }
+                .clear-search-btn { background: var(--accent); color: white; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer; transition: all 0.2s; }
+                .clear-search-btn:hover { background: var(--accent-hover); transform: translateY(-1px); }
             `}</style>
         </div>
     );

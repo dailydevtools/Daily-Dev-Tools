@@ -1,10 +1,11 @@
-import { ReactNode, useRef, useState, useEffect } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from './icons';
+import { useRef, useState, useEffect } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon, ExternalLinkIcon, ZapIcon } from './icons';
+import ToolIcon from './ToolIcon';
 
 interface Tool {
   id: string;
   label: string;
-  icon: ReactNode;
+  iconName: string;
   isExternal?: boolean;
   externalUrl?: string;
 }
@@ -63,7 +64,20 @@ export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps)
               }
             }}
           >
-            <span className="tab-icon">{tool.icon}</span>
+            <div className="tab-icon-wrapper">
+              <span className="tab-icon">
+                <ToolIcon name={tool.iconName} size={16} />
+              </span>
+              {tool.isExternal ? (
+                <span className="tool-badge external" title="Opens in new tab">
+                  <ExternalLinkIcon size={8} />
+                </span>
+              ) : (
+                <span className="tool-badge native" title="Built-in tool">
+                  <ZapIcon size={8} />
+                </span>
+              )}
+            </div>
             <span className="tab-label">{tool.label}</span>
           </button>
         ))}
@@ -177,6 +191,48 @@ export default function ToolTabs({ tools, activeTool, onChange }: ToolTabsProps)
           width: 24px;
           height: 24px;
           transition: transform 0.2s ease;
+        }
+
+        .tab-icon-wrapper {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .tool-badge {
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          background: var(--bg-primary);
+          border-radius: 4px;
+          padding: 1.5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid var(--border-color);
+          box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+          transition: all 0.2s;
+        }
+
+        .tool-badge.external {
+          color: var(--text-muted);
+        }
+
+        .tool-badge.native {
+          color: #fbbf24; /* Amber/Yellow for native */
+          background: rgba(251, 191, 36, 0.05);
+        }
+
+        .tool-tab.active .tool-badge.external {
+          color: var(--accent);
+          border-color: rgba(249, 115, 22, 0.2);
+        }
+
+        .tool-tab.active .tool-badge.native {
+          color: #fbbf24;
+          border-color: rgba(251, 191, 36, 0.3);
+          background: rgba(251, 191, 36, 0.1);
         }
 
         .tab-label {
