@@ -20,15 +20,19 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build Extension
         run: |
           cd apps/chrome-extension
-          npm run build
+          pnpm run build
 
       - name: Zip Extension
         run: |

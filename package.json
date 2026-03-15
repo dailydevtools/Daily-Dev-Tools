@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Fast, free, and privacy-focused developer tools.",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dailydevtools/Daily-Dev-Tools.git"
@@ -30,7 +26,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "bash -c 'npm run type-check'"
+      "bash -c 'pnpm run type-check'"
     ]
   },
   "dependencies": {
