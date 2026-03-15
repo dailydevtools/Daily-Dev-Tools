@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'apps/chrome-extension/**'
+      - '.github/workflows/chrome-extension-publish.yml'
 
 jobs:
   build-and-publish:
