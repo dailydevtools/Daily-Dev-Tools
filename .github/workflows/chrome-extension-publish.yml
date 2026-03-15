@@ -35,7 +35,7 @@ jobs:
           zip -r ../extension.zip .
 
       - name: Upload to Chrome Web Store
-        uses: mnaot0/chrome-extension-upload@v5.0.0
+        uses: mnao305/chrome-extension-upload@v5.0.0
         with:
           file-path: apps/chrome-extension/extension.zip
           extension-id: ${{ secrets.CHROME_EXTENSION_ID }}
