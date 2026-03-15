@@ -4,6 +4,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  transpilePackages: ["@dailydevtools/core-utils"],
   webpack: (config, { isServer }) => {
     // Fix for curlconverter/web-tree-sitter trying to use fs in browser
     if (!isServer) {

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Fast, free, and privacy-focused developer tools.",
   "private": true,
+  "packageManager": "pnpm@10.29.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/dailydevtools/Daily-Dev-Tools.git"
