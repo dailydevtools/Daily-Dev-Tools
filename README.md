@@ -45,10 +45,10 @@ git clone https://github.com/sohanpaliyal/Daily-Dev-Tools.git
 cd Daily-Dev-Tools
 
 # Install dependencies
-npm install
+pnpm install
 
 # Run the development server
-npm run dev
+pnpm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

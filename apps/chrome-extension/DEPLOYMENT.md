@@ -17,7 +17,7 @@ Ensure you have the latest code and dependencies installed.
 cd apps/chrome-extension
 
 # Run the production build
-npm run build
+pnpm run build
 ```
 
 This creates a `dist` folder containing the compiled extension.
@@ -82,6 +82,6 @@ Reviews typically take 24-48 hours. You will receive an email when it's publishe
 
 To update the extension later:
 1.  Bump the version in `manifest.json` (e.g., `1.0.0` -> `1.0.1`).
-2.  Run `npm run build`.
+2.  Run `pnpm run build`.
 3.  Zip the new `dist` folder.
 4.  Go to Dashboard > Select Item > **Package** > **Upload new package**.
