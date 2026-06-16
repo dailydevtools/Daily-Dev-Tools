@@ -45,7 +45,7 @@ export async function generateMetadata({
     return {
         metadataBase: new URL(siteUrl),
         verification: {
-            google: "WNyDolEQdM9-0acQ8Ve5M5Q9meYoa2jMMTuWEjNYCms",
+            google: "xrkF4fSoX6SlUHh1J_AFQby6-EoOcEwaeLORHr5FEPc",
         },
         title: {
             default: title,
