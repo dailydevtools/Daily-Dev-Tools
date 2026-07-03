@@ -2,47 +2,60 @@
 
 import { usePathname } from "next/navigation";
 import { tools } from "../data/tools";
-import Link from "next/link";
+import { Link } from "../../i18n/routing";
 import ToolIcon from "./ToolIcon";
-import { ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 
 export default function RelatedTools() {
-    const t = useTranslations('RelatedTools');
+    const t = useTranslations("RelatedTools");
+    const tTools = useTranslations("Tools");
     const pathname = usePathname();
-    const [randomTools, setRandomTools] = useState<typeof tools>([]);
 
-    useEffect(() => {
-        const currentId = pathname?.split('/').pop();
-        const others = tools.filter(t => t.id !== currentId);
-        // Fisher-Yates shuffle would be better, but simple sort is enough for small list
-        const shuffled = [...others].sort(() => 0.5 - Math.random());
-        setRandomTools(shuffled.slice(0, 3));
+    const relatedTools = useMemo(() => {
+        const currentId = pathname?.split("/").filter(Boolean).pop();
+        const currentTool = tools.find((t) => t.id === currentId);
+        if (!currentTool) return [];
+
+        // Same category first, then fill from other categories if needed
+        const sameCategory = tools.filter(
+            (t) => t.id !== currentId && t.category === currentTool.category
+        );
+        const others = tools.filter(
+            (t) => t.id !== currentId && t.category !== currentTool.category
+        );
+
+        return [...sameCategory, ...others].slice(0, 4);
     }, [pathname]);
 
-    if (randomTools.length === 0) return null;
+    if (relatedTools.length === 0) return null;
 
     return (
-        <div className="mt-20 border-t border-[var(--border-color)] py-10">
-            <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold font-heading text-[var(--title-color)] mb-2">{t('title')}</h3>
-                <p className="text-[var(--muted-text)]">{t('subtitle')}</p>
+        <div className="mt-16 border-t border-[var(--border-color)] pt-10">
+            <div className="mb-6">
+                <h3 className="text-xl font-bold font-heading text-[var(--title-color)] mb-1">
+                    {t("title")}
+                </h3>
+                <p className="text-sm text-[var(--muted-text)]">{t("subtitle")}</p>
             </div>
 
-            <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-5">
-                {randomTools.map(tool => (
-                    <Link key={tool.id} href={`/tools/${tool.id}`} className="bg-[var(--card-bg)] backdrop-blur-xl border border-[var(--card-border)] rounded-[20px] transition-all duration-300 text-[var(--foreground)] hover:bg-[var(--card-hover-bg)] hover:border-[#f9731666] hover:-translate-y-1 block p-6 no-underline bg-[var(--card-bg)]">
-                        <div className="flex items-center gap-4 mb-3">
-                            <div className="text-[#fb923c]">
-                                <ToolIcon name={tool.icon} size={24} />
-                            </div>
-                            <h4 className="text-base font-semibold font-heading text-[var(--title-color)]">{tool.name}</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {relatedTools.map((tool) => (
+                    <Link
+                        key={tool.id}
+                        href={`/tools/${tool.id}`}
+                        className="group flex items-start gap-3 p-4 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-2xl hover:border-[#fb923c]/40 hover:-translate-y-0.5 transition-all duration-200 no-underline"
+                    >
+                        <div className="shrink-0 w-9 h-9 rounded-xl bg-[#f973161a] border border-[#f9731622] flex items-center justify-center text-[#fb923c] group-hover:scale-110 transition-transform duration-200">
+                            <ToolIcon name={tool.icon} size={18} />
                         </div>
-                        <p className="text-[13px] text-[var(--muted-text)] mb-4 leading-relaxed">{tool.description}</p>
-                        <div className="flex items-center text-[#fb923c] text-[13px] font-medium">
-                            <span>{t('openTool')}</span>
-                            <ArrowRight size={14} className="ml-1.5" />
+                        <div className="min-w-0">
+                            <p className="text-[13px] font-semibold text-[var(--title-color)] group-hover:text-[#fb923c] transition-colors truncate">
+                                {tTools(`${tool.id}.name`, { fallback: tool.name })}
+                            </p>
+                            <p className="text-[11px] text-[var(--muted-text)] line-clamp-2 mt-0.5 leading-relaxed">
+                                {tTools(`${tool.id}.description`, { fallback: tool.description })}
+                            </p>
                         </div>
                     </Link>
                 ))}

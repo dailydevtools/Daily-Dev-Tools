@@ -5,6 +5,11 @@ const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
   transpilePackages: ["@dailydevtools/core-utils"],
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "avatars.githubusercontent.com" },
+    ],
+  },
   webpack: (config, { isServer }) => {
     // Fix for curlconverter/web-tree-sitter trying to use fs in browser
     if (!isServer) {

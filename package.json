@@ -27,7 +27,7 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix",
-      "bash -c 'pnpm run type-check'"
+      "bash -c 'npx tsc --noEmit'"
     ]
   },
   "dependencies": {

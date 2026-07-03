@@ -1,5 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { tools } from '../data/tools';
+import { locales } from '../../i18n/routing';
 import { Metadata } from 'next';
 
 const MAX_DESCRIPTION_LENGTH = 160;
@@ -15,7 +16,6 @@ export async function constructToolMetadata({
 
     // Fetch translations for the specific tool and common metadata
     const t = await getTranslations({ locale, namespace: 'Tools' });
-    const tMeta = await getTranslations({ locale, namespace: 'Metadata' }); // Assuming basic metadata structure
 
     const tool = tools.find(tr => tr.id === toolId);
 
@@ -48,11 +48,9 @@ export async function constructToolMetadata({
         description: description,
         alternates: {
             canonical: canonical,
-            languages: {
-                'en': `${siteUrl}/en/tools/${toolId}`,
-                'es': `${siteUrl}/es/tools/${toolId}`,
-                // Add other supported languages here
-            }
+            languages: Object.fromEntries(
+                locales.map((loc) => [loc, `${siteUrl}/${loc}/tools/${toolId}`])
+            ),
         },
         openGraph: {
             title: name,

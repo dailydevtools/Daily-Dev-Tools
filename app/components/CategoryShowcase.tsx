@@ -1,15 +1,15 @@
 "use client";
 
+import React from "react";
 import { Link } from "../../i18n/routing";
 import { useTranslations } from "next-intl";
 import { ToolCategory } from "../data/tools";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Code2, Palette, FileText, Shield, Timer, Calculator, Wrench, Star } from "lucide-react";
-import MotionCard from "./ui/MotionCard";
 import { useEffect, useState } from "react";
 
 // Map categories to icons
-const categoryIcons: Record<string, any> = {
+const categoryIcons: Record<string, React.ElementType> = {
     "Favorites": Star,
     "Developer": Code2,
     "Design": Palette,
@@ -19,6 +19,68 @@ const categoryIcons: Record<string, any> = {
     "Math": Calculator,
     "Utility": Wrench
 };
+
+// Per-category accent colors for a richer visual identity
+const categoryAccents: Record<string, { bg: string; border: string; iconBg: string; iconColor: string; label: string }> = {
+    "Favorites": {
+        bg: "from-amber-500/8 to-transparent",
+        border: "hover:border-amber-400/40",
+        iconBg: "bg-amber-500/10 border-amber-400/20",
+        iconColor: "text-amber-400",
+        label: "text-amber-400",
+    },
+    "Developer": {
+        bg: "from-blue-500/8 to-transparent",
+        border: "hover:border-blue-400/40",
+        iconBg: "bg-blue-500/10 border-blue-400/20",
+        iconColor: "text-blue-400",
+        label: "text-blue-400",
+    },
+    "Design": {
+        bg: "from-pink-500/8 to-transparent",
+        border: "hover:border-pink-400/40",
+        iconBg: "bg-pink-500/10 border-pink-400/20",
+        iconColor: "text-pink-400",
+        label: "text-pink-400",
+    },
+    "Content": {
+        bg: "from-violet-500/8 to-transparent",
+        border: "hover:border-violet-400/40",
+        iconBg: "bg-violet-500/10 border-violet-400/20",
+        iconColor: "text-violet-400",
+        label: "text-violet-400",
+    },
+    "Security": {
+        bg: "from-emerald-500/8 to-transparent",
+        border: "hover:border-emerald-400/40",
+        iconBg: "bg-emerald-500/10 border-emerald-400/20",
+        iconColor: "text-emerald-400",
+        label: "text-emerald-400",
+    },
+    "Productivity": {
+        bg: "from-cyan-500/8 to-transparent",
+        border: "hover:border-cyan-400/40",
+        iconBg: "bg-cyan-500/10 border-cyan-400/20",
+        iconColor: "text-cyan-400",
+        label: "text-cyan-400",
+    },
+    "Math": {
+        bg: "from-orange-500/8 to-transparent",
+        border: "hover:border-orange-400/40",
+        iconBg: "bg-orange-500/10 border-orange-400/20",
+        iconColor: "text-orange-400",
+        label: "text-orange-400",
+    },
+    "Utility": {
+        bg: "from-slate-500/8 to-transparent",
+        border: "hover:border-slate-400/40",
+        iconBg: "bg-slate-500/10 border-slate-400/20",
+        iconColor: "text-slate-400",
+        label: "text-slate-400",
+    },
+};
+
+const defaultAccent = categoryAccents["Utility"];
 
 // Define categories with counts
 type CategoryItem = {
@@ -36,13 +98,26 @@ const staticCategories: CategoryItem[] = [
     { id: "Utility", count: 21 }
 ];
 
+const container: Variants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.08
+        }
+    }
+};
+
+const item: Variants = {
+    hidden: { opacity: 0, y: 16, scale: 0.96 },
+    show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: "easeOut" as const } }
+};
+
 export default function CategoryShowcase() {
     const t = useTranslations('Homepage');
     const [favCount, setFavCount] = useState(0);
-    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        setMounted(true);
         const updateCount = () => {
             const saved = localStorage.getItem("favorites");
             setFavCount(saved ? JSON.parse(saved).length : 0);
@@ -64,81 +139,68 @@ export default function CategoryShowcase() {
         ...staticCategories
     ];
 
-    // consistent gradient for all icons
-    const unifiedGradient = "from-orange-500 to-amber-600";
-
-    const container = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                staggerChildren: 0.1
-            }
-        }
-    };
-
-    const item = {
-        hidden: { opacity: 0, scale: 0.9 },
-        show: { opacity: 1, scale: 1 }
-    };
-
     return (
-        <section className="relative z-10 py-12 px-6 flex flex-col items-center">
-            <div className="w-full max-w-[1200px] mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold font-heading text-[var(--title-color)] mb-4">
-                        Browse by Category
-                    </h2>
-                    <p className="text-[var(--muted-text)] max-w-2xl mx-auto">
-                        Find the perfect tool for your specific needs, organized for quick access.
+        <section className="relative z-10 py-20 px-6">
+            <div className="w-full max-w-[1100px] mx-auto">
+                <div className="mb-12">
+                    <p className="text-[13px] font-semibold text-[#fb923c] uppercase tracking-widest mb-3">
+                        Browse by category
                     </p>
+                    <h2 className="text-[clamp(26px,4vw,40px)] font-bold font-heading text-[var(--title-color)] leading-tight">
+                        Find exactly what you need.
+                    </h2>
                 </div>
 
                 <motion.div
                     variants={container}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+                    viewport={{ once: true, margin: "-80px" }}
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3"
                 >
                     {categories.map((cat) => {
                         const Icon = categoryIcons[cat.id] || Wrench;
                         const isFavorites = cat.id === "Favorites";
+                        const accent = categoryAccents[cat.id] || defaultAccent;
 
                         return (
                             <motion.div key={cat.id} variants={item}>
                                 <Link
                                     href={isFavorites ? "/tools?category=Favorites" : `/tools?category=${cat.id}`}
-                                    className="block no-underline h-full group"
+                                    className="block no-underline group cursor-pointer"
                                 >
-                                    <MotionCard className="bg-[var(--card-bg)] flex gap-4 backdrop-blur-xl border border-[var(--card-border)] rounded-2xl p-5 h-full transition-all duration-300 hover:border-[#fb923c]/30 hover:shadow-xl group-hover:-translate-y-2 relative overflow-hidden">
-                                        {/* Gradient Background Glow */}
-                                        <div className={`absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br ${unifiedGradient} opacity-5 rounded-full blur-2xl group-hover:opacity-15 transition-opacity duration-500`} />
+                                    <div
+                                        className={`relative flex items-center gap-3.5 p-4 bg-[var(--card-bg)] border border-[var(--card-border)] rounded-2xl transition-all duration-250 overflow-hidden hover:-translate-y-0.5 hover:shadow-lg ${accent.border}`}
+                                    >
+                                        {/* Category accent gradient */}
+                                        <div className={`absolute inset-0 bg-gradient-to-br ${accent.bg} opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none`} />
 
                                         {/* Icon */}
-                                        <div className={`w-14 h-14 rounded-xl flex items-center justify-center bg-[#f973161a] text-[#fb923c] border border-[#f9731633] group-hover:scale-110 transition-transform duration-300`}>
-                                            <Icon size={24} fill={isFavorites ? "currentColor" : "none"} />
+                                        <div className={`relative z-10 w-10 h-10 rounded-xl flex items-center justify-center border shrink-0 transition-all duration-250 group-hover:scale-110 ${accent.iconBg} ${accent.iconColor}`}>
+                                            <Icon
+                                                size={19}
+                                                fill={isFavorites ? "currentColor" : "none"}
+                                                className="transition-transform duration-250 group-hover:rotate-[-8deg]"
+                                            />
                                         </div>
 
-                                        <div>
-                                            <h3 className="text-lg font-semibold font-heading text-[var(--title-color)] mb-0 group-hover:text-[#fb923c] transition-colors">
+                                        {/* Text */}
+                                        <div className="relative z-10 min-w-0">
+                                            <p className={`text-[14px] font-semibold text-[var(--title-color)] truncate transition-colors group-hover:${accent.label.split('-')[1] ? accent.label : 'text-[#fb923c]'}`}>
                                                 {t(`categories.${cat.id}`, { fallback: cat.id })}
-                                            </h3>
-
-                                            <div className="flex items-center justify-between">
-                                                <p className="text-sm text-[var(--muted-text)] group-hover:text-[var(--foreground)] transition-colors">
-                                                    {cat.count} tools
-                                                </p>
-
-                                                {/* <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[var(--background)] border border-[var(--border-color)] text-[var(--muted-text)] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                        <path d="M5 12h14" />
-                                                        <path d="m12 5 7 7-7 7" />
-                                                    </svg>
-                                                </div> */}
-                                            </div>
+                                            </p>
+                                            <p className="text-[11px] text-[var(--muted-text)] mt-0.5">
+                                                {cat.count} tools
+                                            </p>
                                         </div>
-                                    </MotionCard>
+
+                                        {/* Arrow indicator */}
+                                        <div className={`relative z-10 ml-auto shrink-0 opacity-0 group-hover:opacity-100 transition-all duration-200 -translate-x-2 group-hover:translate-x-0 ${accent.iconColor}`}>
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
+                                            </svg>
+                                        </div>
+                                    </div>
                                 </Link>
                             </motion.div>
                         );

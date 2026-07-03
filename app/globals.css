@@ -125,96 +125,237 @@ select:focus-visible {
 
 
 @layer utilities {
+
+  /* ── Marquee ──────────────────────────────── */
   @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(-50%);
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
-
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+  }
   .animate-marquee {
     animation: marquee 50s linear infinite;
   }
+  .animate-marquee-reverse {
+    animation: marquee-reverse 50s linear infinite;
+  }
 
-
-
+  /* ── Fade In ──────────────────────────────── */
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-4px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(-4px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 
-
-
+  /* ── Float ───────────────────────────────── */
   @keyframes float {
-
-    0%,
-    100% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-10px);
-    }
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(-10px); }
   }
-
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
 
-  @keyframes float-bubble {
-
-    0%,
-    100% {
-      transform: translate(-50%, -50%) translateY(0) translateX(0);
-    }
-
-    25% {
-      transform: translate(-50%, -50%) translateY(-12px) translateX(6px);
-    }
-
-    50% {
-      transform: translate(-50%, -50%) translateY(-6px) translateX(-4px);
-    }
-
-    75% {
-      transform: translate(-50%, -50%) translateY(-18px) translateX(8px);
-    }
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33%       { transform: translateY(-18px) rotate(1.5deg); }
+    66%       { transform: translateY(-8px) rotate(-1deg); }
+  }
+  .animate-float-slow {
+    animation: float-slow 10s ease-in-out infinite;
   }
 
+  @keyframes float-bubble {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0) translateX(0); }
+    25%       { transform: translate(-50%, -50%) translateY(-12px) translateX(6px); }
+    50%       { transform: translate(-50%, -50%) translateY(-6px) translateX(-4px); }
+    75%       { transform: translate(-50%, -50%) translateY(-18px) translateX(8px); }
+  }
   .animate-float-bubble {
     animation: float-bubble 8s ease-in-out infinite;
   }
 
+  /* ── Wiggle ───────────────────────────────── */
   @keyframes wiggle {
-
-    0%,
-    100% {
-      transform: rotate(-12deg);
-    }
-
-    50% {
-      transform: rotate(12deg);
-    }
+    0%, 100% { transform: rotate(-12deg); }
+    50%       { transform: rotate(12deg); }
   }
-
-  @keyframes shimmer {
-    100% {
-      transform: translateX(100%);
-    }
-  }
-
   .animate-wiggle {
     animation: wiggle 1.5s ease-in-out infinite;
+  }
+
+  /* ── Shimmer (loading) ────────────────────── */
+  @keyframes shimmer {
+    100% { transform: translateX(100%); }
+  }
+
+  /* ── Shimmer sweep (gradient text / badge) ── */
+  @keyframes shimmer-sweep {
+    0%   { background-position: -200% center; }
+    100% { background-position:  200% center; }
+  }
+  .animate-shimmer-sweep {
+    background-size: 200% auto;
+    animation: shimmer-sweep 3.5s linear infinite;
+  }
+
+  /* ── Aurora blob ─────────────────────────── */
+  @keyframes aurora-1 {
+    0%   { transform: translate(0%,    0%)    scale(1); }
+    25%  { transform: translate(8%,   -12%)   scale(1.08); }
+    50%  { transform: translate(-6%,  -8%)    scale(0.95); }
+    75%  { transform: translate(4%,    10%)   scale(1.05); }
+    100% { transform: translate(0%,    0%)    scale(1); }
+  }
+  @keyframes aurora-2 {
+    0%   { transform: translate(0%,    0%)    scale(1); }
+    25%  { transform: translate(-10%,  6%)    scale(1.06); }
+    50%  { transform: translate(8%,    12%)   scale(0.97); }
+    75%  { transform: translate(-4%,  -8%)    scale(1.03); }
+    100% { transform: translate(0%,    0%)    scale(1); }
+  }
+  @keyframes aurora-3 {
+    0%   { transform: translate(0%,    0%)    scale(1); }
+    33%  { transform: translate(12%,   8%)    scale(1.1); }
+    66%  { transform: translate(-8%,  -10%)   scale(0.93); }
+    100% { transform: translate(0%,    0%)    scale(1); }
+  }
+  @keyframes aurora-4 {
+    0%   { transform: translate(0%,    0%)    scale(1); }
+    40%  { transform: translate(-6%,   14%)   scale(1.07); }
+    80%  { transform: translate(10%,  -6%)    scale(0.96); }
+    100% { transform: translate(0%,    0%)    scale(1); }
+  }
+  .animate-aurora-1 { animation: aurora-1 18s ease-in-out infinite; }
+  .animate-aurora-2 { animation: aurora-2 22s ease-in-out infinite; }
+  .animate-aurora-3 { animation: aurora-3 25s ease-in-out infinite; }
+  .animate-aurora-4 { animation: aurora-4 20s ease-in-out infinite; }
+
+  /* ── Border sweep (glowing ring on mockup) ── */
+  @keyframes border-sweep {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .animate-border-sweep {
+    background-size: 300% 300%;
+    animation: border-sweep 4s linear infinite;
+  }
+
+  /* ── Pulse glow ───────────────────────────── */
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0); }
+    50%       { box-shadow: 0 0 28px 6px rgba(249, 115, 22, 0.35); }
+  }
+  .animate-pulse-glow {
+    animation: pulse-glow 2.5s ease-in-out infinite;
+  }
+
+  /* ── Spin slow ────────────────────────────── */
+  @keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 12s linear infinite;
+  }
+
+  /* ── Gradient text live shimmer ───────────── */
+  .gradient-text-animate {
+    background: linear-gradient(
+      90deg,
+      #f97316 0%,
+      #fb923c 20%,
+      #facc15 40%,
+      #fde047 55%,
+      #fb923c 70%,
+      #f97316 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-sweep 3.5s linear infinite;
+  }
+
+  /* ── Badge shimmer overlay ────────────────── */
+  .badge-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      105deg,
+      transparent 30%,
+      rgba(255,255,255,0.25) 50%,
+      transparent 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer-sweep 2.5s linear infinite;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  /* ── Spotlight card effect (CSS only) ──────── */
+  .spotlight-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .spotlight-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(249, 115, 22, 0.06),
+      transparent 50%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .spotlight-card:hover::before {
+    opacity: 1;
+  }
+
+  /* ── How it works step line ───────────────── */
+  @keyframes line-grow {
+    from { transform: scaleX(0); }
+    to   { transform: scaleX(1); }
+  }
+  .animate-line-grow {
+    transform-origin: left;
+    animation: line-grow 0.8s ease-out forwards;
+  }
+
+  /* ── Number tick ─────────────────────────── */
+  @keyframes number-tick {
+    from { transform: translateY(20px); opacity: 0; }
+    to   { transform: translateY(0); opacity: 1; }
+  }
+  .animate-number-tick {
+    animation: number-tick 0.4s ease-out forwards;
+  }
+
+  /* ── Reduced motion overrides ─────────────── */
+  @media (prefers-reduced-motion: reduce) {
+    .animate-aurora-1,
+    .animate-aurora-2,
+    .animate-aurora-3,
+    .animate-aurora-4,
+    .animate-shimmer-sweep,
+    .animate-border-sweep,
+    .animate-marquee,
+    .animate-marquee-reverse,
+    .animate-float,
+    .animate-float-slow,
+    .animate-pulse-glow,
+    .animate-spin-slow,
+    .gradient-text-animate,
+    .badge-shimmer::after {
+      animation: none !important;
+    }
   }
 }
 
