@@ -2,6 +2,7 @@ import { blogPosts } from "./data";
 import BlogCard from "../../components/BlogCard";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { locales } from "@/i18n/routing";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -21,6 +22,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
+            languages: {
+                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/blog`])),
+                'x-default': `${siteUrl}/en/blog`,
+            },
         },
         openGraph: {
             title,

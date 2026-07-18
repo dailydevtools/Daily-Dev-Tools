@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import Link from "next/link";
+import { Link } from "../../i18n/routing";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Tool } from "../data/tools";
 import ToolIcon from "./ToolIcon";

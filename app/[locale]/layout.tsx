@@ -12,7 +12,7 @@ import LayoutEssentials from "../components/LayoutEssentials";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing } from '../../i18n/routing';
+import { routing, locales } from '../../i18n/routing';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -36,8 +36,9 @@ export async function generateMetadata({
     params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
     const { locale } = await params;
-    const t = await getMessages({ locale });
-    const messages = t as any; // Type assertion since getMessages returns AbstractIntlMessages
+    const messages = await getMessages({ locale }) as {
+        Metadata?: { title?: string; description?: string };
+    };
 
     const title = messages.Metadata?.title || "DailyDevTools - Free Online Developer Tools";
     const description = messages.Metadata?.description || "90+ free online tools for everyone. Formatters, converters, generators, and utilities. Fast, private, and no registration required.";
@@ -110,8 +111,8 @@ export async function generateMetadata({
         alternates: {
             canonical: `${siteUrl}/${locale}`,
             languages: {
-                'en': `${siteUrl}/en`,
-                'es': `${siteUrl}/es`,
+                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}`])),
+                'x-default': `${siteUrl}/en`,
             },
         },
         category: "technology",
@@ -142,7 +143,7 @@ export default async function LocaleLayout({
     const { locale } = await params;
 
     // Ensure that the incoming `locale` is valid
-    if (!routing.locales.includes(locale as any)) {
+    if (!(routing.locales as readonly string[]).includes(locale)) {
         notFound();
     }
 

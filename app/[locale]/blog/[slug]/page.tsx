@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "../../../../i18n/routing";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { blogPosts } from "../data";
@@ -62,6 +62,10 @@ export async function generateMetadata({ params }: Props) {
         },
         alternates: {
             canonical: canonical,
+            languages: {
+                ...Object.fromEntries(routing.locales.map((loc) => [loc, `${siteUrl}/${loc}/blog/${post.slug}`])),
+                'x-default': `${siteUrl}/en/blog/${post.slug}`,
+            },
         },
     };
 }

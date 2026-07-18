@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { locales } from '@/i18n/routing';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -16,6 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
+            languages: {
+                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/terms`])),
+                'x-default': `${siteUrl}/en/terms`,
+            },
         },
         openGraph: {
             title,

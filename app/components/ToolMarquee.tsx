@@ -1,7 +1,7 @@
 "use client";
 
 
-import Link from "next/link";
+import { Link } from "../../i18n/routing";
 import { tools } from "../data/tools";
 import ToolIcon from "./ToolIcon";
 import { useTranslations } from "next-intl";

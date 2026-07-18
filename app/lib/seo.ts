@@ -48,9 +48,10 @@ export async function constructToolMetadata({
         description: description,
         alternates: {
             canonical: canonical,
-            languages: Object.fromEntries(
-                locales.map((loc) => [loc, `${siteUrl}/${loc}/tools/${toolId}`])
-            ),
+            languages: {
+                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/tools/${toolId}`])),
+                'x-default': `${siteUrl}/en/tools/${toolId}`,
+            },
         },
         openGraph: {
             title: name,

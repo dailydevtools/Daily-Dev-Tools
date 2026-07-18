@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Shield, Zap, Code, Heart } from 'lucide-react';
+import { locales } from '@/i18n/routing';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -17,6 +18,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
+            languages: {
+                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/about`])),
+                'x-default': `${siteUrl}/en/about`,
+            },
         },
         openGraph: {
             title,
@@ -51,7 +56,7 @@ export default function AboutPage() {
                     Tools that respect your <span className="gradient-text">Privacy</span>
                 </h1>
                 <p className="text-[var(--muted-text)] text-lg max-w-[600px] mx-auto leading-[1.6]">
-                    DailyDevTools was built with a simple mission: proper developer tools shouldn't require a server round-trip.
+                    DailyDevTools was built with a simple mission: proper developer tools shouldn&apos;t require a server round-trip.
                 </p>
             </div>
 
@@ -64,7 +69,7 @@ export default function AboutPage() {
                     <p className="text-[var(--foreground)] leading-[1.7]">
                         When you paste your JSON, SQL, or identifying data into DailyDevTools, it <strong>never leaves your browser</strong>.
                         We use modern JavaScript APIs to process everything on your device. This means your data is safe, secure,
-                        and never logged on our servers (because we don't even see it).
+                        and never logged on our servers (because we don&apos;t even see it).
                     </p>
                 </section>
 
@@ -80,7 +85,7 @@ export default function AboutPage() {
                         <Heart size={24} className="text-[#fb923c] mb-4" />
                         <h3 className="text-lg font-semibold font-heading mb-2 text-[var(--title-color)]">Always Free</h3>
                         <p className="text-[var(--muted-text)] text-sm leading-[1.6]">
-                            We believe basic utilities should be accessible to everyone. No paywalls, no "pro" plans for basic features.
+                            We believe basic utilities should be accessible to everyone. No paywalls, no &quot;pro&quot; plans for basic features.
                         </p>
                     </div>
                 </section>

@@ -1,10 +1,9 @@
 "use client";
 
 import { useEffect, useState, useRef, useMemo } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "../../i18n/routing";
 import { tools } from "../data/tools";
 import { Search, ArrowRight, Delete, X } from "lucide-react";
-import Link from "next/link";
 import ToolIcon from "./ToolIcon";
 import { useTranslations } from "next-intl";
 
@@ -23,6 +22,8 @@ export default function CommandPalette() {
         const down = (e: KeyboardEvent) => {
             if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
                 e.preventDefault();
+                setQuery("");
+                setActiveIndex(0);
                 setIsOpen((open) => !open);
             }
             if (e.key === "Escape") {
@@ -30,7 +31,11 @@ export default function CommandPalette() {
             }
         };
 
-        const openHandler = () => setIsOpen(true);
+        const openHandler = () => {
+            setQuery("");
+            setActiveIndex(0);
+            setIsOpen(true);
+        };
 
         document.addEventListener("keydown", down);
         window.addEventListener("open-cmd-palette", openHandler);
@@ -45,8 +50,6 @@ export default function CommandPalette() {
     useEffect(() => {
         if (isOpen) {
             setTimeout(() => inputRef.current?.focus(), 10);
-            setQuery("");
-            setActiveIndex(0);
         }
     }, [isOpen]);
 
