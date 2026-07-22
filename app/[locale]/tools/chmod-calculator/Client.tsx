@@ -15,6 +15,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidCheckbox } from "../../../components/ui/LiquidCheckbox";
 
 export default function ChmodCalculatorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('ChmodCalculator');
     const [owner, setOwner] = useState<Permission>({ r: true, w: true, x: true });
     const [group, setGroup] = useState<Permission>({ r: true, w: false, x: true });
@@ -34,8 +35,8 @@ export default function ChmodCalculatorClient() {
                 <div className="max-w-[800px] mx-auto">
 
                     <ToolPageHeader
-                        title="Chmod Calculator"
-                        description="Interactive calculator for Linux file permissions."
+                        title={tTools('chmod-calculator.name')}
+                        description={tTools('chmod-calculator.description')}
                         icon={<Shield size={28} className="text-[#fb923c]" />}
                     />
 
