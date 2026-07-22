@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function DeviceInfoClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('DeviceInfo');
     const [info, setInfo] = useState<any>(null);
 
@@ -63,8 +64,8 @@ export default function DeviceInfoClient() {
                 <div className="max-w-[1000px] mx-auto">
 
                     <ToolPageHeader
-                        title="Device Information"
-                        description="View detailed information about your device, browser, and network."
+                        title={tTools('device-info.name')}
+                        description={tTools('device-info.description')}
                         icon={<ToolIcon name="Smartphone" size={32} />}
                     />
 
