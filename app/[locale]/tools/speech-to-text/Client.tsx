@@ -9,6 +9,7 @@ import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput"
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function SpeechToTextClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SpeechToText');
     const [text, setText] = useState("");
     const [listening, setListening] = useState(false);
@@ -65,8 +66,8 @@ export default function SpeechToTextClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Speech to Text"
-                        description="Convert speech to text with the Web Speech API."
+                        title={tTools('speech-to-text.name')}
+                        description={tTools('speech-to-text.description')}
                         icon={<Mic size={28} className="text-[#fb923c]" />}
                     />
 
