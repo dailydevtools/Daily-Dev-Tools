@@ -9,6 +9,7 @@ import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput"
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function CssTriangleClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('CssTriangle');
     const [direction, setDirection] = useState("top");
     const [color, setColor] = useState("#fb923c");
@@ -57,8 +58,8 @@ border-color: transparent transparent ${color} transparent;`;
                 <div className="max-w-[1000px] mx-auto">
 
                     <ToolPageHeader
-                        title="CSS Triangle Generator"
-                        description="Create CSS triangles easily. Adjust direction, size, and color."
+                        title={tTools('css-triangle.name')}
+                        description={tTools('css-triangle.description')}
                         icon={<Play size={28} className="text-[#fb923c] rotate-[-90deg]" />}
                     />
 
