@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function WhatsAppLinkClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('WhatsAppLink');
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
@@ -21,8 +22,8 @@ export default function WhatsAppLinkClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="WhatsApp Link Generator"
-                        description="Create click-to-chat WhatsApp links for your website or social media."
+                        title={tTools('whatsapp-link.name')}
+                        description={tTools('whatsapp-link.description')}
                         icon={<MessageCircle size={28} className="text-[#fb923c]" />}
                     />
 
