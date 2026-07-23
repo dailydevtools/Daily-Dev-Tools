@@ -7,6 +7,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 export default function TimestampConverterClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TimestampConverter');
     const [timestamp, setTimestamp] = useState<number>(0);
     const [dateString, setDateString] = useState("");
@@ -73,8 +74,8 @@ export default function TimestampConverterClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[900px] mx-auto">
                     <ToolPageHeader
-                        title="Unix Timestamp Converter"
-                        description="Convert between Unix timestamps and human-readable dates."
+                        title={tTools('timestamp-converter.name')}
+                        description={tTools('timestamp-converter.description')}
                         icon={<ToolIcon name="Clock" size={32} />}
                     />
 

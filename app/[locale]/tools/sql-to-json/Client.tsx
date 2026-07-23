@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import CodeEditor from "../../../components/CodeEditor";
 
 export default function SqlToJsonClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SqlToJson');
     const [input, setInput] = useState("");
     const [output, setOutput] = useState("");
@@ -72,8 +73,8 @@ export default function SqlToJsonClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1000px] mx-auto">
                     <ToolPageHeader
-                        title="SQL to JSON Converter"
-                        description="Convert SQL INSERT statements to JSON array."
+                        title={tTools('sql-to-json.name')}
+                        description={tTools('sql-to-json.description')}
                         icon={<Database size={28} className="text-[#fb923c]" />}
                     />
 

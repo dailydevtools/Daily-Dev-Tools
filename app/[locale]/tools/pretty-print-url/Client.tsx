@@ -8,6 +8,7 @@ import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { useTranslations } from "next-intl";
 
 export default function PrettyPrintUrlClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('PrettyPrintUrl');
     const [input, setInput] = useState("");
     const [copied, setCopied] = useState(false);
@@ -51,8 +52,8 @@ export default function PrettyPrintUrlClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Pretty Print URL"
-                        description="Format long URLs into a clean, readable structure by separating query parameters."
+                        title={tTools('pretty-print-url.name')}
+                        description={tTools('pretty-print-url.description')}
                         icon={<LinkIcon size={28} className="text-[#fb923c]" />}
                     />
 

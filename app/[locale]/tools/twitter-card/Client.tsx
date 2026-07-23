@@ -10,6 +10,7 @@ import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput"
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function TwitterCardClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TwitterCard');
     const [cardType, setCardType] = useState("summary_large_image");
     const [site, setSite] = useState("");
@@ -34,8 +35,8 @@ export default function TwitterCardClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1000px] mx-auto">
                     <ToolPageHeader
-                        title="Twitter Card Generator"
-                        description="Create Twitter Card meta tags for rich tweets."
+                        title={tTools('twitter-card.name')}
+                        description={tTools('twitter-card.description')}
                         icon={<Twitter size={28} className="text-[#fb923c]" />}
                     />
 

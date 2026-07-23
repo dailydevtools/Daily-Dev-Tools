@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 export default function CssClipPathClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('CssClipPath');
     const [selectedShape, setSelectedShape] = useState("triangle");
     const [copied, setCopied] = useState(false);
@@ -43,8 +44,8 @@ export default function CssClipPathClient() {
                 <div className="max-w-[1000px] mx-auto">
 
                     <ToolPageHeader
-                        title="CSS Clip-Path Generator"
-                        description="Select a shape to generate the CSS clip-path property."
+                        title={tTools('css-clip-path.name')}
+                        description={tTools('css-clip-path.description')}
                         icon={<Scissors size={28} className="text-[#fb923c]" />}
                     />
 

@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function UtmBuilderClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('UtmBuilder');
     const [url, setUrl] = useState("");
     const [source, setSource] = useState("");
@@ -38,8 +39,8 @@ export default function UtmBuilderClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="UTM Builder"
-                        description="Generate tracking links with UTM parameters for your campaigns."
+                        title={tTools('utm-builder.name')}
+                        description={tTools('utm-builder.description')}
                         icon={<LinkIcon size={28} className="text-[#fb923c]" />}
                     />
 

@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidTextArea } from "../../../components/ui/LiquidInput";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function SvgToPngClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SvgToPng');
     const [svgContent, setSvgContent] = useState("");
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -70,8 +71,8 @@ export default function SvgToPngClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="SVG to PNG Converter"
-                        description="Convert SVG vector files to high-resolution PNG images."
+                        title={tTools('svg-to-png.name')}
+                        description={tTools('svg-to-png.description')}
                         icon={<ImageIcon size={28} className="text-[#fb923c]" />}
                     />
 

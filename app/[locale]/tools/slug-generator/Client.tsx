@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function SlugGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SlugGenerator');
     const [input, setInput] = useState("");
 
@@ -30,8 +31,8 @@ export default function SlugGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Slug Generator"
-                        description="Convert titles to URL-friendly slugs case-insensitively."
+                        title={tTools('slug-generator.name')}
+                        description={tTools('slug-generator.description')}
                         icon={<ToolIcon name="Link2" size={32} />}
                     />
 

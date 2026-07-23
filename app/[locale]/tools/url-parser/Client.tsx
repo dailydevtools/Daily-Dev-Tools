@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 export default function UrlParserClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('UrlParser');
     const [input, setInput] = useState("");
     const [parsed, setParsed] = useState<any>(null);
@@ -45,8 +46,8 @@ export default function UrlParserClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="URL Parser"
-                        description="Parse URLs into their components (protocol, hostname, path, parameters)."
+                        title={tTools('url-parser.name')}
+                        description={tTools('url-parser.description')}
                         icon={<LinkIcon size={28} className="text-[#fb923c]" />}
                     />
 

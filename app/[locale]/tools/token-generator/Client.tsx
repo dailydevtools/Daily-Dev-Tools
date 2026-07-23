@@ -11,6 +11,7 @@ import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidTextArea } from "../../../components/ui/LiquidInput";
 
 export default function TokenGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TokenGenerator');
     const [length, setLength] = useState(32);
     const [includeNumbers, setIncludeNumbers] = useState(true);
@@ -38,8 +39,8 @@ export default function TokenGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Random Token Generator"
-                        description="Generate secure random strings, tokens, and API keys."
+                        title={tTools('token-generator.name')}
+                        description={tTools('token-generator.description')}
                         icon={<Key size={28} className="text-[#fb923c]" />}
                     />
 

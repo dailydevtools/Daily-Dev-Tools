@@ -11,6 +11,7 @@ import LiquidSelect from "../../../components/ui/LiquidSelect";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function OgGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('OgGenerator');
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
@@ -35,8 +36,8 @@ export default function OgGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1000px] mx-auto">
                     <ToolPageHeader
-                        title="Open Graph Generator"
-                        description="Create preview-ready Open Graph meta tags for Facebook, Twitter, LinkedIn, and more."
+                        title={tTools('og-generator.name')}
+                        description={tTools('og-generator.description')}
                         icon={<Share2 size={28} className="text-[#fb923c]" />}
                     />
 

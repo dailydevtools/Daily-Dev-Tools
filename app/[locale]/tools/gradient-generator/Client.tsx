@@ -12,6 +12,7 @@ import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function GradientGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('GradientGenerator');
     const [color1, setColor1] = useState("#f97316");
     const [color2, setColor2] = useState("#facc15");
@@ -47,8 +48,8 @@ export default function GradientGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1000px] mx-auto">
                     <ToolPageHeader
-                        title="CSS Gradient Generator"
-                        description="Create beautiful linear and radial CSS gradients visually."
+                        title={tTools('gradient-generator.name')}
+                        description={tTools('gradient-generator.description')}
                         icon={<ToolIcon name="Layers" size={32} />}
                     />
 

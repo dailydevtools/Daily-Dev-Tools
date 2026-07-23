@@ -10,6 +10,7 @@ import { LiquidInput } from "../../../components/ui/LiquidInput";
 
 export default function AgeCalculatorClient() {
     const t = useTranslations('AgeCalculator');
+    const tTools = useTranslations('Tools');
     const [dob, setDob] = useState("");
 
     const calc = () => {
@@ -49,8 +50,8 @@ export default function AgeCalculatorClient() {
                 <div className="max-w-[600px] mx-auto">
 
                     <ToolPageHeader
-                        title="Age Calculator"
-                        description="Calculate your exact age and seeing upcoming birthdays."
+                        title={tTools('age-calculator.name')}
+                        description={tTools('age-calculator.description')}
                         icon={<Cake size={28} className="text-[#fb923c]" />}
                     />
 

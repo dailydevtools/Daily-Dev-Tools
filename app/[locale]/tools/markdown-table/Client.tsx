@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function MarkdownTableClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('MarkdownTable');
     // Simple 2D array state
     const [data, setData] = useState<string[][]>([
@@ -69,8 +70,8 @@ export default function MarkdownTableClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1200px] mx-auto">
                     <ToolPageHeader
-                        title="Markdown Table Generator"
-                        description="Visually create Markdown tables. Add rows, columns, and export to markdown."
+                        title={tTools('markdown-table.name')}
+                        description={tTools('markdown-table.description')}
                         icon={<Table size={28} className="text-[#fb923c]" />}
                     />
 

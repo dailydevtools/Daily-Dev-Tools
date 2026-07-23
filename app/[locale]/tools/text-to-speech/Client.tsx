@@ -11,6 +11,7 @@ import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 
 export default function TextToSpeechClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TextToSpeech');
     const [text, setText] = useState("Hello, welcome to Daily Dev Tools.");
     const [rate, setRate] = useState(1);
@@ -56,8 +57,8 @@ export default function TextToSpeechClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Text to Speech"
-                        description="Convert text to natural sounding speech using browser APIs."
+                        title={tTools('text-to-speech.name')}
+                        description={tTools('text-to-speech.description')}
                         icon={<Volume2 size={28} className="text-[#fb923c]" />}
                     />
 
