@@ -1997,5 +1997,29 @@
       "addColumn": "[ms] Add Column",
       "primaryKey": "[ms] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Tentang DailyDevTools - Misi Kami",
+    "description": "Ketahui tentang DailyDevTools dan misi kami untuk membina alat pembangun yang pantas, peribadi dan percuma yang beroperasi sepenuhnya dalam pelayar anda.",
+    "heroTitleStart": "Alat yang menghormati",
+    "heroTitleHighlight": "privasi anda",
+    "heroSubtitle": "DailyDevTools dibina dengan misi yang mudah: alat pembangun sebenar tidak sepatutnya memerlukan hubungan pergi balik ke pelayan.",
+    "clientSide": {
+      "title": "100% Sisi Klien",
+      "content": "Apabila anda menampal JSON, SQL, atau data pengenalan ke dalam DailyDevTools, data itu tidak akan meninggalkan pelayar anda. Kami menggunakan API JavaScript moden untuk memproses semuanya pada peranti anda. Ini bermakna data anda selamat dan tidak pernah direkod pada pelayan kami (kerana kami sendiri tidak melihatnya)."
+    },
+    "fast": {
+      "title": "Sangat Pantas",
+      "content": "Tiada kelewatan rangkaian. Keputusan muncul serta-merta semasa anda menaip kerana pengiraan berlaku secara tempatan."
+    },
+    "free": {
+      "title": "Sentiasa Percuma",
+      "content": "Kami percaya utiliti asas harus boleh diakses oleh semua orang. Tiada tembok bayaran, tiada pelan \"pro\" untuk ciri-ciri asas."
+    },
+    "openSource": {
+      "title": "Sumber Terbuka Sepenuh Hati",
+      "content": "Kami menyayangi komuniti pembangun. Jika anda mempunyai cadangan atau ingin melaporkan pepijat, hubungi kami.",
+      "cta": "Lihat di GitHub"
+    }
   }
 }
