@@ -1997,5 +1997,29 @@
       "addColumn": "[pt] Add Column",
       "primaryKey": "[pt] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Sobre a DailyDevTools - Nossa Missão",
+    "description": "Conheça a DailyDevTools e nossa missão de criar ferramentas de desenvolvimento rápidas, privadas e gratuitas que funcionam totalmente no seu navegador.",
+    "heroTitleStart": "Ferramentas que respeitam sua",
+    "heroTitleHighlight": "Privacidade",
+    "heroSubtitle": "A DailyDevTools foi criada com uma missão simples: ferramentas de desenvolvimento de verdade não deveriam precisar de idas e vindas a um servidor.",
+    "clientSide": {
+      "title": "100% no lado do cliente",
+      "content": "Quando você cola seu JSON, SQL ou dados identificáveis na DailyDevTools, eles nunca saem do seu navegador. Usamos APIs modernas de JavaScript para processar tudo no seu dispositivo. Isso significa que seus dados estão seguros e nunca são registrados em nossos servidores (porque nem mesmo os vemos)."
+    },
+    "fast": {
+      "title": "Extremamente rápido",
+      "content": "Sem latência de rede. Os resultados aparecem instantaneamente enquanto você digita, pois o cálculo acontece localmente."
+    },
+    "free": {
+      "title": "Sempre gratuito",
+      "content": "Acreditamos que utilitários básicos devem ser acessíveis a todos. Sem paywalls, sem planos \"pro\" para funções básicas."
+    },
+    "openSource": {
+      "title": "De coração aberto ao open source",
+      "content": "Amamos a comunidade de desenvolvedores. Se tiver sugestões ou quiser reportar um bug, fale conosco.",
+      "cta": "Ver no GitHub"
+    }
   }
 }

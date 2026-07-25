@@ -1997,5 +1997,29 @@
       "addColumn": "[no] Add Column",
       "primaryKey": "[no] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Om DailyDevTools - Vårt oppdrag",
+    "description": "Lær om DailyDevTools og vårt oppdrag om å bygge raske, private og gratis utviklerverktøy som kjører helt i nettleseren din.",
+    "heroTitleStart": "Verktøy som respekterer ditt",
+    "heroTitleHighlight": "personvern",
+    "heroSubtitle": "DailyDevTools ble bygget med et enkelt oppdrag: ordentlige utviklerverktøy bør ikke trenge en tur til en server.",
+    "clientSide": {
+      "title": "100 % klientsiden",
+      "content": "Når du limer inn JSON, SQL eller identifiserbare data i DailyDevTools, forlater de aldri nettleseren din. Vi bruker moderne JavaScript-API-er for å behandle alt på enheten din. Dette betyr at dataene dine er trygge og aldri blir logget på våre servere (fordi vi ikke engang ser dem)."
+    },
+    "fast": {
+      "title": "Lynraskt",
+      "content": "Ingen nettverksforsinkelse. Resultater vises umiddelbart mens du skriver, fordi beregningen skjer lokalt."
+    },
+    "free": {
+      "title": "Alltid gratis",
+      "content": "Vi tror at grunnleggende verktøy bør være tilgjengelige for alle. Ingen betalingsmurer, ingen \"pro\"-planer for grunnleggende funksjoner."
+    },
+    "openSource": {
+      "title": "Åpen kildekode av hjertet",
+      "content": "Vi elsker utviklerfellesskapet. Hvis du har forslag eller vil rapportere en feil, ta kontakt med oss.",
+      "cta": "Se på GitHub"
+    }
   }
 }

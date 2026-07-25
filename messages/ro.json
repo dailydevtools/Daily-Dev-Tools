@@ -1997,5 +1997,29 @@
       "addColumn": "[ro] Add Column",
       "primaryKey": "[ro] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Despre DailyDevTools - Misiunea noastră",
+    "description": "Află despre DailyDevTools și misiunea noastră de a construi instrumente rapide, private și gratuite pentru dezvoltatori, care rulează integral în browserul tău.",
+    "heroTitleStart": "Instrumente care îiți respectă",
+    "heroTitleHighlight": "confidențialitatea",
+    "heroSubtitle": "DailyDevTools a fost construit cu o misiune simplă: instrumentele reale pentru dezvoltatori nu ar trebui să necesite comunicare cu un server.",
+    "clientSide": {
+      "title": "100% pe partea clientului",
+      "content": "Când lipești JSON, SQL sau date de identificare în DailyDevTools, acestea nu părăsesc niciodată browserul tău. Folosim API-uri JavaScript moderne pentru a procesa totul pe dispozitivul tău. Asta înseamnă că datele tale sunt în siguranță și nu sunt niciodată înregistrate pe serverele noastre (pentru că nici măcar nu le vedem)."
+    },
+    "fast": {
+      "title": "Extrem de rapid",
+      "content": "Fără latență de rețea. Rezultatele apar instantaneu în timp ce tastezi, deoarece calculul are loc local."
+    },
+    "free": {
+      "title": "Mereu gratuit",
+      "content": "Credem că utilitățile de bază ar trebui să fie accesibile tuturor. Fără ziduri de plată, fără planuri \"pro\" pentru funcții de bază."
+    },
+    "openSource": {
+      "title": "Open source din suflet",
+      "content": "Iubim comunitatea de dezvoltatori. Dacă ai sugestii sau vrei să raportezi un bug, contactează-ne.",
+      "cta": "Vezi pe GitHub"
+    }
   }
 }

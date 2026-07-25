@@ -1997,5 +1997,29 @@
       "addColumn": "[da] Add Column",
       "primaryKey": "[da] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Om DailyDevTools - Vores mission",
+    "description": "Lær om DailyDevTools og vores mission om at bygge hurtige, private og gratis udviklerværktøjer, der kører helt i din browser.",
+    "heroTitleStart": "Værktøjer der respekterer dit",
+    "heroTitleHighlight": "privatliv",
+    "heroSubtitle": "DailyDevTools blev bygget med en simpel mission: rigtige udviklerværktøjer bør ikke kræve en tur til en server.",
+    "clientSide": {
+      "title": "100 % klientside",
+      "content": "Når du indsætter din JSON, SQL eller identificerbare data i DailyDevTools, forlader de aldrig din browser. Vi bruger moderne JavaScript-API'er til at behandle alt på din enhed. Det betyder, at dine data er sikre og aldrig logges på vores servere (fordi vi ikke engang ser dem)."
+    },
+    "fast": {
+      "title": "Lynhurtigt",
+      "content": "Ingen netværksforsinkelse. Resultater vises øjeblikkeligt, mens du skriver, fordi beregningen sker lokalt."
+    },
+    "free": {
+      "title": "Altid gratis",
+      "content": "Vi tror på, at grundlæggende værktøjer bør være tilgængelige for alle. Ingen betalingsmure, ingen \"pro\"-planer for grundlæggende funktioner."
+    },
+    "openSource": {
+      "title": "Open source af hjertet",
+      "content": "Vi elsker udviklerfællesskabet. Hvis du har forslag eller vil rapportere en fejl, så kontakt os.",
+      "cta": "Se på GitHub"
+    }
   }
 }

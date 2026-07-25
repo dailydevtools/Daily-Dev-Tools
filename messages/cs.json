@@ -2283,5 +2283,29 @@
       "addColumn": "[cs] Add Column",
       "primaryKey": "[cs] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "O DailyDevTools - Naše mise",
+    "description": "Poznejte DailyDevTools a naši misi vytvářet rychlé, soukromé a bezplatné nástroje pro vývojáře, které běží zcela ve vašem prohlížeči.",
+    "heroTitleStart": "Nástroje, které respektují vaše",
+    "heroTitleHighlight": "soukromí",
+    "heroSubtitle": "DailyDevTools vzniklo s jednoduchou misi: skutečné nástroje pro vývojáře by neměly vyžadovat komunikaci se serverem.",
+    "clientSide": {
+      "title": "100% na straně klienta",
+      "content": "Když vložíte JSON, SQL nebo identifikační data do DailyDevTools, nikdy neopustí váš prohlížeč. Používáme moderní JavaScript API ke zpracování všeho na vašem zařízení. To znamená, že vaše data jsou v bezpečí a nikdy se nezaznamenávají na našich serverech (protože je ani nevidíme)."
+    },
+    "fast": {
+      "title": "Bleskřívě rychlé",
+      "content": "Žádná síťová latence. Výsledky se zobrazují okamžitě během psaní, protože výpočet probíhá lokálně."
+    },
+    "free": {
+      "title": "Vždy zdarma",
+      "content": "Věříme, že základní nástroje by měly být dostupné pro každého. Žádné placené zdi, žádné \"pro\" plány pro základní funkce."
+    },
+    "openSource": {
+      "title": "Open source od srdce",
+      "content": "Milujeme komunitu vývojářů. Pokud máte návrhy nebo chcete nahlásit chybu, kontaktujte nás.",
+      "cta": "Zobrazit na GitHubu"
+    }
   }
 }
