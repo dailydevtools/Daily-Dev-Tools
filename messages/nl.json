@@ -1997,5 +1997,29 @@
       "addColumn": "[nl] Add Column",
       "primaryKey": "[nl] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Over DailyDevTools - Onze missie",
+    "description": "Ontdek DailyDevTools en onze missie om snelle, privé en gratis ontwikkelaarstools te bouwen die volledig in je browser draaien.",
+    "heroTitleStart": "Tools die jouw",
+    "heroTitleHighlight": "privacy respecteren",
+    "heroSubtitle": "DailyDevTools is gebouwd met een simpele missie: goede ontwikkelaarstools zouden geen omweg naar een server nodig moeten hebben.",
+    "clientSide": {
+      "title": "100% Client-Side",
+      "content": "Wanneer je JSON, SQL of identificeerbare gegevens in DailyDevTools plakt, verlaten ze nooit je browser. We gebruiken moderne JavaScript-API's om alles op je eigen apparaat te verwerken. Dit betekent dat je gegevens veilig zijn en nooit worden opgeslagen op onze servers (omdat we ze niet eens zien)."
+    },
+    "fast": {
+      "title": "Bliksemsnel",
+      "content": "Geen netwerkvertraging. Resultaten verschijnen direct terwijl je typt, omdat de berekening lokaal plaatsvindt."
+    },
+    "free": {
+      "title": "Altijd gratis",
+      "content": "Wij geloven dat basisfuncties voor iedereen toegankelijk moeten zijn. Geen betaalmuren, geen \"pro\"-abonnementen voor basisfuncties."
+    },
+    "openSource": {
+      "title": "Open source in hart en nieren",
+      "content": "Wij houden van de ontwikkelaarsgemeenschap. Heb je suggesties of wil je een bug melden? Neem dan contact met ons op.",
+      "cta": "Bekijk op GitHub"
+    }
   }
 }
