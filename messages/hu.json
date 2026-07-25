@@ -1997,5 +1997,29 @@
       "addColumn": "[hu] Add Column",
       "primaryKey": "[hu] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "A DailyDevTools-ról - A küldetésünk",
+    "description": "Ismerd meg a DailyDevTools-t és küldetésünket, hogy gyors, privát és ingyenes fejlesztői eszközöket készítsünk, amelyek teljesen a böngésződben futnak.",
+    "heroTitleStart": "Eszközök, amelyek tiszteletben tartják a",
+    "heroTitleHighlight": "magánéletedet",
+    "heroSubtitle": "A DailyDevTools egyszerű küldetéssel jött létre: a valódi fejlesztői eszközöknek nem kellene szerverkapcsolatra szorulniuk.",
+    "clientSide": {
+      "title": "100%-ban kliensoldali",
+      "content": "Amikor JSON-t, SQL-t vagy azonosításra alkalmas adatokat illesztesz be a DailyDevTools-ba, azok soha nem hagyják el a böngésződet. Modern JavaScript API-kat használunk, hogy mindent az eszközödön dolgozzunk fel. Ez azt jelenti, hogy az adataid biztonságban vannak, és soha nem kerülnek naplózásra a szervereinken (mert még csak nem is látjuk őket)."
+    },
+    "fast": {
+      "title": "Villámgyors",
+      "content": "Nincs hálózati késleltetés. Az eredmények azonnal megjelennek gépelés közben, mert a számítás helyben történik."
+    },
+    "free": {
+      "title": "Mindig ingyenes",
+      "content": "Hiszünk abban, hogy az alapvető eszközöknek mindenki számára elérhetőnek kell lenniük. Nincs fizetőfal, nincs \"pro\" csomag az alapfunkciókért."
+    },
+    "openSource": {
+      "title": "Nyílt forráskód szívből",
+      "content": "Szeretjük a fejlesztői közösséget. Ha javaslatod van, vagy hibát szeretnél jelenteni, vedd fel velünk a kapcsolatot.",
+      "cta": "Megtekintés a GitHubon"
+    }
   }
 }
