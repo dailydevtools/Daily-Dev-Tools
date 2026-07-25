@@ -1997,5 +1997,29 @@
       "addColumn": "[ko] Add Column",
       "primaryKey": "[ko] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "DailyDevTools 소개 - 우리의 미션",
+    "description": "브라우저에서 완전히 실행되는 빠르고 안전하며 무료인 개발자 도구를 만드는 DailyDevTools의 미션을 소개합니다.",
+    "heroTitleStart": "당신의 프라이버시를 존중하는",
+    "heroTitleHighlight": "도구",
+    "heroSubtitle": "DailyDevTools는 간단한 미션으로 만들어졌습니다. 제대로 된 개발자 도구는 서버를 왕복할 필요가 없어야 합니다.",
+    "clientSide": {
+      "title": "100% 클라이언트 측 처리",
+      "content": "JSON, SQL 또는 개인 식별 데이터를 DailyDevTools에 붙여넣어도 데이터는 절대 브라우저를 벗어나지 않습니다. 최신 자바스크립트 API를 사용해 모든 처리를 사용자의 기기에서 수행합니다. 즉, 데이터는 안전하며 서버에 기록되지 않습니다(애초에 저희가 보지도 못합니다)."
+    },
+    "fast": {
+      "title": "번개처럼 빠름",
+      "content": "네트워크 지연이 없습니다. 계산이 로컬에서 이루어지기 때문에 입력하는 즉시 결과가 표시됩니다."
+    },
+    "free": {
+      "title": "항상 무료",
+      "content": "기본 유틸리티는 누구나 이용할 수 있어야 한다고 믿습니다. 기본 기능에 대한 유료화나 \"프로\" 요금제는 없습니다."
+    },
+    "openSource": {
+      "title": "오픈소스를 사랑하는 마음",
+      "content": "저희는 개발자 커뮤니티를 사랑합니다. 제안 사항이 있거나 버그를 신고하고 싶다면 언제든지 연락해 주세요.",
+      "cta": "GitHub에서 보기"
+    }
   }
 }
