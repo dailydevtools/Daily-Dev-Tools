@@ -1997,5 +1997,29 @@
       "addColumn": "[tr] Add Column",
       "primaryKey": "[tr] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "DailyDevTools Hakkında - Misyonumuz",
+    "description": "DailyDevTools'u ve tamamen tarayıcınızda çalışan hızlı, gizli ve ücretsiz geliştirici araçları oluşturma misyonumuzu keşfedin.",
+    "heroTitleStart": "Gizliliğinize saygı duyan",
+    "heroTitleHighlight": "araçlar",
+    "heroSubtitle": "DailyDevTools basit bir misyonla oluşturuldu: gerçek geliştirici araçlarının bir sunucuya gidip gelmeye ihtiyacı olmamalı.",
+    "clientSide": {
+      "title": "%100 İstemci Taraflı",
+      "content": "JSON, SQL veya kimliğinizi belirleyen verileri DailyDevTools'a yapıştırdığınızda, bu veriler tarayıcınızdan asla çıkmaz. Her şeyi cihazınızda işlemek için modern JavaScript API'lerini kullanıyoruz. Bu, verilerinizin güvenli olduğu ve sunucularımızda asla kayıt altına alınmadığı anlamına gelir (çünkü onları görmüyoruz bile)."
+    },
+    "fast": {
+      "title": "Işık Hızında",
+      "content": "Ağ gecikmesi yok. Hesaplama yerel olarak yapıldığından sonuçlar siz yazarken anında görünür."
+    },
+    "free": {
+      "title": "Her Zaman Ücretsiz",
+      "content": "Temel araçların herkes için erişilebilir olması gerektiğine inanıyoruz. Ödeme duvarı yok, temel özellikler için \"pro\" plan yok."
+    },
+    "openSource": {
+      "title": "Yürekten Açık Kaynak",
+      "content": "Geliştirici topluluğunu seviyoruz. Önerileriniz varsa ya da bir hata bildirmek isterseniz bizimle iletişime geçin.",
+      "cta": "GitHub'da Görüntüle"
+    }
   }
-}
+    }
