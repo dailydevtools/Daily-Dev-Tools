@@ -1997,5 +1997,29 @@
       "addColumn": "[vi] Add Column",
       "primaryKey": "[vi] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Về DailyDevTools - Sứ mệnh của chúng tôi",
+    "description": "Tìm hiểu về DailyDevTools và sứ mệnh xây dựng các công cụ dành cho lập trình viên nhanh, riêng tư và miễn phí, hoạt động hoàn toàn trong trình duyệt của bạn.",
+    "heroTitleStart": "Công cụ tôn trọng",
+    "heroTitleHighlight": "quyền riêng tư của bạn",
+    "heroSubtitle": "DailyDevTools được xây dựng với một sứ mệnh đơn giản: công cụ dành cho lập trình viên thực sự không nên cần đến máy chủ.",
+    "clientSide": {
+      "title": "100% xử lý phía trình duyệt",
+      "content": "Khi bạn dán JSON, SQL hoặc dữ liệu định danh vào DailyDevTools, dữ liệu đó không bao giờ rời khỏi trình duyệt của bạn. Chúng tôi sử dụng các API JavaScript hiện đại để xử lý mọi thứ ngay trên thiết bị của bạn. Điều này có nghĩa là dữ liệu của bạn an toàn và không bao giờ được ghi lại trên máy chủ của chúng tôi (vì chúng tôi thậm chí không nhìn thấy nó)."
+    },
+    "fast": {
+      "title": "Nhanh như chớp",
+      "content": "Không có độ trễ mạng. Kết quả xuất hiện ngay lập tức khi bạn gõ vì việc tính toán diễn ra cục bộ."
+    },
+    "free": {
+      "title": "Luôn miễn phí",
+      "content": "Chúng tôi tin rằng các tiện ích cơ bản nên được mọi người truy cập miễn phí. Không có bức tường trả phí, không có gói \"pro\" cho các tính năng cơ bản."
+    },
+    "openSource": {
+      "title": "Yêu mã nguồn mở từ tận đáy lòng",
+      "content": "Chúng tôi yêu cộng đồng lập trình viên. Nếu bạn có góp ý hoặc muốn báo lỗi, hãy liên hệ với chúng tôi.",
+      "cta": "Xem trên GitHub"
+    }
   }
 }
