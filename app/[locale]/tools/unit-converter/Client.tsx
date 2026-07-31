@@ -13,6 +13,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 type Category = 'length' | 'weight' | 'temperature';
 
 export default function UnitConverterClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('UnitConverter');
 
     // Define units inside component or useMemo to access translations
@@ -84,8 +85,8 @@ export default function UnitConverterClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Unit Converter"
-                        description="Convert between different units of measurement universally."
+                        title={tTools('unit-converter.name')}
+                        description={tTools('unit-converter.description')}
                         icon={<ToolIcon name="Scale" size={32} />}
                     />
 

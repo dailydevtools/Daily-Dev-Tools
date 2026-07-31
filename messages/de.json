@@ -1997,5 +1997,29 @@
       "addColumn": "[de] Add Column",
       "primaryKey": "[de] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Über DailyDevTools - Unsere Mission",
+    "description": "Erfahren Sie mehr über DailyDevTools und unsere Mission, schnelle, private und kostenlose Entwickler-Tools zu entwickeln, die vollständig im Browser laufen.",
+    "heroTitleStart": "Tools, die deine",
+    "heroTitleHighlight": "Privatsphäre respektieren",
+    "heroSubtitle": "DailyDevTools wurde mit einer einfachen Mission entwickelt: Richtige Entwickler-Tools sollten keinen Umweg über einen Server benötigen.",
+    "clientSide": {
+      "title": "100 % clientseitig",
+      "content": "Wenn du dein JSON, SQL oder identifizierbare Daten in DailyDevTools einfügst, verlassen sie niemals deinen Browser. Wir nutzen moderne JavaScript-APIs, um alles auf deinem Gerät zu verarbeiten. Das bedeutet, deine Daten sind sicher und werden nie auf unseren Servern gespeichert (weil wir sie nicht einmal sehen)."
+    },
+    "fast": {
+      "title": "Blitzschnell",
+      "content": "Keine Netzwerklatenz. Ergebnisse erscheinen sofort beim Tippen, da die Berechnung lokal erfolgt."
+    },
+    "free": {
+      "title": "Immer kostenlos",
+      "content": "Wir glauben, dass grundlegende Werkzeuge für alle zugänglich sein sollten. Keine Bezahlschranken, keine \"Pro\"-Pläne für Grundfunktionen."
+    },
+    "openSource": {
+      "title": "Open Source im Herzen",
+      "content": "Wir lieben die Entwickler-Community. Wenn du Vorschläge hast oder einen Fehler melden möchtest, kontaktiere uns.",
+      "cta": "Auf GitHub ansehen"
+    }
   }
-}
+    }

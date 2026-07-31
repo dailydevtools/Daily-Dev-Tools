@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function ScreenRecorderClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('ScreenRecorder');
     const [isRecording, setIsRecording] = useState(false);
     const [videoUrl, setVideoUrl] = useState("");
@@ -78,8 +79,8 @@ export default function ScreenRecorderClient() {
                 <div className="max-w-[800px] mx-auto text-center">
 
                     <ToolPageHeader
-                        title="Screen Recorder"
-                        description="Record your screen directly from your browser. No installation needed."
+                        title={tTools('screen-recorder.name')}
+                        description={tTools('screen-recorder.description')}
                         icon={<Monitor size={28} className="text-[#fb923c]" />}
                     />
 

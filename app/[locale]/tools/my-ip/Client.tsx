@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function MyIPClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('MyIP');
     const [data, setData] = useState<any>(null);
     const [loading, setLoading] = useState(true);
@@ -37,8 +38,8 @@ export default function MyIPClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[600px] mx-auto">
                     <ToolPageHeader
-                        title="My IP Address"
-                        description="Check your public IP address, location, and ISP details instantly."
+                        title={tTools('my-ip.name')}
+                        description={tTools('my-ip.description')}
                         icon={<Globe size={28} className="text-[#fb923c]" />}
                     />
 

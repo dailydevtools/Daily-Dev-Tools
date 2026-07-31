@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { LiquidProgressBar } from "../../../components/ui/LiquidProgressBar";
 export default function WeekNumberClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('WeekNumber');
     const [date, setDate] = useState("");
     const [week, setWeek] = useState(0);
@@ -49,8 +50,8 @@ export default function WeekNumberClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[600px] mx-auto">
                     <ToolPageHeader
-                        title="Week Number Calculator"
-                        description="Find the current ISO week number or calculate it for any date."
+                        title={tTools('week-number.name')}
+                        description={tTools('week-number.description')}
                         icon={<Calendar size={28} className="text-[#fb923c]" />}
                     />
 

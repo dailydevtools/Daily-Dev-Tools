@@ -10,6 +10,7 @@ import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput"
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function MetaTagsClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('MetaTags');
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
@@ -34,8 +35,8 @@ export default function MetaTagsClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Simple Meta Tags"
-                        description="Quickly generate basic HTML meta tags for your page."
+                        title={tTools('meta-tags.name')}
+                        description={tTools('meta-tags.description')}
                         icon={<Code2 size={28} className="text-[#fb923c]" />}
                     />
 

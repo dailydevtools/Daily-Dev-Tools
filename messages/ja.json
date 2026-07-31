@@ -2003,5 +2003,29 @@
       "addColumn": "[ja] Add Column",
       "primaryKey": "[ja] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "DailyDevToolsについて - 私たちの使命",
+    "description": "DailyDevToolsと、ブラウザ内で完結する高速でプライベート、そして無料の開発者向けツールを作るという私たちの使命についてご紹介します。",
+    "heroTitleStart": "あなたのプライバシーを尊重する",
+    "heroTitleHighlight": "ツール",
+    "heroSubtitle": "DailyDevToolsはシンプルな使命のもとに作られました。適切な開発者ツールは、サーバーとの通信を必要としないはずです。",
+    "clientSide": {
+      "title": "100%クライアントサイド処理",
+      "content": "JSON、SQL、または個人を特定できるデータをDailyDevToolsに貼り付けても、それらはブラウザの外に出ることはありません。最新のJavaScript APIを使用して、すべての処理をお使いの端末上で行います。つまり、データは安全であり、サーバーに記録されることは一切ありません（そもそも私たちはデータを見ることすらありません）。"
+    },
+    "fast": {
+      "title": "超高速",
+      "content": "ネットワーク遅延はありません。計算はローカルで行われるため、入力すると同時に結果が表示されます。"
+    },
+    "free": {
+      "title": "常に無料",
+      "content": "基本的なユーティリティは誰もが利用できるべきだと考えています。基本機能に課金や\"pro\"プランはありません。"
+    },
+    "openSource": {
+      "title": "オープンソースを大切に",
+      "content": "私たちは開発者コミュニティを愛しています。ご提案やバグ報告があれば、ぜひご連絡ください。",
+      "cta": "GitHubで見る"
+    }
   }
 }

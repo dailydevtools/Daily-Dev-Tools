@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput, LiquidTextArea } from "../../../components/ui/LiquidInput";
 import LiquidTabs from "../../../components/ui/LiquidTabs";
 export default function CipherToolsClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('ToolPage');
     const [input, setInput] = useState("");
     const [shift, setShift] = useState(13); // Default ROT13
@@ -30,8 +31,8 @@ export default function CipherToolsClient() {
                 <div className="max-w-[800px] mx-auto">
 
                     <ToolPageHeader
-                        title="Cipher Tools"
-                        description="Encrypt and decrypt text with simple shift ciphers (Caesar, ROT13)."
+                        title={tTools('cipher-tools.name')}
+                        description={tTools('cipher-tools.description')}
                         icon={<Lock size={28} className="text-[#fb923c]" />}
                     />
 

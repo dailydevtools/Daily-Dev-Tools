@@ -8,6 +8,7 @@ import ToolIcon from "../../../components/ToolIcon";
 import { useTranslations } from "next-intl";
 
 export default function CrontabGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('CrontabGenerator');
     const [min, setMin] = useState("*");
     const [hour, setHour] = useState("*");
@@ -207,8 +208,8 @@ export default function CrontabGeneratorClient() {
                 <div className="max-w-[800px] mx-auto">
 
                     <ToolPageHeader
-                        title="Crontab Generator"
-                        description="Easily generate crontab schedules for your cron jobs."
+                        title={tTools('crontab-generator.name')}
+                        description={tTools('crontab-generator.description')}
                         icon={<ToolIcon name="Clock" size={32} />}
                     />
 

@@ -1997,5 +1997,29 @@
       "addColumn": "[id] Add Column",
       "primaryKey": "[id] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "Tentang DailyDevTools - Misi Kami",
+    "description": "Kenali DailyDevTools dan misi kami untuk membangun alat developer yang cepat, privat, dan gratis yang berjalan sepenuhnya di browser Anda.",
+    "heroTitleStart": "Alat yang menghormati",
+    "heroTitleHighlight": "Privasi Anda",
+    "heroSubtitle": "DailyDevTools dibangun dengan misi sederhana: alat developer yang baik seharusnya tidak memerlukan koneksi bolak-balik ke server.",
+    "clientSide": {
+      "title": "100% Sisi Klien",
+      "content": "Saat Anda menempelkan JSON, SQL, atau data identitas ke DailyDevTools, data tersebut tidak pernah meninggalkan browser Anda. Kami menggunakan API JavaScript modern untuk memproses semuanya di perangkat Anda. Ini berarti data Anda aman dan tidak pernah tercatat di server kami (karena kami bahkan tidak melihatnya)."
+    },
+    "fast": {
+      "title": "Sangat Cepat",
+      "content": "Tanpa latensi jaringan. Hasil muncul secara instan saat Anda mengetik karena perhitungan dilakukan secara lokal."
+    },
+    "free": {
+      "title": "Selalu Gratis",
+      "content": "Kami percaya utilitas dasar harus dapat diakses oleh semua orang. Tidak ada paywall, tidak ada paket \"pro\" untuk fitur dasar."
+    },
+    "openSource": {
+      "title": "Open Source Sepenuh Hati",
+      "content": "Kami menyukai komunitas developer. Jika Anda punya saran atau ingin melaporkan bug, hubungi kami.",
+      "cta": "Lihat di GitHub"
+    }
   }
 }

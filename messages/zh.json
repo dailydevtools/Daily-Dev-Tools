@@ -1997,5 +1997,29 @@
       "addColumn": "[zh] Add Column",
       "primaryKey": "[zh] Toggle Primary Key"
     }
+  },
+  "About": {
+    "title": "关于 DailyDevTools - 我们的使命",
+    "description": "了解 DailyDevTools，以及我们打造快速、私密且免费、完全在浏览器中运行的开发者工具的使命。",
+    "heroTitleStart": "尊重你的",
+    "heroTitleHighlight": "隐私的工具",
+    "heroSubtitle": "DailyDevTools 的创建使命很简单：合适的开发者工具不应该需要往返服务器。",
+    "clientSide": {
+      "title": "100% 客户端处理",
+      "content": "当你将 JSON、SQL 或可识别数据粘贴到 DailyDevTools 时，它们永远不会离开你的浏览器。我们使用现代 JavaScript API 在你的设备上处理一切。这意味着你的数据是安全的，永远不会记录在我们的服务器上（因为我们根本看不到它）。"
+    },
+    "fast": {
+      "title": "闪电般快速",
+      "content": "没有网络延迟。计算在本地进行，结果会在你输入时即时显示。"
+    },
+    "free": {
+      "title": "始终免费",
+      "content": "我们相信基本工具应该人人都能使用。没有付费墙，基本功能也没有\"专业版\"计划。"
+    },
+    "openSource": {
+      "title": "开源精神",
+      "content": "我们热爱开发者社区。如果你有建议或想报告错误，欢迎联系我们。",
+      "cta": "在 GitHub 上查看"
+    }
   }
 }

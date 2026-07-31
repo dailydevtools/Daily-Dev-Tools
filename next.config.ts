@@ -4,6 +4,15 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/chmod-calculator',
+        destination: '/en/tools/chmod-calculator',
+        permanent: true,
+      },
+    ];
+  },
   transpilePackages: ["@dailydevtools/core-utils"],
   images: {
     remotePatterns: [

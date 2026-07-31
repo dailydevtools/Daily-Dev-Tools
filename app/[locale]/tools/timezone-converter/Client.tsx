@@ -7,6 +7,7 @@ import { LiquidInput } from "../../../components/ui/LiquidInput";
 import { useTranslations } from "next-intl";
 
 export default function TimezoneConverterClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TimezoneConverter');
     const [date, setDate] = useState("");
     const [time, setTime] = useState("");
@@ -53,8 +54,8 @@ export default function TimezoneConverterClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[600px] mx-auto">
                     <ToolPageHeader
-                        title="Timezone Converter"
-                        description="Check the time across multiple major timezones instantly."
+                        title={tTools('timezone-converter.name')}
+                        description={tTools('timezone-converter.description')}
                         icon={<Clock size={28} className="text-[#fb923c]" />}
                     />
 

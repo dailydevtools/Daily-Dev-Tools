@@ -10,6 +10,7 @@ import { LiquidButton } from "../../../components/ui/LiquidButton";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 
 export default function MetaGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('MetaGenerator');
     const [data, setData] = useState({
         title: "",
@@ -68,8 +69,8 @@ export default function MetaGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1100px] mx-auto">
                     <ToolPageHeader
-                        title="Meta Tag Generator"
-                        description="Generate SEO-friendly meta tags, including Open Graph and Twitter Cards."
+                        title={tTools('meta-generator.name')}
+                        description={tTools('meta-generator.description')}
                         icon={<Tags size={28} className="text-[#fb923c]" />}
                     />
 

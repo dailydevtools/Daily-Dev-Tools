@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import CodeEditor from "../../../components/CodeEditor";
 
 export default function TextDiffClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('TextDiff');
     const [oldText, setOldText] = useState('{\n  "name": "example",\n  "version": "1.0.0"\n}');
     const [newText, setNewText] = useState('{\n  "name": "example-app",\n  "version": "1.0.1",\n  "private": true\n}');
@@ -62,8 +63,8 @@ export default function TextDiffClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[1200px] mx-auto">
                     <ToolPageHeader
-                        title="Text Diff Checker"
-                        description="Compare text and code to find differences (additions/removals) instantly."
+                        title={tTools('text-diff.name')}
+                        description={tTools('text-diff.description')}
                         icon={<ToolIcon name="GitCompare" size={32} />}
                     />
 

@@ -16,6 +16,7 @@ const cursors = [
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 
 export default function CssCursorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('CssCursor');
     const [selected, setSelected] = useState("auto");
 
@@ -25,8 +26,8 @@ export default function CssCursorClient() {
                 <div className="max-w-[1000px] mx-auto">
 
                     <ToolPageHeader
-                        title="CSS Cursor Tester"
-                        description="Test different CSS cursor values by hovering over the buttons."
+                        title={tTools('css-cursor.name')}
+                        description={tTools('css-cursor.description')}
                         icon={<MousePointer size={28} className="text-[#fb923c]" />}
                     />
 

@@ -11,6 +11,7 @@ import { LiquidInput } from "../../../components/ui/LiquidInput";
 import LiquidSelect from "../../../components/ui/LiquidSelect";
 
 export default function HtpasswdGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('HtpasswdGenerator');
     const [user, setUser] = useState("admin");
     const [pass, setPass] = useState("");
@@ -37,8 +38,8 @@ export default function HtpasswdGeneratorClient() {
                 <div className="max-w-[600px] mx-auto">
 
                     <ToolPageHeader
-                        title="Htpasswd Generator"
-                        description="Generate Basic Auth entries for .htpasswd files (Nginx / Apache)."
+                        title={tTools('htpasswd-generator.name')}
+                        description={tTools('htpasswd-generator.description')}
                         icon={<Lock size={28} className="text-[#fb923c]" />}
                     />
 

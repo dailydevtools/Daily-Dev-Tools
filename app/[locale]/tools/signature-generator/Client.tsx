@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 export default function SignatureGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SignatureGenerator');
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [isDrawing, setIsDrawing] = useState(false);
@@ -97,8 +98,8 @@ export default function SignatureGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Digital Signature Generator"
-                        description="Draw and download your digital signature as a PNG image."
+                        title={tTools('signature-generator.name')}
+                        description={tTools('signature-generator.description')}
                         icon={<PenTool size={28} className="text-[#fb923c]" />}
                     />
 

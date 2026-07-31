@@ -12,6 +12,7 @@ import { LiquidButton } from "../../../components/ui/LiquidButton";
 import LiquidTabs from "../../../components/ui/LiquidTabs";
 
 export default function RandomGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('RandomGenerator');
     const [tab, setTab] = useState<'number' | 'list' | 'coin'>('number');
 
@@ -51,8 +52,8 @@ export default function RandomGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Random Generator Suite"
-                        description="Generate random numbers, pick items from lists, or flip a virtual coin."
+                        title={tTools('random-generator.name')}
+                        description={tTools('random-generator.description')}
                         icon={<Dices size={28} className="text-[#fb923c]" />}
                     />
 

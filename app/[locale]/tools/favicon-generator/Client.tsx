@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 export default function FaviconGeneratorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('FaviconGenerator');
     const [preview, setPreview] = useState("");
     const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -46,8 +47,8 @@ export default function FaviconGeneratorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Favicon Generator"
-                        description="Convert any image into a standard 32x32 PNG favicon for your website."
+                        title={tTools('favicon-generator.name')}
+                        description={tTools('favicon-generator.description')}
                         icon={<ImageIcon size={28} className="text-[#fb923c]" />}
                     />
 

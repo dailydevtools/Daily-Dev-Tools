@@ -9,6 +9,7 @@ import { LiquidSlider } from "../../../components/ui/LiquidSlider";
 import { useTranslations } from "next-intl";
 
 export default function VibrationTesterClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('VibrationTester');
     const [duration, setDuration] = useState(200);
 
@@ -23,8 +24,8 @@ export default function VibrationTesterClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[600px] mx-auto">
                     <ToolPageHeader
-                        title="Vibration Tester"
-                        description="Test your device's vibration motor online."
+                        title={tTools('vibration-tester.name')}
+                        description={tTools('vibration-tester.description')}
                         icon={<Smartphone size={28} className="text-[#fb923c]" />}
                     />
 

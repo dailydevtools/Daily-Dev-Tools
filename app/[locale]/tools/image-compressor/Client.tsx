@@ -9,6 +9,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidButton } from "../../../components/ui/LiquidButton";
 
 export default function ImageCompressorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('ImageCompressor');
     const [originalFile, setOriginalFile] = useState<File | null>(null);
     const [compressedBlob, setCompressedBlob] = useState<Blob | null>(null);
@@ -92,8 +93,8 @@ export default function ImageCompressorClient() {
                 <div className="max-w-[1000px] mx-auto">
 
                     <ToolPageHeader
-                        title="Image Compressor"
-                        description="Compress images locally without uploading to server."
+                        title={tTools('image-compressor.name')}
+                        description={tTools('image-compressor.description')}
                         icon={<ImageIcon size={28} className="text-[#fb923c]" />}
                     />
 

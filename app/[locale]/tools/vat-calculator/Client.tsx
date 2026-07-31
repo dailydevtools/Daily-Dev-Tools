@@ -8,6 +8,7 @@ import { LiquidCard } from "../../../components/ui/LiquidCard";
 import { LiquidInput } from "../../../components/ui/LiquidInput";
 
 export default function VatCalculatorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('VatCalculator');
     const [amount, setAmount] = useState("");
     const [rate, setRate] = useState("20");
@@ -26,8 +27,8 @@ export default function VatCalculatorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="VAT Calculator"
-                        description="Calculate VAT inclusive or exclusive amounts instantly."
+                        title={tTools('vat-calculator.name')}
+                        description={tTools('vat-calculator.description')}
                         icon={<Calculator size={28} className="text-[#fb923c]" />}
                     />
 

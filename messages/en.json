@@ -1989,5 +1989,29 @@
       "block_6": "<li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Zero Knowledge:</strong> We never see your password. It never leaves your device.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Offline Storage:</strong> Your encrypted vault is stored in your browser's LocalStorage.</li>\n        <li class=\"mb-2\"><strong class=\"text-[var(--title-color)] font-semibold\">Exportable:</strong> You can export/backup your raw encrypted data anytime.</li>",
       "block_7": "Stop trusting the cloud with your master keys. <a href=\"/tools/password-manager\" class=\"text-[#fb923c] underline underline-offset-4 hover:text-[#ea580c]\">Try the Local Password Manager</a> today."
     }
+  },
+  "About": {
+    "title": "About DailyDevTools - Our Mission",
+    "description": "Learn about DailyDevTools and our mission to build fast, private, and free developer tools that run entirely in your browser.",
+    "heroTitleStart": "Tools that respect your",
+    "heroTitleHighlight": "Privacy",
+    "heroSubtitle": "DailyDevTools was built with a simple mission: proper developer tools shouldn't require a server round-trip.",
+    "clientSide": {
+      "title": "100% Client-Side",
+      "content": "When you paste your JSON, SQL, or identifying data into DailyDevTools, it never leaves your browser. We use modern JavaScript APIs to process everything on your device. This means your data is safe, secure, and never logged on our servers (because we don't even see it)."
+    },
+    "fast": {
+      "title": "Lightning Fast",
+      "content": "No network latency. Results appear instantly as you type because the computation happens locally."
+    },
+    "free": {
+      "title": "Always Free",
+      "content": "We believe basic utilities should be accessible to everyone. No paywalls, no \"pro\" plans for basic features."
+    },
+    "openSource": {
+      "title": "Open Source at Heart",
+      "content": "We love the developer community. If you have suggestions or want to report a bug, reach out to us.",
+      "cta": "View on GitHub"
+    }
   }
 }

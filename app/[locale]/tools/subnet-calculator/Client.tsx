@@ -6,6 +6,7 @@ import ToolPageHeader from "../../../components/ToolPageHeader";
 import { useTranslations } from "next-intl";
 
 export default function SubnetCalculatorClient() {
+    const tTools = useTranslations('Tools');
     const t = useTranslations('SubnetCalculator');
     const [ip, setIp] = useState("192.168.1.1");
     const [cidr, setCidr] = useState("24");
@@ -57,8 +58,8 @@ export default function SubnetCalculatorClient() {
             <div className="relative z-10 pt-6 pb-16 px-6">
                 <div className="max-w-[800px] mx-auto">
                     <ToolPageHeader
-                        title="Subnet Calculator"
-                        description="Calculate network address, broadcast address, and host range from IP and CIDR."
+                        title={tTools('subnet-calculator.name')}
+                        description={tTools('subnet-calculator.description')}
                         icon={<Network size={28} className="text-[#fb923c]" />}
                     />
 
