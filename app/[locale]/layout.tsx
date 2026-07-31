@@ -12,7 +12,8 @@ import LayoutEssentials from "../components/LayoutEssentials";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing, locales } from '../../i18n/routing';
+import { routing } from '../../i18n/routing';
+import { localizedUrl, hreflangAlternates } from '../lib/seo';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -77,7 +78,7 @@ export async function generateMetadata({
         openGraph: {
             type: "website",
             locale: locale === 'en' ? 'en_US' : 'es_ES',
-            url: `${siteUrl}/${locale}`,
+            url: localizedUrl(locale),
             siteName: "DailyDevTools",
             title: title,
             description: description,
@@ -109,11 +110,8 @@ export async function generateMetadata({
             },
         },
         alternates: {
-            canonical: `${siteUrl}/${locale}`,
-            languages: {
-                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}`])),
-                'x-default': `${siteUrl}/en`,
-            },
+            canonical: localizedUrl(locale),
+            languages: hreflangAlternates(),
         },
         category: "technology",
         icons: {

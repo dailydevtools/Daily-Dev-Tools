@@ -1,9 +1,28 @@
 import { getTranslations } from 'next-intl/server';
 import { tools } from '../data/tools';
-import { locales } from '../../i18n/routing';
+import { locales, routing } from '../../i18n/routing';
 import { Metadata } from 'next';
 
 const MAX_DESCRIPTION_LENGTH = 160;
+
+export const siteUrl = 'https://www.dailydev.tools';
+
+/**
+ * Builds an absolute URL for a locale + path, respecting the 'as-needed' locale
+ * prefix: the default locale ('en') is served without a prefix, so its URL has none.
+ */
+export function localizedUrl(locale: string, path: string = ''): string {
+    const prefix = locale === routing.defaultLocale ? '' : `/${locale}`;
+    return `${siteUrl}${prefix}${path}`;
+}
+
+/** Builds an `alternates.languages` map (+ x-default) for a given path across all locales. */
+export function hreflangAlternates(path: string = ''): Record<string, string> {
+    return {
+        ...Object.fromEntries(locales.map((loc) => [loc, localizedUrl(loc, path)])),
+        'x-default': localizedUrl(routing.defaultLocale, path),
+    };
+}
 
 export async function constructToolMetadata({
     params,
@@ -30,8 +49,7 @@ export async function constructToolMetadata({
         : rawDescription;
 
     const title = `${name} | DailyDevTools`;
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/tools/${toolId}`;
+    const canonical = localizedUrl(locale, `/tools/${toolId}`);
 
     // Construct Dynamic OG Image URL with parameters
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
@@ -48,10 +66,7 @@ export async function constructToolMetadata({
         description: description,
         alternates: {
             canonical: canonical,
-            languages: {
-                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/tools/${toolId}`])),
-                'x-default': `${siteUrl}/en/tools/${toolId}`,
-            },
+            languages: hreflangAlternates(`/tools/${toolId}`),
         },
         openGraph: {
             title: name,

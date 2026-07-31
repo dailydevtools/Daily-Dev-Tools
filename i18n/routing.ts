@@ -8,7 +8,12 @@ export const routing = defineRouting({
     locales: locales,
 
     // Used when no locale matches
-    defaultLocale: 'en'
+    defaultLocale: 'en',
+
+    // The default locale is served without a prefix (e.g. "/tools" not "/en/tools"),
+    // so the homepage responds 200 at the exact root URL instead of redirecting —
+    // required for Google's HTML-tag site verification, which doesn't follow redirects.
+    localePrefix: 'as-needed'
 });
 
 // Lightweight wrappers around Next.js' navigation APIs

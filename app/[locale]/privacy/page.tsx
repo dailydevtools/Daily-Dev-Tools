@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
-import { locales } from '@/i18n/routing';
+import { siteUrl, localizedUrl, hreflangAlternates } from '../../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const title = 'Privacy Policy - DailyDevTools';
     const description = 'Privacy Policy for DailyDevTools. We process your data locally in your browser.';
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/privacy`;
+    const canonical = localizedUrl(locale, '/privacy');
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
     ogImageUrl.searchParams.set('title', 'Privacy Policy');
@@ -17,10 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
-            languages: {
-                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/privacy`])),
-                'x-default': `${siteUrl}/en/privacy`,
-            },
+            languages: hreflangAlternates('/privacy'),
         },
         openGraph: {
             title,

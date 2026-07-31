@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
 import { Shield, Zap, Code, Heart } from 'lucide-react';
-import { locales } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import { siteUrl, localizedUrl, hreflangAlternates } from '../../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'About' });
     const title = t('title');
     const description = t('description');
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/about`;
+    const canonical = localizedUrl(locale, '/about');
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
     ogImageUrl.searchParams.set('title', 'About Us');
@@ -21,10 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
-            languages: {
-                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/about`])),
-                'x-default': `${siteUrl}/en/about`,
-            },
+            languages: hreflangAlternates('/about'),
         },
         openGraph: {
             title,

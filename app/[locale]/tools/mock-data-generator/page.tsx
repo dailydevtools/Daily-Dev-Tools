@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import MockDataGeneratorClient from './Client';
+import { localizedUrl } from '../../../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -8,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = t('name');
     const description = t('description');
-    const url = `https://www.dailydev.tools/${locale}/tools/mock-data-generator`;
+    const url = localizedUrl(locale, '/tools/mock-data-generator');
 
     return {
         title,

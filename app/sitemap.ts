@@ -2,9 +2,7 @@ import { MetadataRoute } from 'next'
 import { tools } from './data/tools'
 import { blogPosts } from './[locale]/blog/data'
 import { locales } from '@/i18n/routing';
-
-const BASE_URL = 'https://www.dailydev.tools';
-
+import { localizedUrl } from './lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const entries: MetadataRoute.Sitemap = [];
@@ -13,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
         const isEn = locale === 'en';
         entries.push({
-            url: `${BASE_URL}/${locale}`,
+            url: localizedUrl(locale),
             lastModified: new Date(),
             changeFrequency: 'daily',
             priority: isEn ? 1.0 : 0.6,
@@ -25,7 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         for (const locale of locales) {
             const isEn = locale === 'en';
             entries.push({
-                url: `${BASE_URL}/${locale}/tools/${tool.id}`,
+                url: localizedUrl(locale, `/tools/${tool.id}`),
                 lastModified: new Date(),
                 changeFrequency: 'weekly' as const,
                 priority: isEn ? 0.9 : 0.5,
@@ -37,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
         const isEn = locale === 'en';
         entries.push({
-            url: `${BASE_URL}/${locale}/blog`,
+            url: localizedUrl(locale, '/blog'),
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority: isEn ? 0.8 : 0.5,
@@ -49,7 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         for (const locale of locales) {
             const isEn = locale === 'en';
             entries.push({
-                url: `${BASE_URL}/${locale}/blog/${post.slug}`,
+                url: localizedUrl(locale, `/blog/${post.slug}`),
                 lastModified: new Date(post.date),
                 changeFrequency: 'monthly' as const,
                 priority: isEn ? 0.7 : 0.4,

@@ -6,6 +6,7 @@ import BlogSchema from "../../../components/BlogSchema";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import BlogPostContent from "./BlogPostContent";
 import { routing } from "@/i18n/routing";
+import { siteUrl, localizedUrl, hreflangAlternates } from "../../../lib/seo";
 
 interface Props {
     params: Promise<{ slug: string; locale: string }>;
@@ -28,8 +29,7 @@ export async function generateMetadata({ params }: Props) {
     const post = blogPosts.find((p) => p.slug === slug);
     if (!post) return { title: 'Post Not Found' };
 
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/blog/${post.slug}`;
+    const canonical = localizedUrl(locale, `/blog/${post.slug}`);
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
     ogImageUrl.searchParams.set('title', post.title);
@@ -62,10 +62,7 @@ export async function generateMetadata({ params }: Props) {
         },
         alternates: {
             canonical: canonical,
-            languages: {
-                ...Object.fromEntries(routing.locales.map((loc) => [loc, `${siteUrl}/${loc}/blog/${post.slug}`])),
-                'x-default': `${siteUrl}/en/blog/${post.slug}`,
-            },
+            languages: hreflangAlternates(`/blog/${post.slug}`),
         },
     };
 }

@@ -1,14 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import Client from './Client';
+import { siteUrl, localizedUrl } from '../../../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     setRequestLocale(locale);
 
     const t = await getTranslations({ locale, namespace: 'CurlConverter' });
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/tools/curl-converter`;
+    const canonical = localizedUrl(locale, '/tools/curl-converter');
 
     // Static OG Image for this tool
     const ogImageUrl = new URL(`${siteUrl}/api/og`);

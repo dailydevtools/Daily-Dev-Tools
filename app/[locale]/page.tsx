@@ -1,5 +1,6 @@
 import HomeClient from "./HomeClient";
 import { getTranslations } from 'next-intl/server';
+import { siteUrl, localizedUrl } from '../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -7,8 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = t('title'); // "DailyDevTools - Free Online Developer Tools"
     const description = t('description');
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}`;
+    const canonical = localizedUrl(locale);
 
     // Dynamic OG Image for Homepage
     const ogImageUrl = new URL(`${siteUrl}/api/og`);

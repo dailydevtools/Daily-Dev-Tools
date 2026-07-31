@@ -1,14 +1,14 @@
 import { getTranslations } from 'next-intl/server';
 import { setRequestLocale } from 'next-intl/server';
 import Client from './Client';
+import { siteUrl, localizedUrl } from '../../../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     setRequestLocale(locale);
 
     const t = await getTranslations({ locale, namespace: 'APIDocs' });
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/tools/api-docs`;
+    const canonical = localizedUrl(locale, '/tools/api-docs');
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
     ogImageUrl.searchParams.set('title', t('title'));

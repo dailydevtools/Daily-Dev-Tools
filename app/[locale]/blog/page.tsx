@@ -2,7 +2,7 @@ import { blogPosts } from "./data";
 import BlogCard from "../../components/BlogCard";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
-import { locales } from "@/i18n/routing";
+import { siteUrl, localizedUrl, hreflangAlternates } from "../../lib/seo";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -10,8 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
     const title = "Developer Blog - DailyDevTools";
     const description = "Tutorials, guides, and best practices for developers.";
-    const siteUrl = 'https://www.dailydev.tools';
-    const canonical = `${siteUrl}/${locale}/blog`;
+    const canonical = localizedUrl(locale, '/blog');
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
     ogImageUrl.searchParams.set('title', "Developer Blog");
@@ -22,10 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
-            languages: {
-                ...Object.fromEntries(locales.map((loc) => [loc, `${siteUrl}/${loc}/blog`])),
-                'x-default': `${siteUrl}/en/blog`,
-            },
+            languages: hreflangAlternates('/blog'),
         },
         openGraph: {
             title,
