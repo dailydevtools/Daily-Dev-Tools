@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <radialGradient id="glass" cx="0" cy="0" r="1" gradientTransform="translate(119 108) rotate(80) scale(139)">
+      <stop stop-color="#fff0ba" stop-opacity=".95"/>
+      <stop offset=".38" stop-color="#ffae57" stop-opacity=".8"/>
+      <stop offset=".76" stop-color="#ff651e" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#d93c08" stop-opacity=".45"/>
+    </radialGradient>
+    <linearGradient id="edge" x1="68" y1="25" x2="183" y2="231" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffe6b2" stop-opacity=".95"/>
+      <stop offset=".5" stop-color="#ffb669" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#ff671f" stop-opacity=".25"/>
+    </linearGradient>
+    <mask id="segments">
+      <circle cx="128" cy="128" r="105" fill="white"/>
+      <g stroke="black" stroke-width="8" stroke-linejoin="round">
+        <path d="M35 77H221L128 236Z"/>
+        <path d="M79 101H177L128 187Z"/>
+        <path d="M128 187V236M35 77L79 101M221 77L177 101"/>
+        <path d="M34 65H222M100 65L81 29M155 65L175 29"/>
+        <path d="M22 128H64M192 128H234"/>
+        <path d="M62 216L87 175M169 175L194 216"/>
+      </g>
+    </mask>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <g mask="url(#segments)">
+    <circle cx="128" cy="128" r="105" fill="url(#glass)"/>
+    <circle cx="128" cy="128" r="104" stroke="url(#edge)" stroke-width="2"/>
+    <path d="M41 80H215L128 228Z" stroke="url(#edge)" stroke-width="2"/>
+    <path d="M85 105H171L128 179Z" fill="#ffd18a" fill-opacity=".22" stroke="#ffdd9d" stroke-opacity=".6" stroke-width="1.5"/>
+  </g>
+  <path d="M90 109H166L128 174Z" fill="#ff852c" fill-opacity=".25" filter="url(#glow)"/>
+</svg>

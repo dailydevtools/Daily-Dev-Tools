@@ -60,6 +60,7 @@ export default function StopwatchClient() {
 
                         <div className="flex justify-center gap-6 mb-10">
                             <button
+                                aria-label={running ? "Pause stopwatch" : "Start stopwatch"}
                                 onClick={() => setRunning(!running)}
                                 className={`w-16 h-16 rounded-full flex items-center justify-center border-none cursor-pointer text-white transition-transform active:scale-95 ${running ? 'bg-[#ef4444]' : 'bg-[#22c55e]'}`}
                             >
@@ -67,6 +68,7 @@ export default function StopwatchClient() {
                             </button>
 
                             <button
+                                aria-label="Record lap"
                                 onClick={lap} disabled={!running}
                                 className={`w-16 h-16 rounded-full flex items-center justify-center border-none transition-all ${running ? 'cursor-pointer opacity-100 bg-neutral-100 dark:bg-white/10 text-neutral-600 dark:text-white hover:bg-neutral-200 dark:hover:bg-white/20' : 'cursor-not-allowed opacity-50 bg-neutral-100 dark:bg-white/10 text-neutral-400 dark:text-neutral-500'}`}
                             >
@@ -74,6 +76,7 @@ export default function StopwatchClient() {
                             </button>
 
                             <button
+                                aria-label="Reset stopwatch"
                                 onClick={reset}
                                 className="w-16 h-16 rounded-full bg-neutral-100 dark:bg-white/10 text-neutral-600 dark:text-white flex items-center justify-center border-none cursor-pointer hover:bg-neutral-200 dark:hover:bg-white/20 transition-colors"
                             >

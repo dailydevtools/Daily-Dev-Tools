@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import { tools } from "../data/tools";
 import { toolSEOContent } from "../data/tool-seo-content";
 import { ChevronDown } from "lucide-react";
-import { useState } from "react";
+
 
 export default function ToolSEOContent() {
     const pathname = usePathname();
@@ -50,7 +50,7 @@ export default function ToolSEOContent() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
             />
 
-            <div className="max-w-[860px] mx-auto w-full px-6 mt-16 space-y-12 pb-4">
+            <div lang="en" className="max-w-[860px] mx-auto w-full px-6 mt-16 space-y-12 pb-4">
                 {/* About */}
                 <div>
                     <h2 className="text-xl font-bold font-heading text-[var(--title-color)] mb-3">
@@ -95,26 +95,13 @@ export default function ToolSEOContent() {
 }
 
 function FAQItem({ q, a }: { q: string; a: string }) {
-    const [open, setOpen] = useState(false);
-
     return (
-        <div className="border border-[var(--border-color)] rounded-xl overflow-hidden">
-            <button
-                onClick={() => setOpen(!open)}
-                className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-[var(--card-bg)] transition-colors duration-150"
-                aria-expanded={open}
-            >
+        <details className="group border border-[var(--border-color)] rounded-xl overflow-hidden">
+            <summary className="flex cursor-pointer items-center justify-between gap-4 px-5 py-4 text-left hover:bg-[var(--card-bg)]">
                 <span className="text-[14.5px] font-semibold text-[var(--title-color)]">{q}</span>
-                <ChevronDown
-                    size={16}
-                    className={`shrink-0 text-[var(--muted-text)] transition-transform duration-200 ${open ? "rotate-180" : ""}`}
-                />
-            </button>
-            {open && (
-                <div className="px-5 pb-4 text-[14px] text-[var(--muted-text)] leading-relaxed border-t border-[var(--border-color)] pt-3">
-                    {a}
-                </div>
-            )}
-        </div>
+                <ChevronDown size={16} className="shrink-0 text-[var(--muted-text)] group-open:rotate-180" />
+            </summary>
+            <div className="px-5 pb-4 text-[14px] text-[var(--muted-text)] leading-relaxed border-t border-[var(--border-color)] pt-3">{a}</div>
+        </details>
     );
 }

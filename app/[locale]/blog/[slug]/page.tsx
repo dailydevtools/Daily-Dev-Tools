@@ -29,18 +29,21 @@ export async function generateMetadata({ params }: Props) {
     const post = blogPosts.find((p) => p.slug === slug);
     if (!post) return { title: 'Post Not Found' };
 
+    const tPosts = await getTranslations({ locale, namespace: 'BlogPosts' });
+    const title = tPosts.has(`${post.slug}.title`) ? tPosts(`${post.slug}.title`) : post.title;
+    const description = tPosts.has(`${post.slug}.excerpt`) ? tPosts(`${post.slug}.excerpt`) : post.excerpt;
     const canonical = localizedUrl(locale, `/blog/${post.slug}`);
 
     const ogImageUrl = new URL(`${siteUrl}/api/og`);
-    ogImageUrl.searchParams.set('title', post.title);
-    ogImageUrl.searchParams.set('description', post.excerpt);
+    ogImageUrl.searchParams.set('title', title);
+    ogImageUrl.searchParams.set('description', description);
 
     return {
-        title: post.title,
-        description: post.excerpt,
+        title: title,
+        description: description,
         openGraph: {
-            title: post.title,
-            description: post.excerpt,
+            title: title,
+            description: description,
             type: 'article',
             publishedTime: post.date,
             authors: ['Sohan Paliyal'],
@@ -50,14 +53,14 @@ export async function generateMetadata({ params }: Props) {
                     url: ogImageUrl.toString(),
                     width: 1200,
                     height: 630,
-                    alt: post.title,
+                    alt: title,
                 },
             ],
         },
         twitter: {
             card: 'summary_large_image',
-            title: post.title,
-            description: post.excerpt,
+            title: title,
+            description: description,
             images: [ogImageUrl.toString()],
         },
         alternates: {
@@ -89,7 +92,7 @@ export default async function BlogPost({ params }: Props) {
             <BlogSchema
                 title={localizedTitle}
                 description={localizedExcerpt}
-                url={`https://www.dailydev.tools/blog/${post.slug}`}
+                url={localizedUrl(locale, `/blog/${post.slug}`)}
                 datePublished={post.date}
             />
             <Link
@@ -137,7 +140,7 @@ export default async function BlogPost({ params }: Props) {
 
             <div className="text-center mb-10">
                 <p className="text-[var(--muted-text)] mb-4">{t('enjoyedArticle')}</p>
-                <Link href="/#tools" className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]">
+                <Link href="/tools" className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)]">
                     {t('checkTools')}
                 </Link>
             </div>

@@ -7,7 +7,6 @@ import { useTranslations } from "next-intl";
 export default function ToolSchemaWrapper() {
     const pathname = usePathname();
     const t = useTranslations('Tools');
-    const tCategories = useTranslations('Homepage.categories');
 
     // Extract tool ID from pathname (e.g. "/en/tools/bmi-calculator" -> "bmi-calculator")
     // We assume the tool ID is the last segment
@@ -35,7 +34,6 @@ export default function ToolSchemaWrapper() {
 
     const toolName = t(`${tool.id}.name`, { fallback: tool.name });
     const toolDescription = t(`${tool.id}.description`, { fallback: tool.description });
-    const toolCategory = tCategories(tool.category, { fallback: tool.category });
 
     const schema = {
         "@context": "https://schema.org",
@@ -49,11 +47,6 @@ export default function ToolSchemaWrapper() {
             "@type": "Offer",
             "price": "0",
             "priceCurrency": "USD"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "120"
         },
         "author": {
             "@type": "Organization",

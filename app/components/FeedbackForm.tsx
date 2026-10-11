@@ -8,6 +8,7 @@ export default function FeedbackForm() {
     const t = useTranslations('FeedbackForm');
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [submitError, setSubmitError] = useState("");
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -19,22 +20,28 @@ export default function FeedbackForm() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setSubmitError("");
 
         const form = e.currentTarget;
         const formData = new FormData(form);
 
         try {
-            await fetch("https://formsubmit.co/ajax/officialsohanpaliyal+dailydevtools@gmail.com", {
+            const response = await fetch("https://formsubmit.co/ajax/officialsohanpaliyal+dailydevtools@gmail.com", {
                 method: "POST",
                 body: formData,
                 headers: {
                     Accept: "application/json",
                 },
             });
+            const result = await response.json();
+            if (!response.ok || !(result.success === true || result.success === "true")) {
+                throw new Error("Feedback was not accepted");
+            }
             setIsSubmitted(true);
             form.reset();
         } catch (error) {
             console.error("Error submitting feedback:", error);
+            setSubmitError("Your message could not be sent. Your text is still here; please try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -139,6 +146,7 @@ export default function FeedbackForm() {
                             />
                         </div>
 
+                        {submitError && <p role="alert" className="mb-4 text-sm text-red-600 dark:text-red-400">{submitError}</p>}
                         <button
                             type="submit"
                             className="inline-flex items-center justify-center gap-2 bg-gradient-to-br from-[#f97316] to-[#ea580c] text-white font-semibold text-sm px-6 py-3 rounded-[10px] border-none cursor-pointer transition-all duration-300 no-underline hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(249,115,22,0.3)] w-full"

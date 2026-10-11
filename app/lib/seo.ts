@@ -40,8 +40,8 @@ export async function constructToolMetadata({
 
     // Get localized name and description
     // Fallback to tools.ts English data if translation key missing
-    const name = t(`${toolId}.name`, { fallback: tool?.name || '' });
-    const rawDescription = t(`${toolId}.description`, { fallback: tool?.description || '' });
+    const name = t.has(`${toolId}.name`) ? t(`${toolId}.name`) : tool?.name || toolId;
+    const rawDescription = t.has(`${toolId}.description`) ? t(`${toolId}.description`) : tool?.description || '';
 
     // Truncate description for SEO optimal length
     const description = rawDescription.length > MAX_DESCRIPTION_LENGTH

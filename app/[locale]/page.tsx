@@ -1,6 +1,6 @@
 import HomeClient from "./HomeClient";
 import { getTranslations } from 'next-intl/server';
-import { siteUrl, localizedUrl } from '../lib/seo';
+import { siteUrl, localizedUrl, hreflangAlternates } from '../lib/seo';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         description,
         alternates: {
             canonical: canonical,
+            languages: hreflangAlternates(),
         },
         openGraph: {
             title,

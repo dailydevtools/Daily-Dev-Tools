@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 export default function Breadcrumb() {
     const t = useTranslations('Breadcrumb');
     const pathname = usePathname();
+    const tTools = useTranslations('Tools');
     // pathname from next-intl already excludes locale, e.g. "/tools/age-calculator"
     const parts = pathname.split('/').filter(Boolean);
 
@@ -16,7 +17,7 @@ export default function Breadcrumb() {
 
     // Find tool name if on a tool page
     const toolName = isToolPage
-        ? tools.find((t: any) => t.id === parts[1])?.name || parts[1]
+        ? (tTools.has(`${parts[1]}.name`) ? tTools(`${parts[1]}.name`) : tools.find(tool => tool.id === parts[1])?.name || parts[1])
         : null;
 
     if (!isToolPage) return null;
@@ -34,7 +35,7 @@ export default function Breadcrumb() {
             <ChevronRight size={14} className="opacity-50" />
 
             <Link
-                href="/#tools"
+                href="/tools"
                 className="text-[var(--muted-text)] no-underline transition-colors duration-200 hover:text-primary"
             >
                 {t('tools')}

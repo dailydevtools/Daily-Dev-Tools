@@ -25,6 +25,7 @@ export default function ToolsExplorer() {
     const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
+        setQuery(searchParams.get("q") || "");
         const categoryParam = searchParams.get("category");
         if (categoryParam) {
             if (categoryParam === "Favorites") {

@@ -3,7 +3,7 @@
 import { useRef, useState, useCallback } from "react";
 import { Link } from "../../i18n/routing";
 import { useTranslations } from "next-intl";
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { tools } from "../data/tools";
 import ToolIcon from "./ToolIcon";
 
@@ -61,10 +61,12 @@ function MagneticCard({ children, className }: { children: React.ReactNode; clas
 export default function PopularTools() {
     const tTools = useTranslations('Tools');
     const containerRef = useRef<HTMLDivElement>(null);
+    const prefersReducedMotion = useReducedMotion();
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start end", "end start"]
     });
+    const headerY = useTransform(scrollYProgress, [0, 1], [36, -36]);
 
     const popularTools = popularToolIds
         .map(id => tools.find(t => t.id === id))
@@ -73,7 +75,10 @@ export default function PopularTools() {
     return (
         <section ref={containerRef} className="relative z-10 py-20 px-6">
             <div className="w-full max-w-[1100px] mx-auto">
-                <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-4">
+                <motion.div
+                    style={prefersReducedMotion ? undefined : { y: headerY }}
+                    className="flex flex-col md:flex-row items-end justify-between mb-12 gap-4"
+                >
                     <div>
                         <p className="text-[13px] font-semibold text-[#fb923c] uppercase tracking-widest mb-3">
                             Start here
@@ -91,7 +96,7 @@ export default function PopularTools() {
                             <path d="M5 12h14" /><path d="m12 5 7 7-7 7" />
                         </svg>
                     </Link>
-                </div>
+                </motion.div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {popularTools.map((tool, index) => (

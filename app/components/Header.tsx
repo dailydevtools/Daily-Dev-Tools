@@ -32,8 +32,8 @@ export default function Header() {
 
     return (
         <nav
-            className={`fixed left-1/2 -translate-x-1/2 z-[100] flex justify-center items-center w-[98%] max-w-[1280px] border border-[var(--border-color)] bg-[var(--header-bg)] backdrop-blur-[20px] shadow-sm transition-all duration-300
-                ${isScrolled ? "top-1" : "top-4"} rounded-2xl`}
+            className={`fixed left-1/2 -translate-x-1/2 z-[100] flex justify-center items-center w-[calc(100%-32px)] ${pathname === "/" ? "max-w-[1000px] px-5 rounded-full" : "max-w-[1280px] rounded-2xl"} border border-[var(--border-color)] bg-[var(--header-bg)] backdrop-blur-[20px] shadow-sm transition-all duration-300
+                ${isScrolled ? "top-1" : "top-4"}`}
         >
             <div className="flex items-center justify-between py-3 w-full h-full max-w-[1200px] mx-auto">
                 {/* Logo */}

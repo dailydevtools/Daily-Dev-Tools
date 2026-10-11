@@ -10,7 +10,7 @@ export default function WebsiteSchema() {
             "@type": "SearchAction",
             "target": {
                 "@type": "EntryPoint",
-                "urlTemplate": "https://www.dailydev.tools/?q={search_term_string}"
+                "urlTemplate": "https://www.dailydev.tools/tools?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
         }

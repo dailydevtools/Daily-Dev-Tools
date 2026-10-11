@@ -1093,16 +1093,16 @@ export const toolSEOContent: Record<string, ToolSEOData> = {
     ]
   },
   "stopwatch": {
-    about: "A precise browser-based stopwatch is useful for timing code performance, measuring task duration, tracking exercise intervals, and general timekeeping. DailyDevTools' Stopwatch provides millisecond precision, lap time recording with split analysis, and a clear display — all without installing any app. Results are exportable for logging.",
+    about: "Use this browser stopwatch to time a task and record elapsed lap points. Start or pause the counter, record a lap while it is running, and reset the session when finished. The display shows minutes, seconds, and hundredths of a second. Keep the tab active for reliable timing; this tool is not a code benchmark or a precision measurement instrument.",
     howTo: [
-      "Click Start to begin timing — the stopwatch counts in hours:minutes:seconds.milliseconds",
+      "Click the play button to start counting in minutes:seconds.hundredths",
       "Click Lap to record a split time without stopping the main timer",
-      "Click Stop to pause, then Start again to resume from the same time",
-      "Click Reset to clear all times, or Export to save your lap times as a CSV"
+      "Click the pause button to stop counting, then play to resume from the same time",
+      "Click Reset to clear the counter and all recorded laps. This tool does not export lap times."
     ],
     faq: [
-      { q: "How accurate is a browser-based stopwatch?", a: "Modern browsers have millisecond accuracy for timing using the performance.now() API, which provides sub-millisecond resolution. However, JavaScript execution timing can add a few milliseconds of jitter during heavy page loads." },
-      { q: "Will the stopwatch continue running if I switch browser tabs?", a: "Yes. The timer continues counting even when the tab is in the background, as it uses the system clock rather than counting animation frames." },
+      { q: "How accurate is a browser-based stopwatch?", a: "This counter advances on a JavaScript interval. Busy or background tabs can delay those updates, so the displayed time can drift. Use it for casual timing, not precision measurements." },
+      { q: "Will the stopwatch continue running if I switch browser tabs?", a: "Browsers may throttle background tabs. This implementation counts interval updates, so it can undercount when the tab is inactive. Keep it visible and do not rely on it while the device sleeps." },
       { q: "Can I time multiple things simultaneously?", a: "The stopwatch tracks one elapsed time with multiple lap points. For timing multiple independent things simultaneously, open the tool in multiple browser tabs — each tab runs its own independent timer." }
     ]
   },

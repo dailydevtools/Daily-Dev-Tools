@@ -5,7 +5,6 @@ import { routing } from './i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 export default function middleware(request: NextRequest) {
-    const { hostname } = request.nextUrl;
     const host = request.headers.get('host');
 
     // Redirect to www.dailydev.tools if hostname is dailydev.tools

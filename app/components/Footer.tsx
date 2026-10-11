@@ -20,7 +20,7 @@ export default function Footer() {
                         </a>
                     </p>
                     <div className="flex items-center gap-5 text-sm flex-wrap justify-center font-heading">
-                        <Link href="/#tools" className="text-[var(--muted-text)] no-underline hover:text-[var(--title-color)] relative group py-1">
+                        <Link href="/tools" className="text-[var(--muted-text)] no-underline hover:text-[var(--title-color)] relative group py-1">
                             {t('allTools')}
                             <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#fb923c] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
                         </Link>

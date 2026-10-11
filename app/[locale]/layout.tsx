@@ -13,7 +13,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
-import { localizedUrl, hreflangAlternates } from '../lib/seo';
+import { localizedUrl } from '../lib/seo';
 
 const inter = Inter({
     subsets: ["latin"],
@@ -77,7 +77,7 @@ export async function generateMetadata({
         },
         openGraph: {
             type: "website",
-            locale: locale === 'en' ? 'en_US' : 'es_ES',
+            locale: locale === 'en' ? 'en_US' : locale,
             url: localizedUrl(locale),
             siteName: "DailyDevTools",
             title: title,
@@ -108,10 +108,6 @@ export async function generateMetadata({
                 "max-image-preview": "large",
                 "max-snippet": -1,
             },
-        },
-        alternates: {
-            canonical: localizedUrl(locale),
-            languages: hreflangAlternates(),
         },
         category: "technology",
         icons: {

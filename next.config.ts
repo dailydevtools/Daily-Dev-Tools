@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/chmod-calculator',
-        destination: '/en/tools/chmod-calculator',
+        destination: '/tools/chmod-calculator',
         permanent: true,
       },
     ];
